@@ -18084,6 +18084,9 @@ goto 10ec
 :10ecc821
 set dev RTL8821CE 802.11ac PCIe Wireless Network Adapter
 goto 10ec
+:10ecc822
+set dev RTL8822CE 802.11ac PCIe Wireless Network Adapter
+goto 10ec
 :10ecd723
 set dev RTL8723DE 802.11b/g/n PCIe Adapter
 goto 10ec
@@ -38991,6 +38994,9 @@ exit
 :1dbf0401
 set dev StarDragon4800 PCI Express Root Port
 goto 1dbf
+:1dc5
+set ven FADU Inc.
+exit
 :1dd8
 set ven Pensando Systems Inc
 exit
@@ -45873,6 +45879,9 @@ goto 8086
 :80862850
 set dev 82801HM/HEM (ICH8M/ICH8M-E) IDE Controller
 goto 8086
+:808628c0
+set dev Volume Management Device NVMe RAID Controller
+goto 8086
 :80862912
 set dev 82801IH (ICH9DH) LPC Interface Controller
 goto 8086
@@ -48864,6 +48873,12 @@ goto 8086
 :8086444e
 set dev Turbo Memory Controller
 goto 8086
+:8086467f
+set dev Volume Management Device NVMe RAID Controller
+goto 8086
+:80864c3d
+set dev Volume Management Device NVMe RAID Controller
+goto 8086
 :80865001
 set dev LE80578
 goto 8086
@@ -50627,6 +50642,9 @@ set dev Integrated RAID
 goto 8086
 :808696a1
 set dev Integrated RAID
+goto 8086
+:80869a0b
+set dev Volume Management Device NVMe RAID Controller
 goto 8086
 :80869b41
 set dev UHD Graphics
