@@ -17241,6 +17241,9 @@ goto 10de
 :10de1c92
 set dev GP107M [GeForce GTX 1050 Mobile]
 goto 10de
+:10de1c94
+set dev GP107M [GeForce MX350]
+goto 10de
 :10de1ca7
 set dev GP107GL
 goto 10de
@@ -17294,6 +17297,9 @@ set dev GP108M [GeForce MX150]
 goto 10de
 :10de1d13
 set dev GP108M [GeForce MX250]
+goto 10de
+:10de1d16
+set dev GP108M [GeForce MX330]
 goto 10de
 :10de1d33
 set dev GP108GLM [Quadro P500 Mobile]
@@ -38176,7 +38182,7 @@ goto 1c2c
 set dev FBC1CG Capture 1x100Gb
 goto 1c2c
 :1c2c00a9
-set dev FBC2XGHH Capture 2x10Gb
+set dev FBC2XGHH Capture 2x10Gb [Latina]
 goto 1c2c
 :1c2c00ad
 set dev FBC2CGG3HL Capture 2x100Gb [Padua]
@@ -38286,8 +38292,29 @@ goto 1c5c
 :1c5f
 set ven Beijing Memblaze Technology Co. Ltd.
 exit
+:1c5f000d
+set dev PBlaze5 520/526 AIC
+goto 1c5f
+:1c5f003d
+set dev PBlaze5 920/926 AIC
+goto 1c5f
+:1c5f010d
+set dev PBlaze5 520/526 U.2
+goto 1c5f
+:1c5f013d
+set dev PBlaze5 920/926 U.2
+goto 1c5f
 :1c5f0540
 set dev PBlaze4 NVMe SSD
+goto 1c5f
+:1c5f0550
+set dev PBlaze5 700/900
+goto 1c5f
+:1c5f0555
+set dev PBlaze5 510/516
+goto 1c5f
+:1c5f0557
+set dev PBlaze5 910/916
 goto 1c5f
 :1c63
 set ven Science and Research Centre of Computer Technology (JSC "NICEVT")
@@ -39139,7 +39166,7 @@ goto 1e24
 set ven Fujitsu Client Computing Limited
 exit
 :1e38
-set ven Thinci, Inc
+set ven Blaize, Inc
 exit
 :1e3d
 set ven Burlywood, Inc
@@ -43404,8 +43431,26 @@ goto 8086
 :808615f0
 set dev JHL7540 Thunderbolt 3 USB Controller [Titan Ridge DD 2018]
 goto 8086
+:808615f4
+set dev Ethernet Connection (15) I219-LM
+goto 8086
+:808615f5
+set dev Ethernet Connection (15) I219-V
+goto 8086
 :808615f6
 set dev I210 Gigabit Ethernet Connection
+goto 8086
+:808615f9
+set dev Ethernet Connection (14) I219-LM
+goto 8086
+:808615fa
+set dev Ethernet Connection (14) I219-V
+goto 8086
+:808615fb
+set dev Ethernet Connection (13) I219-LM
+goto 8086
+:808615fc
+set dev Ethernet Connection (13) I219-V
 goto 8086
 :808615ff
 set dev Ethernet Controller X710 for 10GBASE-T
@@ -43769,6 +43814,18 @@ set dev Atom Processor C3000 Series SPI Controller
 goto 8086
 :808619e2
 set dev Atom Processor C3000 Series QuickAssist Technology
+goto 8086
+:80861a1c
+set dev Ethernet Connection (17) I219-LM
+goto 8086
+:80861a1d
+set dev Ethernet Connection (17) I219-V
+goto 8086
+:80861a1e
+set dev Ethernet Connection (16) I219-LM
+goto 8086
+:80861a1f
+set dev Ethernet Connection (16) I219-V
 goto 8086
 :80861a21
 set dev 82840 840 [Carmel] Chipset Host Bridge (Hub A)
@@ -53067,6 +53124,18 @@ goto d161
 :d161b410
 set dev Wildcard B410 quad-BRI card
 goto d161
+:d209
+set ven Ultimarc
+exit
+:d2091500
+set dev PAC Drive
+goto d209
+:d20915a2
+set dev SpinTrak
+goto d209
+:d2091601
+set dev AimTrak
+goto d209
 :d4d4
 set ven Dy4 Systems Inc
 exit
