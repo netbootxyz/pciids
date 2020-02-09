@@ -8445,6 +8445,9 @@ goto 1057
 :10574806
 set dev CPX8216
 goto 1057
+:1057480b
+set dev MPC7410
+goto 1057
 :10574d68
 set dev 20268
 goto 1057
@@ -17283,6 +17286,12 @@ goto 10de
 :10de1ccd
 set dev GP107BM [GeForce GTX 1050 Mobile]
 goto 10de
+:10de1cfa
+set dev GP107GL [Quadro P2000]
+goto 10de
+:10de1cfb
+set dev GP107GL [Quadro P1000]
+goto 10de
 :10de1d01
 set dev GP108 [GeForce GT 1030]
 goto 10de
@@ -17339,6 +17348,12 @@ set dev GV100GL [Tesla V100 SXM3 32GB]
 goto 10de
 :10de1dba
 set dev GV100GL [Quadro GV100]
+goto 10de
+:10de1df0
+set dev GV100GL [Tesla PG500-216]
+goto 10de
+:10de1df2
+set dev GV100GL [Tesla PG503-216]
 goto 10de
 :10de1df5
 set dev GV100GL [Tesla V100 SXM2 16GB]
@@ -29520,6 +29535,9 @@ goto 144d
 :144da822
 set dev NVMe SSD Controller 172Xa/172Xb
 goto 144d
+:144da824
+set dev NVMe SSD Controller PM173X
+goto 144d
 :144e
 set ven OLITEC
 exit
@@ -37413,6 +37431,12 @@ goto 1ab8
 :1ab9
 set ven Espia Srl
 exit
+:1ac1
+set ven Global Unichip Corp.
+exit
+:1ac1089a
+set dev Coral Edge TPU
+goto 1ac1
 :1ac8
 set ven Aeroflex Gaisler
 exit
@@ -39023,6 +39047,9 @@ set dev StarDragon4800 PCI Express Root Port
 goto 1dbf
 :1dc5
 set ven FADU Inc.
+exit
+:1dcd
+set ven Liqid Inc.
 exit
 :1dd8
 set ven Pensando Systems Inc
