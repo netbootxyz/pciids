@@ -17379,6 +17379,9 @@ goto 10de
 :10de1e30
 set dev TU102GL [Quadro RTX 6000/8000]
 goto 10de
+:10de1e37
+set dev TU102GL [GRID RTX T10-4/T10-8/T10-16]
+goto 10de
 :10de1e38
 set dev TU102GL
 goto 10de
