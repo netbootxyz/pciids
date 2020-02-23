@@ -108,6 +108,9 @@ exit
 :018a0106
 set dev FPC-0106TX misprogrammed [RTL81xx]
 goto 018a
+:01de
+set ven Oxide Computer Company
+exit
 :021b
 set ven Compaq Computer Corporation
 exit
@@ -39228,6 +39231,9 @@ goto 1e89
 :1e890003
 set dev Quantis-PCIe-240M
 goto 1e89
+:1e94
+set ven Calian SED
+exit
 :1fc0
 set ven Ascom (Finland) Oy
 exit
