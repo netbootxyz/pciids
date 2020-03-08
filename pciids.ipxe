@@ -2290,7 +2290,7 @@ goto 1002
 set dev Oland XT [Radeon HD 8670 / R7 250/350]
 goto 1002
 :10026611
-set dev Oland [Radeon HD 8570 / R7 240/340 OEM]
+set dev Oland [Radeon HD 8570 / R7 240/340 / Radeon 520 OEM]
 goto 1002
 :10026613
 set dev Oland PRO [Radeon R7 240/340]
@@ -16098,6 +16098,9 @@ goto 10de
 :10de0fbb
 set dev GM204 High Definition Audio Controller
 goto 10de
+:10de0fbc
+set dev GM107 High Definition Audio Controller [GeForce 940MX]
+goto 10de
 :10de0fc0
 set dev GK107 [GeForce GT 640 OEM]
 goto 10de
@@ -17250,6 +17253,9 @@ goto 10de
 :10de1c94
 set dev GP107M [GeForce MX350]
 goto 10de
+:10de1c96
+set dev GP107 [GeForce MX350]
+goto 10de
 :10de1ca7
 set dev GP107GL
 goto 10de
@@ -17469,11 +17475,17 @@ goto 10de
 :10de1f08
 set dev TU106 [GeForce RTX 2060 Rev. A]
 goto 10de
+:10de1f09
+set dev TU106 [GeForce GTX 1660 SUPER]
+goto 10de
 :10de1f10
 set dev TU106M [GeForce RTX 2070 Mobile]
 goto 10de
 :10de1f11
 set dev TU106M [GeForce RTX 2060 Mobile]
+goto 10de
+:10de1f12
+set dev TU106 [GeForce RTX 2060]
 goto 10de
 :10de1f2e
 set dev TU106M
@@ -18322,7 +18334,7 @@ goto 1102
 set dev EMU20k1 [Sound Blaster X-Fi Series]
 goto 1102
 :11020006
-set dev EMU10k1X [SB Live! Value/OEM Series]
+set dev EMU10k1X / CA0103 [SB Live! OEM / SB 5.1 / Ectiva 5.1]
 goto 1102
 :11020007
 set dev CA0106/CA0111 [SB Live!/Audigy/X-Fi Series]
@@ -38316,6 +38328,9 @@ goto 1c5c
 :1c5c1285
 set dev PC300 NVMe Solid State Drive 1TB
 goto 1c5c
+:1c5c1327
+set dev BC501 NVMe Solid State Drive 512GB
+goto 1c5c
 :1c5c1504
 set dev SC300 512GB M.2 2280 SATA Solid State Drive
 goto 1c5c
@@ -39198,6 +39213,12 @@ goto 1e24
 :1e26
 set ven Fujitsu Client Computing Limited
 exit
+:1e36
+set ven Shanghai Enflame Technology Co. Ltd
+exit
+:1e360001
+set dev T10 [CloudBlazer]
+goto 1e36
 :1e38
 set ven Blaize, Inc
 exit
@@ -42380,6 +42401,9 @@ set dev 82546EB Gigabit Ethernet Controller
 goto 8086
 :8086101e
 set dev 82540EP Gigabit Ethernet Controller (Mobile)
+goto 8086
+:8086101f
+set dev Ethernet Controller V710 for 5GBASE-T
 goto 8086
 :80861026
 set dev 82545GM Gigabit Ethernet Controller
