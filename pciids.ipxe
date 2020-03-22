@@ -17052,6 +17052,9 @@ goto 10de
 :10de1aeb
 set dev TU116 High Definition Audio Controller
 goto 10de
+:10de1aec
+set dev TU116 USB 3.1 Host Controller
+goto 10de
 :10de1aed
 set dev TU116 [GeForce GTX 1650 SUPER]
 goto 10de
@@ -17254,7 +17257,7 @@ goto 10de
 set dev GP107M [GeForce MX350]
 goto 10de
 :10de1c96
-set dev GP107 [GeForce MX350]
+set dev GP107M [GeForce MX350]
 goto 10de
 :10de1ca7
 set dev GP107GL
@@ -17388,6 +17391,9 @@ goto 10de
 :10de1e30
 set dev TU102GL [Quadro RTX 6000/8000]
 goto 10de
+:10de1e36
+set dev TU102GL
+goto 10de
 :10de1e37
 set dev TU102GL [GRID RTX T10-4/T10-8/T10-16]
 goto 10de
@@ -17485,6 +17491,9 @@ goto 10de
 set dev TU106M [GeForce RTX 2060 Mobile]
 goto 10de
 :10de1f12
+set dev TU106 [GeForce RTX 2060]
+goto 10de
+:10de1f15
 set dev TU106 [GeForce RTX 2060]
 goto 10de
 :10de1f2e
@@ -24686,6 +24695,12 @@ set ven Pericom Semiconductor
 exit
 :12d801a7
 set dev 7C21P100 2-port PCI-X to PCI-X Bridge
+goto 12d8
+:12d80303
+set dev PCI Express Switch 3-3
+goto 12d8
+:12d80508
+set dev PI7C9X20508GP PCI Express Switch 5Port-8Lane
 goto 12d8
 :12d82304
 set dev PI7C9X2G304 EL/SL PCIe2 3-Port/4-Lane Packet Switch
@@ -32763,6 +32778,9 @@ goto 15b3
 :15b31978
 set dev MT42822 Family [BlueField-2 SoC PCIe Bridge]
 goto 15b3
+:15b31979
+set dev MT2910 Family [ConnectX-7 PCIe Bridge]
+goto 15b3
 :15b34117
 set dev MT27712A0-FDCF-AE
 goto 15b3
@@ -38187,6 +38205,24 @@ goto 1c1c
 :1c1f
 set ven SoftLab-NSK
 exit
+:1c1f0015
+set dev FD842
+goto 1c1f
+:1c1f0019
+set dev FD722
+goto 1c1f
+:1c1f001a
+set dev FD788
+goto 1c1f
+:1c1f001b
+set dev FD720
+goto 1c1f
+:1c1f001c
+set dev FD922
+goto 1c1f
+:1c1f001d
+set dev Vega
+goto 1c1f
 :1c28
 set ven Lite-On IT Corp. / Plextor
 exit
@@ -39183,6 +39219,12 @@ exit
 :1dfc1181
 set dev TDM 8 Port E1/T1/J1 Adapter
 goto 1dfc
+:1e0f
+set ven KIOXIA Corporation
+exit
+:1e0f0007
+set dev NVMe SSD Controller Cx6
+goto 1e0f
 :1e17
 set ven Arnold & Richter Cine Technik GmbH & Co. Betriebs KG
 exit
@@ -41070,6 +41112,9 @@ goto 8086
 :808602e8
 set dev Serial IO I2C Host Controller
 goto 8086
+:808602e9
+set dev Comet Lake Serial IO I2C Host Controller
+goto 8086
 :808602f0
 set dev Wireless-AC 9462
 goto 8086
@@ -41270,6 +41315,69 @@ set dev RAID Controller
 goto 8086
 :8086061f
 set dev 80303 I/O Processor
+goto 8086
+:8086068d
+set dev Comet Lake LPC Controller
+goto 8086
+:808606a3
+set dev Comet Lake PCH SMBus Controller
+goto 8086
+:808606a4
+set dev Comet Lake PCH SPI Controller
+goto 8086
+:808606a8
+set dev Comet Lake PCH Serial IO UART Host Controller #0
+goto 8086
+:808606a9
+set dev Comet Lake PCH Serial IO UART Host Controller #1
+goto 8086
+:808606aa
+set dev Comet Lake PCH Serial IO SPI Controller #0
+goto 8086
+:808606ab
+set dev Comet Lake PCH Serial IO SPI Controller #1
+goto 8086
+:808606ac
+set dev Comet Lake PCI Express Root Port #21
+goto 8086
+:808606b0
+set dev Comet Lake PCI Express Root Port #9
+goto 8086
+:808606c0
+set dev Comet Lake PCI Express Root Port #17
+goto 8086
+:808606c8
+set dev Comet Lake PCH cAVS
+goto 8086
+:808606e0
+set dev Comet Lake HECI Controller
+goto 8086
+:808606e8
+set dev Comet Lake PCH Serial IO I2C Controller #0
+goto 8086
+:808606e9
+set dev Comet Lake PCH Serial IO I2C Controller #1
+goto 8086
+:808606ea
+set dev Comet Lake PCH Serial IO I2C Controller #2
+goto 8086
+:808606eb
+set dev Comet Lake PCH Serial IO I2C Controller #3
+goto 8086
+:808606ed
+set dev Comet Lake USB 3.1 xHCI Host Controller
+goto 8086
+:808606ef
+set dev Comet Lake PCH Shared SRAM
+goto 8086
+:808606f0
+set dev Wi-Fi 6 AX201
+goto 8086
+:808606f9
+set dev Comet Lake PCH Thermal Controller
+goto 8086
+:808606fb
+set dev Comet Lake PCH Serial IO SPI Controller #2
 goto 8086
 :80860700
 set dev CE Media Processor A/V Bridge
@@ -50766,6 +50874,15 @@ goto 8086
 :80869b41
 set dev UHD Graphics
 goto 8086
+:80869b54
+set dev 10th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
+:80869b64
+set dev 10th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
+:80869bc4
+set dev UHD Graphics
+goto 8086
 :80869c00
 set dev 8 Series SATA Controller 1 [IDE mode]
 goto 8086
@@ -51881,6 +51998,9 @@ set dev Cannon Point-LP LPC Controller
 goto 8086
 :8086a30c
 set dev QM370 Chipset LPC/eSPI Controller
+goto 8086
+:8086a30d
+set dev HM470 Chipset LPC/eSPI Controller
 goto 8086
 :8086a323
 set dev Cannon Lake PCH SMBus Controller
