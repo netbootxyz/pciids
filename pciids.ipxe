@@ -17526,6 +17526,9 @@ goto 10de
 :10de1f92
 set dev TU117M [GeForce GTX 1650 Mobile]
 goto 10de
+:10de1f95
+set dev TU117M [GeForce GTX 1650 Ti Mobile]
+goto 10de
 :10de1f96
 set dev TU117M [GeForce GTX 1650 Mobile / Max-Q]
 goto 10de
@@ -50325,8 +50328,20 @@ goto 8086
 :80868a23
 set dev Ice Lake Thunderbolt 3 PCI Express Root Port #3
 goto 8086
+:80868a51
+set dev Intel Iris Plus Graphics G7 (Ice Lake)
+goto 8086
 :80868a52
 set dev Iris Plus Graphics G7
+goto 8086
+:80868a56
+set dev Iris Plus Graphics G1 (Ice Lake)
+goto 8086
+:80868a5a
+set dev Iris Plus Graphics G4 (Ice Lake)
+goto 8086
+:80868a5c
+set dev Intel Iris Plus Graphics G4 (Ice Lake)
 goto 8086
 :80868c00
 set dev 8 Series/C220 Series Chipset Family 4-port SATA Controller 1 [IDE mode]
