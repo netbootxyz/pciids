@@ -35409,8 +35409,29 @@ goto 17f3
 :17f31031
 set dev PCI/PCI-X to PCI-E Bridge
 goto 17f3
+:17f31070
+set dev CAN Bus Controller
+goto 17f3
+:17f31331
+set dev Motion Control Interface
+goto 17f3
+:17f31930
+set dev Hybrid Function Control Register
+goto 17f3
+:17f32010
+set dev RDC M2010 VGA-compatible graphics adapter
+goto 17f3
 :17f32012
 set dev M2012/R3308 VGA-compatible graphics adapter
+goto 17f3
+:17f32015
+set dev RDC M2015 VGA-compatible graphics adapter
+goto 17f3
+:17f36011
+set dev R6011 ISA Bridge
+goto 17f3
+:17f36013
+set dev R6013 ISA Bridge
 goto 17f3
 :17f36020
 set dev R6020 North Bridge
@@ -35418,11 +35439,26 @@ goto 17f3
 :17f36021
 set dev R6021 Host Bridge
 goto 17f3
+:17f36023
+set dev R6023 Host Bridge
+goto 17f3
+:17f36025
+set dev R6025 Host Bridge
+goto 17f3
+:17f36026
+set dev R6026 Host Bridge
+goto 17f3
 :17f36030
 set dev R6030 ISA Bridge
 goto 17f3
 :17f36031
 set dev R6031 ISA Bridge
+goto 17f3
+:17f36035
+set dev R6035 ISA Bridge
+goto 17f3
+:17f36036
+set dev R6036 ISA Bridge
 goto 17f3
 :17f36040
 set dev R6040 MAC Controller
