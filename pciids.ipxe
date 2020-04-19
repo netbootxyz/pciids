@@ -2704,7 +2704,7 @@ goto 1002
 set dev Vega 10 XTX [Radeon Vega Frontier Edition]
 goto 1002
 :10026864
-set dev Vega
+set dev Vega 10 [Radeon Pro V340]
 goto 1002
 :10026867
 set dev Vega 10 XL [Radeon Pro Vega 56]
@@ -17056,7 +17056,7 @@ goto 10de
 set dev TU116 USB 3.1 Host Controller
 goto 10de
 :10de1aed
-set dev TU116 [GeForce GTX 1650 SUPER]
+set dev TU116 USB Type-C UCSI Controller
 goto 10de
 :10de1b00
 set dev GP102 [TITAN X]
@@ -17472,6 +17472,12 @@ goto 10de
 :10de1ed0
 set dev TU104BM [GeForce RTX 2080 Mobile]
 goto 10de
+:10de1ed1
+set dev TU104BM [GeForce RTX 2070 SUPER Mobile / Max-Q]
+goto 10de
+:10de1ed3
+set dev TU104BM [GeForce RTX 2080 SUPER Mobile / Max-Q]
+goto 10de
 :10de1f02
 set dev TU106 [GeForce RTX 2070]
 goto 10de
@@ -17515,7 +17521,7 @@ goto 10de
 set dev TU106 [GeForce RTX 2060 SUPER]
 goto 10de
 :10de1f50
-set dev TU106BM [GeForce RTX 2070 Mobile]
+set dev TU106BM [GeForce RTX 2070 Mobile / Max-Q]
 goto 10de
 :10de1f51
 set dev TU106BM [GeForce RTX 2060 Mobile]
@@ -17532,11 +17538,17 @@ goto 10de
 :10de1f92
 set dev TU117M [GeForce GTX 1650 Mobile]
 goto 10de
+:10de1f94
+set dev TU117M
+goto 10de
 :10de1f95
 set dev TU117M [GeForce GTX 1650 Ti Mobile]
 goto 10de
 :10de1f96
 set dev TU117M [GeForce GTX 1650 Mobile / Max-Q]
+goto 10de
+:10de1f99
+set dev TU117M
 goto 10de
 :10de1fae
 set dev TU117GL
@@ -38181,6 +38193,9 @@ goto 1bd0
 :1bd4
 set ven Inspur Electronic Information Industry Co., Ltd.
 exit
+:1bd40911
+set dev Arria10_PCIe_F10A1150
+goto 1bd4
 :1bee
 set ven IXXAT Automation GmbH
 exit
@@ -50958,20 +50973,32 @@ goto 8086
 :80869a0b
 set dev Volume Management Device NVMe RAID Controller
 goto 8086
+:80869a13
+set dev Tiger Lake-LP Thunderbolt USB Controller
+goto 8086
 :80869a14
 set dev 11th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
+:80869a1b
+set dev Tiger Lake-LP Thunderbolt NHI #0
+goto 8086
+:80869a1d
+set dev Tiger Lake-LP Thunderbolt NHI #1
+goto 8086
 :80869a23
-set dev Tiger Lake PCI Express Root Port #2
+set dev Tiger Lake-LP Thunderbolt PCI Express Root Port #0
 goto 8086
 :80869a25
-set dev Tiger Lake PCI Express Root Port #3
+set dev Tiger Lake-LP Thunderbolt PCI Express Root Port #1
 goto 8086
 :80869a27
-set dev Tiger Lake PCI Express Root Port #4
+set dev Tiger Lake-LP Thunderbolt PCI Express Root Port #2
 goto 8086
 :80869a29
-set dev Tiger Lake PCI Express Root Port #5
+set dev Tiger Lake-LP Thunderbolt PCI Express Root Port #3
+goto 8086
+:80869a33
+set dev Tiger Lake Trace Hub
 goto 8086
 :80869b41
 set dev UHD Graphics
@@ -51496,28 +51523,64 @@ goto 8086
 set dev Atom Processor D4xx/D5xx/N4xx/N5xx CHAPS counter
 goto 8086
 :8086a082
-set dev Tigerlake LP Z0 Chipset eSPI Controller
+set dev Tiger Lake-LP LPC Controller
 goto 8086
 :8086a0a3
-set dev Tiger Lake PCH LP SMBus Controller
+set dev Tiger Lake-LP SMBus Controller
 goto 8086
 :8086a0a4
-set dev Tiger Lake PCH LP SPI Controller
+set dev Tiger Lake-LP SPI Controller
+goto 8086
+:8086a0a6
+set dev Tiger Lake-LP Trace Hub
 goto 8086
 :8086a0a8
-set dev Tiger Lake PCH Serial IO UART Host Controller
+set dev Tiger Lake-LP Serial IO UART Controller #0
+goto 8086
+:8086a0a9
+set dev Tiger Lake-LP Serial IO UART Controller #1
 goto 8086
 :8086a0ab
-set dev Tiger Lake PCH Serial IO SPI Host Controller
+set dev Tiger Lake-LP Serial IO SPI Controller #1
+goto 8086
+:8086a0b0
+set dev Tiger Lake-LP PCI Express Root Port #9
+goto 8086
+:8086a0bf
+set dev Tiger Lake-LP PCI Express Root Port #8
+goto 8086
+:8086a0c5
+set dev Tiger Lake-LP Serial IO I2C Controller #4
+goto 8086
+:8086a0c6
+set dev Tiger Lake-LP Serial IO I2C Controller #5
 goto 8086
 :8086a0c8
-set dev Tiger Lake PCH LP cAVS
+set dev Tiger Lake-LP Smart Sound Technology Audio Controller
 goto 8086
 :8086a0e0
-set dev Tiger Lake PCH HECI Controller
+set dev Tiger Lake-LP Management Engine Interface
 goto 8086
 :8086a0e8
-set dev Tiger Lake PCH LP Serial IO I2C Controller #0
+set dev Tiger Lake-LP Serial IO I2C Controller #0
+goto 8086
+:8086a0e9
+set dev Tiger Lake-LP Serial IO I2C Controller #1
+goto 8086
+:8086a0ea
+set dev Tiger Lake-LP Serial IO I2C Controller #2
+goto 8086
+:8086a0eb
+set dev Tiger Lake-LP Serial IO I2C Controller #3
+goto 8086
+:8086a0ed
+set dev Tiger Lake-LP USB 3.2 Gen 2x1 xHCI Host Controller
+goto 8086
+:8086a0ef
+set dev Tiger Lake-LP Shared SRAM
+goto 8086
+:8086a0fc
+set dev Tiger Lake-LP Integrated Sensor Hub
 goto 8086
 :8086a102
 set dev Q170/Q150/B150/H170/H110/Z170/CM236 Chipset SATA Controller [AHCI Mode]
