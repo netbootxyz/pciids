@@ -51000,6 +51000,9 @@ goto 8086
 :80869a33
 set dev Tiger Lake Trace Hub
 goto 8086
+:80869a49
+set dev UHD Graphics
+goto 8086
 :80869b41
 set dev UHD Graphics
 goto 8086
@@ -51578,6 +51581,9 @@ set dev Tiger Lake-LP USB 3.2 Gen 2x1 xHCI Host Controller
 goto 8086
 :8086a0ef
 set dev Tiger Lake-LP Shared SRAM
+goto 8086
+:8086a0f0
+set dev Wi-Fi 6 AX201
 goto 8086
 :8086a0fc
 set dev Tiger Lake-LP Integrated Sensor Hub
