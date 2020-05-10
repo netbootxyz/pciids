@@ -17331,6 +17331,9 @@ goto 10de
 :10de1d52
 set dev GP108BM [GeForce MX250]
 goto 10de
+:10de1d56
+set dev GP108BM [GeForce MX330]
+goto 10de
 :10de1d81
 set dev GV100 [TITAN V]
 goto 10de
@@ -17505,6 +17508,9 @@ goto 10de
 :10de1f12
 set dev TU106M [GeForce RTX 2060 Max-Q]
 goto 10de
+:10de1f14
+set dev TU106M [GeForce RTX 2070 Mobile / Max-Q Refresh]
+goto 10de
 :10de1f15
 set dev TU106M [GeForce RTX 2060 Mobile]
 goto 10de
@@ -17525,6 +17531,9 @@ set dev TU106BM [GeForce RTX 2070 Mobile / Max-Q]
 goto 10de
 :10de1f51
 set dev TU106BM [GeForce RTX 2060 Mobile]
+goto 10de
+:10de1f54
+set dev TU106BM [GeForce RTX 2070 Mobile]
 goto 10de
 :10de1f81
 set dev TU117
@@ -32649,6 +32658,18 @@ goto 15b3
 :15b30217
 set dev MT2894 Family [ConnectX-6 Lx Secure Flash Recovery]
 goto 15b3
+:15b3021a
+set dev MT43162 Family [BlueField-3 Lx SoC Flash Recovery]
+goto 15b3
+:15b3021b
+set dev MT43162 Family [BlueField-3 Lx Secure Flash Recovery]
+goto 15b3
+:15b3021c
+set dev MT43244 Family [BlueField-3 SoC Flash Recovery]
+goto 15b3
+:15b3021d
+set dev MT43244 Family [BlueField-3 Secure Flash Recovery]
+goto 15b3
 :15b3024e
 set dev MT53100 [Spectrum-2, Flash recovery mode]
 goto 15b3
@@ -32805,6 +32826,12 @@ goto 15b3
 :15b31979
 set dev MT2910 Family [ConnectX-7 PCIe Bridge]
 goto 15b3
+:15b3197a
+set dev MT43162 Family [BlueField-3 Lx SoC PCIe Bridge]
+goto 15b3
+:15b3197b
+set dev MT43244 Family [BlueField-3 SoC PCIe Bridge]
+goto 15b3
 :15b34117
 set dev MT27712A0-FDCF-AE
 goto 15b3
@@ -32919,11 +32946,35 @@ goto 15b3
 :15b3a2d6
 set dev MT42822 BlueField-2 integrated ConnectX-6 Dx network controller
 goto 15b3
+:15b3a2d7
+set dev MT43162 BlueField-3 Lx SoC Crypto enabled
+goto 15b3
+:15b3a2d8
+set dev MT43162 BlueField-3 Lx SoC Crypto disabled
+goto 15b3
+:15b3a2d9
+set dev MT43162 BlueField-3 Lx integrated ConnectX-7 network controller
+goto 15b3
+:15b3a2da
+set dev MT43244 BlueField-3 SoC Crypto enabled
+goto 15b3
+:15b3a2db
+set dev MT43244 BlueField-3 SoC Crypto disabled
+goto 15b3
+:15b3a2dc
+set dev MT43244 BlueField-3 integrated ConnectX-7 network controller
+goto 15b3
 :15b3c2d2
 set dev MT416842 BlueField SoC management interfac
 goto 15b3
 :15b3c2d3
 set dev MT42822 BlueField-2 SoC Management Interface
+goto 15b3
+:15b3c2d4
+set dev MT43162 BlueField-3 Lx SoC Management Interface
+goto 15b3
+:15b3c2d5
+set dev MT43244 BlueField-3 SoC Management Interface
 goto 15b3
 :15b3c738
 set dev MT51136
@@ -36891,6 +36942,9 @@ goto 1987
 :19875012
 set dev E12 NVMe Controller
 goto 1987
+:19875013
+set dev PS5013 E13 NVMe Controller
+goto 1987
 :19875016
 set dev E16 PCIe4 NVMe Controller
 goto 1987
@@ -38921,6 +38975,9 @@ set ven Aquantia Corp.
 exit
 :1d6a0001
 set dev AQC107 NBase-T/IEEE 802.3bz Ethernet Controller [AQtion]
+goto 1d6a
+:1d6a00b1
+set dev AQC100 10G Ethernet MAC controller [AQtion]
 goto 1d6a
 :1d6a07b1
 set dev AQC107 NBase-T/IEEE 802.3bz Ethernet Controller [AQtion]
@@ -51006,6 +51063,9 @@ goto 8086
 :80869b41
 set dev UHD Graphics
 goto 8086
+:80869b44
+set dev 10th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
 :80869b54
 set dev 10th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
@@ -51434,6 +51494,12 @@ set dev Cannon Point-LP SMBus Controller
 goto 8086
 :80869da4
 set dev Cannon Point-LP SPI Controller
+goto 8086
+:80869da8
+set dev Cannon Point-LP Serial IO UART Controller #2
+goto 8086
+:80869daa
+set dev Cannon Point-LP Serial IO SPI Controller
 goto 8086
 :80869db0
 set dev Cannon Point-LP PCI Express Root Port #9
