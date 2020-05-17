@@ -2853,8 +2853,11 @@ goto 1002
 :10026907
 set dev Meso XT [Radeon R5 M315]
 goto 1002
+:10026920
+set dev Amethyst [Radeon R9 M395/ M395X Mac Edition]
+goto 1002
 :10026921
-set dev Amethyst XT [Radeon R9 M295X]
+set dev Amethyst XT [Radeon R9 M295X / M390X]
 goto 1002
 :10026929
 set dev Tonga XT GL [FirePro S7150]
@@ -32658,6 +32661,12 @@ goto 15b3
 :15b30217
 set dev MT2894 Family [ConnectX-6 Lx Secure Flash Recovery]
 goto 15b3
+:15b30218
+set dev MT2910 Family [ConnectX-7 Flash Recovery]
+goto 15b3
+:15b30219
+set dev MT2910 Family [ConnectX-7 Secure Flash Recovery]
+goto 15b3
 :15b3021a
 set dev MT43162 Family [BlueField-3 Lx SoC Flash Recovery]
 goto 15b3
@@ -32708,12 +32717,6 @@ set dev Innova-2 Flex Burn image
 goto 15b3
 :15b30281
 set dev NPS-600 Flash Recovery
-goto 15b3
-:15b30538
-set dev MT2910 Family [ConnectX-7 Flash Recovery]
-goto 15b3
-:15b30539
-set dev MT2910 Family [ConnectX-7 Secure Flash Recovery]
 goto 15b3
 :15b31002
 set dev MT25400 Family [ConnectX-2 Virtual Function]
@@ -34650,6 +34653,18 @@ goto 1760
 :17600123
 set dev PCT-7424 PCI card with standard counters
 goto 1760
+:17600141
+set dev PCA7208AL - Analog Inputs/Outputs
+goto 1760
+:17600142
+set dev PCA7208AS - Analog inputs/Outputs
+goto 1760
+:17600143
+set dev PCA7408AL - Analog Inputs/Outputs
+goto 1760
+:17600144
+set dev PCA7408AS - Analog Inputs/Outputs
+goto 1760
 :17600214
 set dev PCT-7424C (F0) PC card with standard counters
 goto 1760
@@ -34662,8 +34677,29 @@ goto 1760
 :17600217
 set dev PCT-7424E (F1) PC card with standard counters
 goto 1760
+:17600240
+set dev PCA7428CL_F0 - analog Inputs
+goto 1760
+:17600241
+set dev PCA7428CL_F1 - analog Inputs
+goto 1760
+:17600242
+set dev PCA7428CS_F0 - Analog Inputs/Outputs non isolated
+goto 1760
+:17600243
+set dev PCA7428CS_F1 - Analog Inputs/Outputs non isolated
+goto 1760
+:17600244
+set dev PCA7428CE_F0 - Analog Inputs isolated
+goto 1760
+:17600245
+set dev PCA7428CE_F1 - Analog Inputs isolated
+goto 1760
 :17600303
 set dev PCD-7006C Digital Input & Output PCI Card
+goto 1760
+:17600800
+set dev PCD8006 - PCIe digital Inputs/Outputs
 goto 1760
 :1760ff00
 set dev CTU CAN FD PCIe Card
@@ -38424,11 +38460,23 @@ goto 1c2c
 :1c2ca00f
 set dev FB2CG Capture 2x40Gb [Savona]
 goto 1c2c
+:1c2ca010
+set dev FB2CGHH Capture 2x40Gb [Tivoli]
+goto 1c2c
 :1c2ca011
 set dev FB2CG Capture 2x25Gb [Savona]
 goto 1c2c
 :1c2ca012
 set dev FB2CG Capture 8x10Gb [Savona]
+goto 1c2c
+:1c2ca013
+set dev FB2CGHH Capture 2x25Gb [Tivoli]
+goto 1c2c
+:1c2ca014
+set dev FB2CGHH Capture 8x10Gb [Tivoli]
+goto 1c2c
+:1c2ca015
+set dev FB2CGHH Capture 2x100Gb [Tivoli]
 goto 1c2c
 :1c32
 set ven Highland Technology, Inc.
@@ -39431,6 +39479,9 @@ set dev Quantis-PCIe-240M
 goto 1e89
 :1e94
 set ven Calian SED
+exit
+:1e95
+set ven Solid State Storage Technology Corporation
 exit
 :1fc0
 set ven Ascom (Finland) Oy
@@ -42057,6 +42108,9 @@ goto 8086
 :80860d58
 set dev Ethernet Controller XXV710 Intel(R) FPGA Programmable Acceleration Card N3000 for Networking
 goto 8086
+:80860d9f
+set dev Ethernet Controller (2) I225-IT
+goto 8086
 :80860e00
 set dev Xeon E7 v2/Xeon E5 v2/Core i7 DMI2
 goto 8086
@@ -43742,6 +43796,12 @@ set dev JHL7540 Thunderbolt 3 Bridge [Titan Ridge DD 2018]
 goto 8086
 :808615f0
 set dev JHL7540 Thunderbolt 3 USB Controller [Titan Ridge DD 2018]
+goto 8086
+:808615f2
+set dev Intel(R) Ethernet Controller I225-LM
+goto 8086
+:808615f3
+set dev Intel(R) Ethernet Controller I225-V
 goto 8086
 :808615f4
 set dev Ethernet Connection (15) I219-LM
@@ -49398,6 +49458,9 @@ goto 8086
 :8086530d
 set dev 80310 (IOP) IO Processor
 goto 8086
+:80865502
+set dev Ethernet Controller (2) I225-LMvP
+goto 8086
 :80865845
 set dev QEMU NVM Express Controller
 goto 8086
@@ -53148,6 +53211,27 @@ goto 9902
 :99020003
 set dev SG1010 Starfabric Switch and PCI Bridge
 goto 9902
+:9d32
+set ven Beijing Starblaze Technology Co. Ltd.
+exit
+:9d320000
+set dev STAR1000 PCIe NVMe SSD Controller
+goto 9d32
+:9d321001
+set dev STAR1000P PCIe NVMe SSD Controller
+goto 9d32
+:9d321201
+set dev STAR1200C NVMe SSD
+goto 9d32
+:9d321202
+set dev STAR1200I NVMe SSD
+goto 9d32
+:9d321203
+set dev STAR1200L NVMe SSD
+goto 9d32
+:9d321204
+set dev STAR1200E NVMe SSD
+goto 9d32
 :a0a0
 set ven AOPEN Inc.
 exit
