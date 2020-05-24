@@ -41856,6 +41856,9 @@ goto 8086
 :80860a55
 set dev NVMe DC SSD [3DNAND, Beta Rock Controller]
 goto 8086
+:80860b60
+set dev NVMe DC SSD [3DNAND, Beta Rock Controller]
+goto 8086
 :80860be0
 set dev Atom Processor D2xxx/N2xxx Integrated Graphics Controller
 goto 8086
