@@ -3193,7 +3193,7 @@ goto 1002
 set dev Fiji [Radeon R9 FURY / NANO Series]
 goto 1002
 :10027310
-set dev Navi 10
+set dev Navi 10 [Radeon Pro W5700X]
 goto 1002
 :10027312
 set dev Navi 10 [Radeon Pro W5700]
@@ -16551,6 +16551,9 @@ goto 10de
 :10de11a7
 set dev GK104M [GeForce GTX 675MX]
 goto 10de
+:10de11a9
+set dev GK104M [GeForce GTX 870M]
+goto 10de
 :10de11af
 set dev GK104GLM [GRID IceCube]
 goto 10de
@@ -17502,6 +17505,9 @@ goto 10de
 :10de1f09
 set dev TU106 [GeForce GTX 1660 SUPER]
 goto 10de
+:10de1f0a
+set dev TU106 [GeForce GTX 1650]
+goto 10de
 :10de1f10
 set dev TU106M [GeForce RTX 2070 Mobile]
 goto 10de
@@ -17537,6 +17543,9 @@ set dev TU106BM [GeForce RTX 2060 Mobile]
 goto 10de
 :10de1f54
 set dev TU106BM [GeForce RTX 2070 Mobile]
+goto 10de
+:10de1f55
+set dev TU106BM [GeForce RTX 2060 Mobile]
 goto 10de
 :10de1f81
 set dev TU117
@@ -17574,6 +17583,15 @@ goto 10de
 :10de1fbf
 set dev TU117GL
 goto 10de
+:10de20b0
+set dev GA100 [GRID A100X]
+goto 10de
+:10de20be
+set dev GA100 [GRID A100A]
+goto 10de
+:10de20bf
+set dev GA100 [GRID A100B]
+goto 10de
 :10de2182
 set dev TU116 [GeForce GTX 1660 Ti]
 goto 10de
@@ -17585,6 +17603,9 @@ set dev TU116 [GeForce GTX 1660]
 goto 10de
 :10de2187
 set dev TU116 [GeForce GTX 1650 SUPER]
+goto 10de
+:10de2188
+set dev TU116 [GeForce GTX 1650]
 goto 10de
 :10de2191
 set dev TU116M [GeForce GTX 1660 Ti Mobile]
@@ -39249,6 +39270,9 @@ goto 1d95
 :1d950002
 set dev Colossus GC1 [S1]
 goto 1d95
+:1d97
+set ven Shenzhen Longsys Electronics Co., Ltd.
+exit
 :1d9b
 set ven Facebook, Inc.
 exit
@@ -47876,6 +47900,9 @@ set dev Gemini Lake P2SB
 goto 8086
 :80863197
 set dev Celeron/Pentium Silver Processor PCI-default ISA-bridge
+goto 8086
+:80863198
+set dev Celeron/Pentium Silver Processor High Definition Audio
 goto 8086
 :8086319a
 set dev Celeron/Pentium Silver Processor Trusted Execution Engine Interface
