@@ -174,6 +174,12 @@ goto 0675
 :0721
 set ven Sapphire, Inc.
 exit
+:0731
+set ven Jingjia Microelectronics Co Ltd
+exit
+:07317200
+set dev JM7200 Series GPU
+goto 0731
 :0777
 set ven Ubiquiti Networks, Inc.
 exit
@@ -3212,6 +3218,9 @@ set dev Navi 14 [Radeon Pro W5500M]
 goto 1002
 :1002734f
 set dev Navi 14 [Radeon Pro W5300M]
+goto 1002
+:10027360
+set dev Navi 12 [Radeon Pro 5600M]
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -16146,6 +16155,9 @@ goto 10de
 :10de0fd5
 set dev GK107M [GeForce GT 650M Mac Edition]
 goto 10de
+:10de0fd6
+set dev GK107M
+goto 10de
 :10de0fd8
 set dev GK107M [GeForce GT 640M Mac Edition]
 goto 10de
@@ -16181,6 +16193,9 @@ set dev GK107 [GRID K1 NVS USM]
 goto 10de
 :10de0fe7
 set dev GK107GL [GRID K100 vGPU]
+goto 10de
+:10de0fe8
+set dev GK107M
 goto 10de
 :10de0fe9
 set dev GK107M [GeForce GT 750M Mac Edition]
@@ -16737,8 +16752,14 @@ goto 10de
 :10de1289
 set dev GK208 [GeForce GT 710]
 goto 10de
+:10de128a
+set dev GK208B
+goto 10de
 :10de128b
 set dev GK208B [GeForce GT 710]
+goto 10de
+:10de128c
+set dev GK208B
 goto 10de
 :10de1290
 set dev GK208M [GeForce GT 730M]
@@ -17560,7 +17581,7 @@ goto 10de
 set dev TU117M [GeForce GTX 1650 Mobile]
 goto 10de
 :10de1f94
-set dev TU117M
+set dev TU117M [GeForce GTX 1650 Mobile]
 goto 10de
 :10de1f95
 set dev TU117M [GeForce GTX 1650 Ti Mobile]
@@ -17591,6 +17612,9 @@ set dev GA100 [GRID A100A]
 goto 10de
 :10de20bf
 set dev GA100 [GRID A100B]
+goto 10de
+:10de20f1
+set dev GA100 [GRID A100 PCIe 40GB]
 goto 10de
 :10de2182
 set dev TU116 [GeForce GTX 1660 Ti]
@@ -33945,6 +33969,9 @@ exit
 :16881170
 set dev WLAN 802.11b card
 goto 1688
+:168a
+set ven Utimaco IS GmbH
+exit
 :168c
 set ven Qualcomm Atheros
 exit
@@ -37817,6 +37844,9 @@ set dev Virtio GPU
 goto 1af4
 :1af41052
 set dev Virtio input
+goto 1af4
+:1af41053
+set dev Virtio socket
 goto 1af4
 :1af41110
 set dev Inter-VM shared memory
