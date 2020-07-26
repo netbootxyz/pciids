@@ -48,6 +48,9 @@ goto 0014
 :00147a0f
 set dev DMA (Direct Memory Access) Controller
 goto 0014
+:00147a10
+set dev Hyper Transport Bridge Controller
+goto 0014
 :00147a14
 set dev EHCI USB Controller
 goto 0014
@@ -2319,6 +2322,9 @@ goto 1002
 :10026649
 set dev Bonaire [FirePro W5100]
 goto 1002
+:1002664d
+set dev Bonaire [FirePro W5100 / Barco MXRT-5600]
+goto 1002
 :10026650
 set dev Bonaire
 goto 1002
@@ -3088,6 +3094,9 @@ goto 1002
 set dev RV535 [Radeon X1650 PRO]
 goto 1002
 :100271c2
+set dev RV530 [Radeon X1600 PRO]
+goto 1002
+:100271c3
 set dev RV530 [Radeon X1600 PRO]
 goto 1002
 :100271c4
@@ -15190,7 +15199,7 @@ goto 10de
 set dev G98 [GeForce 9600 GT / 9800 GT]
 goto 10de
 :10de06ee
-set dev G98 [GeForce 9600 GT / 9800 GT]
+set dev G98 [GeForce 9600 GT / 9800 GT / GT 240]
 goto 10de
 :10de06ef
 set dev G98M [GeForce G 103M]
@@ -17508,6 +17517,9 @@ goto 10de
 :10de1ed3
 set dev TU104BM [GeForce RTX 2080 SUPER Mobile / Max-Q]
 goto 10de
+:10de1ef5
+set dev TU104GLM [Quadro RTX 5000 Mobile Refresh]
+goto 10de
 :10de1f02
 set dev TU106 [GeForce RTX 2070]
 goto 10de
@@ -17589,6 +17601,9 @@ goto 10de
 :10de1f96
 set dev TU117M [GeForce GTX 1650 Mobile / Max-Q]
 goto 10de
+:10de1f97
+set dev TU117M [GeForce MX450]
+goto 10de
 :10de1f99
 set dev TU117M
 goto 10de
@@ -17604,8 +17619,14 @@ goto 10de
 :10de1fbf
 set dev TU117GL
 goto 10de
+:10de1fd9
+set dev TU117BM [GeForce GTX 1650 Mobile Refresh]
+goto 10de
+:10de1ff9
+set dev TU117GLM [Quadro T1000 Mobile]
+goto 10de
 :10de20b0
-set dev GA100 [GRID A100X]
+set dev GA100 [A100 SXM4 40GB]
 goto 10de
 :10de20be
 set dev GA100 [GRID A100A]
@@ -17614,7 +17635,7 @@ goto 10de
 set dev GA100 [GRID A100B]
 goto 10de
 :10de20f1
-set dev GA100 [GRID A100 PCIe 40GB]
+set dev GA100 [A100 PCIe 40GB]
 goto 10de
 :10de2182
 set dev TU116 [GeForce GTX 1660 Ti]
@@ -18278,6 +18299,9 @@ set dev RME Hammerfall DSP
 goto 10ee
 :10ee3fc6
 set dev RME Hammerfall DSP MADI
+goto 10ee
+:10ee5005
+set dev Alveo U250
 goto 10ee
 :10ee7038
 set dev FPGA Card XC7VX690T
@@ -32739,6 +32763,9 @@ goto 15b3
 :15b30252
 set dev Amos chiplet
 goto 15b3
+:15b30253
+set dev Amos GearBox Manager
+goto 15b3
 :15b30254
 set dev Spectrum-4, Flash recovery mode
 goto 15b3
@@ -33960,6 +33987,9 @@ exit
 :1682
 set ven XFX Pine Group Inc.
 exit
+:16825701
+set dev Radeon 5700 XT Thicc III Ultra
+goto 1682
 :1682c580
 set dev Radeon RX 580
 goto 1682
@@ -33972,6 +34002,15 @@ goto 1688
 :168a
 set ven Utimaco IS GmbH
 exit
+:168a2086
+set dev CryptoServer Se-Series Hardware Security Module
+goto 168a
+:168ac040
+set dev CryptoServer CSe-Series Hardware Security Module
+goto 168a
+:168ac051
+set dev CryptoServer Se-Series Gen2 Hardware Security Module
+goto 168a
 :168c
 set ven Qualcomm Atheros
 exit
@@ -38802,6 +38841,9 @@ goto 1d0f
 :1d0fefa0
 set dev Elastic Fabric Adapter (EFA)
 goto 1d0f
+:1d0fefa1
+set dev Elastic Fabric Adapter (EFA)
+goto 1d0f
 :1d17
 set ven Zhaoxin
 exit
@@ -39162,6 +39204,12 @@ goto 1d6c
 :1d6c1014
 set dev AR-MAN-U280 [Manitou Class Accelerator for U280]
 goto 1d6c
+:1d6c1015
+set dev AR-ARK-BBDEV-FX0 [Arkville 32B DPDK Baseband Device]
+goto 1d6c
+:1d6c1016
+set dev AR-ARK-BBDEV-FX1 [Arkville 64B DPDK Baseband Device]
+goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
 goto 1d6c
@@ -39169,8 +39217,11 @@ goto 1d6c
 set ven Xiaomi
 exit
 :1d78
-set ven DERA
+set ven DERA Storage
 exit
+:1d781512
+set dev TAI NVMe Controller
+goto 1d78
 :1d7c
 set ven Aerotech, Inc.
 exit
@@ -39327,6 +39378,9 @@ goto 1da3
 :1da31000
 set dev HL-2000 AI Training Accelerator [Gaudi]
 goto 1da3
+:1db2
+set ven ATP ELECTRONICS INC
+exit
 :1dbb
 set ven NGD Systems, Inc.
 exit
@@ -39393,6 +39447,9 @@ goto 1de5
 :1de52000
 set dev NoLoad Hardware Development Kit
 goto 1de5
+:1dee
+set ven Biwin Storage Technology Co., Ltd.
+exit
 :1def
 set ven Ampere Computing, LLC
 exit
@@ -39504,6 +39561,27 @@ exit
 :1e49
 set ven Yangtze Memory Technologies Co.,Ltd
 exit
+:1e4b
+set ven MAXIO Technology (Hangzhou) Ltd.
+exit
+:1e4b1001
+set dev NVMe SSD Controller MAP1001
+goto 1e4b
+:1e4b1002
+set dev NVMe SSD Controller MAP1002
+goto 1e4b
+:1e4b1003
+set dev NVMe SSD Controller MAP1003
+goto 1e4b
+:1e4b1201
+set dev NVMe SSD Controller MAP1201
+goto 1e4b
+:1e4b1202
+set dev NVMe SSD Controller MAP1202
+goto 1e4b
+:1e4b1601
+set dev NVMe SSD Controller MAP1601
+goto 1e4b
 :1e4c
 set ven GSI Technology
 exit
