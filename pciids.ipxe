@@ -1078,7 +1078,7 @@ goto 1002
 set dev Navi 10 XL Downstream Port of PCI Express Switch
 goto 1002
 :1002154c
-set dev Kryptos
+set dev Kryptos [Radeon RX 350]
 goto 1002
 :1002154e
 set dev Garfield
@@ -1903,7 +1903,7 @@ goto 1002
 set dev R423 [Radeon X800 GT/SE]
 goto 1002
 :1002554d
-set dev R430 [Radeon X800 XL]
+set dev R480 [Radeon X800 GTO2/XL]
 goto 1002
 :1002554e
 set dev R430 [All-In-Wonder X800 GT]
@@ -1924,7 +1924,7 @@ goto 1002
 set dev R423 [Radeon X800 GT] (Secondary)
 goto 1002
 :1002556d
-set dev R430 [Radeon X800 XL] (Secondary)
+set dev R480 [Radeon X800 GTO2/XL] (Secondary)
 goto 1002
 :1002556f
 set dev R430 [Radeon X800] (Secondary)
@@ -3609,6 +3609,9 @@ goto 1002
 :10029614
 set dev RS780D [Radeon HD 3300]
 goto 1002
+:10029615
+set dev RS780E [Radeon HD 3200]
+goto 1002
 :10029616
 set dev RS780L [Radeon 3000]
 goto 1002
@@ -3859,7 +3862,7 @@ goto 1002
 set dev Trinity [Radeon HD 7500G]
 goto 1002
 :1002991e
-set dev Bishop
+set dev Bishop [Xbox One S APU]
 goto 1002
 :10029920
 set dev Liverpool [Playstation 4 APU]
@@ -5276,6 +5279,12 @@ set dev Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 7
 goto 1022
 :10221468
 set dev Zeppelin Cryptographic Coprocessor NTBCCP
+goto 1022
+:10221470
+set dev Vega 10 PCIe Bridge
+goto 1022
+:10221471
+set dev Vega 10 PCIe Bridge
 goto 1022
 :10221480
 set dev Starship/Matisse Root Complex
@@ -17431,7 +17440,7 @@ goto 10de
 set dev TU102GL [Quadro RTX 6000/8000]
 goto 10de
 :10de1e36
-set dev TU102GL
+set dev TU102GL [Quadro RTX 6000]
 goto 10de
 :10de1e37
 set dev TU102GL [GRID RTX T10-4/T10-8/T10-16]
@@ -21870,6 +21879,9 @@ goto 118d
 :118d0344
 set dev Model 44 Road Runner Frame Grabber
 goto 118d
+:118db04e
+set dev Claxon CXP4 CoaXPress frame grabber
+goto 118d
 :118e
 set ven Hermstedt GmbH
 exit
@@ -24035,6 +24047,9 @@ set dev SM820 Lynx3D
 goto 126f
 :126f0910
 set dev SM910
+goto 126f
+:126f2262
+set dev SM2262/SM2262EN SSD Controller
 goto 126f
 :1270
 set ven Olympus Optical Co., Ltd.
@@ -26683,7 +26698,7 @@ exit
 set ven Yano Electric Co Ltd
 exit
 :13cc
-set ven Metheus Corporation
+set ven BARCO
 exit
 :13cd
 set ven Compatible Systems Corporation
@@ -30884,6 +30899,9 @@ set dev BCM57406 NetXtreme-E Ethernet Partition
 goto 14e4
 :14e416e9
 set dev BCM57407 NetXtreme-E 25Gb Ethernet Controller
+goto 14e4
+:14e416eb
+set dev BCM57412 NetXtreme-E RDMA Partition
 goto 14e4
 :14e416ec
 set dev BCM57414 NetXtreme-E Ethernet Partition
@@ -35292,11 +35310,29 @@ goto 17cb
 :17cb0002
 set dev AGN300 802.11 a/b/g True MIMO Wireless Card
 goto 17cb
+:17cb0105
+set dev MSM8998 PCIe Root Complex
+goto 17cb
+:17cb0108
+set dev SM8150/SA8195P PCIe Root Complex
+goto 17cb
+:17cb0300
+set dev MDM9x35 LTE Modem
+goto 17cb
+:17cb0301
+set dev MDM9640 PCIe Root Complex
+goto 17cb
+:17cb0302
+set dev MDM9x55 LTE Modem [Snapdragon X12]
+goto 17cb
 :17cb0400
 set dev Datacenter Technologies QDF2432 PCI Express Root Port
 goto 17cb
 :17cb0401
 set dev Datacenter Technologies QDF2400 PCI Express Root Port
+goto 17cb
+:17cb1000
+set dev QCS405 PCIe Root Complex
 goto 17cb
 :17cc
 set ven NetChip Technology, Inc
@@ -36873,6 +36909,12 @@ goto 1966
 :19661977
 set dev DVG128 family
 goto 1966
+:19661979
+set dev 3DVG/UHD3
+goto 1966
+:19661980
+set dev HDV2/UHD2
+goto 1966
 :1969
 set ven Qualcomm Atheros
 exit
@@ -37949,6 +37991,9 @@ set dev ASM1143 USB 3.1 Host Controller
 goto 1b21
 :1b212142
 set dev ASM2142 USB 3.1 Host Controller
+goto 1b21
+:1b213242
+set dev ASM3242 USB 3.2 Host Controller
 goto 1b21
 :1b26
 set ven Netcope Technologies, a.s.
@@ -39397,7 +39442,7 @@ exit
 set ven Liqid Inc.
 exit
 :1dd8
-set ven Pensando Systems Inc
+set ven Pensando Systems
 exit
 :1dd81000
 set dev DSC Capri Upstream Port
@@ -41689,7 +41734,7 @@ goto 8086
 set dev Comet Lake PCH Shared SRAM
 goto 8086
 :808606f0
-set dev Wi-Fi 6 AX201
+set dev Wireless-AC 9462/9560
 goto 8086
 :808606f9
 set dev Comet Lake PCH Thermal Controller
@@ -47985,6 +48030,9 @@ goto 8086
 :80862ffe
 set dev Xeon E7 v3/Xeon E5 v3/Core i7 System Address Decoder & Broadcast Registers
 goto 8086
+:80863140
+set dev Easel/Monette Hill Image Processor [Pixel Visual Core]
+goto 8086
 :80863165
 set dev Wireless 3165
 goto 8086
@@ -49225,7 +49273,7 @@ goto 8086
 set dev 8th Gen Core 4-core Desktop Processor Host Bridge/DRAM Registers [Coffee Lake S]
 goto 8086
 :80863e30
-set dev 8th Gen Core 8-core Desktop Processor Host Bridge/DRAM Registers [Coffee Lake S]
+set dev 8th/9th Gen Core 8-core Desktop Processor Host Bridge/DRAM Registers [Coffee Lake S]
 goto 8086
 :80863e33
 set dev 8th/9th Gen Core Processor Host Bridge/DRAM Registers [Coffee Lake]
