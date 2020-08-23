@@ -17431,10 +17431,10 @@ goto 10de
 set dev TU102 [GeForce RTX 2080 Ti Rev. A]
 goto 10de
 :10de1e2d
-set dev TU102B
+set dev TU102 [GeForce RTX 2080 Ti Engineering Sample]
 goto 10de
 :10de1e2e
-set dev TU102B
+set dev TU102 [GeForce RTX 2080 Ti 12GB Engineering Sample]
 goto 10de
 :10de1e30
 set dev TU102GL [Quadro RTX 6000/8000]
@@ -37782,6 +37782,9 @@ exit
 :1ae00042
 set dev Compute Engine Virtual Ethernet [gVNIC]
 goto 1ae0
+:1ae0abcd
+set dev Airbrush Combined Paintbox IPU/Oscar Edge TPU [Pixel Neural Core]
+goto 1ae0
 :1ae3
 set ven SANBlaze Technology, Inc.
 exit
@@ -39600,6 +39603,9 @@ goto 1e36
 :1e38
 set ven Blaize, Inc
 exit
+:1e380102
+set dev Xplorer X1600
+goto 1e38
 :1e3d
 set ven Burlywood, Inc
 exit
@@ -44131,7 +44137,7 @@ goto 8086
 set dev Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
 :80861901
-set dev Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16)
+set dev 6th-9th Gen Core Processor PCIe Controller (x16)
 goto 8086
 :80861902
 set dev HD Graphics 510
