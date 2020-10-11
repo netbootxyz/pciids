@@ -1135,13 +1135,13 @@ goto 1002
 set dev RV380 GL [FireMV 2400] (Secondary)
 goto 1002
 :10023e50
-set dev RV380 [Radeon X600]
+set dev RV380 [Radeon X550/X600]
 goto 1002
 :10023e54
 set dev RV380 GL [FireGL V3200]
 goto 1002
 :10023e70
-set dev RV380 [Radeon X600] (Secondary)
+set dev RV380 [Radeon X550/X600] (Secondary)
 goto 1002
 :10024136
 set dev RS100 [Mobility IGP 320M]
@@ -2886,6 +2886,9 @@ goto 1002
 :10026939
 set dev Tonga PRO [Radeon R9 285/380]
 goto 1002
+:1002693b
+set dev Tonga PRO GL [FirePro W7100 / Barco MXRT-7600]
+goto 1002
 :1002694c
 set dev Polaris 22 XT [Radeon RX Vega M GH]
 goto 1002
@@ -2950,7 +2953,7 @@ goto 1002
 set dev R520/M58 [Mobility Radeon X1800]
 goto 1002
 :10027104
-set dev R520 GL [FireGL V7200]
+set dev R520 GL [FireGL V7200 / Barco MXTR-5100]
 goto 1002
 :10027109
 set dev R520 [Radeon X1800 XL]
@@ -17592,6 +17595,9 @@ goto 10de
 :10de1f55
 set dev TU106BM [GeForce RTX 2060 Mobile]
 goto 10de
+:10de1f76
+set dev TU106GLM [Quadro RTX 3000 Mobile Refresh]
+goto 10de
 :10de1f81
 set dev TU117
 goto 10de
@@ -17616,8 +17622,14 @@ goto 10de
 :10de1f97
 set dev TU117M [GeForce MX450]
 goto 10de
+:10de1f98
+set dev TU117M [GeForce MX450]
+goto 10de
 :10de1f99
 set dev TU117M
+goto 10de
+:10de1f9c
+set dev TU117M [GeForce MX450]
 goto 10de
 :10de1fae
 set dev TU117GL
@@ -17689,13 +17701,13 @@ goto 10de
 set dev GA102 [GeForce RTX 3080 10GB / 20GB]
 goto 10de
 :10de222b
-set dev GA102 [GeForce RTX 3080 Ti Engineering Sample]
+set dev GA102 [GeForce RTX 3090 Engineering Sample]
 goto 10de
 :10de222f
-set dev GA102 [GeForce RTX 3080 11GB Engineering Sample]
+set dev GA102 [GeForce RTX 3080 11GB / 12GB Engineering Sample]
 goto 10de
 :10de2230
-set dev GA102GL [Quadro RTX 48GB]
+set dev GA102GL [RTX A6000]
 goto 10de
 :10de223f
 set dev GA102GL
@@ -18289,6 +18301,9 @@ goto 10ec
 set dev RTL8821CE 802.11ac PCIe Wireless Network Adapter
 goto 10ec
 :10ecc822
+set dev RTL8822CE 802.11ac PCIe Wireless Network Adapter
+goto 10ec
+:10ecc82f
 set dev RTL8822CE 802.11ac PCIe Wireless Network Adapter
 goto 10ec
 :10ecd723
@@ -32143,7 +32158,7 @@ exit
 set ven ACKSYS
 exit
 :1529
-set ven AMERICAN MICROSystems Inc
+set ven ON Semiconductor
 exit
 :152a
 set ven QUICKTURN DESIGN Systems
@@ -32343,8 +32358,23 @@ goto 1556
 :15561110
 set dev XpressRich Reference Design
 goto 1556
+:15561111
+set dev XpressRich-AXI Ref Design
+goto 1556
+:15561112
+set dev QuickPCIe
+goto 1556
 :15561113
 set dev XpressSwitch
+goto 1556
+:15561114
+set dev Inspector
+goto 1556
+:15561115
+set dev XpressLINK Ref Design
+goto 1556
+:15561116
+set dev XpressLINK-SOC Ref Design
 goto 1556
 :1556be00
 set dev PCI Express Bridge
@@ -35373,6 +35403,9 @@ goto 17a0
 :17a09750
 set dev GL9750 SD Host Controller
 goto 17a0
+:17a0e763
+set dev GL9763E eMMC Controller
+goto 17a0
 :17aa
 set ven Lenovo
 exit
@@ -37747,7 +37780,7 @@ goto 1a55
 set dev CinePlay
 goto 1a55
 :1a56
-set ven Bigfoot Networks, Inc.
+set ven Rivet Networks
 exit
 :1a57
 set ven Highly Reliable Systems
@@ -37914,17 +37947,83 @@ goto 1ae7
 :1ae8
 set ven Silicon Software GmbH
 exit
+:1ae80751
+set dev mE5 marathon VCL
+goto 1ae8
+:1ae80752
+set dev mE5 marathon AF2
+goto 1ae8
+:1ae80753
+set dev mE5 marathon ACX QP
+goto 1ae8
+:1ae80754
+set dev mE5 marathon ACL
+goto 1ae8
+:1ae80755
+set dev mE5 marathon ACX SP
+goto 1ae8
+:1ae80756
+set dev mE5 marathon ACX DP
+goto 1ae8
+:1ae80757
+set dev mE5 marathon VCX QP
+goto 1ae8
+:1ae80758
+set dev mE5 marathon VF2
+goto 1ae8
+:1ae80759
+set dev mE5 marathon VCLx
+goto 1ae8
 :1ae80a40
-set dev microEnable IV-BASE x1
+set dev microEnable IV AD1-CL
 goto 1ae8
 :1ae80a41
-set dev microEnable IV-FULL x1
+set dev microEnable IV VD1-CL
+goto 1ae8
+:1ae80a42
+set dev microEnable IV AD4-CL
 goto 1ae8
 :1ae80a44
-set dev microEnable IV-FULL x4
+set dev microEnable IV VD4-CL
+goto 1ae8
+:1ae80a45
+set dev microEnable IV AS1-CL
+goto 1ae8
+:1ae80a53
+set dev microEnable 5 AQ8-CXP6B
+goto 1ae8
+:1ae80a54
+set dev microEnable 5 VQ8-CXP6B
+goto 1ae8
+:1ae80a56
+set dev microEnable 5 VQ8-CXP6D
+goto 1ae8
+:1ae80a57
+set dev microEnable 5 AQ8-CXP6D
+goto 1ae8
+:1ae80a58
+set dev microEnable 5 VD8-CL
+goto 1ae8
+:1ae80a5a
+set dev microEnable 5 AD8-CL
+goto 1ae8
+:1ae80b52
+set dev mE5 Abacus 4G Base
+goto 1ae8
+:1ae80b53
+set dev mE5 Abacus 4G Base II
+goto 1ae8
+:1ae80b61
+set dev mE6 Abacus 4TG
+goto 1ae8
+:1ae80b63
+set dev CXP-12 Interface Card 1C
+goto 1ae8
+:1ae80e42
+set dev microEnable IV AQ4-GE
 goto 1ae8
 :1ae80e44
-set dev microEnable IV-GigE x4
+set dev microEnable IV VQ4-GE
 goto 1ae8
 :1ae9
 set ven Wilocity Ltd.
@@ -38340,6 +38439,9 @@ goto 1b4b
 :1b4b9485
 set dev 88SE9485 SAS/SATA 6Gb/s controller
 goto 1b4b
+:1b4c
+set ven GALAX
+exit
 :1b55
 set ven NetUP Inc.
 exit
@@ -38792,6 +38894,9 @@ set dev BC501 NVMe Solid State Drive 512GB
 goto 1c5c
 :1c5c1504
 set dev SC300 512GB M.2 2280 SATA Solid State Drive
+goto 1c5c
+:1c5c2839
+set dev PE8000 Series NVMe Solid State Drive
 goto 1c5c
 :1c5f
 set ven Beijing Memblaze Technology Co. Ltd.
@@ -39777,6 +39882,12 @@ goto 1e57
 :1e6b
 set ven Axiado Corp.
 exit
+:1e7c
+set ven Brainchip Inc
+exit
+:1e7cbca1
+set dev AKD1000 Neural Network Coprocessor [Akida]
+goto 1e7c
 :1e85
 set ven Heitec AG
 exit
@@ -39942,6 +40053,9 @@ goto 2348
 :2646
 set ven Kingston Technology Company, Inc.
 exit
+:26462263
+set dev A2000, M.2, 500GB
+goto 2646
 :270b
 set ven Xantel Corporation
 exit
@@ -40042,7 +40156,7 @@ goto 3442
 set dev AS-i 3.0 PCI Master
 goto 3442
 :3475
-set ven Arastra Inc.
+set ven Arista Networks, Inc.
 exit
 :3513
 set ven ARCOM Control Systems Ltd
@@ -41636,6 +41750,9 @@ set dev Comet Lake PCH-LP Shared SRAM
 goto 8086
 :808602f0
 set dev Comet Lake PCH-LP CNVi WiFi
+goto 8086
+:808602f5
+set dev Comet Lake PCH-LP SCS3
 goto 8086
 :808602f9
 set dev Comet Lake Thermal Subsytem
@@ -53332,7 +53449,7 @@ goto 9005
 set dev Series 8 12G SAS/PCIe 3
 goto 9005
 :9005028f
-set dev Smart Storage PQI 12G SAS/PCIe 3
+set dev Smart Storage PQI SAS
 goto 9005
 :90050410
 set dev AIC-9410W SAS (Razor HBA RAID)
