@@ -774,6 +774,9 @@ goto 1000
 :100000af
 set dev SAS3408 Fusion-MPT Tri-Mode I/O Controller Chip (IOC)
 goto 1000
+:100000b2
+set dev PEX880xx PCIe Gen 4 Switch SES management endpoint
+goto 1000
 :100000be
 set dev SAS3504 Fusion-MPT Tri-Mode RAID On Chip (ROC)
 goto 1000
@@ -3233,6 +3236,15 @@ set dev Navi 14 [Radeon Pro W5300M]
 goto 1002
 :10027360
 set dev Navi 12 [Radeon Pro 5600M]
+goto 1002
+:100273bf
+set dev Navi 21 [Radeon RX 6900 Series]
+goto 1002
+:100273c3
+set dev Navi 23
+goto 1002
+:100273df
+set dev Navi 22
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -16998,6 +17010,9 @@ goto 10de
 :10de1402
 set dev GM206 [GeForce GTX 950]
 goto 10de
+:10de1404
+set dev GM206 [GeForce GTX 960 FAKE]
+goto 10de
 :10de1406
 set dev GM206 [GeForce GTX 960 OEM]
 goto 10de
@@ -17260,6 +17275,9 @@ goto 10de
 set dev GP106GL [Quadro P2200]
 goto 10de
 :10de1c35
+set dev GP106
+goto 10de
+:10de1c36
 set dev GP106
 goto 10de
 :10de1c60
@@ -17652,6 +17670,9 @@ goto 10de
 :10de20b0
 set dev GA100 [A100 SXM4 40GB]
 goto 10de
+:10de20b1
+set dev GA100 [A100 PCIe 40GB]
+goto 10de
 :10de20be
 set dev GA100 [GRID A100A]
 goto 10de
@@ -17716,16 +17737,22 @@ goto 10de
 set dev GA104 [GeForce RTX 3070 Ti]
 goto 10de
 :10de2484
-set dev GA104 [GeForce RTX 3070]
+set dev GA104 [GeForce RTX 3070 8GB / 16GB]
 goto 10de
 :10de2486
 set dev GA104 [GeForce RTX 3060 Ti]
 goto 10de
 :10de249c
-set dev GA104M [GeForce RTX 3070 Mobile]
+set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
 goto 10de
 :10de249d
 set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
+goto 10de
+:10de24ac
+set dev GA104 [GeForce RTX 30x0 Engineering Sample]
+goto 10de
+:10de24ad
+set dev GA104 [GeForce RTX 3060 Engineering Sample]
 goto 10de
 :10de24af
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
@@ -17733,8 +17760,14 @@ goto 10de
 :10de24bf
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
 goto 10de
+:10de24dc
+set dev GA104 [GeForce RTX 3070 16GB Engineering Sample]
+goto 10de
 :10de252f
 set dev GA106 [GeForce RTX 3060 Engineering Sample]
+goto 10de
+:10de25af
+set dev GA107 [GeForce RTX 3050 Engineering Sample]
 goto 10de
 :10df
 set ven Emulex Corporation
@@ -23918,6 +23951,9 @@ set ven Asix Electronics Corporation
 exit
 :125b1400
 set dev AX88141 Fast Ethernet Controller
+goto 125b
+:125b9100
+set dev AX99100 PCIe to Multi I/O Controller
 goto 125b
 :125c
 set ven Aurora Technologies, Inc.
@@ -33286,10 +33322,16 @@ goto 15b7
 set dev WD Black NVMe SSD
 goto 15b7
 :15b75002
-set dev WD Black 2018/PC SN720 NVMe SSD
+set dev WD Black 2018 / PC SN720 NVMe SSD
 goto 15b7
 :15b75003
-set dev WD Black 2018/PC SN520 NVMe SSD
+set dev WD Black 2018 / PC SN520 NVMe SSD
+goto 15b7
+:15b75006
+set dev WD Black 2019/PC SN750 NVMe SSD
+goto 15b7
+:15b75009
+set dev WD Blue SN550 NVMe SSD
 goto 15b7
 :15b8
 set ven ADDI-DATA GmbH
@@ -37152,6 +37194,12 @@ goto 1974
 :19740011
 set dev FlexCard PMC-II Ethernet
 goto 1974
+:19740018
+set dev FlexCard PXIe3
+goto 1974
+:19740019
+set dev FlexCard PCIe3
+goto 1974
 :1976
 set ven TRENDnet
 exit
@@ -38895,6 +38943,9 @@ goto 1c5c
 :1c5c1504
 set dev SC300 512GB M.2 2280 SATA Solid State Drive
 goto 1c5c
+:1c5c243b
+set dev PE6110 NVMe Solid State Drive
+goto 1c5c
 :1c5c2839
 set dev PE8000 Series NVMe Solid State Drive
 goto 1c5c
@@ -39871,7 +39922,7 @@ goto 1e4b
 set ven GSI Technology
 exit
 :1e4c0010
-set dev Gemini [ Lida ]
+set dev APU [Leda-G]
 goto 1e4c
 :1e57
 set ven Beijing Panyi Technology Co., Ltd
@@ -39881,6 +39932,9 @@ set dev The device has already been deleted.
 goto 1e57
 :1e6b
 set ven Axiado Corp.
+exit
+:1e7b
+set ven Dataland
 exit
 :1e7c
 set ven Brainchip Inc
@@ -39905,6 +39959,9 @@ set ven Calian SED
 exit
 :1e95
 set ven Solid State Storage Technology Corporation
+exit
+:1eae
+set ven XFX Limited
 exit
 :1eb1
 set ven VeriSilicon Inc
@@ -44393,6 +44450,33 @@ set dev Broadwell-U Integrated Graphics
 goto 8086
 :80861889
 set dev Ethernet Adaptive Virtual Function
+goto 8086
+:80861890
+set dev Ethernet Connection E822-C for backplane
+goto 8086
+:80861891
+set dev Ethernet Connection E822-C for QSFP
+goto 8086
+:80861892
+set dev Ethernet Connection E822-C for SFP
+goto 8086
+:80861893
+set dev Ethernet Connection E822-C/X557-AT 10GBASE-T
+goto 8086
+:80861894
+set dev Ethernet Connection E822-C 1GbE
+goto 8086
+:80861897
+set dev Ethernet Connection E822-L for backplane
+goto 8086
+:80861898
+set dev Ethernet Connection E822-L for SFP
+goto 8086
+:80861899
+set dev Ethernet Connection E822-L/X557-AT 10GBASE-T
+goto 8086
+:8086189a
+set dev Ethernet Connection E822-L 1GbE
 goto 8086
 :808618a0
 set dev C4xxx Series QAT
@@ -49557,6 +49641,9 @@ goto 8086
 :80863e34
 set dev Coffee Lake HOST and DRAM Controller
 goto 8086
+:80863e35
+set dev Coffee Lake Host Bridge/DRAM Registers
+goto 8086
 :80863e81
 set dev 8th Gen Core Processor PCIe Controller (x16)
 goto 8086
@@ -53709,6 +53796,9 @@ goto 9d32
 :9d321204
 set dev STAR1200E NVMe SSD
 goto 9d32
+:a000
+set ven Asix Electronics Corporation (Wrong ID)
+exit
 :a0a0
 set ven AOPEN Inc.
 exit
