@@ -17664,6 +17664,9 @@ goto 10de
 :10de1fb9
 set dev TU117GLM [Quadro T1000 Mobile]
 goto 10de
+:10de1fbb
+set dev TU117GLM [Quadro T500 Mobile]
+goto 10de
 :10de1fbf
 set dev TU117GL
 goto 10de
@@ -17724,6 +17727,9 @@ goto 10de
 :10de2204
 set dev GA102 [GeForce RTX 3090]
 goto 10de
+:10de2205
+set dev GA102 [GeForce RTX 3080 Ti]
+goto 10de
 :10de2206
 set dev GA102 [GeForce RTX 3080]
 goto 10de
@@ -17736,8 +17742,14 @@ goto 10de
 :10de2230
 set dev GA102GL [RTX A6000]
 goto 10de
+:10de2235
+set dev GA102GL [RTX A40]
+goto 10de
 :10de223f
 set dev GA102GL
+goto 10de
+:10de2321
+set dev GA103
 goto 10de
 :10de2482
 set dev GA104 [GeForce RTX 3070 Ti]
@@ -17772,8 +17784,20 @@ goto 10de
 :10de24dd
 set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
 goto 10de
+:10de2501
+set dev GA106 [GeForce RTX 3060 6GB / 12GB]
+goto 10de
+:10de2505
+set dev GA106
+goto 10de
+:10de2520
+set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
+goto 10de
 :10de252f
 set dev GA106 [GeForce RTX 3060 Engineering Sample]
+goto 10de
+:10de2583
+set dev GA107 [GeForce RTX 3050]
 goto 10de
 :10de25af
 set dev GA107 [GeForce RTX 3050 Engineering Sample]
@@ -21621,6 +21645,9 @@ goto 1179
 :11790103
 set dev EX-IDE Type-B
 goto 1179
+:1179010e
+set dev PXP04 NVMe SSD
+goto 1179
 :1179010f
 set dev NVMe Controller
 goto 1179
@@ -21632,6 +21659,9 @@ set dev BG3 NVMe SSD Controller
 goto 1179
 :11790115
 set dev XG4 NVMe SSD Controller
+goto 1179
+:1179011a
+set dev XG6 NVMe SSD Controller
 goto 1179
 :11790404
 set dev DVD Decoder card
@@ -24165,6 +24195,9 @@ goto 126f
 :126f2262
 set dev SM2262/SM2262EN SSD Controller
 goto 126f
+:126f2263
+set dev SM2263EN/SM2263XT SSD Controller
+goto 126f
 :1270
 set ven Olympus Optical Co., Ltd.
 exit
@@ -24974,6 +25007,9 @@ set dev PI7C8152A/PI7C8152B/PI7C8152BI PCI-to-PCI Bridge
 goto 12d8
 :12d88154
 set dev PI7C8154A/PI7C8154B/PI7C8154BI PCI-to-PCI Bridge
+goto 12d8
+:12d88619
+set dev PI7C9X2G1616PR PCIe2 16-Port/16-Lane Packet Switch
 goto 12d8
 :12d8e110
 set dev PI7C9X110 PCI Express to PCI bridge
@@ -29791,7 +29827,7 @@ goto 144d
 set dev NVMe SSD Controller SM951/PM951
 goto 144d
 :144da804
-set dev NVMe SSD Controller SM961/PM961
+set dev NVMe SSD Controller SM961/PM961/SM963
 goto 144d
 :144da808
 set dev NVMe SSD Controller SM981/PM981/PM983
@@ -33350,6 +33386,9 @@ set dev WD Black 2019/PC SN750 NVMe SSD
 goto 15b7
 :15b75009
 set dev WD Blue SN550 NVMe SSD
+goto 15b7
+:15b7500b
+set dev PC SN530 NVMe SSD
 goto 15b7
 :15b7500d
 set dev WD Ultrastar DC SN340 NVMe SSD
@@ -37785,6 +37824,9 @@ goto 1a4a
 :1a4a1010
 set dev AMC EVR - Stockholm Timing Board
 goto 1a4a
+:1a4a1020
+set dev PGPCard - Gen3 Cameralink Interface
+goto 1a4a
 :1a4a1030
 set dev PGPCard - Gen3 GIGe Interface
 goto 1a4a
@@ -39021,6 +39063,9 @@ goto 1c5c
 :1c5c1504
 set dev SC300 512GB M.2 2280 SATA Solid State Drive
 goto 1c5c
+:1c5c1527
+set dev PC401 NVMe Solid State Drive 256GB
+goto 1c5c
 :1c5c243b
 set dev PE6110 NVMe Solid State Drive
 goto 1c5c
@@ -39832,7 +39877,7 @@ goto 1dd8
 set ven Groq
 exit
 :1de00000
-set dev Q100 Tensor Streaming Processor
+set dev TSP100 Tensor Streaming Processor
 goto 1de0
 :1de1
 set ven Tekram Technology Co.,Ltd.
@@ -40068,6 +40113,12 @@ exit
 :1eab
 set ven Hefei DATANG Storage Technology Co.,LTD.
 exit
+:1eab300a
+set dev NVMe SSD Controller 300A
+goto 1eab
+:1eab300b
+set dev NVMe SSD Controller 300B
+goto 1eab
 :1eae
 set ven XFX Limited
 exit
@@ -40220,6 +40271,9 @@ set ven Kingston Technology Company, Inc.
 exit
 :26462263
 set dev A2000 NVMe SSD
+goto 2646
+:2646500d
+set dev OM3PDP3 NVMe SSD
 goto 2646
 :270b
 set ven Xantel Corporation
@@ -43796,6 +43850,15 @@ set dev 82815 815 Chipset AGP Bridge
 goto 8086
 :80861132
 set dev 82815 Chipset Graphics Controller (CGC)
+goto 8086
+:80861136
+set dev Thunderbolt 4 Bridge [Maple Ridge 4C 2020]
+goto 8086
+:80861137
+set dev Thunderbolt 4 NHI [Maple Ridge 4C 2020]
+goto 8086
+:80861138
+set dev Thunderbolt 4 USB Controller [Maple Ridge 4C 2020]
 goto 8086
 :80861161
 set dev 82806AA PCI64 Hub Advanced Programmable Interrupt Controller
@@ -48555,6 +48618,9 @@ goto 8086
 :808631a2
 set dev Celeron/Pentium Silver Processor Integrated Sensor Solution
 goto 8086
+:808631a8
+set dev Celeron/Pentium Silver Processor USB 3.0 xHCI Controller
+goto 8086
 :808631ac
 set dev Celeron/Pentium Silver Processor Serial IO I2C Host Controller
 goto 8086
@@ -48605,6 +48671,12 @@ set dev Gemini Lake PCI Express Root Port
 goto 8086
 :808631dc
 set dev AC 1550i Wireless
+goto 8086
+:808631e3
+set dev Celeron/Pentium Silver Processor SATA Controller
+goto 8086
+:808631e8
+set dev Celeron/Pentium Silver Processor LPC Controller
 goto 8086
 :808631ee
 set dev Celeron/Pentium Silver Processor Serial IO UART Host Controller
@@ -51775,49 +51847,49 @@ goto 8086
 set dev Volume Management Device NVMe RAID Controller
 goto 8086
 :80869a13
-set dev Tiger Lake-LP Thunderbolt USB Controller
+set dev Tiger Lake-LP Thunderbolt 4 USB Controller
 goto 8086
 :80869a14
 set dev 11th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
 :80869a17
-set dev Tiger Lake-H Thunderbolt USB Controller
+set dev Tiger Lake-H Thunderbolt 4 USB Controller
 goto 8086
 :80869a1b
-set dev Tiger Lake-LP Thunderbolt NHI #0
+set dev Tiger Lake-LP Thunderbolt 4 NHI #0
 goto 8086
 :80869a1d
-set dev Tiger Lake-LP Thunderbolt NHI #1
+set dev Tiger Lake-LP Thunderbolt 4 NHI #1
 goto 8086
 :80869a1f
-set dev Tiger Lake-H Thunderbolt NHI #0
+set dev Tiger Lake-H Thunderbolt 4 NHI #0
 goto 8086
 :80869a21
-set dev Tiger Lake-H Thunderbolt NHI #1
+set dev Tiger Lake-H Thunderbolt 4 NHI #1
 goto 8086
 :80869a23
-set dev Tiger Lake-LP Thunderbolt PCI Express Root Port #0
+set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #0
 goto 8086
 :80869a25
-set dev Tiger Lake-LP Thunderbolt PCI Express Root Port #1
+set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #1
 goto 8086
 :80869a27
-set dev Tiger Lake-LP Thunderbolt PCI Express Root Port #2
+set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #2
 goto 8086
 :80869a29
-set dev Tiger Lake-LP Thunderbolt PCI Express Root Port #3
+set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #3
 goto 8086
 :80869a2b
-set dev Tiger Lake-H Thunderbolt PCI Express Root Port #0
+set dev Tiger Lake-H Thunderbolt 4 PCI Express Root Port #0
 goto 8086
 :80869a2d
-set dev Tiger Lake-H Thunderbolt PCI Express Root Port #1
+set dev Tiger Lake-H Thunderbolt 4 PCI Express Root Port #1
 goto 8086
 :80869a2f
-set dev Tiger Lake-H Thunderbolt PCI Express Root Port #2
+set dev Tiger Lake-H Thunderbolt 4 PCI Express Root Port #2
 goto 8086
 :80869a31
-set dev Tiger Lake-H Thunderbolt PCI Express Root Port #3
+set dev Tiger Lake-H Thunderbolt 4 PCI Express Root Port #3
 goto 8086
 :80869a33
 set dev Tiger Lake Trace Hub
@@ -53279,6 +53351,9 @@ set dev WX1860AL4 Gigabit Ethernet Controller
 goto 8088
 :80880108
 set dev WX1860AL4S Gigabit Ethernet Controller
+goto 8088
+:8088010b
+set dev WX1860AL1 Gigabit Ethernet Controller
 goto 8088
 :80881001
 set dev Ethernet Controller RP1000 for 10GbE SFP+
