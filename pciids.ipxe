@@ -17154,6 +17154,9 @@ goto 10de
 :10de1b38
 set dev GP102GL [Tesla P40]
 goto 10de
+:10de1b39
+set dev GP102GL [Tesla P10]
+goto 10de
 :10de1b70
 set dev GP102GL
 goto 10de
@@ -17748,6 +17751,9 @@ goto 10de
 :10de223f
 set dev GA102GL
 goto 10de
+:10de228b
+set dev GA104 High Definition Audio Controller
+goto 10de
 :10de2321
 set dev GA103
 goto 10de
@@ -17761,7 +17767,7 @@ goto 10de
 set dev GA104 [GeForce RTX 3060 Ti]
 goto 10de
 :10de249c
-set dev GA104M [GeForce RTX 3070 Mobile / Max-Q 8GB/16GB]
+set dev GA104M [GeForce RTX 3080 Mobile / Max-Q 8GB/16GB]
 goto 10de
 :10de249d
 set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
@@ -17779,13 +17785,16 @@ goto 10de
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
 goto 10de
 :10de24dc
-set dev GA104M [GeForce RTX 3070 Mobile 16GB]
+set dev GA104M [GeForce RTX 3080 Mobile / Max-Q 8GB/16GB]
 goto 10de
 :10de24dd
 set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
 goto 10de
 :10de2501
-set dev GA106 [GeForce RTX 3060 6GB / 12GB]
+set dev GA106 [GeForce RTX 3060]
+goto 10de
+:10de2503
+set dev GA106 [GeForce RTX 3050 Ti]
 goto 10de
 :10de2505
 set dev GA106
@@ -17795,6 +17804,9 @@ set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
 goto 10de
 :10de252f
 set dev GA106 [GeForce RTX 3060 Engineering Sample]
+goto 10de
+:10de2560
+set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
 goto 10de
 :10de2583
 set dev GA107 [GeForce RTX 3050]
@@ -17915,6 +17927,9 @@ set dev LPSe12002 EmulexSecure Fibre Channel Adapter
 goto 10df
 :10dff400
 set dev LPe35000/LPe36000 Series 32Gb/64Gb Fibre Channel Adapter
+goto 10df
+:10dff500
+set dev LPe37000/LPe38000 Series 32Gb/64Gb Fibre Channel Adapter
 goto 10df
 :10dff700
 set dev LP7000 Fibre Channel Host Adapter
@@ -18219,6 +18234,9 @@ exit
 :10ec0139
 set dev RTL-8139/8139C/8139C+ Ethernet Controller
 goto 10ec
+:10ec3000
+set dev Killer E3000 2.5GbE Controller
+goto 10ec
 :10ec5208
 set dev RTS5208 PCI Express Card Reader
 goto 10ec
@@ -18284,6 +18302,9 @@ set dev RT8139 (B/C) Cardbus Fast Ethernet Adapter
 goto 10ec
 :10ec8139
 set dev RTL-8100/8101L/8139 PCI Fast Ethernet Adapter
+goto 10ec
+:10ec8161
+set dev RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
 goto 10ec
 :10ec8167
 set dev RTL-8110SC/8169SC Gigabit Ethernet
@@ -25855,7 +25876,7 @@ exit
 set ven Sonix Inc
 exit
 :1353
-set ven Vierling Communication SAS
+set ven dbeeSet Technology
 exit
 :13530002
 set dev Proserver
@@ -25868,6 +25889,9 @@ set dev PCI-S0
 goto 1353
 :13530005
 set dev PCI-FUT-S0
+goto 1353
+:13530006
+set dev OTDU-1U (FPGA Zynq-7000)
 goto 1353
 :1354
 set ven Dwave System Inc
@@ -33373,7 +33397,7 @@ goto 15b7
 set dev WD Black 2018 / PC SN720 NVMe SSD
 goto 15b7
 :15b75003
-set dev WD Black 2018 / PC SN520 NVMe SSD
+set dev WD Blue SN500 / PC SN520 NVMe SSD
 goto 15b7
 :15b75004
 set dev PC SN520 NVMe SSD
@@ -33382,7 +33406,7 @@ goto 15b7
 set dev PC SN520 NVMe SSD
 goto 15b7
 :15b75006
-set dev WD Black 2019/PC SN750 NVMe SSD
+set dev WD Black 2019 / PC SN750 NVMe SSD
 goto 15b7
 :15b75009
 set dev WD Blue SN550 NVMe SSD
@@ -38430,6 +38454,9 @@ goto 1b36
 :1b36000d
 set dev QEMU XHCI Host Controller
 goto 1b36
+:1b360010
+set dev QEMU NVM Express Controller
+goto 1b36
 :1b360100
 set dev QXL paravirtual graphic card
 goto 1b36
@@ -40080,6 +40107,12 @@ exit
 :1e570100
 set dev The device has already been deleted.
 goto 1e57
+:1e60
+set ven Hailo Technologies Ltd.
+exit
+:1e602864
+set dev Hailo-8 AI Processor
+goto 1e60
 :1e6b
 set ven Axiado Corp.
 exit
@@ -40269,8 +40302,14 @@ goto 2348
 :2646
 set ven Kingston Technology Company, Inc.
 exit
+:26460010
+set dev HyperX Predator PCIe AHCI SSD
+goto 2646
 :26462263
 set dev A2000 NVMe SSD
+goto 2646
+:26465008
+set dev U-SNS8154P3 NVMe SSD
 goto 2646
 :2646500d
 set dev OM3PDP3 NVMe SSD
@@ -48874,13 +48913,13 @@ goto 8086
 set dev Ice Lake-LP Serial IO I2c Controller #5
 goto 8086
 :808634c8
-set dev Smart Sound Technology Audio Controller
+set dev Ice Lake-LP Smart Sound Technology Audio Controller
 goto 8086
 :808634d3
 set dev Ice Lake-LP SATA Controller [AHCI mode]
 goto 8086
 :808634e0
-set dev Management Engine Interface
+set dev Ice Lake-LP Management Engine
 goto 8086
 :808634e8
 set dev Ice Lake-LP Serial IO I2C Controller #0
@@ -51903,6 +51942,9 @@ goto 8086
 :80869b44
 set dev 10th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
+:80869b53
+set dev Comet Lake-S 6c Host Bridge/DRAM Controller
+goto 8086
 :80869b54
 set dev 10th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
@@ -53241,8 +53283,14 @@ goto 8086
 :8086a382
 set dev 400 Series Chipset Family SATA AHCI Controller
 goto 8086
+:8086a3a1
+set dev Memory controller
+goto 8086
 :8086a3a3
 set dev Comet Lake PCH-V SMBus Host Controller
+goto 8086
+:8086a3af
+set dev Comet Lake PCH-V USB Controller
 goto 8086
 :8086a3b1
 set dev Comet Lake PCH-V Thermal Subsystem
@@ -54604,7 +54652,7 @@ exit
 set dev W89C940
 goto e000
 :e159
-set ven Tiger Jet Network Inc.
+set ven Tiger Jet Network Inc. / ICP DAS
 exit
 :e1590001
 set dev Tiger3XX Modem/ISDN interface
@@ -54678,6 +54726,9 @@ goto ea01
 :ea010800
 set dev PCI-800 Digital I/O Card
 goto ea01
+:ea50
+set ven Emerson Automation Solutions
+exit
 :ea60
 set ven RME
 exit
