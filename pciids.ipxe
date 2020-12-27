@@ -969,6 +969,9 @@ goto 1000
 :10006001
 set dev DX1 Multiformat Broadcast HD/SD Encoder/Decoder
 goto 1000
+:1000c012
+set dev PEX880xx PCIe Gen 4 Switch
+goto 1000
 :1001
 set ven Kolter Electronic
 exit
@@ -15555,6 +15558,9 @@ goto 10de
 :10de0a23
 set dev GT216 [GeForce 210]
 goto 10de
+:10de0a24
+set dev GT216 [GeForce 405]
+goto 10de
 :10de0a26
 set dev GT216 [GeForce 405]
 goto 10de
@@ -17791,10 +17797,10 @@ goto 10de
 set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
 goto 10de
 :10de2501
-set dev GA106 [GeForce RTX 3060]
+set dev GA106 [GeForce RTX 3060 12GB]
 goto 10de
 :10de2503
-set dev GA106 [GeForce RTX 3050 Ti]
+set dev GA106 [GeForce RTX 3060 6GB]
 goto 10de
 :10de2505
 set dev GA106
@@ -18314,6 +18320,18 @@ set dev RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
 goto 10ec
 :10ec8169
 set dev RTL8169 PCI Gigabit Ethernet Controller
+goto 10ec
+:10ec816a
+set dev RTL8111xP UART #1
+goto 10ec
+:10ec816b
+set dev RTL8111xP UART #2
+goto 10ec
+:10ec816c
+set dev RTL8111xP IPMI interface
+goto 10ec
+:10ec816d
+set dev RTL8111xP EHCI host controller
 goto 10ec
 :10ec8171
 set dev RTL8191SEvA Wireless LAN Controller
@@ -21636,6 +21654,9 @@ goto 1172
 :11720530
 set dev Stratix IV
 goto 1172
+:1172646c
+set dev KT-500/KT-521 board
+goto 1172
 :1173
 set ven Adobe Systems, Inc
 exit
@@ -24412,13 +24433,13 @@ exit
 set dev DM562P V90 Modem
 goto 1282
 :12829009
-set dev Ethernet 100/10 MBit
+set dev DM9009 Ethernet Controller
 goto 1282
 :12829100
 set dev 21x4x DEC-Tulip compatible 10/100 Ethernet
 goto 1282
 :12829102
-set dev 21x4x DEC-Tulip compatible 10/100 Ethernet
+set dev DM9102 Fast Ethernet Controller
 goto 1282
 :12829132
 set dev Ethernet 100/10 MBit
@@ -25892,6 +25913,9 @@ set dev PCI-FUT-S0
 goto 1353
 :13530006
 set dev OTDU-1U (FPGA Zynq-7000)
+goto 1353
+:13530007
+set dev OTDU-EX
 goto 1353
 :1354
 set ven Dwave System Inc
@@ -33406,7 +33430,7 @@ goto 15b7
 set dev PC SN520 NVMe SSD
 goto 15b7
 :15b75006
-set dev WD Black 2019 / PC SN750 NVMe SSD
+set dev WD Black SN750 / PC SN730 NVMe SSD
 goto 15b7
 :15b75009
 set dev WD Blue SN550 NVMe SSD
@@ -37581,8 +37605,14 @@ goto 19e5
 :19e51822
 set dev Hi1822 Family (4*25GE)
 goto 19e5
+:19e53714
+set dev ES3000 V5 NVMe PCIe SSD
+goto 19e5
 :19e5371e
 set dev Hi1822 Family Virtual Bridge
+goto 19e5
+:19e53754
+set dev ES3000 V6 NVMe PCIe SSD
 goto 19e5
 :19e5375e
 set dev Hi1822 Family Virtual Function
@@ -38723,6 +38753,9 @@ set dev Ultrastar DC SN640 NVMe SSD
 goto 1b96
 :1b962500
 set dev Ultrastar DC SN840 NVMe SSD
+goto 1b96
+:1b962600
+set dev Ultrastar DC ZN540 ZNS NVMe SSD
 goto 1b96
 :1b963714
 set dev PC SN730 NVMe SSD
@@ -48903,6 +48936,9 @@ goto 8086
 :808634b0
 set dev Ice Lake-LP PCI Express Root Port #9
 goto 8086
+:808634b7
+set dev Ice Lake-LP PCI Express Root Port #16
+goto 8086
 :808634bc
 set dev Ice Lake-LP PCI Express Root Port #5
 goto 8086
@@ -48936,11 +48972,17 @@ goto 8086
 :808634ed
 set dev Ice Lake-LP USB 3.1 xHCI Host Controller
 goto 8086
+:808634ef
+set dev Ice Lake-LP DRAM Controller
+goto 8086
 :808634f0
 set dev Killer Wi-Fi 6 AX1650i 160MHz Wireless Network Adapter (201NGW)
 goto 8086
 :808634f8
 set dev Ice Lake-LP SD Controller
+goto 8086
+:808634fc
+set dev Ice Lake-LP Integrated Sensor Solution
 goto 8086
 :80863500
 set dev 6311ESB/6321ESB PCI Express Upstream Port
@@ -49995,6 +50037,9 @@ goto 8086
 :80864036
 set dev 5400 Chipset FBD Registers
 goto 8086
+:80864041
+set dev NVMe Datacenter SSD [Optane]
+goto 8086
 :80864100
 set dev Moorestown Graphics and Video
 goto 8086
@@ -50033,6 +50078,9 @@ set dev Atom Processor E6xx PCI Host Bridge #3
 goto 8086
 :80864117
 set dev Atom Processor E6xx PCI Host Bridge #4
+goto 8086
+:80864140
+set dev NVMe Datacenter SSD [Optane]
 goto 8086
 :80864220
 set dev PRO/Wireless 2200BG [Calexico2] Network Connection
@@ -51222,6 +51270,9 @@ goto 8086
 :80868500
 set dev IXP4XX Network Processor (IXP420/421/422/425/IXC1100)
 goto 8086
+:80868603
+set dev Ice Lake-LP Dynamic Tuning Processor Participant
+goto 8086
 :808687c0
 set dev UHD Graphics 617
 goto 8086
@@ -51306,11 +51357,17 @@ goto 8086
 :80868a0d
 set dev Ice Lake Thunderbolt 3 NHI #1
 goto 8086
+:80868a12
+set dev Ice Lake-LP Processor Host Bridge/DRAM Registers
+goto 8086
 :80868a13
 set dev Ice Lake Thunderbolt 3 USB Controller
 goto 8086
 :80868a17
 set dev Ice Lake Thunderbolt 3 NHI #0
+goto 8086
+:80868a19
+set dev Image Signal Processor
 goto 8086
 :80868a1d
 set dev Ice Lake Thunderbolt 3 PCI Express Root Port #0
