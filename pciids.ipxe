@@ -17136,6 +17136,9 @@ goto 10de
 :10de1aed
 set dev TU116 USB Type-C UCSI Controller
 goto 10de
+:10de1aef
+set dev GA102 High Definition Audio Controller
+goto 10de
 :10de1b00
 set dev GP102 [TITAN X]
 goto 10de
@@ -18331,7 +18334,7 @@ goto 10ec
 set dev RTL8111xP IPMI interface
 goto 10ec
 :10ec816d
-set dev RTL8111xP EHCI host controller
+set dev RTL811x EHCI host controller
 goto 10ec
 :10ec8171
 set dev RTL8191SEvA Wireless LAN Controller
@@ -31182,6 +31185,9 @@ goto 14e4
 :14e41807
 set dev BCM5750X NetXtreme-E RDMA Virtual Function
 goto 14e4
+:14e42711
+set dev BCM2711 PCIe Bridge
+goto 14e4
 :14e43352
 set dev BCM3352
 goto 14e4
@@ -38616,11 +38622,14 @@ goto 1b4b
 :1b4b91a4
 set dev 88SE912x IDE Controller
 goto 1b4b
+:1b4b9215
+set dev 88SE9215 PCIe 2.0 x1 4-port SATA 6 Gb/s Controller
+goto 1b4b
 :1b4b9220
 set dev 88SE9220 PCIe 2.0 x2 2-port SATA 6 Gb/s RAID Controller
 goto 1b4b
 :1b4b9230
-set dev 88SE9230 PCIe SATA 6Gb/s Controller
+set dev 88SE9230 PCIe 2.0 x2 4-port SATA 6 Gb/s RAID Controller
 goto 1b4b
 :1b4b9235
 set dev 88SE9235 PCIe 2.0 x2 4-port SATA 6 Gb/s Controller
@@ -40132,7 +40141,7 @@ goto 1e4b
 set ven GSI Technology
 exit
 :1e4c0010
-set dev APU [Leda-G]
+set dev APU [Leda]
 goto 1e4c
 :1e57
 set ven Beijing Panyi Technology Co., Ltd
@@ -44752,7 +44761,7 @@ goto 8086
 set dev Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
 :80861901
-set dev 6th-9th Gen Core Processor PCIe Controller (x16)
+set dev 6th-10th Gen Core Processor PCIe Controller (x16)
 goto 8086
 :80861902
 set dev HD Graphics 510
@@ -49938,8 +49947,11 @@ goto 8086
 :80863e89
 set dev 8th Gen Core Processor PCIe Controller (x4)
 goto 8086
+:80863e90
+set dev UHD Graphics 610
+goto 8086
 :80863e91
-set dev 8th Gen Core Processor Gaussian Mixture Model
+set dev UHD Graphics 630
 goto 8086
 :80863e92
 set dev UHD Graphics 630 (Desktop)
@@ -52008,11 +52020,17 @@ goto 8086
 :80869b61
 set dev Comet Lake-U v1 4c Host Bridge/DRAM Controller
 goto 8086
+:80869b63
+set dev 10th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
 :80869b64
 set dev 10th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
 :80869bc4
 set dev UHD Graphics
+goto 8086
+:80869bc5
+set dev UHD Graphics 630
 goto 8086
 :80869bc8
 set dev UHD Graphics 630
