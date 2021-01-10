@@ -1122,6 +1122,12 @@ goto 1002
 :10021636
 set dev Renoir
 goto 1002
+:10021638
+set dev Cezanne
+goto 1002
+:1002163f
+set dev VanGogh
+goto 1002
 :10021714
 set dev BeaverCreek HDMI Audio [Radeon HD 6500D and 6400G-6600G series]
 goto 1002
@@ -17730,6 +17736,9 @@ goto 10de
 :10de21bf
 set dev TU116GL
 goto 10de
+:10de21c2
+set dev TU116
+goto 10de
 :10de21c4
 set dev TU116 [GeForce GTX 1660 SUPER]
 goto 10de
@@ -17781,6 +17790,9 @@ goto 10de
 :10de249d
 set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
 goto 10de
+:10de249f
+set dev GA104M
+goto 10de
 :10de24ac
 set dev GA104 [GeForce RTX 30x0 Engineering Sample]
 goto 10de
@@ -17789,6 +17801,9 @@ set dev GA104 [GeForce RTX 3060 Engineering Sample]
 goto 10de
 :10de24af
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
+goto 10de
+:10de24b6
+set dev GA104
 goto 10de
 :10de24bf
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
@@ -18485,6 +18500,9 @@ set dev Alveo U250
 goto 10ee
 :10ee7038
 set dev FPGA Card XC7VX690T
+goto 10ee
+:10ee8019
+set dev Memory controller
 goto 10ee
 :10ee8380
 set dev Ellips ProfiXpress Profibus Master
@@ -35637,6 +35655,9 @@ goto 17cb
 :17cb1000
 set dev QCS405 PCIe Root Complex
 goto 17cb
+:17cb1101
+set dev QCA6390 Wireless Network Adapter [AX500-DBS (2x2)]
+goto 17cb
 :17cc
 set ven NetChip Technology, Inc
 exit
@@ -39145,16 +39166,13 @@ goto 1c5c
 set ven Beijing Memblaze Technology Co. Ltd.
 exit
 :1c5f000d
-set dev PBlaze5 520/526 AIC
+set dev PBlaze5 520/526
 goto 1c5f
 :1c5f003d
-set dev PBlaze5 920/926 AIC
+set dev PBlaze5 920/926
 goto 1c5f
-:1c5f010d
-set dev PBlaze5 520/526 U.2
-goto 1c5f
-:1c5f013d
-set dev PBlaze5 920/926 U.2
+:1c5f003e
+set dev PBlaze6 6920
 goto 1c5f
 :1c5f0540
 set dev PBlaze4 NVMe SSD
@@ -40097,6 +40115,9 @@ set dev T10s [CloudBlazer]
 goto 1e36
 :1e368011
 set dev I10 [CloudBlazer]
+goto 1e36
+:1e368012
+set dev I10L [CloudBlazer]
 goto 1e36
 :1e38
 set ven Blaize, Inc
@@ -42014,6 +42035,9 @@ set dev Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller
 goto 8086
 :80860176
 set dev 3rd Gen Core processor Graphics Controller
+goto 8086
+:80860201
+set dev Arctic Sound
 goto 8086
 :80860284
 set dev Comet Lake PCH-LP LPC Premium Controller/eSPI Controller
@@ -50157,8 +50181,29 @@ goto 8086
 :8086467f
 set dev Volume Management Device NVMe RAID Controller
 goto 8086
+:80864905
+set dev DG1 [Iris Xe MAX Graphics]
+goto 8086
+:80864906
+set dev DG1 [Iris Xe Pod]
+goto 8086
+:80864907
+set dev SG1 [Server GPU SG-18M]
+goto 8086
+:80864908
+set dev DG1 [Iris Xe Graphics]
+goto 8086
 :80864c3d
 set dev Volume Management Device NVMe RAID Controller
+goto 8086
+:80864f80
+set dev DG2
+goto 8086
+:80864f81
+set dev DG2
+goto 8086
+:80864f82
+set dev DG2
 goto 8086
 :80865001
 set dev LE80578
