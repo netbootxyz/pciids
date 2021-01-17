@@ -1128,6 +1128,9 @@ goto 1002
 :1002163f
 set dev VanGogh
 goto 1002
+:1002164c
+set dev Lucienne
+goto 1002
 :10021714
 set dev BeaverCreek HDMI Audio [Radeon HD 6500D and 6400G-6600G series]
 goto 1002
@@ -2377,13 +2380,13 @@ goto 1002
 set dev Vega 20 [Radeon Instinct]
 goto 1002
 :100266a1
-set dev Vega 20
+set dev Vega 20 WKS GL-XE [Radeon Pro VII]
 goto 1002
 :100266a2
 set dev Vega 20
 goto 1002
 :100266a3
-set dev Vega 20
+set dev Vega 20 [Radeon Pro Vega II/Radeon Pro Vega II Duo]
 goto 1002
 :100266a7
 set dev Vega 20 [Radeon Pro Vega 20]
@@ -2739,8 +2742,23 @@ goto 1002
 :10026868
 set dev Vega 10 [Radeon PRO WX 8100/8200]
 goto 1002
+:10026869
+set dev Vega 10 XGA [Radeon Pro Vega 48]
+goto 1002
+:1002686a
+set dev Vega 10 LEA
+goto 1002
+:1002686b
+set dev Vega 10 XTXA [Radeon Pro Vega 64X]
+goto 1002
 :1002686c
 set dev Vega 10 [Radeon Instinct MI25 MxGPU]
+goto 1002
+:1002686d
+set dev Vega 10 GLXTA
+goto 1002
+:1002686e
+set dev Vega 10 GLXLA
 goto 1002
 :1002687f
 set dev Vega 10 XL/XT [Radeon RX Vega 56/64]
@@ -3248,6 +3266,15 @@ set dev Navi 14 [Radeon Pro W5300M]
 goto 1002
 :10027360
 set dev Navi 12 [Radeon Pro 5600M]
+goto 1002
+:10027388
+set dev Arcturus GL-XL
+goto 1002
+:1002738c
+set dev Arcturus GL-XL [AMD Instinct MI100]
+goto 1002
+:1002738e
+set dev Arcturus GL-XL
 goto 1002
 :100273bf
 set dev Navi 21 [Radeon RX 6800/6800 XT / 6900 XT]
@@ -5403,6 +5430,9 @@ goto 1022
 :1022149c
 set dev Matisse USB 3.0 Host Controller
 goto 1022
+:1022149d
+set dev Vangogh CVIP
+goto 1022
 :10221510
 set dev Family 14h Processor Root Complex
 goto 1022
@@ -5885,6 +5915,12 @@ set dev Renoir BT
 goto 1022
 :10221644
 set dev Renoir I2S
+goto 1022
+:10221648
+set dev VanGogh Root Complex
+goto 1022
+:10221649
+set dev VanGogh PSP/CCP
 goto 1022
 :10221700
 set dev Family 12h/14h Processor Function 0
@@ -50181,6 +50217,12 @@ goto 8086
 :8086467f
 set dev Volume Management Device NVMe RAID Controller
 goto 8086
+:80864680
+set dev AlderLake-S GT1
+goto 8086
+:808646a0
+set dev AlderLake-P GT2
+goto 8086
 :80864905
 set dev DG1 [Iris Xe MAX Graphics]
 goto 8086
@@ -52048,10 +52090,10 @@ goto 8086
 set dev Tiger Lake Trace Hub
 goto 8086
 :80869a49
-set dev Iris Xe Graphics
+set dev TigerLake GT2 [Iris Xe Graphics]
 goto 8086
 :80869b41
-set dev UHD Graphics
+set dev CometLake-U GT2 [UHD Graphics]
 goto 8086
 :80869b44
 set dev 10th Gen Core Processor Host Bridge/DRAM Registers
@@ -52072,13 +52114,13 @@ goto 8086
 set dev 10th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
 :80869bc4
-set dev UHD Graphics
+set dev CometLake-H GT2 [UHD Graphics]
 goto 8086
 :80869bc5
-set dev UHD Graphics 630
+set dev CometLake-S GT2 [UHD Graphics 630]
 goto 8086
 :80869bc8
-set dev UHD Graphics 630
+set dev CometLake-S GT2 [UHD Graphics 630]
 goto 8086
 :80869c00
 set dev 8 Series SATA Controller 1 [IDE mode]
