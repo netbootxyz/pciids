@@ -778,7 +778,7 @@ goto 1000
 set dev SAS3408 Fusion-MPT Tri-Mode I/O Controller Chip (IOC)
 goto 1000
 :100000b2
-set dev PEX880xx PCIe Gen 4 Switch SES management endpoint
+set dev PCIe Switch management endpoint
 goto 1000
 :100000be
 set dev SAS3504 Fusion-MPT Tri-Mode RAID On Chip (ROC)
@@ -2559,6 +2559,9 @@ goto 1002
 :100267b1
 set dev Hawaii PRO [Radeon R9 290/390]
 goto 1002
+:100267b8
+set dev Hawaii XT [Radeon R9 290X Engineering Sample]
+goto 1002
 :100267b9
 set dev Vesuvius [Radeon R9 295X2]
 goto 1002
@@ -3284,6 +3287,9 @@ set dev Navi 22
 goto 1002
 :100273df
 set dev Navi 22
+goto 1002
+:100273e0
+set dev Navi 23
 goto 1002
 :100273ff
 set dev Navi 23
@@ -9291,6 +9297,9 @@ goto 1077
 :10772081
 set dev ISP2814-based 64/32G Fibre Channel to PCIe Controller
 goto 1077
+:10772089
+set dev ISP2854-based 64/32G Fibre Channel to PCIe Controller with StorCryption
+goto 1077
 :10772100
 set dev QLA2100 64-bit Fibre Channel Adapter
 goto 1077
@@ -9302,6 +9311,9 @@ set dev ISP2722-based 16/32Gb Fibre Channel to PCIe Adapter
 goto 1077
 :10772281
 set dev ISP2812-based 64/32G Fibre Channel to PCIe Controller
+goto 1077
+:10772289
+set dev ISP2852-based 64/32G Fibre Channel to PCIe Controller with StorCryption
 goto 1077
 :10772300
 set dev QLA2300 64-bit Fibre Channel Adapter
@@ -17335,10 +17347,10 @@ goto 10de
 set dev GP106GL [Quadro P2200]
 goto 10de
 :10de1c35
-set dev GP106
+set dev GP106M [Quadro P2000 Mobile]
 goto 10de
 :10de1c36
-set dev GP106
+set dev GP106 [P106M]
 goto 10de
 :10de1c60
 set dev GP106BM [GeForce GTX 1060 Mobile 6GB]
@@ -17709,6 +17721,9 @@ goto 10de
 :10de1f9c
 set dev TU117M [GeForce MX450]
 goto 10de
+:10de1f9d
+set dev TU117M [GeForce GTX 1650 Mobile / Max-Q]
+goto 10de
 :10de1fae
 set dev TU117GL
 goto 10de
@@ -17735,6 +17750,9 @@ set dev GA100 [A100 SXM4 40GB]
 goto 10de
 :10de20b1
 set dev GA100 [A100 PCIe 40GB]
+goto 10de
+:10de20b2
+set dev GA100 [A100 SXM4 80GB]
 goto 10de
 :10de20be
 set dev GA100 [GRID A100A]
@@ -17851,10 +17869,10 @@ goto 10de
 set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
 goto 10de
 :10de2501
-set dev GA106 [GeForce RTX 3060 12GB]
+set dev GA106 [GeForce RTX 3060]
 goto 10de
 :10de2503
-set dev GA106 [GeForce RTX 3060 6GB]
+set dev GA106 [GeForce RTX 3060]
 goto 10de
 :10de2505
 set dev GA106
@@ -29937,6 +29955,9 @@ goto 144d
 :144da808
 set dev NVMe SSD Controller SM981/PM981/PM983
 goto 144d
+:144da80a
+set dev NVMe SSD Controller PM9A1/980PRO
+goto 144d
 :144da820
 set dev NVMe SSD Controller 171X
 goto 144d
@@ -35160,6 +35181,18 @@ goto 1760
 :17600800
 set dev PCD8006 - PCIe digital Inputs/Outputs
 goto 1760
+:17600840
+set dev PCA-8428 General-purpose multifunctional PCIe card with 8 analog inputs and 2 analog outputs
+goto 1760
+:17600841
+set dev PCA-8429 General-purpose multifunctional PCIe card with 8 analog inputs
+goto 1760
+:17600842
+set dev PCA-8438 General-purpose multifunctional PCIe card with 16 analog inputs and 2 analog outputs
+goto 1760
+:17600843
+set dev PCA-8439 General-purpose multifunctional PCIe card with 16 analog inputs
+goto 1760
 :1760ff00
 set dev CTU CAN FD PCIe Card
 goto 1760
@@ -39405,6 +39438,9 @@ exit
 :1d0f
 set ven Amazon.com, Inc.
 exit
+:1d0f8061
+set dev NVMe EBS Controller
+goto 1d0f
 :1d0fcd01
 set dev NVMe SSD Controller
 goto 1d0f
@@ -39826,7 +39862,7 @@ goto 1d87
 set ven Enyx
 exit
 :1d93
-set ven YADRO (KNS Group)
+set ven YADRO
 exit
 :1d94
 set ven Chengdu Haiguang IC Design Co., Ltd.
@@ -40058,6 +40094,57 @@ set dev eMAG PCI Express Root Port 6
 goto 1def
 :1defe00c
 set dev eMAG PCI Express Root Port 7
+goto 1def
+:1defe100
+set dev Altra PCI Express Root Complex A
+goto 1def
+:1defe101
+set dev Altra PCI Express Root Port a0
+goto 1def
+:1defe102
+set dev Altra PCI Express Root Port a1
+goto 1def
+:1defe103
+set dev Altra PCI Express Root Port a2
+goto 1def
+:1defe104
+set dev Altra PCI Express Root Port a3
+goto 1def
+:1defe105
+set dev Altra PCI Express Root Port a4
+goto 1def
+:1defe106
+set dev Altra PCI Express Root Port a5
+goto 1def
+:1defe107
+set dev Altra PCI Express Root Port a6
+goto 1def
+:1defe110
+set dev Altra PCI Express Root Complex B
+goto 1def
+:1defe111
+set dev Altra PCI Express Root Port b0
+goto 1def
+:1defe112
+set dev Altra PCI Express Root Port b1
+goto 1def
+:1defe113
+set dev Altra PCI Express Root Port b2
+goto 1def
+:1defe114
+set dev Altra PCI Express Root Port b3
+goto 1def
+:1defe115
+set dev Altra PCI Express Root Port b4
+goto 1def
+:1defe116
+set dev Altra PCI Express Root Port b5
+goto 1def
+:1defe117
+set dev Altra PCI Express Root Port b6
+goto 1def
+:1defe118
+set dev Altra PCI Express Root Port b7
 goto 1def
 :1df3
 set ven Ethernity Networks
@@ -42673,7 +42760,7 @@ goto 8086
 set dev Thunderbolt 4 USB Controller [Goshen Ridge 2020]
 goto 8086
 :80860b60
-set dev NVMe DC SSD [3DNAND, Beta Rock Controller]
+set dev NVMe DC SSD [3DNAND, Sentinel Rock Controller]
 goto 8086
 :80860be0
 set dev Atom Processor D2xxx/N2xxx Integrated Graphics Controller
@@ -48730,10 +48817,10 @@ goto 8086
 set dev Dual Band Wireless-AC 3165 Plus Bluetooth
 goto 8086
 :80863184
-set dev UHD Graphics 605
+set dev GeminiLake [UHD Graphics 605]
 goto 8086
 :80863185
-set dev UHD Graphics 605
+set dev GeminiLake [UHD Graphics 600]
 goto 8086
 :8086318c
 set dev Celeron/Pentium Silver Processor Dynamic Platform and Thermal Framework Processor Participant
@@ -50008,31 +50095,31 @@ goto 8086
 set dev 8th Gen Core Processor PCIe Controller (x4)
 goto 8086
 :80863e90
-set dev UHD Graphics 610
+set dev CoffeeLake-S GT1 [UHD Graphics 610]
 goto 8086
 :80863e91
-set dev UHD Graphics 630
+set dev CoffeeLake-S GT2 [UHD Graphics 630]
 goto 8086
 :80863e92
-set dev UHD Graphics 630 (Desktop)
+set dev CometLake-S GT2 [UHD Graphics 630]
 goto 8086
 :80863e93
-set dev UHD Graphics 610
+set dev CoffeeLake-S GT1 [UHD Graphics 610]
 goto 8086
 :80863e96
-set dev HD Graphics P630
+set dev CoffeeLake-S GT2 [UHD Graphics P630]
 goto 8086
 :80863e98
-set dev UHD Graphics 630 (Desktop 9 Series)
+set dev CoffeeLake-S GT2 [UHD Graphics 630]
 goto 8086
 :80863e9b
-set dev UHD Graphics 630 (Mobile)
+set dev CoffeeLake-H GT2 [UHD Graphics 630]
 goto 8086
 :80863ea0
-set dev UHD Graphics 620 (Whiskey Lake)
+set dev WhiskeyLake-U GT2 [UHD Graphics 620]
 goto 8086
 :80863ea5
-set dev Iris Plus Graphics 655
+set dev CoffeeLake-U GT3e [Iris Plus Graphics 655]
 goto 8086
 :80863ec2
 set dev 8th Gen Core Processor Host Bridge/DRAM Registers
@@ -52661,6 +52748,9 @@ set dev Tiger Lake-LP Serial IO SPI Controller #1
 goto 8086
 :8086a0b0
 set dev Tiger Lake-LP PCI Express Root Port #9
+goto 8086
+:8086a0bd
+set dev Tigerlake PCH-LP PCI Express Root Port #6
 goto 8086
 :8086a0bf
 set dev Tiger Lake-LP PCI Express Root Port #8
