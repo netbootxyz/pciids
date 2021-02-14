@@ -2310,6 +2310,9 @@ goto 1002
 :10026608
 set dev Oland GL [FirePro W2100]
 goto 1002
+:10026609
+set dev Oland GL [FirePro W2100 / Barco MXRT 2600]
+goto 1002
 :10026610
 set dev Oland XT [Radeon HD 8670 / R7 250/350]
 goto 1002
@@ -17820,6 +17823,9 @@ goto 10de
 :10de2235
 set dev GA102GL [RTX A40]
 goto 10de
+:10de2236
+set dev GA102GL
+goto 10de
 :10de223f
 set dev GA102GL
 goto 10de
@@ -17859,6 +17865,9 @@ goto 10de
 :10de24b6
 set dev GA104
 goto 10de
+:10de24b8
+set dev GA104
+goto 10de
 :10de24bf
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
 goto 10de
@@ -17888,6 +17897,12 @@ set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
 goto 10de
 :10de2583
 set dev GA107 [GeForce RTX 3050]
+goto 10de
+:10de25a2
+set dev GA107
+goto 10de
+:10de25a4
+set dev GA107
 goto 10de
 :10de25af
 set dev GA107 [GeForce RTX 3050 Engineering Sample]
@@ -33499,7 +33514,7 @@ goto 15b7
 set dev WD Black NVMe SSD
 goto 15b7
 :15b75002
-set dev WD Black 2018 / PC SN720 NVMe SSD
+set dev WD Black 2018/SN750 / PC SN720 NVMe SSD
 goto 15b7
 :15b75003
 set dev WD Blue SN500 / PC SN520 NVMe SSD
@@ -33521,6 +33536,9 @@ set dev PC SN530 NVMe SSD
 goto 15b7
 :15b7500d
 set dev WD Ultrastar DC SN340 NVMe SSD
+goto 15b7
+:15b75011
+set dev WD Black SN850
 goto 15b7
 :15b8
 set ven ADDI-DATA GmbH
@@ -38700,6 +38718,9 @@ goto 1b4b
 :1b4b917a
 set dev 88SE9172 SATA III 6Gb/s RAID Controller
 goto 1b4b
+:1b4b9182
+set dev 88SE9182 PCIe 2.0 x2 2-port SATA 6 Gb/s Controller
+goto 1b4b
 :1b4b9183
 set dev 88SS9183 PCIe SSD Controller
 goto 1b4b
@@ -39819,6 +39840,15 @@ goto 1d6c
 :1d6c1016
 set dev AR-ARK-BBDEV-FX1 [Arkville 64B DPDK Baseband Device]
 goto 1d6c
+:1d6c1017
+set dev AR-ARK-FX1 [Arkville 64B Multi-Homed Primary Endpoint]
+goto 1d6c
+:1d6c1018
+set dev AR-ARK-FX1 [Arkville 64B Multi-Homed Secondary Endpoint]
+goto 1d6c
+:1d6c1019
+set dev AR-ARK-FX1 [Arkville 64B Multi-Homed Tertiary Endpoint]
+goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
 goto 1d6c
@@ -40119,6 +40149,9 @@ goto 1def
 :1defe107
 set dev Altra PCI Express Root Port a6
 goto 1def
+:1defe108
+set dev Altra PCI Express Root Port a7
+goto 1def
 :1defe110
 set dev Altra PCI Express Root Complex B
 goto 1def
@@ -40329,6 +40362,12 @@ exit
 :1e95
 set ven Solid State Storage Technology Corporation
 exit
+:1ea0
+set ven Tencent Technology (Shenzhen) Company Limited
+exit
+:1ea02a16
+set dev Cloud Intelligent Inference Controller
+goto 1ea0
 :1eab
 set ven Hefei DATANG Storage Technology Co.,LTD.
 exit
@@ -40347,6 +40386,18 @@ exit
 :1eb11001
 set dev Video Accelerator
 goto 1eb1
+:1ed8
+set ven Digiteq Automotive
+exit
+:1ed80101
+set dev FG4 PCIe Frame Grabber
+goto 1ed8
+:1ed9
+set ven Myrtle.ai
+exit
+:1ee9
+set ven SUSE LLC
+exit
 :1fc0
 set ven Ascom (Finland) Oy
 exit
@@ -42174,6 +42225,27 @@ goto 8086
 :808602a6
 set dev Comet Lake North Peak
 goto 8086
+:808602b0
+set dev Comet Lake PCI Express Root Port #9
+goto 8086
+:808602b1
+set dev Comet Lake PCI Express Root Port #10
+goto 8086
+:808602b3
+set dev Comet Lake PCI Express Root Port #12
+goto 8086
+:808602b4
+set dev Comet Lake PCI Express Root Port #13
+goto 8086
+:808602b8
+set dev Comet Lake PCI Express Root Port #1
+goto 8086
+:808602bc
+set dev Comet Lake PCI Express Root Port #5
+goto 8086
+:808602c5
+set dev Comet Lake Serial IO I2C Host Controller
+goto 8086
 :808602c8
 set dev Comet Lake PCH-LP cAVS
 goto 8086
@@ -42188,6 +42260,9 @@ set dev Serial IO I2C Host Controller
 goto 8086
 :808602e9
 set dev Comet Lake Serial IO I2C Host Controller
+goto 8086
+:808602ea
+set dev Comet Lake PCH-LP LPSS: I2C Controller #2
 goto 8086
 :808602ed
 set dev Comet Lake PCH-LP USB 3.1 xHCI Host Controller
@@ -52122,11 +52197,17 @@ goto 8086
 :808696a1
 set dev Integrated RAID
 goto 8086
+:80869a03
+set dev TigerLake-LP Dynamic Tuning Processor Participant
+goto 8086
 :80869a09
 set dev 11th Gen Core Processor PCIe Controller
 goto 8086
 :80869a0b
 set dev Volume Management Device NVMe RAID Controller
+goto 8086
+:80869a0d
+set dev Tiger Lake-LP Telemetry Aggregator
 goto 8086
 :80869a13
 set dev Tiger Lake-LP Thunderbolt 4 USB Controller
@@ -53652,11 +53733,44 @@ goto 8088
 :80880108
 set dev WX1860AL4S Gigabit Ethernet Controller
 goto 8088
+:80880109
+set dev WX1860-LC Gigabit Ethernet Controller
+goto 8088
+:8088010a
+set dev WX1860A1 Gigabit Ethernet Controller
+goto 8088
 :8088010b
 set dev WX1860AL1 Gigabit Ethernet Controller
 goto 8088
+:80880111
+set dev WX1860A2 Ethernet Controller Virtual Function
+goto 8088
+:80880113
+set dev WX1860A4 Ethernet Controller Virtual Function
+goto 8088
+:80880115
+set dev WX1860AL2 Ethernet Controller Virtual Function
+goto 8088
+:80880117
+set dev WX1860AL4 Ethernet Controller Virtual Function
+goto 8088
+:80880119
+set dev WX1860-LC Gigabit Ethernet Controller Virtual Function
+goto 8088
+:8088011a
+set dev WX1860A1 Gigabit Ethernet Controller Virtual Function
+goto 8088
+:8088011b
+set dev WX1860AL1 Gigabit Ethernet Controller Virtual Function
+goto 8088
+:80881000
+set dev Ethernet Controller RP1000 Virtual Function for 10GbE SFP+
+goto 8088
 :80881001
 set dev Ethernet Controller RP1000 for 10GbE SFP+
+goto 8088
+:80882000
+set dev Ethernet Controller RP2000 Virtual Function for 10GbE SFP+
 goto 8088
 :80882001
 set dev Ethernet Controller RP2000 for 10GbE SFP+
