@@ -4426,13 +4426,13 @@ goto 1011
 set dev PBXGB [TGA2]
 goto 1011
 :1011000f
-set dev DEFPA FDDI PCI-to-PDQ Interface Chip [PFI]
+set dev PCI-to-PDQ Interface Chip [PFI] FDDI (DEFPA)
 goto 1011
 :10110014
 set dev DECchip 21041 [Tulip Pass 3]
 goto 1011
 :10110016
-set dev DGLPB [OPPO]
+set dev ATMworks 350 Adapter [OPPO] (DGLPB)
 goto 1011
 :10110017
 set dev PV-PCI Graphics Controller (ZLXp-L)
@@ -6032,6 +6032,9 @@ set dev CS5536 [Geode companion] UOC
 goto 1022
 :1022209a
 set dev CS5536 [Geode companion] IDE
+goto 1022
+:10222625
+set dev AMD Lance/PCI PCNet/32
 goto 1022
 :10223000
 set dev ELanSC520 Microcontroller
@@ -17898,8 +17901,11 @@ goto 10de
 :10de2583
 set dev GA107 [GeForce RTX 3050]
 goto 10de
+:10de25a0
+set dev GA107M [GeForce RTX 3050 Ti Mobile]
+goto 10de
 :10de25a2
-set dev GA107
+set dev GA107M [GeForce RTX 3050 Mobile]
 goto 10de
 :10de25a4
 set dev GA107
@@ -18964,7 +18970,7 @@ goto 1106
 set dev K8T890CF Host Bridge
 goto 1106
 :11060353
-set dev VX800 Host Bridge
+set dev VX800/820-Series Chipset Host-Bridge Controller
 goto 1106
 :11060364
 set dev CN896/VN896/P4M900 Host Bridge
@@ -18976,7 +18982,7 @@ goto 1106
 set dev VX855/VX875 Host Bridge: Host Control
 goto 1106
 :11060410
-set dev VX900 Host Bridge: Host Control
+set dev VX900 Series Host Bridge: Host Control
 goto 1106
 :11060415
 set dev VT6415 PATA IDE Host Controller
@@ -18997,7 +19003,7 @@ goto 1106
 set dev VT82C576 3V [Apollo Master]
 goto 1106
 :11060581
-set dev CX700/VX700 RAID Controller
+set dev CX700/VX700/VX800/820-Series Serial ATA RAID-Controller
 goto 1106
 :11060585
 set dev VT82C585VP [Apollo VP1/VPX]
@@ -19132,7 +19138,7 @@ goto 1106
 set dev VX855/VX875 Error Reporting
 goto 1106
 :11061410
-set dev VX900 Error Reporting
+set dev VX900 Series Error Reporting
 goto 1106
 :11061571
 set dev VT82C576M/VT82C586
@@ -19207,7 +19213,7 @@ goto 1106
 set dev VX855/VX875 Host Bus Control
 goto 1106
 :11062410
-set dev VX900 CPU Bus Controller
+set dev VX900 Series CPU Bus Controller
 goto 1106
 :1106287a
 set dev VT8251 PCI to PCI Bridge
@@ -19282,7 +19288,7 @@ goto 1106
 set dev VT8615 Host Bridge
 goto 1106
 :11063104
-set dev USB 2.0
+set dev USB 2.0 EHCI-Compliant Host-Controller
 goto 1106
 :11063106
 set dev VT6105/VT6106S [Rhine-III]
@@ -19438,7 +19444,7 @@ goto 1106
 set dev VT8251 PCI to ISA Bridge
 goto 1106
 :11063288
-set dev VT8237A/VT8251 HDA Controller
+set dev VX900/VT8xxx High Definition Audio Controller
 goto 1106
 :11063290
 set dev K8M890 Host Bridge
@@ -19474,7 +19480,7 @@ goto 1106
 set dev VT3351 Host Bridge
 goto 1106
 :11063353
-set dev VX800 PCI to PCI Bridge
+set dev VX800/820 PCI to PCI Bridge
 goto 1106
 :11063364
 set dev CN896/VN896/P4M900 Host Bridge
@@ -19498,10 +19504,10 @@ goto 1106
 set dev VX855/VX875 DRAM Bus Control
 goto 1106
 :11063410
-set dev VX900 DRAM Bus Control
+set dev VX900 Series DRAM Bus Control
 goto 1106
 :11063432
-set dev VL80x xHCI USB 3.0 Controller
+set dev VL800/801 xHCI USB 3.0 Controller
 goto 1106
 :11063456
 set dev VX11 Standard Host Bridge
@@ -19510,7 +19516,7 @@ goto 1106
 set dev VX11 Miscellaneous Bus
 goto 1106
 :11063483
-set dev VL805 USB 3.0 Host Controller
+set dev VL805/806 xHCI USB 3.0 Controller
 goto 1106
 :11063a01
 set dev VX11 Graphics [Chrome 645/640]
@@ -19579,7 +19585,7 @@ goto 1106
 set dev VX855/VX875 Power Management Control
 goto 1106
 :11064410
-set dev VX900 Power Management and Chip Testing Control
+set dev VX900 Series Power Management and Chip Testing Control
 goto 1106
 :11065030
 set dev VT82C596 ACPI [Apollo PRO]
@@ -19603,7 +19609,7 @@ goto 1106
 set dev PT894 I/O APIC Interrupt Controller
 goto 1106
 :11065324
-set dev VX800 Serial ATA and EIDE Controller
+set dev CX700M2/VX700/VX800/820-Series Serial ATA & EIDE-Controller
 goto 1106
 :11065327
 set dev P4M890 I/O APIC Interrupt Controller
@@ -19630,7 +19636,7 @@ goto 1106
 set dev VX855/VX875 APIC and Central Traffic Control
 goto 1106
 :11065410
-set dev VX900 APIC and Central Traffic Control
+set dev VX900 Series APIC and Central Traffic Control
 goto 1106
 :11066100
 set dev VT85C100A [Rhine II]
@@ -19654,7 +19660,7 @@ goto 1106
 set dev VX855/VX875 Scratch Registers
 goto 1106
 :11066410
-set dev VX900 Scratch Registers
+set dev VX900 Series Scratch Registers
 goto 1106
 :11067122
 set dev VX900 Graphics [Chrome9 HD]
@@ -19723,7 +19729,7 @@ goto 1106
 set dev VX855/VX875 North-South Module Interface Control
 goto 1106
 :11067410
-set dev VX900 North-South Module Interface Control
+set dev VX900 Series North-South Module Interface Control
 goto 1106
 :11068231
 set dev VT8231 [PCI-to-ISA Bridge]
@@ -19750,7 +19756,7 @@ goto 1106
 set dev VX855/VX875 Bus Control and Power Management
 goto 1106
 :11068410
-set dev VX900 Bus Control and Power Management
+set dev VX900 Series Bus Control and Power Management
 goto 1106
 :11068500
 set dev KLE133/PLE133/PLE133T
@@ -19792,7 +19798,7 @@ goto 1106
 set dev KM266/P4M266/P4M266A/P4N266 [S3 ProSavageDDR]
 goto 1106
 :11069001
-set dev VX900 Serial ATA Controller
+set dev VX900 Series Serial-ATA Controller
 goto 1106
 :11069082
 set dev Standard AHCI 1.0 SATA Controller
@@ -19804,10 +19810,10 @@ goto 1106
 set dev USB3.0 Controller
 goto 1106
 :11069530
-set dev Secure Digital Memory Card Controller
+set dev VX800/820/900 Series Secure Digital Memory Card Controller
 goto 1106
 :110695d0
-set dev SDIO Host Controller
+set dev VX800/820/900 Series SDIO Host Controller
 goto 1106
 :1106a208
 set dev PT890 PCI to PCI Bridge Controller
@@ -19819,16 +19825,16 @@ goto 1106
 set dev P4M890 PCI to PCI Bridge Controller
 goto 1106
 :1106a353
-set dev VX8xx South-North Module Interface Control
+set dev VX8xx/900 Series South-North Module Interface Control
 goto 1106
 :1106a364
 set dev CN896/VN896/P4M900 PCI to PCI Bridge Controller
 goto 1106
 :1106a409
-set dev VX855/VX875 USB Device Controller
+set dev VX855/VX875/VX900 Series USB Device Controller
 goto 1106
 :1106a410
-set dev VX900 PCI Express Root Port 0
+set dev VX900 Series PCI Express Root Port 0
 goto 1106
 :1106b091
 set dev VT8633 [Apollo Pro266 AGP]
@@ -19870,7 +19876,7 @@ goto 1106
 set dev VX855/VX875/VX900 PCI to PCI Bridge
 goto 1106
 :1106b410
-set dev VX900 PCI Express Root Port 1
+set dev VX900 Series PCI Express Root Port 1
 goto 1106
 :1106b999
 set dev [K8T890 North / VT8237 South] PCI Bridge
@@ -19888,7 +19894,7 @@ goto 1106
 set dev PT900 PCI to PCI Bridge Controller
 goto 1106
 :1106c353
-set dev VX800/VX820 PCI Express Root Port
+set dev VX800/820-Series PCI-Express Root (PCI-to-PCI Virtual Bridge)
 goto 1106
 :1106c364
 set dev CN896/VN896/P4M900 PCI to PCI Bridge Controller
@@ -19897,7 +19903,7 @@ goto 1106
 set dev VX855/VX875 EIDE Controller
 goto 1106
 :1106c410
-set dev VX900 PCI Express Root Port 2
+set dev VX900 Series PCI Express Root Port 2
 goto 1106
 :1106d104
 set dev VT8237R USB UDCI Controller
@@ -19915,7 +19921,7 @@ goto 1106
 set dev PT900 PCI to PCI Bridge Controller
 goto 1106
 :1106d410
-set dev VX900 PCI Express Root Port 3
+set dev VX900 Series PCI Express Root Port 3
 goto 1106
 :1106e208
 set dev PT890 PCI to PCI Bridge Controller
@@ -19927,10 +19933,10 @@ goto 1106
 set dev PT900 PCI to PCI Bridge Controller
 goto 1106
 :1106e353
-set dev VX800/VX820 PCI Express Root Port
+set dev VX800/820-Series PCI-Express Root Port 0
 goto 1106
 :1106e410
-set dev VX900 PCI Express Physical Layer Electrical Sub-block
+set dev VX900 Series PCI Express Physical Layer Electrical Sub-block
 goto 1106
 :1106f208
 set dev PT890 PCI to PCI Bridge Controller
@@ -19942,7 +19948,10 @@ goto 1106
 set dev PT900 PCI to PCI Bridge Controller
 goto 1106
 :1106f353
-set dev VX800/VX820 PCI Express Root Port
+set dev VX800/820-Series PCI-Express Root Port 1
+goto 1106
+:1106f410
+set dev VX900 Series PCI UART Port 0-3
 goto 1106
 :1107
 set ven Stratus Computers
@@ -23237,6 +23246,9 @@ set dev PM8531 PFX 24xG3 Fanout PCIe Switches
 goto 11f8
 :11f88546
 set dev PM8546 B-FEIP PSX 96xG3 PCIe Storage Switch
+goto 11f8
+:11f88562
+set dev PM8562 Switchtec PFX-L 32xG3 Fanout-Lite PCIe Gen3 Switch
 goto 11f8
 :11f9
 set ven I-Cube Inc
@@ -35061,6 +35073,9 @@ goto 1737
 :173b
 set ven Altima (nee Broadcom)
 exit
+:173b0001
+set dev AC1002 PCI Gigabit Ethernet controller
+goto 173b
 :173b03e8
 set dev AC1000 Gigabit Ethernet
 goto 173b
@@ -39240,6 +39255,9 @@ goto 1c5c
 :1c5c1327
 set dev BC501 NVMe Solid State Drive 512GB
 goto 1c5c
+:1c5c1339
+set dev BC511
+goto 1c5c
 :1c5c1504
 set dev SC300 512GB M.2 2280 SATA Solid State Drive
 goto 1c5c
@@ -40910,6 +40928,12 @@ set dev CH355 PCI Quad Serial Port Controller
 goto 4348
 :434e
 set ven CAST Navigation LLC
+exit
+:43b0
+set ven Tiger Lake-H PCIe Root Port #9
+exit
+:43bc
+set ven Tiger Lake-H PCIe Root Port #5
 exit
 :4444
 set ven Internext Compression Inc
@@ -47127,6 +47151,9 @@ goto 8086
 :8086277d
 set dev 82975X PCI Express Root Port
 goto 8086
+:80862780
+set dev 82915G/GV/GL/910GL [Grantsdale] Graphics Device
+goto 8086
 :80862782
 set dev 82915G Integrated Graphics Controller
 goto 8086
@@ -50373,6 +50400,30 @@ goto 8086
 :8086423d
 set dev WiMAX/WiFi Link 5150
 goto 8086
+:8086438b
+set dev Tiger Lake-H LPC/eSPI Controller
+goto 8086
+:808643a3
+set dev Tiger Lake-H SMBus Controller
+goto 8086
+:808643a4
+set dev Tiger Lake-H SPI Controller
+goto 8086
+:808643c8
+set dev Tiger Lake-H HD Audio Controller
+goto 8086
+:808643e0
+set dev Tiger Lake-H Management Engine Interface
+goto 8086
+:808643e8
+set dev Tiger Lake-H Serial IO I2C Controller #0
+goto 8086
+:808643ed
+set dev Tiger Lake-H USB 3.2 Gen 2x1 xHCI Host Controller
+goto 8086
+:808643ef
+set dev Tiger Lake-H Shared SRAM
+goto 8086
 :8086444e
 set dev Turbo Memory Controller
 goto 8086
@@ -50561,6 +50612,9 @@ set dev 80310 (IOP) IO Processor
 goto 8086
 :80865502
 set dev Ethernet Controller (2) I225-LMvP
+goto 8086
+:80865504
+set dev Ethernet Controller I226-K
 goto 8086
 :80865845
 set dev QEMU NVM Express Controller
@@ -52197,6 +52251,9 @@ goto 8086
 :808696a1
 set dev Integrated RAID
 goto 8086
+:80869a01
+set dev 11th Gen Core Processor PCIe Controller
+goto 8086
 :80869a03
 set dev TigerLake-LP Dynamic Tuning Processor Participant
 goto 8086
@@ -52257,7 +52314,13 @@ goto 8086
 :80869a33
 set dev Tiger Lake Trace Hub
 goto 8086
+:80869a36
+set dev 11th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
 :80869a49
+set dev TigerLake GT2 [Iris Xe Graphics]
+goto 8086
+:80869a60
 set dev TigerLake GT2 [Iris Xe Graphics]
 goto 8086
 :80869b41
@@ -54417,6 +54480,9 @@ goto 9902
 :99020003
 set dev SG1010 Starfabric Switch and PCI Bridge
 goto 9902
+:9a11
+set ven Tiger Lake-H Gaussian & Neural Accelerator
+exit
 :9d32
 set ven Beijing Starblaze Technology Co. Ltd.
 exit
