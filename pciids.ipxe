@@ -3271,7 +3271,10 @@ goto 1002
 set dev Navi 14 [Radeon Pro W5300M]
 goto 1002
 :10027360
-set dev Navi 12 [Radeon Pro 5600M]
+set dev Navi 12 [Radeon Pro 5600M / V520]
+goto 1002
+:10027362
+set dev Navi 12 [Radeon Pro V520]
 goto 1002
 :10027388
 set dev Arcturus GL-XL
@@ -6034,7 +6037,10 @@ goto 1022
 set dev CS5536 [Geode companion] IDE
 goto 1022
 :10222625
-set dev AMD Lance/PCI PCNet/32
+set dev Am79C973 [Lance/PCI PCNet/32]
+goto 1022
+:10222627
+set dev Am79C975 [Lance/PCI PCNet/32]
 goto 1022
 :10223000
 set dev ELanSC520 Microcontroller
@@ -14269,7 +14275,7 @@ goto 10de
 set dev NV35 [GeForce FX 5900XT]
 goto 10de
 :10de0333
-set dev NV38 [GeForce FX 5950 Ultra]
+set dev NV38 [GeForce FX 5950 Ultra / PCX 5950]
 goto 10de
 :10de0334
 set dev NV35 [GeForce FX 5900ZT]
@@ -19114,7 +19120,7 @@ goto 1106
 set dev CN700/VN800/P4M800CE/Pro Host Bridge
 goto 1106
 :11061324
-set dev CX700/VX700 Host Bridge
+set dev CX700/VX700-Series Error Reporting
 goto 1106
 :11061327
 set dev P4M890 Host Bridge
@@ -19189,7 +19195,7 @@ goto 1106
 set dev CN700/VN800/P4M800CE/Pro Host Bridge
 goto 1106
 :11062324
-set dev CX700/VX700 Host Bridge
+set dev CX700/VX700-Series Host Interface Control
 goto 1106
 :11062327
 set dev P4M890 Host Bridge
@@ -19234,7 +19240,7 @@ goto 1106
 set dev CLE266
 goto 1106
 :11063038
-set dev VT82xx/62xx UHCI USB 1.1 Controller
+set dev VT82xx/62xx/VX700/8x0/900 UHCI USB 1.1 Controller
 goto 1106
 :11063040
 set dev VT82C586B ACPI
@@ -19453,7 +19459,7 @@ goto 1106
 set dev P4M800 Host Bridge
 goto 1106
 :11063324
-set dev CX700/VX700 Host Bridge
+set dev CX700/VX700-Series DRAM Bus Control
 goto 1106
 :11063327
 set dev P4M890 Host Bridge
@@ -19484,6 +19490,9 @@ set dev VX800/820 PCI to PCI Bridge
 goto 1106
 :11063364
 set dev CN896/VN896/P4M900 Host Bridge
+goto 1106
+:11063365
+set dev VT630x IEEE 1394 Host Controller [Fire II/M]
 goto 1106
 :11063371
 set dev CN896/VN896/P4M900 [Chrome 9 HC]
@@ -19561,7 +19570,7 @@ goto 1106
 set dev CN700/VN800/P4M800CE/Pro Host Bridge
 goto 1106
 :11064324
-set dev CX700/VX700 Host Bridge
+set dev CX700/VX700-Series Power Management and Testing Control
 goto 1106
 :11064327
 set dev P4M890 Host Bridge
@@ -19705,7 +19714,7 @@ goto 1106
 set dev CN700/VN800/P4M800CE/Pro Host Bridge
 goto 1106
 :11067324
-set dev CX700/VX700 Host Bridge
+set dev CX700/VX700-Series North-South Module Interface Control
 goto 1106
 :11067327
 set dev P4M890 Host Bridge
@@ -19741,7 +19750,7 @@ goto 1106
 set dev VT8363/8365 [KT133/KM133 AGP]
 goto 1106
 :11068324
-set dev CX700/VX700 PCI to ISA Bridge
+set dev CX700/VX700-Series Bus Control and Power Management
 goto 1106
 :11068353
 set dev VX800/VX820 Bus Control and Power Management
@@ -19867,7 +19876,7 @@ goto 1106
 set dev VT8237/8251 PCI bridge [K8M890/K8T800/K8T890 South]
 goto 1106
 :1106b198
-set dev VT8237/VX700 PCI Bridge
+set dev VT8237/CX700/VX700-Series PCI to PCI Bridge
 goto 1106
 :1106b213
 set dev VPX/VPX2 I/O APIC Interrupt Controller
@@ -22353,6 +22362,9 @@ exit
 :11ab
 set ven Marvell Technology Group Ltd.
 exit
+:11ab0100
+set dev 88F3700 [Armada 3700 Family] ARM SoC
+goto 11ab
 :11ab0146
 set dev GT-64010/64010A System Controller
 goto 11ab
@@ -22613,6 +22625,12 @@ set dev MV64460/64461/64462 System Controller
 goto 11ab
 :11ab6485
 set dev MV64460/64461/64462 System Controller, Revision B
+goto 11ab
+:11ab6820
+set dev 88F6820 [Armada 385] ARM SoC
+goto 11ab
+:11ab6828
+set dev 88F6828 [Armada 388] ARM SoC
 goto 11ab
 :11ab7042
 set dev 88SX7042 PCI-e 4-port SATA-II
@@ -38703,6 +38721,9 @@ goto 1b47
 :1b4b
 set ven Marvell Technology Group Ltd.
 exit
+:1b4b0100
+set dev 88F3700 [Armada 3700 Family] ARM SoC
+goto 1b4b
 :1b4b0640
 set dev 88SE9128 SATA III 6Gb/s RAID Controller
 goto 1b4b
@@ -40093,7 +40114,7 @@ exit
 set dev TRM-S1040 [DC-315 / DC-395 series]
 goto 1de1
 :1de12020
-set dev DC-390
+set dev DC-390 Series SCSI Adapter [AMD Am53C974]
 goto 1de1
 :1de1690c
 set dev 690c
