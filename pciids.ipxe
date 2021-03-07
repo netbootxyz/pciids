@@ -2314,7 +2314,7 @@ goto 1002
 set dev Oland GL [FirePro W2100 / Barco MXRT 2600]
 goto 1002
 :10026610
-set dev Oland XT [Radeon HD 8670 / R7 250/350]
+set dev Oland XT [Radeon HD 8670 / R5 340X OEM / R7 250/350/350X OEM]
 goto 1002
 :10026611
 set dev Oland [Radeon HD 8570 / R5 430 OEM / R7 240/340 / Radeon 520 OEM]
@@ -3292,13 +3292,13 @@ goto 1002
 set dev Navi 22
 goto 1002
 :100273df
-set dev Navi 22
+set dev Navi 22 [Radeon RX 6700/6700 XT]
 goto 1002
 :100273e0
 set dev Navi 23
 goto 1002
 :100273ff
-set dev Navi 23
+set dev Navi 23 [Radeon RX 6600/6600 XT]
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -5989,7 +5989,7 @@ goto 1022
 set dev 79c970 [PCnet32 LANCE]
 goto 1022
 :10222001
-set dev 79c978 [HomePNA]
+set dev Am79C978 PCnet Home (HomePNA) 1/10 PCI Ethernet Adapter [Am79C971 PHY]
 goto 1022
 :10222003
 set dev Am 1771 MBW [Alchemy]
@@ -17658,6 +17658,9 @@ goto 10de
 :10de1f0a
 set dev TU106 [GeForce GTX 1650]
 goto 10de
+:10de1f0b
+set dev TU106 [CMP 40HX]
+goto 10de
 :10de1f10
 set dev TU106M [GeForce RTX 2070 Mobile]
 goto 10de
@@ -17790,6 +17793,9 @@ goto 10de
 :10de2188
 set dev TU116 [GeForce GTX 1650]
 goto 10de
+:10de2189
+set dev TU116 [CMP 30HX]
+goto 10de
 :10de2191
 set dev TU116M [GeForce GTX 1660 Ti Mobile]
 goto 10de
@@ -17819,6 +17825,9 @@ set dev GA102 [GeForce RTX 3080 Ti]
 goto 10de
 :10de2206
 set dev GA102 [GeForce RTX 3080]
+goto 10de
+:10de2208
+set dev GA102 [GeForce RTX 3080 Ti]
 goto 10de
 :10de222b
 set dev GA102 [GeForce RTX 3090 Engineering Sample]
@@ -30048,6 +30057,9 @@ exit
 :1458
 set ven Gigabyte Technology Co., Ltd
 exit
+:14583483
+set dev USB 3.0 Controller (VIA VL80x-based xHCI Controller)
+goto 1458
 :1459
 set ven DOOIN Electronics
 exit
@@ -30096,6 +30108,9 @@ goto 1461
 :1462
 set ven Micro-Star International Co., Ltd. [MSI]
 exit
+:14623483
+set dev MSI USB 3.0 (VIA VL80x-based xHCI USB Controller)
+goto 1462
 :1462aaf0
 set dev Radeon RX 580 Gaming X 8G
 goto 1462
@@ -31297,12 +31312,18 @@ goto 14e4
 set dev BCM57504 NetXtreme-E RDMA Partition
 goto 14e4
 :14e41805
-set dev BCM57508 NetXtreme-E RDMA Partition
+set dev BCM57508 NetXtreme-E NGM2100D 2x100G KR Mezz RDMA Partition
 goto 14e4
 :14e41806
 set dev BCM5750X NetXtreme-E Ethernet Virtual Function
 goto 14e4
 :14e41807
+set dev BCM5750X NetXtreme-E RDMA Virtual Function
+goto 14e4
+:14e41808
+set dev BCM5750X NetXtreme-E Ethernet Virtual Function
+goto 14e4
+:14e41809
 set dev BCM5750X NetXtreme-E RDMA Virtual Function
 goto 14e4
 :14e42711
@@ -34421,6 +34442,15 @@ set dev CryptoServer CSe-Series Hardware Security Module
 goto 168a
 :168ac051
 set dev CryptoServer Se-Series Gen2 Hardware Security Module
+goto 168a
+:168ac070
+set dev u.trust Anchor Hardware Security Module cs7.2 Series
+goto 168a
+:168ac071
+set dev u.trust Anchor Hardware Security Module cs7.3 Series
+goto 168a
+:168ac072
+set dev u.trust Anchor Hardware Security Module cs7.3 Series Virtual Function
 goto 168a
 :168c
 set ven Qualcomm Atheros
@@ -39919,13 +39949,16 @@ goto 1d82
 set dev Codensity T408 Video Encoding-Decoding Accelerator
 goto 1d82
 :1d87
-set ven Fuzhou Rockchip Electronics Co., Ltd
+set ven Rockchip Electronics Co., Ltd
 exit
 :1d870100
 set dev RK3399 PCI Express Root Port
 goto 1d87
 :1d871808
 set dev RK1808 Neural Network Processor Card
+goto 1d87
+:1d873566
+set dev RK3568 Remote Signal Processor
 goto 1d87
 :1d8f
 set ven Enyx
@@ -40425,6 +40458,9 @@ exit
 :1eb11001
 set dev Video Accelerator
 goto 1eb1
+:1ed3
+set ven Yeston
+exit
 :1ed8
 set ven Digiteq Automotive
 exit
@@ -40580,6 +40616,9 @@ set ven Kingston Technology Company, Inc.
 exit
 :26460010
 set dev HyperX Predator PCIe AHCI SSD
+goto 2646
+:26462262
+set dev KC2000 NVMe SSD
 goto 2646
 :26462263
 set dev A2000 NVMe SSD
@@ -40949,9 +40988,6 @@ set dev CH355 PCI Quad Serial Port Controller
 goto 4348
 :434e
 set ven CAST Navigation LLC
-exit
-:43b0
-set ven Tiger Lake-H PCIe Root Port #9
 exit
 :43bc
 set ven Tiger Lake-H PCIe Root Port #5
@@ -42546,14 +42582,23 @@ goto 8086
 :808606b0
 set dev Comet Lake PCI Express Root Port #9
 goto 8086
+:808606bd
+set dev Comet Lake PCIe Port #6
+goto 8086
 :808606c0
 set dev Comet Lake PCI Express Root Port #17
 goto 8086
 :808606c8
 set dev Comet Lake PCH cAVS
 goto 8086
+:808606d2
+set dev Comet Lake SATA AHCI Controller
+goto 8086
 :808606e0
 set dev Comet Lake HECI Controller
+goto 8086
+:808606e3
+set dev Comet Lake Keyboard and Text (KT) Redirection
 goto 8086
 :808606e8
 set dev Comet Lake PCH Serial IO I2C Controller #0
@@ -50430,6 +50475,12 @@ goto 8086
 :808643a4
 set dev Tiger Lake-H SPI Controller
 goto 8086
+:808643b0
+set dev Tiger Lake-H PCI Express Root Port #9
+goto 8086
+:808643bc
+set dev Tiger Lake-H PCI Express Root Port #5
+goto 8086
 :808643c8
 set dev Tiger Lake-H HD Audio Controller
 goto 8086
@@ -52287,6 +52338,9 @@ goto 8086
 :80869a0d
 set dev Tiger Lake-LP Telemetry Aggregator
 goto 8086
+:80869a11
+set dev GNA Scoring Accelerator module
+goto 8086
 :80869a13
 set dev Tiger Lake-LP Thunderbolt 4 USB Controller
 goto 8086
@@ -52313,6 +52367,9 @@ set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #0
 goto 8086
 :80869a25
 set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #1
+goto 8086
+:80869a26
+set dev 11th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
 :80869a27
 set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #2
@@ -52343,6 +52400,9 @@ set dev TigerLake GT2 [Iris Xe Graphics]
 goto 8086
 :80869a60
 set dev TigerLake GT2 [Iris Xe Graphics]
+goto 8086
+:80869a68
+set dev Tiger Lake-H UHD Graphics
 goto 8086
 :80869b41
 set dev CometLake-U GT2 [UHD Graphics]
