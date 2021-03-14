@@ -3297,6 +3297,9 @@ goto 1002
 :100273e0
 set dev Navi 23
 goto 1002
+:100273e1
+set dev Navi 23
+goto 1002
 :100273ff
 set dev Navi 23 [Radeon RX 6600/6600 XT]
 goto 1002
@@ -17817,11 +17820,14 @@ goto 10de
 :10de21d1
 set dev TU116BM [GeForce GTX 1660 Ti Mobile]
 goto 10de
+:10de2200
+set dev GA102
+goto 10de
 :10de2204
 set dev GA102 [GeForce RTX 3090]
 goto 10de
 :10de2205
-set dev GA102 [GeForce RTX 3080 Ti]
+set dev GA102 [GeForce RTX 3080 20GB]
 goto 10de
 :10de2206
 set dev GA102 [GeForce RTX 3080]
@@ -17838,10 +17844,16 @@ goto 10de
 :10de2230
 set dev GA102GL [RTX A6000]
 goto 10de
+:10de2231
+set dev GA102GL
+goto 10de
 :10de2235
 set dev GA102GL [RTX A40]
 goto 10de
 :10de2236
+set dev GA102GL
+goto 10de
+:10de2237
 set dev GA102GL
 goto 10de
 :10de223f
@@ -17849,6 +17861,9 @@ set dev GA102GL
 goto 10de
 :10de228b
 set dev GA104 High Definition Audio Controller
+goto 10de
+:10de2302
+set dev GA103
 goto 10de
 :10de2321
 set dev GA103
@@ -39150,6 +39165,9 @@ goto 1c1f
 :1c1f001d
 set dev Vega
 goto 1c1f
+:1c1f001f
+set dev FD940
+goto 1c1f
 :1c28
 set ven Lite-On IT Corp. / Plextor
 exit
@@ -39509,6 +39527,9 @@ set dev ExaNIC X100
 goto 1ce4
 :1ce4000b
 set dev ExaNIC V9P
+goto 1ce4
+:1ce4000c
+set dev ExaNIC V9P-3
 goto 1ce4
 :1ce40100
 set dev ExaDISK FX1
@@ -50496,6 +50517,9 @@ goto 8086
 :808643ef
 set dev Tiger Lake-H Shared SRAM
 goto 8086
+:808643f0
+set dev Wi-Fi 6 AX201
+goto 8086
 :8086444e
 set dev Turbo Memory Controller
 goto 8086
@@ -52324,7 +52348,7 @@ goto 8086
 set dev Integrated RAID
 goto 8086
 :80869a01
-set dev 11th Gen Core Processor PCIe Controller
+set dev 11th Gen Core Processor PCIe Controller #1
 goto 8086
 :80869a03
 set dev TigerLake-LP Dynamic Tuning Processor Participant
@@ -52337,6 +52361,9 @@ set dev Volume Management Device NVMe RAID Controller
 goto 8086
 :80869a0d
 set dev Tiger Lake-LP Telemetry Aggregator
+goto 8086
+:80869a0f
+set dev 11th Gen Core Processor PCIe Controller #0
 goto 8086
 :80869a11
 set dev GNA Scoring Accelerator module
@@ -53642,6 +53669,9 @@ set dev Cannon Lake PCH SPI Controller
 goto 8086
 :8086a328
 set dev Cannon Lake PCH Serial IO UART Host Controller
+goto 8086
+:8086a32b
+set dev Cannon Lake PCH SPI Host Controller
 goto 8086
 :8086a32c
 set dev Cannon Lake PCH PCI Express Root Port #21
