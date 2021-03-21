@@ -8946,6 +8946,9 @@ goto 106b
 :106b0007
 set dev O'Hare I/O
 goto 106b
+:106b000b
+set dev Apple Camera
+goto 106b
 :106b000c
 set dev DOS on Mac
 goto 106b
@@ -30949,7 +30952,7 @@ goto 14e4
 set dev NetXtreme BCM5705M_2 Gigabit Ethernet
 goto 14e4
 :14e4165f
-set dev NetXtreme BCM5720 2-port Gigabit Ethernet PCIe
+set dev NetXtreme BCM5720 Gigabit Ethernet PCIe
 goto 14e4
 :14e41662
 set dev NetXtreme II BCM57712 10 Gigabit Ethernet
@@ -32555,6 +32558,9 @@ set dev RCIM-III Real-Time Clock & Interrupt Module (PCIe)
 goto 1542
 :15429272
 set dev Pulse Width Modulator Card
+goto 1542
+:15429273
+set dev RCIM-IV Real-Time Clock & Interrupt Module (PCIe)
 goto 1542
 :15429277
 set dev 5 Volt Delta Sigma Converter Card
@@ -35748,6 +35754,9 @@ goto 17a0
 :17aa
 set ven Lenovo
 exit
+:17aa3181
+set dev ThinkCentre M75n IoT
+goto 17aa
 :17aa402b
 set dev Intel 82599ES 10Gb 2-port Server Adapter X520-2
 goto 17aa
@@ -39060,6 +39069,18 @@ goto 1bd0
 :1bd01005
 set dev PE1000 (Multi-Protocol PCIe/104 Interface Card)
 goto 1bd0
+:1bd01006
+set dev webCS Wireless Aircraft Communications Server
+goto 1bd0
+:1bd01007
+set dev AB3000 Series Rugged Computer (Series N)
+goto 1bd0
+:1bd01008
+set dev ME1000 mPCIe Avionics Interface Card
+goto 1bd0
+:1bd0100a
+set dev NG1 Series Avionics Converter
+goto 1bd0
 :1bd01101
 set dev OmniBus II PCIe Multi-Protocol Interface Card
 goto 1bd0
@@ -39068,6 +39089,18 @@ set dev OmniBusBox II Multi-Protocol Interface Core
 goto 1bd0
 :1bd01103
 set dev OmniBus II cPCIe/PXIe Multi-Protocol Interface Card
+goto 1bd0
+:1bd01200
+set dev NG3 Series Mil-Std-1553 Interface
+goto 1bd0
+:1bd01201
+set dev NG3 Series ARINC 429 Interface
+goto 1bd0
+:1bd01202
+set dev NG3 Series Avionics Discrete & Serial Interface
+goto 1bd0
+:1bd01203
+set dev NG3 Series Avionics Discrete Interface
 goto 1bd0
 :1bd4
 set ven Inspur Electronic Information Industry Co., Ltd.
@@ -41008,7 +41041,7 @@ goto 4348
 set dev CH355 PCI Quad Serial Port Controller
 goto 4348
 :434e
-set ven CAST Navigation LLC
+set ven Cornelis Networks
 exit
 :43bc
 set ven Tiger Lake-H PCIe Root Port #5
