@@ -2290,7 +2290,7 @@ goto 1002
 set dev R423 [Radeon X800 XT]
 goto 1002
 :10026600
-set dev Mars [Radeon HD 8670A/8670M/8750M]
+set dev Mars [Radeon HD 8670A/8670M/8750M / R7 M370]
 goto 1002
 :10026601
 set dev Mars [Radeon HD 8730M]
@@ -2458,7 +2458,7 @@ goto 1002
 set dev Turks XT [Radeon HD 6670/7670]
 goto 1002
 :10026759
-set dev Turks PRO [Radeon HD 6570/7570/8550]
+set dev Turks PRO [Radeon HD 6570/7570/8550 / R5 230]
 goto 1002
 :1002675b
 set dev Turks [Radeon HD 7600 Series]
@@ -3255,6 +3255,9 @@ goto 1002
 :10027312
 set dev Navi 10 [Radeon Pro W5700]
 goto 1002
+:10027314
+set dev Navi 10 USB
+goto 1002
 :1002731f
 set dev Navi 10 [Radeon RX 5600 OEM/5600 XT / 5700/5700 XT]
 goto 1002
@@ -3285,20 +3288,32 @@ goto 1002
 :1002738e
 set dev Arcturus GL-XL
 goto 1002
+:100273a4
+set dev Navi 21 USB
+goto 1002
+:100273af
+set dev Navi 21 [Radeon RX 6900 XT]
+goto 1002
 :100273bf
 set dev Navi 21 [Radeon RX 6800/6800 XT / 6900 XT]
 goto 1002
 :100273c3
 set dev Navi 22
 goto 1002
+:100273c4
+set dev Navi 22 USB
+goto 1002
 :100273df
-set dev Navi 22 [Radeon RX 6700/6700 XT]
+set dev Navi 22 [Radeon RX 6700/6700 XT / 6800M]
 goto 1002
 :100273e0
 set dev Navi 23
 goto 1002
 :100273e1
 set dev Navi 23
+goto 1002
+:100273e4
+set dev Navi 23 USB
 goto 1002
 :100273ff
 set dev Navi 23 [Radeon RX 6600/6600 XT]
@@ -21013,7 +21028,7 @@ goto 1134
 set dev POET PSDMS Device
 goto 1134
 :1135
-set ven Fuji Xerox Co Ltd
+set ven FUJIFILM Business Innovation Corp.
 exit
 :11350001
 set dev Printer controller
@@ -27683,6 +27698,9 @@ set dev MN-120 (ADMtek Centaur-C based)
 goto 1414
 :14140002
 set dev MN-130 (ADMtek Centaur-P based)
+goto 1414
+:1414008c
+set dev Basic Render Driver
 goto 1414
 :14145353
 set dev Hyper-V virtual VGA
@@ -40325,6 +40343,12 @@ set dev ACE-NIC250 Programmable Network Accelerator
 goto 1df3
 :1df30206
 set dev ACE-NIC200 Programmable Network Accelerator
+goto 1df3
+:1df30207
+set dev ACE-NIC50RN Programmable Network Accelerator
+goto 1df3
+:1df30208
+set dev ACE-NIC100RN Programmable Network Accelerator
 goto 1df3
 :1df7
 set ven opencpi.org
@@ -55634,6 +55658,9 @@ set dev Kona HDMI
 goto f1d0
 :f1d0eb25
 set dev Corvid 44 12g
+goto f1d0
+:f1d0eb26
+set dev T-Tap Pro
 goto f1d0
 :f1d0efac
 set dev Xena SD-MM/SD-22-MM
