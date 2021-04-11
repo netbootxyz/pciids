@@ -969,6 +969,9 @@ goto 1000
 :10006001
 set dev DX1 Multiformat Broadcast HD/SD Encoder/Decoder
 goto 1000
+:1000c010
+set dev PEX88048 50 lane, 50 port, PCI Express Gen 4.0 ExpressFabric Platform
+goto 1000
 :1000c012
 set dev PEX880xx PCIe Gen 4 Switch
 goto 1000
@@ -17778,6 +17781,9 @@ goto 10de
 :10de1fd9
 set dev TU117BM [GeForce GTX 1650 Mobile Refresh]
 goto 10de
+:10de1fdd
+set dev TU117BM [GeForce GTX 1650 Mobile Refresh]
+goto 10de
 :10de1ff9
 set dev TU117GLM [Quadro T1000 Mobile]
 goto 10de
@@ -17889,6 +17895,9 @@ goto 10de
 :10de2482
 set dev GA104 [GeForce RTX 3070 Ti]
 goto 10de
+:10de2483
+set dev GA104
+goto 10de
 :10de2484
 set dev GA104 [GeForce RTX 3070]
 goto 10de
@@ -17958,8 +17967,23 @@ goto 10de
 :10de25a4
 set dev GA107
 goto 10de
+:10de25a5
+set dev GA107M
+goto 10de
 :10de25af
 set dev GA107 [GeForce RTX 3050 Engineering Sample]
+goto 10de
+:10de25b5
+set dev GA107GLM [RTX A4 Mobile]
+goto 10de
+:10de25b8
+set dev GA107GLM
+goto 10de
+:10de25e0
+set dev GA107BM
+goto 10de
+:10de25e2
+set dev GA107BM
 goto 10de
 :10df
 set ven Emulex Corporation
@@ -18908,6 +18932,9 @@ set dev RocketRAID 3320
 goto 1103
 :11034310
 set dev RocketRaid 4310
+goto 1103
+:11037505
+set dev SSD7505 PCIe Gen4 x16 4-Port M.2 NVMe RAID Controller
 goto 1103
 :1104
 set ven RasterOps Corp.
@@ -24336,6 +24363,9 @@ exit
 :1269
 set ven Thomson-CSF/TTM
 exit
+:126900b4
+set dev 5G Data Card [Cinterion MV31-W]
+goto 1269
 :126a
 set ven Lexmark International, Inc.
 exit
@@ -30288,6 +30318,9 @@ exit
 :148c
 set ven Tul Corporation / PowerColor
 exit
+:148c2391
+set dev Radeon RX 590 [Red Devil]
+goto 148c
 :148d
 set ven DIGICOM Systems, Inc.
 exit
@@ -31556,6 +31589,9 @@ set dev BCM4413 V.90 56k modem
 goto 14e4
 :14e44412
 set dev BCM4412 10/100BaseT
+goto 14e4
+:14e44415
+set dev BCM4359 802.11ac Dual-Band Wireless Network Controller
 goto 14e4
 :14e4441f
 set dev BCM4361 802.11ac Dual-Band Wireless Network Controller
@@ -35766,6 +35802,9 @@ goto 17a0
 :17a09750
 set dev GL9750 SD Host Controller
 goto 17a0
+:17a09755
+set dev GL9755 SD Host Controller
+goto 17a0
 :17a0e763
 set dev GL9763E eMMC Controller
 goto 17a0
@@ -35827,16 +35866,19 @@ goto 17cb
 set dev MSM8998 PCIe Root Complex
 goto 17cb
 :17cb0108
-set dev SM8150/SA8195P PCIe Root Complex
+set dev SM8150 PCIe Root Complex
+goto 17cb
+:17cb0109
+set dev SA8195P PCIe Root Complex
 goto 17cb
 :17cb0300
-set dev MDM9x35 LTE Modem
+set dev MDM9x35 LTE Modem [Snapdragon X7]
 goto 17cb
 :17cb0301
-set dev MDM9640 PCIe Root Complex
+set dev MDM9x45 LTE Modem [Snapdragon X12]
 goto 17cb
 :17cb0302
-set dev MDM9x55 LTE Modem [Snapdragon X12]
+set dev MDM9x55 LTE Modem [Snapdragon X16]
 goto 17cb
 :17cb0400
 set dev Datacenter Technologies QDF2432 PCI Express Root Port
@@ -38553,6 +38595,9 @@ goto 1af4
 :1af41053
 set dev Virtio socket
 goto 1af4
+:1af4105a
+set dev Virtio file system
+goto 1af4
 :1af41110
 set dev Inter-VM shared memory
 goto 1af4
@@ -39024,6 +39069,12 @@ goto 1bb1
 :1bb10100
 set dev Nytro Flash Storage
 goto 1bb1
+:1bb15012
+set dev FireCuda 510 SSD
+goto 1bb1
+:1bb15016
+set dev FireCuda 520 SSD
+goto 1bb1
 :1bb3
 set ven Bluecherry
 exit
@@ -39275,6 +39326,12 @@ set dev PacketMover 2x10Gb [Tivoli]
 goto 1c2c
 :1c2c00e5
 set dev PacketMover 2x10Gb [Corfu]
+goto 1c2c
+:1c2c1000
+set dev SmartNIC N5010 4x100Gb
+goto 1c2c
+:1c2c1001
+set dev SmartNIC N5011 w/2xE810 4x100Gb
 goto 1c2c
 :1c2ca000
 set dev FBC2CGG3 Capture 2x40Gb [Mango_02]
@@ -43004,6 +43061,9 @@ set dev Thunderbolt 4 USB Controller [Goshen Ridge 2020]
 goto 8086
 :80860b60
 set dev NVMe DC SSD [3DNAND, Sentinel Rock Controller]
+goto 8086
+:80860bd0
+set dev Ponte Vecchio 2T
 goto 8086
 :80860be0
 set dev Atom Processor D2xxx/N2xxx Integrated Graphics Controller
@@ -47262,6 +47322,9 @@ goto 8086
 :80862723
 set dev Wi-Fi 6 AX200
 goto 8086
+:80862725
+set dev Wi-Fi 6 AX210/AX211/AX411 160MHz
+goto 8086
 :80862770
 set dev 82945G/GZ/P/PL Memory Controller Hub
 goto 8086
@@ -50589,6 +50652,9 @@ goto 8086
 :808646a0
 set dev AlderLake-P GT2
 goto 8086
+:808646c0
+set dev AlderLake-M GT1
+goto 8086
 :80864905
 set dev DG1 [Iris Xe MAX Graphics]
 goto 8086
@@ -50603,6 +50669,51 @@ set dev DG1 [Iris Xe Graphics]
 goto 8086
 :80864c3d
 set dev Volume Management Device NVMe RAID Controller
+goto 8086
+:80864c8a
+set dev RocketLake-S GT1 [UHD Graphics 750]
+goto 8086
+:80864c8b
+set dev RocketLake-S GT1 [UHD Graphics 730]
+goto 8086
+:80864c90
+set dev RocketLake-S GT1 [UHD Graphics P750]
+goto 8086
+:80864c9a
+set dev RocketLake-S [UHD Graphics]
+goto 8086
+:80864da3
+set dev JaserLake SMBus
+goto 8086
+:80864da4
+set dev JaserLake SPI (flash) Controller
+goto 8086
+:80864de0
+set dev Management Engine Interface
+goto 8086
+:80864de8
+set dev Serial IO I2C Host Controller
+goto 8086
+:80864de9
+set dev Serial IO I2C Host Controller
+goto 8086
+:80864df0
+set dev Wi-Fi 6 AX201 160MHz
+goto 8086
+:80864e03
+set dev Dynamic Tuning service
+goto 8086
+:80864e19
+set dev JasperLake IPU
+goto 8086
+:80864e55
+set dev JasperLake [UHD Graphics]
+goto 8086
+:80864e61
+set dev JasperLake [UHD Graphics]
+goto 8086
+:80864e71
+set dev JasperLake [UHD Graphics]
 goto 8086
 :80864f80
 set dev DG2
@@ -52417,7 +52528,7 @@ goto 8086
 set dev Volume Management Device NVMe RAID Controller
 goto 8086
 :80869a0d
-set dev Tiger Lake-LP Telemetry Aggregator
+set dev Tigerlake Telemetry Aggregator Driver
 goto 8086
 :80869a0f
 set dev 11th Gen Core Processor PCIe Controller #0
@@ -52480,13 +52591,13 @@ goto 8086
 set dev 11th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
 :80869a49
-set dev TigerLake GT2 [Iris Xe Graphics]
+set dev TigerLake-LP GT2 [Iris Xe Graphics]
 goto 8086
 :80869a60
-set dev TigerLake GT2 [Iris Xe Graphics]
+set dev TigerLake-H GT1 [UHD Graphics]
 goto 8086
 :80869a68
-set dev Tiger Lake-H UHD Graphics
+set dev TigerLake-H GT1 [UHD Graphics]
 goto 8086
 :80869b41
 set dev CometLake-U GT2 [UHD Graphics]
@@ -52517,6 +52628,9 @@ set dev CometLake-S GT2 [UHD Graphics 630]
 goto 8086
 :80869bc8
 set dev CometLake-S GT2 [UHD Graphics 630]
+goto 8086
+:80869bca
+set dev Comet Lake UHD Graphics
 goto 8086
 :80869c00
 set dev 8 Series SATA Controller 1 [IDE mode]
