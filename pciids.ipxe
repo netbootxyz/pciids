@@ -4122,6 +4122,9 @@ goto 1002
 :1002ab20
 set dev Vega 20 HDMI Audio [Radeon VII]
 goto 1002
+:1002ab28
+set dev Navi 21 HDMI Audio [Radeon RX 6800/6800 XT / 6900 XT]
+goto 1002
 :1002ab38
 set dev Navi 10 HDMI Audio
 goto 1002
@@ -16632,6 +16635,9 @@ goto 10de
 :10de1185
 set dev GK104 [GeForce GTX 660 OEM]
 goto 10de
+:10de1186
+set dev GK104 [GeForce GTX 660 Ti]
+goto 10de
 :10de1187
 set dev GK104 [GeForce GTX 760]
 goto 10de
@@ -17796,6 +17802,9 @@ goto 10de
 :10de20b2
 set dev GA100 [A100 SXM4 80GB]
 goto 10de
+:10de20b7
+set dev GA100GL [A30 PCIe]
+goto 10de
 :10de20be
 set dev GA100 [GRID A100A]
 goto 10de
@@ -17872,10 +17881,10 @@ goto 10de
 set dev GA102GL
 goto 10de
 :10de2235
-set dev GA102GL [RTX A40]
+set dev GA102GL [A40]
 goto 10de
 :10de2236
-set dev GA102GL
+set dev GA102GL [A10]
 goto 10de
 :10de2237
 set dev GA102GL
@@ -33392,6 +33401,12 @@ set dev MT43162 Family [BlueField-3 Lx SoC PCIe Bridge]
 goto 15b3
 :15b3197b
 set dev MT43244 Family [BlueField-3 SoC PCIe Bridge]
+goto 15b3
+:15b32021
+set dev MT42822 Family [BlueField-2 SoC Emulated PCIe Bridge]
+goto 15b3
+:15b32024
+set dev MT43244 Family [BlueField-3 SoC Emulated PCIe Bridge]
 goto 15b3
 :15b34117
 set dev MT27712A0-FDCF-AE
