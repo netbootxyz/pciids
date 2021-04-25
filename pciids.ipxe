@@ -1134,6 +1134,9 @@ goto 1002
 :1002164c
 set dev Lucienne
 goto 1002
+:1002164d
+set dev Rembrandt
+goto 1002
 :10021714
 set dev BeaverCreek HDMI Audio [Radeon HD 6500D and 6400G-6600G series]
 goto 1002
@@ -3319,7 +3322,7 @@ goto 1002
 set dev Navi 23 USB
 goto 1002
 :100273ff
-set dev Navi 23 [Radeon RX 6600/6600 XT]
+set dev Navi 23 [Radeon RX 6600/6600 XT/6600M]
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -17772,6 +17775,15 @@ goto 10de
 :10de1fae
 set dev TU117GL
 goto 10de
+:10de1fb0
+set dev TU117GLM [Quadro T1000 Mobile]
+goto 10de
+:10de1fb1
+set dev TU117GLM [Quadro T600 Mobile]
+goto 10de
+:10de1fb2
+set dev TU117GLM [Quadro T400 Mobile]
+goto 10de
 :10de1fb8
 set dev TU117GLM [Quadro T2000 Mobile / Max-Q]
 goto 10de
@@ -17801,6 +17813,9 @@ set dev GA100 [A100 PCIe 40GB]
 goto 10de
 :10de20b2
 set dev GA100 [A100 SXM4 80GB]
+goto 10de
+:10de20b6
+set dev GA100GL [PG506-232]
 goto 10de
 :10de20b7
 set dev GA100GL [A30 PCIe]
@@ -17878,7 +17893,7 @@ goto 10de
 set dev GA102GL [RTX A6000]
 goto 10de
 :10de2231
-set dev GA102GL
+set dev GA102GL [RTX A5000]
 goto 10de
 :10de2235
 set dev GA102GL [A40]
@@ -17887,7 +17902,7 @@ goto 10de
 set dev GA102GL [A10]
 goto 10de
 :10de2237
-set dev GA102GL
+set dev GA102GL [A10G]
 goto 10de
 :10de223f
 set dev GA102GL
@@ -17930,6 +17945,9 @@ set dev GA104 [GeForce RTX 3060 Engineering Sample]
 goto 10de
 :10de24af
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
+goto 10de
+:10de24b0
+set dev GA104GL [RTX A4000]
 goto 10de
 :10de24b6
 set dev GA104
@@ -30612,11 +30630,17 @@ exit
 :14c3
 set ven MEDIATEK Corp.
 exit
+:14c37612
+set dev MT7612E 802.11acbgn PCI Express Wireless Network Adapter
+goto 14c3
 :14c37630
 set dev MT7630e 802.11bgn Wireless Network Adapter
 goto 14c3
 :14c37662
 set dev MT7662E 802.11ac PCI Express Wireless Network Adapter
+goto 14c3
+:14c37915
+set dev MT7915E 802.11ax PCI Express Wireless Network Adapter
 goto 14c3
 :14c4
 set ven IWASAKI Information Systems Co Ltd
@@ -33402,8 +33426,14 @@ goto 15b3
 :15b3197b
 set dev MT43244 Family [BlueField-3 SoC PCIe Bridge]
 goto 15b3
+:15b32020
+set dev MT2892 Family [ConnectX-6 Dx Emulated PCIe Bridge]
+goto 15b3
 :15b32021
 set dev MT42822 Family [BlueField-2 SoC Emulated PCIe Bridge]
+goto 15b3
+:15b32023
+set dev MT2910 Family [ConnectX-7 Emulated PCIe Bridge]
 goto 15b3
 :15b32024
 set dev MT43244 Family [BlueField-3 SoC Emulated PCIe Bridge]
@@ -38670,8 +38700,11 @@ goto 1b21
 :1b211142
 set dev ASM1042A USB 3.0 Host Controller
 goto 1b21
+:1b211182
+set dev ASM1182e 2-Port PCIe x1 Gen2 Packet Switch
+goto 1b21
 :1b211184
-set dev ASM1184e PCIe Switch Port
+set dev ASM1184e 4-Port PCIe x1 Gen2 Packet Switch
 goto 1b21
 :1b211242
 set dev ASM1142 USB 3.1 Host Controller
