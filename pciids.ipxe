@@ -39165,6 +39165,36 @@ goto 1bbf
 :1bbf0004
 set dev MAX4
 goto 1bbf
+:1bc0
+set ven Innodisk Corporation
+exit
+:1bc01001
+set dev PCIe 3TG6-P Controller
+goto 1bc0
+:1bc01002
+set dev PCIe 3TE6 Controller
+goto 1bc0
+:1bc01160
+set dev PCIe 3TE2 Controller
+goto 1bc0
+:1bc01321
+set dev PCIe 4TG-P Controller
+goto 1bc0
+:1bc01322
+set dev PCIe 4TE Controller
+goto 1bc0
+:1bc02262
+set dev PCIe 3TG3-P Controller
+goto 1bc0
+:1bc05208
+set dev PCIe 3TE7 Controller
+goto 1bc0
+:1bc05216
+set dev PCIe 3TE8 Controller
+goto 1bc0
+:1bc05236
+set dev PCIe 4TG2-P Controller
+goto 1bc0
 :1bcf
 set ven NEC Corporation
 exit
@@ -39549,6 +39579,9 @@ exit
 :1cb0
 set ven Shannon Systems
 exit
+:1cb08266
+set dev Andalusia Series SSD
+goto 1cb0
 :1cb0d000
 set dev Venice NVMe SSD
 goto 1cb0
@@ -40641,6 +40674,12 @@ exit
 :1eb11001
 set dev Video Accelerator
 goto 1eb1
+:1ebd
+set ven Emerge Technologies Company Ltd.
+exit
+:1ebd0101
+set dev Seirios 2063 Video Codec
+goto 1ebd
 :1ed3
 set ven Yeston
 exit
@@ -50686,7 +50725,7 @@ goto 8086
 set dev Tiger Lake-H Shared SRAM
 goto 8086
 :808643f0
-set dev Wi-Fi 6 AX201
+set dev Tiger Lake PCH CNVi WiFi
 goto 8086
 :8086444e
 set dev Turbo Memory Controller
@@ -54201,6 +54240,12 @@ exit
 :88002008
 set dev Video assistant component
 goto 8800
+:8820
+set ven Stryker Corporation
+exit
+:88202724
+set dev Mako Front Side Motor Controller [cPCI]
+goto 8820
 :8866
 set ven T-Square Design Inc.
 exit
