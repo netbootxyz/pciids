@@ -17571,6 +17571,9 @@ goto 10de
 :10de1e07
 set dev TU102 [GeForce RTX 2080 Ti Rev. A]
 goto 10de
+:10de1e09
+set dev CMP 50HX
+goto 10de
 :10de1e2d
 set dev TU102 [GeForce RTX 2080 Ti Engineering Sample]
 goto 10de
@@ -17883,6 +17886,9 @@ goto 10de
 :10de2208
 set dev GA102 [GeForce RTX 3080 Ti]
 goto 10de
+:10de220d
+set dev GA102
+goto 10de
 :10de222b
 set dev GA102 [GeForce RTX 3090 Engineering Sample]
 goto 10de
@@ -17950,10 +17956,13 @@ goto 10de
 set dev GA104GL [RTX A4000]
 goto 10de
 :10de24b6
-set dev GA104
+set dev GA104GLM [RTX A5000 Mobile]
+goto 10de
+:10de24b7
+set dev GA104GLM [RTX A4000 Mobile]
 goto 10de
 :10de24b8
-set dev GA104
+set dev GA104GLM [RTX A3000 Mobile]
 goto 10de
 :10de24bf
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
@@ -17969,6 +17978,9 @@ set dev GA106 [GeForce RTX 3060]
 goto 10de
 :10de2503
 set dev GA106 [GeForce RTX 3060]
+goto 10de
+:10de2504
+set dev GA106 [GeForce RTX 3060 Lite Hash Rate]
 goto 10de
 :10de2505
 set dev GA106
@@ -18004,7 +18016,7 @@ goto 10de
 set dev GA107GLM [RTX A4 Mobile]
 goto 10de
 :10de25b8
-set dev GA107GLM
+set dev GA107GLM [RTX A2000 Mobile]
 goto 10de
 :10de25e0
 set dev GA107BM
@@ -40675,7 +40687,7 @@ exit
 set dev Video Accelerator
 goto 1eb1
 :1ebd
-set ven Emerge Technologies Company Ltd.
+set ven EMERGETECH Company Ltd.
 exit
 :1ebd0101
 set dev Seirios 2063 Video Codec
@@ -49294,7 +49306,7 @@ goto 8086
 set dev Gemini Lake PCI Express Root Port
 goto 8086
 :808631dc
-set dev AC 1550i Wireless
+set dev Gemini Lake PCH CNVi WiFi
 goto 8086
 :808631e3
 set dev Celeron/Pentium Silver Processor SATA Controller
@@ -49528,7 +49540,7 @@ goto 8086
 set dev Ice Lake-LP DRAM Controller
 goto 8086
 :808634f0
-set dev Killer Wi-Fi 6 AX1650i 160MHz Wireless Network Adapter (201NGW)
+set dev Ice Lake-LP PCH CNVi WiFi
 goto 8086
 :808634f8
 set dev Ice Lake-LP SD Controller
@@ -54040,7 +54052,7 @@ goto 8086
 set dev Cannon Lake PCH Shared SRAM
 goto 8086
 :8086a370
-set dev Wireless-AC 9560 [Jefferson Peak]
+set dev Cannon Lake PCH CNVi WiFi
 goto 8086
 :8086a379
 set dev Cannon Lake PCH Thermal Controller
