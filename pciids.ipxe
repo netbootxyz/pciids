@@ -2958,6 +2958,9 @@ goto 1002
 :10026987
 set dev Lexa [Radeon 540X/550X/630 / RX 640 / E9171 MCM]
 goto 1002
+:1002698f
+set dev Lexa XT [Radeon PRO WX 3100 / Barco MXRT 4700]
+goto 1002
 :10026995
 set dev Lexa XT [Radeon PRO WX 2100]
 goto 1002
@@ -3294,6 +3297,9 @@ goto 1002
 :1002738e
 set dev Arcturus GL-XL
 goto 1002
+:100273a3
+set dev Navi 21 [Radeon PRO W6800]
+goto 1002
 :100273a4
 set dev Navi 21 USB
 goto 1002
@@ -3323,6 +3329,15 @@ set dev Navi 23 USB
 goto 1002
 :100273ff
 set dev Navi 23 [Radeon RX 6600/6600 XT/6600M]
+goto 1002
+:10027408
+set dev Aldebaran
+goto 1002
+:1002740c
+set dev Aldebaran
+goto 1002
+:1002740f
+set dev Aldebaran
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -17572,7 +17587,7 @@ goto 10de
 set dev TU102 [GeForce RTX 2080 Ti Rev. A]
 goto 10de
 :10de1e09
-set dev CMP 50HX
+set dev TU102 [CMP 50HX]
 goto 10de
 :10de1e2d
 set dev TU102 [GeForce RTX 2080 Ti Engineering Sample]
@@ -17887,7 +17902,7 @@ goto 10de
 set dev GA102 [GeForce RTX 3080 Ti]
 goto 10de
 :10de220d
-set dev GA102
+set dev GA102 [GeForce RTX 3080 Lite Hash Rate]
 goto 10de
 :10de222b
 set dev GA102 [GeForce RTX 3090 Engineering Sample]
@@ -17988,11 +18003,17 @@ goto 10de
 :10de2520
 set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
 goto 10de
+:10de2523
+set dev GA106M [GeForce RTX 3050 Ti Mobile / Max-Q]
+goto 10de
 :10de252f
 set dev GA106 [GeForce RTX 3060 Engineering Sample]
 goto 10de
 :10de2560
 set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
+goto 10de
+:10de2563
+set dev GA106M [GeForce RTX 3050 Ti Mobile / Max-Q]
 goto 10de
 :10de2583
 set dev GA107 [GeForce RTX 3050]
@@ -18007,7 +18028,7 @@ goto 10de
 set dev GA107
 goto 10de
 :10de25a5
-set dev GA107M
+set dev GA107M [GeForce RTX 3050 Mobile]
 goto 10de
 :10de25af
 set dev GA107 [GeForce RTX 3050 Engineering Sample]
@@ -18019,10 +18040,13 @@ goto 10de
 set dev GA107GLM [RTX A2000 Mobile]
 goto 10de
 :10de25e0
-set dev GA107BM
+set dev GA107BM [GeForce RTX 3050 Ti Mobile]
 goto 10de
 :10de25e2
-set dev GA107BM
+set dev GA107BM [GeForce RTX 3050 Mobile]
+goto 10de
+:10de25e5
+set dev GA107BM [GeForce RTX 3050 Mobile]
 goto 10de
 :10df
 set ven Emulex Corporation
@@ -24402,9 +24426,6 @@ exit
 :1269
 set ven Thomson-CSF/TTM
 exit
-:126900b4
-set dev 5G Data Card [Cinterion MV31-W]
-goto 1269
 :126a
 set ven Lexmark International, Inc.
 exit
@@ -27849,8 +27870,128 @@ goto 1415
 :14159523
 set dev OX16PCI952 Integrated Parallel Port
 goto 1415
+:1415c100
+set dev OXPCIe952 Parallel Port
+goto 1415
+:1415c101
+set dev OXPCIe952 Legacy 950 UART
+goto 1415
+:1415c104
+set dev OXPCIe952 Parallel Port
+goto 1415
+:1415c105
+set dev OXPCIe952 Legacy 950 UART
+goto 1415
+:1415c106
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c108
+set dev OXPCIe952 Parallel Port
+goto 1415
+:1415c109
+set dev OXPCIe952 Legacy 950 UART
+goto 1415
+:1415c10c
+set dev OXPCIe952 Parallel Port
+goto 1415
+:1415c10d
+set dev OXPCIe952 Legacy 950 UART
+goto 1415
+:1415c10e
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c110
+set dev OXPCIe952 Parallel Port
+goto 1415
+:1415c114
+set dev OXPCIe952 Parallel Port
+goto 1415
+:1415c118
+set dev OXPCIe952 Parallel Port
+goto 1415
+:1415c11b
+set dev OXPCIe952 Native 950 UART
+goto 1415
+:1415c11c
+set dev OXPCIe952 Parallel Port
+goto 1415
+:1415c11e
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c11f
+set dev OXPCIe952 Native 950 UART
+goto 1415
+:1415c120
+set dev OXPCIe952 Legacy 950 UART
+goto 1415
+:1415c124
+set dev OXPCIe952 Legacy 950 UART
+goto 1415
+:1415c126
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c128
+set dev OXPCIe952 Legacy 950 UART
+goto 1415
+:1415c12c
+set dev OXPCIe952 Legacy 950 UART
+goto 1415
+:1415c12e
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c134
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c138
+set dev OXPCIe952 Native 950 UART
+goto 1415
+:1415c13c
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c13d
+set dev OXPCIe952 Native 950 UART
+goto 1415
+:1415c140
+set dev OXPCIe952 Legacy 950 UART #1
+goto 1415
+:1415c141
+set dev OXPCIe952 Legacy 950 UART #2
+goto 1415
+:1415c144
+set dev OXPCIe952 Legacy 950 UART #1
+goto 1415
+:1415c145
+set dev OXPCIe952 Legacy 950 UART #2
+goto 1415
+:1415c146
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c148
+set dev OXPCIe952 Legacy 950 UART #1
+goto 1415
+:1415c149
+set dev OXPCIe952 Legacy 950 UART #2
+goto 1415
+:1415c14c
+set dev OXPCIe952 Legacy 950 UART #1
+goto 1415
+:1415c14d
+set dev OXPCIe952 Legacy 950 UART #2
+goto 1415
+:1415c14e
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c154
+set dev OXPCIe952 GPIO
+goto 1415
 :1415c158
-set dev OXPCIe952 Dual 16C950 UART
+set dev OXPCIe952 Dual Native 950 UART
+goto 1415
+:1415c15c
+set dev OXPCIe952 GPIO
+goto 1415
+:1415c15d
+set dev OXPCIe952 Dual Native 950 UART
 goto 1415
 :1415c308
 set dev EX-44016 16-port serial
@@ -30115,7 +30256,7 @@ goto 144d
 set dev NVMe SSD Controller SM981/PM981/PM983
 goto 144d
 :144da80a
-set dev NVMe SSD Controller PM9A1/980PRO
+set dev NVMe SSD Controller PM9A1/PM9A3/980PRO
 goto 144d
 :144da820
 set dev NVMe SSD Controller 171X
@@ -35437,7 +35578,13 @@ goto 177d
 set dev RoHS
 goto 177d
 :177d0010
-set dev Nitrox XL NPX
+set dev CN15XX/CN16XX [Nitrox PX]
+goto 177d
+:177d0011
+set dev CNN35XX [Nitrox III]
+goto 177d
+:177d0012
+set dev CNN55XX [Nitrox V]
 goto 177d
 :177d0020
 set dev Octeon CN31XX Network Processor
@@ -40140,6 +40287,15 @@ goto 1d6c
 :1d6c1019
 set dev AR-ARK-FX1 [Arkville 64B Multi-Homed Tertiary Endpoint]
 goto 1d6c
+:1d6c101a
+set dev AR-ARK-SRIOV-FX0 [Arkville 32B Primary Physical Function]
+goto 1d6c
+:1d6c101b
+set dev AR-ARK-SRIOV-FX1 [Arkville 64B Primary Physical Function]
+goto 1d6c
+:1d6c101c
+set dev AR-ARK-SRIOV-VF [Arkville Virtual Function]
+goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
 goto 1d6c
@@ -40290,6 +40446,9 @@ goto 1d95
 :1d97
 set ven Shenzhen Longsys Electronics Co., Ltd.
 exit
+:1d972263
+set dev SM2263EN/SM2263XT-based OEM SSD
+goto 1d97
 :1d9b
 set ven Facebook, Inc.
 exit
@@ -40316,6 +40475,9 @@ set dev HL-1000 AI Inference Accelerator [Goya]
 goto 1da3
 :1da31000
 set dev HL-2000 AI Training Accelerator [Gaudi]
+goto 1da3
+:1da31010
+set dev HL-2000 AI Training Accelerator [Gaudi secured]
 goto 1da3
 :1db2
 set ven ATP ELECTRONICS INC
@@ -40567,7 +40729,7 @@ goto 1e36
 set dev T11 [CloudBlazer]
 goto 1e36
 :1e360003
-set dev T10s [CloudBlazer]
+set dev T10(QSFP-DD) [CloudBlazer]
 goto 1e36
 :1e368011
 set dev I10 [CloudBlazer]
@@ -55151,6 +55313,9 @@ set ven Micron/Crucial Technology
 exit
 :c0a92263
 set dev P1 NVMe PCIe SSD
+goto c0a9
+:c0a9540a
+set dev P2 NVMe PCIe SSD
 goto c0a9
 :c0de
 set ven Motorola
