@@ -765,6 +765,9 @@ goto 1000
 :10000097
 set dev SAS3008 PCI-Express Fusion-MPT SAS-3
 goto 1000
+:100000a5
+set dev Fusion-MPT 24GSAS/PCIe SAS40xx
+goto 1000
 :100000ab
 set dev SAS3516 Fusion-MPT Tri-Mode RAID On Chip (ROC)
 goto 1000
@@ -1124,6 +1127,9 @@ set dev Arden
 goto 1002
 :10021636
 set dev Renoir
+goto 1002
+:10021637
+set dev Renoir Radeon High Definition Audio Controller
 goto 1002
 :10021638
 set dev Cezanne
@@ -3613,7 +3619,7 @@ goto 1002
 set dev RV710/M92 [Mobility Radeon HD 4350/4550]
 goto 1002
 :10029557
-set dev RV711 GL [FirePro RG220]
+set dev RV711/M93 GL [FirePro RG220]
 goto 1002
 :1002955f
 set dev RV710/M92 [Mobility Radeon HD 4330]
@@ -5958,6 +5964,21 @@ goto 1022
 :10221639
 set dev Renoir USB 3.1
 goto 1022
+:1022163a
+set dev VanGogh USB0
+goto 1022
+:1022163b
+set dev VanGogh USB1
+goto 1022
+:1022163c
+set dev VanGogh SecUSB
+goto 1022
+:1022163d
+set dev VanGogh SecureFunction
+goto 1022
+:1022163e
+set dev VanGogh HSP
+goto 1022
 :10221641
 set dev Renoir 10GbE Controller Port 0 (XGBE0/1)
 goto 1022
@@ -7294,7 +7315,7 @@ goto 1039
 set dev 85C501/2
 goto 1039
 :10390496
-set dev 85C496
+set dev SiS85C496 PCI & CPU Memory Controller (PCM)
 goto 1039
 :10390530
 set dev 530 Host
@@ -17223,6 +17244,18 @@ goto 10de
 :10de17fd
 set dev GM200GL [Tesla M40]
 goto 10de
+:10de1ad0
+set dev Tegra PCIe x8 Endpoint
+goto 10de
+:10de1ad1
+set dev Tegra PCIe x4/x8 Endpoint/Root Complex
+goto 10de
+:10de1ad2
+set dev Tegra PCIe x1 Root Complex
+goto 10de
+:10de1ad3
+set dev Xavier SATA Controller
+goto 10de
 :10de1ad6
 set dev TU102 USB 3.1 Host Controller
 goto 10de
@@ -17797,7 +17830,7 @@ goto 10de
 set dev TU117GLM [Quadro T1000 Mobile]
 goto 10de
 :10de1fb1
-set dev TU117GLM [Quadro T600 Mobile]
+set dev TU117GL [T600]
 goto 10de
 :10de1fb2
 set dev TU117GLM [Quadro T400 Mobile]
@@ -17807,6 +17840,9 @@ set dev TU117GLM [Quadro T2000 Mobile / Max-Q]
 goto 10de
 :10de1fb9
 set dev TU117GLM [Quadro T1000 Mobile]
+goto 10de
+:10de1fba
+set dev TU117GLM [T600 Mobile]
 goto 10de
 :10de1fbb
 set dev TU117GLM [Quadro T500 Mobile]
@@ -17904,6 +17940,9 @@ goto 10de
 :10de220d
 set dev GA102 [GeForce RTX 3080 Lite Hash Rate]
 goto 10de
+:10de2216
+set dev GA102 [GeForce RTX 3080 Lite Hash Rate]
+goto 10de
 :10de222b
 set dev GA102 [GeForce RTX 3090 Engineering Sample]
 goto 10de
@@ -17931,6 +17970,9 @@ goto 10de
 :10de228b
 set dev GA104 High Definition Audio Controller
 goto 10de
+:10de2296
+set dev Tegra PCIe Endpoint Virtual Network
+goto 10de
 :10de2302
 set dev GA103
 goto 10de
@@ -17948,6 +17990,12 @@ set dev GA104 [GeForce RTX 3070]
 goto 10de
 :10de2486
 set dev GA104 [GeForce RTX 3060 Ti]
+goto 10de
+:10de2488
+set dev GA104 [GeForce RTX 3070 Lite Hash Rate]
+goto 10de
+:10de2489
+set dev GA104 [GeForce RTX 3060 Ti Lite Hash Rate]
 goto 10de
 :10de249c
 set dev GA104M [GeForce RTX 3080 Mobile / Max-Q 8GB/16GB]
@@ -18560,6 +18608,9 @@ set dev RTL8111xP IPMI interface
 goto 10ec
 :10ec816d
 set dev RTL811x EHCI host controller
+goto 10ec
+:10ec816e
+set dev Realtek RealManage BMC
 goto 10ec
 :10ec8171
 set dev RTL8191SEvA Wireless LAN Controller
@@ -22032,6 +22083,9 @@ goto 117c
 :117c00bb
 set dev Celerity FC 32/64Gb/s Gen 7 Fibre Channel HBA
 goto 117c
+:117c00c5
+set dev ExpressNVM PCIe Gen4 Switch
+goto 117c
 :117c00e6
 set dev ExpressSAS GT 12Gb/s SAS/SATA HBA
 goto 117c
@@ -22496,6 +22550,9 @@ set ven Marvell Technology Group Ltd.
 exit
 :11ab0100
 set dev 88F3700 [Armada 3700 Family] ARM SoC
+goto 11ab
+:11ab0110
+set dev 88F8040 PCI Express controller
 goto 11ab
 :11ab0146
 set dev GT-64010/64010A System Controller
@@ -23392,7 +23449,22 @@ goto 11f8
 set dev PM8073 Tachyon SPCve 12G 16-port SAS/SATA controller
 goto 11f8
 :11f88531
-set dev PM8531 PFX 24xG3 Fanout PCIe Switches
+set dev PM8531 PFX 24xG3 PCIe Fanout Switch
+goto 11f8
+:11f88532
+set dev PM8532 PFX 32xG3 PCIe Fanout Switch
+goto 11f8
+:11f88533
+set dev PM8533 PFX 48xG3 PCIe Fanout Switch
+goto 11f8
+:11f88534
+set dev PM8534 PFX 64xG3 PCIe Fanout Switch
+goto 11f8
+:11f88535
+set dev PM8535 PFX 80xG3 PCIe Fanout Switch
+goto 11f8
+:11f88536
+set dev PM8536 PFX 96xG3 PCIe Fanout Switch
 goto 11f8
 :11f88546
 set dev PM8546 B-FEIP PSX 96xG3 PCIe Storage Switch
@@ -23416,7 +23488,7 @@ exit
 set ven High Street Consultants
 exit
 :11fe
-set ven Pepperl+Fuchs Comtrol, Inc.
+set ven Pepperl+Fuchs
 exit
 :11fe0001
 set dev RocketPort PCI 32-port w/external I/F
@@ -24426,6 +24498,9 @@ exit
 :1269
 set ven Thomson-CSF/TTM
 exit
+:126900b3
+set dev 5G Data Card [Cinterion MV31-W]
+goto 1269
 :126a
 set ven Lexmark International, Inc.
 exit
@@ -30270,6 +30345,12 @@ goto 144d
 :144da824
 set dev NVMe SSD Controller PM173X
 goto 144d
+:144da825
+set dev NVMe SSD Controller PM173Xa
+goto 144d
+:144da826
+set dev NVMe SSD Controller PM174X
+goto 144d
 :144decec
 set dev Exynos 8895 PCIe Root Complex
 goto 144d
@@ -30356,6 +30437,9 @@ set ven Micro-Star International Co., Ltd. [MSI]
 exit
 :14623483
 set dev MSI USB 3.0 (VIA VL80x-based xHCI USB Controller)
+goto 1462
+:14627c56
+set dev Realtek Ethernet controller RTL8111H
 goto 1462
 :1462aaf0
 set dev Radeon RX 580 Gaming X 8G
@@ -31567,7 +31651,7 @@ goto 14e4
 set dev BCM57504 NetXtreme-E RDMA Partition
 goto 14e4
 :14e41805
-set dev BCM57508 NetXtreme-E NGM2100D 2x100G KR Mezz RDMA Partition
+set dev BCM57508 NetXtreme-E RDMA Partition
 goto 14e4
 :14e41806
 set dev BCM5750X NetXtreme-E Ethernet Virtual Function
@@ -33445,9 +33529,12 @@ goto 15b3
 set dev Spectrum-4, Secure Flash recovery mode
 goto 15b3
 :15b30256
-set dev Ofek chiplet
+set dev Abir GearBox
 goto 15b3
 :15b30257
+set dev Quantum-2 in Flash Recovery Mode
+goto 15b3
+:15b30258
 set dev Quantum-2 in Flash Recovery Mode
 goto 15b3
 :15b30262
@@ -33461,6 +33548,12 @@ set dev Innova-2 Flex Burn image
 goto 15b3
 :15b30281
 set dev NPS-600 Flash Recovery
+goto 15b3
+:15b30357
+set dev Quantum-2 Secure Flash Recovery Mode
+goto 15b3
+:15b30358
+set dev Abir GearBox Secure Flash recovery mode
 goto 15b3
 :15b31002
 set dev MT25400 Family [ConnectX-2 Virtual Function]
@@ -35232,6 +35325,9 @@ goto 16d5
 :16d5702b
 set dev AP236 16-Bit, 8-Channel Isolated Analog Output Module
 goto 16d5
+:16d5702c
+set dev AP560A Module 4 Independent isolated CAN bus channels
+goto 16d5
 :16d57031
 set dev AP441-1: 32-Channel Isolated Digital Input Module
 goto 16d5
@@ -35261,6 +35357,9 @@ set dev APA7-503 Reconfigurable Artix-7 52,160 Cell FPGA module 24 TTL & 12 RS48
 goto 16d5
 :16d57054
 set dev APA7-504 Reconfigurable Artix-7 52,160 Cell FPGA module 24 LVDS channels
+goto 16d5
+:16d57073
+set dev AP730 Multi-function I/O Module 16 Digital I/O 8 Differential Analog In 4 Analog Out
 goto 16d5
 :16da
 set ven Advantech Co., Ltd.
@@ -36957,6 +37056,9 @@ goto 18ec
 :18ecc232
 set dev COMBO-FXT100
 goto 18ec
+:18ecc400
+set dev COMBO-400G1
+goto 18ec
 :18ee
 set ven Chenming Mold Ind. Corp.
 exit
@@ -37889,6 +37991,9 @@ set dev PS5013 E13 NVMe Controller
 goto 1987
 :19875016
 set dev E16 PCIe4 NVMe Controller
+goto 1987
+:19875018
+set dev E18 PCIe4 NVMe Controller
 goto 1987
 :1989
 set ven Montilio Inc.
@@ -38874,6 +38979,9 @@ goto 1b21
 :1b212142
 set dev ASM2142 USB 3.1 Host Controller
 goto 1b21
+:1b212824
+set dev ASM2824 PCIe Gen3 Packet Switch
+goto 1b21
 :1b213242
 set dev ASM3242 USB 3.2 Host Controller
 goto 1b21
@@ -39667,7 +39775,7 @@ goto 1c5c
 set dev PC300 NVMe Solid State Drive 1TB
 goto 1c5c
 :1c5c1327
-set dev BC501 NVMe Solid State Drive 512GB
+set dev BC501 NVMe Solid State Drive
 goto 1c5c
 :1c5c1339
 set dev BC511
@@ -40500,6 +40608,9 @@ exit
 :1dd8
 set ven Pensando Systems
 exit
+:1dd80002
+set dev DSC2 Elba Upstream Port
+goto 1dd8
 :1dd81000
 set dev DSC Capri Upstream Port
 goto 1dd8
@@ -40755,6 +40866,9 @@ exit
 :1e49
 set ven Yangtze Memory Technologies Co.,Ltd
 exit
+:1e491013
+set dev PC210
+goto 1e49
 :1e4b
 set ven MAXIO Technology (Hangzhou) Ltd.
 exit
@@ -40788,6 +40902,12 @@ exit
 :1e570100
 set dev The device has already been deleted.
 goto 1e57
+:1e59
+set ven Oxford Nanopore Technologies
+exit
+:1e590001
+set dev MinION Mk1C
+goto 1e59
 :1e60
 set ven Hailo Technologies Ltd.
 exit
@@ -40830,6 +40950,12 @@ exit
 :1ea02a16
 set dev Cloud Intelligent Inference Controller
 goto 1ea0
+:1ea7
+set ven Intelliprop, Inc
+exit
+:1ea7223a
+set dev Typhon+ PCIe to Gen-Z Bridge
+goto 1ea7
 :1eab
 set ven Hefei DATANG Storage Technology Co.,LTD.
 exit
@@ -40868,6 +40994,9 @@ set ven Myrtle.ai
 exit
 :1ee9
 set ven SUSE LLC
+exit
+:1efb
+set ven Flexxon Pte Ltd
 exit
 :1fc0
 set ven Ascom (Finland) Oy
@@ -45468,6 +45597,12 @@ goto 8086
 :808618a1
 set dev C4XXX Series QAT Virtual Function
 goto 8086
+:808618ee
+set dev 200xx Series QAT
+goto 8086
+:808618ef
+set dev 200xx Series QAT Virtual Function
+goto 8086
 :80861900
 set dev Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
@@ -45707,6 +45842,9 @@ set dev Atom Processor C3000 Series SPI Controller
 goto 8086
 :808619e2
 set dev Atom Processor C3000 Series QuickAssist Technology
+goto 8086
+:808619e3
+set dev Atom Processor C3000 Series QuickAssist Technology Virtual Function
 goto 8086
 :80861a1c
 set dev Ethernet Connection (17) I219-LM
@@ -50010,6 +50148,9 @@ goto 8086
 :808637c8
 set dev C62x Chipset QuickAssist Technology
 goto 8086
+:808637c9
+set dev C62x Chipset QuickAssist Technology Virtual Function
+goto 8086
 :808637cc
 set dev Ethernet Connection X722
 goto 8086
@@ -50903,6 +51044,27 @@ set dev Tiger Lake PCH CNVi WiFi
 goto 8086
 :8086444e
 set dev Turbo Memory Controller
+goto 8086
+:8086461e
+set dev Alder Lake-P Thunderbolt 4 USB Controller
+goto 8086
+:8086461f
+set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #3
+goto 8086
+:8086462f
+set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #2
+goto 8086
+:8086463e
+set dev Alder Lake-P Thunderbolt 4 NHI #0
+goto 8086
+:8086463f
+set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #1
+goto 8086
+:8086466d
+set dev Alder Lake-P Thunderbolt 4 NHI #1
+goto 8086
+:8086466e
+set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #0
 goto 8086
 :8086467f
 set dev Volume Management Device NVMe RAID Controller
@@ -53451,6 +53613,9 @@ goto 8086
 :8086a0e0
 set dev Tiger Lake-LP Management Engine Interface
 goto 8086
+:8086a0e3
+set dev Tiger Lake-LP Active Management Technology - SOL
+goto 8086
 :8086a0e8
 set dev Tiger Lake-LP Serial IO I2C Controller #0
 goto 8086
@@ -55935,6 +56100,9 @@ exit
 :f15e
 set ven SiFive, Inc.
 exit
+:f15e0000
+set dev FU740-C000 RISC-V SoC PCI Express x8 to AXI4 Bridge
+goto f15e
 :f1d0
 set ven AJA Video
 exit
