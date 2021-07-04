@@ -5941,10 +5941,10 @@ goto 1022
 set dev Arden PCIe Non-Transparent Bridge
 goto 1022
 :10221630
-set dev Renoir Root Complex
+set dev Renoir/Cezanne Root Complex
 goto 1022
 :10221631
-set dev Renoir IOMMU
+set dev Renoir/Cezanne IOMMU
 goto 1022
 :10221632
 set dev Renoir PCIe Dummy Host Bridge
@@ -5953,7 +5953,7 @@ goto 1022
 set dev Renoir PCIe GPP Bridge
 goto 1022
 :10221634
-set dev Renoir PCIe GPP Bridge
+set dev Renoir/Cezanne PCIe GPP Bridge
 goto 1022
 :10221635
 set dev Renoir Internal PCIe GPP Bridge to Bus
@@ -5962,7 +5962,7 @@ goto 1022
 set dev Renoir HD Audio Controller
 goto 1022
 :10221639
-set dev Renoir USB 3.1
+set dev Renoir/Cezanne USB 3.1
 goto 1022
 :1022163a
 set dev VanGogh USB0
@@ -17868,6 +17868,9 @@ goto 10de
 :10de20b2
 set dev GA100 [A100 SXM4 80GB]
 goto 10de
+:10de20b5
+set dev GA100 [A100 PCIe 80GB]
+goto 10de
 :10de20b6
 set dev GA100GL [PG506-232]
 goto 10de
@@ -27945,6 +27948,12 @@ goto 1415
 :14159523
 set dev OX16PCI952 Integrated Parallel Port
 goto 1415
+:1415c004
+set dev OXPCIe840 Parallel Port
+goto 1415
+:1415c006
+set dev OXPCIe840 GPIO
+goto 1415
 :1415c100
 set dev OXPCIe952 Parallel Port
 goto 1415
@@ -28068,8 +28077,275 @@ goto 1415
 :1415c15d
 set dev OXPCIe952 Dual Native 950 UART
 goto 1415
+:1415c208
+set dev OXPCIe954 Quad Native 950 UART
+goto 1415
+:1415c20c
+set dev OXPCIe954 GPIO
+goto 1415
+:1415c20d
+set dev OXPCIe954 Quad Native 950 UART
+goto 1415
 :1415c308
 set dev EX-44016 16-port serial
+goto 1415
+:1415c30c
+set dev OXPCIe958 GPIO
+goto 1415
+:1415c30d
+set dev OXPCIe958 Quad Native 950 UART
+goto 1415
+:1415c531
+set dev OXPCIe200 Dual EHCI USB Controller (ULPI/R-ULPI)
+goto 1415
+:1415c534
+set dev OXPCIe200 Dual OHCI USB Controller (ULPI/R-ULPI)
+goto 1415
+:1415c535
+set dev OXPCIe200 Dual EHCI USB Controller (ULPI/R-ULPI)
+goto 1415
+:1415c536
+set dev OXPCIe200 GPIO
+goto 1415
+:1415c538
+set dev OXPCIe200 Dual OHCI USB Controller (ULPI/R-ULPI)
+goto 1415
+:1415c539
+set dev OXPCIe200 Dual EHCI USB Controller (ULPI/R-ULPI)
+goto 1415
+:1415c53b
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c53c
+set dev OXPCIe200 Dual OHCI USB Controller (ULPI/R-ULPI)
+goto 1415
+:1415c53d
+set dev OXPCIe200 Dual EHCI USB Controller (ULPI/R-ULPI)
+goto 1415
+:1415c53e
+set dev OXPCIe200 GPIO
+goto 1415
+:1415c53f
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c540
+set dev OXPCIe200 Dual OHCI USB Controller (R-ULPI)
+goto 1415
+:1415c541
+set dev OXPCIe200 Dual EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c544
+set dev OXPCIe200 Dual OHCI USB Controller (R-ULPI)
+goto 1415
+:1415c545
+set dev OXPCIe200 Dual EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c546
+set dev OXPCIe200 GPIO
+goto 1415
+:1415c548
+set dev OXPCIe200 Dual OHCI USB Controller (R-ULPI)
+goto 1415
+:1415c549
+set dev OXPCIe200 Dual EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c54b
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c54c
+set dev OXPCIe200 Dual OHCI USB Controller (R-ULPI)
+goto 1415
+:1415c54d
+set dev OXPCIe200 Dual EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c54e
+set dev OXPCIe200 Dual GPIO
+goto 1415
+:1415c54f
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c560
+set dev OXPCIe200 Dual OHCI USB Controller (ULPI/analog)
+goto 1415
+:1415c561
+set dev OXPCIe200 EHCI USB Controller (ULPI)
+goto 1415
+:1415c564
+set dev OXPCIe200 Dual OHCI USB Controller (ULPI/analog)
+goto 1415
+:1415c565
+set dev OXPCIe200 EHCI USB Controller (ULPI)
+goto 1415
+:1415c566
+set dev OXPCIe200 GPIO
+goto 1415
+:1415c568
+set dev OXPCIe200 Dual OHCI USB Controller (ULPI/analog)
+goto 1415
+:1415c569
+set dev OXPCIe200 EHCI USB Controller (ULPI)
+goto 1415
+:1415c56b
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c56c
+set dev OXPCIe200 Dual OHCI USB Controller (ULPI/analog)
+goto 1415
+:1415c56d
+set dev OXPCIe200 EHCI USB Controller (ULPI)
+goto 1415
+:1415c56e
+set dev OXPCIe200 GPIO
+goto 1415
+:1415c56f
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c570
+set dev OXPCIe200 Dual OHCI USB Controller (R-ULPI/analog)
+goto 1415
+:1415c571
+set dev OXPCIe200 EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c574
+set dev OXPCIe200 Dual OHCI USB Controller (R-ULPI/analog)
+goto 1415
+:1415c575
+set dev OXPCIe200 EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c576
+set dev OXPCIe200 GPIO
+goto 1415
+:1415c578
+set dev OXPCIe200 Dual OHCI USB Controller (R-ULPI/analog)
+goto 1415
+:1415c579
+set dev OXPCIe200 EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c57b
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c57c
+set dev OXPCIe200 Dual OHCI USB Controller (R-ULPI/analog)
+goto 1415
+:1415c57d
+set dev OXPCIe200 EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c57e
+set dev OXPCIe200 GPIO
+goto 1415
+:1415c57f
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c5a0
+set dev OXPCIe200 OHCI USB Controller (ULPI)
+goto 1415
+:1415c5a1
+set dev OXPCIe200 EHCI USB Controller (ULPI)
+goto 1415
+:1415c5a2
+set dev OXPCIe200 Programmable Memory Interface
+goto 1415
+:1415c5a4
+set dev OXPCIe200 OHCI USB Controller (ULPI)
+goto 1415
+:1415c5a5
+set dev OXPCIe200 EHCI USB Controller (ULPI)
+goto 1415
+:1415c5a6
+set dev OXPCIe200 Programmable Memory Interface & GPIO
+goto 1415
+:1415c5a8
+set dev OXPCIe200 OHCI USB Controller (ULPI)
+goto 1415
+:1415c5aa
+set dev OXPCIe200 Programmable Memory Interface
+goto 1415
+:1415c5ab
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c5ac
+set dev OXPCIe200 OHCI USB Controller (ULPI)
+goto 1415
+:1415c5ad
+set dev OXPCIe200 EHCI USB Controller (ULPI)
+goto 1415
+:1415c5ae
+set dev OXPCIe200 Programmable Memory Interface & GPIO
+goto 1415
+:1415c5af
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c5b0
+set dev OXPCIe200 OHCI USB Controller (R-ULPI)
+goto 1415
+:1415c5b1
+set dev OXPCIe200 EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c5b2
+set dev OXPCIe200 Programmable Memory Interface
+goto 1415
+:1415c5b4
+set dev OXPCIe200 OHCI USB Controller (R-ULPI)
+goto 1415
+:1415c5b5
+set dev OXPCIe200 EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c5b6
+set dev OXPCIe200 Programmable Memory Interface & GPIO
+goto 1415
+:1415c5b8
+set dev OXPCIe200 OHCI USB Controller (R-ULPI)
+goto 1415
+:1415c5b9
+set dev OXPCIe200 EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c5ba
+set dev OXPCIe200 Programmable Memory Interface
+goto 1415
+:1415c5bb
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c5bc
+set dev OXPCIe200 OHCI USB Controller (R-ULPI)
+goto 1415
+:1415c5bd
+set dev OXPCIe200 EHCI USB Controller (R-ULPI)
+goto 1415
+:1415c5be
+set dev OXPCIe200 Programmable Memory Interface & GPIO
+goto 1415
+:1415c5bf
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c5c0
+set dev OXPCIe200 OHCI USB Controller (analog)
+goto 1415
+:1415c5c2
+set dev OXPCIe200 Programmable Memory Interface
+goto 1415
+:1415c5c4
+set dev OXPCIe200 OHCI USB Controller (analog)
+goto 1415
+:1415c5c6
+set dev OXPCIe200 Programmable Memory Interface & GPIO
+goto 1415
+:1415c5c8
+set dev OXPCIe200 OHCI USB Controller (analog)
+goto 1415
+:1415c5ca
+set dev OXPCIe200 Programmable Memory Interface
+goto 1415
+:1415c5cb
+set dev OXPCIe200 Native 950 UART
+goto 1415
+:1415c5cc
+set dev OXPCIe200 OHCI USB Controller (analog)
+goto 1415
+:1415c5ce
+set dev OXPCIe200 Programmable Memory Interface & GPIO
+goto 1415
+:1415c5cf
+set dev OXPCIe200 Native 950 UART
 goto 1415
 :1416
 set ven Multiwave Innovation pte Ltd
@@ -40994,6 +41270,9 @@ set ven Myrtle.ai
 exit
 :1ee9
 set ven SUSE LLC
+exit
+:1eec
+set ven Viscore Technologies Ltd
 exit
 :1efb
 set ven Flexxon Pte Ltd
