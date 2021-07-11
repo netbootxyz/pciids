@@ -27948,6 +27948,9 @@ goto 1415
 :14159523
 set dev OX16PCI952 Integrated Parallel Port
 goto 1415
+:1415c000
+set dev OXPCIe840 Parallel Port
+goto 1415
 :1415c004
 set dev OXPCIe840 Parallel Port
 goto 1415
@@ -28077,6 +28080,9 @@ goto 1415
 :1415c15d
 set dev OXPCIe952 Dual Native 950 UART
 goto 1415
+:1415c204
+set dev OXPCIe954 GPIO
+goto 1415
 :1415c208
 set dev OXPCIe954 Quad Native 950 UART
 goto 1415
@@ -28086,14 +28092,20 @@ goto 1415
 :1415c20d
 set dev OXPCIe954 Quad Native 950 UART
 goto 1415
+:1415c304
+set dev OXPCIe958 GPIO
+goto 1415
 :1415c308
-set dev EX-44016 16-port serial
+set dev OXPCIe958 Quad Native 950 UART
 goto 1415
 :1415c30c
 set dev OXPCIe958 GPIO
 goto 1415
 :1415c30d
 set dev OXPCIe958 Quad Native 950 UART
+goto 1415
+:1415c530
+set dev OXPCIe200 Dual OHCI USB Controller (ULPI/R-ULPI)
 goto 1415
 :1415c531
 set dev OXPCIe200 Dual EHCI USB Controller (ULPI/R-ULPI)
@@ -28256,6 +28268,9 @@ set dev OXPCIe200 Programmable Memory Interface & GPIO
 goto 1415
 :1415c5a8
 set dev OXPCIe200 OHCI USB Controller (ULPI)
+goto 1415
+:1415c5a9
+set dev OXPCIe200 EHCI USB Controller (ULPI)
 goto 1415
 :1415c5aa
 set dev OXPCIe200 Programmable Memory Interface
@@ -30994,7 +31009,7 @@ exit
 set ven Advanced MOS Technology Inc
 exit
 :14ab
-set ven Mentor Graphics Corp.
+set ven Siemens Industry Software Inc.
 exit
 :14ac
 set ven Novaweb Technologies Inc
@@ -33802,7 +33817,7 @@ goto 15b3
 set dev Spectrum-4, Flash recovery mode
 goto 15b3
 :15b30255
-set dev Spectrum-4, Secure Flash recovery mode
+set dev Spectrum-4 RMA
 goto 15b3
 :15b30256
 set dev Abir GearBox
@@ -33811,7 +33826,7 @@ goto 15b3
 set dev Quantum-2 in Flash Recovery Mode
 goto 15b3
 :15b30258
-set dev Quantum-2 in Flash Recovery Mode
+set dev Quantum-2 RMA
 goto 15b3
 :15b30262
 set dev MT27710 [ConnectX-4 Lx Programmable] EN
@@ -33826,10 +33841,10 @@ goto 15b3
 set dev NPS-600 Flash Recovery
 goto 15b3
 :15b30357
-set dev Quantum-2 Secure Flash Recovery Mode
+set dev Abir GearBox in Flash Recovery Mode
 goto 15b3
 :15b30358
-set dev Abir GearBox Secure Flash recovery mode
+set dev Abir GearBox in RMA
 goto 15b3
 :15b31002
 set dev MT25400 Family [ConnectX-2 Virtual Function]
@@ -40725,6 +40740,9 @@ goto 1d87
 :1d8f
 set ven Enyx
 exit
+:1d92
+set ven Abaco Systems Inc.
+exit
 :1d93
 set ven YADRO
 exit
@@ -41202,6 +41220,9 @@ exit
 :1e7cbca1
 set dev AKD1000 Neural Network Coprocessor [Akida]
 goto 1e7c
+:1e81
+set ven Ramaxel Technology(Shenzhen) Limited
+exit
 :1e85
 set ven Heitec AG
 exit
