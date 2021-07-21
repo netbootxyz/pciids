@@ -12354,6 +12354,9 @@ goto 10b5
 :10b58724
 set dev PEX 8724 24-Lane, 6-Port PCI Express Gen 3 (8 GT/s) Switch, 19 x 19mm FCBGA
 goto 10b5
+:10b58725
+set dev PEX 8725 24-Lane, 10-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA
+goto 10b5
 :10b58732
 set dev PEX 8732 32-lane, 8-Port PCI Express Gen 3 (8.0 GT/s) Switch
 goto 10b5
@@ -12366,8 +12369,14 @@ goto 10b5
 :10b58748
 set dev PEX 8748 48-Lane, 12-Port PCI Express Gen 3 (8 GT/s) Switch, 27 x 27mm FCBGA
 goto 10b5
+:10b58749
+set dev PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA
+goto 10b5
 :10b587b0
-set dev PEX 8732 32-lane, 8-Port PCI Express Gen 3 (8.0 GT/s) Switch
+set dev PEX PCI Express Switch NT0 Port Virtual Interface
+goto 10b5
+:10b587d0
+set dev PEX PCI Express Switch DMA interface
 goto 10b5
 :10b59016
 set dev PLX 9016 8-port serial controller
@@ -12724,7 +12733,7 @@ goto 10b9
 set dev M1461
 goto 10b9
 :10b91489
-set dev M1489
+set dev M1489 Cache-Memory PCI Controller (CMP) [FinALi 486] CPU to PCI bridge
 goto 10b9
 :10b91511
 set dev M1511 [Aladdin]
@@ -32382,6 +32391,9 @@ goto 14e4
 :14e4b990
 set dev BCM56990 Switch ASIC
 goto 14e4
+:14e4c909
+set dev BCM78909 Switch ASIC
+goto 14e4
 :14e4d802
 set dev BCM58802 Stingray 50Gb Ethernet SoC
 goto 14e4
@@ -38992,7 +39004,7 @@ exit
 set dev HFC-S PCI A [X-TENSIONS XC-520]
 goto 1ae7
 :1ae8
-set ven Silicon Software GmbH
+set ven Basler AG
 exit
 :1ae80751
 set dev mE5 marathon VCL
@@ -39065,6 +39077,15 @@ set dev mE6 Abacus 4TG
 goto 1ae8
 :1ae80b63
 set dev CXP-12 Interface Card 1C
+goto 1ae8
+:1ae80b64
+set dev CXP-12 Interface Card 4C
+goto 1ae8
+:1ae80b65
+set dev CXP-12 Interface Card 2C
+goto 1ae8
+:1ae80b66
+set dev CXP-12 LightBridge 2C
 goto 1ae8
 :1ae80e42
 set dev microEnable IV AQ4-GE
@@ -40578,6 +40599,15 @@ exit
 :1d6504de
 set dev Taurus/McKinley
 goto 1d65
+:1d69
+set ven Celeno Communications
+exit
+:1d692432
+set dev CL2432
+goto 1d69
+:1d692440
+set dev CL2440
+goto 1d69
 :1d6a
 set ven Aquantia Corp.
 exit
@@ -40694,6 +40724,9 @@ set dev AR-ARK-SRIOV-FX1 [Arkville 64B Primary Physical Function]
 goto 1d6c
 :1d6c101c
 set dev AR-ARK-SRIOV-VF [Arkville Virtual Function]
+goto 1d6c
+:1d6c101d
+set dev AR-ARK-NIC [Arkville ArkNIC Kernel Path Device]
 goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
@@ -41148,6 +41181,9 @@ exit
 :1e380102
 set dev Xplorer X1600
 goto 1e38
+:1e39
+set ven MEDION AG
+exit
 :1e3b
 set ven Shenzhen DAPU Microelectronics Co., Ltd
 exit
@@ -41298,6 +41334,18 @@ exit
 :1efb
 set ven Flexxon Pte Ltd
 exit
+:1f02
+set ven Beijing Dayu Technology
+exit
+:1f03
+set ven Shenzhen Shichuangyi Electronics Co., Ltd
+exit
+:1f032262
+set dev SM2262EN-based OEM SSD
+goto 1f03
+:1f035216
+set dev IG5216-based NVMe SSD
+goto 1f03
 :1fc0
 set ven Ascom (Finland) Oy
 exit
@@ -54865,7 +54913,7 @@ exit
 set ven TRENDware International Inc.
 exit
 :8686
-set ven ScaleMP
+set ven SAP
 exit
 :86861010
 set dev vSMP Foundation controller [vSMP CTL]
