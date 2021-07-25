@@ -1086,6 +1086,9 @@ goto 1002
 :100213e9
 set dev Ariel
 goto 1002
+:100213fe
+set dev Cyan Skillfish
+goto 1002
 :10021478
 set dev Navi 10 XL Upstream Port of PCI Express Switch
 goto 1002
@@ -1119,6 +1122,9 @@ goto 1002
 :100215df
 set dev Raven/Raven2/Fenghuang/Renoir Cryptographic Coprocessor
 goto 1002
+:100215e7
+set dev Barcelo
+goto 1002
 :100215ff
 set dev Fenghuang [Zhongshan Subor Z+]
 goto 1002
@@ -1141,6 +1147,9 @@ goto 1002
 set dev Lucienne
 goto 1002
 :1002164d
+set dev Rembrandt
+goto 1002
+:10021681
 set dev Rembrandt
 goto 1002
 :10021714
@@ -12372,8 +12381,17 @@ goto 10b5
 :10b58749
 set dev PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA
 goto 10b5
+:10b587a0
+set dev PEX PCI Express Switch NT0 Port Link Interface
+goto 10b5
+:10b587a1
+set dev PEX PCI Express Switch NT1 Port Link Interface
+goto 10b5
 :10b587b0
 set dev PEX PCI Express Switch NT0 Port Virtual Interface
+goto 10b5
+:10b587b1
+set dev PEX PCI Express Switch NT1 Port Virtual Interface
 goto 10b5
 :10b587d0
 set dev PEX PCI Express Switch DMA interface
@@ -17950,7 +17968,7 @@ goto 10de
 set dev GA102 [GeForce RTX 3080 Ti]
 goto 10de
 :10de220d
-set dev GA102 [GeForce RTX 3080 Lite Hash Rate]
+set dev GA102 [CMP 90HX]
 goto 10de
 :10de2216
 set dev GA102 [GeForce RTX 3080 Lite Hash Rate]
@@ -18008,6 +18026,9 @@ set dev GA104 [GeForce RTX 3070 Lite Hash Rate]
 goto 10de
 :10de2489
 set dev GA104 [GeForce RTX 3060 Ti Lite Hash Rate]
+goto 10de
+:10de248a
+set dev GA104 [CMP 70HX]
 goto 10de
 :10de249c
 set dev GA104M [GeForce RTX 3080 Mobile / Max-Q 8GB/16GB]
@@ -40536,6 +40557,12 @@ exit
 :1d221380
 set dev Cloud Storage Device
 goto 1d22
+:1d223684
+set dev Kunlun AI Accelerator
+goto 1d22
+:1d223685
+set dev Kunlun2 AI Accelerator [VF]
+goto 1d22
 :1d26
 set ven Kalray Inc.
 exit
@@ -41340,11 +41367,26 @@ exit
 :1f03
 set ven Shenzhen Shichuangyi Electronics Co., Ltd
 exit
+:1f031202
+set dev MAP1202-Based NVMe SSD
+goto 1f03
 :1f032262
 set dev SM2262EN-based OEM SSD
 goto 1f03
+:1f032263
+set dev SM2263XT-Base NVMe SSD
+goto 1f03
 :1f035216
 set dev IG5216-based NVMe SSD
+goto 1f03
+:1f035220
+set dev IG5220-Based NVMe SSD
+goto 1f03
+:1f035236
+set dev IG5236-Based NVMe SSD
+goto 1f03
+:1f035636
+set dev IG5636-Based NVMe SSD
 goto 1f03
 :1fc0
 set ven Ascom (Finland) Oy
@@ -42338,6 +42380,12 @@ set dev [mvHYPERION-HD-SDI] HD-SDI PCI Express x4 Frame Grabber
 goto 4d56
 :4d560030
 set dev [mvHYPERION-HD-SDI-Merger] HD-SDI PCI Express x4 Frame Grabber
+goto 4d56
+:4d567014
+set dev [mvBlueNAOS BVS CA-BN] PCIe Gen1 x4 Camera
+goto 4d56
+:4d567024
+set dev [mvBlueNAOS BVS CA-BN] PCIe Gen2 x4 Camera
 goto 4d56
 :4ddc
 set ven ILC Data Device Corp
