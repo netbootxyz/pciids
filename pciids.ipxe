@@ -3312,11 +3312,17 @@ goto 1002
 :1002738e
 set dev Arcturus GL-XL
 goto 1002
+:100273a2
+set dev Navi 21 Pro-XTA [Radeon Pro W6900X]
+goto 1002
 :100273a3
 set dev Navi 21 [Radeon PRO W6800]
 goto 1002
 :100273a4
 set dev Navi 21 USB
+goto 1002
+:100273ab
+set dev Navi 21 Pro-XLA [Radeon Pro W6800X/Radeon Pro W6800X Duo]
 goto 1002
 :100273af
 set dev Navi 21 [Radeon RX 6900 XT]
@@ -32193,6 +32199,9 @@ goto 14e4
 :14e44421
 set dev BCM4361 802.11ac 5 GHz Wireless Network Controller
 goto 14e4
+:14e44425
+set dev BRCM4378 Wireless Network Adapter
+goto 14e4
 :14e44430
 set dev BCM44xx CardBus iLine32 HomePNA 2.0
 goto 14e4
@@ -35062,7 +35071,7 @@ goto 166d
 set dev Sibyte BCM1280/BCM1480 System-on-a-Chip HyperTransport
 goto 166d
 :1677
-set ven Bernecker + Rainer
+set ven B&R Industrial Automation GmbH
 exit
 :1677104e
 set dev 5LS172.6 B&R Dual CAN Interface Card
@@ -38697,6 +38706,9 @@ exit
 :1a294338
 set dev CP8 Content Processor ASIC
 goto 1a29
+:1a2943a0
+set dev CP9 Content Processor ASIC
+goto 1a29
 :1a294e36
 set dev NP6 Network Processor
 goto 1a29
@@ -40329,6 +40341,9 @@ exit
 :1cf7
 set ven Subspace Dynamics
 exit
+:1cfa
+set ven Corsair Memory, Inc
+exit
 :1d00
 set ven Pure Storage
 exit
@@ -40797,6 +40812,12 @@ goto 1d87
 :1d873566
 set dev RK3568 Remote Signal Processor
 goto 1d87
+:1d89
+set ven YEESTOR Microelectronics Co., Ltd
+exit
+:1d890280
+set dev PCIe NVMe SSD
+goto 1d89
 :1d8f
 set ven Enyx
 exit
@@ -40941,9 +40962,78 @@ goto 1da3
 :1da31010
 set dev HL-2000 AI Training Accelerator [Gaudi secured]
 goto 1da3
+:1dad
+set ven Fungible
+exit
 :1db2
 set ven ATP ELECTRONICS INC
 exit
+:1db7
+set ven Phytium Technology Co., Ltd.
+exit
+:1db7dc20
+set dev [X100 Series]
+goto 1db7
+:1db7dc21
+set dev VPU Controller [X100 Series]
+goto 1db7
+:1db7dc22
+set dev DC Controller [X100 Series]
+goto 1db7
+:1db7dc23
+set dev I2S/DMA Controller [X100 Series]
+goto 1db7
+:1db7dc26
+set dev SATA Controller [X100 Series]
+goto 1db7
+:1db7dc27
+set dev USB Controller [X100 Series]
+goto 1db7
+:1db7dc29
+set dev NANDFLASH Controller [X100 Series]
+goto 1db7
+:1db7dc2b
+set dev I2S Controller [X100 Series]
+goto 1db7
+:1db7dc2c
+set dev SPIM Controller [X100 Series]
+goto 1db7
+:1db7dc2d
+set dev CAN Controller [X100 Series]
+goto 1db7
+:1db7dc2e
+set dev UART Controller [X100 Series]
+goto 1db7
+:1db7dc2f
+set dev PWM Controller [X100 Series]
+goto 1db7
+:1db7dc30
+set dev MIO Controller [X100 Series]
+goto 1db7
+:1db7dc31
+set dev GPIO Controller [X100 Series]
+goto 1db7
+:1db7dc32
+set dev SMBUS Controller [X100 Series]
+goto 1db7
+:1db7dc34
+set dev PS2 Controller [X100 Series]
+goto 1db7
+:1db7dc35
+set dev LPC Controller [X100 Series]
+goto 1db7
+:1db7dc36
+set dev LDMA Controller [X100 Series]
+goto 1db7
+:1db7dc38
+set dev LSD_CFG Controller [X100 Series]
+goto 1db7
+:1db7dc3a
+set dev SWITCH Controller [X100 Series]
+goto 1db7
+:1db7dc3c
+set dev GPU_DMA Controller [X100 Series]
+goto 1db7
 :1dbb
 set ven NGD Systems, Inc.
 exit
@@ -41196,6 +41286,18 @@ goto 1e36
 :1e360003
 set dev T10(QSFP-DD) [CloudBlazer]
 goto 1e36
+:1e360021
+set dev T20(32GB) [CloudBlazer]
+goto 1e36
+:1e360022
+set dev T20(64GB) [CloudBlazer]
+goto 1e36
+:1e360023
+set dev T21(32GB) [CloudBlazer]
+goto 1e36
+:1e360024
+set dev T21(64GB) [CloudBlazer]
+goto 1e36
 :1e368011
 set dev I10 [CloudBlazer]
 goto 1e36
@@ -41286,6 +41388,9 @@ goto 1e7c
 :1e81
 set ven Ramaxel Technology(Shenzhen) Limited
 exit
+:1e811203
+set dev NVMe SSD Controller UHXXXa series
+goto 1e81
 :1e85
 set ven Heitec AG
 exit
@@ -42381,8 +42486,14 @@ goto 4d56
 :4d560030
 set dev [mvHYPERION-HD-SDI-Merger] HD-SDI PCI Express x4 Frame Grabber
 goto 4d56
+:4d567012
+set dev [mvBlueNAOS BVS CA-BN] PCIe Gen1 x2 Camera
+goto 4d56
 :4d567014
 set dev [mvBlueNAOS BVS CA-BN] PCIe Gen1 x4 Camera
+goto 4d56
+:4d567022
+set dev [mvBlueNAOS BVS CA-BN] PCIe Gen2 x2 Camera
 goto 4d56
 :4d567024
 set dev [mvBlueNAOS BVS CA-BN] PCIe Gen2 x4 Camera
@@ -43564,7 +43675,10 @@ goto 8086
 set dev CE Media Processor SPI Slave
 goto 8086
 :80860708
-set dev CE Media Processor 4100
+set dev Atom Processor CE 4100
+goto 8086
+:80860709
+set dev Atom Processor CE 4200
 goto 8086
 :80860800
 set dev Moorestown SPI Ctrl 0
@@ -43761,6 +43875,9 @@ goto 8086
 :808608cf
 set dev Atom Processor Z2760 Integrated Graphics Controller
 goto 8086
+:80860931
+set dev Atom Processor CE 2600 [Puma 6]
+goto 8086
 :80860934
 set dev Quark SoC X1000 I2C Controller and GPIO Controller
 goto 8086
@@ -43943,6 +44060,9 @@ set dev Xeon E3-1200 v3/4th Gen Core Processor PCI Express x4 Controller
 goto 8086
 :80860c0c
 set dev Xeon E3-1200 v3/4th Gen Core Processor HD Audio Controller
+goto 8086
+:80860c40
+set dev Atom Processor CE 5300
 goto 8086
 :80860c46
 set dev Atom Processor S1200 PCI Express Root Port 1
@@ -44536,7 +44656,7 @@ goto 8086
 set dev Atom Processor Z36xxx/Z37xxx Series LPIO1 SPI Controller
 goto 8086
 :80860f12
-set dev Atom Processor E3800 Series SMBus Controller
+set dev Atom Processor E3800/CE2700 Series SMBus Controller
 goto 8086
 :80860f14
 set dev Atom Processor Z36xxx/Z37xxx Series SDIO Controller
@@ -48891,6 +49011,24 @@ goto 8086
 :80862b6c
 set dev Xeon Processor E7 Product Family Last Level Cache Coherence Engine 9
 goto 8086
+:80862b80
+set dev Atom CE2700 Series [Puma 7]
+goto 8086
+:80862b98
+set dev Puma 7 Trusted Execution Engine
+goto 8086
+:80862bb5
+set dev Puma 7 xHCI Controller
+goto 8086
+:80862bb7
+set dev Puma 7 USB Device Controller (OTG)
+goto 8086
+:80862bdc
+set dev Puma 7 Thermal
+goto 8086
+:80862be2
+set dev Puma 7 Security Processor
+goto 8086
 :80862c01
 set dev Xeon 5500/Core i7 QuickPath Architecture System Address Decoder
 goto 8086
@@ -49370,6 +49508,9 @@ set dev CE Media Processor Video Processing Unit
 goto 8086
 :80862e63
 set dev CE Media Processor HDMI Tx Interface
+goto 8086
+:80862e64
+set dev Atom CE2600/3100/4100/4200/5300 Security Processor
 goto 8086
 :80862e65
 set dev CE Media Processor Expansion Bus Interface
