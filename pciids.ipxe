@@ -18717,6 +18717,9 @@ goto 10ec
 :10ec8821
 set dev RTL8821AE 802.11ac PCIe Wireless Network Adapter
 goto 10ec
+:10ec8852
+set dev RTL8852AE 802.11ax PCIe Wireless Network Adapter
+goto 10ec
 :10ecb723
 set dev RTL8723BE PCIe Wireless Network Adapter
 goto 10ec
@@ -41420,6 +41423,9 @@ set ven Intelliprop, Inc
 exit
 :1ea7223a
 set dev Typhon+ PCIe to Gen-Z Bridge
+goto 1ea7
+:1ea7224a
+set dev IPA-PE224A CXL to Gen-Z Bridge [Sphinx]
 goto 1ea7
 :1eab
 set ven Hefei DATANG Storage Technology Co.,LTD.
