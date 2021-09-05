@@ -17721,6 +17721,9 @@ goto 10de
 :10de1eb1
 set dev TU104GL [Quadro RTX 4000]
 goto 10de
+:10de1eb4
+set dev TU104GL [T4G]
+goto 10de
 :10de1eb5
 set dev TU104GLM [Quadro RTX 5000 Mobile / Max-Q]
 goto 10de
@@ -17910,11 +17913,17 @@ goto 10de
 :10de20b7
 set dev GA100GL [A30 PCIe]
 goto 10de
+:10de20bb
+set dev GA100 [DRIVE A100 PROD]
+goto 10de
 :10de20be
 set dev GA100 [GRID A100A]
 goto 10de
 :10de20bf
 set dev GA100 [GRID A100B]
+goto 10de
+:10de20c2
+set dev GA100 [CMP 170HX]
 goto 10de
 :10de20f1
 set dev GA100 [A100 PCIe 40GB]
@@ -36858,6 +36867,9 @@ goto 17f3
 :17f36021
 set dev R6021 Host Bridge
 goto 17f3
+:17f36022
+set dev R6022 Host Bridge
+goto 17f3
 :17f36023
 set dev R6023 Host Bridge
 goto 17f3
@@ -40221,6 +40233,9 @@ goto 1cc1
 :1cc4
 set ven Union Memory (Shenzhen)
 exit
+:1cc41203
+set dev NVMe SSD Controller UHXXXa series
+goto 1cc4
 :1cc417ab
 set dev NVMe 256G SSD device
 goto 1cc4
