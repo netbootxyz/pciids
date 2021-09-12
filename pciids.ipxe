@@ -30669,6 +30669,9 @@ goto 144d
 :144da808
 set dev NVMe SSD Controller SM981/PM981/PM983
 goto 144d
+:144da809
+set dev NVMe SSD Controller 980
+goto 144d
 :144da80a
 set dev NVMe SSD Controller PM9A1/PM9A3/980PRO
 goto 144d
@@ -30723,6 +30726,9 @@ exit
 :1458
 set ven Gigabyte Technology Co., Ltd
 exit
+:145822e8
+set dev Ellesmere [Radeon RX 480]
+goto 1458
 :14583483
 set dev USB 3.0 Controller (VIA VL80x-based xHCI Controller)
 goto 1458
