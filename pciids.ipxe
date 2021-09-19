@@ -3316,7 +3316,7 @@ goto 1002
 set dev Navi 21 Pro-XTA [Radeon Pro W6900X]
 goto 1002
 :100273a3
-set dev Navi 21 [Radeon PRO W6800]
+set dev Navi 21 GL-XL [Radeon PRO W6800]
 goto 1002
 :100273a4
 set dev Navi 21 USB
@@ -3343,7 +3343,10 @@ goto 1002
 set dev Navi 23
 goto 1002
 :100273e1
-set dev Navi 23
+set dev Navi 23 WKS-XM [Radeon PRO W6600M]
+goto 1002
+:100273e3
+set dev Navi 23 WKS-XL [Radeon PRO W6600]
 goto 1002
 :100273e4
 set dev Navi 23 USB
@@ -17974,7 +17977,7 @@ goto 10de
 set dev GA102 [GeForce RTX 3090]
 goto 10de
 :10de2205
-set dev GA102 [GeForce RTX 3080 20GB]
+set dev GA102 [GeForce RTX 3080 Ti 20GB]
 goto 10de
 :10de2206
 set dev GA102 [GeForce RTX 3080]
@@ -18035,6 +18038,9 @@ set dev GA104 [GeForce RTX 3070]
 goto 10de
 :10de2486
 set dev GA104 [GeForce RTX 3060 Ti]
+goto 10de
+:10de2487
+set dev GA104 [GeForce RTX 3060]
 goto 10de
 :10de2488
 set dev GA104 [GeForce RTX 3070 Lite Hash Rate]
@@ -40794,6 +40800,9 @@ goto 1d6c
 :1d6c101d
 set dev AR-ARK-NIC [Arkville ArkNIC Kernel Path Device]
 goto 1d6c
+:1d6c101e
+set dev AR-ARKA-FX1 [Arkville 64B DPDK Data Mover for Agilex R-Tile]
+goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
 goto 1d6c
@@ -41073,6 +41082,9 @@ exit
 :1dcd
 set ven Liqid Inc.
 exit
+:1dcf
+set ven Beijing Sinead Technology Co., Ltd.
+exit
 :1dd8
 set ven Pensando Systems
 exit
@@ -41097,6 +41109,9 @@ goto 1dd8
 :1dd81007
 set dev DSC Storage Accelerator
 goto 1dd8
+:1ddd
+set ven Thorlabs
+exit
 :1de0
 set ven Groq
 exit
@@ -41520,6 +41535,9 @@ goto 1f03
 :1f035636
 set dev IG5636-Based NVMe SSD
 goto 1f03
+:1fab
+set ven Unifabrix Ltd.
+exit
 :1fc0
 set ven Ascom (Finland) Oy
 exit
