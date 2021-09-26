@@ -40158,6 +40158,9 @@ goto 1c5c
 :1c5c1527
 set dev PC401 NVMe Solid State Drive 256GB
 goto 1c5c
+:1c5c174a
+set dev Gold P31 SSD
+goto 1c5c
 :1c5c243b
 set dev PE6110 NVMe Solid State Drive
 goto 1c5c
