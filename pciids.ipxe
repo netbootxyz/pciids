@@ -2404,7 +2404,7 @@ goto 1002
 set dev Vega 20 [Radeon Instinct]
 goto 1002
 :100266a1
-set dev Vega 20 WKS GL-XE [Radeon Pro VII]
+set dev Vega 20 [Radeon Pro VII/Radeon Instinct MI50 32GB]
 goto 1002
 :100266a2
 set dev Vega 20
@@ -2615,6 +2615,9 @@ set dev Ellesmere [Polaris10]
 goto 1002
 :100267d0
 set dev Ellesmere [Radeon Pro V7300X / V7350x2]
+goto 1002
+:100267d4
+set dev Ellesmere [Radeon Pro WX 7100 / Barco MXRT-8700]
 goto 1002
 :100267d7
 set dev Ellesmere [Radeon Pro WX 5100 / Barco MXRT-6700]
@@ -3307,10 +3310,10 @@ goto 1002
 set dev Arcturus GL-XL
 goto 1002
 :1002738c
-set dev Arcturus GL-XL [AMD Instinct MI100]
+set dev Arcturus GL-XL [Instinct MI100]
 goto 1002
 :1002738e
-set dev Arcturus GL-XL
+set dev Arcturus GL-XL [Instinct MI100]
 goto 1002
 :100273a2
 set dev Navi 21 Pro-XTA [Radeon Pro W6900X]
@@ -41451,6 +41454,9 @@ exit
 :1e95
 set ven Solid State Storage Technology Corporation
 exit
+:1e951002
+set dev 1002 NVMe Datacenter LJ1 SSD [3DNAND, Rainier Controller]
+goto 1e95
 :1ea0
 set ven Tencent Technology (Shenzhen) Company Limited
 exit
@@ -42056,9 +42062,6 @@ set dev CH355 PCI Quad Serial Port Controller
 goto 4348
 :434e
 set ven Cornelis Networks
-exit
-:43bc
-set ven Tiger Lake-H PCIe Root Port #5
 exit
 :4444
 set ven Internext Compression Inc
@@ -44015,6 +44018,9 @@ set dev NVMe DC SSD [3DNAND, Sentinel Rock Controller]
 goto 8086
 :80860bd0
 set dev Ponte Vecchio 2T
+goto 8086
+:80860bd5
+set dev Ponte Vecchio 1T
 goto 8086
 :80860be0
 set dev Atom Processor D2xxx/N2xxx Integrated Graphics Controller
