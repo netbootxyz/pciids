@@ -41418,6 +41418,9 @@ exit
 :1e602864
 set dev Hailo-8 AI Processor
 goto 1e60
+:1e68
+set ven Jiangsu Xinsheng Intelligent Technology Co., Ltd
+exit
 :1e6b
 set ven Axiado Corp.
 exit
@@ -41455,7 +41458,7 @@ exit
 set ven Solid State Storage Technology Corporation
 exit
 :1e951002
-set dev 1002 NVMe Datacenter LJ1 SSD [3DNAND, Rainier Controller]
+set dev NVMe Datacenter LJ1 SSD [3DNAND, Rainier Controller]
 goto 1e95
 :1ea0
 set ven Tencent Technology (Shenzhen) Company Limited
@@ -41496,6 +41499,12 @@ exit
 :1ebd0101
 set dev Seirios 2063 Video Codec
 goto 1ebd
+:1ed2
+set ven FuriosaAI, Inc.
+exit
+:1ed20000
+set dev Warboy
+goto 1ed2
 :1ed3
 set ven Yeston
 exit
@@ -41663,6 +41672,9 @@ set ven TRENDnet
 exit
 :2116
 set ven ZyDAS Technology Corp.
+exit
+:21b4
+set ven Hunan Goke Microelectronics Co., Ltd
 exit
 :21c3
 set ven 21st Century Computer Corp.
@@ -51636,6 +51648,9 @@ goto 8086
 :8086444e
 set dev Turbo Memory Controller
 goto 8086
+:8086460d
+set dev 12th Gen Core Processor PCI Express x16 Controller #1
+goto 8086
 :8086461e
 set dev Alder Lake-P Thunderbolt 4 USB Controller
 goto 8086
@@ -51650,6 +51665,9 @@ set dev Alder Lake-P Thunderbolt 4 NHI #0
 goto 8086
 :8086463f
 set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #1
+goto 8086
+:80864641
+set dev 12th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
 :8086466d
 set dev Alder Lake-P Thunderbolt 4 NHI #1
@@ -51878,6 +51896,39 @@ set dev EP80579 Reserved
 goto 8086
 :8086504c
 set dev EP80579 Integrated Processor with QuickAssist TDM
+goto 8086
+:80865181
+set dev Alder Lake PCH-P LPC/eSPI Controller
+goto 8086
+:808651a3
+set dev Alder Lake PCH-P SMBus Host Controller
+goto 8086
+:808651bf
+set dev Alder Lake PCH-P PCI Express Root Port #9
+goto 8086
+:808651c8
+set dev Alder Lake PCH-P High Definition Audio Controller
+goto 8086
+:808651e0
+set dev Alder Lake PCH HECI Controller
+goto 8086
+:808651e8
+set dev Alder Lake PCH Serial IO I2C Controller #0
+goto 8086
+:808651e9
+set dev Alder Lake PCH Serial IO I2C Controller #1
+goto 8086
+:808651ea
+set dev Alder Lake PCH Serial IO I2C Controller #2
+goto 8086
+:808651eb
+set dev Alder Lake PCH Serial IO I2C Controller #3
+goto 8086
+:808651ed
+set dev Alder Lake PCH USB 3.2 xHCI Host Controller
+goto 8086
+:808651ef
+set dev Alder Lake PCH Shared SRAM
 goto 8086
 :80865200
 set dev EtherExpress PRO/100 Intelligent Server PCI Bridge
