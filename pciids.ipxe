@@ -18030,6 +18030,9 @@ goto 10de
 :10de2321
 set dev GA103
 goto 10de
+:10de2420
+set dev GA103 [GN20-E8]
+goto 10de
 :10de2482
 set dev GA104 [GeForce RTX 3070 Ti]
 goto 10de
@@ -18062,6 +18065,9 @@ set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
 goto 10de
 :10de249f
 set dev GA104M
+goto 10de
+:10de24a0
+set dev GA104 [GN20-E6]
 goto 10de
 :10de24ac
 set dev GA104 [GeForce RTX 30x0 Engineering Sample]
@@ -41523,6 +41529,12 @@ exit
 :1eec
 set ven Viscore Technologies Ltd
 exit
+:1eec0102
+set dev VSE250231S Dual-port 10Gb/25Gb Ethernet PCIe
+goto 1eec
+:1eec1eec
+set dev VSE250231S Dual-port 10Gb/25Gb Ethernet PCIe
+goto 1eec
 :1efb
 set ven Flexxon Pte Ltd
 exit
@@ -41714,6 +41726,9 @@ set dev U-SNS8154P3 NVMe SSD
 goto 2646
 :2646500d
 set dev OM3PDP3 NVMe SSD
+goto 2646
+:2646500e
+set dev SNVS2000G [NV1 NVMe PCIe SSD 2TB]
 goto 2646
 :270b
 set ven Xantel Corporation
@@ -42042,6 +42057,9 @@ goto 416c
 :416c0200
 set dev CPC
 goto 416c
+:4242
+set ven Universall Answer Generators
+exit
 :4254
 set ven DVBSky
 exit
@@ -43689,6 +43707,12 @@ goto 8086
 :808606d2
 set dev Comet Lake SATA AHCI Controller
 goto 8086
+:808606d6
+set dev Comet Lake PCH-H RAID
+goto 8086
+:808606d7
+set dev Comet Lake PCH-H RAID
+goto 8086
 :808606e0
 set dev Comet Lake HECI Controller
 goto 8086
@@ -45334,7 +45358,7 @@ goto 8086
 set dev 82599 10 Gigabit Dual Port Network Connection
 goto 8086
 :808610fb
-set dev 82599ES 10-Gigabit SFI/SFP+ Network Connection
+set dev 82599 10 Gigabit Dual Port Network Connection
 goto 8086
 :808610fc
 set dev 82599 10 Gigabit Dual Port Network Connection
@@ -51657,6 +51681,9 @@ goto 8086
 :8086461f
 set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #3
 goto 8086
+:80864629
+set dev 12th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
 :8086462f
 set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #2
 goto 8086
@@ -51668,6 +51695,9 @@ set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #1
 goto 8086
 :80864641
 set dev 12th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
+:8086464d
+set dev 12th Gen Core Processor PCI Express x4 Controller #0
 goto 8086
 :8086466d
 set dev Alder Lake-P Thunderbolt 4 NHI #1
@@ -51683,6 +51713,9 @@ set dev AlderLake-S GT1
 goto 8086
 :808646a0
 set dev AlderLake-P GT2
+goto 8086
+:808646a3
+set dev Alder Lake-P GT1 [UHD Graphics]
 goto 8086
 :808646c0
 set dev AlderLake-M GT1
@@ -51903,11 +51936,23 @@ goto 8086
 :808651a3
 set dev Alder Lake PCH-P SMBus Host Controller
 goto 8086
+:808651a4
+set dev Alder Lake-P PCH SPI Controller
+goto 8086
 :808651bf
 set dev Alder Lake PCH-P PCI Express Root Port #9
 goto 8086
+:808651c5
+set dev Alder Lake-P Serial IO I2C Controller #0
+goto 8086
+:808651c6
+set dev Alder Lake-P Serial IO I2C Controller #1
+goto 8086
 :808651c8
 set dev Alder Lake PCH-P High Definition Audio Controller
+goto 8086
+:808651d3
+set dev Alder Lake-P SATA AHCI Controller
 goto 8086
 :808651e0
 set dev Alder Lake PCH HECI Controller
@@ -51929,6 +51974,9 @@ set dev Alder Lake PCH USB 3.2 xHCI Host Controller
 goto 8086
 :808651ef
 set dev Alder Lake PCH Shared SRAM
+goto 8086
+:808651f0
+set dev Alder Lake-P PCH CNVi WiFi
 goto 8086
 :80865200
 set dev EtherExpress PRO/100 Intelligent Server PCI Bridge
