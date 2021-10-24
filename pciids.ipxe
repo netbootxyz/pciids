@@ -41568,6 +41568,9 @@ goto 1f03
 :1fab
 set ven Unifabrix Ltd.
 exit
+:1fab0000
+set dev Nexus Alpha IPVU
+goto 1fab
 :1fc0
 set ven Ascom (Finland) Oy
 exit
@@ -51687,6 +51690,9 @@ goto 8086
 :8086462f
 set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #2
 goto 8086
+:8086463d
+set dev 12th Gen Core Processor PCI Express x4 Controller #2
+goto 8086
 :8086463e
 set dev Alder Lake-P Thunderbolt 4 NHI #0
 goto 8086
@@ -51699,11 +51705,17 @@ goto 8086
 :8086464d
 set dev 12th Gen Core Processor PCI Express x4 Controller #0
 goto 8086
+:8086464f
+set dev 12th Gen Core Processor Gaussian & Neural Accelerator
+goto 8086
 :8086466d
 set dev Alder Lake-P Thunderbolt 4 NHI #1
 goto 8086
 :8086466e
 set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #0
+goto 8086
+:8086467d
+set dev Platform Monitoring Technology
 goto 8086
 :8086467f
 set dev Volume Management Device NVMe RAID Controller
@@ -51713,6 +51725,9 @@ set dev AlderLake-S GT1
 goto 8086
 :808646a0
 set dev AlderLake-P GT2
+goto 8086
+:808646a1
+set dev UHD Graphics
 goto 8086
 :808646a3
 set dev Alder Lake-P GT1 [UHD Graphics]
