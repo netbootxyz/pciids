@@ -18031,7 +18031,7 @@ goto 10de
 set dev GA103
 goto 10de
 :10de2420
-set dev GA103 [GN20-E8]
+set dev GA103 [Geforce RTX 3080 Ti Laptop GPU]
 goto 10de
 :10de2482
 set dev GA104 [GeForce RTX 3070 Ti]
@@ -18067,7 +18067,7 @@ goto 10de
 set dev GA104M
 goto 10de
 :10de24a0
-set dev GA104 [GN20-E6]
+set dev GA104 [Geforce RTX 3070 Ti Laptop GPU]
 goto 10de
 :10de24ac
 set dev GA104 [GeForce RTX 30x0 Engineering Sample]
@@ -41349,6 +41349,9 @@ goto 1e36
 :1e360024
 set dev T21(64GB) [CloudBlazer]
 goto 1e36
+:1e368001
+set dev I20 [CloudBlazer]
+goto 1e36
 :1e368011
 set dev I10 [CloudBlazer]
 goto 1e36
@@ -41569,7 +41572,7 @@ goto 1f03
 set ven Unifabrix Ltd.
 exit
 :1fab0000
-set dev Nexus Alpha IPVU
+set dev Nexus Alpha IVPU
 goto 1fab
 :1fc0
 set ven Ascom (Finland) Oy
