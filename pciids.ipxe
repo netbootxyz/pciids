@@ -4857,6 +4857,9 @@ goto 1014
 :10140233
 set dev GXT135P Graphics Adapter
 goto 1014
+:1014025a
+set dev Drone card
+goto 1014
 :1014028c
 set dev Citrine chipset SCSI controller
 goto 1014
@@ -5302,28 +5305,28 @@ goto 1022
 set dev Kingston/Clayton/Gladius/Montego P2P Bridge for UMI Link
 goto 1022
 :10221440
-set dev Matisse Device 24: Function 0
+set dev Matisse/Vermeer Data Fabric: Device 18h; Function 0
 goto 1022
 :10221441
-set dev Matisse Device 24: Function 1
+set dev Matisse/Vermeer Data Fabric: Device 18h; Function 1
 goto 1022
 :10221442
-set dev Matisse Device 24: Function 2
+set dev Matisse/Vermeer Data Fabric: Device 18h; Function 2
 goto 1022
 :10221443
-set dev Matisse Device 24: Function 3
+set dev Matisse/Vermeer Data Fabric: Device 18h; Function 3
 goto 1022
 :10221444
-set dev Matisse Device 24: Function 4
+set dev Matisse/Vermeer Data Fabric: Device 18h; Function 4
 goto 1022
 :10221445
-set dev Matisse Device 24: Function 5
+set dev Matisse/Vermeer Data Fabric: Device 18h; Function 5
 goto 1022
 :10221446
-set dev Matisse Device 24: Function 6
+set dev Matisse/Vermeer Data Fabric: Device 18h; Function 6
 goto 1022
 :10221447
-set dev Matisse Device 24: Function 7
+set dev Matisse/Vermeer Data Fabric: Device 18h; Function 7
 goto 1022
 :10221448
 set dev Renoir Device 24: Function 0
@@ -6017,6 +6020,57 @@ set dev VanGogh Root Complex
 goto 1022
 :10221649
 set dev VanGogh PSP/CCP
+goto 1022
+:1022164f
+set dev Milan IOMMU
+goto 1022
+:10221650
+set dev Milan Data Fabric; Function 0
+goto 1022
+:10221651
+set dev Milan Data Fabric; Function 1
+goto 1022
+:10221652
+set dev Milan Data Fabric; Function 2
+goto 1022
+:10221653
+set dev Milan Data Fabric; Function 3
+goto 1022
+:10221654
+set dev Milan Data Fabric; Function 4
+goto 1022
+:10221655
+set dev Milan Data Fabric; Function 5
+goto 1022
+:10221656
+set dev Milan Data Fabric; Function 6
+goto 1022
+:10221657
+set dev Milan Data Fabric; Function 7
+goto 1022
+:1022166a
+set dev Cezanne Data Fabric; Function 0
+goto 1022
+:1022166b
+set dev Cezanne Data Fabric; Function 1
+goto 1022
+:1022166c
+set dev Cezanne Data Fabric; Function 2
+goto 1022
+:1022166d
+set dev Cezanne Data Fabric; Function 3
+goto 1022
+:1022166e
+set dev Cezanne Data Fabric; Function 4
+goto 1022
+:1022166f
+set dev Cezanne Data Fabric; Function 5
+goto 1022
+:10221670
+set dev Cezanne Data Fabric; Function 6
+goto 1022
+:10221671
+set dev Cezanne Data Fabric; Function 7
 goto 1022
 :10221700
 set dev Family 12h/14h Processor Function 0
@@ -18031,7 +18085,7 @@ goto 10de
 set dev GA103
 goto 10de
 :10de2420
-set dev GA103 [Geforce RTX 3080 Ti Laptop GPU]
+set dev GA103M [GeForce RTX 3080 Ti Mobile]
 goto 10de
 :10de2482
 set dev GA104 [GeForce RTX 3070 Ti]
@@ -22694,6 +22748,9 @@ set dev 88W8964 [Avastar] 802.11ac Wireless
 goto 11ab
 :11ab4101
 set dev OLPC Cafe Controller Secure Digital Controller
+goto 11ab
+:11ab4146
+set dev GT-64111 System Controller
 goto 11ab
 :11ab4320
 set dev 88E8001 Gigabit Ethernet Controller
@@ -32793,6 +32850,9 @@ goto 14f1
 :14f12f50
 set dev Conexant SoftK56 Data/Fax Modem
 goto 14f1
+:14f1510f
+set dev Conexant CX 20751/20752
+goto 14f1
 :14f15b7a
 set dev CX23418 Single-Chip MPEG-2 Encoder with Integrated Analog Video/Broadcast Audio Decoder
 goto 14f1
@@ -40596,6 +40656,21 @@ exit
 :1d180001
 set dev Fireface UFX+
 goto 1d18
+:1d1c
+set ven Barefoot Networks, Inc.
+exit
+:1d1c0001
+set dev Tofino 1
+goto 1d1c
+:1d1c0010
+set dev Tofino 1
+goto 1d1c
+:1d1c0100
+set dev Tofino 2
+goto 1d1c
+:1d1c0110
+set dev Tofino 2
+goto 1d1c
 :1d1d
 set ven CNEX Labs
 exit
@@ -41469,11 +41544,17 @@ exit
 :1e951002
 set dev NVMe Datacenter LJ1 SSD [3DNAND, Rainier Controller]
 goto 1e95
+:1e9f
+set ven Lynxi Technologies Co., Ltd.
+exit
 :1ea0
 set ven Tencent Technology (Shenzhen) Company Limited
 exit
 :1ea02a16
 set dev Cloud Intelligent Inference Controller
+goto 1ea0
+:1ea02a18
+set dev Video Transcode Controller
 goto 1ea0
 :1ea7
 set ven Intelliprop, Inc
@@ -41753,6 +41834,9 @@ set dev OHCI USB 1.1 controller
 goto 2955
 :2a15
 set ven 3D Vision(???)
+exit
+:2a18
+set ven Video Transcode Controller
 exit
 :2bd8
 set ven ROPEX Industrie-Elektronik GmbH
