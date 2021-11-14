@@ -34381,7 +34381,7 @@ goto 15b7
 set dev WD Ultrastar DC SN340 NVMe SSD
 goto 15b7
 :15b75011
-set dev WD Black SN850
+set dev WD PC SN810 / Black SN850 NVMe SSD
 goto 15b7
 :15b8
 set ven ADDI-DATA GmbH
@@ -43480,7 +43480,7 @@ goto 8086
 set dev Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller
 goto 8086
 :80860162
-set dev Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller
+set dev IvyBridge GT2 [HD Graphics 4000]
 goto 8086
 :80860166
 set dev 3rd Gen Core processor Graphics Controller
@@ -45448,7 +45448,7 @@ goto 8086
 set dev 82599 10 Gigabit Dual Port Network Connection
 goto 8086
 :808610fb
-set dev 82599 10 Gigabit Dual Port Network Connection
+set dev 82599ES 10-Gigabit SFI/SFP+ Network Connection
 goto 8086
 :808610fc
 set dev 82599 10 Gigabit Dual Port Network Connection
