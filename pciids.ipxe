@@ -18060,6 +18060,9 @@ goto 10de
 :10de2231
 set dev GA102GL [RTX A5000]
 goto 10de
+:10de2232
+set dev GA102GL [RTX A4500]
+goto 10de
 :10de2235
 set dev GA102GL [A40]
 goto 10de
@@ -40291,7 +40294,7 @@ exit
 set ven Shannon Systems
 exit
 :1cb08266
-set dev Andalusia Series SSD
+set dev SP4 Series SSD
 goto 1cb0
 :1cb0d000
 set dev Venice NVMe SSD
@@ -41192,6 +41195,12 @@ set dev DSC Ethernet Controller VF
 goto 1dd8
 :1dd81004
 set dev DSC Management Controller
+goto 1dd8
+:1dd81005
+set dev DSC NVMe Controller
+goto 1dd8
+:1dd81006
+set dev DSC NVMe Controller VF
 goto 1dd8
 :1dd81007
 set dev DSC Storage Accelerator
@@ -44405,6 +44414,9 @@ set dev Ethernet Controller XXV710 Intel(R) FPGA Programmable Acceleration Card 
 goto 8086
 :80860d9f
 set dev Ethernet Controller (2) I225-IT
+goto 8086
+:80860dd2
+set dev Ethernet Network Adapter I710
 goto 8086
 :80860e00
 set dev Xeon E7 v2/Xeon E5 v2/Core i7 DMI2
@@ -55272,6 +55284,9 @@ goto 8086
 :8088
 set ven Beijing Wangxun Technology Co., Ltd.
 exit
+:80880100
+set dev WX1860AL-W Gigabit Ethernet Controller
+goto 8088
 :80880101
 set dev WX1860A2 Gigabit Ethernet Controller
 goto 8088
