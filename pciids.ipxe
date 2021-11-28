@@ -1111,7 +1111,7 @@ goto 1002
 set dev Anubis
 goto 1002
 :100215d8
-set dev Picasso
+set dev Picasso/Raven 2 [Radeon Vega Series / Radeon Vega Mobile Series]
 goto 1002
 :100215dd
 set dev Raven Ridge [Radeon Vega Series / Radeon Vega Mobile Series]
@@ -33975,14 +33975,20 @@ goto 15b3
 :15b30264
 set dev Innova-2 Flex Burn image
 goto 15b3
+:15b30270
+set dev Spectrum-4L, Flash recovery mode
+goto 15b3
+:15b30271
+set dev Spectrum-4L, RMA
+goto 15b3
+:15b30274
+set dev Spectrum-4C, Flash recovery mode
+goto 15b3
+:15b30275
+set dev Spectrum-4C RMA
+goto 15b3
 :15b30281
 set dev NPS-600 Flash Recovery
-goto 15b3
-:15b30357
-set dev Abir GearBox in Flash Recovery Mode
-goto 15b3
-:15b30358
-set dev Abir GearBox in RMA
 goto 15b3
 :15b31002
 set dev MT25400 Family [ConnectX-2 Virtual Function]
@@ -34287,6 +34293,12 @@ goto 15b3
 :15b3cf80
 set dev Spectrum-4
 goto 15b3
+:15b3cf82
+set dev Spectrum-4L
+goto 15b3
+:15b3cf84
+set dev Spectrum-4C
+goto 15b3
 :15b3d2f0
 set dev Quantum HDR (200Gbps) switch
 goto 15b3
@@ -34385,6 +34397,9 @@ set dev WD Ultrastar DC SN340 NVMe SSD
 goto 15b7
 :15b75011
 set dev WD PC SN810 / Black SN850 NVMe SSD
+goto 15b7
+:15b7501a
+set dev WD Blue SN570 NVMe SSD
 goto 15b7
 :15b8
 set ven ADDI-DATA GmbH
@@ -41931,6 +41946,9 @@ goto 3442
 :3475
 set ven Arista Networks, Inc.
 exit
+:34ba
+set ven Ice Lake-LP PCI Express Root Port #3
+exit
 :3513
 set ven ARCOM Control Systems Ltd
 exit
@@ -43766,6 +43784,9 @@ set dev RAID Controller
 goto 8086
 :8086061f
 set dev 80303 I/O Processor
+goto 8086
+:80860687
+set dev Q470 Chipset LPC/eSPI Controller
 goto 8086
 :8086068d
 set dev Comet Lake LPC Controller
@@ -50532,6 +50553,9 @@ goto 8086
 :808634b7
 set dev Ice Lake-LP PCI Express Root Port #16
 goto 8086
+:808634ba
+set dev Ice Lake-LP PCI Express Root Port #3
+goto 8086
 :808634bc
 set dev Ice Lake-LP PCI Express Root Port #5
 goto 8086
@@ -55041,6 +55065,9 @@ goto 8086
 :8086a2f0
 set dev 200 Series PCH HD Audio
 goto 8086
+:8086a303
+set dev H310 Chipset LPC/eSPI Controller
+goto 8086
 :8086a304
 set dev H370 Chipset LPC/eSPI Controller
 goto 8086
@@ -55191,6 +55218,12 @@ goto 8086
 :8086a382
 set dev 400 Series Chipset Family SATA AHCI Controller
 goto 8086
+:8086a394
+set dev Comet Lake PCI Express Root Port #05
+goto 8086
+:8086a397
+set dev Comet Lake PCI Express Root Port #08
+goto 8086
 :8086a3a1
 set dev Memory controller
 goto 8086
@@ -55202,6 +55235,18 @@ set dev Comet Lake PCH-V USB Controller
 goto 8086
 :8086a3b1
 set dev Comet Lake PCH-V Thermal Subsystem
+goto 8086
+:8086a3ba
+set dev Comet Lake PCH-V HECI Controller
+goto 8086
+:8086a3c8
+set dev B460 Chipset LPC/eSPI Controller
+goto 8086
+:8086a3eb
+set dev Comet Lake PCI Express Root Port #21
+goto 8086
+:8086a3f0
+set dev Comet Lake PCH-V cAVS
 goto 8086
 :8086a620
 set dev 6400/6402 Advanced Memory Buffer (AMB)
