@@ -186,6 +186,9 @@ exit
 :07317200
 set dev JM7200 Series GPU
 goto 0731
+:07319230
+set dev JM9230
+goto 0731
 :0777
 set ven Ubiquiti Networks, Inc.
 exit
@@ -255,6 +258,9 @@ goto 0b0b
 :0b0b0a06
 set dev RCB672FXX 672-channel modular analog telephony card
 goto 0b0b
+:0ccd
+set ven Preferred Networks, Inc.
+exit
 :0e11
 set ven Compaq Computer Corporation
 exit
@@ -22675,7 +22681,7 @@ exit
 set dev 88F3700 [Armada 3700 Family] ARM SoC
 goto 11ab
 :11ab0110
-set dev 88F8040 PCI Express controller
+set dev 88F60x0/88F70x0/88F80x0/CN913x ARM SoC
 goto 11ab
 :11ab0146
 set dev GT-64010/64010A System Controller
@@ -22941,11 +22947,20 @@ goto 11ab
 :11ab6485
 set dev MV64460/64461/64462 System Controller, Revision B
 goto 11ab
+:11ab6560
+set dev 88F6560 [Avanta] ARM SoC
+goto 11ab
+:11ab6710
+set dev 88F6710 [Armada 370] ARM SoC
+goto 11ab
 :11ab6820
 set dev 88F6820 [Armada 385] ARM SoC
 goto 11ab
 :11ab6828
 set dev 88F6828 [Armada 388] ARM SoC
+goto 11ab
+:11ab6920
+set dev 88F6920 [Armada 390] ARM SoC
 goto 11ab
 :11ab7042
 set dev 88SX7042 PCI-e 4-port SATA-II
@@ -22960,7 +22975,7 @@ goto 11ab
 set dev MV78230 [Armada XP] ARM SoC
 goto 11ab
 :11ab7846
-set dev 88F6820 [Armada 385] ARM SoC
+set dev MV78460 [Armada XP] ARM SoC
 goto 11ab
 :11abd40f
 set dev Bobcat3 Ethernet Switch
@@ -32514,6 +32529,15 @@ goto 14e4
 :14e4b990
 set dev BCM56990 Switch ASIC
 goto 14e4
+:14e4b996
+set dev BCM56996 Tomahawk4G 106G Switch ASIC
+goto 14e4
+:14e4b998
+set dev BCM56998 Tomahawk4GT 106G Switch ASIC
+goto 14e4
+:14e4b999
+set dev BCM56999 Tomahawk4D 106G Switch ASIC
+goto 14e4
 :14e4c909
 set dev BCM78909 Switch ASIC
 goto 14e4
@@ -41190,6 +41214,9 @@ exit
 :1dcf
 set ven Beijing Sinead Technology Co., Ltd.
 exit
+:1dd3
+set ven Sage Microelectronics Corp.
+exit
 :1dd8
 set ven Pensando Systems
 exit
@@ -43784,6 +43811,9 @@ set dev RAID Controller
 goto 8086
 :8086061f
 set dev 80303 I/O Processor
+goto 8086
+:80860684
+set dev H470 Chipset LPC/eSPI Controller
 goto 8086
 :80860687
 set dev Q470 Chipset LPC/eSPI Controller
@@ -50934,6 +50964,15 @@ goto 8086
 :808637d9
 set dev X722 Hyper-V Virtual Function
 goto 8086
+:80863882
+set dev Ice Lake LPC Controller
+goto 8086
+:808638a4
+set dev Ice Lake SPI Controller
+goto 8086
+:808638e0
+set dev Ice Lake Management Engine Interface
+goto 8086
 :80863a00
 set dev 82801JD/DO (ICH10 Family) 4-port SATA IDE Controller
 goto 8086
@@ -51565,7 +51604,7 @@ goto 8086
 set dev CoffeeLake-S GT2 [UHD Graphics 630]
 goto 8086
 :80863e92
-set dev CometLake-S GT2 [UHD Graphics 630]
+set dev CoffeeLake-S GT2 [UHD Graphics 630]
 goto 8086
 :80863e93
 set dev CoffeeLake-S GT1 [UHD Graphics 610]
@@ -53193,6 +53232,9 @@ goto 8086
 :80868a13
 set dev Ice Lake Thunderbolt 3 USB Controller
 goto 8086
+:80868a14
+set dev Ice Lake Processor Host Bridge/DRAM Registers
+goto 8086
 :80868a17
 set dev Ice Lake Thunderbolt 3 NHI #0
 goto 8086
@@ -53849,6 +53891,9 @@ set dev TigerLake-H GT1 [UHD Graphics]
 goto 8086
 :80869a68
 set dev TigerLake-H GT1 [UHD Graphics]
+goto 8086
+:80869b33
+set dev Comet Lake-S 6c Host Bridge/DRAM Controller
 goto 8086
 :80869b41
 set dev CometLake-U GT2 [UHD Graphics]
@@ -55224,6 +55269,12 @@ goto 8086
 :8086a397
 set dev Comet Lake PCI Express Root Port #08
 goto 8086
+:8086a398
+set dev Comet Lake PCI Express Root Port 9
+goto 8086
+:8086a39a
+set dev Comet Lake PCI Express Root Port 11
+goto 8086
 :8086a3a1
 set dev Memory controller
 goto 8086
@@ -55241,6 +55292,9 @@ set dev Comet Lake PCH-V HECI Controller
 goto 8086
 :8086a3c8
 set dev B460 Chipset LPC/eSPI Controller
+goto 8086
+:8086a3da
+set dev H410 Chipset LPC/eSPI Controller
 goto 8086
 :8086a3eb
 set dev Comet Lake PCI Express Root Port #21
