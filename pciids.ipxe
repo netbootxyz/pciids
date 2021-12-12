@@ -186,8 +186,38 @@ exit
 :07317200
 set dev JM7200 Series GPU
 goto 0731
+:07319200
+set dev JM9200
+goto 0731
+:0731920a
+set dev JH920
+goto 0731
+:0731920b
+set dev JH920-I
+goto 0731
+:0731920c
+set dev JH920-M
+goto 0731
+:07319210
+set dev JM9210
+goto 0731
+:07319211
+set dev JM9210-I
+goto 0731
 :07319230
 set dev JM9230
+goto 0731
+:07319231
+set dev JM9231-I
+goto 0731
+:07319250
+set dev JM9250
+goto 0731
+:0731930a
+set dev JH930-I
+goto 0731
+:0731930b
+set dev JH930-M
 goto 0731
 :0777
 set ven Ubiquiti Networks, Inc.
@@ -17640,6 +17670,9 @@ goto 10de
 :10de1d01
 set dev GP108 [GeForce GT 1030]
 goto 10de
+:10de1d02
+set dev GP108 [GeForce GT 1010]
+goto 10de
 :10de1d10
 set dev GP108M [GeForce MX150]
 goto 10de
@@ -33957,6 +33990,12 @@ goto 15b3
 :15b3021d
 set dev MT43244 Family [BlueField-3 Secure Flash Recovery]
 goto 15b3
+:15b3021e
+set dev CX8 Family [ConnectX-8 Flash Recovery]
+goto 15b3
+:15b3021f
+set dev CX8 Family [ConnectX-8 Secure Flash Recovery]
+goto 15b3
 :15b3024e
 set dev MT53100 [Spectrum-2, Flash recovery mode]
 goto 15b3
@@ -34107,6 +34146,9 @@ goto 15b3
 :15b31021
 set dev MT2910 Family [ConnectX-7]
 goto 15b3
+:15b31023
+set dev CX8 Family [ConnectX-8]
+goto 15b3
 :15b31974
 set dev MT28800 Family [ConnectX-5 PCIe Bridge]
 goto 15b3
@@ -34131,6 +34173,9 @@ goto 15b3
 :15b3197b
 set dev MT43244 Family [BlueField-3 SoC PCIe Bridge]
 goto 15b3
+:15b3197c
+set dev CX8 Family [ConnectX-8 PCIe Bridge]
+goto 15b3
 :15b32020
 set dev MT2892 Family [ConnectX-6 Dx Emulated PCIe Bridge]
 goto 15b3
@@ -34142,6 +34187,9 @@ set dev MT2910 Family [ConnectX-7 Emulated PCIe Bridge]
 goto 15b3
 :15b32024
 set dev MT43244 Family [BlueField-3 SoC Emulated PCIe Bridge]
+goto 15b3
+:15b32025
+set dev CX8 Family [ConnectX-8 Emulated PCIe Bridge]
 goto 15b3
 :15b34117
 set dev MT27712A0-FDCF-AE
@@ -41283,6 +41331,24 @@ goto 1de5
 :1de53000
 set dev eBPF-based PCIe Accelerator
 goto 1de5
+:1ded
+set ven Alibaba (China) Co., Ltd.
+exit
+:1ded8000
+set dev M1 Root Port
+goto 1ded
+:1ded8001
+set dev ACC-RCiEP
+goto 1ded
+:1ded8002
+set dev RCiEP VF
+goto 1ded
+:1ded8003
+set dev RCEC PF
+goto 1ded
+:1ded8004
+set dev RCEC VF
+goto 1ded
 :1dee
 set ven Biwin Storage Technology Co., Ltd.
 exit
