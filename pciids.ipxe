@@ -14470,7 +14470,7 @@ goto 10de
 set dev NV35 [GeForce FX 5900XT]
 goto 10de
 :10de0333
-set dev NV38 [GeForce FX 5950 Ultra / PCX 5950]
+set dev NV38 [GeForce FX 5950 Ultra]
 goto 10de
 :10de0334
 set dev NV35 [GeForce FX 5900ZT]
@@ -34174,7 +34174,7 @@ goto 15b3
 set dev MT43244 Family [BlueField-3 SoC PCIe Bridge]
 goto 15b3
 :15b3197c
-set dev CX8 Family [ConnectX-8 PCIe Bridge]
+set dev ConnectX/BlueField Family mlx5Gen PCIe Bridge [PCIe Bridge]
 goto 15b3
 :15b32020
 set dev MT2892 Family [ConnectX-6 Dx Emulated PCIe Bridge]
@@ -34189,7 +34189,7 @@ goto 15b3
 set dev MT43244 Family [BlueField-3 SoC Emulated PCIe Bridge]
 goto 15b3
 :15b32025
-set dev CX8 Family [ConnectX-8 Emulated PCIe Bridge]
+set dev ConnectX/BlueField Family mlx5Gen Emulated PCIe Bridge [Emulated PCIe Bridge]
 goto 15b3
 :15b34117
 set dev MT27712A0-FDCF-AE
@@ -41562,6 +41562,9 @@ exit
 :1e3b
 set ven Shenzhen DAPU Microelectronics Co., Ltd
 exit
+:1e3b0600
+set dev NVMe SSD Controller DPU600
+goto 1e3b
 :1e3b1098
 set dev Haishen NVMe SSD
 goto 1e3b
