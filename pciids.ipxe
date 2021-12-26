@@ -17859,6 +17859,9 @@ goto 10de
 :10de1f02
 set dev TU106 [GeForce RTX 2070]
 goto 10de
+:10de1f03
+set dev TU106 [GeForce RTX 2060 12GB]
+goto 10de
 :10de1f04
 set dev TU106
 goto 10de
@@ -17957,6 +17960,9 @@ set dev TU117M [GeForce MX450]
 goto 10de
 :10de1f9d
 set dev TU117M [GeForce GTX 1650 Mobile / Max-Q]
+goto 10de
+:10de1f9f
+set dev TU117M [GeForce MX550]
 goto 10de
 :10de1fae
 set dev TU117GL
@@ -18216,11 +18222,17 @@ goto 10de
 :10de252f
 set dev GA106 [GeForce RTX 3060 Engineering Sample]
 goto 10de
+:10de2531
+set dev GA106 [RTX A2000]
+goto 10de
 :10de2560
 set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
 goto 10de
 :10de2563
 set dev GA106M [GeForce RTX 3050 Ti Mobile / Max-Q]
+goto 10de
+:10de2571
+set dev GA106 [RTX A2000 12GB]
 goto 10de
 :10de2583
 set dev GA107 [GeForce RTX 3050]
@@ -25514,6 +25526,9 @@ set dev PI7C9X20508GP PCI Express Switch 5Port-8Lane
 goto 12d8
 :12d82304
 set dev PI7C9X2G304 EL/SL PCIe2 3-Port/4-Lane Packet Switch
+goto 12d8
+:12d82308
+set dev PI7C9X2G308GP 8-lane PCI Express 2.0 Switch with 3 PCI Express ports
 goto 12d8
 :12d82404
 set dev PI7C9X2G404 EL/SL PCIe2 4-Port/4-Lane Packet Switch
@@ -33996,6 +34011,12 @@ goto 15b3
 :15b3021f
 set dev CX8 Family [ConnectX-8 Secure Flash Recovery]
 goto 15b3
+:15b30220
+set dev BF4 Family Flash Recovery [BlueField-4 SoC Flash Recovery]
+goto 15b3
+:15b30221
+set dev BF4 Family Secure Flash Recovery [BlueField-4 Secure Flash Recovery]
+goto 15b3
 :15b3024e
 set dev MT53100 [Spectrum-2, Flash recovery mode]
 goto 15b3
@@ -34323,6 +34344,15 @@ goto 15b3
 :15b3a2dc
 set dev MT43244 BlueField-3 integrated ConnectX-7 network controller
 goto 15b3
+:15b3a2dd
+set dev BF4 Family Crypto enabled [BlueField-4 SoC Crypto enabled]
+goto 15b3
+:15b3a2de
+set dev BF4 Family Crypto disabled [BlueField-4 SoC Crypto disabled]
+goto 15b3
+:15b3a2df
+set dev BF4 Family integrated network controller [BlueField-4 integrated network controller]
+goto 15b3
 :15b3c2d2
 set dev MT416842 BlueField SoC management interfac
 goto 15b3
@@ -34334,6 +34364,9 @@ set dev MT43162 BlueField-3 Lx SoC Management Interface
 goto 15b3
 :15b3c2d5
 set dev MT43244 BlueField-3 SoC Management Interface
+goto 15b3
+:15b3c2d6
+set dev BF4 Family Management Interface [BlueField-4 SoC Management Interface]
 goto 15b3
 :15b3c738
 set dev MT51136
@@ -51963,6 +51996,9 @@ goto 8086
 :808646a3
 set dev Alder Lake-P GT1 [UHD Graphics]
 goto 8086
+:808646a6
+set dev Alder Lake-P Integrated Graphics Controller
+goto 8086
 :808646c0
 set dev AlderLake-M GT1
 goto 8086
@@ -52179,11 +52215,20 @@ goto 8086
 :80865181
 set dev Alder Lake PCH-P LPC/eSPI Controller
 goto 8086
+:80865182
+set dev Alder Lake PCH eSPI Controller
+goto 8086
 :808651a3
 set dev Alder Lake PCH-P SMBus Host Controller
 goto 8086
 :808651a4
 set dev Alder Lake-P PCH SPI Controller
+goto 8086
+:808651a8
+set dev Alder Lake PCH UART #0
+goto 8086
+:808651a9
+set dev Alder Lake PCH UART #1
 goto 8086
 :808651bf
 set dev Alder Lake PCH-P PCI Express Root Port #9
