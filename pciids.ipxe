@@ -17988,6 +17988,9 @@ goto 10de
 :10de1fbb
 set dev TU117GLM [Quadro T500 Mobile]
 goto 10de
+:10de1fbc
+set dev TU117GLM [T1200 Laptop GPU]
+goto 10de
 :10de1fbf
 set dev TU117GL
 goto 10de
@@ -17996,6 +17999,12 @@ set dev TU117BM [GeForce GTX 1650 Mobile Refresh]
 goto 10de
 :10de1fdd
 set dev TU117BM [GeForce GTX 1650 Mobile Refresh]
+goto 10de
+:10de1ff0
+set dev TU117GL [T1000 8GB]
+goto 10de
+:10de1ff2
+set dev TU117GL [T400 4GB]
 goto 10de
 :10de1ff9
 set dev TU117GLM [Quadro T1000 Mobile]
@@ -34050,6 +34059,9 @@ goto 15b3
 :15b30258
 set dev Quantum-2 RMA
 goto 15b3
+:15b30259
+set dev Abir Chiplet
+goto 15b3
 :15b30262
 set dev MT27710 [ConnectX-4 Lx Programmable] EN
 goto 15b3
@@ -41367,6 +41379,12 @@ goto 1de5
 :1ded
 set ven Alibaba (China) Co., Ltd.
 exit
+:1ded107f
+set dev Elastic RDMA Adapter
+goto 1ded
+:1ded5007
+set dev Elastic RDMA Adapter
+goto 1ded
 :1ded8000
 set dev M1 Root Port
 goto 1ded
@@ -51942,11 +51960,17 @@ goto 8086
 :8086460d
 set dev 12th Gen Core Processor PCI Express x16 Controller #1
 goto 8086
+:8086461d
+set dev Alder Lake Innovation Platform Framework Processor Participant
+goto 8086
 :8086461e
 set dev Alder Lake-P Thunderbolt 4 USB Controller
 goto 8086
 :8086461f
 set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #3
+goto 8086
+:80864626
+set dev Alder Lake-P Integrated Graphics Controller
 goto 8086
 :80864629
 set dev 12th Gen Core Processor Host Bridge/DRAM Registers
