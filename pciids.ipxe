@@ -1014,6 +1014,9 @@ goto 1000
 :1000c012
 set dev PEX880xx PCIe Gen 4 Switch
 goto 1000
+:1000c030
+set dev PEX890xx PCIe Gen 5 Switch
+goto 1000
 :1001
 set ven Kolter Electronic
 exit
@@ -2377,7 +2380,7 @@ goto 1002
 set dev Oland [Radeon HD 8570 / R5 430 OEM / R7 240/340 / Radeon 520 OEM]
 goto 1002
 :10026613
-set dev Oland PRO [Radeon R7 240/340]
+set dev Oland PRO [Radeon R7 240/340 / Radeon 520]
 goto 1002
 :10026631
 set dev Oland
@@ -17964,6 +17967,9 @@ goto 10de
 :10de1f9f
 set dev TU117M [GeForce MX550]
 goto 10de
+:10de1fa0
+set dev TU117M [GeForce MX550]
+goto 10de
 :10de1fae
 set dev TU117GL
 goto 10de
@@ -18096,6 +18102,9 @@ goto 10de
 :10de2208
 set dev GA102 [GeForce RTX 3080 Ti]
 goto 10de
+:10de220a
+set dev GA102 [GeForce RTX 3080 12GB]
+goto 10de
 :10de220d
 set dev GA102 [CMP 90HX]
 goto 10de
@@ -18140,6 +18149,9 @@ set dev GA103
 goto 10de
 :10de2321
 set dev GA103
+goto 10de
+:10de2414
+set dev GA103 [GeForce RTX 3060 Ti]
 goto 10de
 :10de2420
 set dev GA103M [GeForce RTX 3080 Ti Mobile]
@@ -18258,11 +18270,23 @@ goto 10de
 :10de25a5
 set dev GA107M [GeForce RTX 3050 Mobile]
 goto 10de
+:10de25a6
+set dev GA107M [GeForce MX570]
+goto 10de
+:10de25a7
+set dev GA107M [GeForce MX570]
+goto 10de
+:10de25a9
+set dev GA107M [GeForce RTX 2050]
+goto 10de
 :10de25af
 set dev GA107 [GeForce RTX 3050 Engineering Sample]
 goto 10de
 :10de25b5
 set dev GA107GLM [RTX A4 Mobile]
+goto 10de
+:10de25b6
+set dev GA107GL [A2 / A16]
 goto 10de
 :10de25b8
 set dev GA107GLM [RTX A2000 Mobile]
@@ -31371,6 +31395,9 @@ goto 14c3
 :14c37915
 set dev MT7915E 802.11ax PCI Express Wireless Network Adapter
 goto 14c3
+:14c37961
+set dev MT7921 802.11ax PCI Express Wireless Network Adapter
+goto 14c3
 :14c4
 set ven IWASAKI Information Systems Co Ltd
 exit
@@ -38445,6 +38472,12 @@ goto 1974
 :19740019
 set dev FlexCard PCIe3
 goto 1974
+:1974001a
+set dev FlexCard PXIe Ethernet
+goto 1974
+:1974001b
+set dev FlexCard PCIe Ethernet
+goto 1974
 :1976
 set ven TRENDnet
 exit
@@ -40458,6 +40491,9 @@ goto 1cc4
 :1cc417ab
 set dev NVMe 256G SSD device
 goto 1cc4
+:1cc46303
+set dev AM630 PCIe 4.0 x4 NVMe SSD Controller
+goto 1cc4
 :1cc5
 set ven Embedded Intelligence, Inc.
 exit
@@ -41625,6 +41661,9 @@ exit
 :1e49
 set ven Yangtze Memory Technologies Co.,Ltd
 exit
+:1e490041
+set dev ZHITAI TiPro7000
+goto 1e49
 :1e491013
 set dev PC210
 goto 1e49
@@ -41745,6 +41784,15 @@ goto 1eab
 :1eab300b
 set dev NVMe SSD Controller 300B
 goto 1eab
+:1eac
+set ven Quectel Wireless Solutions Co., Ltd.
+exit
+:1eac1001
+set dev EM120R-GL LTE Modem
+goto 1eac
+:1eac1002
+set dev EM160R-GL LTE Modem
+goto 1eac
 :1eae
 set ven XFX Limited
 exit
@@ -43422,6 +43470,21 @@ goto 6688
 :66881800
 set dev CooVOX TDM BRI Module
 goto 6688
+:6766
+set ven Glenfly Tech Co., Ltd.
+exit
+:67663d00
+set dev Arise-GT-10C0
+goto 6766
+:67663d02
+set dev Arise 1020
+goto 6766
+:67663d40
+set dev Arise-GT-10C0 High Definition Audio Controller
+goto 6766
+:67663d41
+set dev Arise 1020 High Definition Audio Controller
+goto 6766
 :6900
 set ven Red Hat, Inc.
 exit
