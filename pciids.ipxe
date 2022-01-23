@@ -36783,6 +36783,9 @@ goto 17cb
 :17cb1101
 set dev QCA6390 Wireless Network Adapter [AX500-DBS (2x2)]
 goto 17cb
+:17cb1103
+set dev Atheros QCNFA765
+goto 17cb
 :17cc
 set ven NetChip Technology, Inc
 exit
@@ -40410,6 +40413,9 @@ exit
 :1c5f000d
 set dev PBlaze5 520/526
 goto 1c5f
+:1c5f000e
+set dev PBlaze6 6530
+goto 1c5f
 :1c5f003d
 set dev PBlaze5 920/926
 goto 1c5f
@@ -41817,6 +41823,12 @@ goto 1ed2
 :1ed3
 set ven Yeston
 exit
+:1ed5
+set ven Moore Threads Technology Co.,Ltd
+exit
+:1ed50101
+set dev MTT S30
+goto 1ed5
 :1ed8
 set ven Digiteq Automotive
 exit
