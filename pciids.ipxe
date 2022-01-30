@@ -3405,6 +3405,9 @@ goto 1002
 :1002740f
 set dev Aldebaran
 goto 1002
+:1002743f
+set dev Navi 24 [Radeon RX 6400 / 6500 XT]
+goto 1002
 :10027833
 set dev RS350 Host Bridge
 goto 1002
@@ -18156,6 +18159,9 @@ goto 10de
 :10de2420
 set dev GA103M [GeForce RTX 3080 Ti Mobile]
 goto 10de
+:10de2460
+set dev GA103M [GeForce RTX 3080 Ti Laptop GPU]
+goto 10de
 :10de2482
 set dev GA104 [GeForce RTX 3070 Ti]
 goto 10de
@@ -18233,6 +18239,9 @@ set dev GA106 [GeForce RTX 3060 Lite Hash Rate]
 goto 10de
 :10de2505
 set dev GA106
+goto 10de
+:10de2507
+set dev GA106 [Geforce RTX 3050]
 goto 10de
 :10de2520
 set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
@@ -31383,6 +31392,9 @@ exit
 :14c3
 set ven MEDIATEK Corp.
 exit
+:14c30616
+set dev MT7922 802.11ax PCI Express Wireless Network Adapter
+goto 14c3
 :14c37612
 set dev MT7612E 802.11acbgn PCI Express Wireless Network Adapter
 goto 14c3
@@ -39366,6 +39378,9 @@ goto 1ae8
 :1ae80a5a
 set dev microEnable 5 AD8-CL
 goto 1ae8
+:1ae80a64
+set dev imaWorx CXP-12 Quad
+goto 1ae8
 :1ae80b52
 set dev mE5 Abacus 4G Base
 goto 1ae8
@@ -40001,6 +40016,9 @@ set dev FireCuda 510 SSD
 goto 1bb1
 :1bb15016
 set dev FireCuda 520 SSD
+goto 1bb1
+:1bb15018
+set dev FireCuda 530 SSD
 goto 1bb1
 :1bb3
 set ven Bluecherry
@@ -52071,6 +52089,9 @@ goto 8086
 :8086464f
 set dev 12th Gen Core Processor Gaussian & Neural Accelerator
 goto 8086
+:80864660
+set dev 12th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
 :8086466d
 set dev Alder Lake-P Thunderbolt 4 NHI #1
 goto 8086
@@ -52129,10 +52150,13 @@ goto 8086
 set dev RocketLake-S [UHD Graphics]
 goto 8086
 :80864da3
-set dev JaserLake SMBus
+set dev Jasper Lake SMBus
 goto 8086
 :80864da4
-set dev JaserLake SPI (flash) Controller
+set dev Jasper Lake SPI Controller
+goto 8086
+:80864dc8
+set dev Jasper Lake HD Audio
 goto 8086
 :80864de0
 set dev Management Engine Interface
@@ -53237,6 +53261,42 @@ set dev 82372FB PIIX5 SMBus
 goto 8086
 :80867800
 set dev 82740 (i740) AGP Graphics Accelerator
+goto 8086
+:80867a84
+set dev Z690 Chipset LPC/eSPI Controller
+goto 8086
+:80867aa3
+set dev Alder Lake-S PCH SMBus Controller
+goto 8086
+:80867aa4
+set dev Alder Lake-S PCH SPI Controller
+goto 8086
+:80867aa7
+set dev Alder Lake-S PCH Shared SRAM
+goto 8086
+:80867ab4
+set dev Alder Lake-S PCH PCI Express Root Port #13
+goto 8086
+:80867abd
+set dev Alder Lake-S PCH PCI Express Root Port #6
+goto 8086
+:80867acc
+set dev Alder Lake-S PCH I2C Controller #0
+goto 8086
+:80867ad0
+set dev Alder Lake-S HD Audio Controller
+goto 8086
+:80867ae0
+set dev Alder Lake-S PCH USB 3.2 Gen 2x2 XHCI Controller
+goto 8086
+:80867ae2
+set dev Alder Lake-S PCH SATA Controller [AHCI Mode]
+goto 8086
+:80867ae8
+set dev Alder Lake-S PCH HECI Controller #1
+goto 8086
+:80867af0
+set dev Alder Lake-S PCH CNVi WiFi
 goto 8086
 :80868002
 set dev Trusted Execution Technology Registers
