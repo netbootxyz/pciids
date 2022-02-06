@@ -5839,13 +5839,13 @@ goto 1022
 set dev Raven USB 3.1
 goto 1022
 :102215e2
-set dev Raven/Raven2/FireFlight/Renoir Audio Processor
+set dev ACP/ACP3X/ACP6x Audio Coprocessor
 goto 1022
 :102215e3
-set dev Family 17h (Models 10h-1fh) HD Audio Controller
+set dev Family 17h/19h HD Audio Controller
 goto 1022
 :102215e4
-set dev Raven/Raven2/Renoir Sensor Fusion Hub
+set dev Sensor Fusion Hub
 goto 1022
 :102215e5
 set dev Raven2 USB 3.1
@@ -17985,6 +17985,12 @@ goto 10de
 :10de1fb2
 set dev TU117GLM [Quadro T400 Mobile]
 goto 10de
+:10de1fb6
+set dev TU117GLM [T600 Laptop GPU]
+goto 10de
+:10de1fb7
+set dev TU117GLM [T550 Laptop GPU]
+goto 10de
 :10de1fb8
 set dev TU117GLM [Quadro T2000 Mobile / Max-Q]
 goto 10de
@@ -18027,6 +18033,9 @@ goto 10de
 :10de20b2
 set dev GA100 [A100 SXM4 80GB]
 goto 10de
+:10de20b3
+set dev GA100 [PG506-242/243]
+goto 10de
 :10de20b5
 set dev GA100 [A100 PCIe 80GB]
 goto 10de
@@ -18048,8 +18057,14 @@ goto 10de
 :10de20c2
 set dev GA100 [CMP 170HX]
 goto 10de
+:10de20f0
+set dev GA100 [A100-PG506-207]
+goto 10de
 :10de20f1
 set dev GA100 [A100 PCIe 40GB]
+goto 10de
+:10de20f2
+set dev GA100 [A100-PG506-217]
 goto 10de
 :10de2182
 set dev TU116 [GeForce GTX 1660 Ti]
@@ -18129,6 +18144,9 @@ goto 10de
 :10de2232
 set dev GA102GL [RTX A4500]
 goto 10de
+:10de2233
+set dev GA102GL [RTX A5500]
+goto 10de
 :10de2235
 set dev GA102GL [A40]
 goto 10de
@@ -18137,6 +18155,9 @@ set dev GA102GL [A10]
 goto 10de
 :10de2237
 set dev GA102GL [A10G]
+goto 10de
+:10de2238
+set dev GA102GL [A10M]
 goto 10de
 :10de223f
 set dev GA102GL
@@ -18190,7 +18211,7 @@ goto 10de
 set dev GA104M [GeForce RTX 3080 Mobile / Max-Q 8GB/16GB]
 goto 10de
 :10de249d
-set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
+set dev RTX 3070 TI Engineering Sample
 goto 10de
 :10de249f
 set dev GA104M
@@ -18227,6 +18248,12 @@ set dev GA104M [GeForce RTX 3080 Mobile / Max-Q 8GB/16GB]
 goto 10de
 :10de24dd
 set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
+goto 10de
+:10de24e0
+set dev GA104M [Geforce RTX 3070 Ti Laptop GPU]
+goto 10de
+:10de24fa
+set dev GA104 [RTX A4500 Embedded GPU ]
 goto 10de
 :10de2501
 set dev GA106 [GeForce RTX 3060]
@@ -18300,6 +18327,9 @@ goto 10de
 :10de25b8
 set dev GA107GLM [RTX A2000 Mobile]
 goto 10de
+:10de25b9
+set dev GA107GLM [RTX A1000 Laptop GPU]
+goto 10de
 :10de25e0
 set dev GA107BM [GeForce RTX 3050 Ti Mobile]
 goto 10de
@@ -18308,6 +18338,12 @@ set dev GA107BM [GeForce RTX 3050 Mobile]
 goto 10de
 :10de25e5
 set dev GA107BM [GeForce RTX 3050 Mobile]
+goto 10de
+:10de25f9
+set dev GA107 [RTX A1000 Embedded GPU ]
+goto 10de
+:10de25fa
+set dev GA107 [RTX A2000 Embedded GPU]
 goto 10de
 :10df
 set ven Emulex Corporation
@@ -27233,6 +27269,9 @@ set dev 8203 Acceleration Processor
 goto 13a3
 :13a30037
 set dev 8204 Acceleration Processor
+goto 13a3
+:13a39240
+set dev XR9240 Compression and Security Coprocessor [Panther II]
 goto 13a3
 :13a4
 set ven Rascom Inc
@@ -39240,6 +39279,12 @@ goto 1aa8
 :1aa8000a
 set dev RAIDCore Controller
 goto 1aa8
+:1aa9
+set ven Schweitzer Engineering Laboratories
+exit
+:1aa9000d
+set dev SEL-3390S8 serial adaptor
+goto 1aa9
 :1aae
 set ven Global Velocity, Inc.
 exit
@@ -54563,6 +54608,9 @@ set dev Sunrise Point-LP CSME HECI #1
 goto 8086
 :80869d3d
 set dev Sunrise Point-LP Active Management Technology - SOL
+goto 8086
+:80869d3e
+set dev iTouch Controller
 goto 8086
 :80869d43
 set dev Sunrise Point-LP LPC Controller
