@@ -39283,7 +39283,10 @@ goto 1aa8
 set ven Schweitzer Engineering Laboratories
 exit
 :1aa9000d
-set dev SEL-3390S8 serial adaptor
+set dev SEL-3390S8 Serial Adapter
+goto 1aa9
+:1aa90018
+set dev SEL-3390E4 Ethernet Adapter
 goto 1aa9
 :1aae
 set ven Global Velocity, Inc.
@@ -39848,6 +39851,9 @@ set dev 88SE9128 PCIe SATA 6 Gb/s RAID controller
 goto 1b4b
 :1b4b9130
 set dev 88SE9128 PCIe SATA 6 Gb/s RAID controller with HyperDuo
+goto 1b4b
+:1b4b9170
+set dev 88SE9170 PCIe 2.0 x1 2-port SATA 6 Gb/s Controller
 goto 1b4b
 :1b4b9172
 set dev 88SE9172 SATA 6Gb/s Controller
@@ -41129,6 +41135,9 @@ set dev AR-ARK-NIC [Arkville ArkNIC Kernel Path Device]
 goto 1d6c
 :1d6c101e
 set dev AR-ARKA-FX1 [Arkville 64B DPDK Data Mover for Agilex R-Tile]
+goto 1d6c
+:1d6c101f
+set dev AR-Q420F [2x100GbE Packet Capture Device]
 goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
@@ -54233,6 +54242,9 @@ set dev 10th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
 :80869b64
 set dev 10th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
+:80869ba8
+set dev CometLake-S GT1 [UHD Graphics 610]
 goto 8086
 :80869bc4
 set dev CometLake-H GT2 [UHD Graphics]
