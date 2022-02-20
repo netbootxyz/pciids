@@ -18211,7 +18211,7 @@ goto 10de
 set dev GA104M [GeForce RTX 3080 Mobile / Max-Q 8GB/16GB]
 goto 10de
 :10de249d
-set dev RTX 3070 TI Engineering Sample
+set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
 goto 10de
 :10de249f
 set dev GA104M
@@ -36531,6 +36531,48 @@ goto 177d
 :177da040
 set dev THUNDERX CPT Cryptographic Accelerator
 goto 177d
+:177da059
+set dev Octeon TX2 CGX (MAC)
+goto 177d
+:177da060
+set dev Octeon 10 RPM (MAC)
+goto 177d
+:177da061
+set dev Octeon Tx2 Loopback Interface (LBK)
+goto 177d
+:177da063
+set dev Octeon Tx2 RVU Physical Function
+goto 177d
+:177da064
+set dev Octeon Tx2 RVU Virtual Function
+goto 177d
+:177da065
+set dev Octeon Tx2 RVU Admin Function
+goto 177d
+:177da09e
+set dev Octeon 10 PTP controller
+goto 177d
+:177da0f2
+set dev Octeon 10 CPT Cryptographic Accelerator, Physical function
+goto 177d
+:177da0f3
+set dev Octeon 10 CPT Cryptographic Accelerator, Virtual function
+goto 177d
+:177da0f6
+set dev Octeon Tx2 SDP Physical Function
+goto 177d
+:177da0f7
+set dev Octeon Tx2 SDP Virtual Function
+goto 177d
+:177da0f8
+set dev Octeon Tx2 Loopback Interface Virtual Function (LBKVF)
+goto 177d
+:177da0fd
+set dev Octeon Tx2 CPT Cryptographic Accelerator, Physical function
+goto 177d
+:177da0fe
+set dev Octeon Tx2 CPT Cryptographic Accelerator, Virtual function
+goto 177d
 :177da100
 set dev THUNDERX CN88XX 48 core SoC
 goto 177d
@@ -40476,6 +40518,9 @@ goto 1c5c
 :1c5c2839
 set dev PE8000 Series NVMe Solid State Drive
 goto 1c5c
+:1c5c2849
+set dev PE81x0 U.2/3 NVMe Solid State Drive
+goto 1c5c
 :1c5f
 set ven Beijing Memblaze Technology Co. Ltd.
 exit
@@ -41137,7 +41182,7 @@ goto 1d6c
 set dev AR-ARKA-FX1 [Arkville 64B DPDK Data Mover for Agilex R-Tile]
 goto 1d6c
 :1d6c101f
-set dev AR-Q420F [2x100GbE Packet Capture Device]
+set dev AR-TK242 [2x100GbE Packet Capture Device]
 goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
@@ -41652,6 +41697,9 @@ goto 1e0f
 :1e0f0009
 set dev NVMe SSD
 goto 1e0f
+:1e0f0011
+set dev NVMe SSD Controller CD7
+goto 1e0f
 :1e17
 set ven Arnold & Richter Cine Technik GmbH & Co. Betriebs KG
 exit
@@ -41952,6 +42000,9 @@ goto 1f03
 :1f035636
 set dev IG5636-Based NVMe SSD
 goto 1f03
+:1f2f
+set ven China Mobile (Hangzhou) Information Technology Co.Ltd.
+exit
 :1fab
 set ven Unifabrix Ltd.
 exit
@@ -55609,7 +55660,7 @@ goto 8086
 set dev Comet Lake PCI Express Root Port 11
 goto 8086
 :8086a3a1
-set dev Memory controller
+set dev Cannon Lake PCH Power Management Controller
 goto 8086
 :8086a3a3
 set dev Comet Lake PCH-V SMBus Host Controller
