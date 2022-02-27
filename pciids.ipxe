@@ -1189,7 +1189,7 @@ goto 1002
 set dev Rembrandt
 goto 1002
 :10021681
-set dev Rembrandt
+set dev Rembrandt [Radeon 680M]
 goto 1002
 :10021714
 set dev BeaverCreek HDMI Audio [Radeon HD 6500D and 6400G-6600G series]
@@ -18024,6 +18024,9 @@ goto 10de
 :10de1ff9
 set dev TU117GLM [Quadro T1000 Mobile]
 goto 10de
+:10de2082
+set dev GA100 [CMP 170HX]
+goto 10de
 :10de20b0
 set dev GA100 [A100 SXM4 40GB]
 goto 10de
@@ -20252,6 +20255,9 @@ set dev HDMI Audio Device
 goto 1106
 :11069201
 set dev USB3.0 Controller
+goto 1106
+:11069380
+set dev Ncore Coprocessor
 goto 1106
 :11069530
 set dev VX800/820/900 Series Secure Digital Memory Card Controller
@@ -41928,6 +41934,12 @@ exit
 :1eb11001
 set dev Video Accelerator
 goto 1eb1
+:1eb4
+set ven Quantum Nebula Microelectronics Technology Co.,Ltd.
+exit
+:1eb43401
+set dev SSD Contoller
+goto 1eb4
 :1ebd
 set ven EMERGETECH Company Ltd.
 exit
