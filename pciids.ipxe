@@ -3363,6 +3363,9 @@ goto 1002
 :100273a4
 set dev Navi 21 USB
 goto 1002
+:100273a5
+set dev Navi 21 [Radeon RX 6950 XT]
+goto 1002
 :100273ab
 set dev Navi 21 Pro-XLA [Radeon Pro W6800X/Radeon Pro W6800X Duo]
 goto 1002
@@ -6275,6 +6278,15 @@ set dev 400 Series Chipset SATA Controller
 goto 1022
 :102243d5
 set dev 400 Series Chipset USB 3.1 XHCI Controller
+goto 1022
+:102243e9
+set dev 500 Series Chipset Switch Upstream Port
+goto 1022
+:102243eb
+set dev 500 Series Chipset SATA Controller
+goto 1022
+:102243ee
+set dev 500 Series Chipset USB 3.1 XHCI Controller
 goto 1022
 :102257a3
 set dev Matisse PCIe GPP Bridge
@@ -39333,6 +39345,12 @@ exit
 :1aa9000d
 set dev SEL-3390S8 Serial Adapter
 goto 1aa9
+:1aa9000e
+set dev SEL-3390E4 Ethernet Adapter
+goto 1aa9
+:1aa90014
+set dev SEL-3390T Time and Ethernet Adapter
+goto 1aa9
 :1aa90018
 set dev SEL-3390E4 Ethernet Adapter
 goto 1aa9
@@ -40605,6 +40623,9 @@ exit
 :1cc1
 set ven ADATA Technology Co., Ltd.
 exit
+:1cc15766
+set dev ADATA XPG GAMMIXS1 1L Media
+goto 1cc1
 :1cc18201
 set dev XPG SX8200 Pro PCIe Gen3x4 M.2 2280 Solid State Drive
 goto 1cc1
@@ -41958,6 +41979,9 @@ exit
 :1ed5
 set ven Moore Threads Technology Co.,Ltd
 exit
+:1ed50100
+set dev MTT S10
+goto 1ed5
 :1ed50101
 set dev MTT S30
 goto 1ed5
@@ -43632,6 +43656,9 @@ goto 6766
 :67663d41
 set dev Arise 1020 High Definition Audio Controller
 goto 6766
+:6899
+set ven ZT Systems
+exit
 :6900
 set ven Red Hat, Inc.
 exit
@@ -54750,6 +54777,9 @@ goto 8086
 :80869daa
 set dev Cannon Point-LP Serial IO SPI Controller
 goto 8086
+:80869dab
+set dev Cannon Point-LP Serial IO SPI Controller
+goto 8086
 :80869db0
 set dev Cannon Point-LP PCI Express Root Port #9
 goto 8086
@@ -54776,6 +54806,9 @@ set dev Cannon Point-LP PCI Express Root Port #7
 goto 8086
 :80869dbf
 set dev Cannon Point PCI Express Root Port #8
+goto 8086
+:80869dc4
+set dev Cannon Point-LP SD Host Controller
 goto 8086
 :80869dc5
 set dev Cannon Point-LP Serial IO I2C Host Controller
