@@ -4213,7 +4213,7 @@ goto 1002
 set dev Vega 20 HDMI Audio [Radeon VII]
 goto 1002
 :1002ab28
-set dev Navi 21 HDMI Audio [Radeon RX 6800/6800 XT / 6900 XT]
+set dev Navi 21/23 HDMI/DP Audio Controller
 goto 1002
 :1002ab38
 set dev Navi 10 HDMI Audio
@@ -31455,6 +31455,9 @@ goto 14c3
 :14c37612
 set dev MT7612E 802.11acbgn PCI Express Wireless Network Adapter
 goto 14c3
+:14c37615
+set dev MT7615E 802.11ac PCI Express Wireless Network Adapter
+goto 14c3
 :14c37630
 set dev MT7630e 802.11bgn Wireless Network Adapter
 goto 14c3
@@ -36897,6 +36900,9 @@ goto 17cb
 :17cb1103
 set dev Atheros QCNFA765
 goto 17cb
+:17cb1104
+set dev QCN6024/9024/9074 Wireless Network Adapter
+goto 17cb
 :17cc
 set ven NetChip Technology, Inc
 exit
@@ -42039,6 +42045,9 @@ goto 1f03
 :1f2f
 set ven China Mobile (Hangzhou) Information Technology Co.Ltd.
 exit
+:1f2f1513
+set dev DERA MENG NVMe Controller
+goto 1f2f
 :1fab
 set ven Unifabrix Ltd.
 exit
@@ -43692,6 +43701,15 @@ goto 7401
 :7470
 set ven TP-LINK Technologies Co., Ltd.
 exit
+:7526
+set ven HongQin (Beijing) Technology Co., Ltd.
+exit
+:75260082
+set dev HQ SSD 1TB
+goto 7526
+:75260083
+set dev HQ SSD 2TB M.2 NVMe
+goto 7526
 :7604
 set ven O.N. Electronic Co Ltd.
 exit
@@ -44825,6 +44843,9 @@ set dev Ethernet Controller (2) I225-IT
 goto 8086
 :80860dd2
 set dev Ethernet Network Adapter I710
+goto 8086
+:80860dda
+set dev Connection X722 for 10GbE SFP+
 goto 8086
 :80860e00
 set dev Xeon E7 v2/Xeon E5 v2/Core i7 DMI2
