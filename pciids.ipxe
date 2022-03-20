@@ -3382,7 +3382,7 @@ goto 1002
 set dev Navi 22 USB
 goto 1002
 :100273df
-set dev Navi 22 [Radeon RX 6700/6700 XT / 6800M]
+set dev Navi 22 [Radeon RX 6700/6700 XT/6750 XT / 6800M]
 goto 1002
 :100273e0
 set dev Navi 23
@@ -3395,6 +3395,9 @@ set dev Navi 23 WKS-XL [Radeon PRO W6600]
 goto 1002
 :100273e4
 set dev Navi 23 USB
+goto 1002
+:100273ef
+set dev Navi 23 [Radeon RX 6650 XT]
 goto 1002
 :100273ff
 set dev Navi 23 [Radeon RX 6600/6600 XT/6600M]
@@ -18195,6 +18198,9 @@ goto 10de
 :10de2420
 set dev GA103M [GeForce RTX 3080 Ti Mobile]
 goto 10de
+:10de2438
+set dev GA103GLM [RTX A5500 Laptop GPU]
+goto 10de
 :10de2460
 set dev GA103M [GeForce RTX 3080 Ti Laptop GPU]
 goto 10de
@@ -18254,6 +18260,15 @@ set dev GA104GLM [RTX A4000 Mobile]
 goto 10de
 :10de24b8
 set dev GA104GLM [RTX A3000 Mobile]
+goto 10de
+:10de24b9
+set dev GA104GLM [RTX A3000 12GB Laptop GPU]
+goto 10de
+:10de24ba
+set dev GA104GLM [RTX A4500 Laptop GPU]
+goto 10de
+:10de24bb
+set dev GA104GLM [RTX A3000 Laptop GPU]
 goto 10de
 :10de24bf
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
@@ -18344,6 +18359,9 @@ set dev GA107GLM [RTX A2000 Mobile]
 goto 10de
 :10de25b9
 set dev GA107GLM [RTX A1000 Laptop GPU]
+goto 10de
+:10de25ba
+set dev GA107GLM [RTX A2000 8GB Laptop GPU]
 goto 10de
 :10de25e0
 set dev GA107BM [GeForce RTX 3050 Ti Mobile]
@@ -18812,6 +18830,9 @@ set dev RTS525A PCI Express Card Reader
 goto 10ec
 :10ec5260
 set dev RTS5260 PCI Express Card Reader
+goto 10ec
+:10ec5261
+set dev RTS5261 PCI Express Card Reader
 goto 10ec
 :10ec5286
 set dev RTS5286 PCI Express Card Reader
@@ -31449,6 +31470,9 @@ exit
 :14c3
 set ven MEDIATEK Corp.
 exit
+:14c30608
+set dev RZ608 Wi-Fi 6E 80MHz
+goto 14c3
 :14c30616
 set dev MT7922 802.11ax PCI Express Wireless Network Adapter
 goto 14c3
@@ -34023,6 +34047,9 @@ goto 15ad
 :15ad07e0
 set dev SATA AHCI controller
 goto 15ad
+:15ad07f0
+set dev NVMe SSD Controller
+goto 15ad
 :15ad0801
 set dev Virtual Machine Interface
 goto 15ad
@@ -34744,10 +34771,10 @@ exit
 set ven Genrad Inc
 exit
 :15cf
-set ven Hilscher GmbH
+set ven Hilscher Gesellschaft für Systemautomation mbH
 exit
 :15cf0000
-set dev CIFX 50E-DP(M/S)
+set dev CIFX PCI/PCIe
 goto 15cf
 :15d1
 set ven Infineon Technologies AG
@@ -41806,7 +41833,7 @@ goto 1e38
 set ven MEDION AG
 exit
 :1e3b
-set ven Shenzhen DAPU Microelectronics Co., Ltd
+set ven DapuStor Corporation
 exit
 :1e3b0600
 set dev NVMe SSD Controller DPU600
@@ -41865,6 +41892,15 @@ exit
 :1e590001
 set dev MinION Mk1C
 goto 1e59
+:1e5d
+set ven ASR Microelectronics
+exit
+:1e5d7000
+set dev AI controller A7000
+goto 1e5d
+:1e5d7010
+set dev AI controller A7010
+goto 1e5d
 :1e60
 set ven Hailo Technologies Ltd.
 exit
@@ -50933,6 +50969,9 @@ set dev 5520/5500/X58 Chipset QuickData Technology Device
 goto 8086
 :80863438
 set dev 7500/5520/5500/X58 I/O Hub Throttle Registers
+goto 8086
+:8086347e
+set dev Ice Lake Xeon Non-Transparent Bridge
 goto 8086
 :80863482
 set dev Ice Lake-LP LPC Controller
