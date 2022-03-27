@@ -34209,6 +34209,9 @@ goto 15b3
 :15b30275
 set dev Spectrum-4C RMA
 goto 15b3
+:15b30277
+set dev Spectrum-4TOR RMA
+goto 15b3
 :15b30281
 set dev NPS-600 Flash Recovery
 goto 15b3
@@ -39738,17 +39741,26 @@ goto 1b21
 :1b211142
 set dev ASM1042A USB 3.0 Host Controller
 goto 1b21
+:1b211166
+set dev ASM1166 Serial ATA Controller
+goto 1b21
 :1b211182
 set dev ASM1182e 2-Port PCIe x1 Gen2 Packet Switch
 goto 1b21
 :1b211184
 set dev ASM1184e 4-Port PCIe x1 Gen2 Packet Switch
 goto 1b21
+:1b211187
+set dev ASM1187e 7-Port PCIe x1 Gen2 Packet Switch
+goto 1b21
 :1b211242
 set dev ASM1142 USB 3.1 Host Controller
 goto 1b21
 :1b211343
 set dev ASM1143 USB 3.1 Host Controller
+goto 1b21
+:1b211812
+set dev ASM1812 6-Port PCIe x4 Gen2 Packet Switch
 goto 1b21
 :1b212142
 set dev ASM2142 USB 3.1 Host Controller
@@ -44881,7 +44893,7 @@ goto 8086
 set dev Ethernet Network Adapter I710
 goto 8086
 :80860dda
-set dev Connection X722 for 10GbE SFP+
+set dev Ethernet Connection X722 for 10GbE SFP+
 goto 8086
 :80860e00
 set dev Xeon E7 v2/Xeon E5 v2/Core i7 DMI2
@@ -56940,6 +56952,12 @@ goto cddd
 :ceba
 set ven KEBA AG
 exit
+:cf86
+set ven Spectrum-4TOR
+exit
+:cf860276
+set dev Spectrum-4TOR in Flash Recovery Mode
+goto cf86
 :d161
 set ven Digium, Inc.
 exit
