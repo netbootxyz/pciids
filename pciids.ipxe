@@ -186,6 +186,12 @@ exit
 :07317200
 set dev JM7200 Series GPU
 goto 0731
+:07319100
+set dev JM9100
+goto 0731
+:0731910a
+set dev JH910
+goto 0731
 :07319200
 set dev JM9200
 goto 0731
@@ -1180,7 +1186,10 @@ goto 1002
 set dev Cezanne
 goto 1002
 :1002163f
-set dev VanGogh
+set dev VanGogh [AMD Custom GPU 0405]
+goto 1002
+:10021640
+set dev Rembrandt Radeon High Definition Audio Controller
 goto 1002
 :1002164c
 set dev Lucienne
@@ -18063,6 +18072,12 @@ goto 10de
 :10de20b7
 set dev GA100GL [A30 PCIe]
 goto 10de
+:10de20b8
+set dev GA100 [A100X]
+goto 10de
+:10de20b9
+set dev GA100 [A30X]
+goto 10de
 :10de20bb
 set dev GA100 [DRIVE A100 PROD]
 goto 10de
@@ -18125,6 +18140,9 @@ set dev TU116BM [GeForce GTX 1660 Ti Mobile]
 goto 10de
 :10de2200
 set dev GA102
+goto 10de
+:10de2203
+set dev GA102 [GeForce RTX 3090 Ti]
 goto 10de
 :10de2204
 set dev GA102 [GeForce RTX 3090]
@@ -18252,6 +18270,9 @@ goto 10de
 :10de24b0
 set dev GA104GL [RTX A4000]
 goto 10de
+:10de24b1
+set dev GA104GL [RTX A4000H]
+goto 10de
 :10de24b6
 set dev GA104GLM [RTX A5000 Mobile]
 goto 10de
@@ -18330,6 +18351,9 @@ goto 10de
 :10de25a2
 set dev GA107M [GeForce RTX 3050 Mobile]
 goto 10de
+:10de25a3
+set dev GA107
+goto 10de
 :10de25a4
 set dev GA107
 goto 10de
@@ -18344,6 +18368,9 @@ set dev GA107M [GeForce MX570]
 goto 10de
 :10de25a9
 set dev GA107M [GeForce RTX 2050]
+goto 10de
+:10de25aa
+set dev GA107M [GeForce MX570 A]
 goto 10de
 :10de25af
 set dev GA107 [GeForce RTX 3050 Engineering Sample]
@@ -26460,6 +26487,12 @@ goto 1344
 :13445192
 set dev 9200 MAX NVMe SSD
 goto 1344
+:134451a2
+set dev 9300 PRO NVMe SSD
+goto 1344
+:134451a3
+set dev 9300 MAX NVMe SSD
+goto 1344
 :1345
 set ven Arescom Inc
 exit
@@ -32655,6 +32688,9 @@ goto 14e4
 :14e4aa52
 set dev BCM43602 802.11ac Wireless LAN SoC
 goto 14e4
+:14e4b080
+set dev BCM56080 Firelight2 Switch ASIC
+goto 14e4
 :14e4b302
 set dev BCM56302 StrataXGS 24x1GE 2x10GE Switch Controller
 goto 14e4
@@ -36925,10 +36961,10 @@ goto 17cb
 set dev QCS405 PCIe Root Complex
 goto 17cb
 :17cb1101
-set dev QCA6390 Wireless Network Adapter [AX500-DBS (2x2)]
+set dev QCA6390 Wireless Network Adapter
 goto 17cb
 :17cb1103
-set dev Atheros QCNFA765
+set dev QCNFA765 Wireless Network Adapter
 goto 17cb
 :17cb1104
 set dev QCN6024/9024/9074 Wireless Network Adapter
@@ -41154,6 +41190,9 @@ goto 1d6a
 :1d6a87b1
 set dev AQC107 NBase-T/IEEE 802.3bz Ethernet Controller [AQtion]
 goto 1d6a
+:1d6a94c0
+set dev AQC113CS NBase-T/IEEE 802.3bz Ethernet Controller [AQtion]
+goto 1d6a
 :1d6ad107
 set dev AQC107 NBase-T/IEEE 802.3bz Ethernet Controller [AQtion]
 goto 1d6a
@@ -42037,7 +42076,28 @@ exit
 set dev MTT S10
 goto 1ed5
 :1ed50101
+set dev MTT S10
+goto 1ed5
+:1ed50102
 set dev MTT S30
+goto 1ed5
+:1ed50105
+set dev MTT S50
+goto 1ed5
+:1ed50106
+set dev MTT S60
+goto 1ed5
+:1ed50111
+set dev MTT S100
+goto 1ed5
+:1ed50121
+set dev MTT S1000M
+goto 1ed5
+:1ed50122
+set dev MTT S1000
+goto 1ed5
+:1ed50123
+set dev MTT S2000
 goto 1ed5
 :1ed8
 set ven Digiteq Automotive
@@ -42060,6 +42120,15 @@ goto 1eec
 :1eec1eec
 set dev VSE250231S Dual-port 10Gb/25Gb Ethernet PCIe
 goto 1eec
+:1eed
+set ven Xiangdixian Computing Technology (Chongqing) Ltd.
+exit
+:1eed0100
+set dev XDX P100 VGA controller
+goto 1eed
+:1eed0101
+set dev XDX P101 High Definition Audio Controller
+goto 1eed
 :1efb
 set ven Flexxon Pte Ltd
 exit
@@ -43200,6 +43269,12 @@ goto 4ddc
 :4ddc3000
 set dev SB-3644 Motion Feedback Device
 goto 4ddc
+:4e58
+set ven Nutanix, Inc.
+exit
+:4e580001
+set dev Virtual NVMe Controller
+goto 4e58
 :5045
 set ven University of Toronto
 exit
@@ -44891,6 +44966,9 @@ set dev Ethernet Controller (2) I225-IT
 goto 8086
 :80860dd2
 set dev Ethernet Network Adapter I710
+goto 8086
+:80860dd5
+set dev Ethernet Adaptive Virtual Function
 goto 8086
 :80860dda
 set dev Ethernet Connection X722 for 10GbE SFP+
@@ -51018,6 +51096,9 @@ goto 8086
 :808634bc
 set dev Ice Lake-LP PCI Express Root Port #5
 goto 8086
+:808634c4
+set dev Ice Lake-LP SD Host Controller
+goto 8086
 :808634c5
 set dev Ice Lake-LP Serial IO I2c Controller #4
 goto 8086
@@ -53748,6 +53829,9 @@ goto 8086
 :80868a52
 set dev Iris Plus Graphics G7
 goto 8086
+:80868a53
+set dev Iris Plus Graphics G7
+goto 8086
 :80868a56
 set dev Iris Plus Graphics G1 (Ice Lake)
 goto 8086
@@ -55992,6 +56076,9 @@ exit
 :88202724
 set dev Mako Front Side Motor Controller [cPCI]
 goto 8820
+:8848
+set ven Wuxi Micro Innovation Integrated Circuit Design Co.,Ltd
+exit
 :8866
 set ven T-Square Design Inc.
 exit
