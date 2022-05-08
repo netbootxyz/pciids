@@ -3420,6 +3420,12 @@ goto 1002
 :1002740f
 set dev Aldebaran
 goto 1002
+:10027421
+set dev Navi 24 [Radeon PRO W6500M]
+goto 1002
+:10027422
+set dev Navi 24 [Radeon PRO W6400]
+goto 1002
 :1002743f
 set dev Navi 24 [Radeon RX 6400 / 6500 XT]
 goto 1002
@@ -18321,6 +18327,9 @@ goto 10de
 :10de2507
 set dev GA106 [Geforce RTX 3050]
 goto 10de
+:10de2508
+set dev GA106 [GeForce RTX 3050 OEM]
+goto 10de
 :10de2520
 set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
 goto 10de
@@ -18389,6 +18398,9 @@ set dev GA107GLM [RTX A1000 Laptop GPU]
 goto 10de
 :10de25ba
 set dev GA107GLM [RTX A2000 8GB Laptop GPU]
+goto 10de
+:10de25bb
+set dev GA107GLM [RTX A500 Laptop GPU]
 goto 10de
 :10de25e0
 set dev GA107BM [GeForce RTX 3050 Ti Mobile]
@@ -31504,7 +31516,7 @@ exit
 set ven MEDIATEK Corp.
 exit
 :14c30608
-set dev RZ608 Wi-Fi 6E 80MHz
+set dev MT7921K (RZ608) Wi-Fi 6E 80MHz
 goto 14c3
 :14c30616
 set dev MT7922 802.11ax PCI Express Wireless Network Adapter
@@ -34224,6 +34236,12 @@ goto 15b3
 :15b30259
 set dev Abir Chiplet
 goto 15b3
+:15b3025b
+set dev Quantum-3 in Flash Recovery Mode
+goto 15b3
+:15b3025c
+set dev Quantum-3 RMA
+goto 15b3
 :15b30262
 set dev MT27710 [ConnectX-4 Lx Programmable] EN
 goto 15b3
@@ -34586,6 +34604,9 @@ set dev Quantum HDR (200Gbps) switch
 goto 15b3
 :15b3d2f2
 set dev Quantum-2 NDR (400Gbps) switch
+goto 15b3
+:15b3d2f4
+set dev Quantum-3
 goto 15b3
 :15b4
 set ven CCI/TRIAD
@@ -42121,13 +42142,61 @@ goto 1eec
 set dev VSE250231S Dual-port 10Gb/25Gb Ethernet PCIe
 goto 1eec
 :1eed
-set ven Xiangdixian Computing Technology (Chongqing) Ltd.
+set ven XDX Computing Technology Ltd.
 exit
-:1eed0100
-set dev XDX P100 VGA controller
+:1eed1100
+set dev XDX110 Graphic/VGA Controller
 goto 1eed
-:1eed0101
-set dev XDX P101 High Definition Audio Controller
+:1eed1101
+set dev XDX110 Audio Controller
+goto 1eed
+:1eed1200
+set dev XDX120 Graphic/VGA Controller
+goto 1eed
+:1eed1201
+set dev XDX120 Audio Controller
+goto 1eed
+:1eed1300
+set dev XDX130 Graphic/VGA Controller
+goto 1eed
+:1eed1301
+set dev XDX130 Audio Controller
+goto 1eed
+:1eed1400
+set dev XDX140 Graphic/VGA Controller
+goto 1eed
+:1eed1401
+set dev XDX140 Audio Controller
+goto 1eed
+:1eed1500
+set dev XDX150 Graphic/VGA Controller
+goto 1eed
+:1eed1501
+set dev XDX150 Audio Controller
+goto 1eed
+:1eed1600
+set dev XDX160 Graphic/VGA Controller
+goto 1eed
+:1eed1601
+set dev XDX160 Audio Controller
+goto 1eed
+:1eed1700
+set dev XDX170 Graphic/VGA Controller
+goto 1eed
+:1eed1701
+set dev XDX170 Audio Controller
+goto 1eed
+:1eed1800
+set dev XDX180 Graphic/VGA Controller
+goto 1eed
+:1eed1801
+set dev XDX180 Audio Controller
+goto 1eed
+:1eed1900
+set dev XDX190 Graphic/VGA Controller
+goto 1eed
+:1eed1901
+set dev XDX190 Audio Controller
 goto 1eed
 :1efb
 set ven Flexxon Pte Ltd
@@ -43317,6 +43386,12 @@ goto 5168
 :51680301
 set dev FlyDVB-T
 goto 5168
+:51d8
+set ven Alder Lake-P Serial IO I2C Controller #2
+exit
+:51d9
+set ven Alder Lake-P Serial IO I2C Controller #3
+exit
 :5301
 set ven Alliance Semiconductor Corp.
 exit
@@ -43781,6 +43856,12 @@ set dev Arise-GT-10C0
 goto 6766
 :67663d02
 set dev Arise 1020
+goto 6766
+:67663d03
+set dev Arise-GT-1040
+goto 6766
+:67663d04
+set dev Arise1010
 goto 6766
 :67663d40
 set dev Arise-GT-10C0 High Definition Audio Controller
@@ -46182,6 +46263,9 @@ goto 8086
 :80861250
 set dev 430HX - 82439HX TXC [Triton II]
 goto 8086
+:8086125b
+set dev Ethernet Controller I226-LM
+goto 8086
 :80861360
 set dev 82806AA PCI64 Hub PCI Bridge
 goto 8086
@@ -46375,7 +46459,7 @@ goto 8086
 set dev Ethernet Controller X540
 goto 8086
 :80861563
-set dev Ethernet Controller 10G X550T
+set dev Ethernet Controller X550
 goto 8086
 :80861564
 set dev X550 Virtual Function
@@ -46826,6 +46910,21 @@ set dev Broadwell-U Integrated Graphics
 goto 8086
 :80861889
 set dev Ethernet Adaptive Virtual Function
+goto 8086
+:8086188a
+set dev Ethernet Connection E823-C for backplane
+goto 8086
+:8086188b
+set dev Ethernet Connection E823-C for QSFP
+goto 8086
+:8086188c
+set dev Ethernet Connection E823-C for SFP
+goto 8086
+:8086188d
+set dev Ethernet Connection E823-C/X557-AT 10GBASE-T
+goto 8086
+:8086188e
+set dev Ethernet Connection E823-C 1GbE
 goto 8086
 :80861890
 set dev Ethernet Connection E822-C for backplane
@@ -52665,6 +52764,12 @@ goto 8086
 :808651d3
 set dev Alder Lake-P SATA AHCI Controller
 goto 8086
+:808651d8
+set dev Alder Lake-P Serial IO I2C Controller #2
+goto 8086
+:808651d9
+set dev Alder Lake-P Serial IO I2C Controller #3
+goto 8086
 :808651e0
 set dev Alder Lake PCH HECI Controller
 goto 8086
@@ -52700,9 +52805,6 @@ set dev 80310 (IOP) IO Processor
 goto 8086
 :80865502
 set dev Ethernet Controller (2) I225-LMvP
-goto 8086
-:80865504
-set dev Ethernet Controller I226-K
 goto 8086
 :80865845
 set dev QEMU NVM Express Controller
