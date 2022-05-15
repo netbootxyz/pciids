@@ -114,6 +114,12 @@ goto 018a
 :01de
 set ven Oxide Computer Company
 exit
+:01de0000
+set dev Propolis NVMe Controller
+goto 01de
+:01de0001
+set dev Propolis xHCI Controller
+goto 01de
 :0200
 set ven Dell (wrong ID)
 exit
@@ -8688,6 +8694,12 @@ goto 1054
 :1055
 set ven Microchip Technology / SMSC
 exit
+:10557430
+set dev LAN7430
+goto 1055
+:10557431
+set dev LAN7431
+goto 1055
 :10559130
 set dev SLC90E66 [Victory66] IDE
 goto 1055
@@ -18211,10 +18223,13 @@ goto 10de
 set dev Tegra PCIe Endpoint Virtual Network
 goto 10de
 :10de2302
-set dev GA103
+set dev GH100
 goto 10de
 :10de2321
-set dev GA103
+set dev GH100
+goto 10de
+:10de2336
+set dev GH100 [H100 96GB]
 goto 10de
 :10de2414
 set dev GA103 [GeForce RTX 3060 Ti]
@@ -26500,10 +26515,28 @@ goto 1344
 set dev 9200 MAX NVMe SSD
 goto 1344
 :134451a2
-set dev 9300 PRO NVMe SSD
+set dev 7300 PRO NVMe SSD
 goto 1344
 :134451a3
+set dev 7300 MAX NVMe SSD
+goto 1344
+:134451b1
+set dev 9300 PRO NVMe SSD
+goto 1344
+:134451b2
 set dev 9300 MAX NVMe SSD
+goto 1344
+:134451c0
+set dev 7400 PRO NVMe SSD
+goto 1344
+:134451c1
+set dev 7400 MAX NVMe SSD
+goto 1344
+:134451c3
+set dev 7450 PRO NVMe SSD
+goto 1344
+:134451c4
+set dev 7450 MAX NVMe SSD
 goto 1344
 :1345
 set ven Arescom Inc
@@ -30468,6 +30501,9 @@ goto 1425
 :1425608a
 set dev T62100-608a Unified Wire Ethernet Controller
 goto 1425
+:14256092
+set dev T62100-KR Unified Wire Ethernet Controller
+goto 1425
 :14256401
 set dev T6225-CR Unified Wire Ethernet Controller
 goto 1425
@@ -30539,6 +30575,9 @@ set dev T62100-6089 Unified Wire Ethernet Controller
 goto 1425
 :1425648a
 set dev T62100-608a Unified Wire Ethernet Controller
+goto 1425
+:14256492
+set dev T62100-KR Unified Wire Ethernet Controller
 goto 1425
 :14256501
 set dev T6225-CR Unified Wire Storage Controller
@@ -30612,6 +30651,9 @@ goto 1425
 :1425658a
 set dev T62100-608a Unified Wire Storage Controller
 goto 1425
+:14256592
+set dev T62100-KR Unified Wire Storage Controller
+goto 1425
 :14256601
 set dev T6225-CR Unified Wire Storage Controller
 goto 1425
@@ -30683,6 +30725,9 @@ set dev T62100-6089 Unified Wire Storage Controller
 goto 1425
 :1425668a
 set dev T62100-608a Unified Wire Storage Controller
+goto 1425
+:14256692
+set dev T62100-KR Unified Wire Storage Controller
 goto 1425
 :14256801
 set dev T6225-CR Unified Wire Ethernet Controller [VF]
@@ -42234,6 +42279,51 @@ exit
 :1f2f1513
 set dev DERA MENG NVMe Controller
 goto 1f2f
+:1f3f
+set ven 3SNIC Ltd
+exit
+:1f3f2100
+set dev 3SRAID SAS/SATA HBA
+goto 1f3f
+:1f3f2200
+set dev 3SRAID RAID controller
+goto 1f3f
+:1f3f9001
+set dev Ethernet VF
+goto 1f3f
+:1f3f9002
+set dev Ethernet VF Hyper-V
+goto 1f3f
+:1f3f9003
+set dev Ethernet SDI VF
+goto 1f3f
+:1f3f9004
+set dev Ethernet SDI VF Hyper-V
+goto 1f3f
+:1f3f9008
+set dev 3SFC VF
+goto 1f3f
+:1f3f9009
+set dev 3SFC VF Hyper-V
+goto 1f3f
+:1f3f9010
+set dev 3SFC FC Controller
+goto 1f3f
+:1f3f9020
+set dev Ethernet Network Adapter
+goto 1f3f
+:1f3f9030
+set dev IPU
+goto 1f3f
+:1f3f9031
+set dev SDI5.0
+goto 1f3f
+:1f3f9032
+set dev SDI5.1
+goto 1f3f
+:1faa
+set ven Hexaflake (Shanghai) Information Technology Co., Ltd.
+exit
 :1fab
 set ven Unifabrix Ltd.
 exit
@@ -43386,12 +43476,6 @@ goto 5168
 :51680301
 set dev FlyDVB-T
 goto 5168
-:51d8
-set ven Alder Lake-P Serial IO I2C Controller #2
-exit
-:51d9
-set ven Alder Lake-P Serial IO I2C Controller #3
-exit
 :5301
 set ven Alliance Semiconductor Corp.
 exit
@@ -43855,7 +43939,7 @@ exit
 set dev Arise-GT-10C0
 goto 6766
 :67663d02
-set dev Arise 1020
+set dev Arise1020
 goto 6766
 :67663d03
 set dev Arise-GT-1040
@@ -43867,7 +43951,7 @@ goto 6766
 set dev Arise-GT-10C0 High Definition Audio Controller
 goto 6766
 :67663d41
-set dev Arise 1020 High Definition Audio Controller
+set dev Arise1020 High Definition Audio Controller
 goto 6766
 :6899
 set ven ZT Systems
@@ -53675,6 +53759,15 @@ set dev Alder Lake-S PCH Shared SRAM
 goto 8086
 :80867ab4
 set dev Alder Lake-S PCH PCI Express Root Port #13
+goto 8086
+:80867ab8
+set dev Alder Lake-S PCH PCI Express Root Port #1
+goto 8086
+:80867ab9
+set dev Alder Lake-S PCH PCI Express Root Port #2
+goto 8086
+:80867abc
+set dev Alder Lake-S PCH PCI Express Root Port #5
 goto 8086
 :80867abd
 set dev Alder Lake-S PCH PCI Express Root Port #6
