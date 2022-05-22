@@ -1138,13 +1138,16 @@ goto 1002
 set dev Ariel
 goto 1002
 :100213fe
-set dev Cyan Skillfish
+set dev Cyan Skillfish [BC-250]
 goto 1002
 :10021478
 set dev Navi 10 XL Upstream Port of PCI Express Switch
 goto 1002
 :10021479
 set dev Navi 10 XL Downstream Port of PCI Express Switch
+goto 1002
+:10021506
+set dev Mendocino
 goto 1002
 :1002154c
 set dev Kryptos [Radeon RX 350]
@@ -1160,6 +1163,9 @@ set dev Pooky
 goto 1002
 :10021561
 set dev Anubis
+goto 1002
+:100215bf
+set dev Phoenix
 goto 1002
 :100215d8
 set dev Picasso/Raven 2 [Radeon Vega Series / Radeon Vega Mobile Series]
@@ -1202,6 +1208,9 @@ set dev Lucienne
 goto 1002
 :1002164d
 set dev Rembrandt
+goto 1002
+:1002164f
+set dev Phoenix
 goto 1002
 :10021681
 set dev Rembrandt [Radeon 680M]
@@ -3339,6 +3348,9 @@ goto 1002
 :10027314
 set dev Navi 10 USB
 goto 1002
+:1002731e
+set dev TDC-150
+goto 1002
 :1002731f
 set dev Navi 10 [Radeon RX 5600 OEM/5600 XT / 5700/5700 XT]
 goto 1002
@@ -3355,7 +3367,7 @@ goto 1002
 set dev Navi 14 [Radeon Pro W5300M]
 goto 1002
 :10027360
-set dev Navi 12 [Radeon Pro 5600M / V520]
+set dev Navi 12 [Radeon Pro 5600M/V520/BC-160]
 goto 1002
 :10027362
 set dev Navi 12 [Radeon Pro V520]
@@ -3368,6 +3380,9 @@ set dev Arcturus GL-XL [Instinct MI100]
 goto 1002
 :1002738e
 set dev Arcturus GL-XL [Instinct MI100]
+goto 1002
+:100273a1
+set dev Navi 21 [Radeon Pro V620]
 goto 1002
 :100273a2
 set dev Navi 21 Pro-XTA [Radeon Pro W6900X]
@@ -3384,6 +3399,9 @@ goto 1002
 :100273ab
 set dev Navi 21 Pro-XLA [Radeon Pro W6800X/Radeon Pro W6800X Duo]
 goto 1002
+:100273ae
+set dev Navi 21 [Radeon Pro V620 MxGPU]
+goto 1002
 :100273af
 set dev Navi 21 [Radeon RX 6900 XT]
 goto 1002
@@ -3395,6 +3413,9 @@ set dev Navi 22
 goto 1002
 :100273c4
 set dev Navi 22 USB
+goto 1002
+:100273ce
+set dev Navi22-XL SRIOV MxGPU
 goto 1002
 :100273df
 set dev Navi 22 [Radeon RX 6700/6700 XT/6750 XT / 6800M]
@@ -3431,6 +3452,12 @@ set dev Navi 24 [Radeon PRO W6500M]
 goto 1002
 :10027422
 set dev Navi 24 [Radeon PRO W6400]
+goto 1002
+:10027423
+set dev Navi 24 [Radeon PRO W6300/W6300M]
+goto 1002
+:10027424
+set dev Navi 24 [Radeon RX 6300]
 goto 1002
 :1002743f
 set dev Navi 24 [Radeon RX 6400 / 6500 XT]
@@ -6950,6 +6977,9 @@ set dev PowerEdge Expandable RAID controller S300
 goto 1028
 :10280073
 set dev NV-RAM Adapter
+goto 1028
+:10281028
+set dev PCIe Bridge riser
 goto 1028
 :1029
 set ven Siemens Nixdorf IS
@@ -19098,8 +19128,23 @@ goto 10ee
 :10ee3fc6
 set dev RME Hammerfall DSP MADI
 goto 10ee
+:10ee5000
+set dev Alveo U200 XDMA Platform
+goto 10ee
+:10ee5004
+set dev Alveo U250 XDMA Platform
+goto 10ee
 :10ee5005
 set dev Alveo U250
+goto 10ee
+:10ee500c
+set dev Alveo U280 XDMA Platform
+goto 10ee
+:10ee5020
+set dev Alveo U50 XMDA Platform
+goto 10ee
+:10ee505c
+set dev Alveo U55C
 goto 10ee
 :10ee7038
 set dev FPGA Card XC7VX690T
@@ -19112,6 +19157,18 @@ set dev Ellips ProfiXpress Profibus Master
 goto 10ee
 :10ee8381
 set dev Ellips Santos Frame Grabber
+goto 10ee
+:10eed000
+set dev Alveo U200 Golden Image
+goto 10ee
+:10eed004
+set dev Alveo U250 Golden Image
+goto 10ee
+:10eed00c
+set dev Alveo U280 Golden Image
+goto 10ee
+:10eed020
+set dev Alveo U50 Golden Image
 goto 10ee
 :10eed154
 set dev Copley Controls CAN card (PCI-CAN-02)
@@ -39552,6 +39609,9 @@ goto 1ade
 :1ae0
 set ven Google, Inc.
 exit
+:1ae0001f
+set dev NVMe device
+goto 1ae0
 :1ae00042
 set dev Compute Engine Virtual Ethernet [gVNIC]
 goto 1ae0
@@ -41553,6 +41613,9 @@ goto 1da3
 :1da31010
 set dev HL-2000 AI Training Accelerator [Gaudi secured]
 goto 1da3
+:1da8
+set ven Corigine, Inc.
+exit
 :1dad
 set ven Fungible
 exit
@@ -42321,6 +42384,9 @@ goto 1f3f
 :1f3f9032
 set dev SDI5.1
 goto 1f3f
+:1f40
+set ven Netac Technology Co.,Ltd
+exit
 :1faa
 set ven Hexaflake (Shanghai) Information Technology Co., Ltd.
 exit
@@ -51025,10 +51091,28 @@ goto 8086
 set dev Celeron/Pentium Silver Processor USB 3.0 xHCI Controller
 goto 8086
 :808631ac
-set dev Celeron/Pentium Silver Processor Serial IO I2C Host Controller
+set dev Celeron/Pentium Silver Processor I2C 0
 goto 8086
 :808631ae
-set dev Celeron/Pentium Silver Processor Serial IO I2C Host Controller
+set dev Celeron/Pentium Silver Processor I2C 1
+goto 8086
+:808631b0
+set dev Celeron/Pentium Silver Processor I2C 2
+goto 8086
+:808631b2
+set dev Celeron/Pentium Silver Processor I2C 3
+goto 8086
+:808631b4
+set dev Celeron/Pentium Silver Processor I2C 4
+goto 8086
+:808631b6
+set dev Celeron/Pentium Silver Processor I2C 5
+goto 8086
+:808631b8
+set dev Celeron/Pentium Silver Processor I2C 6
+goto 8086
+:808631ba
+set dev Celeron/Pentium Silver Processor I2C 7
 goto 8086
 :808631bc
 set dev Celeron/Pentium Silver Processor Serial IO UART Host Controller
@@ -53987,6 +54071,9 @@ set dev Platform Controller Hub EG20T Controller Area Network (CAN) Controller
 goto 8086
 :80868819
 set dev Platform Controller Hub EG20T IEEE 1588 Hardware Assist
+goto 8086
+:80868a03
+set dev Processor Power and Thermal Controller
 goto 8086
 :80868a0d
 set dev Ice Lake Thunderbolt 3 NHI #1
