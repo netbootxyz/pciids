@@ -35050,7 +35050,7 @@ exit
 set ven Genrad Inc
 exit
 :15cf
-set ven Hilscher Gesellschaft für Systemautomation mbH
+set ven Hilscher Gesellschaft fÃ¼r Systemautomation mbH
 exit
 :15cf0000
 set dev CIFX PCI/PCIe
@@ -57229,7 +57229,7 @@ goto 9710
 set dev MCS9922 PCIe Multi-I/O Controller
 goto 9710
 :97109990
-set dev MCS9990 PCIe to 4‐Port USB 2.0 Host Controller
+set dev MCS9990 PCIe to 4â€Port USB 2.0 Host Controller
 goto 9710
 :9850
 set ven 3Com (wrong ID)
