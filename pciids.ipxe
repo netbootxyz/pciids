@@ -18483,6 +18483,9 @@ goto 10de
 :10de25aa
 set dev GA107M [GeForce MX570 A]
 goto 10de
+:10de25ac
+set dev GN20-P0-R-K2
+goto 10de
 :10de25af
 set dev GA107 [GeForce RTX 3050 Engineering Sample]
 goto 10de
@@ -18512,6 +18515,9 @@ set dev GA107BM [GeForce RTX 3050 Mobile]
 goto 10de
 :10de25e5
 set dev GA107BM [GeForce RTX 3050 Mobile]
+goto 10de
+:10de25ec
+set dev GN20-P0-R-K2
 goto 10de
 :10de25f9
 set dev GA107 [RTX A1000 Embedded GPU ]
@@ -28417,6 +28423,9 @@ goto 1414
 set dev MN-130 (ADMtek Centaur-P based)
 goto 1414
 :1414008c
+set dev Basic Render Driver
+goto 1414
+:1414008e
 set dev Basic Render Driver
 goto 1414
 :14145353
@@ -40969,7 +40978,7 @@ goto 1cc1
 set dev XPG SX8200 Pro PCIe Gen3x4 M.2 2280 Solid State Drive
 goto 1cc1
 :1cc4
-set ven Union Memory (Shenzhen)
+set ven Shenzhen Unionmemory Information System Ltd.
 exit
 :1cc41203
 set dev NVMe SSD Controller UHXXXa series
@@ -41571,6 +41580,9 @@ goto 1d78
 :1d781515
 set dev DERA EMEI NVMe Controller
 goto 1d78
+:1d79
+set ven Transcend Information, Inc.
+exit
 :1d7c
 set ven Aerotech, Inc.
 exit
@@ -42246,6 +42258,9 @@ goto 1e60
 :1e67
 set ven Untether AI
 exit
+:1e670002
+set dev runAI200 AI Inference Accelerator
+goto 1e67
 :1e68
 set ven Jiangsu Xinsheng Intelligent Technology Co., Ltd
 exit
@@ -42386,6 +42401,9 @@ set dev MTT S1000
 goto 1ed5
 :1ed50123
 set dev MTT S2000
+goto 1ed5
+:1ed501ff
+set dev MTT HDMI/DP Audio
 goto 1ed5
 :1ed8
 set ven Digiteq Automotive
@@ -47295,6 +47313,9 @@ goto 8086
 :80861909
 set dev Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x4)
 goto 8086
+:8086190b
+set dev HD Graphics 510
+goto 8086
 :8086190c
 set dev Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
@@ -47333,6 +47354,9 @@ set dev Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Regis
 goto 8086
 :80861921
 set dev HD Graphics 520
+goto 8086
+:80861923
+set dev HD Graphics 535
 goto 8086
 :80861926
 set dev Iris Graphics 540
@@ -52548,20 +52572,41 @@ goto 8086
 :80863e93
 set dev CoffeeLake-S GT1 [UHD Graphics 610]
 goto 8086
+:80863e94
+set dev Coffee Lake-S GT2 [UHD Graphics P630]
+goto 8086
 :80863e96
 set dev CoffeeLake-S GT2 [UHD Graphics P630]
 goto 8086
 :80863e98
 set dev CoffeeLake-S GT2 [UHD Graphics 630]
 goto 8086
+:80863e9a
+set dev Coffee Lake-S GT2 [UHD Graphics P630]
+goto 8086
 :80863e9b
 set dev CoffeeLake-H GT2 [UHD Graphics 630]
+goto 8086
+:80863e9c
+set dev Coffee Lake-S GT1 [UHD Graphics 610]
 goto 8086
 :80863ea0
 set dev WhiskeyLake-U GT2 [UHD Graphics 620]
 goto 8086
+:80863ea1
+set dev Whiskey Lake-U GT1 [UHD Graphics 610]
+goto 8086
 :80863ea5
 set dev CoffeeLake-U GT3e [Iris Plus Graphics 655]
+goto 8086
+:80863ea6
+set dev Coffee Lake-U GT3 [Iris Plus Graphics 645]
+goto 8086
+:80863ea8
+set dev Coffee Lake-U GT3 [Iris Plus Graphics 655]
+goto 8086
+:80863ea9
+set dev Coffee Lake-U GT2 [UHD Graphics 620]
 goto 8086
 :80863ec2
 set dev 8th Gen Core Processor Host Bridge/DRAM Registers
@@ -52782,6 +52827,12 @@ goto 8086
 :8086444e
 set dev Turbo Memory Controller
 goto 8086
+:80864555
+set dev Elkhart Lake [UHD Graphics Gen11 16EU]
+goto 8086
+:80864571
+set dev Elkhart Lake [UHD Graphics Gen11 32EU]
+goto 8086
 :8086460d
 set dev 12th Gen Core Processor PCI Express x16 Controller #1
 goto 8086
@@ -52796,6 +52847,9 @@ set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #3
 goto 8086
 :80864626
 set dev Alder Lake-P Integrated Graphics Controller
+goto 8086
+:80864628
+set dev Alder Lake-UP3 GT2 [UHD Graphics]
 goto 8086
 :80864629
 set dev 12th Gen Core Processor Host Bridge/DRAM Registers
@@ -52842,6 +52896,21 @@ goto 8086
 :80864680
 set dev AlderLake-S GT1
 goto 8086
+:80864682
+set dev Alder Lake-S GT1 [UHD Graphics 730]
+goto 8086
+:80864688
+set dev Alder Lake-HX GT1 [UHD Graphics 770]
+goto 8086
+:80864690
+set dev Alder Lake-S GT1 [UHD Graphics 770]
+goto 8086
+:80864692
+set dev Alder Lake-S GT1 [UHD Graphics 730]
+goto 8086
+:80864693
+set dev Alder Lake-S GT1 [UHD Graphics 710]
+goto 8086
 :808646a0
 set dev AlderLake-P GT2
 goto 8086
@@ -52854,8 +52923,20 @@ goto 8086
 :808646a6
 set dev Alder Lake-P Integrated Graphics Controller
 goto 8086
+:808646a8
+set dev Alder Lake-UP3 GT2 [Iris Xe Graphics]
+goto 8086
+:808646aa
+set dev Alder Lake-UP4 GT2 [Iris Xe Graphics]
+goto 8086
+:808646b3
+set dev Alder Lake-UP3 GT1 [UHD Graphics]
+goto 8086
 :808646c0
 set dev AlderLake-M GT1
+goto 8086
+:808646c3
+set dev Alder Lake-UP4 GT1 [UHD Graphics]
 goto 8086
 :80864905
 set dev DG1 [Iris Xe MAX Graphics]
@@ -53145,8 +53226,14 @@ goto 8086
 :80865502
 set dev Ethernet Controller (2) I225-LMvP
 goto 8086
+:80865690
+set dev DG2 [Arc A770M]
+goto 8086
 :80865691
 set dev DG2 [Arc A730M]
+goto 8086
+:80865692
+set dev DG2 [Arc A550M]
 goto 8086
 :80865693
 set dev DG2 [Arc A370M]
@@ -53175,8 +53262,14 @@ goto 8086
 :80865905
 set dev Xeon E3-1200 v6/7th Gen Core Processor PCIe Controller (x8)
 goto 8086
+:80865906
+set dev HD Graphics 610
+goto 8086
 :80865909
 set dev Xeon E3-1200 v6/7th Gen Core Processor PCIe Controller (x4)
+goto 8086
+:8086590b
+set dev HD Graphics 610
 goto 8086
 :8086590c
 set dev Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers
@@ -53219,6 +53312,9 @@ set dev HD Graphics 615
 goto 8086
 :8086591f
 set dev Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers
+goto 8086
+:80865921
+set dev HD Graphics 620
 goto 8086
 :80865923
 set dev HD Graphics 635
@@ -54261,6 +54357,9 @@ goto 8086
 :808687c0
 set dev UHD Graphics 617
 goto 8086
+:808687ca
+set dev UHD Graphics 617
+goto 8086
 :80868800
 set dev Platform Controller Hub EG20T PCI Express Port
 goto 8086
@@ -54383,6 +54482,9 @@ set dev Iris Plus Graphics G7
 goto 8086
 :80868a56
 set dev Iris Plus Graphics G1 (Ice Lake)
+goto 8086
+:80868a58
+set dev Ice Lake-Y GT1 [UHD Graphics G1]
 goto 8086
 :80868a5a
 set dev Iris Plus Graphics G4 (Ice Lake)
@@ -54930,6 +55032,12 @@ goto 8086
 :808696a1
 set dev Integrated RAID
 goto 8086
+:80869840
+set dev Lakefield GT2 [UHD Graphics]
+goto 8086
+:80869841
+set dev Lakefield GT1.5 [UHD Graphics]
+goto 8086
 :80869a01
 set dev 11th Gen Core Processor PCIe Controller #1
 goto 8086
@@ -55005,6 +55113,9 @@ goto 8086
 :80869a36
 set dev 11th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
+:80869a40
+set dev Tiger Lake-UP4 GT2 [Iris Xe Graphics]
+goto 8086
 :80869a49
 set dev TigerLake-LP GT2 [Iris Xe Graphics]
 goto 8086
@@ -55013,6 +55124,15 @@ set dev TigerLake-H GT1 [UHD Graphics]
 goto 8086
 :80869a68
 set dev TigerLake-H GT1 [UHD Graphics]
+goto 8086
+:80869a70
+set dev Tiger Lake-H GT1 [UHD Graphics]
+goto 8086
+:80869a78
+set dev Tiger Lake-LP GT2 [UHD Graphics G4]
+goto 8086
+:80869b21
+set dev Comet Lake-U GT2 [UHD Graphics 620]
 goto 8086
 :80869b33
 set dev Comet Lake-S 6c Host Bridge/DRAM Controller
@@ -55047,17 +55167,35 @@ goto 8086
 :80869ba8
 set dev CometLake-S GT1 [UHD Graphics 610]
 goto 8086
+:80869baa
+set dev Comet Lake UHD Graphics
+goto 8086
+:80869bac
+set dev Comet Lake UHD Graphics
+goto 8086
 :80869bc4
 set dev CometLake-H GT2 [UHD Graphics]
 goto 8086
 :80869bc5
 set dev CometLake-S GT2 [UHD Graphics 630]
 goto 8086
+:80869bc6
+set dev Comet Lake-S GT2 [UHD Graphics P630]
+goto 8086
 :80869bc8
 set dev CometLake-S GT2 [UHD Graphics 630]
 goto 8086
 :80869bca
 set dev Comet Lake UHD Graphics
+goto 8086
+:80869bcc
+set dev Comet Lake UHD Graphics
+goto 8086
+:80869be6
+set dev Comet Lake-S GT2 [UHD Graphics P630]
+goto 8086
+:80869bf6
+set dev Coffee Lake-S GT2 [UHD Graphics P630]
 goto 8086
 :80869c00
 set dev 8 Series SATA Controller 1 [IDE mode]
@@ -56447,6 +56585,30 @@ set dev Comet Lake PCH-V cAVS
 goto 8086
 :8086a620
 set dev 6400/6402 Advanced Memory Buffer (AMB)
+goto 8086
+:8086a780
+set dev Raptor Lake-S UHD Graphics
+goto 8086
+:8086a781
+set dev Raptor Lake-S UHD Graphics
+goto 8086
+:8086a782
+set dev Raptor Lake-S UHD Graphics
+goto 8086
+:8086a783
+set dev Raptor Lake-S UHD Graphics
+goto 8086
+:8086a788
+set dev Raptor Lake-S UHD Graphics
+goto 8086
+:8086a789
+set dev Raptor Lake-S UHD Graphics
+goto 8086
+:8086a78a
+set dev Raptor Lake-S UHD Graphics
+goto 8086
+:8086a78b
+set dev Raptor Lake-S UHD Graphics
 goto 8086
 :8086abc0
 set dev Omni-Path Fabric Switch Silicon 100 Series
