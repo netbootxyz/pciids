@@ -2421,6 +2421,9 @@ goto 1002
 :10026613
 set dev Oland PRO [Radeon R7 240/340 / Radeon 520]
 goto 1002
+:10026617
+set dev Oland LE [Radeon R7 240]
+goto 1002
 :10026631
 set dev Oland
 goto 1002
@@ -9955,7 +9958,7 @@ exit
 set dev EBUS
 goto 108e
 :108e1000
-set dev EBUS
+set dev STP2003QFP [PCIO] EBUS
 goto 108e
 :108e1001
 set dev Happy Meal 10/100 Ethernet [hme]
@@ -32904,6 +32907,15 @@ goto 14e4
 :14e45e88
 set dev Viper Offload Engine
 goto 14e4
+:14e45f69
+set dev BRCM4378 Bluetooth Controller
+goto 14e4
+:14e45f71
+set dev BRCM4387 Bluetooth Controller
+goto 14e4
+:14e45fa0
+set dev BRCM4377 Bluetooth Controller
+goto 14e4
 :14e48602
 set dev BCM7400/BCM7405 Serial ATA Controller
 goto 14e4
@@ -41760,9 +41772,6 @@ goto 1da3
 :1da30030
 set dev Greco AI Inference Accelerator
 goto 1da3
-:1da30031
-set dev Greco AI Inference Accelerator [secured]
-goto 1da3
 :1da31000
 set dev HL-2000 AI Training Accelerator [Gaudi]
 goto 1da3
@@ -41771,9 +41780,6 @@ set dev HL-2000 AI Training Accelerator [Gaudi secured]
 goto 1da3
 :1da31020
 set dev Gaudi2 AI Training Accelerator
-goto 1da3
-:1da31030
-set dev Gaudi2 AI Training Accelerator [secured]
 goto 1da3
 :1da8
 set ven Corigine, Inc.
@@ -42228,6 +42234,9 @@ exit
 :1e4c0010
 set dev APU [Leda]
 goto 1e4c
+:1e50
+set ven IP3 Tech (HK) Limited
+exit
 :1e57
 set ven Beijing Panyi Technology Co., Ltd
 exit
@@ -42294,6 +42303,9 @@ goto 1e89
 :1e890003
 set dev Quantis-PCIe-240M
 goto 1e89
+:1e93
+set ven Beijing Bytedance Network Technology Co., Ltd.
+exit
 :1e94
 set ven Calian SED
 exit
@@ -42363,6 +42375,9 @@ exit
 :1ebd0101
 set dev Seirios 2063 Video Codec
 goto 1ebd
+:1ec9
+set ven Wingtech Group(HongKong)Limited
+exit
 :1ed2
 set ven FuriosaAI, Inc.
 exit
@@ -42405,6 +42420,33 @@ goto 1ed5
 :1ed501ff
 set dev MTT HDMI/DP Audio
 goto 1ed5
+:1ed50201
+set dev G2D30
+goto 1ed5
+:1ed50202
+set dev G2D20
+goto 1ed5
+:1ed50203
+set dev G2D10
+goto 1ed5
+:1ed50211
+set dev G2D40
+goto 1ed5
+:1ed50221
+set dev G2S80
+goto 1ed5
+:1ed50222
+set dev G2S85
+goto 1ed5
+:1ed50223
+set dev G2S4
+goto 1ed5
+:1ed50251
+set dev G2N10
+goto 1ed5
+:1ed502ff
+set dev MTT HDMI/DP Audio
+goto 1ed5
 :1ed8
 set ven Digiteq Automotive
 exit
@@ -42444,6 +42486,12 @@ goto 1eed
 :1eed1141
 set dev XDX120 Audio Controller
 goto 1eed
+:1ef6
+set ven GrAI Matter Labs
+exit
+:1ef7
+set ven Shenzhen Gunnir Technology Development Co., Ltd
+exit
 :1efb
 set ven Flexxon Pte Ltd
 exit
@@ -42525,9 +42573,21 @@ goto 1f3f
 :1f40
 set ven Netac Technology Co.,Ltd
 exit
+:1f44
+set ven VVDN Technologies Private Limited
+exit
+:1f52
+set ven MangoBoost Inc.
+exit
 :1faa
 set ven Hexaflake (Shanghai) Information Technology Co., Ltd.
 exit
+:1faa0c10
+set dev Compass C10 PF
+goto 1faa
+:1faa0c11
+set dev Compass C10 VF
+goto 1faa
 :1fab
 set ven Unifabrix Ltd.
 exit
@@ -52950,6 +53010,9 @@ goto 8086
 :80864908
 set dev DG1 [Iris Xe Graphics]
 goto 8086
+:80864909
+set dev DG1 [UHD Discrete Graphics]
+goto 8086
 :80864c3d
 set dev Volume Management Device NVMe RAID Controller
 goto 8086
@@ -53241,8 +53304,23 @@ goto 8086
 :80865694
 set dev DG2 [Arc A350M]
 goto 8086
+:80865695
+set dev DG2 [Iris Xe MAX A200M]
+goto 8086
+:808656a0
+set dev DG2 [Arc A770]
+goto 8086
+:808656a1
+set dev DG2 [Arc A750]
+goto 8086
+:808656a2
+set dev DG2 [Arc A580]
+goto 8086
 :808656a5
 set dev DG2 [Arc A380]
+goto 8086
+:808656a6
+set dev DG2 [Arc A310]
 goto 8086
 :80865845
 set dev QEMU NVM Express Controller
@@ -53326,7 +53404,7 @@ goto 8086
 set dev Iris Plus Graphics 650
 goto 8086
 :80865a84
-set dev Celeron N3350/Pentium N4200/Atom E3900 Series Integrated Graphics Controller
+set dev Apollo Lake [HD Graphics 505]
 goto 8086
 :80865a85
 set dev HD Graphics 500
@@ -54179,6 +54257,9 @@ set dev Alder Lake-S PCH Serial IO I2C Controller #4
 goto 8086
 :80867afd
 set dev Alder Lake-S PCH Serial IO I2C Controller #5
+goto 8086
+:80867d0b
+set dev Volume Management Device NVMe RAID Controller Intel Corporation
 goto 8086
 :80867e01
 set dev Meteor Lake-P LPC/eSPI Controller
@@ -56586,6 +56667,9 @@ goto 8086
 :8086a620
 set dev 6400/6402 Advanced Memory Buffer (AMB)
 goto 8086
+:8086a77f
+set dev Volume Management Device NVMe RAID Controller Intel Corporation
+goto 8086
 :8086a780
 set dev Raptor Lake-S UHD Graphics
 goto 8086
@@ -56612,6 +56696,9 @@ set dev Raptor Lake-S UHD Graphics
 goto 8086
 :8086abc0
 set dev Omni-Path Fabric Switch Silicon 100 Series
+goto 8086
+:8086ad0b
+set dev Volume Management Device NVMe RAID Controller Intel Corporation
 goto 8086
 :8086b152
 set dev 21152 PCI-to-PCI Bridge
