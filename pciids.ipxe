@@ -3478,7 +3478,7 @@ goto 1002
 set dev Navi 24 [Radeon RX 6300]
 goto 1002
 :1002743f
-set dev Navi 24 [Radeon RX 6400 / 6500 XT]
+set dev Navi 24 [Radeon RX 6400/6500 XT/6500M]
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -17862,6 +17862,9 @@ goto 10de
 :10de1dba
 set dev GV100GL [Quadro GV100]
 goto 10de
+:10de1dbe
+set dev GV100 Engineering Sample
+goto 10de
 :10de1df0
 set dev GV100GL [Tesla PG500-216]
 goto 10de
@@ -17944,7 +17947,7 @@ goto 10de
 set dev TU104M
 goto 10de
 :10de1eae
-set dev TU104M
+set dev TU104M [GeForce GTX 2080 Engineering Sample]
 goto 10de
 :10de1eb0
 set dev TU104GL [Quadro RTX 5000]
@@ -18317,6 +18320,9 @@ set dev GH100
 goto 10de
 :10de2321
 set dev GH100
+goto 10de
+:10de2331
+set dev GH100 [H100 80GB 8GPC Engineering Sample]
 goto 10de
 :10de2336
 set dev GH100 [H100 96GB]
@@ -19253,6 +19259,9 @@ set dev SmartSSD
 goto 10ee
 :10ee6988
 set dev SmartSSD
+goto 10ee
+:10ee7011
+set dev 7-Series FPGA Hard PCIe block (AXI/debug)
 goto 10ee
 :10ee7038
 set dev FPGA Card XC7VX690T
@@ -34473,6 +34482,12 @@ goto 15b3
 :15b3025c
 set dev Quantum-3 RMA
 goto 15b3
+:15b3025d
+set dev Quantum-3CPO in Flash Recovery Mode
+goto 15b3
+:15b3025e
+set dev Quantum-3CPO RMA
+goto 15b3
 :15b30262
 set dev MT27710 [ConnectX-4 Lx Programmable] EN
 goto 15b3
@@ -34847,6 +34862,9 @@ set dev Quantum-2 NDR (400Gbps) switch
 goto 15b3
 :15b3d2f4
 set dev Quantum-3
+goto 15b3
+:15b3d2f6
+set dev Quantum-3CPO
 goto 15b3
 :15b4
 set ven CCI/TRIAD
@@ -40078,7 +40096,7 @@ goto 1b21
 set dev ASM1812 6-Port PCIe x4 Gen2 Packet Switch
 goto 1b21
 :1b212142
-set dev ASM2142 USB 3.1 Host Controller
+set dev ASM2142/ASM3142 USB 3.1 Host Controller
 goto 1b21
 :1b212824
 set dev ASM2824 PCIe Gen3 Packet Switch
@@ -40894,7 +40912,10 @@ goto 1c5c
 set dev PC401 NVMe Solid State Drive 256GB
 goto 1c5c
 :1c5c174a
-set dev Gold P31 SSD
+set dev PC711 NVMe Solid State Drive
+goto 1c5c
+:1c5c2204
+set dev 960GB TLC PCIe Gen3 x4 NVMe M.2 22110
 goto 1c5c
 :1c5c243b
 set dev PE6110 NVMe Solid State Drive
@@ -41005,7 +41026,10 @@ goto 1cc4
 set ven Embedded Intelligence, Inc.
 exit
 :1cc50100
-set dev CAN-PCIe-02
+set dev PCIe-CAN-02 Dual CAN bus (9-pin male). PCI Express x1.
+goto 1cc5
+:1cc50101
+set dev PCIe-CAN-01 Single CAN bus (9-pin male). PCI Express x1.
 goto 1cc5
 :1cc7
 set ven Radian Memory Systems Inc.
@@ -41133,6 +41157,12 @@ exit
 :1d0f
 set ven Amazon.com, Inc.
 exit
+:1d0f7064
+set dev NeuronDevice (Inferentia)
+goto 1d0f
+:1d0f7164
+set dev NeuronDevice
+goto 1d0f
 :1d0f8061
 set dev NVMe EBS Controller
 goto 1d0f
@@ -41573,6 +41603,12 @@ set dev AR-ARKA-FX1 [Arkville 64B DPDK Data Mover for Agilex R-Tile]
 goto 1d6c
 :1d6c101f
 set dev AR-TK242 [2x100GbE Packet Capture Device]
+goto 1d6c
+:1d6c1020
+set dev AR-GP-PF [General-Purpose Physical Function]
+goto 1d6c
+:1d6c1021
+set dev AR-MGMT-PF [Board-Generic Management Physical Function]
 goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
@@ -42575,6 +42611,9 @@ set ven Netac Technology Co.,Ltd
 exit
 :1f44
 set ven VVDN Technologies Private Limited
+exit
+:1f4b
+set ven Axera Semiconductor Co., Ltd
 exit
 :1f52
 set ven MangoBoost Inc.
@@ -52962,6 +53001,12 @@ goto 8086
 :80864688
 set dev Alder Lake-HX GT1 [UHD Graphics 770]
 goto 8086
+:8086468a
+set dev Alder Lake-S [UHD Graphics]
+goto 8086
+:8086468b
+set dev Alder Lake-S [UHD Graphics]
+goto 8086
 :80864690
 set dev Alder Lake-S GT1 [UHD Graphics 770]
 goto 8086
@@ -53321,6 +53366,12 @@ set dev DG2 [Arc A380]
 goto 8086
 :808656a6
 set dev DG2 [Arc A310]
+goto 8086
+:808656c0
+set dev Data Center GPU Flex 170
+goto 8086
+:808656c1
+set dev Data Center GPU Flex 140
 goto 8086
 :80865845
 set dev QEMU NVM Express Controller
@@ -54317,6 +54368,27 @@ set dev Meteor Lake-P USB 3.2 Gen 2x1 xHCI Host Controller
 goto 8086
 :80867e7e
 set dev Meteor Lake-P USB Device Controller
+goto 8086
+:80867ec0
+set dev Meteor Lake-P Thunderbolt 4 USB Controller
+goto 8086
+:80867ec2
+set dev Meteor Lake-P Thunderbolt 4 NHI #0
+goto 8086
+:80867ec3
+set dev Meteor Lake-P Thunderbolt 4 NHI #1
+goto 8086
+:80867ec4
+set dev Meteor Lake-P Thunderbolt 4 PCI Express Root Port #0
+goto 8086
+:80867ec5
+set dev Meteor Lake-P Thunderbolt 4 PCI Express Root Port #1
+goto 8086
+:80867ec6
+set dev Meteor Lake-P Thunderbolt 4 PCI Express Root Port #2
+goto 8086
+:80867ec7
+set dev Meteor Lake-P Thunderbolt 4 PCI Express Root Port #3
 goto 8086
 :80868002
 set dev Trusted Execution Technology Registers
