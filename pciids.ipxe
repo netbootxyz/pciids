@@ -132,6 +132,9 @@ exit
 :021b8139
 set dev HNE-300 (RealTek RTL8139c) [iPaq Networking]
 goto 021b
+:025e
+set ven Solidigm
+exit
 :0270
 set ven Hauppauge computer works Inc. (Wrong ID)
 exit
@@ -303,6 +306,9 @@ goto 0b0b
 :0b0b0a06
 set dev RCB672FXX 672-channel modular analog telephony card
 goto 0b0b
+:0bae
+set ven Bachmann electronic GmbH
+exit
 :0ccd
 set ven Preferred Networks, Inc.
 exit
@@ -1204,7 +1210,7 @@ goto 1002
 set dev Renoir Radeon High Definition Audio Controller
 goto 1002
 :10021638
-set dev Cezanne
+set dev Cezanne [Radeon Vega Series / Radeon Vega Mobile Series]
 goto 1002
 :1002163f
 set dev VanGogh [AMD Custom GPU 0405]
@@ -5631,6 +5637,21 @@ goto 1022
 :1022149d
 set dev Vangogh CVIP
 goto 1022
+:102214b5
+set dev Family 17h-19h PCIe Root Complex
+goto 1022
+:102214b6
+set dev Family 17h-19h IOMMU
+goto 1022
+:102214b7
+set dev Family 17h-19h PCIe Dummy Host Bridge
+goto 1022
+:102214b9
+set dev Family 17h-19h Internal PCIe GPP Bridge
+goto 1022
+:102214ba
+set dev Family 17h-19h PCIe GPP Bridge
+goto 1022
 :10221510
 set dev Family 14h Processor Root Complex
 goto 1022
@@ -7034,6 +7055,9 @@ set dev NV-RAM Adapter
 goto 1028
 :10281028
 set dev PCIe Bridge riser
+goto 1028
+:10282600
+set dev ENT NVMe RT1
 goto 1028
 :1029
 set ven Siemens Nixdorf IS
@@ -17547,6 +17571,9 @@ goto 10de
 :10de1aef
 set dev GA102 High Definition Audio Controller
 goto 10de
+:10de1af1
+set dev GA100 [A100 NVSwitch]
+goto 10de
 :10de1b00
 set dev GP102 [TITAN X]
 goto 10de
@@ -18105,6 +18132,9 @@ goto 10de
 :10de1fa0
 set dev TU117M [GeForce MX550]
 goto 10de
+:10de1fa1
+set dev TU117M
+goto 10de
 :10de1fae
 set dev TU117GL
 goto 10de
@@ -18207,6 +18237,12 @@ goto 10de
 :10de20f2
 set dev GA100 [A100-PG506-217]
 goto 10de
+:10de20f5
+set dev GA100 [A800-80]
+goto 10de
+:10de20f6
+set dev GA100 [A800-40]
+goto 10de
 :10de2182
 set dev TU116 [GeForce GTX 1660 Ti]
 goto 10de
@@ -18260,6 +18296,9 @@ set dev GA102 [GeForce RTX 3080 Ti 20GB]
 goto 10de
 :10de2206
 set dev GA102 [GeForce RTX 3080]
+goto 10de
+:10de2207
+set dev GA102 [GeForce RTX 3070 Ti]
 goto 10de
 :10de2208
 set dev GA102 [GeForce RTX 3080 Ti]
@@ -18322,7 +18361,7 @@ goto 10de
 set dev GH100
 goto 10de
 :10de2331
-set dev GH100 [H100 80GB 8GPC Engineering Sample]
+set dev GH100 [H100 PCIe]
 goto 10de
 :10de2336
 set dev GH100 [H100 96GB]
@@ -18411,11 +18450,17 @@ goto 10de
 :10de24bf
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
 goto 10de
+:10de24c9
+set dev GA104 [GeForce RTX 3060 Ti]
+goto 10de
 :10de24dc
 set dev GA104M [GeForce RTX 3080 Mobile / Max-Q 8GB/16GB]
 goto 10de
 :10de24dd
 set dev GA104M [GeForce RTX 3070 Mobile / Max-Q]
+goto 10de
+:10de24df
+set dev GA104M
 goto 10de
 :10de24e0
 set dev GA104M [Geforce RTX 3070 Ti Laptop GPU]
@@ -18444,6 +18489,9 @@ goto 10de
 :10de2520
 set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
 goto 10de
+:10de2521
+set dev GA106M [GeForce RTX 3060 Laptop GPU]
+goto 10de
 :10de2523
 set dev GA106M [GeForce RTX 3050 Ti Mobile / Max-Q]
 goto 10de
@@ -18453,8 +18501,14 @@ goto 10de
 :10de2531
 set dev GA106 [RTX A2000]
 goto 10de
+:10de2544
+set dev GA106 [GeForce RTX 3060]
+goto 10de
 :10de2560
 set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
+goto 10de
+:10de2561
+set dev GA106M [GeForce RTX 3060 Laptop GPU]
 goto 10de
 :10de2563
 set dev GA106M [GeForce RTX 3050 Ti Mobile / Max-Q]
@@ -18537,6 +18591,15 @@ goto 10de
 :10de2684
 set dev AD102 [GeForce RTX 4090]
 goto 10de
+:10de26b1
+set dev AD102GL [L6000]
+goto 10de
+:10de26b5
+set dev AD102GL [L40]
+goto 10de
+:10de26b8
+set dev AD102GL [L40G]
+goto 10de
 :10de2717
 set dev GN21-X11
 goto 10de
@@ -18548,6 +18611,9 @@ set dev AD104
 goto 10de
 :10de27a0
 set dev GN21-X9
+goto 10de
+:10de27b8
+set dev AD104GL [L4]
 goto 10de
 :10de27e0
 set dev GN21-X9
@@ -19574,6 +19640,9 @@ set dev RocketRaid 4310
 goto 1103
 :11037505
 set dev SSD7505 PCIe Gen4 x16 4-Port M.2 NVMe RAID Controller
+goto 1103
+:11037540
+set dev SSD7540 PCIe Gen4 x16 8-Port M.2 NVMe RAID Controller
 goto 1103
 :1104
 set ven RasterOps Corp.
@@ -21418,7 +21487,7 @@ exit
 set ven Hermes Electronics Company, Ltd.
 exit
 :112b
-set ven Heidelberger Druckmaschinen AGHeidelberger Druckmaschinen AG
+set ven Heidelberger Druckmaschinen AG
 exit
 :112c
 set ven Zenith Data Systems
@@ -22520,6 +22589,9 @@ set dev BG3 NVMe SSD Controller
 goto 1179
 :11790115
 set dev XG4 NVMe SSD Controller
+goto 1179
+:11790116
+set dev XG5 NVMe SSD Controller
 goto 1179
 :1179011a
 set dev XG6 NVMe SSD Controller
@@ -25457,6 +25529,9 @@ set ven VMetro, inc.
 exit
 :129a0615
 set dev PBT-615 PCI-X Bus Analyzer
+goto 129a
+:129a0715
+set dev cPCI Bus Analyzer
 goto 129a
 :129a1100
 set dev PMC-FPGA05
@@ -31463,6 +31538,9 @@ set ven Tul Corporation / PowerColor
 exit
 :148c2391
 set dev Radeon RX 590 [Red Devil]
+goto 148c
+:148c2398
+set dev AXRX 5700 XT 8GBD6-3DHE/OC [PowerColor Red Devil Radeon RX 5700 XT]
 goto 148c
 :148d
 set ven DIGICOM Systems, Inc.
@@ -38208,6 +38286,9 @@ goto 18f4
 :18f401e5
 set dev NT100A01 Network Adapter
 goto 18f4
+:18f40225
+set dev NT40A11 Network Adapter
+goto 18f4
 :18f6
 set ven NextIO
 exit
@@ -40740,6 +40821,9 @@ goto 1c1f
 :1c1f001f
 set dev FD940
 goto 1c1f
+:1c1f0020
+set dev FD2110
+goto 1c1f
 :1c28
 set ven Lite-On IT Corp. / Plextor
 exit
@@ -40802,6 +40886,12 @@ set dev SmartNIC N5010 4x100Gb
 goto 1c2c
 :1c2c1001
 set dev SmartNIC N5011 w/2xE810 4x100Gb
+goto 1c2c
+:1c2c1002
+set dev SmartNIC N5013 4x100Gb
+goto 1c2c
+:1c2c1003
+set dev SmartNIC N5014 w/2xE810 4x100Gb
 goto 1c2c
 :1c2ca000
 set dev FBC2CGG3 Capture 2x40Gb [Mango_02]
@@ -40912,7 +41002,7 @@ goto 1c5c
 set dev PC401 NVMe Solid State Drive 256GB
 goto 1c5c
 :1c5c174a
-set dev PC711 NVMe Solid State Drive
+set dev Gold P31/PC711 NVMe Solid State Drive
 goto 1c5c
 :1c5c2204
 set dev 960GB TLC PCIe Gen3 x4 NVMe M.2 22110
@@ -41610,6 +41700,9 @@ goto 1d6c
 :1d6c1021
 set dev AR-MGMT-PF [Board-Generic Management Physical Function]
 goto 1d6c
+:1d6c1022
+set dev AR-ARKA-FX2 [Arkville 128B DPDK Data Mover for Agilex]
+goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
 goto 1d6c
@@ -41660,6 +41753,9 @@ set dev RK1808 Neural Network Processor Card
 goto 1d87
 :1d873566
 set dev RK3568 Remote Signal Processor
+goto 1d87
+:1d873588
+set dev RK3588
 goto 1d87
 :1d89
 set ven YEESTOR Microelectronics Co., Ltd
@@ -41840,6 +41936,9 @@ set dev DC Controller [X100 Series]
 goto 1db7
 :1db7dc23
 set dev I2S/DMA Controller [X100 Series]
+goto 1db7
+:1db7dc24
+set dev NPU Controller [X100 Series]
 goto 1db7
 :1db7dc26
 set dev SATA Controller [X100 Series]
@@ -42349,7 +42448,7 @@ exit
 set ven Solid State Storage Technology Corporation
 exit
 :1e951002
-set dev NVMe Datacenter LJ1 SSD [3DNAND, Rainier Controller]
+set dev NVMe SSD [3DNAND] 2.5" U.2 (LJ1)
 goto 1e95
 :1e9f
 set ven Lynxi Technologies Co., Ltd.
@@ -42411,6 +42510,21 @@ exit
 :1ebd0101
 set dev Seirios 2063 Video Codec
 goto 1ebd
+:1ec8
+set ven Innosilicon Co Ltd
+exit
+:1ec88800
+set dev Fantasy I
+goto 1ec8
+:1ec89800
+set dev Fantasy II
+goto 1ec8
+:1ec89802
+set dev Fantasy II
+goto 1ec8
+:1ec89804
+set dev Fantasy II
+goto 1ec8
 :1ec9
 set ven Wingtech Group(HongKong)Limited
 exit
@@ -42456,11 +42570,14 @@ goto 1ed5
 :1ed501ff
 set dev MTT HDMI/DP Audio
 goto 1ed5
+:1ed50200
+set dev MTT S80 Engineering Sample
+goto 1ed5
 :1ed50201
-set dev G2D30
+set dev MTT S80
 goto 1ed5
 :1ed50202
-set dev G2D20
+set dev MTT S70
 goto 1ed5
 :1ed50203
 set dev G2D10
@@ -42472,7 +42589,7 @@ goto 1ed5
 set dev G2S80
 goto 1ed5
 :1ed50222
-set dev G2S85
+set dev MTT S3000
 goto 1ed5
 :1ed50223
 set dev G2S4
@@ -42492,9 +42609,18 @@ goto 1ed8
 :1ed9
 set ven Myrtle.ai
 exit
-:1ee4
-set ven PETAiO, Inc
+:1ee1
+set ven Suzhou Kuhan Information Technologies
 exit
+:1ee10050
+set dev Aurora NVMe SSD Controller
+goto 1ee1
+:1ee4
+set ven PETAIO INC
+exit
+:1ee41180
+set dev P8118 U.2 Single Port SSD
+goto 1ee4
 :1ee9
 set ven SUSE LLC
 exit
@@ -44283,6 +44409,9 @@ exit
 :73577910
 set dev 7910 [Althea]
 goto 7357
+:7377
+set ven Shenzhen Colorful Yugong Technology and Development Co.
+exit
 :7401
 set ven EndRun Technologies
 exit
@@ -44303,6 +44432,9 @@ set dev HQ SSD 2TB M.2 NVMe
 goto 7526
 :7604
 set ven O.N. Electronic Co Ltd.
+exit
+:78c0
+set ven Herrick Technology Laboratories, Inc. [HTL]
 exit
 :7bde
 set ven MIDAC Corporation
@@ -45153,6 +45285,9 @@ goto 8086
 :808609ab
 set dev RST VMD Managed Controller
 goto 8086
+:808609c4
+set dev PAC with Intel Arria 10 GX FPGA
+goto 8086
 :80860a03
 set dev Haswell-ULT Thermal Subsystem
 goto 8086
@@ -45197,6 +45332,9 @@ set dev Thunderbolt 4 Bridge [Goshen Ridge 2020]
 goto 8086
 :80860b27
 set dev Thunderbolt 4 USB Controller [Goshen Ridge 2020]
+goto 8086
+:80860b2b
+set dev PAC with Intel Stratix 10 SX FPGA [FPGA PAC D5005]
 goto 8086
 :80860b60
 set dev NVMe DC SSD [3DNAND, Sentinel Rock Controller]
@@ -46685,6 +46823,9 @@ set dev 430HX - 82439HX TXC [Triton II]
 goto 8086
 :8086125b
 set dev Ethernet Controller I226-LM
+goto 8086
+:8086125c
+set dev Ethernet Controller I226-V
 goto 8086
 :80861360
 set dev 82806AA PCI64 Hub PCI Bridge
@@ -52953,8 +53094,20 @@ goto 8086
 :80864629
 set dev 12th Gen Core Processor Host Bridge/DRAM Registers
 goto 8086
+:8086462a
+set dev AlderLake-P [UHD Graphics]
+goto 8086
 :8086462f
 set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #2
+goto 8086
+:80864636
+set dev AlderLake-P [UHD Graphics]
+goto 8086
+:80864638
+set dev AlderLake-P [UHD Graphics]
+goto 8086
+:8086463a
+set dev AlderLake-P [UHD Graphics]
 goto 8086
 :8086463d
 set dev 12th Gen Core Processor PCI Express x4 Controller #2
@@ -53034,11 +53187,29 @@ goto 8086
 :808646aa
 set dev Alder Lake-UP4 GT2 [Iris Xe Graphics]
 goto 8086
+:808646b0
+set dev AlderLake-P [Iris Xe Graphics]
+goto 8086
+:808646b1
+set dev AlderLake-P [Iris Xe Graphics]
+goto 8086
 :808646b3
 set dev Alder Lake-UP3 GT1 [UHD Graphics]
 goto 8086
+:808646b6
+set dev AlderLake-P [Iris Xe Graphics]
+goto 8086
+:808646b8
+set dev AlderLake-P [Iris Xe Graphics]
+goto 8086
+:808646ba
+set dev AlderLake-P [Iris Xe Graphics]
+goto 8086
 :808646c0
 set dev AlderLake-M GT1
+goto 8086
+:808646c1
+set dev AlderLake-M [Iris Xe Graphics]
 goto 8086
 :808646c3
 set dev Alder Lake-UP4 GT1 [UHD Graphics]
@@ -53056,7 +53227,7 @@ goto 8086
 set dev DG1 [Iris Xe Graphics]
 goto 8086
 :80864909
-set dev DG1 [UHD Discrete Graphics]
+set dev DG1 [Iris Xe MAX 100]
 goto 8086
 :80864c3d
 set dev Volume Management Device NVMe RAID Controller
@@ -53366,6 +53537,12 @@ set dev DG2 [Arc A380]
 goto 8086
 :808656a6
 set dev DG2 [Arc A310]
+goto 8086
+:808656b0
+set dev DG2 [Arc Pro A30M]
+goto 8086
+:808656b1
+set dev DG2 [Arc Pro A40/A50]
 goto 8086
 :808656c0
 set dev Data Center GPU Flex 170
@@ -54596,6 +54773,9 @@ set dev Processor Power and Thermal Controller
 goto 8086
 :80868a0d
 set dev Ice Lake Thunderbolt 3 NHI #1
+goto 8086
+:80868a11
+set dev GNA Scoring Accelerator Module
 goto 8086
 :80868a12
 set dev Ice Lake-LP Processor Host Bridge/DRAM Registers
@@ -56956,8 +57136,20 @@ exit
 set dev Mako Front Side Motor Controller [cPCI]
 goto 8820
 :8848
-set ven Wuxi Micro Innovation Integrated Circuit Design Co.,Ltd
+set ven MUCSE
 exit
+:88481000
+set dev Ethernet Controller N10 Series for 10GbE or 40GbE (Dual-port)
+goto 8848
+:88481020
+set dev Ethernet Controller N10 Series for 10GbE (Quad-port)
+goto 8848
+:88481060
+set dev Ethernet Controller N10 Series for 10GbE (8-port)
+goto 8848
+:88481080
+set dev Ethernet Controller N10 Series Virtual Function
+goto 8848
 :8866
 set ven T-Square Design Inc.
 exit
@@ -57591,6 +57783,21 @@ goto 9d32
 :9d321204
 set dev STAR1200E NVMe SSD
 goto 9d32
+:9d321500
+set dev STAR1500 PCIe NVMe SSD Controller
+goto 9d32
+:9d321501
+set dev STAR1500C NVMe SSD
+goto 9d32
+:9d321502
+set dev STAR1500E NVMe SSD
+goto 9d32
+:9d322000
+set dev STAR2000 NVMe Controller
+goto 9d32
+:9d322001
+set dev STAR2000E NVMe SSD
+goto 9d32
 :a000
 set ven Asix Electronics Corporation (Wrong ID)
 exit
@@ -57851,6 +58058,9 @@ set ven Micron/Crucial Technology
 exit
 :c0a92263
 set dev P1 NVMe PCIe SSD
+goto c0a9
+:c0a95407
+set dev P5 Plus NVMe PCIe SSD
 goto c0a9
 :c0a9540a
 set dev P2 NVMe PCIe SSD
