@@ -5652,6 +5652,9 @@ goto 1022
 :102214ba
 set dev Family 17h-19h PCIe GPP Bridge
 goto 1022
+:102214cd
+set dev Family 19h USB4/Thunderbolt PCIe tunnel
+goto 1022
 :10221510
 set dev Family 14h Processor Root Complex
 goto 1022
@@ -5910,6 +5913,12 @@ goto 1022
 :102215d5
 set dev FireFlight USB 3.1
 goto 1022
+:102215d6
+set dev Rembrandt USB4 XHCI controller #5
+goto 1022
+:102215d7
+set dev Rembrandt USB4 XHCI controller #6
+goto 1022
 :102215da
 set dev Raven/Raven2 PCIe Dummy Host Bridge
 goto 1022
@@ -6062,6 +6071,24 @@ set dev Arden Device 18h: Function 6
 goto 1022
 :1022160f
 set dev Arden Device 18h: Function 7
+goto 1022
+:1022161a
+set dev Rembrandt USB4 XHCI controller #1
+goto 1022
+:1022161b
+set dev Rembrandt USB4 XHCI controller #2
+goto 1022
+:1022161c
+set dev Rembrandt USB4 XHCI controller #7
+goto 1022
+:1022161d
+set dev Rembrandt USB4 XHCI controller #3
+goto 1022
+:1022161e
+set dev Rembrandt USB4 XHCI controller #4
+goto 1022
+:1022161f
+set dev Rembrandt USB4 XHCI controller #8
 goto 1022
 :10221620
 set dev Anubis HT Configuration
@@ -6242,6 +6269,30 @@ set dev Cezanne Data Fabric; Function 6
 goto 1022
 :10221671
 set dev Cezanne Data Fabric; Function 7
+goto 1022
+:10221679
+set dev Rembrandt Data Fabric: Device 18h; Function 0
+goto 1022
+:1022167a
+set dev Rembrandt Data Fabric: Device 18h; Function 1
+goto 1022
+:1022167b
+set dev Rembrandt Data Fabric: Device 18h; Function 2
+goto 1022
+:1022167c
+set dev Rembrandt Data Fabric: Device 18h; Function 3
+goto 1022
+:1022167d
+set dev Rembrandt Data Fabric: Device 18h; Function 4
+goto 1022
+:1022167e
+set dev Rembrandt Data Fabric: Device 18h; Function 5
+goto 1022
+:1022167f
+set dev Rembrandt Data Fabric: Device 18h; Function 6
+goto 1022
+:10221680
+set dev Rembrandt Data Fabric: Device 18h; Function 7
 goto 1022
 :10221700
 set dev Family 12h/14h Processor Function 0
@@ -16660,7 +16711,7 @@ goto 10de
 set dev GK107GL [GRID K100 vGPU]
 goto 10de
 :10de0fe8
-set dev GK107M
+set dev GK107M [N14P-GS]
 goto 10de
 :10de0fe9
 set dev GK107M [GeForce GT 750M Mac Edition]
@@ -17033,6 +17084,9 @@ set dev GK104M [GeForce GTX 680MX]
 goto 10de
 :10de11a7
 set dev GK104M [GeForce GTX 675MX]
+goto 10de
+:10de11a8
+set dev GK104GLM [Quadro K5100M]
 goto 10de
 :10de11a9
 set dev GK104M [GeForce GTX 870M]
@@ -17907,6 +17961,9 @@ goto 10de
 :10de1e02
 set dev TU102 [TITAN RTX]
 goto 10de
+:10de1e03
+set dev TU102 [GeForce RTX 2080 Ti 12GB]
+goto 10de
 :10de1e04
 set dev TU102 [GeForce RTX 2080 Ti]
 goto 10de
@@ -18237,11 +18294,14 @@ goto 10de
 :10de20f2
 set dev GA100 [A100-PG506-217]
 goto 10de
+:10de20f3
+set dev GA100 [A800-SXM4-80GB]
+goto 10de
 :10de20f5
-set dev GA100 [A800-80]
+set dev GA100 [A800 80GB PCIe]
 goto 10de
 :10de20f6
-set dev GA100 [A800-40]
+set dev GA100 [A800 40GB PCIe]
 goto 10de
 :10de2182
 set dev TU116 [GeForce GTX 1660 Ti]
@@ -41268,6 +41328,9 @@ goto 1d0f
 :1d0fefa1
 set dev Elastic Fabric Adapter (EFA)
 goto 1d0f
+:1d0fefa2
+set dev Elastic Fabric Adapter (EFA)
+goto 1d0f
 :1d17
 set ven Zhaoxin
 exit
@@ -41702,6 +41765,9 @@ set dev AR-MGMT-PF [Board-Generic Management Physical Function]
 goto 1d6c
 :1d6c1022
 set dev AR-ARKA-FX2 [Arkville 128B DPDK Data Mover for Agilex]
+goto 1d6c
+:1d6c1023
+set dev AR-BD-FX1 [BufferDirect Zero-Bounce Data Motion Endpoint]
 goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
@@ -42694,43 +42760,43 @@ goto 1f2f
 set ven 3SNIC Ltd
 exit
 :1f3f2100
-set dev 3SRAID SAS/SATA HBA
+set dev SSSRAID SAS/SATA HBA
 goto 1f3f
 :1f3f2200
-set dev 3SRAID RAID controller
+set dev SSSRAID RAID controller
 goto 1f3f
 :1f3f9001
-set dev Ethernet VF
+set dev SSSNIC Ethernet VF
 goto 1f3f
 :1f3f9002
-set dev Ethernet VF Hyper-V
+set dev SSSNIC Ethernet VF Hyper-V
 goto 1f3f
 :1f3f9003
-set dev Ethernet SDI VF
+set dev SSSNIC Ethernet SDI VF
 goto 1f3f
 :1f3f9004
-set dev Ethernet SDI VF Hyper-V
+set dev SSSNIC Ethernet SDI VF Hyper-V
 goto 1f3f
 :1f3f9008
-set dev 3SFC VF
+set dev SSSFC VF
 goto 1f3f
 :1f3f9009
-set dev 3SFC VF Hyper-V
+set dev SSSFC VF Hyper-V
 goto 1f3f
 :1f3f9010
-set dev 3SFC FC Controller
+set dev SSSFC FC Controller
 goto 1f3f
 :1f3f9020
-set dev Ethernet Network Adapter
+set dev SSSNIC Ethernet Network Adapter
 goto 1f3f
 :1f3f9030
-set dev IPU
+set dev SSSNIC IPU
 goto 1f3f
 :1f3f9031
-set dev SDI5.0
+set dev SSSNIC SDI5.0
 goto 1f3f
 :1f3f9032
-set dev SDI5.1
+set dev SSSNIC SDI5.1
 goto 1f3f
 :1f40
 set ven Netac Technology Co.,Ltd
@@ -53448,6 +53514,9 @@ goto 8086
 :808651a9
 set dev Alder Lake PCH UART #1
 goto 8086
+:808651b1
+set dev Alder Lake PCI Express x1 Root Port #10
+goto 8086
 :808651bf
 set dev Alder Lake PCH-P PCI Express Root Port #9
 goto 8086
@@ -53471,6 +53540,9 @@ set dev Alder Lake-P Serial IO I2C Controller #3
 goto 8086
 :808651e0
 set dev Alder Lake PCH HECI Controller
+goto 8086
+:808651e3
+set dev Alder Lake AMT SOL Redirection
 goto 8086
 :808651e8
 set dev Alder Lake PCH Serial IO I2C Controller #0
