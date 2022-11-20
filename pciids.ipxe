@@ -6874,7 +6874,7 @@ goto 1023
 set dev CyberBlade XP2
 goto 1023
 :1024
-set ven Zenith Data Systems
+set ven Beijing Dajia Internet Information Technology Co.
 exit
 :1025
 set ven Acer Incorporated [ALI]
@@ -8681,6 +8681,9 @@ set dev Aeolia USB 3.0 xHCI Host Controller
 goto 104d
 :104d90bc
 set dev SxS Pro+ memory card
+goto 104d
+:104d90c0
+set dev PCIe x8 XAVC Codec Board
 goto 104d
 :104d90c8
 set dev Belize ACPI
@@ -18420,6 +18423,9 @@ goto 10de
 :10de2321
 set dev GH100
 goto 10de
+:10de2322
+set dev GH100 [H800]
+goto 10de
 :10de2331
 set dev GH100 [H100 PCIe]
 goto 10de
@@ -18473,6 +18479,9 @@ set dev GA104M
 goto 10de
 :10de24a0
 set dev GA104 [Geforce RTX 3070 Ti Laptop GPU]
+goto 10de
+:10de24a4
+set dev GA104M
 goto 10de
 :10de24ac
 set dev GA104 [GeForce RTX 30x0 Engineering Sample]
@@ -18648,17 +18657,26 @@ goto 10de
 :10de25fa
 set dev GA107 [RTX A2000 Embedded GPU]
 goto 10de
+:10de25fb
+set dev GA107 [RTX A500 Embedded GPU]
+goto 10de
 :10de2684
 set dev AD102 [GeForce RTX 4090]
 goto 10de
 :10de26b1
-set dev AD102GL [L6000]
+set dev AD102GL [L6000 / RTX 6000 Ada Generation]
 goto 10de
 :10de26b5
 set dev AD102GL [L40]
 goto 10de
 :10de26b8
 set dev AD102GL [L40G]
+goto 10de
+:10de26f5
+set dev AD102GL [L40 CNX]
+goto 10de
+:10de2704
+set dev AD103 [GeForce RTX 4080]
 goto 10de
 :10de2717
 set dev GN21-X11
@@ -19573,7 +19591,7 @@ goto 1102
 set dev EMU20k2 [Sound Blaster X-Fi Titanium Series]
 goto 1102
 :11020012
-set dev Sound Core3D [Sound Blaster Recon3D / Z-Series]
+set dev CA0132 Sound Core3D [Sound Blaster Recon3D / Z-Series / Sound BlasterX AE-5 Plus]
 goto 1102
 :11024001
 set dev SB Audigy FireWire Port
@@ -31344,6 +31362,9 @@ goto 144d
 :144da80a
 set dev NVMe SSD Controller PM9A1/PM9A3/980PRO
 goto 144d
+:144da80b
+set dev NVMe SSD Controller PM9B1
+goto 144d
 :144da820
 set dev NVMe SSD Controller 171X
 goto 144d
@@ -33152,6 +33173,9 @@ set dev BCM58802 Stingray 50Gb Ethernet SoC
 goto 14e4
 :14e4d804
 set dev BCM58804 Stingray 100Gb Ethernet SoC
+goto 14e4
+:14e4f800
+set dev BCM78800 switch ASIC for f800
 goto 14e4
 :14e5
 set ven Pixelfusion Ltd
@@ -35259,6 +35283,9 @@ exit
 :15d9
 set ven Super Micro Computer Inc
 exit
+:15d91b67
+set dev AOC-S3916L-H16iR-32DD
+goto 15d9
 :15da
 set ven Cyberfirm Inc
 exit
@@ -39852,7 +39879,19 @@ goto 1aa9
 :1aa90014
 set dev SEL-3390T Time and Ethernet Adapter
 goto 1aa9
+:1aa90015
+set dev SEL-3350 Mainboard
+goto 1aa9
+:1aa90016
+set dev SEL-3350 Serial Expansion Board
+goto 1aa9
+:1aa90017
+set dev SEL-3350 GPIO Expansion Board
+goto 1aa9
 :1aa90018
+set dev SEL-3390E4 Ethernet Adapter
+goto 1aa9
+:1aa9001c
 set dev SEL-3390E4 Ethernet Adapter
 goto 1aa9
 :1aae
@@ -40761,6 +40800,12 @@ goto 1bd0
 :1bd0100a
 set dev NG1 Series Avionics Converter
 goto 1bd0
+:1bd0100b
+set dev LE5 429 Databus Interface Card
+goto 1bd0
+:1bd0100c
+set dev LE5 1553 Databus Interface Card
+goto 1bd0
 :1bd01101
 set dev OmniBus II PCIe Multi-Protocol Interface Card
 goto 1bd0
@@ -41056,7 +41101,7 @@ goto 1c5c
 set dev BC511
 goto 1c5c
 :1c5c1504
-set dev SC300 512GB M.2 2280 SATA Solid State Drive
+set dev PC400 NVMe SSD
 goto 1c5c
 :1c5c1527
 set dev PC401 NVMe Solid State Drive 256GB
@@ -41154,6 +41199,12 @@ exit
 :1cc1
 set ven ADATA Technology Co., Ltd.
 exit
+:1cc133f8
+set dev IM2P33F8ABR1 NVMe SSD
+goto 1cc1
+:1cc15350
+set dev XPG GAMMIX S50 NVMe SSD
+goto 1cc1
 :1cc15766
 set dev ADATA XPG GAMMIXS1 1L Media
 goto 1cc1
@@ -41311,7 +41362,7 @@ exit
 set dev NeuronDevice (Inferentia)
 goto 1d0f
 :1d0f7164
-set dev NeuronDevice
+set dev NeuronDevice (Trainium)
 goto 1d0f
 :1d0f8061
 set dev NVMe EBS Controller
@@ -41961,6 +42012,9 @@ exit
 :1da2e26a
 set dev Radeon R7 250
 goto 1da2
+:1da2e445
+set dev Sapphire Radeon RX 6700
+goto 1da2
 :1da3
 set ven Habana Labs Ltd.
 exit
@@ -42060,6 +42114,15 @@ goto 1db7
 :1dbb
 set ven NGD Systems, Inc.
 exit
+:1dbe
+set ven INNOGRIT Corporation
+exit
+:1dbe5636
+set dev NVMe DC SSD IG5636
+goto 1dbe
+:1dbe5638
+set dev NVMe DC SSD IG5638
+goto 1dbe
 :1dbf
 set ven Guizhou Huaxintong Semiconductor Technology Co., Ltd
 exit
@@ -42077,6 +42140,9 @@ set ven Beijing Sinead Technology Co., Ltd.
 exit
 :1dd3
 set ven Sage Microelectronics Corp.
+exit
+:1dd4
+set ven Swissbit AG
 exit
 :1dd8
 set ven Pensando Systems
@@ -42402,6 +42468,9 @@ exit
 :1e49
 set ven Yangtze Memory Technologies Co.,Ltd
 exit
+:1e490021
+set dev ZHITAI TiPro5000 NVMe SSD
+goto 1e49
 :1e490041
 set dev ZHITAI TiPro7000
 goto 1e49
@@ -42486,6 +42555,9 @@ exit
 :1e7cbca1
 set dev AKD1000 Neural Network Coprocessor [Akida]
 goto 1e7c
+:1e7e
+set ven 9034 Pliops-Data Processor [XDP1.0]
+exit
 :1e81
 set ven Ramaxel Technology(Shenzhen) Limited
 exit
@@ -42527,6 +42599,9 @@ set dev Cloud Intelligent Inference Controller
 goto 1ea0
 :1ea02a18
 set dev Video Transcode Controller
+goto 1ea0
+:1ea02a20
+set dev Cloud Intelligent Inference and Training Controller
 goto 1ea0
 :1ea7
 set ven Intelliprop, Inc
@@ -42714,6 +42789,36 @@ goto 1eed
 :1eed1141
 set dev XDX120 Audio Controller
 goto 1eed
+:1eed1320
+set dev XDX150 Graphic/VGA Controller
+goto 1eed
+:1eed1321
+set dev XDX150 Audio Controller
+goto 1eed
+:1eed13c0
+set dev XDX160 Graphic/VGA Controller
+goto 1eed
+:1eed13c1
+set dev XDX160 Audio Controller
+goto 1eed
+:1eed13d0
+set dev XDX161 Graphic/VGA Controller
+goto 1eed
+:1eed13d1
+set dev XDX161 Audio Controller
+goto 1eed
+:1eed1500
+set dev XDX180 Graphic/VGA Controller
+goto 1eed
+:1eed1501
+set dev XDX180 Audio Controller
+goto 1eed
+:1eed15a0
+set dev XDX190 Graphic/VGA Controller
+goto 1eed
+:1eed15a1
+set dev XDX190 Audio Controller
+goto 1eed
 :1ef6
 set ven GrAI Matter Labs
 exit
@@ -42810,6 +42915,12 @@ exit
 :1f52
 set ven MangoBoost Inc.
 exit
+:1f60
+set ven Accelecom
+exit
+:1f600001
+set dev XELE-NIC 25K5
+goto 1f60
 :1faa
 set ven Hexaflake (Shanghai) Information Technology Co., Ltd.
 exit
@@ -53565,6 +53676,9 @@ goto 8086
 :808651f0
 set dev Alder Lake-P PCH CNVi WiFi
 goto 8086
+:808651fc
+set dev Alder Lake-P Integrated Sensor Hub
+goto 8086
 :80865200
 set dev EtherExpress PRO/100 Intelligent Server PCI Bridge
 goto 8086
@@ -57213,14 +57327,23 @@ exit
 :88481000
 set dev Ethernet Controller N10 Series for 10GbE or 40GbE (Dual-port)
 goto 8848
+:88481001
+set dev Ethernet Controller N400 Series for 1GbE (Dual-port)
+goto 8848
 :88481020
 set dev Ethernet Controller N10 Series for 10GbE (Quad-port)
+goto 8848
+:88481021
+set dev Ethernet Controller N400 Series for 1GbE (Quad-port)
 goto 8848
 :88481060
 set dev Ethernet Controller N10 Series for 10GbE (8-port)
 goto 8848
 :88481080
 set dev Ethernet Controller N10 Series Virtual Function
+goto 8848
+:88481081
+set dev Ethernet Controller N400 Series Virtual Function
 goto 8848
 :8866
 set ven T-Square Design Inc.
@@ -58206,6 +58329,9 @@ exit
 :cf860276
 set dev Spectrum-4TOR in Flash Recovery Mode
 goto cf86
+:d063
+set ven SolidRun
+exit
 :d161
 set ven Digium, Inc.
 exit
