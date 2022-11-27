@@ -2839,7 +2839,7 @@ goto 1002
 set dev Thames [Radeon HD 7670M]
 goto 1002
 :10026860
-set dev Vega 10 [Radeon Instinct MI25]
+set dev Vega 10 [Instinct MI25/MI25x2/V340/V320]
 goto 1002
 :10026861
 set dev Vega 10 XT [Radeon PRO WX 9100]
@@ -2851,7 +2851,7 @@ goto 1002
 set dev Vega 10 XTX [Radeon Vega Frontier Edition]
 goto 1002
 :10026864
-set dev Vega 10 [Radeon Pro V340]
+set dev Vega 10 [Radeon Pro V340/Instinct MI25x2]
 goto 1002
 :10026867
 set dev Vega 10 XL [Radeon Pro Vega 56]
@@ -2869,7 +2869,7 @@ goto 1002
 set dev Vega 10 XTXA [Radeon Pro Vega 64X]
 goto 1002
 :1002686c
-set dev Vega 10 [Radeon Instinct MI25 MxGPU]
+set dev Vega 10 [Instinct MI25 MxGPU/MI25x2 MxGPU/V340 MxGPU/V340L MxGPU]
 goto 1002
 :1002686d
 set dev Vega 10 GLXTA
@@ -3394,7 +3394,7 @@ goto 1002
 set dev Navi 12 [Radeon Pro 5600M/V520/BC-160]
 goto 1002
 :10027362
-set dev Navi 12 [Radeon Pro V520]
+set dev Navi 12 [Radeon Pro V520/V540]
 goto 1002
 :10027388
 set dev Arcturus GL-XL
@@ -3463,13 +3463,13 @@ goto 1002
 set dev Navi 23 [Radeon RX 6600/6600 XT/6600M]
 goto 1002
 :10027408
-set dev Aldebaran
+set dev Aldebaran/MI200 [Instinct MI250X]
 goto 1002
 :1002740c
-set dev Aldebaran
+set dev Aldebaran/MI200 [Instinct MI250X/MI250]
 goto 1002
 :1002740f
-set dev Aldebaran
+set dev Aldebaran/MI200 [Instinct MI210]
 goto 1002
 :10027421
 set dev Navi 24 [Radeon PRO W6500M]
@@ -3485,6 +3485,9 @@ set dev Navi 24 [Radeon RX 6300]
 goto 1002
 :1002743f
 set dev Navi 24 [Radeon RX 6400/6500 XT/6500M]
+goto 1002
+:1002744c
+set dev Navi 31 [Radeon RX 7900 XT/7900 XTX]
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -41505,6 +41508,9 @@ goto 1d17
 :1d173a04
 set dev ZX-E C-960 GPU
 goto 1d17
+:1d173d01
+set dev ZX C1080 GPU
+goto 1d17
 :1d179002
 set dev ZX-100/ZX-200 EIDE Controller
 goto 1d17
@@ -42855,6 +42861,12 @@ goto 1f03
 :1f035636
 set dev IG5636-Based NVMe SSD
 goto 1f03
+:1f24
+set ven xFusion Digital Technologies Co., Ltd.
+exit
+:1f241058
+set dev EP500/EP600 NVMe SSD
+goto 1f24
 :1f2f
 set ven China Mobile (Hangzhou) Information Technology Co.Ltd.
 exit
