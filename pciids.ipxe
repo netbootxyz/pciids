@@ -6132,6 +6132,12 @@ goto 1022
 :1022162c
 set dev VanGogh USB2
 goto 1022
+:1022162e
+set dev Rembrandt USB4/Thunderbolt NHI controller #1
+goto 1022
+:1022162f
+set dev Rembrandt USB4/Thunderbolt NHI controller #2
+goto 1022
 :10221630
 set dev Renoir/Cezanne Root Complex
 goto 1022
@@ -18429,6 +18435,9 @@ goto 10de
 :10de2322
 set dev GH100 [H800]
 goto 10de
+:10de2330
+set dev GH100[H100 SXM5 80GB]
+goto 10de
 :10de2331
 set dev GH100 [H100 PCIe]
 goto 10de
@@ -18558,6 +18567,9 @@ goto 10de
 :10de2508
 set dev GA106 [GeForce RTX 3050 OEM]
 goto 10de
+:10de2509
+set dev GA106 [GeForce RTX 3060 12GB Rev. 2]
+goto 10de
 :10de2520
 set dev GA106M [GeForce RTX 3060 Mobile / Max-Q]
 goto 10de
@@ -18587,6 +18599,9 @@ set dev GA106M [GeForce RTX 3050 Ti Mobile / Max-Q]
 goto 10de
 :10de2571
 set dev GA106 [RTX A2000 12GB]
+goto 10de
+:10de2582
+set dev GA107 [GeForce RTX 3050]
 goto 10de
 :10de2583
 set dev GA107 [GeForce RTX 3050]
@@ -41367,6 +41382,9 @@ goto 1d0f
 :1d0f7164
 set dev NeuronDevice (Trainium)
 goto 1d0f
+:1d0f7264
+set dev NeuronDevice (Inferentia2)
+goto 1d0f
 :1d0f8061
 set dev NVMe EBS Controller
 goto 1d0f
@@ -41413,28 +41431,28 @@ goto 1d17
 set dev ZX-D PCI Express Root Port
 goto 1d17
 :1d170717
-set dev ZX-D/ZX-E PCI Express Root Port
+set dev KX-5000/KX-6000/KX-6000G Express Root Port
 goto 1d17
 :1d170718
-set dev ZX-D/ZX-E PCI Express Root Port
+set dev KX-5000/KX-6000/KX-6000G Express Root Port
 goto 1d17
 :1d170719
-set dev ZX-D/ZX-E PCI Express Root Port
+set dev KX-5000/KX-6000/KX-6000G Express Root Port
 goto 1d17
 :1d17071a
-set dev ZX-D/ZX-E PCI Express Root Port
+set dev KX-5000/KX-6000/KX-6000G Express Root Port
 goto 1d17
 :1d17071b
-set dev ZX-D/ZX-E PCI Express Root Port
+set dev KX-5000/KX-6000/KX-6000G Express Root Port
 goto 1d17
 :1d17071c
-set dev ZX-D/ZX-E PCI Express Root Port
+set dev KX-5000/KX-6000/KX-6000G Express Root Port
 goto 1d17
 :1d17071d
-set dev ZX-D/ZX-E PCI Express Root Port
+set dev KX-5000/KX-6000/KX-6000G Express Root Port
 goto 1d17
 :1d17071e
-set dev ZX-D/ZX-E PCI Express Root Port
+set dev KX-5000/KX-6000/KX-6000G Express Root Port
 goto 1d17
 :1d17071f
 set dev ZX-200 Upstream Port of PCI Express Switch
@@ -41457,6 +41475,9 @@ goto 1d17
 :1d171003
 set dev ZX-E Standard Host Bridge
 goto 1d17
+:1d171006
+set dev KX-6000G Standard Host Bridge
+goto 1d17
 :1d173001
 set dev ZX-100 Standard Host Bridge
 goto 1d17
@@ -41464,40 +41485,40 @@ goto 1d17
 set dev ZX-100 Miscellaneous Bus
 goto 1d17
 :1d173038
-set dev ZX-100/ZX-200/ZX-E Standard Universal PCI to USB Host Controller
+set dev ZX-100/ZX-200/KX-6000/KX-6000G Standard Universal PCI to USB Host Controller
 goto 1d17
 :1d173104
-set dev ZX-100/ZX-200/ZX-E Standard Enhanced PCI to USB Host Controller
+set dev ZX-100/ZX-200/KX-6000/KX-6000G Standard Enhanced PCI to USB Host Controller
 goto 1d17
 :1d1731b0
-set dev ZX-100/ZX-D Standard Host Bridge
+set dev ZX-100/KX-5000/KX-6000/KX-6000G Standard Host Bridge
 goto 1d17
 :1d1731b1
-set dev ZX-100/ZX-D Standard Host Bridge
+set dev ZX-100/KX-5000/KX-6000/KX-6000G Standard Host Bridge
 goto 1d17
 :1d1731b2
-set dev ZX-100/ZX-D DRAM Controller
+set dev ZX-100/KX-5000/KX-6000/KX-6000G DRAM Controller
 goto 1d17
 :1d1731b3
-set dev ZX-100/ZX-D Power Management Controller
+set dev ZX-100/KX-5000/KX-6000/KX-6000G Power Management Controller
 goto 1d17
 :1d1731b4
-set dev ZX-100/ZX-D I/O APIC
+set dev ZX-100/KX-5000/KX-6000/KX-6000G I/O APIC
 goto 1d17
 :1d1731b5
-set dev ZX-100/ZX-D Scratch Device
+set dev ZX-100/KX-5000/KX-6000/KX-6000G Scratch Device
 goto 1d17
 :1d1731b7
-set dev ZX-100/ZX-D/ZX-E Standard Host Bridge
+set dev ZX-100/KX-5000/KX-6000/KX-6000G Standard Host Bridge
 goto 1d17
 :1d1731b8
 set dev ZX-100/ZX-D PCI to PCI Bridge
 goto 1d17
 :1d173288
-set dev ZX-100/ZX-D/ZX-E High Definition Audio Controller
+set dev ZX-100/KX-5000/KX-6000/KX-6000G High Definition Audio Controller
 goto 1d17
 :1d17345b
-set dev ZX-100/ZX-D/ZX-E Miscellaneous Bus
+set dev ZX-100/KX-5000/KX-6000/KX-6000G Miscellaneous Bus
 goto 1d17
 :1d173a02
 set dev ZX-100 C-320 GPU
@@ -41508,14 +41529,20 @@ goto 1d17
 :1d173a04
 set dev ZX-E C-960 GPU
 goto 1d17
+:1d173c02
+set dev KX-6000G DRAM Controller
+goto 1d17
 :1d173d01
-set dev ZX C1080 GPU
+set dev KX-6000G C-1080 GPU
 goto 1d17
 :1d179002
 set dev ZX-100/ZX-200 EIDE Controller
 goto 1d17
 :1d179003
-set dev ZX-100/ZX-E EIDE Controller
+set dev ZX-100/KX-6000/KX-6000G EIDE Controller
+goto 1d17
+:1d179043
+set dev KX-6000G RAID Controller
 goto 1d17
 :1d179045
 set dev ZX-100/ZX-D/ZX-E RAID Accelerator 0
@@ -41524,7 +41551,7 @@ goto 1d17
 set dev ZX-D/ZX-E RAID Accelerator 1
 goto 1d17
 :1d179083
-set dev ZX-100/ZX-200/ZX-E StorX AHCI Controller
+set dev ZX-100/ZX-200/KX-6000/KX-6000G StorX AHCI Controller
 goto 1d17
 :1d179084
 set dev ZX-100 StorX AHCI Controller
@@ -41544,6 +41571,9 @@ goto 1d17
 :1d179144
 set dev ZX-E High Definition Audio Controller
 goto 1d17
+:1d179145
+set dev KX-6000G High Definition Audio Controller
+goto 1d17
 :1d179180
 set dev ZX-200 Networking Gigabit Ethernet Adapter
 goto 1d17
@@ -41554,19 +41584,19 @@ goto 1d17
 set dev ZX-200 USB eXtensible Host Controller
 goto 1d17
 :1d179204
-set dev ZX-E USB eXtensible Host Controller
+set dev KX-6000/KX-6000G USB eXtensible Host Controller
 goto 1d17
 :1d179286
 set dev ZX-D eMMC Host Controller
 goto 1d17
 :1d179300
-set dev ZX-D/ZX-E eSPI Host Controller
+set dev ZX-100/KX-5000/KX-6000/KX-6000G eSPI Host Controller
 goto 1d17
 :1d1795d0
 set dev ZX-100 Universal SD Host Controller
 goto 1d17
 :1d17f410
-set dev ZX-100/ZX-D/ZX-E PCI Com Port
+set dev ZX-100/KX-5000/KX-6000/KX-6000G PCI Com Port
 goto 1d17
 :1d18
 set ven RME
@@ -42570,6 +42600,9 @@ exit
 :1e811203
 set dev NVMe SSD Controller UHXXXa series
 goto 1e81
+:1e83
+set ven Huaqin Technology Co.Ltd
+exit
 :1e85
 set ven Heitec AG
 exit
@@ -42931,6 +42964,9 @@ exit
 set ven Accelecom
 exit
 :1f600001
+set dev XELE-NIC 25K5
+goto 1f60
+:1f600054
 set dev XELE-NIC 25K5
 goto 1f60
 :1faa
@@ -54596,6 +54632,9 @@ set dev 440GX - 82443GX Host bridge (AGP disabled)
 goto 8086
 :80867360
 set dev XMM7360 LTE Advanced Modem
+goto 8086
+:80867560
+set dev XMM7560 LTE Advanced Pro Modem
 goto 8086
 :80867600
 set dev 82372FB PIIX5 ISA
