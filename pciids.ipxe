@@ -5500,7 +5500,7 @@ goto 1022
 set dev Zeppelin/Renoir PCIe Dummy Function
 goto 1022
 :10221456
-set dev Family 17h (Models 00h-0fh) Platform Security Processor
+set dev Family 17h (Models 00h-0fh) Platform Security Processor (PSP) 3.0 Device
 goto 1022
 :10221457
 set dev Family 17h (Models 00h-0fh) HD Audio Controller
@@ -5521,7 +5521,7 @@ goto 1022
 set dev Zeppelin Switch Downstream (PCIE SW.DS)
 goto 1022
 :1022145f
-set dev Zeppelin USB 3.0 Host controller
+set dev Zeppelin USB 3.0 xHCI Compliant Host Controller
 goto 1022
 :10221460
 set dev Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 0
@@ -6469,7 +6469,7 @@ goto 1022
 set dev 400 Series Chipset SATA Controller
 goto 1022
 :102243d5
-set dev 400 Series Chipset USB 3.1 XHCI Controller
+set dev 400 Series Chipset USB 3.1 xHCI Compliant Host Controller
 goto 1022
 :102243e9
 set dev 500 Series Chipset Switch Upstream Port
@@ -6891,6 +6891,9 @@ goto 1023
 :1024
 set ven Beijing Dajia Internet Information Technology Co.
 exit
+:10240101
+set dev StreamLake 200 AI-VPU
+goto 1024
 :1025
 set ven Acer Incorporated [ALI]
 exit
@@ -12128,6 +12131,9 @@ set ven Silicon Image, Inc.
 exit
 :10950240
 set dev Adaptec AAR-1210SA SATA HostRAID Controller
+goto 1095
+:10950242
+set dev AAR-1220SA SATA RAID Controller
 goto 1095
 :10950640
 set dev PCI0640
@@ -18432,8 +18438,14 @@ goto 10de
 :10de2296
 set dev Tegra PCIe Endpoint Virtual Network
 goto 10de
+:10de22ba
+set dev AD102 High Definition Audio Controller
+goto 10de
 :10de2302
 set dev GH100
+goto 10de
+:10de2313
+set dev GH100 [H100 CNX]
 goto 10de
 :10de2321
 set dev GH100
@@ -18607,10 +18619,10 @@ goto 10de
 set dev GA106 [RTX A2000 12GB]
 goto 10de
 :10de2582
-set dev GA107 [GeForce RTX 3050]
+set dev GA107 [GeForce RTX 3050 8GB]
 goto 10de
 :10de2583
-set dev GA107 [GeForce RTX 3050]
+set dev GA107 [GeForce RTX 3050 4GB]
 goto 10de
 :10de25a0
 set dev GA107M [GeForce RTX 3050 Ti Mobile]
@@ -41910,6 +41922,9 @@ goto 1d87
 :1d871808
 set dev RK1808 Neural Network Processor Card
 goto 1d87
+:1d873528
+set dev RK3528 PCI Express Root Port
+goto 1d87
 :1d873566
 set dev RK3568 Remote Signal Processor
 goto 1d87
@@ -42187,7 +42202,7 @@ exit
 set ven Swissbit AG
 exit
 :1dd8
-set ven Pensando Systems
+set ven AMD Pensando Systems
 exit
 :1dd80002
 set dev DSC2 Elba Upstream Port
@@ -42216,6 +42231,21 @@ goto 1dd8
 :1dd81007
 set dev DSC Storage Accelerator
 goto 1dd8
+:1dd81009
+set dev DSC Ethernet Controller UPT
+goto 1dd8
+:1dd8100a
+set dev DSC Serial Port Controller
+goto 1dd8
+:1dd8100b
+set dev DSC vDPA Network Device VF
+goto 1dd8
+:1dd8100c
+set dev DSC PDS Core Management
+goto 1dd8
+:1dd8100d
+set dev DSC Virtio Network Device VF
+goto 1dd8
 :1ddd
 set ven Thorlabs
 exit
@@ -42223,7 +42253,7 @@ exit
 set ven Groq
 exit
 :1de00000
-set dev TSP100 Tensor Streaming Processor
+set dev TSP [GroqChip]
 goto 1de0
 :1de1
 set ven Tekram Technology Co.,Ltd.
@@ -45571,10 +45601,28 @@ goto 8086
 set dev NVMe DC SSD [3DNAND, Sentinel Rock Controller]
 goto 8086
 :80860bd0
-set dev Ponte Vecchio 2T
+set dev Ponte Vecchio XL (2 Tile)
 goto 8086
 :80860bd5
-set dev Ponte Vecchio 1T
+set dev Ponte Vecchio XT (2 Tile) [Data Center GPU Max 1550]
+goto 8086
+:80860bd6
+set dev Ponte Vecchio XT (2 Tile) [Data Center GPU Max 1550]
+goto 8086
+:80860bd7
+set dev Ponte Vecchio XT (2 Tile) [Data Center GPU Max 1350]
+goto 8086
+:80860bd8
+set dev Ponte Vecchio XT (2 Tile) [Data Center GPU Max 1350]
+goto 8086
+:80860bd9
+set dev Ponte Vecchio XT (1 Tile) [Data Center GPU Max 1100]
+goto 8086
+:80860bda
+set dev Ponte Vecchio XT (1 Tile) [Data Center GPU Max 1100]
+goto 8086
+:80860bdb
+set dev Ponte Vecchio XT (1 Tile) [Data Center GPU Max 1100]
 goto 8086
 :80860be0
 set dev Atom Processor D2xxx/N2xxx Integrated Graphics Controller
@@ -53298,6 +53346,9 @@ goto 8086
 :8086444e
 set dev Turbo Memory Controller
 goto 8086
+:80864538
+set dev Elkhart Lake PCI-e Root Complex
+goto 8086
 :80864555
 set dev Elkhart Lake [UHD Graphics Gen11 16EU]
 goto 8086
@@ -53460,6 +53511,39 @@ goto 8086
 :80864909
 set dev DG1 [Iris Xe MAX 100]
 goto 8086
+:80864b00
+set dev Elkhart Lake eSPI Controller
+goto 8086
+:80864b23
+set dev Elkhart Lake SMBus Controller
+goto 8086
+:80864b24
+set dev Elkhart Lake SPI (Flash) Controller
+goto 8086
+:80864b38
+set dev Elkhart Lake PCH PCI Express Root Port #0
+goto 8086
+:80864b39
+set dev Elkhart Lake PCH PCI Express Root Port #1
+goto 8086
+:80864b3e
+set dev Elkhart Lake PCH PCI Express Root Port #6
+goto 8086
+:80864b58
+set dev Elkhart Lake High Density Audio bus interface
+goto 8086
+:80864b63
+set dev Elkhart Lake SATA AHCI
+goto 8086
+:80864b70
+set dev Elkhart Lake Management Engine Interface
+goto 8086
+:80864b7d
+set dev Elkhart Lake USB 3.10 XHCI
+goto 8086
+:80864b7f
+set dev Elkhart Lake PMC SRAM
+goto 8086
 :80864c3d
 set dev Volume Management Device NVMe RAID Controller
 goto 8086
@@ -53519,6 +53603,15 @@ set dev DG2
 goto 8086
 :80864f82
 set dev DG2
+goto 8086
+:80864f90
+set dev DG2 Audio Controller
+goto 8086
+:80864f91
+set dev DG2 Audio Controller
+goto 8086
+:80864f92
+set dev DG2 Audio Controller
 goto 8086
 :80865001
 set dev LE80578
@@ -57166,7 +57259,7 @@ goto 8086
 set dev Volume Management Device NVMe RAID Controller Intel Corporation
 goto 8086
 :8086a780
-set dev Raptor Lake-S UHD Graphics
+set dev Raptor Lake-S GT1 [UHD Graphics 770]
 goto 8086
 :8086a781
 set dev Raptor Lake-S UHD Graphics
