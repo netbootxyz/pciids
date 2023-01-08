@@ -17479,7 +17479,7 @@ goto 10de
 set dev GM204M [GeForce GTX 980M]
 goto 10de
 :10de13d8
-set dev GM204M [GeForce GTX 970M]
+set dev GM204M [GeForce GTX 960 OEM / 970M]
 goto 10de
 :10de13d9
 set dev GM204M [GeForce GTX 965M]
@@ -18654,6 +18654,9 @@ goto 10de
 :10de25ac
 set dev GN20-P0-R-K2
 goto 10de
+:10de25ad
+set dev GA107 [GeForce RTX 2050]
+goto 10de
 :10de25af
 set dev GA107 [GeForce RTX 3050 Engineering Sample]
 goto 10de
@@ -18719,6 +18722,9 @@ set dev GN21-X11
 goto 10de
 :10de2757
 set dev GN21-X11
+goto 10de
+:10de2782
+set dev AD104 [GeForce RTX 4070 Ti]
 goto 10de
 :10de2785
 set dev AD104
@@ -37404,6 +37410,9 @@ exit
 :17c2
 set ven Newisys, Inc.
 exit
+:17c3
+set ven Protogate, Inc.
+exit
 :17cb
 set ven Qualcomm
 exit
@@ -41145,6 +41154,9 @@ goto 1c5c
 :1c5c174a
 set dev Gold P31/PC711 NVMe Solid State Drive
 goto 1c5c
+:1c5c1959
+set dev Platinum P41 NVMe Solid State Drive 2TB
+goto 1c5c
 :1c5c2204
 set dev 960GB TLC PCIe Gen3 x4 NVMe M.2 22110
 goto 1c5c
@@ -41170,7 +41182,7 @@ goto 1c5f
 set dev PBlaze5 920/926
 goto 1c5f
 :1c5f003e
-set dev PBlaze6 6920
+set dev PBlaze6 6920/6930
 goto 1c5f
 :1c5f0540
 set dev PBlaze4 NVMe SSD
@@ -42186,6 +42198,9 @@ exit
 :1dbf0401
 set dev StarDragon4800 PCI Express Root Port
 goto 1dbf
+:1dc2
+set ven Alco Digital Devices Limited
+exit
 :1dc5
 set ven FADU Inc.
 exit
@@ -42796,7 +42811,7 @@ goto 1ed5
 set dev MTT S70
 goto 1ed5
 :1ed50203
-set dev G2D10
+set dev MTT S60
 goto 1ed5
 :1ed50211
 set dev G2D40
@@ -42930,6 +42945,39 @@ goto 1f03
 :1f035636
 set dev IG5636-Based NVMe SSD
 goto 1f03
+:1f0f
+set ven NebulaMatrix Technology
+exit
+:1f0f1041
+set dev D1055AS vDPA Ethernet Controller
+goto 1f0f
+:1f0f1042
+set dev D1055AS vDPA Storage Controller
+goto 1f0f
+:1f0f1220
+set dev D1055AS Ethernet Controller
+goto 1f0f
+:1f0f1221
+set dev D1055AS Ethernet Controller
+goto 1f0f
+:1f0f1222
+set dev D1055AS Ethernet Controller
+goto 1f0f
+:1f0f1223
+set dev D1055AS Ethernet Controller
+goto 1f0f
+:1f0f1600
+set dev M16104 Family
+goto 1f0f
+:1f0f1601
+set dev M16104 Family Virtual Function
+goto 1f0f
+:1f0f2022
+set dev D1055AS PCI Express Switch Upstream Port
+goto 1f0f
+:1f0f9088
+set dev D1055AS PCI Express Switch Downstream Port
+goto 1f0f
 :1f24
 set ven xFusion Digital Technologies Co., Ltd.
 exit
@@ -53346,6 +53394,9 @@ goto 8086
 :8086444e
 set dev Turbo Memory Controller
 goto 8086
+:80864511
+set dev Elkhart Lake Gaussian and Neural Accelerator
+goto 8086
 :80864538
 set dev Elkhart Lake PCI-e Root Complex
 goto 8086
@@ -53882,6 +53933,9 @@ set dev Data Center GPU Flex 170
 goto 8086
 :808656c1
 set dev Data Center GPU Flex 140
+goto 8086
+:808657b1
+set dev Ethernet Controller E610 1GBASE T
 goto 8086
 :80865845
 set dev QEMU NVM Express Controller
