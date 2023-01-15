@@ -9531,6 +9531,9 @@ goto 106b
 :106b0074
 set dev U4 HT Bridge
 goto 106b
+:106b100c
+set dev Apple Silicon PCI Express Root Port
+goto 106b
 :106b1645
 set dev Broadcom NetXtreme BCM5701 Gigabit Ethernet
 goto 106b
@@ -18280,7 +18283,7 @@ goto 10de
 set dev GA100 [A100 SXM4 80GB]
 goto 10de
 :10de20b3
-set dev GA100 [PG506-242/243]
+set dev GA100 [A100-SXM-64GB]
 goto 10de
 :10de20b5
 set dev GA100 [A100 PCIe 80GB]
@@ -18698,6 +18701,9 @@ set dev GA107 [RTX A2000 Embedded GPU]
 goto 10de
 :10de25fb
 set dev GA107 [RTX A500 Embedded GPU]
+goto 10de
+:10de2681
+set dev AD102 [RTX TITAN Ada]
 goto 10de
 :10de2684
 set dev AD102 [GeForce RTX 4090]
@@ -21609,6 +21615,9 @@ exit
 :112b
 set ven Heidelberger Druckmaschinen AG
 exit
+:112b0001
+set dev SCU5
+goto 112b
 :112c
 set ven Zenith Data Systems
 exit
@@ -41925,6 +41934,9 @@ goto 1d82
 :1d820202
 set dev Codensity T408 Video Encoding-Decoding Accelerator
 goto 1d82
+:1d820401
+set dev Quadra Video Processing Unit (VPU)
+goto 1d82
 :1d87
 set ven Rockchip Electronics Co., Ltd
 exit
@@ -45930,6 +45942,9 @@ goto 8086
 :80860d9f
 set dev Ethernet Controller (2) I225-IT
 goto 8086
+:80860dcd
+set dev Ethernet Connection C825-X
+goto 8086
 :80860dd2
 set dev Ethernet Network Adapter I710
 goto 8086
@@ -49049,6 +49064,9 @@ set dev Sky Lake-E CHA Registers
 goto 8086
 :8086208e
 set dev Sky Lake-E CHA Registers
+goto 8086
+:80862240
+set dev Larrabee
 goto 8086
 :80862241
 set dev Larrabee
@@ -53933,6 +53951,15 @@ set dev Data Center GPU Flex 170
 goto 8086
 :808656c1
 set dev Data Center GPU Flex 140
+goto 8086
+:8086579c
+set dev Ethernet Connection E825-C for backplane
+goto 8086
+:8086579d
+set dev Ethernet Connection E825-C for QSFP
+goto 8086
+:8086579e
+set dev Ethernet Connection E825-C for SFP
 goto 8086
 :808657b1
 set dev Ethernet Controller E610 1GBASE T
