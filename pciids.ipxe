@@ -9534,6 +9534,9 @@ goto 106b
 :106b100c
 set dev Apple Silicon PCI Express Root Port
 goto 106b
+:106b1010
+set dev Apple Silicon USB4/Thunderbolt PCI Express Root Port
+goto 106b
 :106b1645
 set dev Broadcom NetXtreme BCM5701 Gigabit Ethernet
 goto 106b
@@ -37423,7 +37426,7 @@ exit
 set ven Protogate, Inc.
 exit
 :17cb
-set ven Qualcomm
+set ven Qualcomm Technologies, Inc
 exit
 :17cb0001
 set dev AGN100 802.11 a/b/g True MIMO Wireless Card
