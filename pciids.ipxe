@@ -135,6 +135,9 @@ goto 021b
 :025e
 set ven Solidigm
 exit
+:025e0b70
+set dev NVMe DC SSD [Yorktown controller]
+goto 025e
 :0270
 set ven Hauppauge computer works Inc. (Wrong ID)
 exit
@@ -1045,6 +1048,9 @@ goto 1000
 set dev PEX880xx PCIe Gen 4 Switch
 goto 1000
 :1000c030
+set dev PEX890xx PCIe Gen 5 Switch
+goto 1000
+:1000c034
 set dev PEX890xx PCIe Gen 5 Switch
 goto 1000
 :1001
@@ -2485,7 +2491,7 @@ goto 1002
 set dev Jet XT [Radeon R5 M240]
 goto 1002
 :10026665
-set dev Jet PRO [Radeon R5 M230 / R7 M260DX / Radeon 520 Mobile]
+set dev Jet PRO [Radeon R5 M230 / R7 M260DX / Radeon 520/610 Mobile]
 goto 1002
 :10026667
 set dev Jet ULT [Radeon R5 M230]
@@ -3448,7 +3454,7 @@ goto 1002
 set dev Navi22-XL SRIOV MxGPU
 goto 1002
 :100273df
-set dev Navi 22 [Radeon RX 6700/6700 XT/6750 XT / 6800M]
+set dev Navi 22 [Radeon RX 6700/6700 XT/6750 XT / 6800M/6850M XT]
 goto 1002
 :100273e0
 set dev Navi 23
@@ -13788,6 +13794,9 @@ goto 10de
 :10de0093
 set dev G70 [GeForce 7800 GS]
 goto 10de
+:10de0094
+set dev High Definition Audio
+goto 10de
 :10de0095
 set dev G70 [GeForce 7800 SLI]
 goto 10de
@@ -18016,10 +18025,10 @@ goto 10de
 set dev TU102GL [Quadro RTX 6000]
 goto 10de
 :10de1e37
-set dev TU102GL [GRID RTX T10-4/T10-8/T10-16]
+set dev TU102GL [Tesla T10 16GB / GRID RTX T10-2/T10-4/T10-8]
 goto 10de
 :10de1e38
-set dev TU102GL
+set dev TU102GL [Tesla T10 24GB]
 goto 10de
 :10de1e3c
 set dev TU102GL
@@ -18083,6 +18092,9 @@ set dev TU104GL [Tesla T4]
 goto 10de
 :10de1eb9
 set dev TU104GL
+goto 10de
+:10de1eba
+set dev TU104GL [PG189 SKU600]
 goto 10de
 :10de1ebe
 set dev TU104GL
@@ -18466,7 +18478,7 @@ goto 10de
 set dev GH100 [H100 PCIe]
 goto 10de
 :10de2336
-set dev GH100 [H100 96GB]
+set dev GH100 [H100]
 goto 10de
 :10de2414
 set dev GA103 [GeForce RTX 3060 Ti]
@@ -18658,7 +18670,7 @@ goto 10de
 set dev GA107M [GeForce MX570 A]
 goto 10de
 :10de25ac
-set dev GN20-P0-R-K2
+set dev GN20-P0-R-K2 [GeForce RTX 3050 6GB Laptop GPU]
 goto 10de
 :10de25ad
 set dev GA107 [GeForce RTX 2050]
@@ -18694,7 +18706,10 @@ goto 10de
 set dev GA107BM [GeForce RTX 3050 Mobile]
 goto 10de
 :10de25ec
-set dev GN20-P0-R-K2
+set dev GN20-P0-R-K2 [GeForce RTX 3050 6GB Laptop GPU]
+goto 10de
+:10de25ed
+set dev GA107 [GeForce RTX 2050]
 goto 10de
 :10de25f9
 set dev GA107 [RTX A1000 Embedded GPU ]
@@ -18727,7 +18742,7 @@ goto 10de
 set dev AD103 [GeForce RTX 4080]
 goto 10de
 :10de2717
-set dev GN21-X11
+set dev GN21-X11 [GeForce RTX 4090 Laptop GPU]
 goto 10de
 :10de2757
 set dev GN21-X11
@@ -18737,6 +18752,9 @@ set dev AD104 [GeForce RTX 4070 Ti]
 goto 10de
 :10de2785
 set dev AD104
+goto 10de
+:10de2786
+set dev AD104 [GeForce RTX 4070]
 goto 10de
 :10de27a0
 set dev GN21-X9
@@ -36595,8 +36613,35 @@ goto 16da
 set ven PIKA Technologies Inc.
 exit
 :16e2
-set ven Geotest-MTS
+set ven Marvin Test Solutions
 exit
+:16e21034
+set dev GX1034 Certification and Verification Module PXI Board
+goto 16e2
+:16e21100
+set dev GX1100 Arbitrary Waveform and Function Generator PXI Board
+goto 16e2
+:16e21120
+set dev GX1120 Arbitrary Waveform and Function Generator PXI Board
+goto 16e2
+:16e21632
+set dev GX1632e 32-Channel Arbitrary Analog Output PXIe Board
+goto 16e2
+:16e22065
+set dev GX2065 Digital Multimeter PXI Board
+goto 16e2
+:16e22200
+set dev GTX2200 High Resolution Universal Time Interval Counter PXI Board
+goto 16e2
+:16e22201
+set dev GC2200 High Resolution Universal Time Interval Counter PCI Board
+goto 16e2
+:16e25050
+set dev GC5050 Dynamic Digital I/O with Algorithmic Sequencer PCI Board
+goto 16e2
+:16e25641
+set dev GX5641/2 Bi-directional Differential-TTL I/O PXI Board
+goto 16e2
 :16e3
 set ven European Space Agency
 exit
@@ -37380,6 +37425,9 @@ goto 17a0
 :17aa
 set ven Lenovo
 exit
+:17aa0005
+set dev LENSE30256GMSP34MEAT3TA
+goto 17aa
 :17aa3181
 set dev ThinkCentre M75n IoT
 goto 17aa
@@ -42660,6 +42708,9 @@ goto 1e7c
 :1e7e
 set ven 9034 Pliops-Data Processor [XDP1.0]
 exit
+:1e7f
+set ven Jiangsu Huacun Elec. Tech. Co., Ltd.
+exit
 :1e81
 set ven Ramaxel Technology(Shenzhen) Limited
 exit
@@ -42774,6 +42825,12 @@ goto 1ec8
 :1ec9
 set ven Wingtech Group(HongKong)Limited
 exit
+:1eca
+set ven Lightmatter
+exit
+:1eca0000
+set dev Envise-B
+goto 1eca
 :1ed2
 set ven FuriosaAI, Inc.
 exit
@@ -43083,6 +43140,9 @@ exit
 :1fab0000
 set dev Nexus Alpha IVPU
 goto 1fab
+:1fab0100
+set dev NoX Gamma
+goto 1fab
 :1fc0
 set ven Ascom (Finland) Oy
 exit
@@ -43245,6 +43305,9 @@ goto 2646
 :2646500e
 set dev SNVS2000G [NV1 NVMe PCIe SSD 2TB]
 goto 2646
+:26465012
+set dev DC1500M U.2 Enterprise SSD
+goto 2646
 :270b
 set ven Xantel Corporation
 exit
@@ -43253,6 +43316,9 @@ set ven Chaintech Computer Co. Ltd
 exit
 :2711
 set ven AVID Technology Inc.
+exit
+:2782
+set ven Emdoor Digital Technology Co., Ltd
 exit
 :2955
 set ven Connectix Virtual PC
