@@ -3769,10 +3769,10 @@ goto 1002
 set dev RV710/M92 [Mobility Radeon HD 4330/4350/4550]
 goto 1002
 :10029553
-set dev RV710/M92 [Mobility Radeon HD 4530/4570/545v]
+set dev RV710/M92 [Mobility Radeon HD 4530/4570/5145/530v/540v/545v]
 goto 1002
 :10029555
-set dev RV710/M92 [Mobility Radeon HD 4350/4550]
+set dev RV711/M93 [Mobility Radeon HD 4350/4550/530v/540v/545v / FirePro RG220]
 goto 1002
 :10029557
 set dev RV711/M93 GL [FirePro RG220]
@@ -18669,6 +18669,9 @@ goto 10de
 :10de25aa
 set dev GA107M [GeForce MX570 A]
 goto 10de
+:10de25ab
+set dev GA107M [GeForce RTX 3050 4GB Laptop GPU]
+goto 10de
 :10de25ac
 set dev GN20-P0-R-K2 [GeForce RTX 3050 6GB Laptop GPU]
 goto 10de
@@ -18695,6 +18698,9 @@ set dev GA107GLM [RTX A2000 8GB Laptop GPU]
 goto 10de
 :10de25bb
 set dev GA107GLM [RTX A500 Laptop GPU]
+goto 10de
+:10de25bc
+set dev GA107
 goto 10de
 :10de25e0
 set dev GA107BM [GeForce RTX 3050 Ti Mobile]
@@ -18744,6 +18750,9 @@ goto 10de
 :10de2717
 set dev GN21-X11 [GeForce RTX 4090 Laptop GPU]
 goto 10de
+:10de2730
+set dev AD103GLM [RTX 5000 Ada Generation Laptop GPU]
+goto 10de
 :10de2757
 set dev GN21-X11
 goto 10de
@@ -18762,11 +18771,20 @@ goto 10de
 :10de27b8
 set dev AD104GL [L4]
 goto 10de
+:10de27ba
+set dev AD104
+goto 10de
+:10de27bb
+set dev AD104GLM [RTX 3500 Ada Generation Laptop GPU]
+goto 10de
 :10de27e0
 set dev GN21-X9
 goto 10de
 :10de2820
 set dev GN21-X6
+goto 10de
+:10de2838
+set dev AD106GLM [RTX 3000 Ada Generation Laptop GPU]
 goto 10de
 :10de2860
 set dev GN21-X6
@@ -18776,6 +18794,9 @@ set dev GN21-X4
 goto 10de
 :10de28a1
 set dev GN21-X2
+goto 10de
+:10de28b8
+set dev AD107GLM [RTX 2000 Ada Generation Laptop GPU]
 goto 10de
 :10de28e0
 set dev GN21-X4
@@ -20332,7 +20353,7 @@ goto 1106
 set dev K8T800M Host Bridge
 goto 1106
 :11063227
-set dev VT8237 ISA bridge [KT600/K8T800/K8T890 South]
+set dev VT8237 ISA bridge [KT600/K8T800/K8T890/CN700 South]
 goto 1106
 :11063230
 set dev K8M890CE/K8N890CE [Chrome 9]
@@ -31416,6 +31437,12 @@ goto 144d
 :144da544
 set dev Exynos 8890 PCIe Root Complex
 goto 144d
+:144da575
+set dev Exynos 7420 PCIe Root Complex
+goto 144d
+:144da5e3
+set dev Exynos 5433 PCIe Root Complex
+goto 144d
 :144da800
 set dev XP941 PCIe SSD
 goto 144d
@@ -36624,8 +36651,20 @@ goto 16e2
 :16e21120
 set dev GX1120 Arbitrary Waveform and Function Generator PXI Board
 goto 16e2
+:16e21164
+set dev GX1164 Multi-Channel Programmable Resistor PXI Board
+goto 16e2
 :16e21632
 set dev GX1632e 32-Channel Arbitrary Analog Output PXIe Board
+goto 16e2
+:16e21648
+set dev GX1648 64-Channel Analog Output PXI Board
+goto 16e2
+:16e21649
+set dev GX1649 64-Channel Arbitrary Analog Output PXI Board
+goto 16e2
+:16e21838
+set dev GX1838 Precision DC Source PXI Board
 goto 16e2
 :16e22065
 set dev GX2065 Digital Multimeter PXI Board
@@ -36636,11 +36675,149 @@ goto 16e2
 :16e22201
 set dev GC2200 High Resolution Universal Time Interval Counter PCI Board
 goto 16e2
+:16e23104
+set dev GX3104 4-Channel 20V, 250mA Per Channel SMU PXI Board
+goto 16e2
+:16e23108
+set dev GX3108 4-Channel Source Measure Unit PXI Board
+goto 16e2
+:16e23116
+set dev GX3116e 16-Channel DUT Power Supply PXIe Board
+goto 16e2
+:16e23348
+set dev GX3348 Multi-Channel DC Source and Switch Matrix Board
+goto 16e2
+:16e23500
+set dev GX3500 Digital I/O FLEX FPGA Board
+goto 16e2
+:16e23700
+set dev GX3700e Digital I/O FLEX FPGA PXIe Board
+goto 16e2
+:16e23701
+set dev GX3700 Digital I/O FLEX FPGA PXI Board
+goto 16e2
+:16e23800
+set dev GX3800e Digital I/O FLEX FPGA PXIe Board
+goto 16e2
+:16e24943
+set dev GX4943 HellFire/Longbow Serial Communication Board
+goto 16e2
 :16e25050
 set dev GC5050 Dynamic Digital I/O with Algorithmic Sequencer PCI Board
 goto 16e2
+:16e25055
+set dev GX5055 Dynamic Digital I/O with Pin Electronics PXI Board
+goto 16e2
+:16e25083
+set dev GX5083 Dynamic Digital I/O with Algorithmic Sequencer PXI Board
+goto 16e2
+:16e25106
+set dev GX5106 High-Speed Digital I/O Cycle Timing (Master) Module PXI Board
+goto 16e2
+:16e25151
+set dev GX5150/1 High Speed Digital I/O (50/100MHz) PXI Board
+goto 16e2
+:16e25152
+set dev GX5152/3 DSR High Speed Digital Stimulus/Response PXI Board
+goto 16e2
+:16e25250
+set dev GX5250 Digital I/O Streaming PXI Board
+goto 16e2
+:16e25280
+set dev GX5280 High-Speed Digital I/O PXI Board
+goto 16e2
+:16e25290
+set dev GX5290 High-Speed Dynamic Digital I/O PXI Board
+goto 16e2
+:16e25294
+set dev GX5294 High-Speed Digital I/O PXI Board
+goto 16e2
+:16e25295
+set dev GX5295 Digital I/O with Pin Electronics and PMU PXI Board
+goto 16e2
+:16e25296
+set dev GX5296 Digital I/O with Pin Electronics and PMU PXI Board
+goto 16e2
+:16e25550
+set dev GX5050 Dynamic Digital I/O with Algorithmic Sequencer PXI Board
+goto 16e2
 :16e25641
 set dev GX5641/2 Bi-directional Differential-TTL I/O PXI Board
+goto 16e2
+:16e25731
+set dev GX5731 Digital I/O with 128 TTL Channels and 3x32 Customizable Channels PXI Board
+goto 16e2
+:16e25732
+set dev GX5732 224-Channel Static Digital I/O PXI Board
+goto 16e2
+:16e25733
+set dev GX5733 Digital I/O with 96 TTL Channels and 32 Customizable Channels PXI Board
+goto 16e2
+:16e25960
+set dev GX5961/4 Digital I/O Timing/Sync with Pin Electronics and PMU PXI Board
+goto 16e2
+:16e26021
+set dev GX6021 20-Channel RF Multiplexer PXI Board
+goto 16e2
+:16e26062
+set dev GX6062 60-Channel RF Multiplexer PXI Board
+goto 16e2
+:16e26115
+set dev GX6115 15-Channel High Current SPDT Form-C Relay PXI Board
+goto 16e2
+:16e26125
+set dev GX6125 25-Channel High-Density SPDT Form-C Relay PXI Board
+goto 16e2
+:16e26138
+set dev GX6138 38-Channel SPST Form-A Relay PXI Board
+goto 16e2
+:16e26188
+set dev GX6188 104-Channel 8x8 Multiplexer/Matrix PXI Board
+goto 16e2
+:16e26192
+set dev GX6192 16, 16x2 High Frequency, High Density Multiplexer PXI Board
+goto 16e2
+:16e26196
+set dev GX6196 96-Channel DPST Form-A Relay Carrier PXI Board
+goto 16e2
+:16e26256
+set dev GX6256 16, 16x2 Low Frequency, High Density Multiplexer PXI Board
+goto 16e2
+:16e26264
+set dev GX6264 128-Channel Scanner/Multiplexer Board
+goto 16e2
+:16e26315
+set dev GX6315 45-Channel High Current SPDT Form-C Relay Board
+goto 16e2
+:16e26325
+set dev GX6325 75-Channel High-Density SPDT Form-C Relay Board
+goto 16e2
+:16e26338
+set dev GX6338 114-Channel SPST Form-A Relay PXI Board
+goto 16e2
+:16e26377
+set dev GX6377 Multifunction Switching PXI Board
+goto 16e2
+:16e26384
+set dev GX6384 Configurable High-Density Switch Matrix PXI Board
+goto 16e2
+:16e26616
+set dev GX6616 6x2:16 Switch Matrix PXI Board
+goto 16e2
+:16e26864
+set dev GX6864 Video Switching PXI Board
+goto 16e2
+:16e27400
+set dev GX7400 Dual-Output Programmable Power Supply PXI Board
+goto 16e2
+:16e27404
+set dev GX7404 Prototyping and Power Interface PXI Board
+goto 16e2
+:16e27777
+set dev GX7777 Generic Interface PXI Board
+goto 16e2
+:16e27779
+set dev GX7779 Backplane Tester PXI Board
 goto 16e2
 :16e3
 set ven European Space Agency
@@ -38728,7 +38905,7 @@ exit
 set ven MAXIM Integrated Products
 exit
 :193d
-set ven Hangzhou H3C Technologies Co., Ltd.
+set ven New H3C Technologies Co., Ltd.
 exit
 :193f
 set ven AHA Products Group
@@ -41244,6 +41421,9 @@ goto 1c5f
 :1c5f003e
 set dev PBlaze6 6920/6930
 goto 1c5f
+:1c5f003f
+set dev PBlaze7 7940/7946
+goto 1c5f
 :1c5f0540
 set dev PBlaze4 NVMe SSD
 goto 1c5f
@@ -42127,7 +42307,7 @@ exit
 set dev SM2263EN/SM2263XT-based OEM SSD
 goto 1d97
 :1d9b
-set ven Facebook, Inc.
+set ven Meta Platforms, Inc.
 exit
 :1d9b0010
 set dev Networking DOM Engine
@@ -42507,6 +42687,15 @@ goto 1df7
 :1df70003
 set dev alst4x
 goto 1df7
+:1df8
+set ven V&G Information System Co.,Ltd
+exit
+:1df8c000
+set dev DC NVMe SSD
+goto 1df8
+:1df8d000
+set dev PC NVMe SSD
+goto 1df8
 :1dfc
 set ven JSC NT-COM
 exit
@@ -42604,10 +42793,13 @@ exit
 set ven DapuStor Corporation
 exit
 :1e3b0600
-set dev NVMe SSD Controller DPU600
+set dev NVMe SSD Controller DP600
 goto 1e3b
 :1e3b1098
-set dev Haishen NVMe SSD
+set dev Haishen3 NVMe SSD
+goto 1e3b
+:1e3b1333
+set dev Haishen5 NVMe SSD
 goto 1e3b
 :1e3d
 set ven Burlywood, Inc
@@ -42706,8 +42898,11 @@ exit
 set dev AKD1000 Neural Network Coprocessor [Akida]
 goto 1e7c
 :1e7e
-set ven 9034 Pliops-Data Processor [XDP1.0]
+set ven Pliops
 exit
+:1e7e9034
+set dev Pliops Extreme Data Processor [XDP1.0]
+goto 1e7e
 :1e7f
 set ven Jiangsu Huacun Elec. Tech. Co., Ltd.
 exit
@@ -43066,7 +43261,7 @@ goto 1f2f
 set ven 3SNIC Ltd
 exit
 :1f3f2100
-set dev SSSRAID SAS/SATA HBA
+set dev SSSHBA SAS/SATA HBA
 goto 1f3f
 :1f3f2200
 set dev SSSRAID RAID controller
@@ -53634,6 +53829,15 @@ goto 8086
 :808646c3
 set dev Alder Lake-UP4 GT1 [UHD Graphics]
 goto 8086
+:808646d0
+set dev Alder Lake-N [UHD Graphics]
+goto 8086
+:808646d1
+set dev Alder Lake-N [UHD Graphics]
+goto 8086
+:808646d2
+set dev Alder Lake-N [UHD Graphics]
+goto 8086
 :80864905
 set dev DG1 [Iris Xe MAX Graphics]
 goto 8086
@@ -54938,6 +55142,9 @@ set dev Alder Lake-S PCH PCI Express Root Port #6
 goto 8086
 :80867abf
 set dev Alder Lake-S PCH PCI Express Root Port #8
+goto 8086
+:80867ac8
+set dev Alder Lake-S PCH PCI Express Root Port #25
 goto 8086
 :80867acc
 set dev Alder Lake-S PCH Serial IO I2C Controller #0
@@ -57405,6 +57612,12 @@ goto 8086
 :8086a620
 set dev 6400/6402 Advanced Memory Buffer (AMB)
 goto 8086
+:8086a720
+set dev Raptor Lake-P [UHD Graphics]
+goto 8086
+:8086a721
+set dev Raptor Lake-P [UHD Graphics]
+goto 8086
 :8086a77f
 set dev Volume Management Device NVMe RAID Controller Intel Corporation
 goto 8086
@@ -57431,6 +57644,18 @@ set dev Raptor Lake-S UHD Graphics
 goto 8086
 :8086a78b
 set dev Raptor Lake-S UHD Graphics
+goto 8086
+:8086a7a0
+set dev Raptor Lake-P [Iris Xe Graphics]
+goto 8086
+:8086a7a1
+set dev Raptor Lake-P [Iris Xe Graphics]
+goto 8086
+:8086a7a8
+set dev Raptor Lake-P [UHD Graphics]
+goto 8086
+:8086a7a9
+set dev Raptor Lake-P [UHD Graphics]
 goto 8086
 :8086abc0
 set dev Omni-Path Fabric Switch Silicon 100 Series
