@@ -3469,7 +3469,7 @@ goto 1002
 set dev Navi 23 USB
 goto 1002
 :100273ef
-set dev Navi 23 [Radeon RX 6650 XT]
+set dev Navi 23 [Radeon RX 6650 XT / 6700S / 6800S]
 goto 1002
 :100273ff
 set dev Navi 23 [Radeon RX 6600/6600 XT/6600M]
@@ -3500,6 +3500,12 @@ set dev Navi 24 [Radeon RX 6400/6500 XT/6500M]
 goto 1002
 :1002744c
 set dev Navi 31 [Radeon RX 7900 XT/7900 XTX]
+goto 1002
+:10027480
+set dev Navi 33 [Radeon RX 7600S]
+goto 1002
+:10027483
+set dev Navi 33 [Radeon RX 7600M/7600M XT]
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -36711,6 +36717,9 @@ goto 16e2
 :16e25083
 set dev GX5083 Dynamic Digital I/O with Algorithmic Sequencer PXI Board
 goto 16e2
+:16e25105
+set dev GX5105 High-Speed Digital I/O Timing (Master) Module PXI Board
+goto 16e2
 :16e25106
 set dev GX5106 High-Speed Digital I/O Cycle Timing (Master) Module PXI Board
 goto 16e2
@@ -41413,7 +41422,7 @@ exit
 set dev PBlaze5 520/526
 goto 1c5f
 :1c5f000e
-set dev PBlaze6 6530
+set dev PBlaze6 6530/6531/6541/6630
 goto 1c5f
 :1c5f003d
 set dev PBlaze5 920/926
@@ -42180,6 +42189,9 @@ goto 1d87
 :1d873528
 set dev RK3528 PCI Express Root Port
 goto 1d87
+:1d873562
+set dev RK3562 PCI Express Root Port
+goto 1d87
 :1d873566
 set dev RK3568 Remote Signal Processor
 goto 1d87
@@ -42690,6 +42702,9 @@ goto 1df7
 :1df8
 set ven V&G Information System Co.,Ltd
 exit
+:1df83000
+set dev PC NVMe SSD
+goto 1df8
 :1df8c000
 set dev DC NVMe SSD
 goto 1df8
@@ -42716,6 +42731,9 @@ set dev NVMe SSD
 goto 1e0f
 :1e0f0011
 set dev NVMe SSD Controller CD7
+goto 1e0f
+:1e0f001f
+set dev NVMe SSD Controller CD8
 goto 1e0f
 :1e17
 set ven Arnold & Richter Cine Technik GmbH & Co. Betriebs KG
@@ -45539,6 +45557,9 @@ set dev Comet Lake PCI Express Root Port #4
 goto 8086
 :808606bd
 set dev Comet Lake PCIe Port #6
+goto 8086
+:808606bf
+set dev Comet Lake PCIe Port #8
 goto 8086
 :808606c0
 set dev Comet Lake PCI Express Root Port #17
