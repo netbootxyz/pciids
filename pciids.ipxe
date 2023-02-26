@@ -135,6 +135,9 @@ goto 021b
 :025e
 set ven Solidigm
 exit
+:025e0b60
+set dev NVMe DC SSD [Sentinel Rock Plus controller]
+goto 025e
 :025e0b70
 set dev NVMe DC SSD [Yorktown controller]
 goto 025e
@@ -1192,7 +1195,10 @@ goto 1002
 set dev Anubis
 goto 1002
 :100215bf
-set dev Phoenix
+set dev Phoenix1
+goto 1002
+:100215c8
+set dev Phoenix2
 goto 1002
 :100215d8
 set dev Picasso/Raven 2 [Radeon Vega Series / Radeon Vega Mobile Series]
@@ -3383,6 +3389,12 @@ set dev Navi 10 [Radeon Pro W5700]
 goto 1002
 :10027314
 set dev Navi 10 USB
+goto 1002
+:10027319
+set dev Navi 10 [Radeon Pro 5700 XT]
+goto 1002
+:1002731b
+set dev Navi 10 [Radeon Pro 5700]
 goto 1002
 :1002731e
 set dev TDC-150
@@ -18706,7 +18718,7 @@ goto 10de
 set dev GA107GLM [RTX A500 Laptop GPU]
 goto 10de
 :10de25bc
-set dev GA107
+set dev GA107GLM [RTX A1000 6GB Laptop GPU]
 goto 10de
 :10de25e0
 set dev GA107BM [GeForce RTX 3050 Ti Mobile]
@@ -18772,7 +18784,7 @@ goto 10de
 set dev AD104 [GeForce RTX 4070]
 goto 10de
 :10de27a0
-set dev GN21-X9
+set dev AD104M [GeForce RTX 4080 Max-Q / Mobile]
 goto 10de
 :10de27b8
 set dev AD104GL [L4]
@@ -18784,31 +18796,31 @@ goto 10de
 set dev AD104GLM [RTX 3500 Ada Generation Laptop GPU]
 goto 10de
 :10de27e0
-set dev GN21-X9
+set dev AD104M [GeForce RTX 4080 Max-Q / Mobile]
 goto 10de
 :10de2820
-set dev GN21-X6
+set dev AD106M [GeForce RTX 4070 Max-Q / Mobile]
 goto 10de
 :10de2838
 set dev AD106GLM [RTX 3000 Ada Generation Laptop GPU]
 goto 10de
 :10de2860
-set dev GN21-X6
+set dev AD106M [GeForce RTX 4070 Max-Q / Mobile]
 goto 10de
 :10de28a0
-set dev GN21-X4
+set dev AD107M [GeForce RTX 4060 Max-Q / Mobile]
 goto 10de
 :10de28a1
-set dev GN21-X2
+set dev AD107M [GeForce RTX 4050 Max-Q / Mobile]
 goto 10de
 :10de28b8
 set dev AD107GLM [RTX 2000 Ada Generation Laptop GPU]
 goto 10de
 :10de28e0
-set dev GN21-X4
+set dev AD107M [GeForce RTX 4060 Max-Q / Mobile]
 goto 10de
 :10de28e1
-set dev GN21-X2
+set dev AD107M [GeForce RTX 4050 Max-Q / Mobile]
 goto 10de
 :10df
 set ven Emulex Corporation
@@ -34788,6 +34800,12 @@ goto 15b3
 :15b30283
 set dev ArcusE RMA
 goto 15b3
+:15b30284
+set dev Sagitta
+goto 15b3
+:15b30285
+set dev Sagitta RMA
+goto 15b3
 :15b31002
 set dev MT25400 Family [ConnectX-2 Virtual Function]
 goto 15b3
@@ -37778,6 +37796,9 @@ set dev ARC-188x series PCIe 2.0/3.0 to SAS/SATA 6/12Gb RAID Controller
 goto 17d3
 :17d31884
 set dev ARC-1884 series PCIe 3.0 to SAS/SATA 12/6Gb RAID Controller
+goto 17d3
+:17d31886
+set dev ARC-1886 series PCIe 4.0 to NVMe/SAS/SATA 16/12/6Gb RAID Controller
 goto 17d3
 :17d3188a
 set dev ARC-1886 series PCIe 4.0 to NVMe/SAS/SATA 16/12/6Gb RAID Controller
@@ -43255,6 +43276,12 @@ goto 1f0f
 set dev M16104 Family
 goto 1f0f
 :1f0f1601
+set dev M16104 Family Virtual Function
+goto 1f0f
+:1f0f1a00
+set dev M16104 Family
+goto 1f0f
+:1f0f1a01
 set dev M16104 Family Virtual Function
 goto 1f0f
 :1f0f2022
@@ -58812,6 +58839,18 @@ exit
 :c0fe
 set ven Motion Engineering, Inc.
 exit
+:ca01
+set ven I-TEK OptoElectronics Co., LTD.
+exit
+:ca010212
+set dev Vulcan-CL
+goto ca01
+:ca02
+set ven I-TEK OptoElectronics Co., LTD.
+exit
+:ca020213
+set dev Vulcan-CXP
+goto ca02
 :ca3b
 set ven Cambrionix Ltd.
 exit
