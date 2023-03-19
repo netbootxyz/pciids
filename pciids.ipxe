@@ -3048,6 +3048,9 @@ goto 1002
 :1002692f
 set dev Tonga XTV GL [FirePro S7150V]
 goto 1002
+:10026930
+set dev Tonga PRO [Radeon R9 380 4GB]
+goto 1002
 :10026938
 set dev Tonga XT / Amethyst XT [Radeon R9 380X / R9 M295X]
 goto 1002
@@ -3514,7 +3517,7 @@ goto 1002
 set dev Navi 31 [Radeon RX 7900 XT/7900 XTX]
 goto 1002
 :10027480
-set dev Navi 33 [Radeon RX 7600S]
+set dev Navi 33 [Radeon RX 7700S/7600S]
 goto 1002
 :10027483
 set dev Navi 33 [Radeon RX 7600M/7600M XT]
@@ -18046,7 +18049,7 @@ goto 10de
 set dev TU102GL [Tesla T10 16GB / GRID RTX T10-2/T10-4/T10-8]
 goto 10de
 :10de1e38
-set dev TU102GL [Tesla T10 24GB]
+set dev TU102GL [Tesla T40 24GB]
 goto 10de
 :10de1e3c
 set dev TU102GL
@@ -18585,8 +18588,14 @@ goto 10de
 :10de24bf
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
 goto 10de
+:10de24c7
+set dev GA104 [GeForce RTX 3060 GDDR6X]
+goto 10de
+:10de24c8
+set dev GA104 [GeForce RTX 3070 GDDR6X]
+goto 10de
 :10de24c9
-set dev GA104 [GeForce RTX 3060 Ti]
+set dev GA104 [GeForce RTX 3060 Ti GDDR6X]
 goto 10de
 :10de24dc
 set dev GA104M [GeForce RTX 3080 Mobile / Max-Q 8GB/16GB]
@@ -24959,6 +24968,27 @@ set dev EasyConnect 8/64
 goto 123d
 :123d0003
 set dev EasyIO
+goto 123d
+:123d0047
+set dev PCIe4 CDa
+goto 123d
+:123d004b
+set dev PCIe4 CDa 16
+goto 123d
+:123d009d
+set dev VisionLink F1
+goto 123d
+:123d00a0
+set dev PCIe8g3 S5 (10G/40G)
+goto 123d
+:123d00a3
+set dev VisionLink F4
+goto 123d
+:123d00a9
+set dev VisionLink CLS
+goto 123d
+:123d00ab
+set dev PCIe8g3 A5 10G
 goto 123d
 :123e
 set ven Simutech, Inc.
@@ -33285,6 +33315,9 @@ goto 14e4
 :14e4c909
 set dev BCM78909 Switch ASIC
 goto 14e4
+:14e4c914
+set dev BCM78914
+goto 14e4
 :14e4d802
 set dev BCM58802 Stingray 50Gb Ethernet SoC
 goto 14e4
@@ -34279,7 +34312,7 @@ exit
 set ven M-Systems Flash Disk Pioneers Ltd
 exit
 :1570
-set ven Lecroy Corp
+set ven Teledyne Lecroy
 exit
 :1571
 set ven Contemporary Controls
@@ -35088,6 +35121,9 @@ goto 15b3
 :15b3b200
 set dev ArcusE
 goto 15b3
+:15b3c2d1
+set dev BlueField DPU Family Auxiliary Communication Channel [BlueField Family]
+goto 15b3
 :15b3c2d2
 set dev MT416842 BlueField SoC management interfac
 goto 15b3
@@ -35245,7 +35281,13 @@ goto 15b7
 set dev WD PC SN810 / Black SN850 NVMe SSD
 goto 15b7
 :15b7501a
-set dev WD Blue SN570 NVMe SSD
+set dev WD Blue SN570 NVMe SSD 1TB
+goto 15b7
+:15b75025
+set dev WD Blue SN570 NVMe SSD 2TB
+goto 15b7
+:15b75030
+set dev Western Digital WD Black SN850X NVMe SSD
 goto 15b7
 :15b8
 set ven ADDI-DATA GmbH
@@ -35408,6 +35450,12 @@ set ven Super Micro Computer Inc
 exit
 :15d91b67
 set dev AOC-S3916L-H16iR-32DD
+goto 15d9
+:15d91b9d
+set dev Supermicro AOC-S3816L-L16IR
+goto 15d9
+:15d91c6e
+set dev Supermicro AOC-SLG4-2H8M2
 goto 15d9
 :15da
 set ven Cyberfirm Inc
@@ -43356,6 +43404,9 @@ exit
 :1f52
 set ven MangoBoost Inc.
 exit
+:1f56
+set ven SAPEON Inc.
+exit
 :1f60
 set ven Accelecom
 exit
@@ -47384,6 +47435,9 @@ set dev Quark SoC X1000 PCIe Root Port 0
 goto 8086
 :808611c4
 set dev Quark SoC X1000 PCIe Root Port 1
+goto 8086
+:808611eb
+set dev Simics NVMe Controller
 goto 8086
 :80861200
 set dev IXP1200 Network Processor
@@ -58905,6 +58959,9 @@ goto cddd
 :cddd0200
 set dev DeepSea 2 High Speed Stereo Vision Frame Grabber
 goto cddd
+:cdfa
+set ven NextSilicon Ltd
+exit
 :ceba
 set ven KEBA AG
 exit
@@ -59606,6 +59663,9 @@ set dev PMC [Pattern Matching Chip]
 goto fa57
 :fab7
 set ven Fabric7 Systems, Inc.
+exit
+:fe19
+set ven TenaFe, Inc.
 exit
 :febd
 set ven Ultraview Corp.
