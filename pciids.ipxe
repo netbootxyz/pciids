@@ -66,6 +66,12 @@ goto 0014
 :00147a29
 set dev PCI-to-PCI Bridge
 goto 0014
+:0018
+set ven Fn-Link Technology Limited
+exit
+:00186252
+set dev 6252CPUB 802.11ax PCIe Wireless Network Adapter
+goto 0018
 :001c
 set ven PEAK-System Technik GmbH
 exit
@@ -18366,6 +18372,9 @@ goto 10de
 :10de20f6
 set dev GA100 [A800 40GB PCIe]
 goto 10de
+:10de20fd
+set dev GA100 [A100T]
+goto 10de
 :10de2182
 set dev TU116 [GeForce GTX 1660 Ti]
 goto 10de
@@ -18490,6 +18499,9 @@ goto 10de
 set dev GH100
 goto 10de
 :10de2322
+set dev GH100 [H800 PCIe]
+goto 10de
+:10de2324
 set dev GH100 [H800]
 goto 10de
 :10de2330
@@ -18499,6 +18511,9 @@ goto 10de
 set dev GH100 [H100 PCIe]
 goto 10de
 :10de2336
+set dev GH100 [H100]
+goto 10de
+:10de2339
 set dev GH100 [H100]
 goto 10de
 :10de2414
@@ -18729,6 +18744,9 @@ goto 10de
 :10de25bc
 set dev GA107GLM [RTX A1000 6GB Laptop GPU]
 goto 10de
+:10de25bd
+set dev GA107GLM [RTX A500 Laptop GPU]
+goto 10de
 :10de25e0
 set dev GA107BM [GeForce RTX 3050 Ti Mobile]
 goto 10de
@@ -18795,17 +18813,26 @@ goto 10de
 :10de27a0
 set dev AD104M [GeForce RTX 4080 Max-Q / Mobile]
 goto 10de
+:10de27b0
+set dev AD104GL [RTX 4000 SFF Ada Generation]
+goto 10de
+:10de27b7
+set dev AD104GL [L16]
+goto 10de
 :10de27b8
 set dev AD104GL [L4]
 goto 10de
 :10de27ba
-set dev AD104
+set dev AD104GLM [RTX 4000 Ada Generation Laptop GPU]
 goto 10de
 :10de27bb
 set dev AD104GLM [RTX 3500 Ada Generation Laptop GPU]
 goto 10de
 :10de27e0
 set dev AD104M [GeForce RTX 4080 Max-Q / Mobile]
+goto 10de
+:10de2803
+set dev AD106 [GeForce RTX 4060 Ti]
 goto 10de
 :10de2820
 set dev AD106M [GeForce RTX 4070 Max-Q / Mobile]
@@ -19253,6 +19280,9 @@ set dev RTL-8139/8139C/8139C+ Ethernet Controller
 goto 10ec
 :10ec3000
 set dev Killer E3000 2.5GbE Controller
+goto 10ec
+:10ec4321
+set dev RTL8852BE 802.11ax PCIe Wireless Network Adapter
 goto 10ec
 :10ec5208
 set dev RTS5208 PCI Express Card Reader
@@ -20791,7 +20821,7 @@ goto 1106
 set dev USB3.0 Controller
 goto 1106
 :11069380
-set dev Ncore Coprocessor
+set dev Ncore Coprocessor for Centaur CNS
 goto 1106
 :11069530
 set dev VX800/820/900 Series Secure Digital Memory Card Controller
@@ -28240,7 +28270,7 @@ exit
 set ven Ford Microelectronics Inc
 exit
 :13f3
-set ven Mcdata Corporation
+set ven Brocade Communications Systems, Inc.
 exit
 :13f4
 set ven Troika Networks, Inc.
@@ -33292,31 +33322,31 @@ goto 14e4
 set dev BCM56842 Trident 10GE Switch Controller
 goto 14e4
 :14e4b850
-set dev Broadcom BCM56850 Switch ASIC
+set dev BCM56850 Switch ASIC [Trident2]
 goto 14e4
 :14e4b880
 set dev BCM56880 Switch ASIC
 goto 14e4
 :14e4b960
-set dev Broadcom BCM56960 Switch ASIC
+set dev BCM56960 Switch ASIC [Tomahawk]
 goto 14e4
 :14e4b990
-set dev BCM56990 Switch ASIC
+set dev BCM56990 Switch ASIC [Tomahawk4]
 goto 14e4
 :14e4b996
-set dev BCM56996 Tomahawk4G 106G Switch ASIC
+set dev BCM56996 106G Switch ASIC [Tomahawk4G]
 goto 14e4
 :14e4b998
-set dev BCM56998 Tomahawk4GT 106G Switch ASIC
+set dev BCM56998 106G Switch ASIC [Tomahawk4GT]
 goto 14e4
 :14e4b999
-set dev BCM56999 Tomahawk4D 106G Switch ASIC
+set dev BCM56999 106G Switch ASIC [Tomahawk4D]
 goto 14e4
 :14e4c909
 set dev BCM78909 Switch ASIC
 goto 14e4
 :14e4c914
-set dev BCM78914
+set dev BCM78914 Switch ASIC [Tomahawk6C]
 goto 14e4
 :14e4d802
 set dev BCM58802 Stingray 50Gb Ethernet SoC
@@ -33325,7 +33355,7 @@ goto 14e4
 set dev BCM58804 Stingray 100Gb Ethernet SoC
 goto 14e4
 :14e4f800
-set dev BCM78800 switch ASIC for f800
+set dev BCM78800 Switch ASIC [Trident5-X12]
 goto 14e4
 :14e5
 set ven Pixelfusion Ltd
@@ -35280,6 +35310,9 @@ goto 15b7
 :15b75011
 set dev WD PC SN810 / Black SN850 NVMe SSD
 goto 15b7
+:15b75017
+set dev WD Black SN770 NVMe SSD
+goto 15b7
 :15b7501a
 set dev WD Blue SN570 NVMe SSD 1TB
 goto 15b7
@@ -35416,7 +35449,7 @@ exit
 set ven Genrad Inc
 exit
 :15cf
-set ven Hilscher Gesellschaft fÃ¼r Systemautomation mbH
+set ven Hilscher Gesellschaft für Systemautomation mbH
 exit
 :15cf0000
 set dev CIFX PCI/PCIe
@@ -35448,6 +35481,9 @@ exit
 :15d9
 set ven Super Micro Computer Inc
 exit
+:15d91b64
+set dev SCC-B8SB80-B1
+goto 15d9
 :15d91b67
 set dev AOC-S3916L-H16iR-32DD
 goto 15d9
@@ -38088,6 +38124,9 @@ goto 17f3
 :17f32015
 set dev RDC M2015 VGA-compatible graphics adapter
 goto 17f3
+:17f33010
+set dev R3010 HD Audio Controller
+goto 17f3
 :17f36011
 set dev R6011 ISA Bridge
 goto 17f3
@@ -39260,6 +39299,18 @@ set dev P4040
 goto 1957
 :1957041f
 set dev P3041
+goto 1957
+:19570420
+set dev QorIQ P5020 Communications Processor with security engine
+goto 1957
+:19570421
+set dev QorIQ P5020 Communications Processor without security engine
+goto 1957
+:19570428
+set dev QorIQ P5010 Communications Processor with security engine
+goto 1957
+:19570429
+set dev QorIQ P5010 Communications Processor without security engine
 goto 1957
 :19570440
 set dev T4240 with security
@@ -40519,34 +40570,34 @@ goto 1af4
 set dev Virtio filesystem
 goto 1af4
 :1af41041
-set dev Virtio network device
+set dev Virtio 1.0 network device
 goto 1af4
 :1af41042
-set dev Virtio block device
+set dev Virtio 1.0 block device
 goto 1af4
 :1af41043
-set dev Virtio console
+set dev Virtio 1.0 console
 goto 1af4
 :1af41044
-set dev Virtio RNG
+set dev Virtio 1.0 RNG
 goto 1af4
 :1af41045
-set dev Virtio memory balloon
+set dev Virtio 1.0 memory balloon
 goto 1af4
 :1af41048
-set dev Virtio SCSI
+set dev Virtio 1.0 SCSI
 goto 1af4
 :1af41049
-set dev Virtio filesystem
+set dev Virtio 1.0 filesystem
 goto 1af4
 :1af41050
-set dev Virtio GPU
+set dev Virtio 1.0 GPU
 goto 1af4
 :1af41052
-set dev Virtio input
+set dev Virtio 1.0 input
 goto 1af4
 :1af41053
-set dev Virtio socket
+set dev Virtio 1.0 socket
 goto 1af4
 :1af4105a
 set dev Virtio file system
@@ -41289,6 +41340,12 @@ goto 1c1f
 :1c1f0020
 set dev FD2110
 goto 1c1f
+:1c1f0021
+set dev FD722
+goto 1c1f
+:1c1f0022
+set dev FD788
+goto 1c1f
 :1c28
 set ven Lite-On IT Corp. / Plextor
 exit
@@ -41500,7 +41557,7 @@ goto 1c5f
 set dev PBlaze6 6920/6930
 goto 1c5f
 :1c5f003f
-set dev PBlaze7 7940/7946
+set dev PBlaze7 7940/7946 Gen5 NVMe SSD
 goto 1c5f
 :1c5f0540
 set dev PBlaze4 NVMe SSD
@@ -42801,11 +42858,20 @@ goto 1e0f
 :1e0f0011
 set dev NVMe SSD Controller CD7
 goto 1e0f
+:1e0f0013
+set dev NVMe SSD Controller CM7 2.5"
+goto 1e0f
+:1e0f0014
+set dev NVMe SSD Controller CM7 EDSFF
+goto 1e0f
 :1e0f001f
 set dev NVMe SSD Controller CD8
 goto 1e0f
 :1e17
 set ven Arnold & Richter Cine Technik GmbH & Co. Betriebs KG
+exit
+:1e18
+set ven Beijing GuangRunTong Technology Development Co.,Ltd
 exit
 :1e24
 set ven Squirrels Research Labs
@@ -42931,7 +42997,7 @@ goto 1e4b
 set ven GSI Technology
 exit
 :1e4c0010
-set dev APU [Leda]
+set dev Associative Processing Unit [Leda]
 goto 1e4c
 :1e50
 set ven IP3 Tech (HK) Limited
@@ -43227,41 +43293,83 @@ goto 1eed
 :1eed10a1
 set dev XDX110 Audio Controller
 goto 1eed
-:1eed1140
-set dev XDX120 Graphic/VGA Controller
+:1eed10a2
+set dev XDX110M
 goto 1eed
-:1eed1141
-set dev XDX120 Audio Controller
+:1eed10a4
+set dev XDX E1100
+goto 1eed
+:1eed1140
+set dev XDX120
+goto 1eed
+:1eed1142
+set dev XDX120M
+goto 1eed
+:1eed1144
+set dev XDX E1200
+goto 1eed
+:1eed1150
+set dev XDX120S
+goto 1eed
+:1eed11e4
+set dev XDX E1300
 goto 1eed
 :1eed1320
-set dev XDX150 Graphic/VGA Controller
+set dev XDX150
 goto 1eed
-:1eed1321
-set dev XDX150 Audio Controller
+:1eed1324
+set dev XDX X1500
+goto 1eed
+:1eed1330
+set dev XDX150S
+goto 1eed
+:1eed1340
+set dev XDX150T
+goto 1eed
+:1eed1350
+set dev XDX150U
 goto 1eed
 :1eed13c0
-set dev XDX160 Graphic/VGA Controller
-goto 1eed
-:1eed13c1
-set dev XDX160 Audio Controller
+set dev XDX160
 goto 1eed
 :1eed13d0
-set dev XDX161 Graphic/VGA Controller
-goto 1eed
-:1eed13d1
-set dev XDX161 Audio Controller
+set dev XDX160S
 goto 1eed
 :1eed1500
-set dev XDX180 Graphic/VGA Controller
+set dev XDX180
 goto 1eed
-:1eed1501
-set dev XDX180 Audio Controller
+:1eed1503
+set dev XDX R1800
+goto 1eed
+:1eed1504
+set dev XDX X1800
+goto 1eed
+:1eed1510
+set dev XDX180S
 goto 1eed
 :1eed15a0
-set dev XDX190 Graphic/VGA Controller
+set dev XDX190
 goto 1eed
-:1eed15a1
-set dev XDX190 Audio Controller
+:1eed15a3
+set dev XDX R1900
+goto 1eed
+:1eed15a4
+set dev XDX X1900
+goto 1eed
+:1eed15a5
+set dev XDX X1900M2
+goto 1eed
+:1eed15b0
+set dev XDX190S
+goto 1eed
+:1eed1810
+set dev XDX TJ01 Audio
+goto 1eed
+:1eed1820
+set dev XDX TJ02 Audio
+goto 1eed
+:1eed1830
+set dev XDX TJ03 Audio
 goto 1eed
 :1ef6
 set ven GrAI Matter Labs
@@ -43720,10 +43828,10 @@ exit
 set dev SCHD-PH-8 Phase detector
 goto 37d9
 :37d91140
-set dev VR-12-PCI
+set dev VR-12-PCI 12-ch Relay Actuator Card
 goto 37d9
 :37d91141
-set dev PCI-485(422)
+set dev PCI-485(422) Multi-port Serial Board
 goto 37d9
 :37d91142
 set dev PCI-CAN2
@@ -57720,6 +57828,9 @@ goto 8086
 :8086a721
 set dev Raptor Lake-P [UHD Graphics]
 goto 8086
+:8086a74f
+set dev GNA Scoring Accelerator module
+goto 8086
 :8086a77f
 set dev Volume Management Device NVMe RAID Controller Intel Corporation
 goto 8086
@@ -58564,7 +58675,7 @@ goto 9710
 set dev MCS9922 PCIe Multi-I/O Controller
 goto 9710
 :97109990
-set dev MCS9990 PCIe to 4â€Port USB 2.0 Host Controller
+set dev MCS9990 PCIe to 4-Port USB 2.0 Host Controller
 goto 9710
 :9850
 set ven 3Com (wrong ID)
@@ -58619,6 +58730,9 @@ set dev STAR2000 NVMe Controller
 goto 9d32
 :9d322001
 set dev STAR2000E NVMe SSD
+goto 9d32
+:9d322002
+set dev STAR2000C NVMe SSD
 goto 9d32
 :a000
 set ven Asix Electronics Corporation (Wrong ID)
@@ -58897,13 +59011,13 @@ exit
 set ven I-TEK OptoElectronics Co., LTD.
 exit
 :ca010212
-set dev Vulcan-CL
+set dev Vulcan-CL CameraLink Frame Grabber
 goto ca01
 :ca02
 set ven I-TEK OptoElectronics Co., LTD.
 exit
 :ca020213
-set dev Vulcan-CXP
+set dev Vulcan-CXP Frame Grabber
 goto ca02
 :ca3b
 set ven Cambrionix Ltd.
@@ -58962,6 +59076,9 @@ goto cddd
 :cdfa
 set ven NextSilicon Ltd
 exit
+:cdfa0007
+set dev Maverick
+goto cdfa
 :ceba
 set ven KEBA AG
 exit
@@ -58974,6 +59091,12 @@ goto cf86
 :d063
 set ven SolidRun
 exit
+:d0631000
+set dev SolidNET DPU
+goto d063
+:d0631500
+set dev Emulated NVMe
+goto d063
 :d161
 set ven Digium, Inc.
 exit
