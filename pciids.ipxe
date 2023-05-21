@@ -3492,6 +3492,9 @@ goto 1002
 :100273ef
 set dev Navi 23 [Radeon RX 6650 XT / 6700S / 6800S]
 goto 1002
+:100273f0
+set dev Navi 33 [Radeon RX 7600M XT]
+goto 1002
 :100273ff
 set dev Navi 23 [Radeon RX 6600/6600 XT/6600M]
 goto 1002
@@ -3519,14 +3522,23 @@ goto 1002
 :1002743f
 set dev Navi 24 [Radeon RX 6400/6500 XT/6500M]
 goto 1002
+:10027448
+set dev Navi31 [Radeon Pro W7900]
+goto 1002
 :1002744c
 set dev Navi 31 [Radeon RX 7900 XT/7900 XTX]
 goto 1002
+:1002745e
+set dev Navi 31
+goto 1002
 :10027480
-set dev Navi 33 [Radeon RX 7700S/7600S]
+set dev Navi 33 [Radeon RX 7700S/7600S/7600M XT]
 goto 1002
 :10027483
 set dev Navi 33 [Radeon RX 7600M/7600M XT]
+goto 1002
+:10027489
+set dev Navi 33
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -9033,6 +9045,9 @@ exit
 :1059
 set ven Kontron
 exit
+:10590004
+set dev FPGA M.2 (K20058)
+goto 1059
 :105a
 set ven Promise Technology, Inc.
 exit
@@ -18312,6 +18327,12 @@ goto 10de
 :10de1ff9
 set dev TU117GLM [Quadro T1000 Mobile]
 goto 10de
+:10de2080
+set dev GA100
+goto 10de
+:10de2081
+set dev GA100
+goto 10de
 :10de2082
 set dev GA100 [CMP 170HX]
 goto 10de
@@ -18326,6 +18347,9 @@ set dev GA100 [A100 SXM4 80GB]
 goto 10de
 :10de20b3
 set dev GA100 [A100-SXM-64GB]
+goto 10de
+:10de20b4
+set dev GA100
 goto 10de
 :10de20b5
 set dev GA100 [A100 PCIe 80GB]
@@ -18351,6 +18375,9 @@ goto 10de
 :10de20bf
 set dev GA100 [GRID A100B]
 goto 10de
+:10de20c0
+set dev GA100
+goto 10de
 :10de20c2
 set dev GA100 [CMP 170HX]
 goto 10de
@@ -18374,6 +18401,12 @@ set dev GA100 [A800 40GB PCIe]
 goto 10de
 :10de20fd
 set dev GA100 [A100T]
+goto 10de
+:10de20fe
+set dev GA100
+goto 10de
+:10de20ff
+set dev GA100
 goto 10de
 :10de2182
 set dev TU116 [GeForce GTX 1660 Ti]
@@ -18604,7 +18637,7 @@ goto 10de
 set dev GA104 [GeForce RTX 3070 Engineering Sample]
 goto 10de
 :10de24c7
-set dev GA104 [GeForce RTX 3060 GDDR6X]
+set dev GA104 [GeForce RTX 3060 8GB]
 goto 10de
 :10de24c8
 set dev GA104 [GeForce RTX 3070 GDDR6X]
@@ -18778,7 +18811,10 @@ goto 10de
 set dev AD102 [GeForce RTX 4090]
 goto 10de
 :10de26b1
-set dev AD102GL [L6000 / RTX 6000 Ada Generation]
+set dev AD102GL [RTX 6000 Ada Generation]
+goto 10de
+:10de26b2
+set dev AD102GL [RTX 5000 Ada Generation]
 goto 10de
 :10de26b5
 set dev AD102GL [L40]
@@ -25357,7 +25393,7 @@ goto 1267
 set ven Tektronix
 exit
 :1269
-set ven Thomson-CSF/TTM
+set ven Thales
 exit
 :126900b3
 set dev 5G Data Card [Cinterion MV31-W]
@@ -31593,6 +31629,9 @@ exit
 :1458
 set ven Gigabyte Technology Co., Ltd
 exit
+:14581002
+set dev Aourus Radeon RX6900XT Xtreme Waterforce WB 16G
+goto 1458
 :145822e8
 set dev Ellesmere [Radeon RX 480]
 goto 1458
@@ -31899,6 +31938,9 @@ exit
 :14a1
 set ven Systembase Co Ltd
 exit
+:14a14d02
+set dev SB16C1052PCI [Multi-2/PCIe RS232]
+goto 14a1
 :14a2
 set ven Millennium Engineering Inc
 exit
@@ -32102,6 +32144,9 @@ set dev MT7662E 802.11ac PCI Express Wireless Network Adapter
 goto 14c3
 :14c37915
 set dev MT7915E 802.11ax PCI Express Wireless Network Adapter
+goto 14c3
+:14c37922
+set dev MT7922 802.11ax PCI Express Wireless Network Adapter
 goto 14c3
 :14c37961
 set dev MT7921 802.11ax PCI Express Wireless Network Adapter
@@ -33333,6 +33378,18 @@ goto 14e4
 :14e4b990
 set dev BCM56990 Switch ASIC [Tomahawk4]
 goto 14e4
+:14e4b991
+set dev Tomahawk4
+goto 14e4
+:14e4b992
+set dev BCM56992 [Tomahawk4]
+goto 14e4
+:14e4b993
+set dev BCM56993 Switch ASIC [Tomahawk4]
+goto 14e4
+:14e4b995
+set dev BCM56995 Switch ASIC [Tomahawk4]
+goto 14e4
 :14e4b996
 set dev BCM56996 106G Switch ASIC [Tomahawk4G]
 goto 14e4
@@ -33345,9 +33402,6 @@ goto 14e4
 :14e4c909
 set dev BCM78909 Switch ASIC
 goto 14e4
-:14e4c914
-set dev BCM78914 Switch ASIC [Tomahawk6C]
-goto 14e4
 :14e4d802
 set dev BCM58802 Stingray 50Gb Ethernet SoC
 goto 14e4
@@ -33356,6 +33410,24 @@ set dev BCM58804 Stingray 100Gb Ethernet SoC
 goto 14e4
 :14e4f800
 set dev BCM78800 Switch ASIC [Trident5-X12]
+goto 14e4
+:14e4f900
+set dev BCM78900 Switch ASIC [Tomahawk5]
+goto 14e4
+:14e4f903
+set dev BCM78903 Switch ASIC [Tomahawk6]
+goto 14e4
+:14e4f905
+set dev BCM78905 Switch ASIC [Tomahawk5]
+goto 14e4
+:14e4f910
+set dev BCM78910 Switch ASIC [Tomahawk6]
+goto 14e4
+:14e4f914
+set dev BCM78914 Switch ASIC [Tomahawk6]
+goto 14e4
+:14e4f917
+set dev BCM78917 Switch ASIC [Tomahawk6]
 goto 14e4
 :14e5
 set ven Pixelfusion Ltd
@@ -36735,6 +36807,9 @@ goto 16d5
 :16d57054
 set dev APA7-504 Reconfigurable Artix-7 52,160 Cell FPGA module 24 LVDS channels
 goto 16d5
+:16d57072
+set dev AP731 Multi-function I/O Module with 12-bit DAC
+goto 16d5
 :16d57073
 set dev AP730 Multi-function I/O Module 16 Digital I/O 8 Differential Analog In 4 Analog Out
 goto 16d5
@@ -38771,6 +38846,9 @@ set dev NT50B01 Network Adapter
 goto 18f4
 :18f401e5
 set dev NT100A01 Network Adapter
+goto 18f4
+:18f40215
+set dev NT400D11 Network Adapter
 goto 18f4
 :18f40225
 set dev NT40A11 Network Adapter
@@ -40824,6 +40902,9 @@ goto 1b37
 :1b370026
 set dev ADQ8
 goto 1b37
+:1b370031
+set dev ADQ3
+goto 1b37
 :1b372014
 set dev TX320
 goto 1b37
@@ -41268,6 +41349,12 @@ goto 1bf4
 :1bfd
 set ven EeeTOP
 exit
+:1c00
+set ven Nanjing Qinheng Microelectronics Co., Ltd.
+exit
+:1c003252
+set dev CH382 PCIe Dual Port Serial Adapter
+goto 1c00
 :1c09
 set ven CSP, Inc.
 exit
@@ -41396,6 +41483,9 @@ set dev PacketMover 2x100Gb [Savona]
 goto 1c2c
 :1c2c00e1
 set dev PacketMover 2x100Gb [Tivoli]
+goto 1c2c
+:1c2c00e2
+set dev PacketMover 2x100Gb [Mango_04]
 goto 1c2c
 :1c2c00e3
 set dev PacketMover 2x10Gb [Tivoli]
@@ -43002,6 +43092,18 @@ goto 1e4c
 :1e50
 set ven IP3 Tech (HK) Limited
 exit
+:1e52
+set ven Tenstorrent Inc
+exit
+:1e52401e
+set dev Wormhole
+goto 1e52
+:1e52b140
+set dev Blackhole
+goto 1e52
+:1e52faca
+set dev Grayskull
+goto 1e52
 :1e57
 set ven Beijing Panyi Technology Co., Ltd
 exit
@@ -43092,6 +43194,9 @@ exit
 :1e951002
 set dev NVMe SSD [3DNAND] 2.5" U.2 (LJ1)
 goto 1e95
+:1e96
+set ven Drut Technologies Inc.
+exit
 :1e9f
 set ven Lynxi Technologies Co., Ltd.
 exit
@@ -43155,10 +43260,19 @@ exit
 :1ebd0101
 set dev Seirios 2063 Video Codec
 goto 1ebd
+:1ec6
+set ven Vastai Technologies (Shanghai) Inc.
+exit
+:1ec60100
+set dev SV100
+goto 1ec6
 :1ec8
 set ven Innosilicon Co Ltd
 exit
 :1ec88800
+set dev Fantasy I
+goto 1ec8
+:1ec88810
 set dev Fantasy I
 goto 1ec8
 :1ec89800
@@ -43168,6 +43282,9 @@ goto 1ec8
 set dev Fantasy II
 goto 1ec8
 :1ec89804
+set dev Fantasy II
+goto 1ec8
+:1ec89810
 set dev Fantasy II
 goto 1ec8
 :1ec9
@@ -43542,6 +43659,33 @@ goto 1fab
 :1fab0100
 set dev NoX Gamma
 goto 1fab
+:1fab01fe
+set dev Smart Memory Node Generic CXL Port (T2)
+goto 1fab
+:1fab01ff
+set dev Smart Memory Node Generic CXL Port (T3)
+goto 1fab
+:1fb0
+set ven ICube Corporation Limited
+exit
+:1fb01000
+set dev NF1000 Series GPU
+goto 1fb0
+:1fb01001
+set dev NF1001
+goto 1fb0
+:1fb02000
+set dev NF2000 Series GPU
+goto 1fb0
+:1fb03000
+set dev NF3000 Series GPU
+goto 1fb0
+:1fb04000
+set dev NF4000 Series GPU
+goto 1fb0
+:1fb05000
+set dev NF5000 Series GPU
+goto 1fb0
 :1fc0
 set ven Ascom (Finland) Oy
 exit
@@ -44511,6 +44655,9 @@ exit
 :4c48
 set ven LUNG HWA Electronics
 exit
+:4c4d
+set ven Liquid-Markets GmbH
+exit
 :4c52
 set ven LR-Link
 exit
@@ -45225,6 +45372,12 @@ exit
 :78c0
 set ven Herrick Technology Laboratories, Inc. [HTL]
 exit
+:78c00000
+set dev HTLv-1 / HTLv-2 / HTLv-13 / HTLv-23
+goto 78c0
+:78c00011
+set dev HTLv-53
+goto 78c0
 :7bde
 set ven MIDAC Corporation
 exit
@@ -56982,8 +57135,17 @@ goto 8086
 :8086a0b0
 set dev Tiger Lake-LP PCI Express Root Port #9
 goto 8086
+:8086a0b1
+set dev Tiger Lake-LP PCI Express Root Port #10
+goto 8086
+:8086a0bc
+set dev Tiger Lake-LP PCI Express Root Port #5
+goto 8086
 :8086a0bd
 set dev Tigerlake PCH-LP PCI Express Root Port #6
+goto 8086
+:8086a0be
+set dev Tiger Lake-LP PCI Express Root Port #7
 goto 8086
 :8086a0bf
 set dev Tiger Lake-LP PCI Express Root Port #8
@@ -58038,6 +58200,12 @@ exit
 :8401
 set ven TRENDware International Inc.
 exit
+:8510
+set ven Sietium Semiconductor Co., Ltd.
+exit
+:85100201
+set dev GenBu02 [GB2062-PCIe-C0]
+goto 8510
 :8686
 set ven SAP
 exit
@@ -58082,6 +58250,15 @@ set dev Ethernet Controller N10 Series Virtual Function
 goto 8848
 :88481081
 set dev Ethernet Controller N400 Series Virtual Function
+goto 8848
+:88488308
+set dev Ethernet Controller N500 Series for 1GbE (Quad-port, Copper RJ45)
+goto 8848
+:88488309
+set dev Ethernet Controller N500 Series Virtual Function
+goto 8848
+:88488318
+set dev Ethernet Controller N500 Series for 1GbE (Dual-port, Copper RJ45)
 goto 8848
 :8866
 set ven T-Square Design Inc.
