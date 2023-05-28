@@ -32145,6 +32145,9 @@ goto 14c3
 :14c37915
 set dev MT7915E 802.11ax PCI Express Wireless Network Adapter
 goto 14c3
+:14c37916
+set dev MT7905D/MT7975
+goto 14c3
 :14c37922
 set dev MT7922 802.11ax PCI Express Wireless Network Adapter
 goto 14c3
@@ -33412,13 +33415,13 @@ goto 14e4
 set dev BCM78800 Switch ASIC [Trident5-X12]
 goto 14e4
 :14e4f900
-set dev BCM78900 Switch ASIC [Tomahawk5]
+set dev BCM78900 Switch ASIC [Tomahawk6]
 goto 14e4
 :14e4f903
 set dev BCM78903 Switch ASIC [Tomahawk6]
 goto 14e4
 :14e4f905
-set dev BCM78905 Switch ASIC [Tomahawk5]
+set dev BCM78905 Switch ASIC [Tomahawk5+]
 goto 14e4
 :14e4f910
 set dev BCM78910 Switch ASIC [Tomahawk6]
@@ -42231,6 +42234,9 @@ goto 1d6a
 :1d6a12b1
 set dev AQC112 NBase-T/IEEE 802.3bz Ethernet Controller [AQtion]
 goto 1d6a
+:1d6a14c0
+set dev AQC113C NBase-T/IEEE 802.3bz Ethernet Controller [AQtion]
+goto 1d6a
 :1d6a87b1
 set dev AQC107 NBase-T/IEEE 802.3bz Ethernet Controller [AQtion]
 goto 1d6a
@@ -43261,10 +43267,16 @@ exit
 set dev Seirios 2063 Video Codec
 goto 1ebd
 :1ec6
-set ven Vastai Technologies (Shanghai) Inc.
+set ven Vastai Technologies
 exit
 :1ec60100
 set dev SV100
+goto 1ec6
+:1ec60200
+set dev SG100
+goto 1ec6
+:1ec6020f
+set dev SG100 vGPU
 goto 1ec6
 :1ec8
 set ven Innosilicon Co Ltd
@@ -48779,6 +48791,12 @@ set dev 82597EX 10GbE Ethernet Controller
 goto 8086
 :80861b48
 set dev 82597EX 10GbE Ethernet Controller
+goto 8086
+:80861bd2
+set dev Sapphire Rapids SATA AHCI Controller
+goto 8086
+:80861bf2
+set dev Sapphire Rapids SATA AHCI Controller
 goto 8086
 :80861c00
 set dev 6 Series/C200 Series Chipset Family Desktop SATA Controller (IDE mode, ports 0-3)
@@ -55545,6 +55563,21 @@ goto 8086
 :80867d0b
 set dev Volume Management Device NVMe RAID Controller Intel Corporation
 goto 8086
+:80867d40
+set dev Meteor Lake [Intel Graphics]
+goto 8086
+:80867d45
+set dev Meteor Lake [Intel Graphics]
+goto 8086
+:80867d55
+set dev Meteor Lake [Intel Graphics]
+goto 8086
+:80867d60
+set dev Meteor Lake [Intel Graphics]
+goto 8086
+:80867dd5
+set dev Meteor Lake [Intel Graphics]
+goto 8086
 :80867e01
 set dev Meteor Lake-P LPC/eSPI Controller
 goto 8086
@@ -58902,6 +58935,9 @@ goto 9d32
 :9d321502
 set dev STAR1500E NVMe SSD
 goto 9d32
+:9d321504
+set dev STAR1500L NVMe SSD
+goto 9d32
 :9d322000
 set dev STAR2000 NVMe Controller
 goto 9d32
@@ -58910,6 +58946,9 @@ set dev STAR2000E NVMe SSD
 goto 9d32
 :9d322002
 set dev STAR2000C NVMe SSD
+goto 9d32
+:9d322003
+set dev STAR2000L NVMe SSD
 goto 9d32
 :a000
 set ven Asix Electronics Corporation (Wrong ID)
