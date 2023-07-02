@@ -3529,7 +3529,7 @@ goto 1002
 set dev Navi 31 [Radeon RX 7900 XT/7900 XTX]
 goto 1002
 :1002745e
-set dev Navi 31
+set dev Navi31 [Radeon Pro W7800]
 goto 1002
 :10027480
 set dev Navi 33 [Radeon RX 7700S/7600S/7600M XT]
@@ -18400,7 +18400,7 @@ goto 10de
 set dev GA100 [A800 40GB PCIe]
 goto 10de
 :10de20fd
-set dev GA100 [A100T]
+set dev GA100 [AX800 Converged Accelerator]
 goto 10de
 :10de20fe
 set dev GA100
@@ -18529,7 +18529,7 @@ goto 10de
 set dev GH100 [H100 CNX]
 goto 10de
 :10de2321
-set dev GH100
+set dev GH100 [H100L 94GB]
 goto 10de
 :10de2322
 set dev GH100 [H800 PCIe]
@@ -18538,7 +18538,7 @@ goto 10de
 set dev GH100 [H800]
 goto 10de
 :10de2330
-set dev GH100[H100 SXM5 80GB]
+set dev GH100 [H100 SXM5 80GB]
 goto 10de
 :10de2331
 set dev GH100 [H100 PCIe]
@@ -18548,6 +18548,9 @@ set dev GH100 [H100]
 goto 10de
 :10de2339
 set dev GH100 [H100]
+goto 10de
+:10de233a
+set dev GH100 [H800L 94GB]
 goto 10de
 :10de2414
 set dev GA103 [GeForce RTX 3060 Ti]
@@ -18841,7 +18844,7 @@ goto 10de
 set dev AD104 [GeForce RTX 4070 Ti]
 goto 10de
 :10de2785
-set dev AD104
+set dev AD104 [AC AD104 20GB]
 goto 10de
 :10de2786
 set dev AD104 [GeForce RTX 4070]
@@ -25446,6 +25449,9 @@ goto 126f
 :126f0750
 set dev SM750
 goto 126f
+:126f0768
+set dev SM768
+goto 126f
 :126f0810
 set dev SM810 LynxE
 goto 126f
@@ -27048,6 +27054,12 @@ goto 1344
 :13445181
 set dev 9100 MAX NVMe SSD
 goto 1344
+:13445188
+set dev 7100 ECO NVMe SSD
+goto 1344
+:13445189
+set dev 7100 MAX NVMe SSD
+goto 1344
 :13445190
 set dev 9200 ECO NVMe SSD
 goto 1344
@@ -27080,6 +27092,18 @@ set dev 7450 PRO NVMe SSD
 goto 1344
 :134451c4
 set dev 7450 MAX NVMe SSD
+goto 1344
+:13445410
+set dev 2200S NVMe SSD
+goto 1344
+:13445411
+set dev 2450 NVMe SSD (DRAM-less)
+goto 1344
+:13445414
+set dev 3460 NVMe SSD
+goto 1344
+:13446001
+set dev 2100AI NVMe SSD [Nitro]
 goto 1344
 :1345
 set ven Arescom Inc
@@ -33415,7 +33439,7 @@ goto 14e4
 set dev BCM78800 Switch ASIC [Trident5-X12]
 goto 14e4
 :14e4f900
-set dev BCM78900 Switch ASIC [Tomahawk6]
+set dev BCM78900 Switch ASIC [Tomahawk5]
 goto 14e4
 :14e4f903
 set dev BCM78903 Switch ASIC [Tomahawk6]
@@ -35373,6 +35397,12 @@ goto 15b7
 :15b75006
 set dev WD Black SN750 / PC SN730 NVMe SSD
 goto 15b7
+:15b75007
+set dev PC SN530 NVMe SSD (DRAM-less)
+goto 15b7
+:15b75008
+set dev PC SN530 NVMe SSD
+goto 15b7
 :15b75009
 set dev WD Blue SN550 NVMe SSD
 goto 15b7
@@ -35384,6 +35414,9 @@ set dev WD Ultrastar DC SN340 NVMe SSD
 goto 15b7
 :15b75011
 set dev WD PC SN810 / Black SN850 NVMe SSD
+goto 15b7
+:15b75015
+set dev PC SN740 NVMe SSD
 goto 15b7
 :15b75017
 set dev WD Black SN770 NVMe SSD
@@ -39717,6 +39750,12 @@ goto 1987
 :19875018
 set dev E18 PCIe4 NVMe Controller
 goto 1987
+:19875019
+set dev PS5019-E19 PCIe4 NVMe Controller (DRAM-less)
+goto 1987
+:19875021
+set dev PS5021-E21 PCIe4 NVMe Controller (DRAM-less)
+goto 1987
 :1989
 set ven Montilio Inc.
 exit
@@ -41608,7 +41647,7 @@ goto 1c5c
 set dev BC501 NVMe Solid State Drive
 goto 1c5c
 :1c5c1339
-set dev BC511
+set dev BC511 NVMe SSD
 goto 1c5c
 :1c5c1504
 set dev PC400 NVMe SSD
@@ -41616,11 +41655,17 @@ goto 1c5c
 :1c5c1527
 set dev PC401 NVMe Solid State Drive 256GB
 goto 1c5c
+:1c5c1639
+set dev PC611 NVMe Solid State Drive
+goto 1c5c
 :1c5c174a
-set dev Gold P31/PC711 NVMe Solid State Drive
+set dev Gold P31/BC711/PC711 NVMe Solid State Drive
 goto 1c5c
 :1c5c1959
-set dev Platinum P41 NVMe Solid State Drive 2TB
+set dev Platinum P41/PC801 NVMe Solid State Drive
+goto 1c5c
+:1c5c1d59
+set dev BC901 NVMe Solid State Drive (DRAM-less)
 goto 1c5c
 :1c5c2204
 set dev 960GB TLC PCIe Gen3 x4 NVMe M.2 22110
@@ -41650,7 +41695,7 @@ goto 1c5f
 set dev PBlaze6 6920/6930
 goto 1c5f
 :1c5f003f
-set dev PBlaze7 7940/7946 Gen5 NVMe SSD
+set dev PBlaze7 7940/7946 NVMe SSD
 goto 1c5f
 :1c5f0540
 set dev PBlaze4 NVMe SSD
@@ -42537,8 +42582,14 @@ goto 1d95
 :1d97
 set ven Shenzhen Longsys Electronics Co., Ltd.
 exit
+:1d971d97
+set dev Lexar NM620 NVME SSD (DRAM-less)
+goto 1d97
 :1d972263
 set dev SM2263EN/SM2263XT-based OEM SSD
+goto 1d97
+:1d972269
+set dev Lexar NM760 NVME SSD (DRAM-less)
 goto 1d97
 :1d9b
 set ven Meta Platforms, Inc.
@@ -43089,6 +43140,9 @@ goto 1e4b
 :1e4b1601
 set dev NVMe SSD Controller MAP1601
 goto 1e4b
+:1e4b1602
+set dev NVMe SSD Controller MAP1602
+goto 1e4b
 :1e4c
 set ven GSI Technology
 exit
@@ -43200,6 +43254,9 @@ exit
 :1e951002
 set dev NVMe SSD [3DNAND] 2.5" U.2 (LJ1)
 goto 1e95
+:1e959100
+set dev CL1-3D256-Q11 NVMe SSD M.2
+goto 1e95
 :1e96
 set ven Drut Technologies Inc.
 exit
@@ -43297,7 +43354,7 @@ goto 1ec8
 set dev Fantasy II
 goto 1ec8
 :1ec89810
-set dev Fantasy II
+set dev Fantasy II-M
 goto 1ec8
 :1ec9
 set ven Wingtech Group(HongKong)Limited
@@ -43862,6 +43919,9 @@ set dev SNVS2000G [NV1 NVMe PCIe SSD 2TB]
 goto 2646
 :26465012
 set dev DC1500M U.2 Enterprise SSD
+goto 2646
+:26465013
+set dev FURY Renegade NVMe SSD
 goto 2646
 :270b
 set ven Xantel Corporation
@@ -45633,6 +45693,9 @@ goto 8086
 :808602bc
 set dev Comet Lake PCI Express Root Port #5
 goto 8086
+:808602bf
+set dev Comet Lake PCI Express Root Port #8
+goto 8086
 :808602c5
 set dev Comet Lake Serial IO I2C Host Controller
 goto 8086
@@ -45642,8 +45705,14 @@ goto 8086
 :808602d3
 set dev Comet Lake SATA AHCI Controller
 goto 8086
+:808602d7
+set dev Comet Lake RAID Controller
+goto 8086
 :808602e0
 set dev Comet Lake Management Engine Interface
+goto 8086
+:808602e3
+set dev Comet Lake AMT SOL Redirection
 goto 8086
 :808602e8
 set dev Serial IO I2C Host Controller
@@ -46576,7 +46645,7 @@ goto 8086
 set dev Ethernet Controller XXV710 Intel(R) FPGA Programmable Acceleration Card N3000 for Networking
 goto 8086
 :80860d9f
-set dev Ethernet Controller (2) I225-IT
+set dev Ethernet Controller I225-IT
 goto 8086
 :80860dcd
 set dev Ethernet Connection C825-X
@@ -47807,6 +47876,9 @@ set dev Ethernet Controller I226-LM
 goto 8086
 :8086125c
 set dev Ethernet Controller I226-V
+goto 8086
+:8086125d
+set dev Ethernet Controller I226-IT
 goto 8086
 :80861360
 set dev 82806AA PCI64 Hub PCI Bridge
@@ -54015,6 +54087,9 @@ goto 8086
 :8086423d
 set dev WiMAX/WiFi Link 5150
 goto 8086
+:80864389
+set dev WM590 Chipset LPC Controller
+goto 8086
 :8086438b
 set dev Tiger Lake-H LPC/eSPI Controller
 goto 8086
@@ -54027,11 +54102,17 @@ goto 8086
 :808643b0
 set dev Tiger Lake-H PCI Express Root Port #9
 goto 8086
+:808643ba
+set dev Tiger Lake-H PCIe Root Port #3
+goto 8086
 :808643bc
 set dev Tiger Lake-H PCI Express Root Port #5
 goto 8086
 :808643c8
 set dev Tiger Lake-H HD Audio Controller
+goto 8086
+:808643d3
+set dev Tiger Lake SATA AHCI Controller
 goto 8086
 :808643e0
 set dev Tiger Lake-H Management Engine Interface
@@ -54068,6 +54149,9 @@ set dev Elkhart Lake [UHD Graphics Gen11 16EU]
 goto 8086
 :80864571
 set dev Elkhart Lake [UHD Graphics Gen11 32EU]
+goto 8086
+:80864602
+set dev Alder Lake Host and DRAM Controller
 goto 8086
 :8086460d
 set dev 12th Gen Core Processor PCI Express x16 Controller #1
@@ -54122,6 +54206,9 @@ set dev 12th Gen Core Processor PCI Express x4 Controller #0
 goto 8086
 :8086464f
 set dev 12th Gen Core Processor Gaussian & Neural Accelerator
+goto 8086
+:8086465d
+set dev Alder Lake Imaging Signal Processor
 goto 8086
 :80864660
 set dev 12th Gen Core Processor Host Bridge/DRAM Registers
@@ -54249,8 +54336,17 @@ goto 8086
 :80864b39
 set dev Elkhart Lake PCH PCI Express Root Port #1
 goto 8086
+:80864b3c
+set dev Elkhart Lake PCIe Root Port #4
+goto 8086
 :80864b3e
 set dev Elkhart Lake PCH PCI Express Root Port #6
+goto 8086
+:80864b4b
+set dev Elkhart Lake Serial IO I2C Controller #4
+goto 8086
+:80864b4d
+set dev Elkhart Lake Serial IO UART Controller #2
 goto 8086
 :80864b58
 set dev Elkhart Lake High Density Audio bus interface
@@ -54483,6 +54579,9 @@ goto 8086
 :80865182
 set dev Alder Lake PCH eSPI Controller
 goto 8086
+:80865187
+set dev Alder Lake LPC Controller
+goto 8086
 :808651a3
 set dev Alder Lake PCH-P SMBus Host Controller
 goto 8086
@@ -54494,6 +54593,12 @@ set dev Alder Lake PCH UART #0
 goto 8086
 :808651a9
 set dev Alder Lake PCH UART #1
+goto 8086
+:808651aa
+set dev Alder Lake SPI Controller
+goto 8086
+:808651ab
+set dev Alder Lake SPI Controller
 goto 8086
 :808651b1
 set dev Alder Lake PCI Express x1 Root Port #10
@@ -54509,6 +54614,9 @@ set dev Alder Lake-P Serial IO I2C Controller #1
 goto 8086
 :808651c8
 set dev Alder Lake PCH-P High Definition Audio Controller
+goto 8086
+:808651cc
+set dev Alder Lake Smart Sound Technology Audio Controller
 goto 8086
 :808651d3
 set dev Alder Lake-P SATA AHCI Controller
@@ -54579,6 +54687,15 @@ goto 8086
 :80865695
 set dev DG2 [Iris Xe MAX A200M]
 goto 8086
+:80865696
+set dev DG2 [Arc A570M]
+goto 8086
+:80865697
+set dev DG2 [Arc A530M]
+goto 8086
+:80865698
+set dev DG2 [Arc Xe Graphics]
+goto 8086
 :808656a0
 set dev DG2 [Arc A770]
 goto 8086
@@ -54588,11 +54705,26 @@ goto 8086
 :808656a2
 set dev DG2 [Arc A580]
 goto 8086
+:808656a3
+set dev DG2 [Arc Xe Graphics]
+goto 8086
+:808656a4
+set dev DG2 [Arc Xe Graphics]
+goto 8086
 :808656a5
 set dev DG2 [Arc A380]
 goto 8086
 :808656a6
 set dev DG2 [Arc A310]
+goto 8086
+:808656a7
+set dev DG2 [Arc Xe Graphics]
+goto 8086
+:808656a8
+set dev DG2 [Arc Xe Graphics]
+goto 8086
+:808656a9
+set dev DG2 [Arc Xe Graphics]
 goto 8086
 :808656b0
 set dev DG2 [Arc Pro A30M]
@@ -54600,11 +54732,41 @@ goto 8086
 :808656b1
 set dev DG2 [Arc Pro A40/A50]
 goto 8086
+:808656b2
+set dev DG2 [Arc Pro A60M]
+goto 8086
+:808656b3
+set dev DG2 [Arc Pro A60]
+goto 8086
 :808656c0
-set dev Data Center GPU Flex 170
+set dev ATS-M [Data Center GPU Flex 170]
 goto 8086
 :808656c1
-set dev Data Center GPU Flex 140
+set dev ATS-M [Data Center GPU Flex 140]
+goto 8086
+:80865780
+set dev Thunderbolt 80/120G Bridge [Barlow Ridge Host 80G 2023]
+goto 8086
+:80865781
+set dev Thunderbolt 80/120G NHI [Barlow Ridge Host 80G 2023]
+goto 8086
+:80865782
+set dev Thunderbolt 80/120G USB Controller [Barlow Ridge Host 80G 2023]
+goto 8086
+:80865783
+set dev Thunderbolt Bridge [Barlow Ridge Host 40G 2023]
+goto 8086
+:80865784
+set dev Thunderbolt NHI [Barlow Ridge Host 40G 2023]
+goto 8086
+:80865785
+set dev Thunderbolt USB Controller [Barlow Ridge Host 40G 2023]
+goto 8086
+:80865786
+set dev Thunderbolt 80/120G Bridge [Barlow Ridge Hub 80G 2023]
+goto 8086
+:80865787
+set dev Thunderbolt 80/120G USB Controller [Barlow Ridge Hub 80G 2023]
 goto 8086
 :8086579c
 set dev Ethernet Connection E825-C for backplane
@@ -54614,6 +54776,12 @@ set dev Ethernet Connection E825-C for QSFP
 goto 8086
 :8086579e
 set dev Ethernet Connection E825-C for SFP
+goto 8086
+:808657a4
+set dev Thunderbolt Bridge [Barlow Ridge Hub 40G 2023]
+goto 8086
+:808657a5
+set dev Thunderbolt USB Controller [Barlow Ridge Hub 40G 2023]
 goto 8086
 :808657b1
 set dev Ethernet Controller E610 1GBASE T
@@ -55564,19 +55732,19 @@ goto 8086
 set dev Volume Management Device NVMe RAID Controller Intel Corporation
 goto 8086
 :80867d40
-set dev Meteor Lake [Intel Graphics]
+set dev Meteor Lake-M [Intel Graphics]
 goto 8086
 :80867d45
-set dev Meteor Lake [Intel Graphics]
+set dev Meteor Lake-P [Intel Graphics]
 goto 8086
 :80867d55
-set dev Meteor Lake [Intel Graphics]
+set dev Meteor Lake-P [Intel Graphics]
 goto 8086
 :80867d60
-set dev Meteor Lake [Intel Graphics]
+set dev Meteor Lake-M [Intel Graphics]
 goto 8086
 :80867dd5
-set dev Meteor Lake [Intel Graphics]
+set dev Meteor Lake-P [Intel Graphics]
 goto 8086
 :80867e01
 set dev Meteor Lake-P LPC/eSPI Controller
@@ -58276,7 +58444,7 @@ goto 8848
 set dev Ethernet Controller N400 Series for 1GbE (Quad-port)
 goto 8848
 :88481060
-set dev Ethernet Controller N10 Series for 10GbE (8-port)
+set dev Ethernet Controller N10 Series for 1GbE or 10GbE (8-port)
 goto 8848
 :88481080
 set dev Ethernet Controller N10 Series Virtual Function
