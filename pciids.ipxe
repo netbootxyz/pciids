@@ -43036,7 +43036,7 @@ goto 1bb1
 set dev FireCuda 520/IronWolf 525 SSD
 goto 1bb1
 :1bb15018
-set dev FireCuda 530 SSD
+set dev E18 PCIe SSD
 goto 1bb1
 :1bb15019
 set dev BarraCuda PCIe SSD (DRAM-less)
