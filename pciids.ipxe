@@ -46624,7 +46624,7 @@ goto 1fe0
 set dev AWM 2-M
 goto 1fe0
 :1fe1
-set ven Beijing Eswin Computing Technology Co., Ltd.
+set ven Beijing ESWIN Computing Technology Co., Ltd.
 exit
 :1fe4
 set ven HippStor Technology
