@@ -58243,7 +58243,7 @@ goto 8086
 set dev Jasper Lake Shared SRAM
 goto 8086
 :80864df0
-set dev Wi-Fi 6 AX201 160MHz
+set dev Wireless-AC 9560 160MHz
 goto 8086
 :80864df8
 set dev Jasper Lake SD Controller
