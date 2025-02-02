@@ -51,6 +51,9 @@ goto 0014
 :00147a10
 set dev Hyper Transport Bridge Controller
 goto 0014
+:00147a13
+set dev 7A2000 PCH Gigabit Ethernet Controller
+goto 0014
 :00147a14
 set dev EHCI USB Controller
 goto 0014
@@ -71,6 +74,9 @@ set dev OHCI USB Controller
 goto 0014
 :00147a25
 set dev LG100 GPU
+goto 0014
+:00147a27
+set dev 7A2000 PCH I2S Controller
 goto 0014
 :00147a29
 set dev PCI-to-PCI Bridge
@@ -254,6 +260,9 @@ set dev GP102
 goto 0709
 :07090201
 set dev GP201
+goto 0709
+:07090202
+set dev GP202
 goto 0709
 :0721
 set ven Sapphire, Inc.
@@ -1286,6 +1295,9 @@ set dev Pooky
 goto 1002
 :10021561
 set dev Anubis
+goto 1002
+:10021586
+set dev Strix Halo [Radeon Graphics / Radeon 8050S Graphics / Radeon 8060S Graphics]
 goto 1002
 :100215bf
 set dev Phoenix1
@@ -4192,7 +4204,7 @@ goto 1002
 set dev Kabini HDMI/DP Audio
 goto 1002
 :10029850
-set dev Mullins [Radeon R3 Graphics]
+set dev Mullins [Radeon R2/R3 Graphics]
 goto 1002
 :10029851
 set dev Mullins [Radeon R4/R5 Graphics]
@@ -5394,6 +5406,30 @@ goto 1022
 :10221103
 set dev K8 [Athlon64/Opteron] Miscellaneous Control
 goto 1022
+:10221110
+set dev Krackan Internal PCIe GPP Bridge 0 to Bus A
+goto 1022
+:10221111
+set dev Krackan Internal PCIe GPP Bridge 0 to Bus B
+goto 1022
+:10221112
+set dev Krackan Internal PCIe GPP Bridge 0 to Bus C
+goto 1022
+:10221113
+set dev Krackan PCIe Dummy Function
+goto 1022
+:10221116
+set dev Krackan PCIe Dummy Function
+goto 1022
+:10221117
+set dev Krackan PCIe Dummy Function
+goto 1022
+:10221122
+set dev Krackan Root Complex
+goto 1022
+:10221123
+set dev Krackan IOMMU
+goto 1022
 :10221200
 set dev Family 10h Processor HyperTransport Configuration
 goto 1022
@@ -5408,6 +5444,54 @@ set dev Family 10h Processor Miscellaneous Control
 goto 1022
 :10221204
 set dev Family 10h Processor Link Control
+goto 1022
+:10221248
+set dev Krackan Data Fabric; Function 0
+goto 1022
+:10221249
+set dev Krackan Data Fabric; Function 1
+goto 1022
+:1022124a
+set dev Krackan Data Fabric; Function 2
+goto 1022
+:1022124b
+set dev Krackan Data Fabric; Function 3
+goto 1022
+:1022124c
+set dev Krackan Data Fabric; Function 4
+goto 1022
+:1022124d
+set dev Krackan Data Fabric; Function 5
+goto 1022
+:1022124e
+set dev Krackan Data Fabric; Function 6
+goto 1022
+:1022124f
+set dev Krackan Data Fabric; Function 7
+goto 1022
+:102212b8
+set dev Strix Halo Data Fabric; Function 0
+goto 1022
+:102212b9
+set dev Strix Halo Data Fabric; Function 1
+goto 1022
+:102212ba
+set dev Strix Halo Data Fabric; Function 2
+goto 1022
+:102212bb
+set dev Strix Halo Data Fabric; Function 3
+goto 1022
+:102212bc
+set dev Strix Halo Data Fabric; Function 4
+goto 1022
+:102212bd
+set dev Strix Halo Data Fabric; Function 5
+goto 1022
+:102212be
+set dev Strix Halo Data Fabric; Function 6
+goto 1022
+:102212bf
+set dev Strix Halo Data Fabric; Function 7
 goto 1022
 :102212c0
 set dev Turin Data Fabric; Function 0
@@ -6046,25 +6130,25 @@ goto 1022
 set dev AMD IPU Device
 goto 1022
 :10221507
-set dev Strix Root Complex
+set dev Strix/Strix Halo Root Complex
 goto 1022
 :10221508
-set dev Strix IOMMU
+set dev Strix/Strix Halo IOMMU
 goto 1022
 :10221509
-set dev Strix Dummy Host Bridge
+set dev Strix/Strix Halo Dummy Host Bridge
 goto 1022
 :1022150a
-set dev Strix PCIe USB4 Bridge
+set dev Strix/Strix Halo PCIe USB4 Bridge
 goto 1022
 :1022150b
-set dev Strix GPP Bridge
+set dev Strix/Strix Halo GPP Bridge
 goto 1022
 :1022150c
-set dev Strix Internal GPP Bridge to Bus [C:A]
+set dev Strix/Strix Halo Internal GPP Bridge to Bus [C:A]
 goto 1022
 :1022150d
-set dev Strix PCIe Dummy function
+set dev Strix/Strix Halo PCIe Dummy Function
 goto 1022
 :10221510
 set dev Family 14h Processor Root Complex
@@ -6844,10 +6928,10 @@ goto 1022
 set dev Family 12h/14h Processor Function 7
 goto 1022
 :102217e0
-set dev Strix CCP/ASP
+set dev Strix/Krackan/Strix Halo CCP/ASP
 goto 1022
 :102217f0
-set dev Strix Neural Processing Unit
+set dev Strix/Krackan/Strix Halo Neural Processing Unit
 goto 1022
 :10222000
 set dev 79C97x [PCnet32 LANCE]
@@ -19233,6 +19317,9 @@ goto 10de
 :10de2324
 set dev GH100 [H800]
 goto 10de
+:10de2328
+set dev GH100 [H20B]
+goto 10de
 :10de2329
 set dev GH100 [H20]
 goto 10de
@@ -19581,6 +19668,9 @@ goto 10de
 :10de2689
 set dev AD102 [GeForce RTX 4070 Ti SUPER]
 goto 10de
+:10de26af
+set dev AD102 [PG137]
+goto 10de
 :10de26b1
 set dev AD102GL [RTX 6000 Ada Generation]
 goto 10de
@@ -19604,6 +19694,9 @@ set dev AD102GL [L40S]
 goto 10de
 :10de26ba
 set dev AD102GL [L20]
+goto 10de
+:10de26bb
+set dev AD102GL [L30]
 goto 10de
 :10de26f5
 set dev AD102GL [L40 CNX]
@@ -19719,6 +19812,9 @@ goto 10de
 :10de28a1
 set dev AD107M [GeForce RTX 4050 Max-Q / Mobile]
 goto 10de
+:10de28a3
+set dev AD107M [GeForce RTX 3050 A Laptop GPU]
+goto 10de
 :10de28b0
 set dev AD107GL [RTX 2000 / 2000E Ada Generation]
 goto 10de
@@ -19746,6 +19842,9 @@ goto 10de
 :10de2900
 set dev GB100 [Reserved Dev ID A]
 goto 10de
+:10de2901
+set dev GB100 [B200]
+goto 10de
 :10de2940
 set dev GB100 [Reserved Dev ID B]
 goto 10de
@@ -19757,6 +19856,15 @@ set dev GB102
 goto 10de
 :10de29c0
 set dev GB102
+goto 10de
+:10de2b85
+set dev GB202 [GeForce RTX 5090]
+goto 10de
+:10de2b87
+set dev GB202 [GeForce RTX 5090 D]
+goto 10de
+:10de2c02
+set dev GB203 [GeForce RTX 5080]
 goto 10de
 :10de2c18
 set dev GB203M / GN22 [GeForce RTX 5090 Max-Q / Mobile]
@@ -19778,6 +19886,9 @@ set dev AD108M [GeForce RTX 5070 Max-Q / Mobile]
 goto 10de
 :10de2d19
 set dev AD108M [GeForce RTX 5060 Max-Q / Mobile]
+goto 10de
+:10de2d2c
+set dev GB6-128 (N22Y-ES-A1)
 goto 10de
 :10de2d58
 set dev AD108M [GeForce RTX 5070 Max-Q / Mobile]
@@ -25426,8 +25537,44 @@ goto 11f6
 set ven Scientific Atlanta
 exit
 :11f8
-set ven PMC-Sierra Inc.
+set ven Microchip Technology
 exit
+:11f85000
+set dev PM50100 Switchtec PFX 100xG5 Fanout PCIe Switch
+goto 11f8
+:11f85028
+set dev PM50028 Switchtec PFX 28xG5 Fanout PCIe Switch
+goto 11f8
+:11f85036
+set dev PM50036 Switchtec PFX 36xG5 Fanout PCIe Switch
+goto 11f8
+:11f85052
+set dev PM50052 Switchtec PFX 52xG5 Fanout PCIe Switch
+goto 11f8
+:11f85068
+set dev PM50068 Switchtec PFX 68xG5 Fanout PCIe Switch
+goto 11f8
+:11f85084
+set dev PM50084 Switchtec PFX 84xG5 Fanout PCIe Switch
+goto 11f8
+:11f85100
+set dev PM51100 Switchtec PSX 100xG5 Programmable PCIe Switch
+goto 11f8
+:11f85128
+set dev PM51028 Switchtec PSX 28xG5 Programmable PCIe Switch
+goto 11f8
+:11f85136
+set dev PM51036 Switchtec PSX 36xG5 Programmable PCIe Switch
+goto 11f8
+:11f85152
+set dev PM51052 Switchtec PSX 52xG5 Programmable PCIe Switch
+goto 11f8
+:11f85168
+set dev PM51068 Switchtec PSX 68xG5 Programmable PCIe Switch
+goto 11f8
+:11f85184
+set dev PM51084 Switchtec PSX 84xG5 Programmable PCIe Switch
+goto 11f8
 :11f85220
 set dev BR522x [PMC-Sierra maxRAID SAS Controller]
 goto 11f8
@@ -28347,6 +28494,12 @@ goto 1344
 :134451b9
 set dev 6500 ION NVMe SSD
 goto 1344
+:134451bb
+set dev 9550 PRO NVMe SSD
+goto 1344
+:134451bd
+set dev 9550 MAX NVMe SSD
+goto 1344
 :134451c0
 set dev 7400 PRO NVMe SSD
 goto 1344
@@ -28358,6 +28511,9 @@ set dev 7450 PRO NVMe SSD
 goto 1344
 :134451c4
 set dev 7450 MAX NVMe SSD
+goto 1344
+:134451cb
+set dev 6550 ION NVMe SSD
 goto 1344
 :13445404
 set dev 2210 NVMe SSD [Cobain]
@@ -28915,13 +29071,13 @@ goto 1360
 set dev GPS180AMC GPS Receiver (PCI Express / MicroTCA / AdvancedMC)
 goto 1360
 :13600209
-set dev GNS181PEX GPS/Galileo/GLONASS/BEIDOU receiver (PCI Express)
+set dev GNS181PEX GNSS receiver (PCI Express)
 goto 1360
 :1360020a
 set dev GPS183PEX GPS Receiver (PCI Express)
 goto 1360
 :1360020b
-set dev GNS183PEX GPS/Galileo/GLONASS/BEIDOU receiver (PCI Express)
+set dev GNS183PEX GNSS receiver (PCI Express)
 goto 1360
 :13600301
 set dev TCR510PCI IRIG Timecode Reader
@@ -33207,6 +33363,9 @@ goto 144d
 :144da80d
 set dev NVMe SSD Controller PM9C1a (DRAM-less)
 goto 144d
+:144da80f
+set dev BM9C1 QLC NVME SSD (DRAM-less)
+goto 144d
 :144da820
 set dev NVMe SSD Controller 171X
 goto 144d
@@ -33594,6 +33753,9 @@ exit
 :14a42100
 set dev CA1-8D128 NVMe SSD
 goto 14a4
+:14a421f1
+set dev Plextor NVMe SSD
+goto 14a4
 :14a42200
 set dev CX2-8B256, CX2-8B512 NVMe SSD
 goto 14a4
@@ -33614,6 +33776,9 @@ set dev CAZ-82512 NVMe SSD
 goto 14a4
 :14a43500
 set dev CA5-8D512 NVMe SSD
+goto 14a4
+:14a435f1
+set dev PLEXTOR PX-256M9PGN+ NVMe SSD
 goto 14a4
 :14a44318
 set dev Broadcom BCM4318 [AirForce One 54g] 802.11g WLAN Controller
@@ -33835,7 +34000,7 @@ goto 14c3
 set dev MT7921 802.11ax PCI Express Wireless Network Adapter
 goto 14c3
 :14c37988
-set dev MT7988 PCIe Host Bridge [Filogic 880]
+set dev MT7988 PCI Express Host Bridge [Filogic 880]
 goto 14c3
 :14c37990
 set dev MT7996 802.11be PCI Express Wireless Network Adapter (Port 0)
@@ -36600,6 +36765,12 @@ goto 15b3
 :15b30227
 set dev CX10 Family [ConnectX-10 Secure Flash Recovery-RMA]
 goto 15b3
+:15b30228
+set dev CX9 PCIe Switch Family [ConnectX-9 PCIe Switch Flash Recovery]
+goto 15b3
+:15b30229
+set dev CX9 PCIe Switch Family [ConnectX-9 PCIe Switch Secure Flash Recovery-RMA]
+goto 15b3
 :15b3024e
 set dev MT53100 [Spectrum-2, Flash recovery mode]
 goto 15b3
@@ -37239,8 +37410,14 @@ goto 15b7
 :15b75042
 set dev WD Black SN770M NVMe SSD (DRAM-less)
 goto 15b7
+:15b75045
+set dev WD_BLACK SN7100 NVMe SSD (DRAM-less)
+goto 15b7
 :15b75046
 set dev SanDisk Extreme NVMe SSD (DRAM-less)
+goto 15b7
+:15b75049
+set dev SN8000S NVMe SSD
 goto 15b7
 :15b8
 set ven ADDI-DATA GmbH
@@ -39693,9 +39870,6 @@ goto 17aa
 :17aa0006
 set dev LENSE30512GMSP34MEAT3TA
 goto 17aa
-:17aa3181
-set dev ThinkCentre M75n IoT
-goto 17aa
 :17aa402b
 set dev Intel 82599ES 10Gb 2-port Server Adapter X520-2
 goto 17aa
@@ -41799,6 +41973,9 @@ goto 1987
 :19875027
 set dev PS5027-E27T PCIe4 NVMe Controller (DRAM-less)
 goto 1987
+:19875031
+set dev PS5031-E31T PCIe5 NVMe Controller
+goto 1987
 :1989
 set ven Montilio Inc.
 exit
@@ -43563,6 +43740,12 @@ exit
 :1bcd0120
 set dev NVMe SSD Drive 960GB
 goto 1bcd
+:1bcd0180
+set dev PB4480 NVMe PCIe SSD (DRAM-less)
+goto 1bcd
+:1bcd0310
+set dev NVMe SSD Drive 480GB
+goto 1bcd
 :1bcf
 set ven NEC Corporation
 exit
@@ -44061,8 +44244,14 @@ goto 1c5c
 :1c5c1959
 set dev Platinum P41/PC801 NVMe Solid State Drive
 goto 1c5c
+:1c5c1969
+set dev PC811 NVMe Solid State Drive
+goto 1c5c
 :1c5c1d59
 set dev BC901 NVMe Solid State Drive (DRAM-less)
+goto 1c5c
+:1c5c1f69
+set dev PVC10 NVMe Solid State Drive (DRAM-less)
 goto 1c5c
 :1c5c2204
 set dev 960GB TLC PCIe Gen3 x4 NVMe M.2 22110
@@ -44136,6 +44325,9 @@ exit
 :1c630008
 set dev K1927BB1Ya [EC8430] Angara Interconnection Network Adapter
 goto 1c63
+:1c7a
+set ven OWC
+exit
 :1c7e
 set ven TTTech Computertechnik AG
 exit
@@ -44145,8 +44337,20 @@ goto 1c7e
 :1c7f
 set ven Elektrobit Austria GmbH
 exit
+:1c7f0300
+set dev EBX3
+goto 1c7f
 :1c7f5100
 set dev EB5100
+goto 1c7f
+:1c7f7200
+set dev EB 7200 Automotive logging and replay card
+goto 1c7f
+:1c7f7201
+set dev EB7200 with EB PCIe Driver Interface
+goto 1c7f
+:1c7f7211
+set dev EB7210
 goto 1c7f
 :1c8a
 set ven TSF5 Corporation
@@ -44183,6 +44387,9 @@ set ven ADATA Technology Co., Ltd.
 exit
 :1cc11202
 set dev IM2P32A8 NVMe SSD (DRAM-less)
+goto 1cc1
+:1cc11602
+set dev LEGEND 900 NVMe SSD (DRAM-less)
 goto 1cc1
 :1cc12263
 set dev XPG SX6000 Lite NVMe SSD (DRAM-less)
@@ -44241,11 +44448,17 @@ goto 1cc1
 :1cc1624a
 set dev LEGEND 700, XPG GAMMIX S20 NVMe SSD (DRAM-less)
 goto 1cc1
+:1cc1625a
+set dev LEGEND 850 LITE NVMe SSD (DRAM-less)
+goto 1cc1
 :1cc1627a
 set dev LEGEND 800 NVMe SSD (DRAM-less)
 goto 1cc1
 :1cc1628a
 set dev LEGEND 800 NVMe SSD (DRAM-less)
+goto 1cc1
+:1cc1633a
+set dev LEGEND 900 NVMe SSD (DRAM-less)
 goto 1cc1
 :1cc1642a
 set dev XPG GAMMIX S50 CORE NVMe SSD (DRAM-less)
@@ -44275,7 +44488,7 @@ goto 1cc4
 set dev AM610 PCIe 3.0 x2 NVMe SSD 128GB, 256GB
 goto 1cc4
 :1cc45012
-set dev RPITJ512PED2OWX NVMe SSD 512GB
+set dev AH530 PCIe 3.0 NVMe SSD 512GB
 goto 1cc4
 :1cc45212
 set dev AM521 PCIe 3.0 NVMe SSD 256GB
@@ -44301,17 +44514,29 @@ goto 1cc4
 :1cc46304
 set dev AM630 PCIe 4.0 NVMe SSD 1024GB
 goto 1cc4
+:1cc4660c
+set dev RPETJ1T24MHP2QDQ PCIe 4.0 NVMe SSD 1024GB
+goto 1cc4
+:1cc46a01
+set dev AM620 PCIe 3.0 NVMe SSD 128GB
+goto 1cc4
 :1cc46a02
 set dev AM6A0 PCIe 4.0 NVMe SSD 256GB
 goto 1cc4
 :1cc46a03
 set dev RPETJ512MKP1QDQ PCIe 4.0 NVMe SSD 512GB (DRAM-less)
 goto 1cc4
+:1cc46a04
+set dev RPETJ1T24MKP2QDQ PCIe 4.0 NVMe SSD 1024GB (DRAM-less)
+goto 1cc4
 :1cc46a13
 set dev RPJYJ512MKN1QWQ PCIe 4.0 NVMe SSD 512GB (DRAM-less)
 goto 1cc4
 :1cc46a14
 set dev RPEYJ1T24MKN2QWY PCIe 4.0 NVMe SSD 1024GB (DRAM-less)
+goto 1cc4
+:1cc46b04
+set dev AM6B0 PCIe 4.0 NVMe SSD
 goto 1cc4
 :1cc46b13
 set dev RPJYJ512MLR1QWY PCIe 4.0 NVMe SSD 512GB (DRAM-less)
@@ -44850,6 +45075,9 @@ goto 1d26
 :1d26e004
 set dev AB01/EMB01 Development Board
 goto 1d26
+:1d2a
+set ven KAYA Instruments
+exit
 :1d37
 set ven NovaSparks
 exit
@@ -45162,6 +45390,9 @@ goto 1d82
 :1d820401
 set dev Quadra Video Processing Unit (VPU)
 goto 1d82
+:1d820411
+set dev Quadra Video Processing Unit (VPU) Virtual Function
+goto 1d82
 :1d87
 set ven Rockchip Electronics Co., Ltd
 exit
@@ -45468,8 +45699,17 @@ goto 1db7
 :1db7dc3a
 set dev SWITCH Controller [X100 Series]
 goto 1db7
+:1db7dc3b
+set dev MAC Controller [D3000M Series]
+goto 1db7
 :1db7dc3c
 set dev GPU_DMA Controller [X100 Series]
+goto 1db7
+:1db7dc3e
+set dev DCController [E2000 Series]
+goto 1db7
+:1db7dc3f
+set dev SATA Controller [D3000M Series]
 goto 1db7
 :1dbb
 set ven NGD Systems, Inc.
@@ -45477,14 +45717,17 @@ exit
 :1dbe
 set ven INNOGRIT Corporation
 exit
+:1dbe5208
+set dev NVMe SSD Controller IG5208 [Shasta] (DRAM-less)
+goto 1dbe
 :1dbe5216
-set dev NVMe SSD Controller IG5216 (DRAM-less)
+set dev NVMe SSD Controller IG5216 [Shasta+] (DRAM-less)
 goto 1dbe
 :1dbe5220
-set dev NVMe SSD Controller IG5220 (DRAM-less)
+set dev NVMe SSD Controller IG5220 [RainierQX] (DRAM-less)
 goto 1dbe
 :1dbe5236
-set dev NVMe SSD Controller IG5236
+set dev NVMe SSD Controller IG5236 [RainierPC]
 goto 1dbe
 :1dbe5636
 set dev NVMe DC SSD IG5636
@@ -45540,11 +45783,41 @@ goto 1dd4
 :1dd40020
 set dev EN-20 BGA NVMe SSD (DRAM-less)
 goto 1dd4
+:1dd40030
+set dev N-30m2 NVMe SSD
+goto 1dd4
+:1dd40036
+set dev N-36m2 NVMe SSD
+goto 1dd4
+:1dd41200
+set dev D1200 NVMe SSD
+goto 1dd4
+:1dd43000
+set dev N3000 NVMe SSD
+goto 1dd4
+:1dd43002
+set dev N3002 NVMe SSD
+goto 1dd4
+:1dd43602
+set dev N3602 NVMe SSD
+goto 1dd4
+:1dd44131
+set dev A1x NVMe SSD Series
+goto 1dd4
+:1dd44432
+set dev D2x NVMe SSD Series
+goto 1dd4
+:1dd45200
+set dev N5200 NVMe SSD
+goto 1dd4
 :1dd8
 set ven AMD Pensando Systems
 exit
 :1dd80002
 set dev DSC2 Elba Upstream Port
+goto 1dd8
+:1dd80008
+set dev DSC3 Salina Upstream Port
 goto 1dd8
 :1dd81000
 set dev DSC Capri Upstream Port
@@ -45662,6 +45935,9 @@ set dev HP EX900 NVMe SSD (DRAM-less)
 goto 1dee
 :1dee4121
 set dev PCIe 4.0 SP406/416 NVMe SSD
+goto 1dee
+:1dee5161
+set dev BIWIN NVMe SSD SP506/SP516
 goto 1dee
 :1dee5216
 set dev KingSpec NX series NVMe SSD (DRAM-less)
@@ -45906,6 +46182,12 @@ goto 1e24
 :1e26
 set ven Fujitsu Client Computing Limited
 exit
+:1e30
+set ven Sophgo
+exit
+:1e301684
+set dev BM1684 [Sophon Series Deep Learning Accelerator]
+goto 1e30
 :1e36
 set ven Shanghai Enflame Technology Co. Ltd
 exit
@@ -45999,6 +46281,30 @@ goto 1e3b
 :1e3b300d
 set dev Ethernet RAID Combo Controller DN200C Series Virtual Function
 goto 1e3b
+:1e3b5001
+set dev RAID Controller DP808A
+goto 1e3b
+:1e3b5002
+set dev RAID Controller DP808AL
+goto 1e3b
+:1e3b50b0
+set dev Flexraid6 BootRaid - Type I
+goto 1e3b
+:1e3b50b1
+set dev Flexraid6 BootRaid - Type II
+goto 1e3b
+:1e3b50c1
+set dev Combo Card of BootRaid and Ethernet - Type I
+goto 1e3b
+:1e3b50c2
+set dev Combo Card of BootRaid and Ethernet - Type II
+goto 1e3b
+:1e3b50d0
+set dev NVME RAID Card DP800
+goto 1e3b
+:1e3b50d1
+set dev Flexraid6 NVMeRAID
+goto 1e3b
 :1e3d
 set ven Burlywood, Inc
 exit
@@ -46016,6 +46322,9 @@ set dev MxL8908
 goto 1e43
 :1e44
 set ven Valve Software
+exit
+:1e48
+set ven Continental
 exit
 :1e49
 set ven Yangtze Memory Technologies Co.,Ltd
@@ -46036,19 +46345,22 @@ goto 1e49
 set dev PC005 NVMe SSD
 goto 1e49
 :1e491011
-set dev PC210 NVMe SSD
+set dev PC210 M.2 2280 NVMe SSD
 goto 1e49
 :1e491013
-set dev PC210 NVMe SSD
+set dev PC210 M.2 2242 NVMe SSD
 goto 1e49
 :1e491031
-set dev PC300 NVMe SSD (DRAM-less)
+set dev PC300 M.2 2280 NVMe SSD (DRAM-less)
 goto 1e49
 :1e491033
-set dev PC300 NVMe SSD (DRAM-less)
+set dev PC300 M.2 2242 NVMe SSD (DRAM-less)
 goto 1e49
 :1e491071
-set dev PC411 NVMe SSD (DRAM-less)
+set dev PC411 M.2 2280 NVMe SSD (DRAM-less)
+goto 1e49
+:1e491073
+set dev PC411 M.2 2242 NVMe SSD (DRAM-less)
 goto 1e49
 :1e4b
 set ven MAXIO Technology (Hangzhou) Ltd.
@@ -46146,6 +46458,15 @@ goto 1e68
 :1e6b
 set ven Axiado Corp.
 exit
+:1e6c
+set ven Xsight Labs Ltd.
+exit
+:1e6c0001
+set dev XLX1A256A Switch ASIC
+goto 1e6c
+:1e6c0002
+set dev XLX2B128A Switch ASIC
+goto 1e6c
 :1e7b
 set ven Dataland
 exit
@@ -46336,7 +46657,7 @@ goto 1ec6
 set dev SG100 vGPU
 goto 1ec6
 :1ec8
-set ven Innosilicon Co Ltd
+set ven Beijing Fantasy Technology Co., Ltd.
 exit
 :1ec88800
 set dev Fantasy I
@@ -46497,6 +46818,12 @@ exit
 :1ee41180
 set dev PETA8118 NVMe SSD Series
 goto 1ee4
+:1ee41181
+set dev PETA8118 NVMe E1S Series
+goto 1ee4
+:1ee41182
+set dev PETA8118 NVMe M2 Series
+goto 1ee4
 :1ee9
 set ven SUSE LLC
 exit
@@ -46629,6 +46956,36 @@ exit
 :1eff
 set ven Rebellions Inc.
 exit
+:1eff1020
+set dev RBLN-CA2 (PF)
+goto 1eff
+:1eff1021
+set dev RBLN-CA2 (VF)
+goto 1eff
+:1eff1110
+set dev RBLN-CA11 (PF)
+goto 1eff
+:1eff1111
+set dev RBLN-CA11 (VF)
+goto 1eff
+:1eff1120
+set dev RBLN-CA12 (PF)
+goto 1eff
+:1eff1121
+set dev RBLN-CA12 (VF)
+goto 1eff
+:1eff1220
+set dev RBLN-CA22 (PF)
+goto 1eff
+:1eff1221
+set dev RBLN-CA22 (VF)
+goto 1eff
+:1eff1250
+set dev RBLN-CA25 (PF)
+goto 1eff
+:1eff1251
+set dev RBLN-CA25 (VF)
+goto 1eff
 :1f02
 set ven Beijing Dayu Technology
 exit
@@ -46767,6 +47124,21 @@ goto 1f16
 :1f17
 set ven Zettastone Technology
 exit
+:1f18
+set ven c-payne GmbH
+exit
+:1f180001
+set dev PCIe gen4 Switch Backplane 5x x16 - 4W
+goto 1f18
+:1f180002
+set dev PCIe gen4 Switch Backplane 4x x16 - 5W
+goto 1f18
+:1f180101
+set dev PCIe gen5 MCIO Switch 100-Lane
+goto 1f18
+:1f180102
+set dev PCIe gen5 MCIO Switch 52-Lane
+goto 1f18
 :1f1c
 set ven Sophgo Technologies Inc.
 exit
@@ -46779,6 +47151,18 @@ exit
 :1f241058
 set dev EP500/EP600 NVMe SSD
 goto 1f24
+:1f2e
+set ven AzurEngine Technologies
+exit
+:1f2e00a1
+set dev [AE] AzureBlade Accelerator
+goto 1f2e
+:1f2e00b1
+set dev [AE] AzureBlade Accelerator
+goto 1f2e
+:1f2e00c1
+set dev [AE] AzureBlade Accelerator
+goto 1f2e
 :1f2f
 set ven China Mobile (Hangzhou) Information Technology Co.Ltd.
 exit
@@ -46884,6 +47268,18 @@ exit
 :1f52
 set ven MangoBoost Inc.
 exit
+:1f521008
+set dev Mango GPUBoost - RDMA
+goto 1f52
+:1f521020
+set dev Mango NetworkBoost - TCP
+goto 1f52
+:1f521022
+set dev Mango StorageBoost - NTI
+goto 1f52
+:1f521023
+set dev Mango StorageBoost - NTT
+goto 1f52
 :1f56
 set ven SAPEON Inc.
 exit
@@ -46926,6 +47322,12 @@ goto 1f67
 :1f671152
 set dev metaVisor DPU Virtual Function
 goto 1f67
+:1f6c
+set ven CIX Technology Group Co., Ltd.
+exit
+:1f6c0001
+set dev CIX P1 CD8180 PCI Express Root Port
+goto 1f6c
 :1f73
 set ven Shenzhen Quanxing Tech Co., Ltd.
 exit
@@ -46935,6 +47337,12 @@ exit
 :1f7a0100
 set dev Default ID for Titanium FPGA PCIe Interface (AXI)
 goto 1f7a
+:1f82
+set ven d-Matrix
+exit
+:1f820011
+set dev Corsair [DMX 1000 Series]
+goto 1f82
 :1f99
 set ven Shenzhen Techwinsemi Technology Co., Ltd.
 exit
@@ -47223,6 +47631,15 @@ exit
 :2048
 set ven Beijing SpaceControl Technology Co.Ltd
 exit
+:205c
+set ven Zhejiang VMing Semiconductor Co., Ltd.
+exit
+:205c1515
+set dev EP9410 U.2 3.84TB NVME SSD
+goto 205c
+:205c1516
+set dev EP9410 U.2 7.68TB NVME SSD
+goto 205c
 :2061
 set ven Unis Flash Memory
 exit
@@ -47241,6 +47658,69 @@ goto 2063
 :206d
 set ven GigaIO Networks, Inc.
 exit
+:208a
+set ven MICIUS Laboratory
+exit
+:2094
+set ven Shenzhen Wodposit Electronics Co., Ltd.
+exit
+:20941281
+set dev WPBSNM8-256GTP
+goto 2094
+:20941282
+set dev WPSBNM8-512GTP
+goto 2094
+:20941283
+set dev WPBSNM8-1TTP
+goto 2094
+:20941284
+set dev WPBSNM8-256GMP
+goto 2094
+:20941285
+set dev WPBSNM8-512GMP
+goto 2094
+:20941286
+set dev WPBSNM8-2TMP
+goto 2094
+:20941287
+set dev WPBSNM8-1TMP
+goto 2094
+:20941661
+set dev WPBSN4M8-512GMP
+goto 2094
+:20941662
+set dev WPBSN4M8-1TMP
+goto 2094
+:20941663
+set dev WPBSN4M8-2TMP
+goto 2094
+:2096
+set ven Kaitian Information Technology Co., Ltd.
+exit
+:20965401
+set dev KCP54(01) 2280 PCIe G4 x4 TLCKCP54(01) 2280 PCIe G4 x4 TLC
+goto 2096
+:20965402
+set dev KCP54(02) 2280 PCIe G4 x4 TLC
+goto 2096
+:20965403
+set dev KCP54(03) 2280 PCIe G4 x4 TLC
+goto 2096
+:20965404
+set dev KCP54(04) 2280 PCIe G4 x4 TLC
+goto 2096
+:209b
+set ven BitIntelligence Technology
+exit
+:209b1000
+set dev TCU Family - TCU-1
+goto 209b
+:20a9
+set ven LDA Technologies Ltd.
+exit
+:20a91008
+set dev NEOTAPX FPGA Accelerator Card
+goto 20a9
 :20f4
 set ven TRENDnet
 exit
@@ -47332,10 +47812,13 @@ goto 2646
 set dev OM8SEP4 Design-In PCIe 4 NVMe SSD (TLC) (DRAM-less)
 goto 2646
 :26465016
-set dev OM3PGP4 NVMe SSD
+set dev OM3PGP4 NVMe SSD (DRAM-less)
 goto 2646
 :26465017
 set dev NV2 NVMe SSD [SM2267XT] (DRAM-less)
+goto 2646
+:26465018
+set dev OM8SFP4 PCIe 4 NVMe SSD (DRAM-less)
 goto 2646
 :26465019
 set dev NV2 NVMe SSD [E21T] (DRAM-less)
@@ -47351,6 +47834,9 @@ set dev NV2 NVMe SSD [E19T] (DRAM-less)
 goto 2646
 :2646501d
 set dev NV2 NVMe SSD [TC2200] (DRAM-less)
+goto 2646
+:2646501e
+set dev OM3PGP4 NVMe SSD (DRAM-less)
 goto 2646
 :2646501f
 set dev FURY Renegade NVMe SSD + Heatsink [E18]
@@ -47368,16 +47854,16 @@ goto 2646
 set dev DC2000B NVMe SSD [E18DC]
 goto 2646
 :26465025
-set dev NV3 NVMe SSD TC2201 (DRAM-less)
+set dev NV3 NVMe SSD [TC2201] (DRAM-less)
 goto 2646
 :26465026
-set dev NV3 NVMe SSD E21T (DRAM-less)
+set dev NV3 NVMe SSD [E21T] (DRAM-less)
 goto 2646
 :26465027
-set dev NV3 NVMe SSD E27T (DRAM-less)
+set dev NV3 NVMe SSD [E27T] (DRAM-less)
 goto 2646
 :26465028
-set dev NV3 NVMe SSD SM2268XT2 (DRAM-less)
+set dev NV3 NVMe SSD [SM2268XT2] (DRAM-less)
 goto 2646
 :270b
 set ven Xantel Corporation
@@ -47775,6 +48261,12 @@ goto 4348
 :434e
 set ven Cornelis Networks
 exit
+:434e0001
+set dev CN5000 HFI Silicon, Dual Port, BGA [discrete]
+goto 434e
+:434e8001
+set dev CN5000 Switch Silicon, 48 Port, BGA
+goto 434e
 :4444
 set ven Internext Compression Inc
 exit
@@ -48687,6 +49179,9 @@ goto 5333
 :53338e48
 set dev Matrix [Chrome S25 / S27]
 goto 5333
+:53339020
+set dev 86C920 [Chrome 460 ESV]
+goto 5333
 :53339043
 set dev Chrome 430 GT
 goto 5333
@@ -48694,7 +49189,7 @@ goto 5333
 set dev Chrome 430 ULP / 435 ULP / 440 GTX
 goto 5333
 :53339060
-set dev Chrome 530 GT
+set dev Chrome 530 GT / 5400E
 goto 5333
 :53339070
 set dev Chrome 5400EW
@@ -49008,6 +49503,12 @@ goto 78c0
 :7bde
 set ven MIDAC Corporation
 exit
+:7f70
+set ven Arrow Lake-S PCH CNVi WiFi
+exit
+:7f700094
+set dev WiFi 6E AX211 160MHz
+goto 7f70
 :7fed
 set ven PowerTV
 exit
@@ -52490,6 +52991,9 @@ set dev Atom Processor C3000 Series QuickAssist Technology
 goto 8086
 :808619e3
 set dev Atom Processor C3000 Series QuickAssist Technology Virtual Function
+goto 8086
+:80861a12
+set dev Timna CPU Graphics
 goto 8086
 :80861a1c
 set dev Ethernet Connection (17) I219-LM
@@ -56232,6 +56736,9 @@ goto 8086
 :80863192
 set dev Gemini Lake P2SB
 goto 8086
+:80863196
+set dev Unknown P2SB serial controller
+goto 8086
 :80863197
 set dev Celeron/Pentium Silver Processor PCI-default ISA-bridge
 goto 8086
@@ -58251,8 +58758,14 @@ goto 8086
 :80864e03
 set dev Dynamic Tuning service
 goto 8086
+:80864e11
+set dev Gaussian Mixture Model and Neural Network Accelerator (GNA)
+goto 8086
 :80864e19
 set dev JasperLake IPU
+goto 8086
+:80864e22
+set dev Processor Transaction Router SKU 2 Core
 goto 8086
 :80864e55
 set dev JasperLake [UHD Graphics]
@@ -59984,6 +60497,9 @@ set dev Meteor Lake-P Thunderbolt 4 PCI Express Root Port #2
 goto 8086
 :80867ec7
 set dev Meteor Lake-P Thunderbolt 4 PCI Express Root Port #3
+goto 8086
+:80867f70
+set dev Arrow Lake-S PCH CNVi WiFi
 goto 8086
 :80868002
 set dev Trusted Execution Technology Registers
@@ -62523,6 +63039,9 @@ goto 8086
 :8086a83d
 set dev Lunar Lake-M PCI Express Root Port #6
 goto 8086
+:8086a840
+set dev BE201 320MHz
+goto 8086
 :8086a845
 set dev Lunar Lake-M Integrated Sensor Hub
 goto 8086
@@ -62659,10 +63178,10 @@ goto 8086
 set dev Battlemage G21 [Intel Graphics]
 goto 8086
 :8086e20b
-set dev Battlemage G21 [Intel Graphics]
+set dev Battlemage G21 [Arc B580]
 goto 8086
 :8086e20c
-set dev Battlemage G21 [Intel Graphics]
+set dev Battlemage G21 [Arc B570]
 goto 8086
 :8086e20d
 set dev Battlemage G21 [Intel Graphics]
@@ -63672,6 +64191,9 @@ exit
 :b1d9
 set ven ATCOM Technology co., LTD.
 exit
+:b390
+set ven TD3-X3+
+exit
 :bd11
 set ven Pinnacle Systems, Inc. (Wrong ID)
 exit
@@ -64157,6 +64679,9 @@ set dev Max
 goto dd01
 :dd010011
 set dev Octopus CI DVB Adapter
+goto dd01
+:dd010012
+set dev Octopus Duo CI
 goto dd01
 :dd010201
 set dev Resi DVB-C Modulator
