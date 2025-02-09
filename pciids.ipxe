@@ -7071,6 +7071,9 @@ goto 1022
 :102243f7
 set dev 600 Series Chipset USB 3.2 Controller
 goto 1022
+:102243fd
+set dev 800 Series Chipset USB 3.x XHCI Controller
+goto 1022
 :102257a3
 set dev Matisse PCIe GPP Bridge
 goto 1022
@@ -20414,6 +20417,9 @@ set dev RTL-8029(AS)
 goto 10ec
 :10ec8125
 set dev RTL8125 2.5GbE Controller
+goto 10ec
+:10ec8126
+set dev RTL8126 5GbE Controller
 goto 10ec
 :10ec8129
 set dev RTL-8129
@@ -41274,6 +41280,9 @@ goto 1924
 :19240b03
 set dev XtremeScale SFC9250 10/25/40/50/100G Ethernet Controller
 goto 1924
+:19240c03
+set dev NS9480 1/10/25/40/50/100Gb Ethernet Controller PLUS
+goto 1924
 :19241803
 set dev SFC9020 10G Ethernet Controller (Virtual Function)
 goto 1924
@@ -41291,6 +41300,15 @@ set dev SFC9220 10/40G Ethernet Controller (Virtual Function)
 goto 1924
 :19241b03
 set dev XtremeScale SFC9250 10/25/40/50/100G Ethernet Controller (Virtual Function)
+goto 1924
+:19241c03
+set dev NS9480 1/10/25/40/50/100Gb Ethernet Controller PLUS (Virtual Function)
+goto 1924
+:19242c03
+set dev NS9480 1/10/25/40/50/100Gb Ethernet Controller
+goto 1924
+:19243c03
+set dev NS9480 1/10/25/40/50/100Gb Ethernet Controller (Virtual Function)
 goto 1924
 :19246703
 set dev SFC4000 rev A iSCSI/Onload [Solarstorm]
@@ -43599,6 +43617,9 @@ goto 1b96
 :1b962722
 set dev Ultrastar DC SN655 NVMe SSD
 goto 1b96
+:1b962751
+set dev Ultrastar DC SN861 NVMe SSD
+goto 1b96
 :1b963001
 set dev RapidFlex C2000 NVMe Initiator
 goto 1b96
@@ -45078,6 +45099,9 @@ goto 1d26
 :1d2a
 set ven KAYA Instruments
 exit
+:1d2a1000
+set dev Frame grabber
+goto 1d2a
 :1d37
 set ven NovaSparks
 exit
@@ -46187,6 +46211,9 @@ set ven Sophgo
 exit
 :1e301684
 set dev BM1684 [Sophon Series Deep Learning Accelerator]
+goto 1e30
+:1e302042
+set dev SG2042 Root Complex
 goto 1e30
 :1e36
 set ven Shanghai Enflame Technology Co. Ltd
@@ -47721,6 +47748,9 @@ exit
 :20a91008
 set dev NEOTAPX FPGA Accelerator Card
 goto 20a9
+:20a91104
+set dev NEOTAPX FPGA Timing Synchronization Card
+goto 20a9
 :20f4
 set ven TRENDnet
 exit
@@ -48263,6 +48293,9 @@ set ven Cornelis Networks
 exit
 :434e0001
 set dev CN5000 HFI Silicon, Dual Port, BGA [discrete]
+goto 434e
+:434e0002
+set dev CN6000 HFI Silicon, Dual Port, BGA [discrete]
 goto 434e
 :434e8001
 set dev CN5000 Switch Silicon, 48 Port, BGA
@@ -58428,6 +58461,12 @@ goto 8086
 :80864619
 set dev Core i9/i7/i5/i3 Host Bridge/DRAM Registers
 goto 8086
+:8086461b
+set dev Alder Lake-N Processor Host Bridge/DRAM Registers
+goto 8086
+:8086461c
+set dev Alder Lake-N Processor Host Bridge/DRAM Registers
+goto 8086
 :8086461d
 set dev Alder Lake Innovation Platform Framework Processor Participant
 goto 8086
@@ -58502,6 +58541,9 @@ set dev Alder Lake-P Thunderbolt 4 PCI Express Root Port #0
 goto 8086
 :8086467d
 set dev Platform Monitoring Technology
+goto 8086
+:8086467e
+set dev GNA Scoring Accelerator
 goto 8086
 :8086467f
 set dev Volume Management Device NVMe RAID Controller
@@ -59111,6 +59153,9 @@ set dev Alder Lake-N PCI Express Root Port #2
 goto 8086
 :808654ba
 set dev Alder Lake-N PCI Express Root Port #3
+goto 8086
+:808654bb
+set dev Alder Lake-N PCI Express Root Port #4
 goto 8086
 :808654be
 set dev Alder Lake-N PCI Express Root Port #7
@@ -63186,7 +63231,16 @@ goto 8086
 :8086e20d
 set dev Battlemage G21 [Intel Graphics]
 goto 8086
+:8086e210
+set dev Battlemage G21 [Intel Graphics]
+goto 8086
 :8086e212
+set dev Battlemage G21 [Intel Graphics]
+goto 8086
+:8086e215
+set dev Battlemage G21 [Intel Graphics]
+goto 8086
+:8086e216
 set dev Battlemage G21 [Intel Graphics]
 goto 8086
 :8086f1a5
@@ -65150,6 +65204,15 @@ set dev T-Tap Pro
 goto f1d0
 :f1d0eb27
 set dev IoX3
+goto f1d0
+:f1d0eb28
+set dev Kona XM
+goto f1d0
+:f1d0eb29
+set dev Kona X
+goto f1d0
+:f1d0eb30
+set dev Kona IP 25G
 goto f1d0
 :f1d0efac
 set dev Xena SD-MM/SD-22-MM
