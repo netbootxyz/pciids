@@ -5244,6 +5244,12 @@ goto 1014
 :10140611
 set dev 4769 Cryptographic Adapter
 goto 1014
+:101406a7
+set dev Spyre Accelerator
+goto 1014
+:101406a8
+set dev Spyre Accelerator Virtual Function
+goto 1014
 :10143022
 set dev QLA3022 Network Adapter
 goto 1014
@@ -19848,6 +19854,9 @@ goto 10de
 :10de2901
 set dev GB100 [B200]
 goto 10de
+:10de2920
+set dev GB100 [TS4]
+goto 10de
 :10de2940
 set dev GB100 [Reserved Dev ID B]
 goto 10de
@@ -19855,10 +19864,13 @@ goto 10de
 set dev GB100 [GB200 SKU]
 goto 10de
 :10de2980
-set dev GB102
+set dev GB102 [Reserved Dev ID A]
+goto 10de
+:10de29bc
+set dev GB102 [B100]
 goto 10de
 :10de29c0
-set dev GB102
+set dev GB102 [Reserved Dev ID B]
 goto 10de
 :10de2b85
 set dev GB202 [GeForce RTX 5090]
@@ -47742,6 +47754,9 @@ exit
 :209b1000
 set dev TCU Family - TCU-1
 goto 209b
+:209f
+set ven Mobilint, Inc.
+exit
 :20a9
 set ven LDA Technologies Ltd.
 exit
@@ -58792,7 +58807,7 @@ goto 8086
 set dev Jasper Lake Shared SRAM
 goto 8086
 :80864df0
-set dev Wireless-AC 9560 160MHz
+set dev Jasper Lake PCH CNVi WiFi
 goto 8086
 :80864df8
 set dev Jasper Lake SD Controller
