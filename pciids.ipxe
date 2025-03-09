@@ -1179,6 +1179,9 @@ goto 1001
 :1002
 set ven Advanced Micro Devices, Inc. [AMD/ATI]
 exit
+:10021114
+set dev Krackan [Radeon 840M / 860M Graphics]
+goto 1002
 :10021304
 set dev Kaveri
 goto 1002
@@ -3695,6 +3698,9 @@ set dev Aqua Vanjaram [Instinct MI300X VF]
 goto 1002
 :100274bd
 set dev Aqua Vanjaram [Instinct MI300X HF]
+goto 1002
+:10027550
+set dev Navi 48 [RX 9070/9070 XT]
 goto 1002
 :10027833
 set dev RS350 Host Bridge
@@ -6279,6 +6285,9 @@ goto 1022
 :10221557
 set dev Turin USB 3.1 xHCI
 goto 1022
+:10221559
+set dev Turin Secondary PCIe Dummy Function
+goto 1022
 :1022155b
 set dev Anubis Root Complex
 goto 1022
@@ -6425,6 +6434,9 @@ set dev Raphael/Granite Ridge USB 3.1 xHCI
 goto 1022
 :102215b7
 set dev Raphael/Granite Ridge USB 3.1 xHCI
+goto 1022
+:102215b8
+set dev Raphael/Granite Ridge USB 2.0 xHCI
 goto 1022
 :102215bc
 set dev Stoney PCIe [GFX,GPP] Bridge [4:0]
@@ -19314,6 +19326,9 @@ goto 10de
 :10de2302
 set dev GH100
 goto 10de
+:10de230e
+set dev GH100 [H20 NVL16]
+goto 10de
 :10de2313
 set dev GH100 [H100 CNX]
 goto 10de
@@ -19845,6 +19860,9 @@ goto 10de
 :10de28e1
 set dev AD107M [GeForce RTX 4050 Max-Q / Mobile]
 goto 10de
+:10de28e3
+set dev AD107M [GeForce RTX 3050 A Laptop GPU]
+goto 10de
 :10de28f8
 set dev AD107GLM [RTX 2000 Ada Generation Embedded GPU]
 goto 10de
@@ -19861,7 +19879,7 @@ goto 10de
 set dev GB100 [Reserved Dev ID B]
 goto 10de
 :10de2941
-set dev GB100 [GB200 SKU]
+set dev GB100 [HGX GB200]
 goto 10de
 :10de2980
 set dev GB102 [Reserved Dev ID A]
@@ -19880,6 +19898,9 @@ set dev GB202 [GeForce RTX 5090 D]
 goto 10de
 :10de2c02
 set dev GB203 [GeForce RTX 5080]
+goto 10de
+:10de2c05
+set dev GB203 [GeForce RTX 5070 Ti]
 goto 10de
 :10de2c18
 set dev GB203M / GN22 [GeForce RTX 5090 Max-Q / Mobile]
@@ -19917,11 +19938,20 @@ goto 10de
 :10de2dd8
 set dev AD108M [GeForce RTX 5050 Max-Q / Mobile]
 goto 10de
+:10de2f04
+set dev GN22 [GeForce RTX 5070]
+goto 10de
 :10de2f18
 set dev AD108M [GeForce RTX 5070 Ti Max-Q / Mobile]
 goto 10de
 :10de2f58
 set dev AD108M [GeForce RTX 5070 Ti Max-Q / Mobile]
+goto 10de
+:10de31c0
+set dev GB110
+goto 10de
+:10de3340
+set dev GB120
 goto 10de
 :10df
 set ven Emulex Corporation
@@ -24131,6 +24161,9 @@ set dev Celerity FC 16Gb/s Gen 5 Fibre Channel HBA
 goto 117c
 :117c0094
 set dev Celerity FC 16/32Gb/s Gen 6 Fibre Channel HBA
+goto 117c
+:117c00a5
+set dev ExpressSAS 24Gb/s SAS/SATA HBA
 goto 117c
 :117c00bb
 set dev Celerity FC 32/64Gb/s Gen 7 Fibre Channel HBA
@@ -28559,6 +28592,15 @@ set dev 3500 NVMe SSD
 goto 1344
 :13445416
 set dev 2550 NVMe SSD (DRAM-less)
+goto 1344
+:13445425
+set dev 2500 NVMe SSD (DRAM-less)
+goto 1344
+:13445427
+set dev 2650 NVMe SSD (DRAM-less)
+goto 1344
+:13445429
+set dev 2600 NVMe SSD (DRAM-less)
 goto 1344
 :13446001
 set dev 2100AI NVMe SSD [Nitro]
@@ -33381,6 +33423,9 @@ goto 144d
 :144da80d
 set dev NVMe SSD Controller PM9C1a (DRAM-less)
 goto 144d
+:144da80e
+set dev NVMe SSD Controller PM9D3a
+goto 144d
 :144da80f
 set dev BM9C1 QLC NVME SSD (DRAM-less)
 goto 144d
@@ -35115,11 +35160,17 @@ goto 14e4
 :14e44719
 set dev BCM47xx/53xx RoboSwitch Core
 goto 14e4
+:14e4471a
+set dev BCM47xx EHCI Host Controller
+goto 14e4
 :14e44720
 set dev BCM4712 MIPS CPU
 goto 14e4
 :14e44727
 set dev BCM4313 802.11bgn Wireless Network Adapter
+goto 14e4
+:14e4472a
+set dev BCM47xx xHCI Host Controller
 goto 14e4
 :14e45365
 set dev BCM5365P Sentry5 Host Bridge
@@ -35198,6 +35249,9 @@ set dev BRCM4387 Bluetooth Controller
 goto 14e4
 :14e45fa0
 set dev BRCM4377 Bluetooth Controller
+goto 14e4
+:14e48411
+set dev BCM47xx PCIe Bridge
 goto 14e4
 :14e48602
 set dev BCM7400/BCM7405 Serial ATA Controller
@@ -36870,6 +36924,12 @@ goto 15b3
 :15b3027a
 set dev Eros Chiplet
 goto 15b3
+:15b3027c
+set dev Quantum-5 in Flash Recovery Mode
+goto 15b3
+:15b3027d
+set dev Quantum-5 RMA
+goto 15b3
 :15b30281
 set dev NPS-600 Flash Recovery
 goto 15b3
@@ -36899,6 +36959,24 @@ set dev Arcus2 RMA
 goto 15b3
 :15b30290
 set dev SagittaZ
+goto 15b3
+:15b30292
+set dev Arcus3 Flash Recovery
+goto 15b3
+:15b30293
+set dev Arcus3 RMA
+goto 15b3
+:15b302a0
+set dev Quantum-6 in Flash Recovery Mode
+goto 15b3
+:15b302a1
+set dev Quantum-6 RMA
+goto 15b3
+:15b302a2
+set dev Spectrum-7 in Flash Recovery Mode
+goto 15b3
+:15b302a3
+set dev Spectrum-7 RMA
 goto 15b3
 :15b31002
 set dev MT25400 Family [ConnectX-2 Virtual Function]
@@ -37209,6 +37287,9 @@ goto 15b3
 :15b3b202
 set dev Arcus2
 goto 15b3
+:15b3b203
+set dev Arcus3
+goto 15b3
 :15b3c2d1
 set dev BlueField DPU Family Auxiliary Communication Channel [BlueField Family]
 goto 15b3
@@ -37263,6 +37344,9 @@ goto 15b3
 :15b3cf84
 set dev Spectrum-6
 goto 15b3
+:15b3cf86
+set dev Spectrum-7
+goto 15b3
 :15b3d2f0
 set dev Quantum HDR (200Gbps) switch
 goto 15b3
@@ -37277,6 +37361,12 @@ set dev Quantum-3CPO
 goto 15b3
 :15b3d2f8
 set dev Quantum-4
+goto 15b3
+:15b3d2fa
+set dev Quantum-5
+goto 15b3
+:15b3d2fc
+set dev Quantum-6
 goto 15b3
 :15b4
 set ven CCI/TRIAD
@@ -43152,6 +43242,18 @@ goto 1b21
 :1b212142
 set dev ASM2142/ASM3142 USB 3.1 Host Controller
 goto 1b21
+:1b212421
+set dev ASM4242 PCIe Switch Upstream Port
+goto 1b21
+:1b212423
+set dev ASM4242 PCIe Switch Downstream Port
+goto 1b21
+:1b212425
+set dev ASM4242 USB 4 / Thunderbolt 3 Host Router
+goto 1b21
+:1b212426
+set dev ASM4242 USB 3.2 xHCI Controller
+goto 1b21
 :1b212806
 set dev ASM2806 4-Port PCIe x2 Gen3 Packet Switch
 goto 1b21
@@ -43674,6 +43776,9 @@ goto 1bb1
 :1bb10100
 set dev Nytro Flash Storage
 goto 1bb1
+:1bb10155
+set dev Nytro 5x50 NVMe SSD
+goto 1bb1
 :1bb15012
 set dev FireCuda/IronWolf 510 SSD
 goto 1bb1
@@ -43874,6 +43979,9 @@ set dev NS8510G1Uxxx, NS8610G1Uxxx NVME SSD
 goto 1bd4
 :1bd4100e
 set dev NS8500G2Uxxxx, NS8600G2Uxxxx NVME SSD
+goto 1bd4
+:1bd4100f
+set dev NS6500G2UXXXX,NS6600G2UXXXX NVME SSD
 goto 1bd4
 :1bee
 set ven IXXAT Automation GmbH
@@ -45651,6 +45759,9 @@ goto 1da3
 :1da31060
 set dev Gaudi3 AI Training Accelerator
 goto 1da3
+:1da31063
+set dev Gaudi3 AI Training Accelerator Add-In Family
+goto 1da3
 :1da8
 set ven Corigine, Inc.
 exit
@@ -45761,6 +45872,9 @@ set dev NVMe SSD Controller IG5216 [Shasta+] (DRAM-less)
 goto 1dbe
 :1dbe5220
 set dev NVMe SSD Controller IG5220 [RainierQX] (DRAM-less)
+goto 1dbe
+:1dbe5222
+set dev NVMe SSD Controller IG5222 [RainierX] (DRAM-less)
 goto 1dbe
 :1dbe5236
 set dev NVMe SSD Controller IG5236 [RainierPC]
@@ -47350,7 +47464,7 @@ goto 1f67
 set dev metaFusion DPU SoC Network Interface
 goto 1f67
 :1f671111
-set dev metaScale SmartNIC Physical Function
+set dev YSA-100 RDMA Ethernet Network Controller
 goto 1f67
 :1f671112
 set dev metaScale SmartNIC Virtual Function
@@ -47688,6 +47802,15 @@ goto 2061
 :20614100
 set dev E4100 controller
 goto 2061
+:20614200
+set dev E4200 NVMe Controller
+goto 2061
+:20615100
+set dev E5100 NVMe Controller
+goto 2061
+:20615200
+set dev E5200 NVMe Controller
+goto 2061
 :2063
 set ven Hubei Yangtze Mason Semiconductor Technology Co., Ltd.
 exit
@@ -47697,6 +47820,12 @@ goto 2063
 :206d
 set ven GigaIO Networks, Inc.
 exit
+:207d
+set ven HRDT
+exit
+:207d0612
+set dev SATA BootRAID Controller
+goto 207d
 :208a
 set ven MICIUS Laboratory
 exit
@@ -47756,6 +47885,9 @@ set dev TCU Family - TCU-1
 goto 209b
 :209f
 set ven Mobilint, Inc.
+exit
+:20a7
+set ven EEVengers Inc.
 exit
 :20a9
 set ven LDA Technologies Ltd.
@@ -47824,7 +47956,7 @@ goto 2646
 set dev A2000 NVMe SSD [SM2263EN]
 goto 2646
 :26465008
-set dev A1000/U-SNS8154P3 x2 NVMe SSD
+set dev A1000/U-SNS8154P3 x2 NVMe SSD [E8]
 goto 2646
 :2646500a
 set dev DC1000B NVMe SSD [E12DC]
@@ -47909,6 +48041,12 @@ set dev NV3 NVMe SSD [E27T] (DRAM-less)
 goto 2646
 :26465028
 set dev NV3 NVMe SSD [SM2268XT2] (DRAM-less)
+goto 2646
+:2646502a
+set dev FURY Renegade G5 NVMe SSD [SM2508]
+goto 2646
+:2646502c
+set dev DC3000ME NVMe SSD [SC5]
 goto 2646
 :270b
 set ven Xantel Corporation
@@ -61368,11 +61506,20 @@ goto 8086
 :80869a01
 set dev 11th Gen Core Processor PCIe Controller #1
 goto 8086
+:80869a02
+set dev Tiger Lake-UP4 2 cores Host Bridge/DRAM Registers
+goto 8086
 :80869a03
 set dev TigerLake-LP Dynamic Tuning Processor Participant
 goto 8086
-:80869a07
+:80869a04
+set dev Tiger Lake-UP3 2 cores Host Bridge/DRAM Registers
+goto 8086
+:80869a05
 set dev 11th Gen Core Processor PCIe Controller #2
+goto 8086
+:80869a07
+set dev 11th Gen Core Processor PCIe Controller #3
 goto 8086
 :80869a09
 set dev 11th Gen Core Processor PCIe Controller
@@ -61389,14 +61536,23 @@ goto 8086
 :80869a11
 set dev GNA Scoring Accelerator module
 goto 8086
+:80869a12
+set dev Tiger Lake-UP4 4 cores Host Bridge/DRAM Registers
+goto 8086
 :80869a13
 set dev Tiger Lake-LP Thunderbolt 4 USB Controller
 goto 8086
 :80869a14
-set dev 11th Gen Core Processor Host Bridge/DRAM Registers
+set dev Tiger Lake-UP3/H35 4 cores Host Bridge/DRAM Registers
+goto 8086
+:80869a15
+set dev Tiger Lake xDCI Controller
 goto 8086
 :80869a17
 set dev Tiger Lake-H Thunderbolt 4 USB Controller
+goto 8086
+:80869a19
+set dev Tiger Lake IPU6
 goto 8086
 :80869a1b
 set dev Tiger Lake-LP Thunderbolt 4 NHI #0
@@ -61417,7 +61573,7 @@ goto 8086
 set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #1
 goto 8086
 :80869a26
-set dev 11th Gen Core Processor Host Bridge/DRAM Registers
+set dev Tiger Lake-H 6 cores Host Bridge/DRAM Registers
 goto 8086
 :80869a27
 set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #2
@@ -61441,7 +61597,10 @@ goto 8086
 set dev Tiger Lake Trace Hub
 goto 8086
 :80869a36
-set dev 11th Gen Core Processor Host Bridge/DRAM Registers
+set dev Tiger Lake-H 8 cores Host Bridge/DRAM Registers
+goto 8086
+:80869a39
+set dev Tiger Lake H IPU6-Slim
 goto 8086
 :80869a40
 set dev Tiger Lake-UP4 GT2 [Iris Xe Graphics]
@@ -64644,6 +64803,9 @@ goto d20c
 :d20c6011
 set dev NE6000 Ethernet Controller
 goto d20c
+:d405
+set ven LeapIO
+exit
 :d4d4
 set ven Dy4 Systems Inc
 exit
