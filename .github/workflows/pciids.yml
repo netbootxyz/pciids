@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - name: Run a multi-line script
       run: |
         wget https://raw.githubusercontent.com/pciutils/pciids/master/pci.ids -O pci.ids
