@@ -37626,6 +37626,9 @@ goto 15b3
 :15b32100
 set dev CX8 Family [CX8 Data Direct Interface]
 goto 15b3
+:15b32101
+set dev CX10 Family [ConnectX-10 C2C]
+goto 15b3
 :15b34117
 set dev MT27712A0-FDCF-AE
 goto 15b3
@@ -44550,6 +44553,9 @@ goto 1bb1
 :1bb10100
 set dev Nytro Flash Storage
 goto 1bb1
+:1bb10153
+set dev Nytro 5x50 NVMe SSD
+goto 1bb1
 :1bb10155
 set dev Nytro 5x50 NVMe SSD
 goto 1bb1
@@ -47166,6 +47172,12 @@ goto 1de5
 :1de52100
 set dev NoLoad Accelerator Platform
 goto 1de5
+:1de52200
+set dev NoLoad Cryptographic Accelerator
+goto 1de5
+:1de52300
+set dev NoLoad Data Services
+goto 1de5
 :1de53000
 set dev eBPF-based PCIe Accelerator
 goto 1de5
@@ -48138,6 +48150,9 @@ goto 1ed2
 :1ed20001
 set dev RNGD
 goto 1ed2
+:1ed20002
+set dev RNGD-Plus
+goto 1ed2
 :1ed22222
 set dev RNGD-S
 goto 1ed2
@@ -48504,6 +48519,15 @@ goto 1f0f
 :1f0f1042
 set dev D1055AS vDPA Storage Controller
 goto 1f0f
+:1f0f1045
+set dev D1205CQ vPDA Ethernet Controller
+goto 1f0f
+:1f0f1046
+set dev D1205CQ vPDA Storage Controller
+goto 1f0f
+:1f0f1047
+set dev D1205CQ RDMA Ethernet Controller
+goto 1f0f
 :1f0f1220
 set dev D1055AS Ethernet Controller
 goto 1f0f
@@ -48515,6 +48539,21 @@ set dev D1055AS Ethernet Controller
 goto 1f0f
 :1f0f1223
 set dev D1055AS Ethernet Controller
+goto 1f0f
+:1f0f1224
+set dev D1205CQ Ethernet Controller
+goto 1f0f
+:1f0f1225
+set dev D1205CQ Ethernet Controller
+goto 1f0f
+:1f0f1226
+set dev D1205CQ Ethernet Controller
+goto 1f0f
+:1f0f1227
+set dev D1205CQ Ethernet Controller
+goto 1f0f
+:1f0f1228
+set dev D1205CQ Ethernet Controller
 goto 1f0f
 :1f0f1600
 set dev M16104 Family
@@ -48542,6 +48581,9 @@ set dev M16102 Family
 goto 1f0f
 :1f0f2022
 set dev D1055AS PCI Express Switch Upstream Port
+goto 1f0f
+:1f0f2023
+set dev D1205CQ PCI Express Switch Upstream Port
 goto 1f0f
 :1f0f3403
 set dev M18110 Family
@@ -48605,6 +48647,9 @@ set dev M18305 Family Virtual Function
 goto 1f0f
 :1f0f9088
 set dev D1055AS PCI Express Switch Downstream Port
+goto 1f0f
+:1f0f9089
+set dev D1205CQ PCI Express Switch Downstream Port
 goto 1f0f
 :1f16
 set ven XConn Technologies
@@ -48815,6 +48860,15 @@ set dev FLEXFLOW-2100R Ethernet Controller
 goto 1f47
 :1f473201
 set dev FLEXFLOW-2200R Ethernet Controller
+goto 1f47
+:1f473301
+set dev K3 Family [FLEXFLOW-3100R]
+goto 1f47
+:1f473302
+set dev K3 Family [FLEXFLOW-3100R Virtual Function]
+goto 1f47
+:1f473303
+set dev K3 Family [CONFLUX-3100R MGMT Function]
 goto 1f47
 :1f474001
 set dev K2-Pro Family [CONFLUX-2200E]
@@ -49590,6 +49644,9 @@ exit
 :201f0001
 set dev X60 PCIe 2.0 x2 Root Complex
 goto 201f
+:201f0002
+set dev X100 PCIe Root Complex
+goto 201f
 :202c
 set ven CAEN S.p.A.
 exit
@@ -49611,6 +49668,15 @@ goto 2036
 :203b
 set ven XTX Markets Technologies Ltd.
 exit
+:2044
+set ven Shenzhen Jiahua Zhongli Technology Co., LTD.
+exit
+:20448200
+set dev CeaCent CS211X 12G SAS RAID controller
+goto 2044
+:20448201
+set dev CeaCent CS215X 12G SAS RAID controller
+goto 2044
 :2046
 set ven GXMICRO Technology (Shanghai) Co., Ltd.
 exit
@@ -66786,14 +66852,26 @@ goto 8088
 :80882001
 set dev Ethernet Controller WX1820AL for 10GbE SFP+
 goto 8088
+:80885024
+set dev Ethernet Controller WX5025 Virtual Function for 25GbE SFP28
+goto 8088
 :80885025
 set dev Ethernet Controller WX5025 for 25GbE SFP28
+goto 8088
+:8088503f
+set dev Ethernet Controller WX5040 Virtual Function for 40GbE QSFP+
 goto 8088
 :80885040
 set dev Ethernet Controller WX5040 for 40GbE QSFP+
 goto 8088
+:80885124
+set dev Ethernet Controller WX5025AL Virtual Function for 25GbE SFP28
+goto 8088
 :80885125
 set dev Ethernet Controller WX5025AL for 25GbE SFP28
+goto 8088
+:8088513f
+set dev Ethernet Controller WX5040AL Virtual Function for 40GbE QSFP+
 goto 8088
 :80885140
 set dev Ethernet Controller WX5040AL for 40GbE QSFP+
@@ -68137,13 +68215,13 @@ goto d209
 set dev AimTrak
 goto d209
 :d20c
-set ven Chengdu BeiZhongWangXin Technology Co., Ltd.
+set ven Chengdu NorthLink Technology Co., Ltd.
 exit
 :d20c5011
-set dev NE5000 Ethernet Controller
+set dev NE5025 Ethernet Controller
 goto d20c
 :d20c6011
-set dev NE6000 Ethernet Controller
+set dev NE6100 Ethernet Controller
 goto d20c
 :d405
 set ven LeapIO
