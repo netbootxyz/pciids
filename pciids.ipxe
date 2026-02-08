@@ -13501,7 +13501,7 @@ goto 10b5
 set dev 9036
 goto 10b5
 :10b59050
-set dev PCI <-> IOBus Bridge
+set dev PCI9050 32-bit 33MHz PCI <-> IOBus Bridge
 goto 10b5
 :10b59052
 set dev PCI9052 PCI <-> IOBus Bridge
@@ -25618,8 +25618,11 @@ goto 11c9
 set dev 4-line serial port w/- DMA
 goto 11c9
 :11ca
-set ven LSI Systems, Inc
+set ven IBEX Technology Co., Ltd.
 exit
+:11ca0039
+set dev PAC with Altera Agilex 7 FPGA M-Series [IPAC-1000]
+goto 11ca
 :11cb
 set ven Specialix Research Ltd.
 exit
@@ -37306,7 +37309,7 @@ goto 15b3
 set dev CX10 Family [ConnectX-10 Flash Recovery]
 goto 15b3
 :15b30227
-set dev CX10 Family [ConnectX-10 Secure Flash Recovery-RMA]
+set dev CX10 Family [ConnectX-10 RMA]
 goto 15b3
 :15b30228
 set dev CX9 PCIe Switch Family [ConnectX-9 PCIe Switch Flash Recovery]
@@ -37571,6 +37574,9 @@ set dev CX9 Family [ConnectX-9]
 goto 15b3
 :15b31027
 set dev CX10 Family [ConnectX-10]
+goto 15b3
+:15b31028
+set dev CX10 Family [ConnectX-10 Trusted Network Control Memory]
 goto 15b3
 :15b31974
 set dev MT28800 Family [ConnectX-5 PCIe Bridge]
@@ -39970,7 +39976,7 @@ goto 1760
 set ven Pickering Interfaces Ltd
 exit
 :17614411
-set dev 50-297A
+set dev Pickering Devices with FPGA Based Bus Communication
 goto 1761
 :1771
 set ven InnoVISION Multimedia Ltd.
@@ -46737,6 +46743,9 @@ goto 1d94
 :1d941468
 set dev NTBCCP
 goto 1d94
+:1d946211
+set dev K100_AI
+goto 1d94
 :1d947901
 set dev FCH SATA Controller [AHCI mode]
 goto 1d94
@@ -47403,12 +47412,6 @@ exit
 :1e0d
 set ven SambaNova Systems, Inc
 exit
-:1e0e
-set ven Qualcomm / Option SimTech, Incorporated
-exit
-:1e0e9071
-set dev SIM8230G 5GNR/LTE/GNSS
-goto 1e0e
 :1e0f
 set ven KIOXIA Corporation
 exit
@@ -49998,6 +50001,12 @@ goto 20f6
 :20f9
 set ven Shenzhen Silicon Dynamic Networks Co., Ltd.
 exit
+:2106
+set ven ZCHL Technology Co., Ltd
+exit
+:21060001
+set dev HL100 Accelerator Controller
+goto 2106
 :2116
 set ven ZyDAS Technology Corp.
 exit
