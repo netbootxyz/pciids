@@ -2530,7 +2530,7 @@ goto 1002
 set dev Oland XT [Radeon HD 8670 / R5 340X OEM / R7 250/350/350X OEM]
 goto 1002
 :10026611
-set dev Oland [Radeon HD 8570 / R5 430 OEM / R7 240/340 / Radeon 520 OEM]
+set dev Oland [Radeon HD 8570 / R5 430 OEM / R7 240/340/430 / Radeon 520 OEM]
 goto 1002
 :10026613
 set dev Oland PRO [Radeon R7 240/340 / Radeon 520]
@@ -34146,12 +34146,6 @@ exit
 :148c
 set ven Tul Corporation / PowerColor
 exit
-:148c2391
-set dev Radeon RX 590 [Red Devil]
-goto 148c
-:148c2398
-set dev AXRX 5700 XT 8GBD6-3DHE/OC [PowerColor Red Devil Radeon RX 5700 XT]
-goto 148c
 :148d
 set ven DIGICOM Systems, Inc.
 exit
@@ -48846,6 +48840,15 @@ goto 1f47
 :1f471005
 set dev CONFLUX-2200P NVMe Controller
 goto 1f47
+:1f471011
+set dev K3 Family [FLEXFLOW-3100T]
+goto 1f47
+:1f471012
+set dev K3 Family [FLEXFLOW-3100T Virtual Function]
+goto 1f47
+:1f471013
+set dev K3 Family [FLEXFLOW-3100T MGMT Function]
+goto 1f47
 :1f471105
 set dev CONFLUX-2200P NVMe Controller [Virtual Function]
 goto 1f47
@@ -49187,6 +49190,12 @@ set dev D20 Max
 goto 1fbd
 :1fbd0004
 set dev D20 Pro
+goto 1fbd
+:1fbd0005
+set dev D20 Plus N
+goto 1fbd
+:1fbd0006
+set dev D20 Pro N
 goto 1fbd
 :1fbd0101
 set dev D2
