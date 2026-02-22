@@ -27222,6 +27222,9 @@ goto 126f
 :126f2269
 set dev SM2269XT (DRAM-less) NVMe SSD Controller
 goto 126f
+:126f2504
+set dev SM2504XT NVMe 2.0 SSD Controller (DRAM-less)
+goto 126f
 :126f2508
 set dev SM2508 NVMe 2.0 SSD Controller
 goto 126f
@@ -28293,6 +28296,15 @@ goto 1303
 :1304
 set ven Juniper Networks
 exit
+:1304007b
+set dev TMC Chassis Interface
+goto 1304
+:1304007c
+set dev TMC PFE Interface
+goto 1304
+:130400c5
+set dev Supercon FPGA
+goto 1304
 :1305
 set ven Netphone, Inc
 exit
@@ -35736,8 +35748,14 @@ goto 14e4
 :14e4aa52
 set dev BCM43602 802.11ac Wireless LAN SoC
 goto 14e4
+:14e4b070
+set dev BCM56070 Switch ASIC [Firelight]
+goto 14e4
 :14e4b080
 set dev BCM56080 Firelight2 Switch ASIC
+goto 14e4
+:14e4b172
+set dev BCM56172 Hurricane3-MG
 goto 14e4
 :14e4b302
 set dev BCM56302 StrataXGS 24x1GE 2x10GE Switch Controller
@@ -35783,6 +35801,9 @@ set dev BCM56842 Trident 10GE Switch Controller
 goto 14e4
 :14e4b850
 set dev BCM56850 Switch ASIC [Trident2]
+goto 14e4
+:14e4b854
+set dev BCM56854 Trident2 switch ASIC
 goto 14e4
 :14e4b880
 set dev BCM56880 Switch ASIC
@@ -37464,6 +37485,12 @@ goto 15b3
 :15b302a3
 set dev Spectrum-7 RMA
 goto 15b3
+:15b302a6
+set dev OrionR
+goto 15b3
+:15b302a7
+set dev OrionR RMA
+goto 15b3
 :15b31002
 set dev MT25400 Family [ConnectX-2 Virtual Function]
 goto 15b3
@@ -37627,7 +37654,7 @@ goto 15b3
 set dev CX8 Family [CX8 Data Direct Interface]
 goto 15b3
 :15b32101
-set dev CX10 Family [ConnectX-10 C2C]
+set dev CX10 Family [ConnectX-10 NVLink-C2C]
 goto 15b3
 :15b34117
 set dev MT27712A0-FDCF-AE
@@ -37781,6 +37808,9 @@ set dev Arcus2
 goto 15b3
 :15b3b203
 set dev Arcus3
+goto 15b3
+:15b3b204
+set dev OrionR
 goto 15b3
 :15b3c2d1
 set dev BlueField DPU Family Auxiliary Communication Channel [BlueField Family]
@@ -42666,6 +42696,9 @@ goto 1987
 :19875027
 set dev PS5027-E27T PCIe4 NVMe Controller (DRAM-less)
 goto 1987
+:19875028
+set dev PS5028-E28 PCIe5 NVMe Controller
+goto 1987
 :19875029
 set dev PS5029-E29T PCIe4 NVMe Controller (DRAM-less)
 goto 1987
@@ -44671,10 +44704,13 @@ exit
 set dev NVMe SSD Drive 960GB
 goto 1bcd
 :1bcd0180
-set dev PB4480 NVMe PCIe SSD (DRAM-less)
+set dev PB4480 NVMe SSD (DRAM-less)
 goto 1bcd
 :1bcd0310
 set dev NVMe SSD Drive 480GB
+goto 1bcd
+:1bcd5027
+set dev AS2280Q4 NVMe SSD
 goto 1bcd
 :1bcf
 set ven NEC Corporation
@@ -44860,7 +44896,7 @@ exit
 set ven EeeTOP
 exit
 :1c00
-set ven Nanjing Qinheng Microelectronics Co., Ltd.
+set ven WCH (Nanjing Qinheng Microelectronics Co., Ltd.)
 exit
 :1c002170
 set dev CH351 PCIe Parallel Port Adapter
@@ -45285,6 +45321,24 @@ exit
 :1c630008
 set dev K1927BB1Ya [EC8430] Angara Interconnection Network Adapter
 goto 1c63
+:1c67
+set ven PreSonus Audio Electronics Inc.
+exit
+:1c670101
+set dev Quantum
+goto 1c67
+:1c670102
+set dev Quantum 2
+goto 1c67
+:1c670103
+set dev Quantum 4848
+goto 1c67
+:1c670104
+set dev Quantum 2626
+goto 1c67
+:1c670105
+set dev Quantum Mobile
+goto 1c67
 :1c7a
 set ven OWC
 exit
@@ -48480,6 +48534,9 @@ goto 1f03
 :1f032263
 set dev SM2263XT-Based NVMe SSD (DRAM-less)
 goto 1f03
+:1f032268
+set dev SM2268XT-Based NVMe SSD (DRAM-less)
+goto 1f03
 :1f032269
 set dev SM2269XT-Based NVMe SSD (DRAM-less)
 goto 1f03
@@ -49018,7 +49075,7 @@ exit
 set dev Corsair [DMX 1000 Series]
 goto 1f82
 :1f8200f1
-set dev Jetstream [DMX F1 Transparent NIC]
+set dev JetStream [DMX F1 Transparent NIC]
 goto 1f82
 :1f90
 set ven Quside Technologies
@@ -49110,6 +49167,9 @@ goto 1f99
 :1f9d
 set ven Axelera AI
 exit
+:1f9d0001
+set dev Europa AIPU
+goto 1f9d
 :1f9d1100
 set dev Metis AIPU (rev 02)
 goto 1f9d
@@ -49893,6 +49953,12 @@ goto 209b
 :209f
 set ven Mobilint, Inc.
 exit
+:20a1
+set ven Etched AI, Inc.
+exit
+:20a10001
+set dev Sohu
+goto 20a1
 :20a6
 set ven XCENA, Inc.
 exit
