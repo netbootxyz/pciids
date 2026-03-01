@@ -2599,7 +2599,7 @@ goto 1002
 set dev Vega 20 [Radeon Pro/Radeon Instinct]
 goto 1002
 :100266a1
-set dev Vega 20 [Radeon Pro VII/Radeon Instinct MI50 32GB]
+set dev Vega 20 [Radeon Pro VII/Radeon Instinct MI50]
 goto 1002
 :100266a2
 set dev Vega 20
@@ -3625,7 +3625,7 @@ goto 1002
 set dev Navi 31 [Radeon Pro W7800]
 goto 1002
 :10027460
-set dev Navi32 GL-XL [AMD Radeon PRO V710]
+set dev Navi 32 GL-XL [AMD Radeon PRO V710]
 goto 1002
 :10027461
 set dev Navi 32 [AMD Radeon PRO V710]
