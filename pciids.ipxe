@@ -642,6 +642,12 @@ goto 0e11
 :0e55
 set ven HaSoTec GmbH
 exit
+:0e8d
+set ven MediaTek Inc. (Wrong ID)
+exit
+:0e8d0801
+set dev MT7621 PCIe Bridge
+goto 0e8d
 :0eac
 set ven SHF Communication Technologies AG
 exit
@@ -20131,7 +20137,7 @@ goto 10de
 set dev GB203GLM [RTX PRO 4000 Blackwell Generation Laptop GPU]
 goto 10de
 :10de2c3a
-set dev GB203GL [RTX PRO 4500 Blackwell]
+set dev GB203GL [RTX PRO 4500 Blackwell Server Edition]
 goto 10de
 :10de2c58
 set dev GB203M / GN22-X11 [GeForce RTX 5090 Max-Q / Mobile]
@@ -28980,6 +28986,9 @@ goto 1344
 :134451cb
 set dev 6550 ION NVMe SSD
 goto 1344
+:134451cc
+set dev 6600 ION NVMe SSD
+goto 1344
 :134451cd
 set dev 9650 PRO NVMe SSD
 goto 1344
@@ -34512,6 +34521,9 @@ goto 14c3
 :14c37902
 set dev MT7902 802.11ax PCIe Wireless Network Adapter [Filogic 310]
 goto 14c3
+:14c37906
+set dev MT7916A/MT7916D normal link PCIe Wi-Fi 6(802.11ax) 160MHz 2x2 Wireless Network Adapter [Filogic 630]
+goto 14c3
 :14c37915
 set dev MT7915A/MT7915D normal link PCIe Wi-Fi 6(802.11ax) 80MHz 4x4/2x2 Wireless Network Adapter [Filogic 615]
 goto 14c3
@@ -35729,6 +35741,9 @@ set dev BCM4388 Bluetooth Controller
 goto 14e4
 :14e45fa0
 set dev BRCM4377 Bluetooth Controller
+goto 14e4
+:14e46865
+set dev BCM68650 [Aspen] XGSPON OLT
 goto 14e4
 :14e48411
 set dev BCM47xx PCIe Bridge
@@ -45423,6 +45438,9 @@ goto 1cc1
 :1cc133f8
 set dev IM2P33F8 series NVMe SSD (DRAM-less)
 goto 1cc1
+:1cc1413d
+set dev SM2P41D3Q NVMe SSD (DRAM-less)
+goto 1cc1
 :1cc141c3
 set dev SM2P41C3 NVMe SSD (DRAM-less)
 goto 1cc1
@@ -48004,7 +48022,7 @@ goto 1e95
 set dev CA8 Series NVMe SSD M.2
 goto 1e95
 :1e951007
-set dev CL4-8D512 NVMe SSD M.2 (DRAM-less)
+set dev CL4 Series NVMe SSD M.2 (DRAM-less)
 goto 1e95
 :1e951008
 set dev CL5-8D512 NVMe SSD M.2 (DRAM-less)
@@ -48807,6 +48825,12 @@ goto 1f31
 :1f314622
 set dev NEM-PAC NVMe SSD (DRAM-less)
 goto 1f31
+:1f32
+set ven Wuhan YuXin Semiconductor Co., Ltd.
+exit
+:1f32ed55
+set dev U800G NVMe SSD
+goto 1f32
 :1f3f
 set ven 3SNIC Ltd
 exit
@@ -50076,12 +50100,18 @@ goto 20f6
 :20f9
 set ven Shenzhen Silicon Dynamic Networks Co., Ltd.
 exit
+:2105
+set ven Shanghai Timar Integrated Circuit Co., LTD
+exit
 :2106
 set ven ZCHL Technology Co., Ltd
 exit
 :21060001
 set dev HL100 Accelerator Controller
 goto 2106
+:2108
+set ven HuiLink Technologies (Xiamen) Co., Ltd.
+exit
 :2116
 set ven ZyDAS Technology Corp.
 exit
@@ -66665,6 +66695,33 @@ set dev NVL-UL
 goto 8086
 :8086d745
 set dev NVL-HX
+goto 8086
+:8086d750
+set dev NVL-P
+goto 8086
+:8086d751
+set dev NVL-P
+goto 8086
+:8086d752
+set dev NVL-P
+goto 8086
+:8086d753
+set dev NVL-P
+goto 8086
+:8086d754
+set dev NVL-P
+goto 8086
+:8086d755
+set dev NVL-P
+goto 8086
+:8086d756
+set dev NVL-P
+goto 8086
+:8086d757
+set dev NVL-P
+goto 8086
+:8086d75f
+set dev NVL-P
 goto 8086
 :8086e202
 set dev Battlemage G21 [Intel Graphics]
