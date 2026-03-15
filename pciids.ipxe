@@ -48004,7 +48004,7 @@ exit
 set ven Solid State Storage Technology Corporation
 exit
 :1e951000
-set dev XA1-311024 NVMe SSD M.2
+set dev XA1 Series NVMe SSD M.2 (DRAM-less)
 goto 1e95
 :1e951001
 set dev CA6-8D512 NVMe SSD M.2
@@ -49593,6 +49593,18 @@ goto 1ff2
 :1ff210a2
 set dev NIC1160 Ethernet Controller Virtual Function Family
 goto 1ff2
+:1ff210b1
+set dev NIC 1260 Ethernet Controller Family
+goto 1ff2
+:1ff210b2
+set dev NIC 1260 Ethernet Controller Virtual Function Family
+goto 1ff2
+:1ff210b3
+set dev NIC 1260C Ethernet Controller Family
+goto 1ff2
+:1ff210b4
+set dev NIC 1260C Ethernet Controller Virtual Function Family
+goto 1ff2
 :1ff220a1
 set dev IOC2110 Storage Controller
 goto 1ff2
@@ -50081,6 +50093,18 @@ set dev LS X710-M
 goto 20e1
 :20e17104
 set dev LS X710-P
+goto 20e1
+:20e17180
+set dev LS X718
+goto 20e1
+:20e17211
+set dev LS X721-E
+goto 20e1
+:20e17223
+set dev LS X722-M
+goto 20e1
+:20e17224
+set dev LS X722-P
 goto 20e1
 :20e3
 set ven Elix Systems SA
@@ -66662,6 +66686,60 @@ set dev Core Processor System Control and Status Registers
 goto 8086
 :8086d158
 set dev Core Processor Miscellaneous Registers
+goto 8086
+:8086d323
+set dev Nova Lake PCD-H SPI Controller
+goto 8086
+:8086d325
+set dev Nova Lake PCD-H Serial IO UART Controller #0
+goto 8086
+:8086d326
+set dev Nova Lake PCD-H Serial IO UART Controller #1
+goto 8086
+:8086d327
+set dev Nova Lake PCD-H Serial IO SPI Controller #0
+goto 8086
+:8086d330
+set dev Nova Lake PCD-H Serial IO SPI Controller #1
+goto 8086
+:8086d331
+set dev Nova Lake-H Thunderbolt 5 USB Controller
+goto 8086
+:8086d333
+set dev Nova Lake-H Thunderbolt 5 NHI #0
+goto 8086
+:8086d347
+set dev Nova Lake PCD-H Serial IO SPI Controller #2
+goto 8086
+:8086d34e
+set dev Nova Lake-H Thunderbolt 5 PCI Express Root Port #0
+goto 8086
+:8086d34f
+set dev Nova Lake-H Thunderbolt 5 PCI Express Root Port #1
+goto 8086
+:8086d350
+set dev Nova Lake PCD-H Serial IO I2C Controller #4
+goto 8086
+:8086d351
+set dev Nova Lake PCD-H Serial IO I2C Controller #5
+goto 8086
+:8086d352
+set dev Nova Lake PCD-H Serial IO UART Controller #2
+goto 8086
+:8086d360
+set dev Nova Lake-H Thunderbolt 5 PCI Express Root Port #2
+goto 8086
+:8086d378
+set dev Nova Lake PCD-H Serial IO I2C Controller #0
+goto 8086
+:8086d379
+set dev Nova Lake PCD-H Serial IO I2C Controller #1
+goto 8086
+:8086d37a
+set dev Nova Lake PCD-H Serial IO I2C Controller #2
+goto 8086
+:8086d37b
+set dev Nova Lake PCD-H Serial IO I2C Controller #3
 goto 8086
 :8086d431
 set dev Nova Lake-S Thunderbolt 5 USB Controller
