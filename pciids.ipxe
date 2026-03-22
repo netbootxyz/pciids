@@ -3502,7 +3502,7 @@ goto 1002
 set dev Navi 10 [Radeon RX 5600 OEM/5600 XT / 5700/5700 XT]
 goto 1002
 :10027340
-set dev Navi 14 [Radeon RX 5500/5500M / Pro 5300/5500M]
+set dev Navi 14 [Radeon RX 5500/5500M / Pro 5300/5300M/5500M]
 goto 1002
 :10027341
 set dev Navi 14 [Radeon Pro W5500]
@@ -47559,6 +47559,9 @@ goto 1e0f
 :1e0f0035
 set dev CM9-based U3 NVMe SSD
 goto 1e0f
+:1e0f003d
+set dev LC9 E3.L NVMe SSD
+goto 1e0f
 :1e0f003e
 set dev LC9 E3.S NVMe SSD
 goto 1e0f
@@ -50124,6 +50127,9 @@ goto 20f6
 :20f9
 set ven Shenzhen Silicon Dynamic Networks Co., Ltd.
 exit
+:2100
+set ven Shenzhen Kimviking Semiconductor Co., Ltd.
+exit
 :2105
 set ven Shanghai Timar Integrated Circuit Co., LTD
 exit
@@ -50136,6 +50142,18 @@ goto 2106
 :2108
 set ven HuiLink Technologies (Xiamen) Co., Ltd.
 exit
+:21082401
+set dev PCIe4.0 to USB3.2 Gen2 Host Controller
+goto 2108
+:2114
+set ven EigenQ, Inc.
+exit
+:21140007
+set dev QMA Board M.2 Gen2
+goto 2114
+:2114000a
+set dev QMA Board PCIe Gen2
+goto 2114
 :2116
 set ven ZyDAS Technology Corp.
 exit
@@ -54395,6 +54413,9 @@ set dev Quark SoC X1000 PCIe Root Port 0
 goto 8086
 :808611c4
 set dev Quark SoC X1000 PCIe Root Port 1
+goto 8086
+:808611df
+set dev Infrastructure Data Path Function
 goto 8086
 :808611eb
 set dev Simics NVMe Controller
@@ -66974,6 +66995,21 @@ set dev Panther Lake USB 3.2 xHCI Controller
 goto 8086
 :8086e37f
 set dev Panther Lake Shared SRAM
+goto 8086
+:8086e431
+set dev Panther Lake USB 3.2 xHCI Controller
+goto 8086
+:8086e434
+set dev Panther Lake Thunderbolt 4 NHI #2
+goto 8086
+:8086e440
+set dev Panther Lake PCH CNVi WiFi
+goto 8086
+:8086e476
+set dev Panther Lake Bluetooth PCI Enumerator
+goto 8086
+:8086e47d
+set dev Panther Lake USB 3.2 xHCI Controller
 goto 8086
 :8086f1a5
 set dev SSD 600P Series
