@@ -20037,6 +20037,9 @@ goto 10de
 :10de2901
 set dev GB100 [B200]
 goto 10de
+:10de2909
+set dev GB100 [B200]
+goto 10de
 :10de2920
 set dev GB100 [TS4 / B100]
 goto 10de
@@ -20233,6 +20236,9 @@ goto 10de
 set dev GB110 [Reserved Dev ID B]
 goto 10de
 :10de31c2
+set dev GB110 [GB300]
+goto 10de
+:10de31c3
 set dev GB110 [GB300]
 goto 10de
 :10de31fe
@@ -43503,8 +43509,17 @@ goto 1aa9
 :1aa90018
 set dev SEL-3390E4 Ethernet Adapter
 goto 1aa9
+:1aa90019
+set dev SEL-2241-2/SEL-3361 Mainboard
+goto 1aa9
 :1aa9001c
 set dev SEL-3390E4 Ethernet Adapter
+goto 1aa9
+:1aa9001d
+set dev SEL-3350 GPIO Expansion Board
+goto 1aa9
+:1aa9001e
+set dev SEL-3350 Serial Expansion Board
 goto 1aa9
 :1aab
 set ven Silver Creations AG
@@ -65380,94 +65395,151 @@ goto 8086
 set dev Atom Processor D4xx/D5xx/N4xx/N5xx CHAPS counter
 goto 8086
 :8086a082
-set dev Tiger Lake-LP LPC Controller
+set dev 500 Series Chipset Family On-Package eSPI Controller
+goto 8086
+:8086a0a0
+set dev 500 Series Chipset Family On-Package Primary-to-Sideband Bridge (P2SB)
+goto 8086
+:8086a0a1
+set dev 500 Series Chipset Family On-Package Power Management Controller (PMC)
 goto 8086
 :8086a0a3
-set dev Tiger Lake-LP SMBus Controller
+set dev 500 Series Chipset Family On-Package System Management Bus (SMBus)
 goto 8086
 :8086a0a4
-set dev Tiger Lake-LP SPI Controller
+set dev 500 Series Chipset Family On-Package SPI (flash) Controller
 goto 8086
 :8086a0a6
-set dev Tiger Lake-LP Trace Hub
+set dev 500 Series Chipset Family On-Package Trace Hub
 goto 8086
 :8086a0a8
-set dev Tiger Lake-LP Serial IO UART Controller #0
+set dev 500 Series Chipset Family On-Package UART Controller #0
 goto 8086
 :8086a0a9
-set dev Tiger Lake-LP Serial IO UART Controller #1
+set dev 500 Series Chipset Family On-Package UART Controller #1
+goto 8086
+:8086a0aa
+set dev 500 Series Chipset Family On-Package Generic SPI (GSPI) #0
 goto 8086
 :8086a0ab
-set dev Tiger Lake-LP Serial IO SPI Controller #1
+set dev 500 Series Chipset Family On-Package Generic SPI (GSPI) #1
 goto 8086
 :8086a0b0
-set dev Tiger Lake-LP PCI Express Root Port #9
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #9
 goto 8086
 :8086a0b1
-set dev Tiger Lake-LP PCI Express Root Port #10
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #10
+goto 8086
+:8086a0b2
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #11
 goto 8086
 :8086a0b3
-set dev Tiger Lake-LP PCI Express Root Port #12
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #12
 goto 8086
 :8086a0b8
-set dev Tiger Lake-LP PCI Express Root Port #0
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #1
+goto 8086
+:8086a0b9
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #2
+goto 8086
+:8086a0ba
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #3
 goto 8086
 :8086a0bb
-set dev Tiger Lake-LP PCI Express Root Port #3
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #4
 goto 8086
 :8086a0bc
-set dev Tiger Lake-LP PCI Express Root Port #5
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #5
 goto 8086
 :8086a0bd
-set dev Tigerlake PCH-LP PCI Express Root Port #6
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #6
 goto 8086
 :8086a0be
-set dev Tiger Lake-LP PCI Express Root Port #7
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #7
 goto 8086
 :8086a0bf
-set dev Tiger Lake-LP PCI Express Root Port #8
+set dev 500 Series Chipset Family On-Package PCI Express Root Port #8
 goto 8086
 :8086a0c5
-set dev Tiger Lake-LP Serial IO I2C Controller #4
+set dev 500 Series Chipset Family On-Package I2C Controller #4
 goto 8086
 :8086a0c6
-set dev Tiger Lake-LP Serial IO I2C Controller #5
+set dev 500 Series Chipset Family On-Package I2C Controller #5
+goto 8086
+:8086a0c7
+set dev 500 Series Chipset Family On-Package UART Controller #2
 goto 8086
 :8086a0c8
-set dev Tiger Lake-LP Smart Sound Technology Audio Controller
+set dev 500 Series Chipset Family On-Package High Definition Audio (HD Audio)
+goto 8086
+:8086a0d0
+set dev 500 Series Chipset Family On-Package Touch Host Controller #0
+goto 8086
+:8086a0d1
+set dev 500 Series Chipset Family On-Package Touch Host Controller #1
 goto 8086
 :8086a0d3
-set dev Tiger Lake-LP SATA Controller
+set dev 500 Series Chipset Family On-Package SATA Controller (AHCI)
+goto 8086
+:8086a0d5
+set dev 500 Series Chipset Family On-Package SATA Controller (RAID 0/1/5/10) no premium
+goto 8086
+:8086a0d7
+set dev 500 Series Chipset Family On-Package SATA Controller (RAID 0/1/5/10) premium
+goto 8086
+:8086a0da
+set dev 500 Series Chipset Family On-Package UART Controller #3
 goto 8086
 :8086a0e0
-set dev Tiger Lake-LP Management Engine Interface
+set dev 500 Series Chipset Family On-Package CSME HECI #1
+goto 8086
+:8086a0e1
+set dev 500 Series Chipset Family On-Package CSME HECI #2
+goto 8086
+:8086a0e2
+set dev 500 Series Chipset Family On-Package CSME IDE Redirection (IDE-R)
 goto 8086
 :8086a0e3
-set dev Tiger Lake-LP Active Management Technology - SOL
+set dev 500 Series Chipset Family On-Package CSME Keyboard and Text (KT) Redirection
+goto 8086
+:8086a0e4
+set dev 500 Series Chipset Family On-Package CSME HECI #3
+goto 8086
+:8086a0e5
+set dev 500 Series Chipset Family On-Package CSME HECI #4
 goto 8086
 :8086a0e8
-set dev Tiger Lake-LP Serial IO I2C Controller #0
+set dev 500 Series Chipset Family On-Package I2C Controller #0
 goto 8086
 :8086a0e9
-set dev Tiger Lake-LP Serial IO I2C Controller #1
+set dev 500 Series Chipset Family On-Package I2C Controller #1
 goto 8086
 :8086a0ea
-set dev Tiger Lake-LP Serial IO I2C Controller #2
+set dev 500 Series Chipset Family On-Package I2C Controller #2
 goto 8086
 :8086a0eb
-set dev Tiger Lake-LP Serial IO I2C Controller #3
+set dev 500 Series Chipset Family On-Package I2C Controller #3
 goto 8086
 :8086a0ed
-set dev Tiger Lake-LP USB 3.2 Gen 2x1 xHCI Host Controller
+set dev 500 Series Chipset Family On-Package USB 3.2 Gen 2x1 (10 Gbs) xHCI Host Controller
+goto 8086
+:8086a0ee
+set dev 500 Series Chipset Family On-Package USB 3.2 Gen 1x1 (5 Gbs) Device Controller (xDCI)
 goto 8086
 :8086a0ef
-set dev Tiger Lake-LP Shared SRAM
+set dev 500 Series Chipset Family On-Package Shared SRAM
 goto 8086
 :8086a0f0
 set dev Wi-Fi 6 AX201
 goto 8086
+:8086a0fb
+set dev 500 Series Chipset Family On-Package Generic SPI (GSPI) #2
+goto 8086
 :8086a0fc
-set dev Tiger Lake-LP Integrated Sensor Hub
+set dev 500 Series Chipset Family On-Package Integrated Sensor Hub
+goto 8086
+:8086a0fd
+set dev 500 Series Chipset Family On-Package Generic SPI (GSPI) #3
 goto 8086
 :8086a102
 set dev Q170/Q150/B150/H170/H110/Z170/CM236 Chipset SATA Controller [AHCI Mode]
@@ -66508,7 +66580,7 @@ goto 8086
 set dev Lunar Lake-M PCI Express Root Port #6
 goto 8086
 :8086a840
-set dev BE201 320MHz
+set dev BE200 Series Wi-Fi 7
 goto 8086
 :8086a845
 set dev Lunar Lake-M Integrated Sensor Hub
@@ -66856,10 +66928,10 @@ goto 8086
 set dev Battlemage G31 [Intel Graphics]
 goto 8086
 :8086e222
-set dev Battlemage G31 [Intel Graphics]
+set dev Battlemage G31 [Arc Pro B65]
 goto 8086
 :8086e223
-set dev Battlemage G31 [Intel Graphics]
+set dev Battlemage G31 [Arc Pro B70]
 goto 8086
 :8086e302
 set dev Panther Lake LPC/eSPI Controller
