@@ -12,6 +12,24 @@ goto 0010
 :0014
 set ven Loongson Technology LLC
 exit
+:00143b0f
+set dev DMA Adress Translation Unit [Loongson 3 Processor Family]
+goto 0014
+:00143c09
+set dev Internal PCI to PCI Bridge [Loongson 3 Processor Family]
+goto 0014
+:00143c0f
+set dev DMA Adress Translation Unit [Loongson 3 Processor Family]
+goto 0014
+:00143c19
+set dev PCI Express x16 Root Port [Loongson 3 Processor Family]
+goto 0014
+:00143c29
+set dev PCI Express x8 Root Port [Loongson 3 Processor Family]
+goto 0014
+:00143c39
+set dev PCI Express x4 Root Port [Loongson 3 Processor Family]
+goto 0014
 :00147a00
 set dev 7A1000 Chipset Hyper Transport Bridge Controller
 goto 0014
@@ -31,7 +49,7 @@ goto 0014
 set dev 2K1000 / 7A1000 Chipset Display Controller
 goto 0014
 :00147a07
-set dev 2K1000/2000 / 7A1000/2000 Chipset HD Audio Controller
+set dev 2K1000/2000/3000 / 3B6000M / 7A1000/2000 Chipset HD Audio Controller
 goto 0014
 :00147a08
 set dev 2K1000 / 7A1000 Chipset 3Gb/s SATA AHCI Controller
@@ -70,7 +88,7 @@ goto 0014
 set dev 7A1000 Chipset AC97 Audio Controller
 goto 0014
 :00147a18
-set dev 2K2000 / 7A2000 Chipset 6Gb/s SATA AHCI Controller
+set dev 2K2000/3000 / 3B6000M / 7A2000 Chipset 6Gb/s SATA AHCI Controller
 goto 0014
 :00147a19
 set dev PCI-to-PCI Bridge
@@ -79,16 +97,19 @@ goto 0014
 set dev 2K2000 Configuration Bus
 goto 0014
 :00147a1b
-set dev 2K2000 / 7A2000 Chipset SPI Controller
+set dev 2K2000/3000 / 3B6000M / 7A2000 Chipset SPI Controller
 goto 0014
 :00147a1d
-set dev 2K2000 RapidIO Interface
+set dev 2K2000 / 2K3000 / 3B6000M RapidIO Interface
 goto 0014
 :00147a1e
 set dev 2K2000 DES Controller
 goto 0014
 :00147a22
 set dev 2K2000 Advanced Peripheral Bus Controller
+goto 0014
+:00147a23
+set dev Gigabit Ethernet Controller [Chipset / CPU inside]
 goto 0014
 :00147a24
 set dev 2K1000 / 7A1000/2000 Chipset USB OHCI Controller
@@ -100,7 +121,7 @@ goto 0014
 set dev 2K1000 Camera Controller
 goto 0014
 :00147a27
-set dev 2K2000 / 7A2000 Chipset I2S Controller
+set dev 2K2000/3000 / 3B6000M / 7A2000 Chipset I2S Controller
 goto 0014
 :00147a29
 set dev 7A1000 Chipset PCIe x8 Bridge
@@ -112,13 +133,16 @@ goto 0014
 set dev 2K2000 DMA Controller
 goto 0014
 :00147a34
-set dev 2K2000 / 7A2000 Chipset USB 3.0 xHCI Controller
+set dev 2K2000/3000 / 3B6000M / 7A2000 Chipset USB 3.0 xHCI Controller
+goto 0014
+:00147a35
+set dev LG200 GPU
 goto 0014
 :00147a36
 set dev 2K2000 / 7A2000 Chipset Display Controller
 goto 0014
 :00147a37
-set dev 2K2000 HDMI Audio Controller
+set dev 2K2000/3000 / 3B6000M HDMI Audio Controller
 goto 0014
 :00147a39
 set dev 2K2000 / 7A2000 Chipset PCIe x1 Root Port
@@ -126,11 +150,20 @@ goto 0014
 :00147a3e
 set dev 2K2000 RNG Controller
 goto 0014
+:00147a42
+set dev Advanced Peripheral Bus Controller [Chipset / CPU inside]
+goto 0014
 :00147a44
-set dev 2K2000 USB 2.0 xHCI Controller
+set dev 2K2000/3000 / 3B6000M USB 2.0 xHCI Controller
+goto 0014
+:00147a46
+set dev Video Display Controller [Chipset / CPU inside]
+goto 0014
+:00147a47
+set dev Pulse-Code Modulation [Chipset / CPU inside]
 goto 0014
 :00147a48
-set dev 2K2000 SDIO Controller
+set dev 2K2000/3000 / 3B6000M SDIO Controller
 goto 0014
 :00147a49
 set dev 2K2000 / 7A2000 Chipset PCIe x4 Root Port
@@ -138,8 +171,14 @@ goto 0014
 :00147a54
 set dev 2K2000 OTG USB Controller
 goto 0014
+:00147a56
+set dev Video Processing Unit Decoder [Chipset / CPU inside]
+goto 0014
 :00147a59
 set dev 7A2000 Chipset PCIe x8 Root Port
+goto 0014
+:00147a66
+set dev Video Processing Unit Encoder [Chipset / CPU inside]
 goto 0014
 :00147a69
 set dev 7A2000 Chipset PCIe x16 Root Port
@@ -148,10 +187,16 @@ goto 0014
 set dev 2K2000 PCIe Root Complex
 goto 0014
 :00147a88
-set dev 2K2000 eMMC Controller
+set dev 2K2000/3000 / 3B6000M eMMC Controller
+goto 0014
+:00147a89
+set dev PCI Express x1 Root Port [Chipset / CPU inside]
 goto 0014
 :00147a8e
 set dev 2K2000 SE Controller
+goto 0014
+:00147a99
+set dev PCI Express x4 Root Port [Chipset / CPU inside]
 goto 0014
 :00147af9
 set dev 2K2000 PCIe Endpoint
