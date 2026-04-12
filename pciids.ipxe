@@ -438,6 +438,9 @@ goto 0731
 :0731ff11
 set dev JM1100-YV
 goto 0731
+:0771
+set ven Xi'an Microelectronics Technology Institute
+exit
 :0777
 set ven Ubiquiti Networks, Inc.
 exit
@@ -26007,17 +26010,86 @@ exit
 :11f8
 set ven Microchip Technology
 exit
+:11f84000
+set dev PM40100 Switchtec PFX 100xG4 Fanout PCIe Switch
+goto 11f8
+:11f84028
+set dev PM40028 Switchtec PFX 28xG4 Fanout PCIe Switch
+goto 11f8
 :11f84036
 set dev PM40036 Switchtec PFX 36xG4 Fanout PCIe Switch
 goto 11f8
 :11f84052
 set dev PM40052 Switchtec PFX 52xG4 Fanout PCIe Switch
 goto 11f8
+:11f84068
+set dev PM40068 Switchtec PFX 68xG4 Fanout PCIe Switch
+goto 11f8
 :11f84084
 set dev PM40084 Switchtec PFX 84xG4 Fanout PCIe Switch
 goto 11f8
+:11f84100
+set dev PM41100 Switchtec PSX 100xG4 Programmable PCIe Switch
+goto 11f8
 :11f84128
 set dev PM41028 Switchtec PSX 28xG4 Programmable PCIe Switch
+goto 11f8
+:11f84136
+set dev PM41036 Switchtec PSX 36xG4 Programmable PCIe Switch
+goto 11f8
+:11f84152
+set dev PM41052 Switchtec PSX 52xG4 Programmable PCIe Switch
+goto 11f8
+:11f84168
+set dev PM41068 Switchtec PSX 68xG4 Programmable PCIe Switch
+goto 11f8
+:11f84184
+set dev PM41084 Switchtec PSX 84xG4 Programmable PCIe Switch
+goto 11f8
+:11f84200
+set dev PM42100 Switchtec PAX 100xG4 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f84228
+set dev PM42028 Switchtec PAX 28xG4 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f84236
+set dev PM42036 Switchtec PAX 36xG4 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f84252
+set dev PM42052 Switchtec PAX 52xG4 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f84268
+set dev PM42068 Switchtec PAX 68xG4 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f84284
+set dev PM42084 Switchtec PAX 84xG4 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f84328
+set dev PM43028 Switchtec PFXA 28xG4 Automotive Fanout PCIe Switch
+goto 11f8
+:11f84336
+set dev PM43036 Switchtec PFXA 36xG4 Automotive Fanout PCIe Switch
+goto 11f8
+:11f84352
+set dev PM43052 Switchtec PFXA 52xG4 Automotive Fanout PCIe Switch
+goto 11f8
+:11f84428
+set dev PM44028 Switchtec PSXA 28xG4 Automotive Programmable PCIe Switch
+goto 11f8
+:11f84436
+set dev PM44036 Switchtec PSXA 36xG4 Automotive Programmable PCIe Switch
+goto 11f8
+:11f84452
+set dev PM44052 Switchtec PSXA 52xG4 Automotive Programmable PCIe Switch
+goto 11f8
+:11f84528
+set dev PM45028 Switchtec PAXA 28xG4 Automotive Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f84536
+set dev PM45036 Switchtec PAXA 36xG4 Automotive Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f84552
+set dev PM45052 Switchtec PAXA 52xG4 Automotive Programmable Advanced Fabric PCIe Switch
 goto 11f8
 :11f85000
 set dev PM50100 Switchtec PFX 100xG5 Fanout PCIe Switch
@@ -26055,8 +26127,128 @@ goto 11f8
 :11f85184
 set dev PM51084 Switchtec PSX 84xG5 Programmable PCIe Switch
 goto 11f8
+:11f85200
+set dev PM52100 Switchtec PAX 100xG5 Programmable Advanced Fabric PCIe Switch
+goto 11f8
 :11f85220
 set dev BR522x [PMC-Sierra maxRAID SAS Controller]
+goto 11f8
+:11f85228
+set dev PM52028 Switchtec PAX 28xG5 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85236
+set dev PM52036 Switchtec PAX 36xG5 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85252
+set dev PM52052 Switchtec PAX 52xG5 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85268
+set dev PM52068 Switchtec PAX 68xG5 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85284
+set dev PM52084 Switchtec PAX 84xG5 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85300
+set dev PM53100 Switchtec PFXA 100xG5 Automotive Fanout PCIe Switch
+goto 11f8
+:11f85328
+set dev PM53028 Switchtec PFXA 28xG5 Automotive Fanout PCIe Switch
+goto 11f8
+:11f85336
+set dev PM53036 Switchtec PFXA 36xG5 Automotive Fanout PCIe Switch
+goto 11f8
+:11f85352
+set dev PM53052 Switchtec PFXA 52xG5 Automotive Fanout PCIe Switch
+goto 11f8
+:11f85368
+set dev PM53068 Switchtec PFXA 68xG5 Automotive Fanout PCIe Switch
+goto 11f8
+:11f85384
+set dev PM53084 Switchtec PFXA 84xG5 Automotive Fanout PCIe Switch
+goto 11f8
+:11f85400
+set dev PM54100 Switchtec PSXA 100xG5 Automotive Programmable PCIe Switch
+goto 11f8
+:11f85428
+set dev PM54028 Switchtec PSXA 28xG5 Automotive Programmable PCIe Switch
+goto 11f8
+:11f85436
+set dev PM54036 Switchtec PSXA 36xG5 Automotive Programmable PCIe Switch
+goto 11f8
+:11f85452
+set dev PM54052 Switchtec PSXA 52xG5 Automotive Programmable PCIe Switch
+goto 11f8
+:11f85468
+set dev PM54068 Switchtec PSXA 68xG5 Automotive Programmable PCIe Switch
+goto 11f8
+:11f85484
+set dev PM54084 Switchtec PSXA 84xG5 Automotive Programmable PCIe Switch
+goto 11f8
+:11f85500
+set dev PM55100 Switchtec PAXA 100xG5 Automotive Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85528
+set dev PM55028 Switchtec PAXA 28xG5 Automotive Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85536
+set dev PM55036 Switchtec PAXA 36xG5 Automotive Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85552
+set dev PM55052 Switchtec PAXA 52xG5 Automotive Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85568
+set dev PM55068 Switchtec PAXA 68xG5 Automotive Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f85584
+set dev PM55084 Switchtec PAXA 84xG5 Automotive Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f86044
+set dev PM60144 Switchtec PFXs 144xG6 Secure-capable Fanout PCIe Switch
+goto 11f8
+:11f86048
+set dev PM60048 Switchtec PFXs 48xG6 Secure-capable Fanout PCIe Switch
+goto 11f8
+:11f86060
+set dev PM60160 Switchtec PFXs 160xG6 Secure-capable Fanout PCIe Switch
+goto 11f8
+:11f86064
+set dev PM60064 Switchtec PFXs 64xG6 Secure-capable Fanout PCIe Switch
+goto 11f8
+:11f86144
+set dev PM61144 Switchtec PSXs 144xG6 Secure-capable Programmable PCIe Switch
+goto 11f8
+:11f86148
+set dev PM61048 Switchtec PSXs 48xG6 Secure-capable Programmable PCIe Switch
+goto 11f8
+:11f86160
+set dev PM61160 Switchtec PSXs 160xG6 Secure-capable Programmable PCIe Switch
+goto 11f8
+:11f86164
+set dev PM61064 Switchtec PSXs 64xG6 Secure-capable Programmable PCIe Switch
+goto 11f8
+:11f86244
+set dev PM62144 Switchtec PFX 144xG6 Fanout PCIe Switch
+goto 11f8
+:11f86248
+set dev PM62048 Switchtec PFX 48xG6 Fanout PCIe Switch
+goto 11f8
+:11f86260
+set dev PM62160 Switchtec PFX 160xG6 Fanout PCIe Switch
+goto 11f8
+:11f86264
+set dev PM62064 Switchtec PFX 64xG6 Fanout PCIe Switch
+goto 11f8
+:11f86344
+set dev PM63144 Switchtec PSX 144xG6 Programmable PCIe Switch
+goto 11f8
+:11f86348
+set dev PM63048 Switchtec PSX 48xG6 Programmable PCIe Switch
+goto 11f8
+:11f86360
+set dev PM63160 Switchtec PSX 160xG6 Programmable PCIe Switch
+goto 11f8
+:11f86364
+set dev PM63064 Switchtec PSX 64xG6 Programmable PCIe Switch
 goto 11f8
 :11f87364
 set dev PM7364 [FREEDM - 32 Frame Engine & Datalink Mgr]
@@ -26127,11 +26319,77 @@ goto 11f8
 :11f88536
 set dev PM8536 PFX 96xG3 PCIe Fanout Switch
 goto 11f8
+:11f88541
+set dev PM8541 PSX 24xG3 Programmable PCIe Switch
+goto 11f8
+:11f88542
+set dev PM8542 PSX 32xG3 Programmable PCIe Switch
+goto 11f8
+:11f88543
+set dev PM8543 PSX 48xG3 Programmable PCIe Switch
+goto 11f8
+:11f88544
+set dev PM8544 PSX 64xG3 Programmable PCIe Switch
+goto 11f8
+:11f88545
+set dev PM8545 PSX 80xG3 Programmable PCIe Switch
+goto 11f8
 :11f88546
 set dev PM8546 B-FEIP PSX 96xG3 PCIe Storage Switch
 goto 11f8
+:11f88551
+set dev PM8551 PAX 24xG3 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f88552
+set dev PM8552 PAX 32xG3 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f88553
+set dev PM8553 PAX 48xG3 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f88554
+set dev PM8554 PAX 64xG3 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f88555
+set dev PM8555 PAX 80xG3 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f88556
+set dev PM8556 PAX 96xG3 Programmable Advanced Fabric PCIe Switch
+goto 11f8
+:11f88561
+set dev PM8561 Switchtec PFX-L 24xG3 Fanout-Lite PCIe Switch
+goto 11f8
 :11f88562
 set dev PM8562 Switchtec PFX-L 32xG3 Fanout-Lite PCIe Gen3 Switch
+goto 11f8
+:11f88563
+set dev PM8563 Switchtec PFX-L 48xG3 Fanout-Lite PCIe Switch
+goto 11f8
+:11f88564
+set dev PM8564 Switchtec PFX-L 64xG3 Fanout-Lite PCIe Switch
+goto 11f8
+:11f88565
+set dev PM8565 Switchtec PFX-L 80xG3 Fanout-Lite PCIe Switch
+goto 11f8
+:11f88566
+set dev PM8566 Switchtec PFX-L 96xG3 Fanout-Lite PCIe Switch
+goto 11f8
+:11f88571
+set dev PM8571 Switchtec PFX-I 24xG3 Industrial Fanout PCIe Switch
+goto 11f8
+:11f88572
+set dev PM8572 Switchtec PFX-I 32xG3 Industrial Fanout PCIe Switch
+goto 11f8
+:11f88573
+set dev PM8573 Switchtec PFX-I 48xG3 Industrial Fanout PCIe Switch
+goto 11f8
+:11f88574
+set dev PM8574 Switchtec PFX-I 64xG3 Industrial Fanout PCIe Switch
+goto 11f8
+:11f88575
+set dev PM8575 Switchtec PFX-I 80xG3 Industrial Fanout PCIe Switch
+goto 11f8
+:11f88576
+set dev PM8576 Switchtec PFX-I 96xG3 Industrial Fanout PCIe Switch
 goto 11f8
 :11f9
 set ven I-Cube Inc
@@ -37510,7 +37768,7 @@ goto 15b3
 set dev LibraE RMA
 goto 15b3
 :15b30288
-set dev Arcus2
+set dev Arcus2 Flash Recovery
 goto 15b3
 :15b30289
 set dev Arcus2 RMA
@@ -37525,19 +37783,19 @@ goto 15b3
 set dev Arcus3 RMA
 goto 15b3
 :15b30294
-set dev Ophy 2.1 (SagittaZ)
+set dev OPHY2.1 [SagittaZ]
 goto 15b3
 :15b30296
-set dev OPHY2.6
+set dev OPHY2.6 [Sagitta]
 goto 15b3
 :15b30298
-set dev OPHY3.0
+set dev OPHY3.0 [Sagitta]
 goto 15b3
 :15b3029a
-set dev OPHY3.1
+set dev OPHY3.1 [Sagitta]
 goto 15b3
 :15b3029c
-set dev OPHY3.5
+set dev OPHY3.5 [Sagitta]
 goto 15b3
 :15b302a0
 set dev NVLink-8 Switch in Flash Recovery Mode
@@ -49004,6 +49262,15 @@ set dev DPU Card
 goto 1f47
 :1f472020
 set dev DPU
+goto 1f47
+:1f473011
+set dev K3 Family [FLEXFLOW-3100R]
+goto 1f47
+:1f473012
+set dev K3 Family [FLEXFLOW-3100R Virtual Function]
+goto 1f47
+:1f473013
+set dev K3 Family [FLEXFLOW-3100R MGMT Function]
 goto 1f47
 :1f473101
 set dev FLEXFLOW-2100R Ethernet Controller
@@ -67124,6 +67391,9 @@ set dev Panther Lake PCH CNVi WiFi
 goto 8086
 :8086e476
 set dev Panther Lake Bluetooth PCI Enumerator
+goto 8086
+:8086e47b
+set dev Serial IO I2C Host Controller - E47B
 goto 8086
 :8086e47d
 set dev Panther Lake USB 3.2 xHCI Controller
