@@ -40951,7 +40951,7 @@ goto 17cb
 set dev SDX55 [Snapdragon X55 5G]
 goto 17cb
 :17cb0308
-set dev SDX62 [Snapdragon X62 5G]
+set dev SDX61/SDX62/SDX65 [Snapdragon 5G X6X-series]
 goto 17cb
 :17cb0400
 set dev Datacenter Technologies QDF2432 PCI Express Root Port
@@ -49278,12 +49278,6 @@ goto 1f47
 :1f473201
 set dev FLEXFLOW-2200R Ethernet Controller
 goto 1f47
-:1f473301
-set dev K3 Family [FLEXFLOW-3100R]
-goto 1f47
-:1f473302
-set dev K3 Family [FLEXFLOW-3100R Virtual Function]
-goto 1f47
 :1f473303
 set dev K3 Family [CONFLUX-3100R MGMT Function]
 goto 1f47
@@ -50545,10 +50539,10 @@ goto 2646
 set dev DC1000M NVMe SSD [SM2270]
 goto 2646
 :2646500c
-set dev OM8PCP Design-In PCIe 3 NVMe SSD (DRAM-less)
+set dev OM8PCP3 PCIe 3 NVMe SSD (DRAM-less)
 goto 2646
 :2646500d
-set dev OM3PDP3 NVMe SSD
+set dev OM3PDP3 PCIe 3 NVMe SSD (DRAM-less)
 goto 2646
 :2646500e
 set dev NV1 NVMe SSD [E13T] (DRAM-less)
@@ -50566,10 +50560,10 @@ goto 2646
 set dev KC3000/FURY Renegade NVMe SSD [E18]
 goto 2646
 :26465014
-set dev OM8SEP4 Design-In PCIe 4 NVMe SSD (TLC) (DRAM-less)
+set dev OM8SEP4 PCIe 4 NVMe SSD (TLC) (DRAM-less)
 goto 2646
 :26465016
-set dev OM3PGP4 NVMe SSD (DRAM-less)
+set dev OM3PGP4 PCIe 4 NVMe SSD (DRAM-less)
 goto 2646
 :26465017
 set dev NV2 NVMe SSD [SM2267XT] (DRAM-less)
@@ -50581,7 +50575,7 @@ goto 2646
 set dev NV2 NVMe SSD [E21T] (DRAM-less)
 goto 2646
 :2646501a
-set dev OM8PGP4 Design-In PCIe 4 NVMe SSD (TLC) (DRAM-less)
+set dev OM8PGP4 PCIe 4 NVMe SSD (TLC) (DRAM-less)
 goto 2646
 :2646501b
 set dev OM8PGP4 NVMe PCIe SSD (DRAM-less)
@@ -50599,10 +50593,10 @@ goto 2646
 set dev FURY Renegade NVMe SSD [E18] (Heatsink)
 goto 2646
 :26465021
-set dev OM8SEP4 Design-In PCIe 4 NVMe SSD (QLC) (DRAM-less)
+set dev OM8SEP4 PCIe 4 NVMe SSD (QLC) (DRAM-less)
 goto 2646
 :26465022
-set dev OM8PGP4 Design-In PCIe 4 NVMe SSD (QLC) (DRAM-less)
+set dev OM8PGP4 PCIe 4 NVMe SSD (QLC) (DRAM-less)
 goto 2646
 :26465023
 set dev NV2 NVMe SSD [SM2269XT] (DRAM-less)
@@ -50636,6 +50630,9 @@ set dev OM8TAP4 PCIe 4 NVMe SSD (QLC) (DRAM-less)
 goto 2646
 :26465030
 set dev NV3 2230 NVMe SSD [SM2268XT2] (DRAM-less)
+goto 2646
+:26465034
+set dev NV3 NVMe SSD [E33T] (DRAM-less)
 goto 2646
 :270b
 set ven Xantel Corporation
