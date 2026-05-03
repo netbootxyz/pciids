@@ -34866,6 +34866,9 @@ goto 14c3
 :14c3799a
 set dev MT7992 secondary link PCIe Wi-Fi 7(802.11be) 160MHz Wireless Network Adapter [Filogic 660]
 goto 14c3
+:14c38188
+set dev MT8188 [Kompanio 838] Root Complex
+goto 14c3
 :14c38650
 set dev MT7650 Bluetooth
 goto 14c3
@@ -43230,6 +43233,12 @@ goto 19e5
 :19e50222
 set dev Hi1822 Family
 goto 19e5
+:19e50229
+set dev Hi1872 Family
+goto 19e5
+:19e5022a
+set dev Hi1872 Family Virtual Function
+goto 19e5
 :19e51710
 set dev iBMA Virtual Network Adapter
 goto 19e5
@@ -50478,6 +50487,9 @@ goto 2114
 :2116
 set ven ZyDAS Technology Corp.
 exit
+:2123
+set ven Shanghai Warpdrive Technology Co., Ltd
+exit
 :21b4
 set ven Hunan Goke Microelectronics Co., Ltd
 exit
@@ -51550,6 +51562,24 @@ goto 4c53
 set ven Lisuan Technology Co., Ltd.
 exit
 :4c545000
+set dev LISUAN 7G100 Series Graphics
+goto 4c54
+:4c545001
+set dev LISUAN 7G100 Series Graphics
+goto 4c54
+:4c545002
+set dev LISUAN 7G100 Series Graphics
+goto 4c54
+:4c545003
+set dev LISUAN 7G100 Series Graphics
+goto 4c54
+:4c545004
+set dev LISUAN 7G100 Series Graphics
+goto 4c54
+:4c545005
+set dev LISUAN 7G100 Series Graphics
+goto 4c54
+:4c545006
 set dev LISUAN 7G100 Series Graphics
 goto 4c54
 :4ca1
