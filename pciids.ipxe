@@ -3672,6 +3672,9 @@ goto 1002
 :10027448
 set dev Navi 31 [Radeon Pro W7900]
 goto 1002
+:10027449
+set dev Navi 31 [Radeon Pro W7800 48GB]
+goto 1002
 :1002744a
 set dev Navi 31 [Radeon Pro W7900 Dual Slot]
 goto 1002
@@ -20303,6 +20306,9 @@ set dev GB20B [JMJWOA-Generic-GPU]
 goto 10de
 :10de2f04
 set dev GB205 [GeForce RTX 5070]
+goto 10de
+:10de2f06
+set dev GB205 [GeForce RTX 5060]
 goto 10de
 :10de2f18
 set dev GB205M [GeForce RTX 5070 Ti Mobile]
@@ -47016,6 +47022,9 @@ goto 1d6c
 :1d6c102f
 set dev AR-TK242-FX2 [1x400GbE Gen5 Packet Capture-Replay Device]
 goto 1d6c
+:1d6c1030
+set dev AR-ARKSTREAM [Arkville Streaming DMA]
+goto 1d6c
 :1d6c4200
 set dev A5PL-E1-10GETI [10 GbE Ethernet Traffic Instrument]
 goto 1d6c
@@ -50178,6 +50187,48 @@ exit
 :2042
 set ven Xi'an UniIC Semiconductors Co., Ltd
 exit
+:2042db00
+set dev UWSC256DDQYACC-N
+goto 2042
+:2042db01
+set dev UWSC512DDQLBCC-N
+goto 2042
+:2042db02
+set dev UWSC512DDQLACC-N
+goto 2042
+:2042db03
+set dev UWSC1T0DDQLACC-N
+goto 2042
+:2042dc00
+set dev UWSD512DDQYACA-N
+goto 2042
+:2042dc01
+set dev UWSD1T0DDQYACA-N
+goto 2042
+:2042dc02
+set dev UWSD2T0DDQYACA-N
+goto 2042
+:2042dc03
+set dev UWSD1T0DDTYACA-N
+goto 2042
+:2042dc04
+set dev UWSD2T0DDTYACA-N
+goto 2042
+:2042dc05
+set dev UWSD4T0DDTYACA-N
+goto 2042
+:2042dc06
+set dev UWSD512DDQYACB-N
+goto 2042
+:2042dc07
+set dev UWSD1T0DDQYACB-N
+goto 2042
+:2042dc08
+set dev UWSD512DDTMACA-N
+goto 2042
+:2042dc09
+set dev UWSD1T0DDTMACA-N
+goto 2042
 :2044
 set ven Shenzhen Jiahua Zhongli Technology Co., LTD.
 exit
@@ -50415,6 +50466,9 @@ goto 20a9
 :20a91104
 set dev NEOTAPX FPGA Timing Synchronization Card
 goto 20a9
+:20a91200
+set dev MUX Ultimate FPGA Accelerator Card
+goto 20a9
 :20b5
 set ven Shanghai StarFive Technology Co., Ltd.
 exit
@@ -50483,6 +50537,12 @@ set ven Sharetronic Data Technology Co., Ltd.
 exit
 :20dc1202
 set dev M.2 2280 PCIe Gen3 x 4 Series.
+goto 20dc
+:20dc5000
+set dev E5000 U.2 15mm 3.84TB NVMe SSD
+goto 20dc
+:20dc5101
+set dev E5000 U.2 15mm 7.68TB NVMe SSD
 goto 20dc
 :20e1
 set ven CECloud Computing Technology Co., Ltd.
@@ -52294,7 +52354,7 @@ goto 6666
 set dev WatchDog Card
 goto 6666
 :6688
-set ven Zycoo Co., Ltd
+set ven GUANGZHOU MAXSUN INFORMATION TECHNOLOGY CO., LTD.
 exit
 :66881200
 set dev CooVox TDM Analog Module
@@ -63073,7 +63133,7 @@ goto 8086
 set dev Ethernet Controller E610-XT/E610-XT2 10GBASE-T
 goto 8086
 :808657b1
-set dev Ethernet Controller E610 2.5GBASE T
+set dev Ethernet Controller E610-AT2 1000BASE-T
 goto 8086
 :808657b2
 set dev Ethernet Controller E610 SGMII
@@ -63364,6 +63424,18 @@ goto 8086
 set dev 5100 Chipset DMA Engine
 goto 8086
 :8086674c
+set dev CRI
+goto 8086
+:8086674d
+set dev CRI
+goto 8086
+:8086674e
+set dev CRI
+goto 8086
+:8086674f
+set dev CRI
+goto 8086
+:80866750
 set dev CRI
 goto 8086
 :80866e23
