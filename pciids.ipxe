@@ -20322,6 +20322,12 @@ goto 10de
 :10de2f80
 set dev GB205 High Definition Audio Controller
 goto 10de
+:10de3040
+set dev GR100
+goto 10de
+:10de30c0
+set dev GR102
+goto 10de
 :10de3180
 set dev GB110 [Reserved Dev ID A]
 goto 10de
@@ -26301,6 +26307,42 @@ goto 11f8
 :11f86364
 set dev PM63064 Switchtec PSX 64xG6 Programmable PCIe Switch
 goto 11f8
+:11f87044
+set dev PM70144 Switchtec PFXs 144xG7 Secure-capable Fanout PCIe Switch
+goto 11f8
+:11f87048
+set dev PM70048 Switchtec PFXs 48xG7 Secure-capable Fanout PCIe Switch
+goto 11f8
+:11f87060
+set dev PM70160 Switchtec PFXs 160xG7 Secure-capable Fanout PCIe Switch
+goto 11f8
+:11f87064
+set dev PM70064 Switchtec PFXs 64xG7 Secure-capable Fanout PCIe Switch
+goto 11f8
+:11f87144
+set dev PM71144 Switchtec PSXs 144xG7 Secure-capable Programmable PCIe Switch
+goto 11f8
+:11f87148
+set dev PM71048 Switchtec PSXs 48xG7 Secure-capable Programmable PCIe Switch
+goto 11f8
+:11f87160
+set dev PM71160 Switchtec PSXs 160xG7 Secure-capable Programmable PCIe Switch
+goto 11f8
+:11f87164
+set dev PM71064 Switchtec PSXs 64xG7 Secure-capable Programmable PCIe Switch
+goto 11f8
+:11f87244
+set dev PM72144 Switchtec PFX 144xG7 Fanout PCIe Switch
+goto 11f8
+:11f87248
+set dev PM72048 Switchtec PFX 48xG7 Fanout PCIe Switch
+goto 11f8
+:11f87260
+set dev PM72160 Switchtec PFX 160xG7 Fanout PCIe Switch
+goto 11f8
+:11f87264
+set dev PM72064 Switchtec PFX 64xG7 Fanout PCIe Switch
+goto 11f8
 :11f87364
 set dev PM7364 [FREEDM - 32 Frame Engine & Datalink Mgr]
 goto 11f8
@@ -26309,6 +26351,18 @@ set dev PM7375 [LASAR-155 ATM SAR]
 goto 11f8
 :11f87384
 set dev PM7384 [FREEDM - 84P672 Frm Engine & Datalink Mgr]
+goto 11f8
+:11f87444
+set dev PM74144 Switchtec PSX 144xG7 Programmable PCIe Switch
+goto 11f8
+:11f87448
+set dev PM74048 Switchtec PSX 48xG7 Programmable PCIe Switch
+goto 11f8
+:11f87460
+set dev PM74160 Switchtec PSX 160xG7 Programmable PCIe Switch
+goto 11f8
+:11f87464
+set dev PM74064 Switchtec PSX 64xG7 Programmable PCIe Switch
 goto 11f8
 :11f88000
 set dev PM8000  [SPC - SAS Protocol Controller]
@@ -45093,6 +45147,12 @@ goto 1bc0
 :1bc01322
 set dev PCIe 4TE Controller
 goto 1bc0
+:1bc01602
+set dev PCIe 4TE3 Controller
+goto 1bc0
+:1bc0160a
+set dev PCIe 4IE3 Controller
+goto 1bc0
 :1bc02262
 set dev PCIe 3TG3-P Controller
 goto 1bc0
@@ -45100,13 +45160,16 @@ goto 1bc0
 set dev PCIe 3TE7 Controller
 goto 1bc0
 :1bc05216
-set dev PCIe 3TE8 Controller
+set dev PCIe 3TE9 controller
 goto 1bc0
 :1bc05236
 set dev PCIe 4TG2-P Controller
 goto 1bc0
 :1bc0523a
 set dev PCIe 4TS2-P Controller
+goto 1bc0
+:1bc08366
+set dev PCIe 5TS-P Controller
 goto 1bc0
 :1bcd
 set ven Apacer Technology
@@ -47961,6 +48024,12 @@ goto 1e0f
 :1e0f0035
 set dev CM9-based U3 NVMe SSD
 goto 1e0f
+:1e0f0036
+set dev NVMe SSD Controller CD9P U.2
+goto 1e0f
+:1e0f0037
+set dev NVMe SSD Controller CD9P E3.S
+goto 1e0f
 :1e0f003d
 set dev LC9 E3.L NVMe SSD
 goto 1e0f
@@ -49509,6 +49578,15 @@ goto 1f82
 :1f8200f1
 set dev JetStream [DMX F1 Transparent NIC]
 goto 1f82
+:1f8c
+set ven Exascend,INC.
+exit
+:1f8c8008
+set dev SM8008 NVMe SSD [Px5 Series SSD]
+goto 1f8c
+:1f8c8366
+set dev SM8366 NVMe SSD
+goto 1f8c
 :1f90
 set ven Quside Technologies
 exit
@@ -52849,7 +52927,7 @@ goto 8086
 set dev 400 Series Chipset Family On-Package Shared SRAM
 goto 8086
 :808602f0
-set dev Comet Lake PCH-LP CNVi WiFi
+set dev 400 Series Chipset Family On-Package CNVi WiFi
 goto 8086
 :808602f5
 set dev 400 Series Chipset Family On-Package SDXC
@@ -53077,31 +53155,31 @@ goto 8086
 set dev W480 Chipset LPC/eSPI Controller
 goto 8086
 :808606a0
-set dev 400 Series Chipset Family Platform P2SB
+set dev 400 Series Chipset Family P2SB
 goto 8086
 :808606a1
-set dev 400 Series Chipset Family Platform PMC
+set dev 400 Series Chipset Family PMC
 goto 8086
 :808606a3
-set dev 400 Series Chipset Family Platform SMBus
+set dev 400 Series Chipset Platform SMBus
 goto 8086
 :808606a4
-set dev 400 Series Chipset Family Platform SPI (flash) Controller
+set dev 400 Series Chipset Family SPI (flash) Controller
 goto 8086
 :808606a6
-set dev 400 Series Chipset Family Platform Trace Hub
+set dev 400 Series Chipset Family Trace Hub
 goto 8086
 :808606a8
-set dev 400 Series Chipset Family Platform UART #0
+set dev 400 Series Chipset Family UART #0
 goto 8086
 :808606a9
-set dev 400 Series Chipset Family Platform UART #1
+set dev 400 Series Chipset Family UART #1
 goto 8086
 :808606aa
-set dev 400 Series Chipset Family Platform GSPI #0
+set dev 400 Series Chipset Family GSPI #0
 goto 8086
 :808606ab
-set dev 400 Series Chipset Family Platform GSPI #1
+set dev 400 Series Chipset Family GSPI #1
 goto 8086
 :808606ac
 set dev 400 Series Chipset Family PCIe Root Port #21
@@ -53236,7 +53314,7 @@ goto 8086
 set dev 400 Series Chipset Family Shared SRAM
 goto 8086
 :808606f0
-set dev Comet Lake PCH CNVi WiFi
+set dev 400 Series Chipset Family CNVi Wi-Fi
 goto 8086
 :808606f5
 set dev 400 Series Chipset Family SCS3 SDXC
@@ -53881,10 +53959,10 @@ goto 8086
 set dev Crystal Well Integrated Graphics Controller
 goto 8086
 :80860d4c
-set dev 400 Series Chipset Family Platform GbE Controller (Corporate/vPro)
+set dev 400 Series Chipset Family GbE Controller (Corporate/vPro)
 goto 8086
 :80860d4d
-set dev 400 Series Chipset Family Platform GbE Controller (Consumer)
+set dev 400 Series Chipset Family GbE Controller (Consumer)
 goto 8086
 :80860d4e
 set dev 400 Series Chipset Family On-Package GbE Controller (Corporate/vPro)
@@ -58411,7 +58489,7 @@ goto 8086
 set dev SATA Controller (RAID 0/1/5/10) In-box Compatible ID (Desktop RST)
 goto 8086
 :80862823
-set dev sSATA Controller [RAID Mode]
+set dev SSATA Controller (RAID 0/1/5/10)
 goto 8086
 :80862824
 set dev 82801HB (ICH8) 4 port SATA Controller [AHCI mode]
@@ -58423,7 +58501,7 @@ goto 8086
 set dev SATA Controller (RAID 0/1/5/10) In-box Compatible ID (Server/Desktop RST)
 goto 8086
 :80862827
-set dev sSATA Controller [RAID Mode]
+set dev SSATA Controller (RAID 0/1/5/10)
 goto 8086
 :80862828
 set dev 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [IDE mode]
@@ -60906,26 +60984,35 @@ goto 8086
 :8086373f
 set dev Xeon C5500/C3500 IOxAPIC
 goto 8086
+:808637b1
+set dev C620 Series Chipset Family Thermal Sensor
+goto 8086
 :808637c0
-set dev C62x chipset series PCIe x16/x8 Upstream Port
+set dev C620 Series Chipset Family PCIe Uplink (x16)
+goto 8086
+:808637c1
+set dev C620 Series Chipset Family PCIe Uplink (x8)
 goto 8086
 :808637c2
-set dev C62x chipset series PCIe Virtual Switch Port 0
+set dev C620 Series Chipset Family Virtual Switch Port 0
 goto 8086
 :808637c3
-set dev C62x chipset series PCIe Virtual Switch Port 1
+set dev C620 Series Chipset Family Virtual Switch Port 1
 goto 8086
 :808637c4
-set dev C62x chipset series PCIe Virtual Switch Port 2
+set dev C620 Series Chipset Family Virtual Switch Port 2
 goto 8086
 :808637c5
-set dev C62x chipset series PCIe Virtual Switch Port 3
+set dev C620 Series Chipset Family Virtual Switch Port 3
+goto 8086
+:808637c7
+set dev C620 Series Chipset Family Virtual Switch Port 5
 goto 8086
 :808637c8
-set dev C62x Chipset series QuickAssist Technology Physical Function 0~2
+set dev C620 Series Chipset Family QAT
 goto 8086
 :808637c9
-set dev C62x Chipset QuickAssist Technology Virtual Function
+set dev C620 Series Chipset Family QAT Virtual Function
 goto 8086
 :808637cc
 set dev Ethernet Connection X722
@@ -62077,7 +62164,25 @@ goto 8086
 set dev 500 Series Chipset Family Shared SRAM
 goto 8086
 :808643f0
-set dev Tiger Lake PCH CNVi WiFi
+set dev 500 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:808643f1
+set dev 500 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:808643f2
+set dev 500 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:808643f3
+set dev 500 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:808643f5
+set dev 500 Series Chipset Family CNVi Bluetooth
+goto 8086
+:808643f6
+set dev 500 Series Chipset Family CNVi Bluetooth
+goto 8086
+:808643f7
+set dev 500 Series Chipset Family CNVi Bluetooth
 goto 8086
 :808643fb
 set dev 500 Series Chipset Family GSPI #2
@@ -63351,6 +63456,9 @@ goto 8086
 :80865af0
 set dev Celeron N3350/Pentium N4200/Atom E3900 Series Host Bridge
 goto 8086
+:80866400
+set dev Core Ultra 200V Series Processors with 4 P-Cores 4 E-Cores Host Bridge
+goto 8086
 :8086641d
 set dev Lunar Lake-M Dynamic Tuning Technology
 goto 8086
@@ -63367,7 +63475,7 @@ goto 8086
 set dev Lunar Lake-M Crashlog and Telemetry
 goto 8086
 :808664a0
-set dev Lunar Lake [Intel Arc Graphics 130V / 140V]
+set dev Core Ultra 200V Series Processors Arc Graphics 130V/140V GPU
 goto 8086
 :808664b0
 set dev Lunar Lake [Intel Graphics]
@@ -64083,6 +64191,12 @@ goto 8086
 :808671a2
 set dev 440GX - 82443GX Host bridge (AGP disabled)
 goto 8086
+:80867202
+set dev Core Ultra 200H Series Processors eSPI Controller
+goto 8086
+:80867203
+set dev Core Ultra 200V Series Processors eSPI Controller
+goto 8086
 :80867360
 set dev XMM7360 LTE Advanced Modem
 goto 8086
@@ -64104,95 +64218,149 @@ goto 8086
 :80867702
 set dev Arrow Lake-H eSPI Controller
 goto 8086
+:80867720
+set dev Core Ultra 200H/200V Series Processors P2SB (SOC)
+goto 8086
+:80867721
+set dev Core Ultra 200H/200V Series Processors PMC (SOC)
+goto 8086
 :80867722
-set dev Arrow Lake SMBus Controller
+set dev Core Ultra 200H/200V Series Processors SMBus
 goto 8086
 :80867723
-set dev Arrow Lake SPI Controller
+set dev Core Ultra 200H/200V Series Processors SPI (flash) Controller
+goto 8086
+:80867724
+set dev Core Ultra 200H/200V Series Processors Trace Hub
 goto 8086
 :80867725
-set dev Arrow Lake-H [PCH Serial IO UART Host Controller]
+set dev Core Ultra 200H/200V Series Processors UART #0
 goto 8086
 :80867726
-set dev Arrow Lake-H PCH Serial IO UART Host Controller]
+set dev Core Ultra 200H/200V Series Processors UART #1
 goto 8086
 :80867727
-set dev Arrow Lake-H [LPC/eSPI Controller]
+set dev Core Ultra 200H/200V Series Processors GSPI #0
 goto 8086
 :80867728
-set dev Arrow Lake cAVS
+set dev Core Ultra 200H/200V Series Processors HD Audio
 goto 8086
 :80867730
 set dev Arrow Lake-H [LPC/eSPI Controller]
 goto 8086
 :80867738
-set dev Arrow Lake-H/U PCIe Root Port #1
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #1
 goto 8086
 :80867739
-set dev Arrow Lake-H/U PCIe Root Port #2
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #2
 goto 8086
 :8086773a
-set dev Arrow Lake-H/U PCIe Root Port #3
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #3
 goto 8086
 :8086773b
-set dev Arrow Lake-H/U PCIe Root Port #4
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #4
 goto 8086
 :8086773c
-set dev Arrow Lake-H/U PCIe Root Port #5
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #5
 goto 8086
 :8086773d
-set dev Arrow Lake-H/U PCIe Root Port #6
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #6
 goto 8086
 :8086773e
-set dev Arrow Lake-H/U PCIe Root Port #7
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #7
 goto 8086
 :8086773f
-set dev Arrow Lake-H/U PCIe Root Port #8
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #8
 goto 8086
 :80867740
 set dev Arrow Lake CNVi WiFi
 goto 8086
 :80867745
-set dev Arrow Lake Integrated Sensor Hub
+set dev Core Ultra 200H/200V Series Processors Integrated Sensor Hub
 goto 8086
 :80867746
-set dev Arrow Lake-H [LPC/eSPI Controller]
+set dev Core Ultra 200H/200V Series Processors GSPI #2
+goto 8086
+:80867748
+set dev Core Ultra 200H/200V Series Processors Touch Host Controller (THC) #0 ID1
+goto 8086
+:80867749
+set dev Core Ultra 200H/200V Series Processors Touch Host Controller (THC) #0 ID2
+goto 8086
+:8086774a
+set dev Core Ultra 200H/200V Series Processors Touch Host Controller (THC) #1 ID1
+goto 8086
+:8086774b
+set dev Core Ultra 200H/200V Series Processors Touch Host Controller (THC) #1 ID2
 goto 8086
 :8086774c
-set dev Arrow Lake Gaussian & Neural Accelerator
+set dev Core Ultra 200H/200V Series Processors Gaussian & Neural-Network Accelerator (GNA)
 goto 8086
 :8086774d
-set dev Arrow Lake-H/U PCIe Root Port #9 (PXPC)
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #9 (PXPC)
 goto 8086
 :80867750
-set dev Arrow Lake-H [Serial IO I2C Host Controller]
+set dev Core Ultra 200H/200V Series Processors I2C #4
 goto 8086
 :80867751
-set dev Arrow Lake-H [Serial IO I2C Host Controller]
+set dev Core Ultra 200H/200V Series Processors I2C #5
 goto 8086
 :80867752
-set dev Arrow Lake-H [PCH Serial IO UART Host Controller]
+set dev Core Ultra 200H/200V Series Processors UART #2
+goto 8086
+:80867758
+set dev Core Ultra 200H/200V Series Processors CSME HECI #1
+goto 8086
+:80867759
+set dev Core Ultra 200H/200V Series Processors CSME HECI #2
+goto 8086
+:8086775a
+set dev Core Ultra 200H/200V Series Processors CSME HECI #3
+goto 8086
+:80867763
+set dev Core Ultra 200H/200V Series Processors SATA Controller (AHCI)
+goto 8086
+:80867767
+set dev Core Ultra 200H/200V Series Processors SATA Controller (RAID 0/1/5/10) premium
 goto 8086
 :80867770
-set dev Arrow Lake HECI Controller #1
+set dev Core Ultra 200H/200V Series Processors CSME HECI #1
+goto 8086
+:80867771
+set dev Core Ultra 200H/200V Series Processors CSME HECI #2
+goto 8086
+:80867772
+set dev Core Ultra 200H/200V Series Processors CSME IDE Redirection (IDE-R)
 goto 8086
 :80867773
-set dev Arrow Lake Keyboard and Text (KT) Redirection
+set dev Core Ultra 200H/200V Series Processors CSME Keyboard and Text (KT) Redirection
+goto 8086
+:80867774
+set dev Core Ultra 200H/200V Series Processors CSME HECI #3
+goto 8086
+:80867775
+set dev Core Ultra 200H/200V Series Processors CSME HECI #4
 goto 8086
 :80867778
-set dev Arrow Lake-H [Serial IO I2C Host Controller]
+set dev Core Ultra 200H/200V Series Processors I2C #0
 goto 8086
 :80867779
-set dev Arrow Lake-H [Serial IO I2C Host Controller]
+set dev Core Ultra 200H/200V Series Processors I2C #1
 goto 8086
 :8086777a
-set dev Arrow Lake-H [Serial IO I2C Host Controller]
+set dev Core Ultra 200H/200V Series Processors I2C #2
 goto 8086
 :8086777b
-set dev Arrow Lake-H [Serial IO I2C Host Controller]
+set dev Core Ultra 200H/200V Series Processors I2C #3
+goto 8086
+:8086777c
+set dev Core Ultra 200H/200V Series Processors I3C
 goto 8086
 :8086777d
 set dev Arrow Lake USB 3.2 xHCI Controller
+goto 8086
+:8086777e
+set dev Core Ultra 200H/200V Series Processors Standalone USB Device Controller
 goto 8086
 :8086777f
 set dev Core Ultra 200H/200V Series Processors Shared SRAM
@@ -64348,7 +64516,28 @@ goto 8086
 set dev 700 Series Chipset Family I2C Controller #3
 goto 8086
 :80867a50
-set dev 700 Series Chipset Family HD Audio Controller
+set dev 700 Series Chipset Family HD Audio
+goto 8086
+:80867a51
+set dev 700 Series Chipset Family HD Audio
+goto 8086
+:80867a52
+set dev 700 Series Chipset Family HD Audio
+goto 8086
+:80867a53
+set dev 700 Series Chipset Family HD Audio
+goto 8086
+:80867a54
+set dev 700 Series Chipset Family HD Audio
+goto 8086
+:80867a55
+set dev 700 Series Chipset Family HD Audio
+goto 8086
+:80867a56
+set dev 700 Series Chipset Family HD Audio
+goto 8086
+:80867a57
+set dev 700 Series Chipset Family HD Audio
 goto 8086
 :80867a5c
 set dev 700 Series Chipset Family UART #3
@@ -64381,7 +64570,16 @@ goto 8086
 set dev 700 Series Chipset Family CSME HECI #4
 goto 8086
 :80867a70
-set dev 700 Series Chipset CNVi WiFi
+set dev 700 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:80867a71
+set dev 700 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:80867a72
+set dev 700 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:80867a73
+set dev 700 Series Chipset Family CNVi Wi-Fi
 goto 8086
 :80867a78
 set dev 700 Series Chipset Family Integrated Sensor Hub
@@ -64557,6 +64755,27 @@ goto 8086
 :80867ad0
 set dev 600 Series Chipset Family HD Audio
 goto 8086
+:80867ad1
+set dev 600 Series Chipset Family HD Audio
+goto 8086
+:80867ad2
+set dev 600 Series Chipset Family HD Audio
+goto 8086
+:80867ad3
+set dev 600 Series Chipset Family HD Audio
+goto 8086
+:80867ad4
+set dev 600 Series Chipset Family HD Audio
+goto 8086
+:80867ad5
+set dev 600 Series Chipset Family HD Audio
+goto 8086
+:80867ad6
+set dev 600 Series Chipset Family HD Audio
+goto 8086
+:80867ad7
+set dev 600 Series Chipset Family HD Audio
+goto 8086
 :80867adc
 set dev 600 Series Chipset Family UART #3
 goto 8086
@@ -64588,7 +64807,16 @@ goto 8086
 set dev 600 Series Chipset Family CSME HECI #4
 goto 8086
 :80867af0
-set dev Alder Lake-S PCH CNVi WiFi
+set dev 600 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:80867af1
+set dev 600 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:80867af2
+set dev 600 Series Chipset Family CNVi Wi-Fi
+goto 8086
+:80867af3
+set dev 600 Series Chipset Family CNVi Wi-Fi
 goto 8086
 :80867af8
 set dev 600 Series Chipset Family Integrated Sensor Hub
@@ -64626,11 +64854,35 @@ goto 8086
 :80867d19
 set dev Meteor Lake IPU
 goto 8086
+:80867d1a
+set dev Core Ultra 200S/200S-Plus Series Processors with 8 P-Cores 16 E-Cores Host Bridge
+goto 8086
+:80867d1b
+set dev Core Ultra 200S Series Processors with 8 P-Cores 12 E-Cores Host Bridge
+goto 8086
 :80867d1c
 set dev Arrow Lake-HX 8p+16e cores Host Bridge
 goto 8086
 :80867d1d
 set dev Meteor Lake NPU
+goto 8086
+:80867d29
+set dev Core Ultra 200S-Plus Series Processors with 6 P-Cores 12 E-Cores Host Bridge
+goto 8086
+:80867d2a
+set dev Core Ultra 200S Series Processors with 6 P-Cores 8 E-Cores Host Bridge
+goto 8086
+:80867d2d
+set dev Core Ultra 200HX/HX-Plus Series Processors with 8 P-Cores 12 E-Cores Host Bridge
+goto 8086
+:80867d2f
+set dev Core Ultra 200HX Series Processors with 6 P-Cores 8 E-Cores Host Bridge
+goto 8086
+:80867d30
+set dev Core Ultra 200U Series Processors with 2 P-Cores 8 E-Cores Host Bridge
+goto 8086
+:80867d35
+set dev Core Ultra 200S Series Processors with 6 P-Cores 4 E-Cores Host Bridge
 goto 8086
 :80867d40
 set dev Meteor Lake-M [Intel Graphics]
@@ -64746,6 +64998,9 @@ goto 8086
 :80867ec0
 set dev Meteor Lake-P Thunderbolt 4 USB Controller
 goto 8086
+:80867ec1
+set dev Core Ultra 200 Series Processors USB xDCI
+goto 8086
 :80867ec2
 set dev Meteor Lake-P Thunderbolt 4 NHI #0
 goto 8086
@@ -64764,14 +65019,26 @@ goto 8086
 :80867ec7
 set dev Meteor Lake-P Thunderbolt 4 PCI Express Root Port #3
 goto 8086
+:80867ec8
+set dev Core Ultra 200 Series Processors P2SB (IOE)
+goto 8086
+:80867ec9
+set dev Core Ultra 200H/200V Series Processors IEH (IOE)
+goto 8086
 :80867eca
-set dev Meteor Lake-H/U PCIe Root Port #10
+set dev Core Ultra 200 Series Processors PCIe Root Port #10
 goto 8086
 :80867ecb
-set dev Arrow Lake-H/U PCIe Root Port #11 (PXPE)
+set dev Core Ultra 200H/200V Series Processors PCIe Root Port #11 (PXPE)
 goto 8086
 :80867ecc
-set dev Meteor Lake-H PCIe Root Port #12
+set dev Core Ultra 200 Series Processors PCIe Root Port #12
+goto 8086
+:80867ece
+set dev Core Ultra 200 Series Processors PMC (IOE)
+goto 8086
+:80867ecf
+set dev Core Ultra 200 Series Processors Shared SRAM (IOE)
 goto 8086
 :80867f03
 set dev Q870 Chipset eSPI Controller
@@ -64966,7 +65233,7 @@ goto 8086
 set dev 800 Series Chipset Family USB Device Controller (OTG) (xDCI)
 goto 8086
 :80867f70
-set dev Arrow Lake-S PCH CNVi WiFi
+set dev 800 Series Chipset Family CNVi Wi-Fi
 goto 8086
 :80867f78
 set dev 800 Series Chipset Family Integrated Sensor Hub
@@ -66910,64 +67177,64 @@ goto 8086
 set dev HM175/QM175/CM238 HD Audio Controller
 goto 8086
 :8086a182
-set dev C620 Series Chipset Family SATA Controller [AHCI mode]
+set dev C620 Series Chipset Family SATA Controller (AHCI)
 goto 8086
 :8086a186
-set dev C620 Series Chipset Family SATA Controller [RAID mode]
+set dev C620 Series Chipset Family SATA Controller (RAID 0/1/5/10)
 goto 8086
 :8086a190
-set dev C620 Series Chipset Family PCI Express Root Port #1
+set dev C620 Series Chipset Family PCIe Root Port #0
 goto 8086
 :8086a191
-set dev C620 Series Chipset Family PCI Express Root Port #2
+set dev C620 Series Chipset Family PCIe Root Port #1
 goto 8086
 :8086a192
-set dev C620 Series Chipset Family PCI Express Root Port #3
+set dev C620 Series Chipset Family PCIe Root Port #2
 goto 8086
 :8086a193
-set dev C620 Series Chipset Family PCI Express Root Port #4
+set dev C620 Series Chipset Family PCIe Root Port #3
 goto 8086
 :8086a194
-set dev C620 Series Chipset Family PCI Express Root Port #5
+set dev C620 Series Chipset Family PCIe Root Port #4
 goto 8086
 :8086a195
-set dev C620 Series Chipset Family PCI Express Root Port #6
+set dev C620 Series Chipset Family PCIe Root Port #5
 goto 8086
 :8086a196
-set dev C620 Series Chipset Family PCI Express Root Port #7
+set dev C620 Series Chipset Family PCIe Root Port #6
 goto 8086
 :8086a197
-set dev C620 Series Chipset Family PCI Express Root Port #8
+set dev C620 Series Chipset Family PCIe Root Port #7
 goto 8086
 :8086a198
-set dev C620 Series Chipset Family PCI Express Root Port #9
+set dev C620 Series Chipset Family PCIe Root Port #8
 goto 8086
 :8086a199
-set dev C620 Series Chipset Family PCI Express Root Port #10
+set dev C620 Series Chipset Family PCIe Root Port #9
 goto 8086
 :8086a19a
-set dev C620 Series Chipset Family PCI Express Root Port #11
+set dev C620 Series Chipset Family PCIe Root Port #10
 goto 8086
 :8086a19b
-set dev C620 Series Chipset Family PCI Express Root Port #12
+set dev C620 Series Chipset Family PCIe Root Port #11
 goto 8086
 :8086a19c
-set dev C620 Series Chipset Family PCI Express Root Port #13
+set dev C620 Series Chipset Family PCIe Root Port #12
 goto 8086
 :8086a19d
-set dev C620 Series Chipset Family PCI Express Root Port #14
+set dev C620 Series Chipset Family PCIe Root Port #13
 goto 8086
 :8086a19e
-set dev C620 Series Chipset Family PCI Express Root Port #15
+set dev C620 Series Chipset Family PCIe Root Port #14
 goto 8086
 :8086a19f
-set dev C620 Series Chipset Family PCI Express Root Port #16
+set dev C620 Series Chipset Family PCIe Root Port #15
 goto 8086
 :8086a1a0
 set dev C620 Series Chipset Family P2SB
 goto 8086
 :8086a1a1
-set dev C620 Series Chipset Family Power Management Controller
+set dev C620 Series Chipset Family PMC
 goto 8086
 :8086a1a2
 set dev C620 Series Chipset Family cAVS
@@ -66988,58 +67255,61 @@ goto 8086
 set dev C620 Series Chipset Family Thermal Subsystem
 goto 8086
 :8086a1ba
-set dev C620 Series Chipset Family MEI Controller #1
+set dev C620 Series Chipset Family MEI HECI #1
 goto 8086
 :8086a1bb
-set dev C620 Series Chipset Family MEI Controller #2
+set dev C620 Series Chipset Family MEI HECI #2
 goto 8086
 :8086a1bc
-set dev C620 Series Chipset Family IDE Redirection
+set dev C620 Series Chipset Family MEI IDE Redirection
 goto 8086
 :8086a1bd
-set dev C620 Series Chipset Family KT Redirection
+set dev C620 Series Chipset Family MEI Keyboard and Text (KT) Redirection
 goto 8086
 :8086a1be
-set dev C620 Series Chipset Family MEI Controller #3
+set dev C620 Series Chipset Family MEI HECI #3
 goto 8086
 :8086a1c1
-set dev C621 Series Chipset LPC/eSPI Controller
+set dev C621 Chipset LPC/eSPI Controller
 goto 8086
 :8086a1c2
-set dev C622 Series Chipset LPC/eSPI Controller
+set dev C622 Chipset LPC/eSPI Controller
 goto 8086
 :8086a1c3
-set dev C624 Series Chipset LPC/eSPI Controller
+set dev C624 Chipset LPC/eSPI Controller
 goto 8086
 :8086a1c4
-set dev C625 Series Chipset LPC/eSPI Controller
+set dev C625 Chipset LPC/eSPI Controller
 goto 8086
 :8086a1c5
-set dev C626 Series Chipset LPC/eSPI Controller
+set dev C626 Chipset LPC/eSPI Controller
 goto 8086
 :8086a1c6
-set dev C627 Series Chipset LPC/eSPI Controller
+set dev C627 Chipset LPC/eSPI Controller
 goto 8086
 :8086a1c7
-set dev C628 Series Chipset LPC/eSPI Controller
+set dev C628 Chipset LPC/eSPI Controller
+goto 8086
+:8086a1ca
+set dev C629 Chipset LPC/eSPI Controller
 goto 8086
 :8086a1d2
-set dev C620 Series Chipset Family SSATA Controller [AHCI mode]
+set dev C620 Series Chipset Family SSATA Controller (AHCI)
 goto 8086
 :8086a1d6
-set dev C620 Series Chipset Family SSATA Controller [RAID mode]
+set dev C620 Series Chipset Family SSATA Controller (RAID 0/1/5/10)
 goto 8086
 :8086a1e7
-set dev C620 Series Chipset Family PCI Express Root Port #17
+set dev C620 Series Chipset Family PCIe Root Port #16
 goto 8086
 :8086a1e8
-set dev C620 Series Chipset Family PCI Express Root Port #18
+set dev C620 Series Chipset Family PCIe Root Port #17
 goto 8086
 :8086a1e9
-set dev C620 Series Chipset Family PCI Express Root Port #19
+set dev C620 Series Chipset Family PCIe Root Port #18
 goto 8086
 :8086a1ea
-set dev C620 Series Chipset Family PCI Express Root Port #20
+set dev C620 Series Chipset Family PCIe Root Port #19
 goto 8086
 :8086a1ec
 set dev C620 Series Chipset Family MROM 0
@@ -67048,79 +67318,82 @@ goto 8086
 set dev C620 Series Chipset Family MROM 1
 goto 8086
 :8086a1f0
-set dev C62x HD Audio Controller
+set dev C620 Series Chipset Family HD Audio
 goto 8086
 :8086a1f8
-set dev Lewisburg IE: HECI #1
+set dev C620 Series Chipset Family IE HECI #1
 goto 8086
 :8086a1f9
-set dev Lewisburg IE: HECI #2
+set dev C620 Series Chipset Family IE HECI #2
 goto 8086
 :8086a1fa
-set dev Lewisburg IE: IDE-r
+set dev C620 Series Chipset Family IE IDE Redirection
 goto 8086
 :8086a1fb
-set dev Lewisburg IE: KT Controller
+set dev C620 Series Chipset Family IE Keyboard and Text Redirection
 goto 8086
 :8086a1fc
-set dev Lewisburg IE: HECI #3
+set dev C620 Series Chipset Family IE HECI #3
 goto 8086
 :8086a202
-set dev Lewisburg SATA Controller [AHCI mode]
+set dev C620 Series Chipset Family (Super) SATA Controller (AHCI)
 goto 8086
 :8086a206
-set dev Lewisburg SATA Controller [RAID mode]
+set dev C620 Series Chipset Family (Super) SATA Controller (RAID 0/1/5/10)
 goto 8086
 :8086a210
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #0
 goto 8086
 :8086a211
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #1
 goto 8086
 :8086a212
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #2
 goto 8086
 :8086a213
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #3
 goto 8086
 :8086a214
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #4
 goto 8086
 :8086a215
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #5
 goto 8086
 :8086a216
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #6
 goto 8086
 :8086a217
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #7
 goto 8086
 :8086a218
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #8
 goto 8086
 :8086a219
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #9
 goto 8086
 :8086a21a
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #10
 goto 8086
 :8086a21b
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #11
 goto 8086
 :8086a21c
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #12
 goto 8086
 :8086a21d
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #13
 goto 8086
 :8086a21e
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #14
 goto 8086
 :8086a21f
-set dev Lewisburg PCI Express Root Port
+set dev C620 Series Chipset Family (Super) PCIe Root Port #15
+goto 8086
+:8086a220
+set dev C620 Series Chipset Family (Super) P2SB
 goto 8086
 :8086a221
-set dev Lewisburg Power Management Controller
+set dev C620 Series Chipset Family (Super) PMC
 goto 8086
 :8086a223
 set dev Lewisburg SMBus
@@ -67128,11 +67401,44 @@ goto 8086
 :8086a224
 set dev Lewisburg SPI Controller
 goto 8086
+:8086a226
+set dev C620 Series Chipset Family (Super) Trace Hub
+goto 8086
+:8086a22f
+set dev C620 Series Chipset Family (Super) USB 3.0 xHCI Controller
+goto 8086
+:8086a231
+set dev C620 Series Chipset Family (Super) Thermal Subsystem
+goto 8086
+:8086a23a
+set dev C620 Series Chipset Family (Super) MEI HECI #1
+goto 8086
+:8086a23b
+set dev C620 Series Chipset Family (Super) MEI HECI #2
+goto 8086
+:8086a23c
+set dev C620 Series Chipset Family (Super) MEI IDE Redirection
+goto 8086
+:8086a23d
+set dev C620 Series Chipset Family (Super) MEI Keyboard and Text (KT) Redirection
+goto 8086
+:8086a23e
+set dev C620 Series Chipset Family (Super) MEI HECI #3
+goto 8086
 :8086a242
 set dev Lewisburg LPC or eSPI Controller
 goto 8086
 :8086a243
 set dev Lewisburg LPC or eSPI Controller
+goto 8086
+:8086a244
+set dev C621 Chipset (Super) LPC/eSPI Controller
+goto 8086
+:8086a245
+set dev C627 Chipset (Super) LPC/eSPI Controller
+goto 8086
+:8086a246
+set dev C628 Chipset (Super) LPC/eSPI Controller
 goto 8086
 :8086a252
 set dev Lewisburg SSATA Controller [AHCI mode]
@@ -67151,6 +67457,15 @@ set dev Lewisburg PCI Express Root Port
 goto 8086
 :8086a26a
 set dev Lewisburg PCI Express Root Port
+goto 8086
+:8086a26c
+set dev C620 Series Chipset Family (Super) MROM 0
+goto 8086
+:8086a270
+set dev C620 Series Chipset Family (Super) Audio
+goto 8086
+:8086a278
+set dev C620 Series Chipset Family (Super) IE HECI #1
 goto 8086
 :8086a282
 set dev 200 Series/Z370 Chipset Family SATA Controller (AHCI)
