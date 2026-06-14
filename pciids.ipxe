@@ -25146,6 +25146,9 @@ goto 11ab
 :11ab2a0a
 set dev 88W8363 [TopDog] 802.11n Wireless
 goto 11ab
+:11ab2a0b
+set dev 88W8363 [TopDog] 802.11n Wireless
+goto 11ab
 :11ab2a0c
 set dev 88W8363 [TopDog] 802.11n Wireless
 goto 11ab
@@ -38103,6 +38106,9 @@ goto 15b3
 :15b32101
 set dev CX10 Family [ConnectX-10 NVLink-C2C]
 goto 15b3
+:15b32300
+set dev ConnectX/BlueField Family Hardware Performance Monitors [HWPM]
+goto 15b3
 :15b34117
 set dev MT27712A0-FDCF-AE
 goto 15b3
@@ -40751,6 +40757,9 @@ set dev CN99xx [ThunderX2] Integrated PCI Host bridge
 goto 177d
 :177daf84
 set dev CN99xx [ThunderX2] Integrated PCI Express RP Bridge
+goto 177d
+:177df010
+set dev XPliant CNX880xx Network Processor
 goto 177d
 :1787
 set ven Hightech Information System Ltd.
@@ -45150,6 +45159,15 @@ goto 1bc0
 :1bc01160
 set dev PCIe 3TE2 Controller
 goto 1bc0
+:1bc01202
+set dev PCIe 3TE8 Controller
+goto 1bc0
+:1bc0120a
+set dev PCIe 3IE8 Controller
+goto 1bc0
+:1bc0120b
+set dev PCIe 3TO8 Controller
+goto 1bc0
 :1bc01321
 set dev PCIe 4TG-P Controller
 goto 1bc0
@@ -45171,11 +45189,23 @@ goto 1bc0
 :1bc05216
 set dev PCIe 3TE9 controller
 goto 1bc0
+:1bc0521a
+set dev PCIe 3IE9 Controller
+goto 1bc0
+:1bc05220
+set dev PCIe 4TE2 Controller
+goto 1bc0
+:1bc0522a
+set dev PCIe 4IE2 Controller
+goto 1bc0
 :1bc05236
 set dev PCIe 4TG2-P Controller
 goto 1bc0
 :1bc0523a
 set dev PCIe 4TS2-P Controller
+goto 1bc0
+:1bc0523b
+set dev PCIe 4IG2-P Controller
 goto 1bc0
 :1bc08366
 set dev PCIe 5TS-P Controller
@@ -45629,6 +45659,9 @@ set dev FB2CG Capture 8x25Gb [Savona]
 goto 1c2c
 :1c2ca017
 set dev FB2CGHH Capture 8x25Gb [Tivoli] a017
+goto 1c2c
+:1c2ca01b
+set dev FB2CDG1 Capture 2x100Gb [Thunderfjord]
 goto 1c2c
 :1c32
 set ven Highland Technology, Inc.
@@ -49578,6 +49611,15 @@ goto 1f47
 :1f474004
 set dev K2-Pro Family [CONFLUX-2200E DATA Offload Engine]
 goto 1f47
+:1f474011
+set dev K3 Family [CONFLUX-3100E]
+goto 1f47
+:1f474012
+set dev K3 Family [CONFLUX-3100E Virtual Function]
+goto 1f47
+:1f474013
+set dev K3 Family [CONFLUX-3100E MGMT Function]
+goto 1f47
 :1f474203
 set dev K2-Pro Family [CONFLUX-2200E RoCEv2 Network Controller]
 goto 1f47
@@ -49903,7 +49945,7 @@ goto 1fbd
 set dev D20 Pro N
 goto 1fbd
 :1fbd0101
-set dev D2
+set dev T1
 goto 1fbd
 :1fc0
 set ven Ascom (Finland) Oy
@@ -50662,7 +50704,7 @@ goto 209b
 set ven Mobilint, Inc.
 exit
 :20a1
-set ven Etched AI, Inc.
+set ven Etched, Inc.
 exit
 :20a10001
 set dev Sohu
@@ -68553,20 +68595,35 @@ goto 8086
 :8086b000
 set dev Core Ultra Processors (Series 3) PTL-404
 goto 8086
+:8086b001
+set dev Core Ultra Processors (Series 3) PTL-H12Xe
+goto 8086
 :8086b002
-set dev Panther Lake Host Bridge/DRAM Controller
+set dev Core Ultra Processors (Series 3) PTL-H484
+goto 8086
+:8086b003
+set dev Core Ultra Processors (Series 3) PTL-204
+goto 8086
+:8086b004
+set dev Core Ultra Processors (Series 3) PTL-H444
+goto 8086
+:8086b005
+set dev Core Ultra Processors (Series 3) PTL-H444
 goto 8086
 :8086b01d
-set dev Panther Lake Innovation Platform Framework Processor Participant
+set dev Core Ultra Processors (Series 3) DTT
+goto 8086
+:8086b02d
+set dev Core Ultra Processors (Series 3) IAA
 goto 8086
 :8086b03e
-set dev Panther Lake NPU
+set dev Core Ultra Processors (Series 3) NPU
 goto 8086
 :8086b05d
-set dev Panther Lake IPU
+set dev Core Ultra Processors (Series 3) IPU
 goto 8086
 :8086b07d
-set dev Panther Lake Platform Monitoring Technology (PMT)
+set dev Core Ultra Processors (Series 3) Crashlog and Telemetry
 goto 8086
 :8086b080
 set dev Panther Lake [Arc B390]
@@ -68826,92 +68883,191 @@ goto 8086
 :8086e223
 set dev Battlemage G31 [Arc Pro B70]
 goto 8086
+:8086e300
+set dev Core Ultra Processors (Series 3) eSPI
+goto 8086
 :8086e302
-set dev Panther Lake LPC/eSPI Controller
+set dev Core Ultra Processors (Series 3) eSPI
+goto 8086
+:8086e31f
+set dev Core Ultra Processors (Series 3) eSPI
+goto 8086
+:8086e320
+set dev Core Ultra Processors (Series 3) P2SB
+goto 8086
+:8086e321
+set dev Core Ultra Processors (Series 3) PMC
 goto 8086
 :8086e322
-set dev Panther Lake SMBus Controller
+set dev Core Ultra Processors (Series 3) SMBus
 goto 8086
 :8086e323
-set dev Panther Lake SPI(flash) Controller
+set dev Core Ultra Processors (Series 3) SPI (flash) Controller
+goto 8086
+:8086e324
+set dev Core Ultra Processors (Series 3) Trace Hub
 goto 8086
 :8086e325
-set dev Panther Lake Serial IO UART Controller #0
+set dev Core Ultra Processors (Series 3) UART #0
 goto 8086
 :8086e326
-set dev Panther Lake Serial IO UART Controller #1
+set dev Core Ultra Processors (Series 3) UART #1
 goto 8086
 :8086e327
-set dev Panther Lake Serial IO SPI Host Controller #0
+set dev Core Ultra Processors (Series 3) GSPI #0
 goto 8086
 :8086e328
-set dev Panther Lake Smart Sound Technology BUS
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e329
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e32a
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e32b
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e32c
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e32d
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e32e
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e32f
+set dev Core Ultra Processors (Series 3) HD Audio
 goto 8086
 :8086e330
-set dev Panther Lake Serial IO SPI Host Controller #1
+set dev Core Ultra Processors (Series 3) GSPI #1
 goto 8086
 :8086e331
-set dev Panther Lake TCSS USB3 xHCI Controller
+set dev Core Ultra Processors (Series 3) Type-C Subsystem xHCI
+goto 8086
+:8086e332
+set dev Core Ultra Processors (Series 3) Type-C Subsystem xDCI
 goto 8086
 :8086e333
-set dev Panther Lake Thunderbolt 4 NHI #0
+set dev Core Ultra Processors (Series 3) Thunderbolt DMA0
 goto 8086
 :8086e334
-set dev Panther Lake Thunderbolt 4 NHI #1
+set dev Core Ultra Processors (Series 3) Thunderbolt DMA1
+goto 8086
+:8086e337
+set dev Core Ultra Processors (Series 3) USB Type-C Subsystem PCIe Root Port #24
 goto 8086
 :8086e338
-set dev Panther Lake PCI Express Root Port A1
+set dev Core Ultra Processors (Series 3) PCIe Root Port #1
 goto 8086
 :8086e339
-set dev Panther Lake PCI Express Root Port A2
+set dev Core Ultra Processors (Series 3) PCIe Root Port #2
 goto 8086
 :8086e33a
-set dev Panther Lake PCI Express Root Port A3
+set dev Core Ultra Processors (Series 3) PCIe Root Port #3
 goto 8086
 :8086e33b
-set dev Panther Lake PCI Express Root Port A4
+set dev Core Ultra Processors (Series 3) PCIe Root Port #4
 goto 8086
 :8086e33c
-set dev Panther Lake PCI Express Root Port B1
+set dev Core Ultra Processors (Series 3) PCIe Root Port #5
 goto 8086
 :8086e33d
-set dev Panther Lake PCI Express Root Port B2
+set dev Core Ultra Processors (Series 3) PCIe Root Port #6
 goto 8086
 :8086e33e
-set dev Panther Lake PCI Express Root Port B3
+set dev Core Ultra Processors (Series 3) PCIe Root Port #7
 goto 8086
 :8086e33f
-set dev Panther Lake PCI Express Root Port B4
+set dev Core Ultra Processors (Series 3) PCIe Root Port #8
 goto 8086
 :8086e340
-set dev Panther Lake PCH CNVi WiFi
+set dev Core Ultra Processors (Series 3) CNVi Wi-Fi
+goto 8086
+:8086e341
+set dev Core Ultra Processors (Series 3) CNVi Wi-Fi
+goto 8086
+:8086e342
+set dev Core Ultra Processors (Series 3) CNVi Wi-Fi
+goto 8086
+:8086e343
+set dev Core Ultra Processors (Series 3) CNVi Wi-Fi
+goto 8086
+:8086e344
+set dev Core Ultra Processors (Series 3) IEH #0
+goto 8086
+:8086e345
+set dev Core Ultra Processors (Series 3) ISH
+goto 8086
+:8086e346
+set dev Core Ultra Processors (Series 3) GSPI #2
+goto 8086
+:8086e348
+set dev Core Ultra Processors (Series 3) THC #0 ID1
+goto 8086
+:8086e349
+set dev Core Ultra Processors (Series 3) THC #0 ID2
+goto 8086
+:8086e34a
+set dev Core Ultra Processors (Series 3) THC #1 ID1
+goto 8086
+:8086e34b
+set dev Core Ultra Processors (Series 3) THC #1 ID2
+goto 8086
+:8086e34c
+set dev Core Ultra Processors (Series 3) P2SB
+goto 8086
+:8086e34d
+set dev Core Ultra Processors (Series 3) IEH #1
 goto 8086
 :8086e34e
-set dev Panther Lake Thunderbolt 4 PCI Express Root Port #0
+set dev Core Ultra Processors (Series 3) USB Type-C Subsystem PCIe Root Port #21
+goto 8086
+:8086e34f
+set dev Core Ultra Processors (Series 3) USB Type-C Subsystem PCIe Root Port #22
+goto 8086
+:8086e350
+set dev Core Ultra Processors (Series 3) I2C #4
+goto 8086
+:8086e351
+set dev Core Ultra Processors (Series 3) I2C #5
+goto 8086
+:8086e352
+set dev Core Ultra Processors (Series 3) UART #2
+goto 8086
+:8086e35c
+set dev Core Ultra Processors (Series 3) PCIe Root Port #10
 goto 8086
 :8086e35d
-set dev Panther Lake CSME HECI #1
+set dev Core Ultra Processors (Series 3) CSME HECI #1
+goto 8086
+:8086e35e
+set dev Core Ultra Processors (Series 3) CSME HECI #2
+goto 8086
+:8086e35f
+set dev Core Ultra Processors (Series 3) CSME HECI #3
 goto 8086
 :8086e360
-set dev Panther Lake Thunderbolt 4 PCI Express Root Port #2
+set dev Core Ultra Processors (Series 3) USB Type-C Subsystem PCIe Root Port #23
 goto 8086
 :8086e361
-set dev Panther Lake PCI Express Root Port C1
+set dev Core Ultra Processors (Series 3) PCIe Root Port #9
 goto 8086
 :8086e362
-set dev Panther Lake Primary to Sideband (P2SB) Bridge IOE
+set dev Core Ultra Processors (Series 3) CSME HECI #1
 goto 8086
 :8086e363
-set dev Panther Lake PCI Express Root Port C3
+set dev Core Ultra Processors (Series 3) CSME HECI #2
 goto 8086
 :8086e364
-set dev Panther Lake PCI Express Root Port C4
+set dev Core Ultra Processors (Series 3) CSME HECI #3
 goto 8086
 :8086e365
-set dev Panther Lake PCI Express Root Port D1
+set dev Core Ultra Processors (Series 3) PCIe Root Port #11
 goto 8086
 :8086e366
-set dev Panther Lake PCI Express Root Port D2
+set dev Core Ultra Processors (Series 3) PCIe Root Port #12
 goto 8086
 :8086e367
 set dev Panther Lake PCI Express Root Port D3
@@ -68932,52 +69088,277 @@ goto 8086
 set dev Panther Lake PCI Express Root Port D8
 goto 8086
 :8086e36f
-set dev Panther Lake I3C Host Controller #0
+set dev Core Ultra Processors (Series 3) I3C #2
 goto 8086
 :8086e370
-set dev Panther Lake MEI Controller
+set dev Core Ultra Processors (Series 3) CSME HECI #1 (CSE)
+goto 8086
+:8086e371
+set dev Core Ultra Processors (Series 3) CSME HECI #2 (CSE)
+goto 8086
+:8086e372
+set dev Core Ultra Processors (Series 3) CSME IDE Redirection (IDE-R)
+goto 8086
+:8086e373
+set dev Core Ultra Processors (Series 3) CSME Keyboard and Text (KT) Redirection
+goto 8086
+:8086e374
+set dev Core Ultra Processors (Series 3) CSME HECI #3 (CSE)
+goto 8086
+:8086e375
+set dev Core Ultra Processors (Series 3) CSME HECI #4 (CSE)
 goto 8086
 :8086e376
-set dev Panther Lake Bluetooth PCI Enumerator
+set dev Core Ultra Processors (Series 3) CNVi Bluetooth
 goto 8086
 :8086e378
-set dev Panther Lake Serial IO I2C Controller #0
+set dev Core Ultra Processors (Series 3) I2C #0
 goto 8086
 :8086e379
-set dev Panther Lake Serial IO I2C Controller #1
+set dev Core Ultra Processors (Series 3) I2C #1
 goto 8086
 :8086e37a
-set dev Panther Lake Serial IO I2C Controller #2
+set dev Core Ultra Processors (Series 3) I2C #2
 goto 8086
 :8086e37b
-set dev Panther Lake Serial IO I2C Controller #3
+set dev Core Ultra Processors (Series 3) I2C #3
 goto 8086
 :8086e37c
-set dev Panther Lake I3C Host Controller #1
+set dev Core Ultra Processors (Series 3) I3C #1
 goto 8086
 :8086e37d
-set dev Panther Lake USB 3.2 xHCI Controller
+set dev Core Ultra Processors (Series 3) Standalone xHCI Controller
+goto 8086
+:8086e37e
+set dev Core Ultra Processors (Series 3) Standalone USB Device Controller
 goto 8086
 :8086e37f
-set dev Panther Lake Shared SRAM
+set dev Core Ultra Processors (Series 3) Shared SRAM
+goto 8086
+:8086e400
+set dev Core Ultra Processors (Series 3) eSPI
+goto 8086
+:8086e41f
+set dev Core Ultra Processors (Series 3) eSPI
+goto 8086
+:8086e420
+set dev Core Ultra Processors (Series 3) P2SB
+goto 8086
+:8086e421
+set dev Core Ultra Processors (Series 3) PMC
+goto 8086
+:8086e422
+set dev Core Ultra Processors (Series 3) SMBus
+goto 8086
+:8086e423
+set dev Core Ultra Processors (Series 3) SPI (flash) Controller
+goto 8086
+:8086e424
+set dev Core Ultra Processors (Series 3) Trace Hub
+goto 8086
+:8086e425
+set dev Core Ultra Processors (Series 3) UART #0
+goto 8086
+:8086e426
+set dev Core Ultra Processors (Series 3) UART #1
+goto 8086
+:8086e427
+set dev Core Ultra Processors (Series 3) GSPI #0
+goto 8086
+:8086e428
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e429
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e42a
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e42b
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e42c
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e42d
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e42e
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e42f
+set dev Core Ultra Processors (Series 3) HD Audio
+goto 8086
+:8086e430
+set dev Core Ultra Processors (Series 3) GSPI #1
 goto 8086
 :8086e431
-set dev Panther Lake USB 3.2 xHCI Controller
+set dev Core Ultra Processors (Series 3) Type-C Subsystem xHCI
+goto 8086
+:8086e432
+set dev Core Ultra Processors (Series 3) Type-C Subsystem xDCI
+goto 8086
+:8086e433
+set dev Core Ultra Processors (Series 3) Thunderbolt DMA0
 goto 8086
 :8086e434
-set dev Panther Lake Thunderbolt 4 NHI #2
+set dev Core Ultra Processors (Series 3) Thunderbolt DMA1
+goto 8086
+:8086e437
+set dev Core Ultra Processors (Series 3) USB Type-C Subsystem PCIe Root Port #24
+goto 8086
+:8086e438
+set dev Core Ultra Processors (Series 3) PCIe Root Port #1
+goto 8086
+:8086e439
+set dev Core Ultra Processors (Series 3) PCIe Root Port #2
+goto 8086
+:8086e43a
+set dev Core Ultra Processors (Series 3) PCIe Root Port #3
+goto 8086
+:8086e43b
+set dev Core Ultra Processors (Series 3) PCIe Root Port #4
+goto 8086
+:8086e43c
+set dev Core Ultra Processors (Series 3) PCIe Root Port #5
+goto 8086
+:8086e43d
+set dev Core Ultra Processors (Series 3) PCIe Root Port #6
+goto 8086
+:8086e43e
+set dev Core Ultra Processors (Series 3) PCIe Root Port #7
+goto 8086
+:8086e43f
+set dev Core Ultra Processors (Series 3) PCIe Root Port #8
 goto 8086
 :8086e440
-set dev Panther Lake PCH CNVi WiFi
+set dev Core Ultra Processors (Series 3) CNVi Wi-Fi
+goto 8086
+:8086e441
+set dev Core Ultra Processors (Series 3) CNVi Wi-Fi
+goto 8086
+:8086e442
+set dev Core Ultra Processors (Series 3) CNVi Wi-Fi
+goto 8086
+:8086e443
+set dev Core Ultra Processors (Series 3) CNVi Wi-Fi
+goto 8086
+:8086e444
+set dev Core Ultra Processors (Series 3) IEH #0
+goto 8086
+:8086e445
+set dev Core Ultra Processors (Series 3) ISH
+goto 8086
+:8086e446
+set dev Core Ultra Processors (Series 3) GSPI #2
+goto 8086
+:8086e448
+set dev Core Ultra Processors (Series 3) THC #0 ID1
+goto 8086
+:8086e449
+set dev Core Ultra Processors (Series 3) THC #0 ID2
+goto 8086
+:8086e44a
+set dev Core Ultra Processors (Series 3) THC #1 ID1
+goto 8086
+:8086e44b
+set dev Core Ultra Processors (Series 3) THC #1 ID2
+goto 8086
+:8086e44c
+set dev Core Ultra Processors (Series 3) P2SB
+goto 8086
+:8086e44d
+set dev Core Ultra Processors (Series 3) IEH #1
+goto 8086
+:8086e44e
+set dev Core Ultra Processors (Series 3) USB Type-C Subsystem PCIe Root Port #21
+goto 8086
+:8086e44f
+set dev Core Ultra Processors (Series 3) USB Type-C Subsystem PCIe Root Port #22
+goto 8086
+:8086e450
+set dev Core Ultra Processors (Series 3) I2C #4
+goto 8086
+:8086e451
+set dev Core Ultra Processors (Series 3) I2C #5
+goto 8086
+:8086e452
+set dev Core Ultra Processors (Series 3) UART #2
+goto 8086
+:8086e45c
+set dev Core Ultra Processors (Series 3) PCIe Root Port #10
+goto 8086
+:8086e45d
+set dev Core Ultra Processors (Series 3) CSME HECI #1
+goto 8086
+:8086e45e
+set dev Core Ultra Processors (Series 3) CSME HECI #2
+goto 8086
+:8086e45f
+set dev Core Ultra Processors (Series 3) CSME HECI #3
+goto 8086
+:8086e460
+set dev Core Ultra Processors (Series 3) USB Type-C Subsystem PCIe Root Port #23
+goto 8086
+:8086e461
+set dev Core Ultra Processors (Series 3) PCIe Root Port #9
+goto 8086
+:8086e462
+set dev Core Ultra Processors (Series 3) CSME HECI #1
+goto 8086
+:8086e463
+set dev Core Ultra Processors (Series 3) CSME HECI #2
+goto 8086
+:8086e464
+set dev Core Ultra Processors (Series 3) CSME HECI #3
+goto 8086
+:8086e46f
+set dev Core Ultra Processors (Series 3) I3C #2
+goto 8086
+:8086e470
+set dev Core Ultra Processors (Series 3) CSME HECI #1 (CSE)
+goto 8086
+:8086e471
+set dev Core Ultra Processors (Series 3) CSME HECI #2 (CSE)
+goto 8086
+:8086e472
+set dev Core Ultra Processors (Series 3) CSME IDE Redirection (IDE-R)
+goto 8086
+:8086e473
+set dev Core Ultra Processors (Series 3) CSME Keyboard and Text (KT) Redirection
+goto 8086
+:8086e474
+set dev Core Ultra Processors (Series 3) CSME HECI #3 (CSE)
+goto 8086
+:8086e475
+set dev Core Ultra Processors (Series 3) CSME HECI #4 (CSE)
 goto 8086
 :8086e476
-set dev Panther Lake Bluetooth PCI Enumerator
+set dev Core Ultra Processors (Series 3) CNVi Bluetooth
+goto 8086
+:8086e478
+set dev Core Ultra Processors (Series 3) I2C #0
+goto 8086
+:8086e479
+set dev Core Ultra Processors (Series 3) I2C #1
+goto 8086
+:8086e47a
+set dev Core Ultra Processors (Series 3) I2C #2
 goto 8086
 :8086e47b
-set dev Serial IO I2C Host Controller - E47B
+set dev Core Ultra Processors (Series 3) I2C #3
+goto 8086
+:8086e47c
+set dev Core Ultra Processors (Series 3) I3C #1
 goto 8086
 :8086e47d
-set dev Panther Lake USB 3.2 xHCI Controller
+set dev Core Ultra Processors (Series 3) Standalone xHCI Controller
+goto 8086
+:8086e47e
+set dev Core Ultra Processors (Series 3) Standalone USB Device Controller
+goto 8086
+:8086e47f
+set dev Core Ultra Processors (Series 3) Shared SRAM
 goto 8086
 :8086f1a5
 set dev SSD 600P Series
