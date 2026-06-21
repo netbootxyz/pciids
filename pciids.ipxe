@@ -384,8 +384,17 @@ exit
 :0731
 set ven Jingjia Microelectronics Co Ltd
 exit
+:07310100
+set dev JMN100
+goto 0731
+:07311050
+set dev JM1050
+goto 0731
 :07311100
 set dev JM1100
+goto 0731
+:07311102
+set dev JM1100-Y
 goto 0731
 :07317200
 set dev JM7200 Series GPU
@@ -9485,6 +9494,24 @@ set dev Baikal USB 3.0 xHCI Host Controller
 goto 104d
 :104d90eb
 set dev CXD90062GG
+goto 104d
+:104d90ec
+set dev Salina PCIe Controller
+goto 104d
+:104d9104
+set dev Salina Ethernet Controller
+goto 104d
+:104d9105
+set dev Salina SATA AHCI Controller
+goto 104d
+:104d9106
+set dev Salina SATA AHCI Controller (secondary)
+goto 104d
+:104d9107
+set dev Salina PCIe Glue and Miscellaneous Devices
+goto 104d
+:104d9108
+set dev Salina USB xHCI Host Controller
 goto 104d
 :104d9121
 set dev Nextorage NEM-PA NVMe SSD for PlayStation
@@ -19786,7 +19813,7 @@ goto 10de
 set dev GA104M [Geforce RTX 3070 Ti Laptop GPU]
 goto 10de
 :10de24fa
-set dev GA104 [RTX A4500 Embedded GPU ]
+set dev GA104 [RTX A4500 Embedded GPU]
 goto 10de
 :10de2501
 set dev GA106 [GeForce RTX 3060]
@@ -19933,7 +19960,7 @@ goto 10de
 set dev GA107 [GeForce RTX 2050]
 goto 10de
 :10de25f9
-set dev GA107 [RTX A1000 Embedded GPU ]
+set dev GA107 [RTX A1000 Embedded GPU]
 goto 10de
 :10de25fa
 set dev GA107 [RTX A2000 Embedded GPU]
@@ -30714,6 +30741,12 @@ exit
 :13b5
 set ven ARM
 exit
+:13b50300
+set dev Integrated [AGI CPU] PCIe/CXL Root Port
+goto 13b5
+:13b50301
+set dev Integrated [AGI CPU] Platform PCIe Root Port
+goto 13b5
 :13b6
 set ven Dlog GmbH
 exit
@@ -31553,6 +31586,18 @@ set dev Xenos GPU (Jasper)
 goto 1414
 :14145841
 set dev Xenos GPU (Slim)
+goto 1414
+:1414c030
+set dev OpenVMM PCIe Root Port
+goto 1414
+:1414c031
+set dev OpenVMM PCIe Switch Upstream Port
+goto 1414
+:1414c032
+set dev OpenVMM PCIe Switch Downstream Port
+goto 1414
+:1414c03e
+set dev OpenVMM NVMe Controller
 goto 1414
 :1415
 set ven Oxford Semiconductor Ltd
@@ -43377,6 +43422,12 @@ goto 19e5
 :19e5022a
 set dev Hi1872 Family Virtual Function
 goto 19e5
+:19e50230
+set dev Hi1825 Family
+goto 19e5
+:19e50231
+set dev Hi1825 Family Virtual Function
+goto 19e5
 :19e51710
 set dev iBMA Virtual Network Adapter
 goto 19e5
@@ -44727,6 +44778,9 @@ goto 1b4b
 :1b4b2b45
 set dev NXP 88W9098 Bluetooth 5.3
 goto 1b4b
+:1b4b2b56
+set dev NXP IW620 Wi-Fi 6 (ax) + Bluetooth 5.3 Combo
+goto 1b4b
 :1b4b624e
 set dev DAWICONTROL DC-624e RAID
 goto 1b4b
@@ -46013,6 +46067,9 @@ set dev XPG GAMMIX S60 NVMe SSD (DRAM-less)
 goto 1cc1
 :1cc1636a
 set dev XPG GAMMIX S55 NVMe SSD (DRAM-less)
+goto 1cc1
+:1cc1641a
+set dev LEGEND 970 PRO NVMe SSD
 goto 1cc1
 :1cc1642a
 set dev XPG GAMMIX S50 CORE NVMe SSD (DRAM-less)
@@ -48240,6 +48297,9 @@ goto 1e30
 :1e302042
 set dev SG2042 Root Complex
 goto 1e30
+:1e31
+set ven SORD CORPORATION
+exit
 :1e36
 set ven Shanghai Enflame Technology Co. Ltd
 exit
@@ -49572,9 +49632,6 @@ goto 1f47
 :1f471105
 set dev CONFLUX-2200P NVMe Controller [Virtual Function]
 goto 1f47
-:1f471203
-set dev K2-Pro Family [FLEXFLOW-2200T RoCEv2 Network Controller]
-goto 1f47
 :1f472018
 set dev DPU Card
 goto 1f47
@@ -49596,9 +49653,6 @@ goto 1f47
 :1f473201
 set dev FLEXFLOW-2200R Ethernet Controller
 goto 1f47
-:1f473303
-set dev K3 Family [CONFLUX-3100R MGMT Function]
-goto 1f47
 :1f474001
 set dev K2-Pro Family [CONFLUX-2200E]
 goto 1f47
@@ -49619,9 +49673,6 @@ set dev K3 Family [CONFLUX-3100E Virtual Function]
 goto 1f47
 :1f474013
 set dev K3 Family [CONFLUX-3100E MGMT Function]
-goto 1f47
-:1f474203
-set dev K2-Pro Family [CONFLUX-2200E RoCEv2 Network Controller]
 goto 1f47
 :1f475001
 set dev CONFLUX-2200P Ethernet Controller
@@ -50699,6 +50750,9 @@ set dev TCU Family - TCU-1
 goto 209b
 :209b1001
 set dev TCU Family - TCU-1 Virtual Function
+goto 209b
+:209b1002
+set dev TCU Family - TCU-1 PCIe Switch
 goto 209b
 :209f
 set ven Mobilint, Inc.
@@ -58768,7 +58822,7 @@ goto 8086
 set dev Ice Lake DDRIO Registers
 goto 8086
 :808628c0
-set dev Volume Management Device NVMe RAID Controller
+set dev Volume Management Device (VMD)
 goto 8086
 :80862912
 set dev 82801IH (ICH9DH) LPC Interface Controller
@@ -69570,6 +69624,15 @@ goto 8848
 :88481083
 set dev Ethernet Controller N400 Series Virtual Function
 goto 8848
+:88488208
+set dev Ethernet Controller N210M for 1GbE 1-port RJ45
+goto 8848
+:88488209
+set dev Ethernet Controller N210 Series Virtual Function
+goto 8848
+:8848820a
+set dev Ethernet Controller N210L for 1GbE 1-port RJ45
+goto 8848
 :88488308
 set dev Ethernet Controller N500 Series for 1GbE (Quad-port, Copper RJ45)
 goto 8848
@@ -69587,6 +69650,21 @@ set dev Ethernet Controller N20 Series for 100GbE
 goto 8848
 :88488502
 set dev Ethernet Controller N20 Series for 40GbE
+goto 8848
+:88488503
+set dev Ethernet Controller N20 Series Virtual Function
+goto 8848
+:88488507
+set dev Ethernet Controller B-Series for 25GbE
+goto 8848
+:88488508
+set dev Ethernet Controller B-Series for 100GbE
+goto 8848
+:88488509
+set dev Ethernet Controller B-Series for 40GbE
+goto 8848
+:8848850a
+set dev Ethernet Controller B-Series Virtual Function
 goto 8848
 :8866
 set ven T-Square Design Inc.
