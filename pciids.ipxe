@@ -49621,13 +49621,13 @@ goto 1f47
 set dev CONFLUX-2200P NVMe Controller
 goto 1f47
 :1f471011
-set dev K3 Family [FLEXFLOW-3100T]
+set dev K3-T Family
 goto 1f47
 :1f471012
-set dev K3 Family [FLEXFLOW-3100T Virtual Function]
+set dev K3-T Family [Virtual Function]
 goto 1f47
 :1f471013
-set dev K3 Family [FLEXFLOW-3100T MGMT Function]
+set dev K3-T Family [MGMT Function]
 goto 1f47
 :1f471105
 set dev CONFLUX-2200P NVMe Controller [Virtual Function]
