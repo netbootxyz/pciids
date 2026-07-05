@@ -1299,8 +1299,14 @@ goto 1002
 :100213e9
 set dev Ariel/Navi10Lite
 goto 1002
+:100213ea
+set dev Cyan Skillfish HDMI/DP Audio Controller
+goto 1002
 :100213f9
 set dev Oberon/Navi12Lite
+goto 1002
+:100213fb
+set dev Cyan Skillfish [PlayStation 5 APU]
 goto 1002
 :100213fe
 set dev Cyan Skillfish [BC-250]
@@ -44707,7 +44713,19 @@ goto 1b37
 set dev ADQ8
 goto 1b37
 :1b370031
-set dev ADQ3
+set dev ADQ32/ADQ33
+goto 1b37
+:1b370032
+set dev ADQ System Manager
+goto 1b37
+:1b370033
+set dev ADQ36
+goto 1b37
+:1b370034
+set dev ADQ30
+goto 1b37
+:1b370035
+set dev ADQ35
 goto 1b37
 :1b372014
 set dev TX320
@@ -45074,6 +45092,9 @@ set dev Ultrastar DC SN650 NVMe SSD
 goto 1b96
 :1b962722
 set dev Ultrastar DC SN655 NVMe SSD
+goto 1b96
+:1b962750
+set dev Ultrastar DC SN861 NVMe SSD
 goto 1b96
 :1b962751
 set dev Ultrastar DC SN861 NVMe SSD
@@ -45995,6 +46016,9 @@ set dev IM2P33F8 series NVMe SSD (DRAM-less)
 goto 1cc1
 :1cc1413d
 set dev SM2P41D3Q NVMe SSD (DRAM-less)
+goto 1cc1
+:1cc141b8
+set dev IM2P41B8P NVMe SSD
 goto 1cc1
 :1cc141c3
 set dev SM2P41C3 NVMe SSD (DRAM-less)
@@ -47478,6 +47502,15 @@ goto 1d94
 :1d941468
 set dev NTBCCP
 goto 1d94
+:1d9414ab
+set dev HGE1000 1000/100/10 Mb Ethernet Controller
+goto 1d94
+:1d94200b
+set dev HGE2500 2500/1000/100/10 Mb Ethernet Controller
+goto 1d94
+:1d94200c
+set dev HGE2500 1000/100/10 Mb Ethernet Controller
+goto 1d94
 :1d946211
 set dev K100_AI
 goto 1d94
@@ -48867,6 +48900,12 @@ goto 1ec8
 :1ec88810
 set dev Fantasy I
 goto 1ec8
+:1ec88811
+set dev Fantasy I-V
+goto 1ec8
+:1ec88820
+set dev Fantasy III
+goto 1ec8
 :1ec88900
 set dev GR308
 goto 1ec8
@@ -48900,6 +48939,12 @@ exit
 :1eca0000
 set dev Envise-B
 goto 1eca
+:1ecc
+set ven Sunrise AI Inc.
+exit
+:1ecc0200
+set dev Sun S2 Graphics Controller[Sun S2-X1 PCIe]
+goto 1ecc
 :1ed0
 set ven Hosin Global Electronics
 exit
@@ -51077,6 +51122,9 @@ set dev NV3 NVMe SSD [E27T] (DRAM-less)
 goto 2646
 :26465028
 set dev NV3 NVMe SSD [SM2268XT2] (DRAM-less)
+goto 2646
+:26465029
+set dev OM8SGP4 PCIe 4 NVMe SSD (TLC) (DRAM-less)
 goto 2646
 :2646502a
 set dev FURY Renegade G5 NVMe SSD [SM2508]
