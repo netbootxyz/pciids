@@ -20334,6 +20334,9 @@ goto 10de
 :10de2e03
 set dev GB20B [JMJWOA-Generic-GPU]
 goto 10de
+:10de2e06
+set dev GB20B [JMJWOA-Generic-GPU]
+goto 10de
 :10de2e12
 set dev GB20B [GB10]
 goto 10de
@@ -20358,8 +20361,26 @@ goto 10de
 :10de2f80
 set dev GB205 High Definition Audio Controller
 goto 10de
+:10de2f95
+set dev Vera Rubin CPU
+goto 10de
+:10de2f96
+set dev Vera Rubin CPU
+goto 10de
+:10de2f97
+set dev Vera Rubin CPU
+goto 10de
+:10de2f98
+set dev Vera Rubin CPU
+goto 10de
+:10de3000
+set dev GR100 [Reserved Dev ID A]
+goto 10de
+:10de3021
+set dev GR100 [PCIe Faber]
+goto 10de
 :10de3040
-set dev GR100
+set dev GR100 [Reserved Dev ID B]
 goto 10de
 :10de30c0
 set dev GR102
@@ -46537,7 +46558,7 @@ exit
 set dev MX6300 series PCIe x8 NVMe SSD
 goto 1cfd
 :1d00
-set ven Pure Storage
+set ven Everpure, Inc.
 exit
 :1d05
 set ven AIstone Global Limited
@@ -50835,6 +50856,9 @@ goto 20a9
 :20a91201
 set dev MUX Ultimate FPGA Accelerator Card
 goto 20a9
+:20b4
+set ven Genstoraige Technology Co., Ltd.
+exit
 :20b5
 set ven Shanghai StarFive Technology Co., Ltd.
 exit
@@ -50984,6 +51008,9 @@ set ven ZyDAS Technology Corp.
 exit
 :2123
 set ven Shanghai Warpdrive Technology Co., Ltd
+exit
+:2136
+set ven Dongguan Xincun Chengbang Technology Co., Ltd.
 exit
 :21b4
 set ven Hunan Goke Microelectronics Co., Ltd
@@ -52758,6 +52785,9 @@ goto 6766
 :67663d04
 set dev Arise1010
 goto 6766
+:67663d05
+set dev Arise2050
+goto 6766
 :67663d06
 set dev Arise-GT-10C0t
 goto 6766
@@ -52767,6 +52797,9 @@ goto 6766
 :67663d08
 set dev Arise2020
 goto 6766
+:67663d09
+set dev Arise2020C
+goto 6766
 :67663d0e
 set dev Arise10D0
 goto 6766
@@ -52774,6 +52807,9 @@ goto 6766
 set dev GLF HDMI/DP Audio
 goto 6766
 :67663d41
+set dev GLF HDMI/DP Audio
+goto 6766
+:67663d42
 set dev GLF HDMI/DP Audio
 goto 6766
 :67663d43
@@ -68918,6 +68954,12 @@ set dev NVL-UL
 goto 8086
 :8086d745
 set dev NVL-HX
+goto 8086
+:8086d74a
+set dev NVL-S
+goto 8086
+:8086d74b
+set dev NVL-S
 goto 8086
 :8086d750
 set dev NVL-P
