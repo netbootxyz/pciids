@@ -3777,6 +3777,9 @@ goto 1002
 :100275a3
 set dev Aqua Vanjaram [Instinct MI355X]
 goto 1002
+:100275a8
+set dev Aqua Vanjaram [Instinct MI350P]
+goto 1002
 :10027833
 set dev RS350 Host Bridge
 goto 1002
@@ -20332,13 +20335,16 @@ goto 10de
 set dev GB207GLM [RTX PRO 500 Blackwell Embedded GPU]
 goto 10de
 :10de2e03
-set dev GB20B [JMJWOA-Generic-GPU]
+set dev GB20B [RTX Spark N1X (6144-core Blackwell RTX GPU)]
 goto 10de
 :10de2e06
-set dev GB20B [JMJWOA-Generic-GPU]
+set dev GB20B [RTX Spark N1X (5120-core Blackwell RTX GPU)]
 goto 10de
 :10de2e12
 set dev GB20B [GB10]
+goto 10de
+:10de2e13
+set dev GB20B [Desktop Device]
 goto 10de
 :10de2e2a
 set dev GB20B [JMJWOA-Generic-GPU]
@@ -35814,6 +35820,9 @@ goto 14e4
 :14e41760
 set dev BCM57608 25Gb/50Gb/100Gb/200Gb/400Gb Ethernet
 goto 14e4
+:14e41780
+set dev BCM57708 50Gb/100Gb/200Gb/400Gb/800Gb Ethernet
+goto 14e4
 :14e41800
 set dev BCM57502 NetXtreme-E Ethernet Partition
 goto 14e4
@@ -38595,11 +38604,14 @@ goto 15b7
 :15b75050
 set dev WD PC SN8050S / WD_BLACK SN8100 NVMe SSD
 goto 15b7
+:15b75061
+set dev PC SN5100S M.2 2230 NVMe SSD (DRAM-less)
+goto 15b7
 :15b75062
-set dev WD PC SN5100S NVMe SSD (DRAM-less)
+set dev PC SN5100S M.2 2242 NVMe SSD (DRAM-less)
 goto 15b7
 :15b75063
-set dev WD Blue SN5100 NVMe SSD (DRAM-less)
+set dev PC SN5100S / WD Blue SN5100 M.2 2280 NVMe SSD (DRAM-less)
 goto 15b7
 :15b8
 set ven ADDI-DATA GmbH
@@ -51009,6 +51021,12 @@ exit
 :2123
 set ven Shanghai Warpdrive Technology Co., Ltd
 exit
+:212b
+set ven Flumeio
+exit
+:212b5951
+set dev Flumeio F5950Q
+goto 212b
 :2136
 set ven Dongguan Xincun Chengbang Technology Co., Ltd.
 exit
