@@ -16,7 +16,7 @@ jobs:
       run: |
         wget https://raw.githubusercontent.com/pciutils/pciids/master/pci.ids -O pci.ids
         ./pciids_gen pci.ids pciids.ipxe
-    - uses: stefanzweifel/git-auto-commit-action@v5
+    - uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: Update pciids.ipxe with upstream changes
         branch: master
