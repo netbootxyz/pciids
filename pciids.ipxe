@@ -67035,8 +67035,14 @@ goto 8086
 :80869db2
 set dev Cannon Point-LP PCI Express Root Port #1
 goto 8086
+:80869db3
+set dev Cannon Point-LP PCI Express Root Port #12
+goto 8086
 :80869db4
 set dev Cannon Point-LP PCI Express Root Port #13
+goto 8086
+:80869db5
+set dev Cannon Point-LP PCI Express Root Port #14
 goto 8086
 :80869db6
 set dev Cannon Point-LP PCI Express Root Port #15
@@ -67046,6 +67052,9 @@ set dev Cannon Point-LP PCI Express Root Port #1
 goto 8086
 :80869dbc
 set dev Cannon Point-LP PCI Express Root Port #5
+goto 8086
+:80869dbd
+set dev Cannon Point-LP PCI Express Root Port #6
 goto 8086
 :80869dbe
 set dev Cannon Point-LP PCI Express Root Port #7
