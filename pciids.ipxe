@@ -27216,6 +27216,9 @@ exit
 :1235
 set ven SMART Modular Technologies
 exit
+:12355820
+set dev DC5820 NVMe SSD
+goto 1235
 :1235c241
 set dev CXA-4F1W
 goto 1235
@@ -47385,6 +47388,9 @@ goto 1d79
 :1d792267
 set dev NVMe PCIe SSD 220S/240S/MTE710T
 goto 1d79
+:1d792268
+set dev NVMe PCIe SSD 245S (DRAM-less)
+goto 1d79
 :1d792269
 set dev NVMe PCIe SSD 410S (DRAM-less)
 goto 1d79
@@ -50760,6 +50766,9 @@ goto 207d
 :208a
 set ven MICIUS Laboratory
 exit
+:2090
+set ven Rivian Automotive
+exit
 :2094
 set ven Shenzhen Wodposit Electronics Co., Ltd.
 exit
@@ -50871,6 +50880,21 @@ goto 20a9
 :20b4
 set ven Genstoraige Technology Co., Ltd.
 exit
+:20b4a20c
+set dev PT200A PCIe 5.0 NVMe SSD
+goto 20b4
+:20b4c25c
+set dev MQ205 PCIe 5.0 NVMe SSD
+goto 20b4
+:20b4d20c
+set dev PT200 PCIe 5.0 NVMe SSD
+goto 20b4
+:20b4d25c
+set dev PT205 PCIe 5.0 NVMe SSD
+goto 20b4
+:20b4d28c
+set dev PT208 PCIe 5.0 NVMe SSD
+goto 20b4
 :20b5
 set ven Shanghai StarFive Technology Co., Ltd.
 exit
@@ -51030,6 +51054,12 @@ goto 212b
 :2136
 set ven Dongguan Xincun Chengbang Technology Co., Ltd.
 exit
+:21366600
+set dev NX6600U0 NVME SSD
+goto 2136
+:21367600
+set dev NX7600U0 NVME SSD
+goto 2136
 :21b4
 set ven Hunan Goke Microelectronics Co., Ltd
 exit
@@ -70404,6 +70434,9 @@ goto 9902
 :9999
 set ven MetaX Integrated Circuits (Shanghai) Co., Ltd.
 exit
+:99990a01
+set dev C500
+goto 9999
 :9a11
 set ven Tiger Lake-H Gaussian & Neural Accelerator
 exit
