@@ -3769,7 +3769,7 @@ goto 1002
 set dev Navi 48 [Radeon AI PRO R9700]
 goto 1002
 :10027590
-set dev Navi 44 [Radeon RX 9060 XT]
+set dev Navi 44 [Radeon RX 9050 / 9060 XT]
 goto 1002
 :100275a0
 set dev Aqua Vanjaram [Instinct MI350X]
@@ -47394,6 +47394,9 @@ goto 1d79
 :1d792269
 set dev NVMe PCIe SSD 410S (DRAM-less)
 goto 1d79
+:1d792708
+set dev USD710S microSDXC EX SD7.1 Express (DRAM-less)
+goto 1d79
 :1d795766
 set dev NVMe PCIe SSD 110Q (DRAM-less)
 goto 1d79
@@ -48041,6 +48044,9 @@ set dev XCG 2500 Enterprise Gen 4 SSD
 goto 1dee
 :1dee4121
 set dev PCIe 4.0 SP406/416 NVMe SSD
+goto 1dee
+:1dee5016
+set dev BIWIN NVMe SSD SP509/SP519
 goto 1dee
 :1dee5161
 set dev BIWIN NVMe SSD SP506/SP516
@@ -49614,6 +49620,45 @@ exit
 :1f32ed55
 set dev U800G NVMe SSD
 goto 1f32
+:1f39
+set ven Silicon Innovation Microelectronics Co. Ltd.
+exit
+:1f392200
+set dev XSAT2204 SATA 3.0 Host Controller
+goto 1f39
+:1f392201
+set dev XSAT2104 SATA 3.0 Host Controller
+goto 1f39
+:1f392203
+set dev XSAT2104A SATA 3.0 Host Controller
+goto 1f39
+:1f392204
+set dev XSAT2102A SATA 3.0 Host Controller
+goto 1f39
+:1f392300
+set dev XUSB2104 USB 3.0 Host Controller
+goto 1f39
+:1f392301
+set dev XUSB2102 USB 3.0 Host Controller
+goto 1f39
+:1f392800
+set dev XPSW3106 6-Lane 5-Port PCIe 3.0 Packet Switch
+goto 1f39
+:1f392801
+set dev XPSW3112 12-Lane 9-Port PCIe 3.0 Packet Switch
+goto 1f39
+:1f392802
+set dev XPSW3116 16-Lane 9-Port PCIe 3.0 Packet Switch
+goto 1f39
+:1f392803
+set dev XPSW2106 6-Lane 5-Port PCIe 2.0 Packet Switch
+goto 1f39
+:1f392804
+set dev XPSW2112 12-Lane 9-Port PCIe 2.0 Packet Switch
+goto 1f39
+:1f392805
+set dev XPSW2116 16-Lane 9-Port PCIe 2.0 Packet Switch
+goto 1f39
 :1f3f
 set ven 3SNIC Ltd
 exit
@@ -50646,6 +50691,15 @@ exit
 :2058
 set ven Lime Microsystems Ltd.
 exit
+:2058001a
+set dev LimeSDR X3
+goto 2058
+:2058001b
+set dev LimeSDR XTRX
+goto 2058
+:2058001d
+set dev LA9310 [LimeSDR Micro]
+goto 2058
 :205c
 set ven Zhejiang VMing Semiconductor Co., Ltd.
 exit
@@ -51056,6 +51110,9 @@ set ven Dongguan Xincun Chengbang Technology Co., Ltd.
 exit
 :21366600
 set dev NX6600U0 NVME SSD
+goto 2136
+:21367500
+set dev NX7500U0 NVME SSD
 goto 2136
 :21367600
 set dev NX7600U0 NVME SSD
@@ -52124,6 +52181,18 @@ set dev Smart Network Adapter
 goto 4c52
 :4c521004
 set dev Smart Network Adapter
+goto 4c52
+:4c522001
+set dev 100G Ethernet network Adapter
+goto 4c52
+:4c522002
+set dev 100G Ethernet network Adapter
+goto 4c52
+:4c522003
+set dev 25G Ethernet network Adapter
+goto 4c52
+:4c522004
+set dev 25G Ethernet Network Adapter
 goto 4c52
 :4c53
 set ven SBS Technologies
@@ -69337,6 +69406,9 @@ goto 8086
 set dev Core Ultra Processors (Series 3) Shared SRAM
 goto 8086
 :8086e400
+set dev Core Ultra Processors (Series 3) eSPI
+goto 8086
+:8086e402
 set dev Core Ultra Processors (Series 3) eSPI
 goto 8086
 :8086e41f
