@@ -10581,6 +10581,9 @@ goto 1077
 :10772289
 set dev ISP2852-based 64/32G Fibre Channel to PCIe Controller with StorCryption
 goto 1077
+:10772299
+set dev SC2962I 128/64G Fibre Channel to PCIe Controller
+goto 1077
 :10772300
 set dev QLA2300 64-bit Fibre Channel Adapter
 goto 1077
@@ -46023,6 +46026,9 @@ goto 1cb5
 :1cb8
 set ven Dawning Information Industry Co., Ltd.
 exit
+:1cbd
+set ven novachips
+exit
 :1cc1
 set ven ADATA Technology Co., Ltd.
 exit
@@ -46136,6 +46142,9 @@ set dev XPG GAMMIX S50 CORE NVMe SSD (DRAM-less)
 goto 1cc1
 :1cc1646a
 set dev XPG MARS 980 BLADE NVMe SSD
+goto 1cc1
+:1cc1647a
+set dev XPG MARS 980 PRO NVMe SSD
 goto 1cc1
 :1cc1648a
 set dev LEGEND 860 NVMe SSD (DRAM-less)
@@ -48042,6 +48051,9 @@ goto 1dee
 :1dee2500
 set dev XCG 2500 Enterprise Gen 4 SSD
 goto 1dee
+:1dee2682
+set dev AP923P Gen4 NVME SSD (DRAM-less)
+goto 1dee
 :1dee4121
 set dev PCIe 4.0 SP406/416 NVMe SSD
 goto 1dee
@@ -48058,7 +48070,7 @@ goto 1dee
 set dev Acer Predator GM7000 NVMe SSD
 goto 1dee
 :1dee7700
-set dev BIWIN NVMe SSD SP50Y/SP51Y
+set dev BIWIN NVMe SSD SP5 series
 goto 1dee
 :1def
 set ven Ampere Computing, LLC
@@ -51093,6 +51105,9 @@ goto 2114
 :2114000a
 set dev QMA Board PCIe Gen2
 goto 2114
+:2114001a
+set dev QMA Board PCIe Gen3
+goto 2114
 :2116
 set ven ZyDAS Technology Corp.
 exit
@@ -51117,6 +51132,9 @@ goto 2136
 :21367600
 set dev NX7600U0 NVME SSD
 goto 2136
+:214d
+set ven Equalizer Technologies
+exit
 :21b4
 set ven Hunan Goke Microelectronics Co., Ltd
 exit
