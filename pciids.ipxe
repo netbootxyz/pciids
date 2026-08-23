@@ -3718,7 +3718,7 @@ goto 1002
 set dev Navi 33 [Radeon RX 7600/7600 XT/7600M XT/7600S/7700S / PRO W7600]
 goto 1002
 :10027481
-set dev Navi 33 [Radeon Graphics]
+set dev Navi 33 [Steam Machine]
 goto 1002
 :10027483
 set dev Navi 33 [Radeon RX 7600M/7600M XT]
@@ -9529,7 +9529,7 @@ goto 104d
 set ven Oak Technology, Inc
 exit
 :104e0017
-set dev OTI-64017
+set dev OTI-64017 [Eon]
 goto 104e
 :104e0107
 set dev OTI-107 [Spitfire]
@@ -9541,10 +9541,10 @@ goto 104e
 set dev OTI-64111 [Spitfire]
 goto 104e
 :104e0217
-set dev OTI-64217
+set dev OTI-64217 [Eon]
 goto 104e
 :104e0317
-set dev OTI-64317
+set dev OTI-64317 [Warp 5]
 goto 104e
 :104f
 set ven Co-time Computer Ltd
@@ -27720,8 +27720,14 @@ goto 126f
 :126f2508
 set dev SM2508 NVMe 2.0 SSD Controller
 goto 126f
+:126f2708
+set dev SM2708 x2 NVMe SD Express SSD Controller (DRAM-less)
+goto 126f
 :126f8366
 set dev SM8366 NVMe SSD Controller [MonTitan]
+goto 126f
+:126f8388
+set dev SM8388 NVMe SSD Controller [MonTitan]
 goto 126f
 :1270
 set ven Olympus Optical Co., Ltd.
@@ -47404,7 +47410,7 @@ goto 1d79
 set dev NVMe PCIe SSD 410S (DRAM-less)
 goto 1d79
 :1d792708
-set dev USD710S microSDXC EX SD7.1 Express (DRAM-less)
+set dev USD710S microSDXC EX SD Express 7.1 (DRAM-less)
 goto 1d79
 :1d795766
 set dev NVMe PCIe SSD 110Q (DRAM-less)
@@ -49515,6 +49521,9 @@ goto 1f0f
 :1f0f3504
 set dev M18305 Family BASE-T
 goto 1f0f
+:1f0f3506
+set dev M18305 Family OCP
+goto 1f0f
 :1f0f350a
 set dev M18305 Family Virtual Function
 goto 1f0f
@@ -49762,13 +49771,13 @@ goto 1f47
 set dev CONFLUX-2200P NVMe Controller
 goto 1f47
 :1f471011
-set dev K3-T Family
+set dev K3 Family
 goto 1f47
 :1f471012
-set dev K3-T Family [Virtual Function]
+set dev K3 Family [Virtual Function]
 goto 1f47
 :1f471013
-set dev K3-T Family [MGMT Function]
+set dev K3 Family [MGMT Function]
 goto 1f47
 :1f471105
 set dev CONFLUX-2200P NVMe Controller [Virtual Function]
@@ -50042,6 +50051,21 @@ set dev XE4406 Series NVMe PCIe Gen4x4 SSD
 goto 1f99
 :1f99610c
 set dev TE3410 Series NVMe PCIe Gen3x4 SSD
+goto 1f99
+:1f99610d
+set dev TE4403 Series NVMe PCIe Gen4x4 SSD
+goto 1f99
+:1f99610e
+set dev TE5440 Series NVMe PCIe Gen5x4 SSD
+goto 1f99
+:1f99610f
+set dev TE5441 Series NVMe PCIe Gen5x4 SSD
+goto 1f99
+:1f996110
+set dev TE5480 Series NVMe PCIe Gen5x4 SSD
+goto 1f99
+:1f996111
+set dev TE5481 Series NVMe PCIe Gen5x4 SSD
 goto 1f99
 :1f9d
 set ven Axelera AI
@@ -50826,6 +50850,9 @@ exit
 :207d0610
 set dev 2-port SATA 6 Gb/s RAID Controller
 goto 207d
+:207d0611
+set dev JZ9234 SATA RAID Controller
+goto 207d
 :207d0612
 set dev SATA BootRAID Controller
 goto 207d
@@ -51135,6 +51162,12 @@ goto 2136
 :214d
 set ven Equalizer Technologies
 exit
+:214d0001
+set dev Xeetah Base Firmware
+goto 214d
+:214d0002
+set dev Xeetah Development Platform
+goto 214d
 :21b4
 set ven Hunan Goke Microelectronics Co., Ltd
 exit
