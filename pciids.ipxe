@@ -1047,6 +1047,15 @@ goto 1000
 :100000e7
 set dev Fusion-MPT 12GSAS/PCIe Unsupported SAS38xx
 goto 1000
+:100000f0
+set dev Fusion-MPT SAS/SATA SAS52xx
+goto 1000
+:100000f1
+set dev Fusion-MPT SAS/SATA SAS52xx
+goto 1000
+:100000f2
+set dev Fusion-MPT Switch SAS52xx
+goto 1000
 :100002b0
 set dev Virtual Endpoint on PCIe Switch
 goto 1000
@@ -7202,6 +7211,12 @@ set dev 600 Series Chipset SATA Controller
 goto 1022
 :102243f7
 set dev 600 Series Chipset USB 3.2 Controller
+goto 1022
+:102243f9
+set dev B665 Series Chipset USB 3.1 Controller
+goto 1022
+:102243fa
+set dev A620 Series Chipset USB 3.1 Controller
 goto 1022
 :102243fc
 set dev 800 Series Chipset USB 3.x XHCI Controller
@@ -37866,6 +37881,12 @@ goto 15b3
 :15b30229
 set dev CX9 PCIe Switch Family [ConnectX-9 PCIe Switch Secure Flash Recovery-RMA]
 goto 15b3
+:15b3022a
+set dev CX11 Family [ConnectX-11 Flash Recovery]
+goto 15b3
+:15b3022b
+set dev CX11 Family [ConnectX-11 RMA]
+goto 15b3
 :15b3024e
 set dev MT53100 [Spectrum-2, Flash recovery mode]
 goto 15b3
@@ -38142,6 +38163,12 @@ goto 15b3
 :15b31028
 set dev CX10 Family [ConnectX-10 Trusted Network Control Memory]
 goto 15b3
+:15b31029
+set dev CX11 Family [ConnectX-11]
+goto 15b3
+:15b3102a
+set dev CX11 Family [ConnectX-11 Trusted Network Control Memory]
+goto 15b3
 :15b31974
 set dev MT28800 Family [ConnectX-5 PCIe Bridge]
 goto 15b3
@@ -38178,6 +38205,9 @@ goto 15b3
 :15b3197f
 set dev CX10 Family [ConnectX-10 PCIe Bridge]
 goto 15b3
+:15b31980
+set dev CX11 Family [ConnectX-11 PCIe Bridge]
+goto 15b3
 :15b32020
 set dev MT2892 Family [ConnectX-6 Dx Emulated PCIe Bridge]
 goto 15b3
@@ -38198,6 +38228,9 @@ set dev CX8 Family [CX8 Data Direct Interface]
 goto 15b3
 :15b32101
 set dev CX10 Family [ConnectX-10 NVLink-C2C]
+goto 15b3
+:15b32102
+set dev CX11 Family [ConnectX-11 NVLink-C2C]
 goto 15b3
 :15b32300
 set dev ConnectX/BlueField Family Hardware Performance Monitors [HWPM]
@@ -51147,6 +51180,9 @@ exit
 :212b5951
 set dev Flumeio F5950Q
 goto 212b
+:212d
+set ven APEX Technologies
+exit
 :2136
 set ven Dongguan Xincun Chengbang Technology Co., Ltd.
 exit
@@ -51168,6 +51204,9 @@ goto 214d
 :214d0002
 set dev Xeetah Development Platform
 goto 214d
+:2155
+set ven Hubei Zhuanwei Technology Co., Ltd.
+exit
 :21b4
 set ven Hunan Goke Microelectronics Co., Ltd
 exit
@@ -62997,6 +63036,15 @@ goto 8086
 :80864c9a
 set dev RocketLake-S [UHD Graphics]
 goto 8086
+:80864d62
+set dev Core Processors (Series 3 for Edge) CSME HECI #1
+goto 8086
+:80864d63
+set dev Core Processors (Series 3 for Edge) CSME HECI #2
+goto 8086
+:80864d64
+set dev Core Processors (Series 3 for Edge) CSME HECI #3
+goto 8086
 :80864d87
 set dev Jasper Lake eSPI Controller
 goto 8086
@@ -70653,6 +70701,12 @@ exit
 :a304
 set ven Sony
 exit
+:a69c
+set ven AIC Semiconductor (Shanghai) CO., Ltd.
+exit
+:a69c8d90
+set dev AIC8800M80X2P Network controller
+goto a69c
 :a727
 set ven 3Com Corporation
 exit
