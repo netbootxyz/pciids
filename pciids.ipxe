@@ -1300,7 +1300,7 @@ goto 1002
 set dev Kaveri [Radeon R6 Graphics]
 goto 1002
 :100213c0
-set dev Granite Ridge [Radeon Graphics]
+set dev Granite Ridge [Radeon 610M]
 goto 1002
 :100213db
 set dev Cyan Skillfish [PlayStation 5 APU]
@@ -1408,7 +1408,7 @@ goto 1002
 set dev Rembrandt
 goto 1002
 :1002164e
-set dev Raphael
+set dev Raphael [Radeon 610M]
 goto 1002
 :1002164f
 set dev Phoenix
@@ -3283,7 +3283,7 @@ goto 1002
 set dev Vega 12 [Radeon Pro Vega 20]
 goto 1002
 :10026fdf
-set dev Polaris 20 XL [Radeon RX 580 2048SP]
+set dev Polaris 20 XL/XTR [Radeon RX 580 2048SP / RX 590 GME]
 goto 1002
 :1002700f
 set dev RS100 AGP Bridge
@@ -23533,7 +23533,7 @@ goto 112f
 set ven Computervision
 exit
 :1131
-set ven Philips Semiconductors
+set ven NXP Semiconductors
 exit
 :11311561
 set dev USB 1.1 Host Controller
@@ -23588,6 +23588,45 @@ set dev SAA7231
 goto 1131
 :11319730
 set dev SAA9730 Integrated Multimedia and Peripheral Controller
+goto 1131
+:1131e001
+set dev i.MX9 PCIe root complex event collector
+goto 1131
+:1131e002
+set dev i.MX9 PCIe root complex event collector (MSI/-X capable)
+goto 1131
+:1131e100
+set dev i.MX9 ethernet controller (ENETC) rev 1
+goto 1131
+:1131e101
+set dev i.MX9 ethernet controller (ENETC) rev 2
+goto 1131
+:1131e110
+set dev i.MX9 switch management port (ENETC rev 2)
+goto 1131
+:1131e111
+set dev i.MX9 TSN ethernet switch management port
+goto 1131
+:1131e200
+set dev i.MX9 central DMA
+goto 1131
+:1131ee00
+set dev i.MX9 ethernet MDIO controller rev 2
+goto 1131
+:1131ee01
+set dev i.MX9 ethernet MDIO controller rev 1
+goto 1131
+:1131ee02
+set dev i.MX9 IEEE 1588/1722 controller
+goto 1131
+:1131eef0
+set dev i.MX9 TSN ethernet switch
+goto 1131
+:1131eef2
+set dev i.MX9 ethernet switch config and control
+goto 1131
+:1131ef00
+set dev i.MX9 ethernet controller virtual function
 goto 1131
 :1132
 set ven Mitel Corp.
@@ -38658,6 +38697,9 @@ goto 15b7
 :15b75063
 set dev PC SN5100S / WD Blue SN5100 M.2 2280 NVMe SSD (DRAM-less)
 goto 15b7
+:15b75070
+set dev SanDisk Optimus 5110, PC SN4100S, PC SN6100S / WD Green SN3000 NVMe SSD (DRAM-less)
+goto 15b7
 :15b8
 set ven ADDI-DATA GmbH
 exit
@@ -41191,7 +41233,7 @@ goto 17cb
 set dev SM8350 PCIe Root Complex [Snapdragon 888]
 goto 17cb
 :17cb010e
-set dev SC8280XP PCI Express Root Port
+set dev SC8280XP PCIe Root Port [Snapdragon 8cx Gen 3]
 goto 17cb
 :17cb0110
 set dev SM8475 PCIe Root Complex [Snapdragon 8+ Gen 1]
@@ -41201,6 +41243,15 @@ set dev SC8380XP PCIe Root Complex [Snapdragon X / X Plus / X Elite]
 goto 17cb
 :17cb0113
 set dev SM8550/SM8650 PCIe Root Complex [Snapdragon 8 Gen 2/Gen 3]
+goto 17cb
+:17cb011c
+set dev SM8450 PCIe Root Complex [Snapdragon 8 Gen 1]
+goto 17cb
+:17cb0120
+set dev SC8480XP PCIe Root Complex [Snapdragon X2]
+goto 17cb
+:17cb0123
+set dev SM8750 PCIe Root Complex [Snapdragon 8 Elite]
 goto 17cb
 :17cb0300
 set dev MDM9x35 LTE Modem [Snapdragon X7]
@@ -41242,13 +41293,16 @@ goto 17cb
 set dev QCN6024/9024/9074 Wireless Network Adapter
 goto 17cb
 :17cb1107
-set dev WCN785x Wi-Fi 7(802.11be) 320MHz 2x2 [FastConnect 7800]
+set dev NCM8x5/WCN785x Wi-Fi 7(802.11be) 320MHz 2x2 [FastConnect 7800]
 goto 17cb
 :17cb1108
 set dev IPQ95xx/97xx PCIe Root Port
 goto 17cb
 :17cb1109
 set dev QCN62xx/92xx Wireless Network Adapter
+goto 17cb
+:17cb1112
+set dev QCC2072 Wi-Fi 7(802.11be) 320MHz [FastConnect C7700]
 goto 17cb
 :17cc
 set ven NetChip Technology, Inc
@@ -46044,6 +46098,9 @@ goto 1c8a
 :1c8c
 set ven Mobiveil, Inc.
 exit
+:1ca5
+set ven Corerise Electronics Co. Ltd.
+exit
 :1cb0
 set ven Shannon Systems
 exit
@@ -47658,6 +47715,9 @@ goto 1d97
 :1d972263
 set dev SM2263EN/SM2263XT-based OEM NVME SSD (DRAM-less)
 goto 1d97
+:1d972268
+set dev FORESEE XP2300F001T / Lexar NM790 NVME SSD (DRAM-less)
+goto 1d97
 :1d972269
 set dev FORESEE XP2000, Lexar NM760 NVME SSD (DRAM-less)
 goto 1d97
@@ -48054,8 +48114,17 @@ exit
 :1ded107f
 set dev Elastic RDMA Adapter
 goto 1ded
+:1ded2050
+set dev T-Head TH7800 Family [Panmai]
+goto 1ded
+:1ded2051
+set dev T-Head TH7800 Family [Panmai Virtual Function]
+goto 1ded
 :1ded5007
 set dev Elastic RDMA Adapter
+goto 1ded
+:1ded5011
+set dev T-Head TH7800 Family [Panmai Emulated PCIe Bridge]
 goto 1ded
 :1ded8000
 set dev M1 Root Port
@@ -69174,9 +69243,6 @@ goto 8086
 :8086d743
 set dev NVL-HX
 goto 8086
-:8086d744
-set dev NVL-UL
-goto 8086
 :8086d745
 set dev NVL-HX
 goto 8086
@@ -70975,13 +71041,16 @@ goto c0a9
 set dev P3 Plus NVMe PCIe SSD (DRAM-less)
 goto c0a9
 :c0a95426
-set dev P310 NVMe PCIe SSD (DRAM-less)
+set dev P310 M.2 2230/2280 NVMe PCIe SSD (DRAM-less)
 goto c0a9
 :c0a95427
 set dev P310 NVMe PCIe SSD (DRAM-less)
 goto c0a9
 :c0a95428
 set dev T710 NVMe PCIe SSD
+goto c0a9
+:c0a95429
+set dev P310 NVMe PCIe SSD (DRAM-less)
 goto c0a9
 :c0a9542b
 set dev T705 NVMe PCIe SSD
