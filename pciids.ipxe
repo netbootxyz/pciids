@@ -249,6 +249,12 @@ exit
 :0128
 set ven Dell (wrong ID)
 exit
+:0168
+set ven Chengdu ZeoberCom Co.
+exit
+:01681553
+set dev 1553B card
+goto 0168
 :018a
 set ven LevelOne
 exit
@@ -20265,6 +20271,9 @@ goto 10de
 :10de2c05
 set dev GB203 [GeForce RTX 5070 Ti]
 goto 10de
+:10de2c09
+set dev GB203 [GeForce RTX 5070]
+goto 10de
 :10de2c18
 set dev GB203M / GN22 [GeForce RTX 5090 Max-Q / Mobile]
 goto 10de
@@ -20386,16 +20395,19 @@ goto 10de
 set dev GB205 High Definition Audio Controller
 goto 10de
 :10de2f95
-set dev Vera Rubin CPU
+set dev TB500 RP x16
 goto 10de
 :10de2f96
-set dev Vera Rubin CPU
+set dev TB500 RP x8
 goto 10de
 :10de2f97
-set dev Vera Rubin CPU
+set dev TB500 RP x4
 goto 10de
 :10de2f98
-set dev Vera Rubin CPU
+set dev TB500 RP x2
+goto 10de
+:10de2f99
+set dev TB500 RP x1
 goto 10de
 :10de3000
 set dev GR100 [Reserved Dev ID A]
@@ -20441,6 +20453,9 @@ set dev GB112
 goto 10de
 :10de3340
 set dev GB120
+goto 10de
+:10de3400
+set dev GB10B [Tegra RP iGPU]
 goto 10de
 :10df
 set ven Emulex Corporation
@@ -43323,6 +43338,9 @@ goto 1987
 :19875016
 set dev E16 PCIe4 NVMe Controller
 goto 1987
+:19875017
+set dev PS5017 x2 NVMe SD Express SSD Controller (DRAM-less)
+goto 1987
 :19875018
 set dev E18 PCIe4 NVMe Controller
 goto 1987
@@ -45741,6 +45759,9 @@ goto 1c1f
 :1c1f0027
 set dev FD940
 goto 1c1f
+:1c1f0028
+set dev FD722
+goto 1c1f
 :1c28
 set ven Lite-On IT Corp. / Plextor
 exit
@@ -46101,6 +46122,9 @@ exit
 :1ca5
 set ven Corerise Electronics Co. Ltd.
 exit
+:1ca51241
+set dev Comay SBC208 SCSI Controller
+goto 1ca5
 :1cb0
 set ven Shannon Systems
 exit
@@ -48789,6 +48813,9 @@ goto 1e59
 :1e5d
 set ven ASR Microelectronics
 exit
+:1e5d3003
+set dev Key Stone K1/M1 PCIe 2.0 x2 Root Complex
+goto 1e5d
 :1e5d7000
 set dev AI controller A7000
 goto 1e5d
@@ -50737,10 +50764,10 @@ exit
 set ven SpacemiT
 exit
 :201f0001
-set dev X60 PCIe 2.0 x2 Root Complex
+set dev Key Stone K1 PCIe 2.0 x2 Root Complex
 goto 201f
 :201f0002
-set dev X100 PCIe Root Complex
+set dev Key Stone K3 PCIe Root Complex
 goto 201f
 :202c
 set ven CAEN S.p.A.
@@ -64167,6 +64194,9 @@ goto 8086
 :80866e24
 set dev Nova Lake PCH-S SPI Controller
 goto 8086
+:80866e27
+set dev Nova Lake PCH-S Shared SRAM
+goto 8086
 :80866e28
 set dev Nova Lake PCH-S Serial IO UART Controller #0
 goto 8086
@@ -64178,6 +64208,72 @@ set dev Nova Lake PCH-S Serial IO SPI Controller #0
 goto 8086
 :80866e2b
 set dev Nova Lake PCH-S Serial IO SPI Controller #1
+goto 8086
+:80866e30
+set dev 900 Series Chipset Family PCIe Root Port #9
+goto 8086
+:80866e31
+set dev 900 Series Chipset Family PCIe Root Port #10
+goto 8086
+:80866e32
+set dev 900 Series Chipset Family PCIe Root Port #11
+goto 8086
+:80866e33
+set dev 900 Series Chipset Family PCIe Root Port #12
+goto 8086
+:80866e34
+set dev 900 Series Chipset Family PCIe Root Port #13
+goto 8086
+:80866e35
+set dev 900 Series Chipset Family PCIe Root Port #14
+goto 8086
+:80866e38
+set dev 900 Series Chipset Family PCIe Root Port #1
+goto 8086
+:80866e39
+set dev 900 Series Chipset Family PCIe Root Port #2
+goto 8086
+:80866e3a
+set dev 900 Series Chipset Family PCIe Root Port #3
+goto 8086
+:80866e3b
+set dev 900 Series Chipset Family PCIe Root Port #4
+goto 8086
+:80866e3c
+set dev 900 Series Chipset Family PCIe Root Port #5
+goto 8086
+:80866e3d
+set dev 900 Series Chipset Family PCIe Root Port #6
+goto 8086
+:80866e3e
+set dev 900 Series Chipset Family PCIe Root Port #7
+goto 8086
+:80866e3f
+set dev 900 Series Chipset Family PCIe Root Port #8
+goto 8086
+:80866e40
+set dev 900 Series Chipset Family PCIe Root Port #17
+goto 8086
+:80866e41
+set dev 900 Series Chipset Family PCIe Root Port #18
+goto 8086
+:80866e42
+set dev 900 Series Chipset Family PCIe Root Port #19
+goto 8086
+:80866e43
+set dev 900 Series Chipset Family PCIe Root Port #20
+goto 8086
+:80866e44
+set dev 900 Series Chipset Family PCIe Root Port #21
+goto 8086
+:80866e45
+set dev 900 Series Chipset Family PCIe Root Port #22
+goto 8086
+:80866e46
+set dev 900 Series Chipset Family PCIe Root Port #23
+goto 8086
+:80866e47
+set dev 900 Series Chipset Family PCIe Root Port #24
 goto 8086
 :80866e4c
 set dev Nova Lake PCH-S Serial IO I2C Controller #0
@@ -64193,6 +64289,12 @@ set dev Nova Lake PCH-S Serial IO I2C Controller #3
 goto 8086
 :80866e5e
 set dev Nova Lake PCH-S Serial IO SPI Controller #2
+goto 8086
+:80866e68
+set dev Nova Lake PCH-S CSME HECI #1
+goto 8086
+:80866e6e
+set dev Nova Lake PCH-S USB 3.2 xHCI HC
 goto 8086
 :80866e7a
 set dev Nova Lake PCH-S Serial IO I2C Controller #4
@@ -69162,8 +69264,17 @@ goto 8086
 :8086d158
 set dev Core Processor Miscellaneous Registers
 goto 8086
+:8086d320
+set dev Core Ultra Processors (Series 4) P2SB 8b
+goto 8086
+:8086d321
+set dev Core Ultra Processors (Series 4) PMC
+goto 8086
 :8086d323
 set dev Nova Lake PCD-H SPI Controller
+goto 8086
+:8086d324
+set dev Core Ultra Processors (Series 4) Trace Hub
 goto 8086
 :8086d325
 set dev Nova Lake PCD-H Serial IO UART Controller #0
@@ -69183,8 +69294,59 @@ goto 8086
 :8086d333
 set dev Nova Lake-H Thunderbolt 5 NHI #0
 goto 8086
+:8086d335
+set dev Core Ultra Processors (Series 4) UFS Controller
+goto 8086
+:8086d338
+set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #1
+goto 8086
+:8086d339
+set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #2
+goto 8086
+:8086d33a
+set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #3
+goto 8086
+:8086d33b
+set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #4
+goto 8086
+:8086d33c
+set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #5
+goto 8086
+:8086d33d
+set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #6
+goto 8086
+:8086d33e
+set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #7
+goto 8086
+:8086d33f
+set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #8
+goto 8086
+:8086d344
+set dev Core Ultra Processors (Series 4) IEH #0
+goto 8086
+:8086d345
+set dev Core Ultra Processors (Series 4) IEH #1
+goto 8086
+:8086d346
+set dev Core Ultra Processors (Series 4) CNVi Bluetooth
+goto 8086
 :8086d347
 set dev Nova Lake PCD-H Serial IO SPI Controller #2
+goto 8086
+:8086d348
+set dev Core Ultra Processors (Series 4) THC #0 ID1
+goto 8086
+:8086d349
+set dev Core Ultra Processors (Series 4) THC #0 ID2
+goto 8086
+:8086d34a
+set dev Core Ultra Processors (Series 4) THC #1 ID1
+goto 8086
+:8086d34b
+set dev Core Ultra Processors (Series 4) THC #1 ID2
+goto 8086
+:8086d34c
+set dev Core Ultra Processors (Series 4) P2SB 16b
 goto 8086
 :8086d34e
 set dev Nova Lake-H Thunderbolt 5 PCI Express Root Port #0
@@ -69201,8 +69363,68 @@ goto 8086
 :8086d352
 set dev Nova Lake PCD-H Serial IO UART Controller #2
 goto 8086
+:8086d354
+set dev Core Ultra Processors (Series 4) ISH
+goto 8086
+:8086d358
+set dev Core Ultra Processors (Series 4) SSE HECI #1
+goto 8086
+:8086d359
+set dev Core Ultra Processors (Series 4) SSE HECI #2
+goto 8086
+:8086d35a
+set dev Core Ultra Processors (Series 4) SSE HECI #3
+goto 8086
+:8086d35c
+set dev Core Ultra Processors (Series 4) PCIe Gen5 Root Port #10
+goto 8086
 :8086d360
 set dev Nova Lake-H Thunderbolt 5 PCI Express Root Port #2
+goto 8086
+:8086d361
+set dev Core Ultra Processors (Series 4) PCIe Gen5 Root Port #9
+goto 8086
+:8086d362
+set dev Core Ultra Processors (Series 4) PSE HECI #1
+goto 8086
+:8086d363
+set dev Core Ultra Processors (Series 4) PSE HECI #2
+goto 8086
+:8086d364
+set dev Core Ultra Processors (Series 4) PSE HECI #3
+goto 8086
+:8086d365
+set dev Core Ultra Processors (Series 4) PCIe Gen5 Root Port #11
+goto 8086
+:8086d366
+set dev Core Ultra Processors (Series 4) PCIe Gen5 Root Port #12
+goto 8086
+:8086d367
+set dev Core Ultra Processors (Series 4) PCIe Gen5 Root Port #13
+goto 8086
+:8086d368
+set dev Core Ultra Processors (Series 4) PCIe Gen5 Root Port #14
+goto 8086
+:8086d36f
+set dev Core Ultra Processors (Series 4) I3C #2
+goto 8086
+:8086d370
+set dev Core Ultra Processors (Series 4) CSME HECI #1
+goto 8086
+:8086d371
+set dev Core Ultra Processors (Series 4) CSME HECI #2
+goto 8086
+:8086d372
+set dev Core Ultra Processors (Series 4) CSME IDE Redirection (IDER-R)
+goto 8086
+:8086d373
+set dev Core Ultra Processors (Series 4) CSME Keyboard and Text (KT) Redirection
+goto 8086
+:8086d374
+set dev Core Ultra Processors (Series 4) CSME HECI #3
+goto 8086
+:8086d375
+set dev Core Ultra Processors (Series 4) CSME HECI #4
 goto 8086
 :8086d378
 set dev Nova Lake PCD-H Serial IO I2C Controller #0
@@ -69215,6 +69437,21 @@ set dev Nova Lake PCD-H Serial IO I2C Controller #2
 goto 8086
 :8086d37b
 set dev Nova Lake PCD-H Serial IO I2C Controller #3
+goto 8086
+:8086d37c
+set dev Core Ultra Processors (Series 4) I3C #1
+goto 8086
+:8086d37d
+set dev Core Ultra Processors (Series 4) Standalone xHCI Controller
+goto 8086
+:8086d37e
+set dev Core Ultra Processors (Series 4) PMC Shared SRAM
+goto 8086
+:8086d37f
+set dev Core Ultra Processors (Series 4) Standalone xDCI Controller
+goto 8086
+:8086d423
+set dev Core Ultra Processors (Series 4) SPI (flash) Controller
 goto 8086
 :8086d431
 set dev Nova Lake-S Thunderbolt 5 USB Controller
@@ -69230,6 +69467,33 @@ set dev Nova Lake-S Thunderbolt 5 PCI Express Root Port #1
 goto 8086
 :8086d460
 set dev Nova Lake-S Thunderbolt 5 PCI Express Root Port #2
+goto 8086
+:8086d462
+set dev Core Ultra Processors (Series 4) PSE HECI #1
+goto 8086
+:8086d470
+set dev Core Ultra Processors (Series 4) ESE++ HECI #1
+goto 8086
+:8086d47e
+set dev Core Ultra Processors (Series 4) Shared SRAM
+goto 8086
+:8086d703
+set dev Core Ultra Processors (Series 4) DTT
+goto 8086
+:8086d70b
+set dev Core Ultra Processors (Series 4) VMD
+goto 8086
+:8086d70d
+set dev Core Ultra Processors (Series 4) Crashlog and Telemetry
+goto 8086
+:8086d719
+set dev Core Ultra Processors (Series 4) IPU
+goto 8086
+:8086d71d
+set dev Core Ultra Processors (Series 4) NPU
+goto 8086
+:8086d72d
+set dev Core Ultra Processors (Series 4) IAA
 goto 8086
 :8086d740
 set dev NVL-S
