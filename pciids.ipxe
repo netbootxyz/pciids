@@ -252,8 +252,74 @@ exit
 :0168
 set ven Chengdu ZeoberCom Co.
 exit
+:016800ad
+set dev Multi-channel analog acquisition card, CPCI/PCI interface
+goto 0168
+:016800ca
+set dev CAN Serials Card, CPCI/PCI interface,10/more ports.
+goto 0168
+:016800da
+set dev Multi-channel analog output board, CPCI/PCI interface
+goto 0168
+:016800df
+set dev Manchester encoding card, CPCI/PCI interface,4/more ports
+goto 0168
+:016800ee
+set dev PCI-e switch Serials Card, CPCI/PCI interface,4/more ports.
+goto 0168
+:01680123
+set dev Programmable resistor output board, CPCI/PCI interface,8/more ports.
+goto 0168
+:01680232
+set dev RS232/RS422/RS485 Serials Card, CPCI/PCI interface,10/more ports.
+goto 0168
+:0168025e
+set dev 2.5G Ethenet switch Serials Card, CPCI/PCI interface,4/more ports.
+goto 0168
+:01680429
+set dev std ARINC429 Serials Card, CPCI/PCI interface, one/more ports.
+goto 0168
+:01680818
+set dev std ARINC818 Serials Card, CPCI/PCI interface, one/more ports.
+goto 0168
+:01680a4e
+set dev TSN Serials Card, CPCI/PCI interface,2/more ports.
+goto 0168
+:01680afd
+set dev AFDX Serials Card, CPCI/PCI interface, one/more ports.
+goto 0168
+:01680c32
+set dev Multi-channel 32-bit counter board, CPCI/PCI interface
+goto 0168
+:01680d10
+set dev Discrete I/O Board, CPCI/PCI interface,8/more ports.
+goto 0168
+:01680dac
+set dev Multi-function Data Acquisition Series Card,, CPCI/PCI interface,8/more ports.
+goto 0168
+:01681394
+set dev std MIL-STD-1394B Serials Card, CPCI/PCI interface, one/more ports.
+goto 0168
 :01681553
 set dev 1553B card
+goto 0168
+:0168adda
+set dev Analog input/output board, CPCI/PCI interface,8/more ports.
+goto 0168
+:0168c000
+set dev NXP Series Processing Board
+goto 0168
+:0168c004
+set dev Ascend series AI computing card
+goto 0168
+:0168c006
+set dev Longson Series Processing Board
+goto 0168
+:0168c00f
+set dev Phytium Series Processing Board
+goto 0168
+:0168fcae
+set dev FC-AE Serials Card, CPCI/PCI interface, one/more ports.
 goto 0168
 :018a
 set ven LevelOne
@@ -20371,7 +20437,7 @@ goto 10de
 set dev GB20B [GB10]
 goto 10de
 :10de2e13
-set dev GB20B [Desktop Device]
+set dev GB20B [RTX Spark N1X (6144-core Blackwell RTX GPU)]
 goto 10de
 :10de2e2a
 set dev GB20B [JMJWOA-Generic-GPU]
@@ -42651,6 +42717,18 @@ goto 1924
 :19246703
 set dev SFC4000 rev A iSCSI/Onload [Solarstorm]
 goto 1924
+:19248c03
+set dev X4D 1/10/25/40/50/100Gb Ethernet Controller PLUS
+goto 1924
+:19249c03
+set dev X4D 1/10/25/40/50/100Gb Ethernet Controller PLUS (Virtual Function)
+goto 1924
+:1924ac03
+set dev X4D 1/10/25/40/50/100Gb Ethernet Controller
+goto 1924
+:1924bc03
+set dev X4D 1/10/25/40/50/100Gb Ethernet Controller (Virtual Function)
+goto 1924
 :1924c101
 set dev EF1-21022T [EtherFabric]
 goto 1924
@@ -57069,14 +57147,35 @@ goto 8086
 :80861bc9
 set dev C740 Series (Emmitsburg) Chipsets SMBus
 goto 8086
+:80861bca
+set dev C740 Series SPI Controller [Emmitsburg]
+goto 8086
 :80861bcd
 set dev C740 Series (Emmitsburg) Chipsets USB 3.2 Gen 1 xHCI Controller
+goto 8086
+:80861bce
+set dev C740 Series Shared SRAM
 goto 8086
 :80861bd2
 set dev Sapphire Rapids SATA AHCI Controller
 goto 8086
 :80861bd6
 set dev C740 Series (Emmitsburg) Chipsets SATA2 Controller (RAID)
+goto 8086
+:80861be0
+set dev C740 Series ME HECI #1
+goto 8086
+:80861be1
+set dev C740 Series ME HECI #2
+goto 8086
+:80861be2
+set dev C740 Series ME IDE Redirection (IDER-R)
+goto 8086
+:80861be3
+set dev C740 Series ME Keyboard and Text (KT) Redirection
+goto 8086
+:80861be4
+set dev C740 Series ME HECI #3
 goto 8086
 :80861bf2
 set dev Sapphire Rapids SATA AHCI Controller
@@ -60918,6 +61017,12 @@ goto 8086
 :80863245
 set dev Xeon 6900 6700 6500 Series with P-Cores Processors UPI
 goto 8086
+:80863246
+set dev Xeon 6900 6700 6500 Series with P-Cores Processors UPI PMON0 Registers
+goto 8086
+:80863247
+set dev Xeon 6900 6700 6500 Series with P-Cores Processors UPI PMON1 Registers
+goto 8086
 :8086324a
 set dev Xeon 6900 6700 6500 Series with P-Cores Processors IMC
 goto 8086
@@ -60935,6 +61040,9 @@ set dev Xeon 6900 6700 6500 Series with P-Cores Processors Ubox Register Access 
 goto 8086
 :80863252
 set dev Xeon 6900 6700 6500 Series with P-Cores Processors Ubox Decode
+goto 8086
+:80863255
+set dev Xeon 6900 6700 6500 Series with P-Cores Processors MS2UBox
 goto 8086
 :80863256
 set dev Xeon 6900 6700 6500 Series with P-Cores Processors Trace Hub
@@ -63524,6 +63632,9 @@ set dev Raptor Lake PCH CNVi WiFi
 goto 8086
 :808651fc
 set dev Alder Lake-P Integrated Sensor Hub
+goto 8086
+:808651ff
+set dev Alder Lake UFS Controller
 goto 8086
 :80865200
 set dev EtherExpress PRO/100 Intelligent Server PCI Bridge
@@ -66316,7 +66427,7 @@ goto 8086
 set dev 8 Series/C220 Series Chipset Family PCI Express Root Port #8
 goto 8086
 :80868c20
-set dev 8 Series/C220 Series Chipset High Definition Audio Controller
+set dev 8 Series/C220/C740 Series Chipset High Definition Audio Controller
 goto 8086
 :80868c21
 set dev 8 Series/C220 Series Chipset High Definition Audio Controller
@@ -66776,6 +66887,9 @@ set dev Lakefield GT2 [UHD Graphics]
 goto 8086
 :80869841
 set dev Lakefield GT1.5 [UHD Graphics]
+goto 8086
+:808698fa
+set dev Lakefield UFS Controller
 goto 8086
 :80869a01
 set dev 11th Gen Core Processor PCIe Controller #1
