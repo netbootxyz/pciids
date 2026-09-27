@@ -29619,6 +29619,9 @@ goto 1344
 :134451cd
 set dev 9650 PRO NVMe SSD
 goto 1344
+:134451ce
+set dev 9650 PRO NVMe SSD
+goto 1344
 :13445404
 set dev 2210 NVMe SSD [Cobain]
 goto 1344
@@ -44415,6 +44418,9 @@ goto 1ae8
 :1ae80a69
 set dev imaFlex CXP-12 Penta
 goto 1ae8
+:1ae80a6a
+set dev imaFlex 2 Dual 100
+goto 1ae8
 :1ae80b52
 set dev mE5 Abacus 4G Base
 goto 1ae8
@@ -44423,6 +44429,9 @@ set dev mE5 Abacus 4G Base II
 goto 1ae8
 :1ae80b61
 set dev mE6 Abacus 4TG
+goto 1ae8
+:1ae80b62
+set dev MIPI-1200 Processing Board 12C
 goto 1ae8
 :1ae80b63
 set dev CXP-12 Interface Card 1C
@@ -46070,6 +46079,9 @@ set dev BC901 NVMe Solid State Drive (DRAM-less)
 goto 1c5c
 :1c5c1f69
 set dev PVC10 NVMe Solid State Drive (DRAM-less)
+goto 1c5c
+:1c5c2069
+set dev PEB110 Series NVMe Solid State Drive
 goto 1c5c
 :1c5c2204
 set dev 960GB TLC PCIe Gen3 x4 NVMe M.2 22110
@@ -48551,6 +48563,9 @@ set dev LC9 E3.S NVMe SSD
 goto 1e0f
 :1e0f003f
 set dev LC9 U.2 NVMe SSD
+goto 1e0f
+:1e0f0040
+set dev Exceria G3 PCIe 5 NVMe SSD (QLC) (DRAM-less)
 goto 1e0f
 :1e0f0042
 set dev NVMe SSD Controller LD4
@@ -51186,6 +51201,9 @@ goto 20b4
 :20b4c25c
 set dev MQ205 PCIe 5.0 NVMe SSD
 goto 20b4
+:20b4d15b
+set dev PT150 PCIe 4.0 NVMe SSD
+goto 20b4
 :20b4d20c
 set dev PT200 PCIe 5.0 NVMe SSD
 goto 20b4
@@ -51380,6 +51398,21 @@ set dev Xeetah Development Platform
 goto 214d
 :2155
 set ven Hubei Zhuanwei Technology Co., Ltd.
+exit
+:2159
+set ven AIC Semiconductor (Shanghai) Co., Ltd.
+exit
+:21598d90
+set dev AIC8800M80X2P Network controller
+goto 2159
+:215a
+set ven Suzhou Ruixin Integrated Circuit Technology Co., Ltd.
+exit
+:215a0301
+set dev D35 Family [DFU-3531]
+goto 215a
+:215e
+set ven SmarCo HT Tech Inc.
 exit
 :21b4
 set ven Hunan Goke Microelectronics Co., Ltd
@@ -71145,12 +71178,6 @@ exit
 :a304
 set ven Sony
 exit
-:a69c
-set ven AIC Semiconductor (Shanghai) CO., Ltd.
-exit
-:a69c8d90
-set dev AIC8800M80X2P Network controller
-goto a69c
 :a727
 set ven 3Com Corporation
 exit
