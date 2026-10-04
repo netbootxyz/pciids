@@ -20262,6 +20262,9 @@ goto 10de
 :10de2909
 set dev GB100 [HGX B200 168GB]
 goto 10de
+:10de290a
+set dev GB100 [B200]
+goto 10de
 :10de2920
 set dev GB100 [TS4 / B100]
 goto 10de
@@ -20478,13 +20481,28 @@ goto 10de
 :10de3000
 set dev GR100 [Reserved Dev ID A]
 goto 10de
+:10de3002
+set dev GR100
+goto 10de
 :10de3021
 set dev GR100 [PCIe Faber]
 goto 10de
 :10de3040
 set dev GR100 [Reserved Dev ID B]
 goto 10de
+:10de3041
+set dev GR100
+goto 10de
+:10de307e
+set dev GR100
+goto 10de
+:10de3080
+set dev GR102 [Reserved Dev ID A]
+goto 10de
 :10de30c0
+set dev GR102 [Reserved Dev ID B]
+goto 10de
+:10de30ff
 set dev GR102
 goto 10de
 :10de3180
@@ -20492,6 +20510,12 @@ set dev GB110 [Reserved Dev ID A]
 goto 10de
 :10de3182
 set dev GB110 [B300 SXM6 AC]
+goto 10de
+:10de3183
+set dev GB110
+goto 10de
+:10de3184
+set dev GB110
 goto 10de
 :10de31a1
 set dev GB110 [GB300 MaxQ]
@@ -51411,8 +51435,23 @@ exit
 :215a0301
 set dev D35 Family [DFU-3531]
 goto 215a
+:215a0302
+set dev D35 Family [DFU-3512]
+goto 215a
+:215a0303
+set dev D35 Family [DFU-3520]
+goto 215a
+:215a0304
+set dev D35 Family [CIM-5000L]
+goto 215a
+:215a0305
+set dev D35 Family [DFU-3541C]
+goto 215a
 :215e
 set ven SmarCo HT Tech Inc.
+exit
+:2165
+set ven Dnotitia Inc.
 exit
 :21b4
 set ven Hunan Goke Microelectronics Co., Ltd
