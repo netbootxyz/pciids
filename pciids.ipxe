@@ -51450,6 +51450,21 @@ goto 215a
 :215e
 set ven SmarCo HT Tech Inc.
 exit
+:215e0301
+set dev D35 Family [GC3]
+goto 215e
+:215e0302
+set dev D35 Family [SC3]
+goto 215e
+:215e0303
+set dev D35 Family [RC3]
+goto 215e
+:215e0304
+set dev D35 Family [D3]
+goto 215e
+:215e0305
+set dev D35 Family [HC3]
+goto 215e
 :2165
 set ven Dnotitia Inc.
 exit
