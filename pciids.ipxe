@@ -5607,6 +5607,63 @@ goto 1022
 :10221123
 set dev Krackan IOMMU
 goto 1022
+:10221124
+set dev Krackan2 Dummy Host Bridge
+goto 1022
+:10221126
+set dev Krackan2 GPP Bridge
+goto 1022
+:10221130
+set dev Krackan2 Internal PCIe GPP Bridge 0 to Bus A
+goto 1022
+:10221131
+set dev Krackan2 Internal PCIe GPP Bridge 0 to Bus B
+goto 1022
+:10221132
+set dev Krackan2 Internal PCIe GPP Bridge 0 to Bus C
+goto 1022
+:10221134
+set dev Krackan2 CCP/ASP
+goto 1022
+:10221135
+set dev Krackan2 USB 2.0 xHCI
+goto 1022
+:10221136
+set dev Krackan2 PCIe Dummy Function
+goto 1022
+:10221138
+set dev Krackan2 USB 3.1 xHCI
+goto 1022
+:10221139
+set dev Krackan2 USB 3.1 xHCI
+goto 1022
+:1022113a
+set dev Krackan2 USB 3.1 xHCI
+goto 1022
+:10221148
+set dev Krackan2 Data Fabric; Function 0
+goto 1022
+:10221149
+set dev Krackan2 Data Fabric; Function 1
+goto 1022
+:1022114a
+set dev Krackan2 Data Fabric; Function 2
+goto 1022
+:1022114b
+set dev Krackan2 Data Fabric; Function 3
+goto 1022
+:1022114c
+set dev Krackan2 Data Fabric; Function 4
+goto 1022
+:1022114d
+set dev Krackan2 Data Fabric; Function 5
+goto 1022
+:1022114e
+set dev Krackan2 Data Fabric; Function 6
+goto 1022
+:1022114f
+set dev Krackan2 Data Fabric; Function 7
+goto 1022
 :10221200
 set dev Family 10h Processor HyperTransport Configuration
 goto 1022
@@ -19446,6 +19503,9 @@ goto 10de
 :10de1ff9
 set dev TU117GLM [Quadro T1000 Mobile]
 goto 10de
+:10de200a
+set dev NPU
+goto 10de
 :10de2080
 set dev GA100
 goto 10de
@@ -20430,6 +20490,9 @@ goto 10de
 :10de2df9
 set dev GB207GLM [RTX PRO 500 Blackwell Embedded GPU]
 goto 10de
+:10de2e02
+set dev GB20B [JMJWOA-Generic-GPU]
+goto 10de
 :10de2e03
 set dev GB20B [RTX Spark N1X (6144-core Blackwell RTX GPU)]
 goto 10de
@@ -20982,6 +21045,9 @@ exit
 :10ec0139
 set dev RTL-8139/8139C/8139C+ Ethernet Controller
 goto 10ec
+:10ec2502
+set dev Killer E2500B GbE Controller
+goto 10ec
 :10ec2600
 set dev Killer E2600 GbE Controller
 goto 10ec
@@ -21191,6 +21257,12 @@ set dev RTL8852AE 802.11ax PCIe Wireless Network Adapter
 goto 10ec
 :10ec8922
 set dev RTL8922AE 802.11be PCIe Wireless Network Adapter
+goto 10ec
+:10ec892d
+set dev RTL8922DE-VS 802.11be PCIe Wireless Network Adapter
+goto 10ec
+:10ec895d
+set dev RTL8922DE-VV 802.11be PCIe Wireless Network Adapter
 goto 10ec
 :10eca85a
 set dev RTL8852AE WiFi 6 802.11ax PCIe Adapter
@@ -51180,6 +51252,15 @@ goto 209b
 :209b1002
 set dev TCU Family - TCU-1 PCIe Switch
 goto 209b
+:209b1008
+set dev TCUX Family - TCUX-1
+goto 209b
+:209b1009
+set dev TCUX Family - TCUX-1 Virtual Function
+goto 209b
+:209b100a
+set dev TCUX Family - TCUX-1 PCIe Switch
+goto 209b
 :209f
 set ven Mobilint, Inc.
 exit
@@ -51372,6 +51453,18 @@ exit
 :21082401
 set dev PCIe4.0 to USB3.2 Gen2 Host Controller
 goto 2108
+:210e
+set ven Soynetic
+exit
+:210e1001
+set dev i200 Gigabit Blank chip
+goto 210e
+:210e1120
+set dev i200T Gigabit Coper(Single-port)
+goto 210e
+:210e1130
+set dev i200F Gigabit Fiber/Backplane(Single-port)
+goto 210e
 :2114
 set ven EigenQ, Inc.
 exit
@@ -51420,6 +51513,12 @@ goto 214d
 :214d0002
 set dev Xeetah Development Platform
 goto 214d
+:2151
+set ven Beijing Corsource Technology Co., Ltd.
+exit
+:21510003
+set dev YM200 LIGHT
+goto 2151
 :2155
 set ven Hubei Zhuanwei Technology Co., Ltd.
 exit
@@ -51446,6 +51545,24 @@ set dev D35 Family [CIM-5000L]
 goto 215a
 :215a0305
 set dev D35 Family [DFU-3541C]
+goto 215a
+:215a0306
+set dev D35 Family [DFU-3541L]
+goto 215a
+:215a0307
+set dev D35 Family [DFU-3541V]
+goto 215a
+:215a0308
+set dev D35 Family [DFU-3535]
+goto 215a
+:215a0309
+set dev D35 Family [DFU-3541I]
+goto 215a
+:215a030a
+set dev D35 Family [CIM-5000S]
+goto 215a
+:215a030b
+set dev D35 Family [FDU-5000X]
 goto 215a
 :215e
 set ven SmarCo HT Tech Inc.
@@ -69521,6 +69638,9 @@ set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #7
 goto 8086
 :8086d33f
 set dev Core Ultra Processors (Series 4) PCIe Gen4 Root Port #8
+goto 8086
+:8086d340
+set dev Core Ultra Processors (Series 4) CNVi Wi-Fi
 goto 8086
 :8086d344
 set dev Core Ultra Processors (Series 4) IEH #0
