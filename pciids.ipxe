@@ -1432,10 +1432,10 @@ goto 1002
 set dev Stoney HDMI/DP Audio Controller
 goto 1002
 :100215bf
-set dev Phoenix1
+set dev Phoenix1 [Radeon 740M / 760M / 780M Graphics]
 goto 1002
 :100215c8
-set dev Phoenix2
+set dev Phoenix2 [Radeon 740M Graphics]
 goto 1002
 :100215d8
 set dev Picasso/Raven 2 [Radeon Vega Series / Radeon Vega Mobile Series]
@@ -1492,13 +1492,13 @@ goto 1002
 set dev BeaverCreek HDMI Audio [Radeon HD 6500D and 6400G-6600G series]
 goto 1002
 :10021900
-set dev HawkPoint1
+set dev HawkPoint1 [Radeon 760M / 780M Graphics]
 goto 1002
 :10021901
-set dev HawkPoint2
+set dev HawkPoint2 [Radeon 740M Graphics]
 goto 1002
 :10021902
-set dev Krackan2
+set dev Krackan2 [Radeon 820M / 840M Graphics]
 goto 1002
 :10023150
 set dev RV380/M24 [Mobility Radeon X600]
@@ -5601,17 +5601,38 @@ goto 1022
 :10221117
 set dev Krackan PCIe Dummy Function
 goto 1022
+:10221118
+set dev Krackan USB 3.1 xHCI
+goto 1022
+:1022111c
+set dev Krackan USB 3.1 xHCI
+goto 1022
+:1022111e
+set dev Krackan USB 3.1 xHCI
+goto 1022
+:10221120
+set dev Krackan USB4/Thunderbolt NHI controller #1
+goto 1022
+:10221121
+set dev Krackan USB4/Thunderbolt NHI controller #2
+goto 1022
 :10221122
-set dev Krackan Root Complex
+set dev Krackan/Krackan2 Root Complex
 goto 1022
 :10221123
-set dev Krackan IOMMU
+set dev Krackan/Krackan2 IOMMU
 goto 1022
 :10221124
-set dev Krackan2 Dummy Host Bridge
+set dev Krackan/Krackan2 Dummy Host Bridge
+goto 1022
+:10221125
+set dev Krackan/Krackan2 PCIe USB4 Bridge
 goto 1022
 :10221126
-set dev Krackan2 GPP Bridge
+set dev Krackan/Krackan2 GPP Bridge
+goto 1022
+:10221128
+set dev Krackan USB 3.1 xHCI
 goto 1022
 :10221130
 set dev Krackan2 Internal PCIe GPP Bridge 0 to Bus A
@@ -5631,6 +5652,9 @@ goto 1022
 :10221136
 set dev Krackan2 PCIe Dummy Function
 goto 1022
+:10221137
+set dev Krackan2 PCIe Dummy Function
+goto 1022
 :10221138
 set dev Krackan2 USB 3.1 xHCI
 goto 1022
@@ -5639,6 +5663,12 @@ set dev Krackan2 USB 3.1 xHCI
 goto 1022
 :1022113a
 set dev Krackan2 USB 3.1 xHCI
+goto 1022
+:1022113b
+set dev Krackan2 USB4/Thunderbolt NHI controller #1
+goto 1022
+:1022113c
+set dev Krackan2 USB4/Thunderbolt NHI controller #2
 goto 1022
 :10221148
 set dev Krackan2 Data Fabric; Function 0
@@ -5750,6 +5780,30 @@ set dev Turin Data Fabric; Function 6
 goto 1022
 :102212c7
 set dev Turin Data Fabric; Function 7
+goto 1022
+:102212f8
+set dev Phoenix2 Data Fabric; Function 0
+goto 1022
+:102212f9
+set dev Phoenix2 Data Fabric; Function 1
+goto 1022
+:102212fa
+set dev Phoenix2 Data Fabric; Function 2
+goto 1022
+:102212fb
+set dev Phoenix2 Data Fabric; Function 3
+goto 1022
+:102212fc
+set dev Phoenix2 Data Fabric; Function 4
+goto 1022
+:102212fd
+set dev Phoenix2 Data Fabric; Function 5
+goto 1022
+:102212fe
+set dev Phoenix2 Data Fabric; Function 6
+goto 1022
+:102212ff
+set dev Phoenix2 Data Fabric; Function 7
 goto 1022
 :10221300
 set dev Family 11h Processor HyperTransport Configuration
@@ -6115,7 +6169,7 @@ goto 1022
 set dev Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
 goto 1022
 :10221485
-set dev Starship/Matisse Reserved SPP
+set dev Starship/Matisse Reserved SSP
 goto 1022
 :10221486
 set dev Starship/Matisse Cryptographic Coprocessor PSPCPP
@@ -6187,7 +6241,7 @@ goto 1022
 set dev Matisse USB 3.0 Host Controller
 goto 1022
 :1022149d
-set dev Vangogh CVIP
+set dev VanGogh CVIP
 goto 1022
 :1022149e
 set dev Genoa/Bergamo IOMMU
@@ -6265,7 +6319,7 @@ goto 1022
 set dev Genoa CCP/PSP 4.0 Device
 goto 1022
 :102214cd
-set dev Family 19h USB4/Thunderbolt PCIe tunnel
+set dev Rembrandt PCIe USB4 Bridge
 goto 1022
 :102214d8
 set dev Raphael/Granite Ridge Root Complex
@@ -6313,28 +6367,28 @@ goto 1022
 set dev Raphael/Granite Ridge Data Fabric; Function 7
 goto 1022
 :102214e8
-set dev Phoenix Root Complex
+set dev Phoenix/Phoenix2 Root Complex
 goto 1022
 :102214e9
-set dev Phoenix IOMMU
+set dev Phoenix/Phoenix2 IOMMU
 goto 1022
 :102214ea
-set dev Phoenix Dummy Host Bridge
+set dev Phoenix/Phoenix2 Dummy Host Bridge
 goto 1022
 :102214eb
-set dev Phoenix Internal GPP Bridge to Bus [C:A]
+set dev Phoenix/Phoenix2 Internal GPP Bridge to Bus [C:A]
 goto 1022
 :102214ec
-set dev Phoenix Dummy Function
+set dev Phoenix/Phoenix2 Dummy Function
 goto 1022
 :102214ed
 set dev Phoenix GPP Bridge
 goto 1022
 :102214ee
-set dev Phoenix GPP Bridge
+set dev Phoenix/Phoenix2 GPP Bridge
 goto 1022
 :102214ef
-set dev Family 19h USB4/Thunderbolt PCIe tunnel
+set dev Phoenix/Phoenix2 PCIe USB4 Bridge
 goto 1022
 :102214f0
 set dev Phoenix Data Fabric; Function 0
@@ -6361,7 +6415,7 @@ goto 1022
 set dev Phoenix Data Fabric; Function 7
 goto 1022
 :10221502
-set dev AMD IPU Device
+set dev Phoenix/Hawk Point Neural Processing Unit
 goto 1022
 :10221507
 set dev Strix/Strix Halo Root Complex
@@ -6402,11 +6456,23 @@ goto 1022
 :10221516
 set dev Family 14h Processor Root Port
 goto 1022
+:1022151a
+set dev Strix USB 3.1 xHCI
+goto 1022
+:1022151b
+set dev Strix USB 3.1 xHCI
+goto 1022
 :1022151c
-set dev USB4 Router 0
+set dev Strix USB4/Thunderbolt NHI controller #1
 goto 1022
 :1022151d
-set dev USB4 Router 1
+set dev Strix USB4/Thunderbolt NHI controller #2
+goto 1022
+:1022151e
+set dev Strix USB 3.1 xHCI
+goto 1022
+:1022151f
+set dev Strix USB 3.1 xHCI
 goto 1022
 :10221530
 set dev Family 16h Processor Function 0
@@ -6684,11 +6750,20 @@ goto 1022
 :102215b8
 set dev Raphael/Granite Ridge USB 2.0 xHCI
 goto 1022
+:102215bb
+set dev Phoenix2 USB 3.1 xHCI
+goto 1022
 :102215bc
 set dev Stoney PCIe [GFX,GPP] Bridge [4:0]
 goto 1022
 :102215be
 set dev Stoney Audio Processor
+goto 1022
+:102215c2
+set dev Phoenix2 USB 3.1 xHCI
+goto 1022
+:102215c3
+set dev Phoenix2 USB 3.1 xHCI
 goto 1022
 :102215c4
 set dev Phoenix USB4/Thunderbolt NHI controller #1
@@ -6697,7 +6772,7 @@ goto 1022
 set dev Phoenix USB4/Thunderbolt NHI controller #2
 goto 1022
 :102215c7
-set dev Phoenix CCP/PSP 3.0 Device
+set dev Phoenix/Phoenix2 CCP/PSP 3.0 Device
 goto 1022
 :102215d0
 set dev Raven/Raven2 Root Complex
@@ -6757,7 +6832,7 @@ goto 1022
 set dev Raven2 USB 3.1
 goto 1022
 :102215e6
-set dev Raven/Raven2/Renoir Non-Sensor Fusion Hub KMDF driver
+set dev Raven/Raven2/Renoir Non-Sensor Fusion Hub
 goto 1022
 :102215e8
 set dev Raven/Raven2 Device 24: Function 0
@@ -6817,7 +6892,7 @@ goto 1022
 set dev FireFlight PCIe Dummy Host Bridge
 goto 1022
 :102215fb
-set dev FireFlight PCIe GPP Bride 3:0
+set dev FireFlight PCIe GPP Bridge [3:0]
 goto 1022
 :102215fc
 set dev FireFlight PCIe Dummy Host Bridge
@@ -7195,7 +7270,7 @@ goto 1022
 set dev Strix/Krackan/Strix Halo CCP/ASP
 goto 1022
 :102217f0
-set dev Strix/Krackan/Strix Halo Neural Processing Unit
+set dev Strix/Krackan/Krackan2/Strix Halo Neural Processing Unit
 goto 1022
 :10222000
 set dev 79C97x [PCnet32 LANCE]
@@ -20559,6 +20634,9 @@ goto 10de
 :10de307e
 set dev GR100
 goto 10de
+:10de307f
+set dev GR100
+goto 10de
 :10de3080
 set dev GR102 [Reserved Dev ID A]
 goto 10de
@@ -20590,7 +20668,7 @@ goto 10de
 set dev GB110 [GB300]
 goto 10de
 :10de31c3
-set dev GB110 [GB300]
+set dev GB110 [GB300-252]
 goto 10de
 :10de31fe
 set dev GB110
@@ -36579,6 +36657,9 @@ goto 14e4
 :14e4b960
 set dev BCM56960 Switch ASIC [Tomahawk]
 goto 14e4
+:14e4b980
+set dev BCM56980 Series Switch ASIC [Tomahawk3]
+goto 14e4
 :14e4b990
 set dev BCM56990 Switch ASIC [Tomahawk4]
 goto 14e4
@@ -49191,6 +49272,9 @@ goto 1ea0
 :1ea02a30
 set dev Cloud Video Transcode Controller
 goto 1ea0
+:1ea02a32
+set dev Cloud Storage Accelerator‌
+goto 1ea0
 :1ea7
 set ven Intelliprop, Inc
 exit
@@ -49537,7 +49621,7 @@ goto 1eed
 set dev XDX R1510
 goto 1eed
 :1eed1340
-set dev XDX151
+set dev XDX150
 goto 1eed
 :1eed1350
 set dev XDX151S
@@ -49592,6 +49676,9 @@ set dev XDX TJ03 Audio
 goto 1eed
 :1eed2100
 set dev XDX290
+goto 1eed
+:1eed2127
+set dev XDX260
 goto 1eed
 :1ef6
 set ven GrAI Matter Labs
@@ -51457,7 +51544,7 @@ goto 2108
 set ven Soynetic
 exit
 :210e1001
-set dev i200 Gigabit Blank chip
+set dev i200 series Ethernet controller
 goto 210e
 :210e1120
 set dev i200T Gigabit Coper(Single-port)
@@ -56181,6 +56268,9 @@ goto 8086
 :80861250
 set dev 430HX - 82439HX TXC [Triton II]
 goto 8086
+:80861256
+set dev Ethernet Controller E830(E835)-CC/X557-AT 10GBASE-T
+goto 8086
 :8086125b
 set dev Ethernet Controller I226-LM
 goto 8086
@@ -58775,6 +58865,9 @@ set dev 82804AA MRH-S Memory Repeater Hub for SDRAM
 goto 8086
 :80862522
 set dev NVMe Optane Memory Series
+goto 8086
+:80862524
+set dev NVMe Optane Memory M15 Series
 goto 8086
 :80862525
 set dev Optane NVME SSD P1600X Series
@@ -70542,6 +70635,9 @@ goto 8510
 :85100301
 set dev GenBu03 Series GPU
 goto 8510
+:8562
+set ven Shanghai NXFabric Technology Ltd
+exit
 :8686
 set ven SAP
 exit
