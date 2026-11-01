@@ -1486,7 +1486,7 @@ goto 1002
 set dev Phoenix
 goto 1002
 :10021681
-set dev Rembrandt [Radeon 680M]
+set dev Rembrandt [Radeon 660M / 680M]
 goto 1002
 :10021714
 set dev BeaverCreek HDMI Audio [Radeon HD 6500D and 6400G-6600G series]
@@ -20583,6 +20583,9 @@ goto 10de
 :10de2e2a
 set dev GB20B [JMJWOA-Generic-GPU]
 goto 10de
+:10de2f02
+set dev GB205 [GeForce RTX 5070 SUPER]
+goto 10de
 :10de2f04
 set dev GB205 [GeForce RTX 5070]
 goto 10de
@@ -34755,6 +34758,9 @@ goto 144d
 :144dac00
 set dev NVMe SSD Controller PM175x
 goto 144d
+:144dac02
+set dev NVMe SSD Controller PM1763/PM1765
+goto 144d
 :144decec
 set dev Exynos 8895 PCIe Root Complex
 goto 144d
@@ -35057,6 +35063,42 @@ set dev TPCE200 4 Slot IndustryPack PCIe Carrier
 goto 1498
 :14989177
 set dev TXMC375 8 channel RS232/RS422/RS485 programmable serial interface
+goto 1498
+:14989178
+set dev TXMC376 4 Channel RS232/RS422/RS485 Programmable Serial Interface
+goto 1498
+:149891cf
+set dev TXMC463 4 Channel Serial Interface RS232/RS422
+goto 1498
+:149891d1
+set dev TXMC465 8 Channel RS232/RS422/RS485 Programmable Serial Interface
+goto 1498
+:1498924e
+set dev TXMC590 16 Channel Thermo-/Strain Measurement
+goto 1498
+:1498c190
+set dev TQMC400 4 Channel RS232/RS422/RS485 Programmable Serial Interface
+goto 1498
+:1498c192
+set dev TQMC402 4 Channel isolated RS232/RS422/RS485 Programmable Serial Interface
+goto 1498
+:1498c1f4
+set dev TQMC500 20 Isolated Analog Inputs, Simultaneous Sampling
+goto 1498
+:1498c259
+set dev TQMC601 32 Isolated Digital Inputs
+goto 1498
+:1498c25a
+set dev TQMC602 16 Digital In, 16 Digital Out (0.3 A), Isolated
+goto 1498
+:1498c25c
+set dev TQMC604 32 Isolated Digital Outputs
+goto 1498
+:1498c25d
+set dev TQMC605 Reconfigurable FPGA with direct Connect to 40 I/Os
+goto 1498
+:1498c322
+set dev TQMC802 4 Channel Isolated CAN FD
 goto 1498
 :1499
 set ven EMTEC CO., Ltd
@@ -46260,6 +46302,9 @@ goto 1c5c
 :1c5c2069
 set dev PEB110 Series NVMe Solid State Drive
 goto 1c5c
+:1c5c2070
+set dev PEB210 E1.S
+goto 1c5c
 :1c5c2204
 set dev 960GB TLC PCIe Gen3 x4 NVMe M.2 22110
 goto 1c5c
@@ -49677,8 +49722,14 @@ goto 1eed
 :1eed2100
 set dev XDX290
 goto 1eed
+:1eed2105
+set dev XDX TianJun-3 Series
+goto 1eed
+:1eed2107
+set dev XDX TianJun-3 Series
+goto 1eed
 :1eed2127
-set dev XDX260
+set dev XDX TianJun-3 Series
 goto 1eed
 :1ef6
 set ven GrAI Matter Labs
@@ -51392,6 +51443,9 @@ set dev PT200A PCIe 5.0 NVMe SSD
 goto 20b4
 :20b4c25c
 set dev MQ205 PCIe 5.0 NVMe SSD
+goto 20b4
+:20b4c28c
+set dev MQ208 PCIe 5.0 NVMe SSD
 goto 20b4
 :20b4d15b
 set dev PT150 PCIe 4.0 NVMe SSD
@@ -63522,17 +63576,41 @@ goto 8086
 :80864bc2
 set dev Elkhart Lake Controller Area Network (CAN) interface #1
 goto 8086
+:80864c01
+set dev 11th Gen Core Processor PCIe Root Port #0
+goto 8086
+:80864c03
+set dev 11th Gen Core Processor DTT
+goto 8086
+:80864c05
+set dev 11th Gen Core Processor PCIe Root Port #1
+goto 8086
+:80864c07
+set dev 11th Gen Core Processor PCIe Root Port #2
+goto 8086
+:80864c09
+set dev 11th Gen Core Processor PCIe Root Port #3
+goto 8086
+:80864c11
+set dev 11th Gen Core Processor GNA
+goto 8086
 :80864c3d
 set dev Volume Management Device NVMe RAID Controller
 goto 8086
+:80864c43
+set dev 11th Gen Core Processor 8 Cores Host Bridge/DRAM Controller
+goto 8086
+:80864c53
+set dev 11th Gen Core Processor 6 Cores Host Bridge/DRAM Controller
+goto 8086
 :80864c8a
-set dev RocketLake-S GT1 [UHD Graphics 750]
+set dev 11th Gen Core Processor 8C DT GT1 [UHD Graphics 750]
 goto 8086
 :80864c8b
 set dev RocketLake-S GT1 [UHD Graphics 730]
 goto 8086
 :80864c90
-set dev RocketLake-S GT1 [UHD Graphics P750]
+set dev 11th Gen Core Processor 8C WS GT1 [UHD Graphics P750]
 goto 8086
 :80864c9a
 set dev RocketLake-S [UHD Graphics]
@@ -67192,13 +67270,13 @@ goto 8086
 set dev 11th Gen Core Processor PCIe Controller #1
 goto 8086
 :80869a02
-set dev Tiger Lake-UP4 2 cores Host Bridge/DRAM Registers
+set dev 11th Gen Core Processor UP4 2 Cores Host Bridge/DRAM Controller
 goto 8086
 :80869a03
-set dev TigerLake-LP Dynamic Tuning Processor Participant
+set dev 11th Gen Core Processor Dynamic Tuning Technology
 goto 8086
 :80869a04
-set dev Tiger Lake-UP3 2 cores Host Bridge/DRAM Registers
+set dev 11th Gen Core Processor UP3 2 Cores Host Bridge/DRAM Controller
 goto 8086
 :80869a05
 set dev 11th Gen Core Processor PCIe Controller #2
