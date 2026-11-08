@@ -20469,6 +20469,9 @@ goto 10de
 :10de2bbc
 set dev GB202GL [RTX PRO 6000D Blackwell Max-Q Workstation Edition]
 goto 10de
+:10de2bbd
+set dev GB202GL [RTX PRO 5500 Blackwell Workstation Edition]
+goto 10de
 :10de2c02
 set dev GB203 [GeForce RTX 5080]
 goto 10de
@@ -20604,6 +20607,9 @@ goto 10de
 :10de2f80
 set dev GB205 High Definition Audio Controller
 goto 10de
+:10de2f88
+set dev T256
+goto 10de
 :10de2f95
 set dev TB500 RP x16
 goto 10de
@@ -20632,7 +20638,7 @@ goto 10de
 set dev GR100 [Reserved Dev ID B]
 goto 10de
 :10de3041
-set dev GR100
+set dev GR100 [VR NVL72]
 goto 10de
 :10de307e
 set dev GR100
@@ -26688,6 +26694,9 @@ goto 11f8
 :11f86364
 set dev PM63064 Switchtec PSX 64xG6 Programmable PCIe Switch
 goto 11f8
+:11f87020
+set dev PM70320 Switchtec PFXs 320xG7 Secure-capable Fanout PCIe Switch
+goto 11f8
 :11f87044
 set dev PM70144 Switchtec PFXs 144xG7 Secure-capable Fanout PCIe Switch
 goto 11f8
@@ -26700,6 +26709,9 @@ goto 11f8
 :11f87064
 set dev PM70064 Switchtec PFXs 64xG7 Secure-capable Fanout PCIe Switch
 goto 11f8
+:11f87120
+set dev PM71320 Switchtec PSXs 320xG7 Secure-capable Programmable PCIe Switch
+goto 11f8
 :11f87144
 set dev PM71144 Switchtec PSXs 144xG7 Secure-capable Programmable PCIe Switch
 goto 11f8
@@ -26711,6 +26723,9 @@ set dev PM71160 Switchtec PSXs 160xG7 Secure-capable Programmable PCIe Switch
 goto 11f8
 :11f87164
 set dev PM71064 Switchtec PSXs 64xG7 Secure-capable Programmable PCIe Switch
+goto 11f8
+:11f87220
+set dev PM72320 Switchtec PFX 320xG7 Fanout PCIe Switch
 goto 11f8
 :11f87244
 set dev PM72144 Switchtec PFX 144xG7 Fanout PCIe Switch
@@ -26732,6 +26747,9 @@ set dev PM7375 [LASAR-155 ATM SAR]
 goto 11f8
 :11f87384
 set dev PM7384 [FREEDM - 84P672 Frm Engine & Datalink Mgr]
+goto 11f8
+:11f87420
+set dev PM74320 Switchtec PSX 320xG7 Programmable PCIe Switch
 goto 11f8
 :11f87444
 set dev PM74144 Switchtec PSX 144xG7 Programmable PCIe Switch
@@ -31901,6 +31919,9 @@ set dev Basic Render Driver
 goto 1414
 :1414008e
 set dev Basic Render Driver
+goto 1414
+:141400ba
+set dev Microsoft Azure Network Adapter
 goto 1414
 :14145353
 set dev Hyper-V virtual VGA
@@ -45738,6 +45759,9 @@ goto 1bc0
 :1bc0523b
 set dev PCIe 4IG2-P Controller
 goto 1bc0
+:1bc05638
+set dev PCIe 4TS3-P Controller
+goto 1bc0
 :1bc08366
 set dev PCIe 5TS-P Controller
 goto 1bc0
@@ -46319,6 +46343,9 @@ set dev PE6110 NVMe Solid State Drive
 goto 1c5c
 :1c5c2527
 set dev PE4010 NVMe Solid State Drive
+goto 1c5c
+:1c5c2570
+set dev PEB210 E1.S
 goto 1c5c
 :1c5c2839
 set dev PE8000 Series NVMe Solid State Drive
@@ -51111,6 +51138,9 @@ goto 2036
 :20361619
 set dev NF1618 Family Virtual Function
 goto 2036
+:20367000
+set dev Netforward PolarBear Ethernet Switch ASIC
+goto 2036
 :20368000
 set dev NP36xxx PCIe Gen 6 Switch
 goto 2036
@@ -51492,6 +51522,9 @@ exit
 :20c11234
 set dev YG Testchip
 goto 20c1
+:20ca
+set ven Hangzhou Hualan Microelectronique Co.,Ltd.
+exit
 :20d0
 set ven Telin Semiconductor (Wuhan) Co., Ltd.
 exit
@@ -51726,6 +51759,36 @@ goto 215e
 :2165
 set ven Dnotitia Inc.
 exit
+:2178
+set ven Baovix Technology Co., Ltd
+exit
+:21784000
+set dev M.2 Gen4 NVMe SSD
+goto 2178
+:21784200
+set dev N400 M.2 Gen4 NVMe SSD
+goto 2178
+:21785000
+set dev M.2 Gen4 NVMe SSD
+goto 2178
+:21785200
+set dev N500 M.2 Gen5 NVMe SSD
+goto 2178
+:2178e600
+set dev U.2 Gen4 SSD
+goto 2178
+:2178e660
+set dev U.2 Gen4 SSD
+goto 2178
+:2178e800
+set dev U.2 Gen5 SSD
+goto 2178
+:2178e820
+set dev U.2 Gen5 SSD
+goto 2178
+:2178e830
+set dev U.2 Gen5 SSD
+goto 2178
 :21b4
 set ven Hunan Goke Microelectronics Co., Ltd
 exit
@@ -67267,7 +67330,7 @@ goto 8086
 set dev Lakefield UFS Controller
 goto 8086
 :80869a01
-set dev 11th Gen Core Processor PCIe Controller #1
+set dev 11th Gen Core Processor PCIe Root Port
 goto 8086
 :80869a02
 set dev 11th Gen Core Processor UP4 2 Cores Host Bridge/DRAM Controller
@@ -67279,109 +67342,112 @@ goto 8086
 set dev 11th Gen Core Processor UP3 2 Cores Host Bridge/DRAM Controller
 goto 8086
 :80869a05
-set dev 11th Gen Core Processor PCIe Controller #2
+set dev 11th Gen Core Processor PCIe Root Port
 goto 8086
 :80869a07
-set dev 11th Gen Core Processor PCIe Controller #3
+set dev 11th Gen Core Processor PCIe Root Port
 goto 8086
 :80869a09
-set dev 11th Gen Core Processor PCIe Controller
+set dev 11th Gen Core Processor Host-PCIe Bridge
 goto 8086
 :80869a0b
-set dev Volume Management Device NVMe RAID Controller
+set dev 11th Gen Core Processor Volume Management Device
 goto 8086
 :80869a0d
-set dev Tigerlake Telemetry Aggregator Driver
+set dev 11th Gen Core Processor Crash Log and Telemetry
 goto 8086
 :80869a0f
-set dev 11th Gen Core Processor PCIe Controller #0
+set dev 11th Gen Core Processor PCIe Root Port
 goto 8086
 :80869a11
-set dev GNA Scoring Accelerator module
+set dev 11th Gen Core Processor Gauss Newton Algorithm Device
 goto 8086
 :80869a12
-set dev Tiger Lake-UP4 4 cores Host Bridge/DRAM Registers
+set dev 11th Gen Core Processor UP4 4 Cores Host Bridge/DRAM Controller
 goto 8086
 :80869a13
-set dev Tiger Lake-LP Thunderbolt 4 USB Controller
+set dev 11th Gen Core Processor USB-C xHCI
 goto 8086
 :80869a14
-set dev Tiger Lake-UP3/H35 4 cores Host Bridge/DRAM Registers
+set dev 11th Gen Core Processor UP3/H35 4 Cores Host Bridge/DRAM Controller
 goto 8086
 :80869a15
-set dev Tiger Lake xDCI Controller
+set dev 11th Gen Core Processor USB-C xDCI
 goto 8086
 :80869a17
-set dev Tiger Lake-H Thunderbolt 4 USB Controller
+set dev 11th Gen Core Processor USB-C xHCI
 goto 8086
 :80869a19
-set dev Tiger Lake IPU6
+set dev 11th Gen Core Processor Image Processing Unit
+goto 8086
+:80869a1a
+set dev 11th Gen Core Processor UP3/H35-Refresh 4 Cores Host Bridge/DRAM Controller
 goto 8086
 :80869a1b
-set dev Tiger Lake-LP Thunderbolt 4 NHI #0
+set dev 11th Gen Core Processor Thunderbolt DMA #0
 goto 8086
 :80869a1d
-set dev Tiger Lake-LP Thunderbolt 4 NHI #1
+set dev 11th Gen Core Processor Thunderbolt DMA #1
 goto 8086
 :80869a1f
-set dev Tiger Lake-H Thunderbolt 4 NHI #0
+set dev 11th Gen Core Processor Thunderbolt DMA #0
 goto 8086
 :80869a21
-set dev Tiger Lake-H Thunderbolt 4 NHI #1
+set dev 11th Gen Core Processor Thunderbolt DMA #1
 goto 8086
 :80869a23
-set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #0
+set dev 11th Gen Core Processor Thunderbolt PCIe Controller #0
 goto 8086
 :80869a25
-set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #1
+set dev 11th Gen Core Processor Thunderbolt PCIe Controller #1
 goto 8086
 :80869a26
-set dev Tiger Lake-H 6 cores Host Bridge/DRAM Registers
+set dev 11th Gen Core Processor H 6 Cores Host Bridge/DRAM Controller
 goto 8086
 :80869a27
-set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #2
+set dev 11th Gen Core Processor Thunderbolt PCIe Controller #2
 goto 8086
 :80869a29
-set dev Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #3
+set dev 11th Gen Core Processor Thunderbolt PCIe Controller #3
 goto 8086
 :80869a2b
-set dev Tiger Lake-H Thunderbolt 4 PCI Express Root Port #0
+set dev 11th Gen Core Processor USB-C PCIe Root Port #0
 goto 8086
 :80869a2d
-set dev Tiger Lake-H Thunderbolt 4 PCI Express Root Port #1
+set dev 11th Gen Core Processor USB-C PCIe Root Port #1
 goto 8086
 :80869a2f
-set dev Tiger Lake-H Thunderbolt 4 PCI Express Root Port #2
+set dev 11th Gen Core Processor USB-C PCIe Root Port #2
 goto 8086
 :80869a31
-set dev Tiger Lake-H Thunderbolt 4 PCI Express Root Port #3
+set dev 11th Gen Core Processor USB-C PCIe Root Port #3
 goto 8086
 :80869a33
-set dev Tiger Lake Trace Hub
+set dev 11th Gen Core Processor Trace Hub
 goto 8086
 :80869a36
-set dev Tiger Lake-H 8 cores Host Bridge/DRAM Registers
+set dev 11th Gen Core Processor H 8 Cores Host Bridge/DRAM Controller
 goto 8086
 :80869a39
-set dev Tiger Lake H IPU6-Slim
+set dev 11th Gen Core Processor Image Processing Unit
 goto 8086
 :80869a40
-set dev Tiger Lake-UP4 GT2 [Iris Xe Graphics]
+set dev 11th Gen Core Processor UP4 GT2 [Iris Xe Graphics]
 goto 8086
 :80869a49
-set dev TigerLake-LP GT2 [Iris Xe Graphics]
+set dev 11th Gen Core Processor GT2 [Iris Xe Graphics]
 goto 8086
 :80869a60
-set dev TigerLake-H GT1 [UHD Graphics]
+set dev 11th Gen Core Processor H GT1 [UHD Graphics]
 goto 8086
 :80869a68
-set dev TigerLake-H GT1 [UHD Graphics]
+set dev 11th Gen Core Processor H GT1 [UHD Graphics]
 goto 8086
 :80869a70
 set dev Tiger Lake-H GT1 [UHD Graphics]
 goto 8086
 :80869a78
-set dev Tiger Lake-LP GT2 [UHD Graphics G4]
+set dev 11th Gen Core Processor UP3/UP4 GT2
 goto 8086
 :80869b21
 set dev Comet Lake-U GT2 [UHD Graphics 620]
